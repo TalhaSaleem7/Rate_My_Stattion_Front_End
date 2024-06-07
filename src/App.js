@@ -17,7 +17,7 @@ import Newsletter from './Newsletter/Newsletter';
 
 
 
-import About from './About/About';
+ 
 import Dirctors from './Dirctors/Dirctors';
 import Award from './Award/Award';
 import Openings from './Openings/Openings';
@@ -51,7 +51,7 @@ function App() {
         <Route path="/Header" exact element={<Header />} />
 
 
-        <Route path="/About" exact element={<About />} />
+        {/* <Route path="/About" exact element={<About />} /> */}
         <Route path="/About2" exact element={<About2 />} />
         <Route path="/Dirctors" exact element={<Dirctors />} />
         <Route path="/Dirctors2" exact element={<Dirctors2 />} />
@@ -64,7 +64,7 @@ function App() {
         <Route path="/Filter" exact element={<Filter />} />
 
  
-        <Route path="/" exact element={<Header />} />
+  l
         <Route path="/reportersd" exact element={<Reportersd/>} />
         <Route path="/home" exact element={<Homepage/>} />
         <Route path="/about" exact element={<About/>} />
