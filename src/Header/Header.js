@@ -1,6 +1,6 @@
 import React from "react";
 
-import kabc from '../../img/kabc.png'
+import kabc from '../img/kabc.png'
 
 
 const Header = ()=>{
