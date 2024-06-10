@@ -11,6 +11,7 @@ import ProdImage6 from '../img/ratemystation-prod-img-6.png';
 import ProdImage7 from '../img/ratemystation-prod-img-7.png';
 import ProdImage8 from '../img/ratemystation-prod-img-8.png';
 import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
+import Lookingforwork from '../Lookingforwork/Lookingforwork';
 
 
 const About = () => {
@@ -237,7 +238,7 @@ const About = () => {
       </Container>
     </section>
 
-
+    <Lookingforwork />
 
     </>
   )
