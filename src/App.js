@@ -53,7 +53,7 @@ import Jobopening from "./Jobopening/Jobopening";
 import StationSearchResult from "./StationSearchResult/StationSearchResult";
 import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
 import MyCartSD from "./MyCartSD/MyCartSD";
-import EmployerLoginPG from "./EmployerLoginPG/EmployerLoginPG";
+import EmployerLoginPg from "./EmployerLoginPg/EmployerLoginPg";
 
 // import React from 'react';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -67,14 +67,14 @@ import EmployerLoginPG from "./EmployerLoginPG/EmployerLoginPG";
 // import About from './About/About';
 // import Newsletter from './Newsletter/Newsletter';
 // import NewsletterArticle from './NewsletterArticle/NewsletterArticle';
-import Viewjob from "./Viewjob/Viewjob";
-import Shop from "./Shop/Shop";
-import Viewjobdetail from "./Viewjobdetail/Viewjobdetail";
-import Contactus from "./Contactus/Contactus";
-import Jobopening from "./Jobopening/Jobopening";
-import StationSearchResult from "./StationSearchResult/StationSearchResult";
-import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
-import MyCartSD from "./MyCartSD/MyCartSD";
+// import Viewjob from "./Viewjob/Viewjob";
+// import Shop from "./Shop/Shop";
+// import Viewjobdetail from "./Viewjobdetail/Viewjobdetail";
+// import Contactus from "./Contactus/Contactus";
+// import Jobopening from "./Jobopening/Jobopening";
+// import StationSearchResult from "./StationSearchResult/StationSearchResult";
+// import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
+// import MyCartSD from "./MyCartSD/MyCartSD";
 
 // import Dirctors from './Dirctors/Dirctors';
 // import Award from './Award/Award';
@@ -176,7 +176,11 @@ function App() {
         <Route path="/" exact element={<Homepage />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
-        {/* <Route path="/newsletterarticle" exact element={<NewsletterArticle/>} /> */}
+        <Route
+          path="/newsletterarticle"
+          exact
+          element={<NewsletterArticle />}
+        />
         <Route path="/viewjob" exact element={<Viewjob />} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
         <Route path="/shop" exact element={<Shop />} />
