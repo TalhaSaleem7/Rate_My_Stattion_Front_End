@@ -10,7 +10,7 @@ return(
 
 
 
-    <div>
+    <>
                     <div class="job-ah-post">
                         <h2>My Ratings<span> (19)</span></h2>
 
@@ -41,7 +41,7 @@ return(
                         </div>
                     </div>
 
-    </div>
+                    </>
     
 )
 

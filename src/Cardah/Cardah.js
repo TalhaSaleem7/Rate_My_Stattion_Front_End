@@ -12,7 +12,7 @@ return(
 
 
 
-    <div>
+    <>
         
         <div class="Recommend-card-ah">
                             <div class="Recommend-card-img-ah">
@@ -23,7 +23,7 @@ return(
                             </div>
                         </div>
 
-    </div>
+    </>
     
 )
 
