@@ -12,7 +12,7 @@ return(
 
 
 
-    <div>
+    <>
          
          <div class="About-main-card-1-ah">
                         <h2>Job Opening <span>(5)</span></h2>
@@ -212,7 +212,7 @@ return(
                         </div>
                     </div>
 
-    </div>
+    </>
     
 )
 

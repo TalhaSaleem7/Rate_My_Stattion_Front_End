@@ -1,23 +1,30 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 body {
-  background-color: #F5F5F5;
+  background: #F5F5F5 !important;
 }
 
 section.KABC-ah {
   WIDTH: 100%;
   height: 295px;
-background-image: url(../img/BG.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url(../img/BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 90px;
+}
+
+
+h1,h2,h3,h4,h5,p,a {
+  margin: 0px !important;
 }
 
 .container-ah {
@@ -61,7 +68,9 @@ background-size: cover;
 }
 
 .KABC-tital-ah span {
-  display: flex;align-items: center;gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .KABC-tital-ah span h2 {
@@ -70,7 +79,8 @@ background-size: cover;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 101.667% */
+  line-height: 30.5px;
+  /* 101.667% */
 }
 
 .KABC-tital-ah p {
@@ -79,7 +89,8 @@ background-size: cover;
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 118.182% */
+  line-height: 26px;
+  /* 118.182% */
   display: flex;
   align-items: center;
   gap: 14px;
@@ -87,11 +98,12 @@ background-size: cover;
 
 .KABC-tital-ah span p {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .KABC-tital-ah {
@@ -120,11 +132,12 @@ span.See button {
   width: 100%;
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
 }
 
 span.Info {
@@ -144,12 +157,13 @@ span.Info button {
 button.Contact-ah {
   color: #194D79;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   border: 2px solid #194d79 !important;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   border-radius: 8px;
   padding: 5px 18px !important;
 }
@@ -160,7 +174,8 @@ span.Info button svg {
 }
 
 section.About-ah {
-  width: 100%;padding: 99px 0px;
+  width: 100%;
+  padding: 99px 0px;
 }
 
 .About-main-ah {
@@ -171,13 +186,13 @@ section.About-ah {
 
 .About-main-box-1-ah {
 
-width: 68%;
+  width: 68%;
 
-display: flex;
+  display: flex;
 
-flex-direction: column;
+  flex-direction: column;
 
-gap: 28px;
+  gap: 28px;
 }
 
 .About-main-box-2-tital-ah {
@@ -194,7 +209,7 @@ gap: 28px;
 
 .About-main-box-2-tital-ah h2 {
   color: var(--000000, #000);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -204,7 +219,7 @@ font-family: "Public Sans", sans-serif;
 .About-main-box-2-tital-ah a {
   color: var(--194-d-79, #194D79);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -222,21 +237,23 @@ font-family: "Public Sans", sans-serif;
 
 .About-main-card-1-ah h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .About-main-card-1-ah p {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   padding: 20px 0px 15px 0px;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .About-main-card-1-ah hr {
@@ -262,20 +279,22 @@ font-family: "Public Sans", sans-serif;
 
 .Industry-ah span h2 {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30.5px; /* 190.625% */
+  line-height: 30.5px;
+  /* 190.625% */
 }
 
 .Industry-ah span p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 0px;
 }
 
@@ -312,17 +331,19 @@ font-family: "Public Sans", sans-serif;
 }
 
 .Brooklyn-Simmons-tital {
-  display: flex;flex-direction: column;gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .Brooklyn-Simmons-tital span p {
   padding: 0px;
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; 
+  line-height: 26px;
 }
 
 .Brooklyn-Simmons-tital span {
@@ -333,11 +354,11 @@ font-family: "Public Sans", sans-serif;
 
 .Brooklyn-Simmons-tital h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; 
+  line-height: 26px;
 }
 
 .Brooklyn-Simmons-tital span a {
@@ -347,7 +368,7 @@ font-family: "Public Sans", sans-serif;
   padding: 8px;
   color: var(--Gray-3, #828282);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -364,11 +385,41 @@ font-family: "Public Sans", sans-serif;
   color: #194D79;
   text-align: center;
   padding: 5px 50px;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; 
+  line-height: 33px;
+}
+
+.latest-comment-txt-input-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.latest-comment-txt-input-box input {
+  width: 100%;
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  border: none;
+  padding: 15px 44px 15px 20px;
+  outline: none;
+  color: var(--Gray-3, #828282);
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.latest-comment-txt-input-box button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
 }
 
 .Brooklyn-Simmons-tital span a:hover {
@@ -403,24 +454,27 @@ font-family: "Public Sans", sans-serif;
   object-fit: cover;
 }
 
-.Award-box-tital-ah {width: 80%;}
+.Award-box-tital-ah {
+  width: 80%;}
 
 .Award-box-tital-ah h2 {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Award-box-tital-ah p {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 10px 0px;
 }
 
@@ -435,7 +489,7 @@ font-family: "Public Sans", sans-serif;
 .Award-a a {
   color: var(--194-d-79, #194D79);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -486,20 +540,22 @@ font-family: "Public Sans", sans-serif;
 
 .Job-list-1-ah span h2 {
   color: var(--Gray-1, #333);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 108.929% */
+  line-height: 30.5px;
+  /* 108.929% */
 }
 
 .Job-list-1-ah span p {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
   padding: 4px 0px;
 }
 
@@ -522,11 +578,12 @@ font-family: "Public Sans", sans-serif;
 .Job-list-2-ah span p {
   padding: 0px;
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Job-list-2-ah span svg {
@@ -551,7 +608,7 @@ font-family: "Public Sans", sans-serif;
   gap: 10px;
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -564,7 +621,7 @@ font-family: "Public Sans", sans-serif;
   align-items: center;
   gap: 10px;
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -579,6 +636,7 @@ font-family: "Public Sans", sans-serif;
   font-weight: 400;
   line-height: 30.5px;
 }
+
 .Recommend-box-ah {
   width: 100%;
   display: flex;
@@ -605,15 +663,17 @@ font-family: "Public Sans", sans-serif;
 .Recommend-card-tital-ah {
   width: 100%;
   padding: 20px 25px;
+
 }
 
 .Recommend-card-tital-ah h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 169.444% */
+  line-height: 30.5px;
+  /* 169.444% */
   text-transform: capitalize;
 }
 
@@ -626,18 +686,19 @@ font-family: "Public Sans", sans-serif;
   border-radius: 15px;
   margin: 5px 0px 15px 0px;
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Recommend-card-tital-ah button {
   width: 100%;
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -656,6 +717,7 @@ font-family: "Public Sans", sans-serif;
 
 
 }
+
 .padding-ah {
   padding: 45px 0px 24px 0px;
 }
@@ -676,78 +738,80 @@ font-family: "Public Sans", sans-serif;
 
 
 .navtabs {
-display: flex;
-position: relative;
-align-items: center;
-padding-top: 30px;
-border-top: 1px solid #E0E0E0;
-margin-top: 30px;
-gap: 70px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid #E0E0E0;
+  margin-top: 30px;
+  gap: 70px;
 }
+
 .navtab {
-cursor: pointer;
-transition: color 0.3s;
-padding-bottom: 24px;
-color: var(--000000, #000);
-text-align: center;
-font-family: "Public Sans", sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 130% */
+  cursor: pointer;
+  transition: color 0.3s;
+  padding-bottom: 24px;
+  color: var(--000000, #000);
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* 130% */
 }
+
 .navtab:hover {
-color: #89C400;
+  color: #89C400;
 }
+
 .navtab.active {
-color: #89C400;
-font-weight: 600;
+  color: #89C400;
+  font-weight: 600;
 }
+
 .underline {
-position: absolute;
-bottom: 0px;
-height: 3px;
-background: #89C400;
-transition: left 0.3s ease, width 0.3s ease;
+  position: absolute;
+  bottom: 0px;
+  height: 3px;
+  background: #89C400;
+  transition: left 0.3s ease, width 0.3s ease;
 }
+
 .content {
-display: none;
-width: 100%;
+  display: none;
+  width: 100%;
 }
+
 .content.active {
-display: block;
+  display: block;
 }
-
 .footer {
-position: absolute;
-bottom: 10px;
-right: 10px;
-font-size: 14px;
-color: #000;
-transition: color 0.3s ease;
-font-family: "Public Sans", sans-serif;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #000;
+  transition: color 0.3s ease;
+  font-family: "Public Sans", sans-serif;
 }
-
 .footer a:hover {
-color: linear-gradient(145deg, #89C400, #89C400);
+  color: linear-gradient(145deg, #89C400, #89C400);
 }
-
 .ah-spas {
   padding-bottom: 0px;
 }
-
 .main-tabs-ah {
   width: 100%;
   padding-top: 60px;
+  background-color: #F5F5F5;
 }
-
 span.edite {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 span.edite svg {
   width: 28px;
   height: 28px;
@@ -758,6 +822,7 @@ span.edite-icon {
   align-items: center;
   gap: 15px;
 }
+
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
@@ -796,7 +861,8 @@ section.Statistic-ah {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .Overall-Statistic-ah ul {
@@ -849,7 +915,8 @@ section.Statistic-ah {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
   padding-bottom: 20px;
 }
 
@@ -902,7 +969,8 @@ span.\34 5 h2 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 108.333% */
+  line-height: 26px;
+  /* 108.333% */
 }
 
 span.\34 5 p {
@@ -961,9 +1029,11 @@ span.persent h3 {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   padding: 0px;
 }
+
 .bar-pogres-box-ah {
   width: 100%;
   padding-top: 30px;
@@ -998,7 +1068,8 @@ span.persent h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 108.333% */
+  line-height: 26px;
+  /* 108.333% */
 }
 
 .pogras-card-ah span p {
@@ -1061,7 +1132,8 @@ span.parsent-icon p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
   text-align: center;
 }
 
@@ -1092,7 +1164,8 @@ span.parsent-icon p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
 }
 
 .Draft-ah {
@@ -1130,7 +1203,8 @@ span.parsent-icon p {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .Draft-ah span p {
@@ -1140,8 +1214,10 @@ span.parsent-icon p {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
+
 .About-main-card-1-hello-ah {
   width: 100%;
   display: flex;
@@ -1166,7 +1242,7 @@ span.parsent-icon p {
 .Hire-ah-box h2 {
   color: var(--ffffff, #FFF);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -1176,11 +1252,12 @@ font-family: "Public Sans", sans-serif;
 .Hire-ah-box p {
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 31.5px; /* 157.5% */
+  line-height: 31.5px;
+  /* 157.5% */
   padding: 30px 35px;
 }
 
@@ -1192,11 +1269,12 @@ font-family: "Public Sans", sans-serif;
   border: 1px solid #FFF;
   color: var(--000000, #000);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 37.5px; /* 187.5% */
+  line-height: 37.5px;
+  /* 187.5% */
 }
 
 .job-ah-post {
@@ -1208,7 +1286,7 @@ font-family: "Public Sans", sans-serif;
 
 .job-ah-post h2 {
   color: var(--000000, #000);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -1217,7 +1295,7 @@ font-family: "Public Sans", sans-serif;
 
 .job-ah-post h2 span {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -1241,11 +1319,12 @@ font-family: "Public Sans", sans-serif;
 
 .job-ah-Filter-card p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .job-ah-Filter-card select {
@@ -1255,16 +1334,22 @@ font-family: "Public Sans", sans-serif;
   outline: none;
   padding: 10px 15px;
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
   width: 100%;
 }
 
 .Website-ah-box {
-  width: 100%;display: flex;flex-direction: column;align-items: center;gap: 30px;padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
 }
 
 
@@ -1295,7 +1380,7 @@ font-family: "Public Sans", sans-serif;
 
 .Website-ah-card span h3 {
   color: #9BDB08;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -1304,11 +1389,12 @@ font-family: "Public Sans", sans-serif;
 
 .Website-ah-card span h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 138.636% */
+  line-height: 30.5px;
+  /* 138.636% */
 }
 
 .width-give {
@@ -1327,11 +1413,12 @@ font-family: "Public Sans", sans-serif;
 
 .Popular-ti-ah h2 {
   color: var(--000000, #000);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Popular-ti-ah {
@@ -1350,11 +1437,12 @@ font-family: "Public Sans", sans-serif;
 .Popular-ti-ah-btn-box button {
   color: var(--Gray-3, #828282);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   border-radius: 10px;
   background: var(--Gray-6, #F2F2F2);
   border: none;
@@ -1378,7 +1466,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 183.333% */
+  line-height: 33px;
+  /* 183.333% */
   border: 1px solid #194d79;
   padding: 5px 45px;
 }
@@ -1422,7 +1511,7 @@ font-family: "Public Sans", sans-serif;
 
 .Angeles-logo-ah img {
   width: 100%;
- 
+
 }
 
 .Angeles-logo-side-box span h2 {
@@ -1431,7 +1520,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .Angeles-logo-side-box span p {
@@ -1440,7 +1530,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Angeles-ah-icon-side {
@@ -1456,6 +1547,7 @@ font-family: "Public Sans", sans-serif;
   align-items: center;
   gap: 34px;
 }
+
 .Jacob-card-ah-box {
   width: 100%;
   display: flex;
@@ -1500,7 +1592,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 100% */
+  line-height: 26px;
+  /* 100% */
 }
 
 .Director-ah-boxing-logo span p {
@@ -1509,7 +1602,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Director-ah-boxing p {
@@ -1549,7 +1643,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .Director-ah-boxing-list-logo span h2 {
@@ -1558,7 +1653,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Director-ah-boxing-list-span h2 {
@@ -1567,7 +1663,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 
@@ -1577,7 +1674,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   text-align: end;
 }
 
@@ -1600,8 +1698,10 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
 }
+
 img.width-hegit-ah {
   width: 10px;
   height: 10px;
@@ -1611,13 +1711,15 @@ button.interview-ah {
   background: #194D79;
   color: #fff;
 }
+
 .KABC-tital-ah p span {
   color: var(--194-d-79, #194D79);
   font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 118.182% */
+  line-height: 26px;
+  /* 118.182% */
 }
 
 .Office-ah-box {
@@ -1643,7 +1745,8 @@ button.interview-ah {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Office-ah-span p {
@@ -1652,7 +1755,8 @@ button.interview-ah {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   padding: 0px;
 }
 
@@ -1673,42 +1777,46 @@ button.interview-ah {
   justify-content: space-between;
 }
 
-.Current-ah-job-card span h2 {
+.Current-ah-job-card span h2 {                
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Current-ah-job-card span h3 {
   color: var(--89-c-400, #89C400);
   text-align: right;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Current-ah-job-card span p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   padding: 0px;
 }
 
 .Current-ah-job p {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 12px 0px;
 }
 
@@ -1730,7 +1838,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Skills-ah-box p {
@@ -1739,9 +1848,11 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
-  padding: 10px 0px  0px 0px;
+  line-height: 26px;
+  /* 162.5% */
+  padding: 10px 0px 0px 0px;
 }
+
 .Education-ah-boxing {
   padding-top: 25px;
   width: 100%;
@@ -1770,29 +1881,32 @@ font-family: "Public Sans", sans-serif;
 
 .Education-side-ah h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Education-side-ah h3 {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Education-side-ah p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   padding: 0px;
 }
 
@@ -1803,7 +1917,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Job-Openings-card {
@@ -1832,20 +1947,22 @@ font-family: "Public Sans", sans-serif;
 
 .Job-Openings-list-1 span h2 {
   color: #000;
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Job-Openings-list-1 span p {
   color: var(--194-d-79, #194D79);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .Job-Openings-list-2 {
@@ -1866,11 +1983,12 @@ font-family: "Public Sans", sans-serif;
 
 .Job-Openings-list-2 span p {
   color: var(--194-d-79, #194D79);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .Job-Openings-list-2 span svg {
@@ -1886,7 +2004,6 @@ font-family: "Public Sans", sans-serif;
   padding-top: 20px;
 }
 
-button {}
 
 .Job-Openings-list-3 button {
   border-radius: 5px;
@@ -1897,7 +2014,7 @@ button {}
   border: 1px solid #89C400;
   padding: 8px 12px;
   color: var(--ffffff, #FFF);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -1909,7 +2026,7 @@ button {}
   align-items: center;
   gap: 5px;
   color: var(--Gray-3, #828282);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -1961,20 +2078,22 @@ button {}
 
 .Applied-ah-list-1 span h2 {
   color: var(--Gray-1, #333);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 108.929% */
+  line-height: 30.5px;
+  /* 108.929% */
 }
 
 .Applied-ah-list-1 span p {
   color: var(--Gray-3, #828282);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
   padding-top: 4px;
 }
 
@@ -2005,11 +2124,12 @@ button {}
 
 .Applied-ah-list-2 span p {
   color: var(--194-d-79, #194D79);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Applied-ah-list-3 {
@@ -2026,7 +2146,7 @@ button {}
   background: transparent;
   padding: 10px 30px;
   color: var(--89-c-400, #89C400);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -2035,7 +2155,7 @@ button {}
 
 .Applied-ah-list-3 a {
   color: var(--Gray-3, #828282);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -2060,6 +2180,7 @@ button.change-red {
   color: #EB5757;
   border: 1px solid #EB5757;
 }
+
 .Schedule-ah-card {
   width: 100%;
   display: flex;
@@ -2102,21 +2223,23 @@ button.change-red {
 
 .Schedule-ah-list-1 span p {
   color: var(--Gray-3, #828282);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 0px;
 }
 
 .Schedule-ah-card-box h2 {
   color: #000;
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 39px; /* 139.286% */
+  line-height: 39px;
+  /* 139.286% */
   width: 90%;
   padding: 20px 0px 30px 0px;
 }
@@ -2147,40 +2270,371 @@ button.change-red {
 
 .Soul-icon-box span p {
   color: var(--Gray-3, #828282);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Schedule-ah-list-3 a {
   color: var(--Gray-3, #828282);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-decoration: none;
 }
 
 .Schedule-ah-list-3 a span {
   color: var(--194-d-79, #194D79);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
 }
+
 .more-class {
   padding: 40px 0px 40px 40px;
+}
+.satisfied {
+  width: 100%;
+}
+
+.satisfied h2 {
+  color: #000;
+font-family: "Public Sans", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.satisfied h3 {
+  color: var(--194-d-79, #194D79);
+  text-align: center;
+font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+  padding: 5px 0px 10px 0px;
+}
+
+.satisfied button {
+  color: #194D79;
+  text-align: center;
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; /* 206.25% */
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 12px;
+  width: 100%;
+}
+
+.satisfied p {
+  color: var(--Gray-3, #828282);
+  text-align: center;
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 162.5% */
+  padding: 0px ;
+}
+.my-ah-class {
+  padding: 50px 0px;
+}
+
+
+
+.Cooper-ah-box {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Cooper-ah-imger {
+  width: 4%;
+}
+
+.Cooper-ah-imger img {
+  width: 100%;
+}
+
+.Cooper-ah-tital {
+  width: 94%;
+  padding: 20px 25px;
+  border-radius: 0px 10px 10px 10px;
+  background: var(--Gray-6, #F2F2F2);
+}
+
+.Cooper-ah-tital-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Cooper-ah-tital-head h2 {
+  color: #000;
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+}
+
+.Cooper-ah-tital-head span {
+  color: #000;
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Cooper-ah-tital h3 {
+  color: #000;
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 162.5% */
+  padding: 10px 0px 2px 0px;
+}
+
+.Cooper-ah-tital p {
+  color: var(--Gray-3, #828282);
+font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 185.714% */
+  padding: 0px;
+}
+.Cooper-ah-box-main {
+  width: 100%;
+  padding-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.America-Sweatshirt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.America-ah {
+  width: 30%;
+}
+
+.Sweatshirt-ah {
+  width: 65%;
+}
+
+.America-ah-part-1 img {
+  width: 100%;
+}
+
+.America-ah-part-1 {
+  width: 100%;
+}
+
+.America-ah-part-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.America-ah-part-2 img {
+  width: 24%;
+  object-fit: cover;
+}
+
+.Sweatshirt-ah h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+}
+
+.Sweatshirt-ah-select-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.Sweatshirt-ah-select-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 18%;
+}
+
+.Sweatshirt-ah-select-card p {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+}
+
+.Sweatshirt-ah-select-card select {
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  outline: none;
+  padding: 10px;
+  color: #000;
+  width: 100%;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+.Sweatshirt-ah-select-card select option {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+.Description-box-tital {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 34px;
+}
+
+.Description-box-tital h2 {
+  color: var(--194-d-79, #194D79);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+}
+
+.Description-box-tital p {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 162.5% */
+  padding: 0px;
+}
+
+.Description-box-tital a {
+  color: #89C400;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.Sweatshirt-ah-select-card input {
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  outline: none;
+  padding: 10px;
+  color: #000;
+  width: 100%;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.Sweatshirt-ah-select-card button {
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  width: 100%;
+  background: transparent;
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  padding: 5px;
+}
+
+.Sweatshirt-ah-select-card h2 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px; /* 129.167% */
 }
 
 
 
 
 
-/******************* Shahdin Pages CSS Start *******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
 
 
 ul {
@@ -2193,10 +2647,8 @@ li {
 }
 
 a {
-  text-decoration-line: none;
+  text-decoration-line: none !important;
 }
-
-
 
 
 /*********** First Banner Section CSS Start ***********/
@@ -2211,7 +2663,7 @@ a {
 
 .first-banner-txt h3 {
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 58px;
   width: 60%;
   font-weight: 700;
@@ -2250,7 +2702,7 @@ a {
 }
 
 .search-stations-input input::placeholder {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -2263,7 +2715,7 @@ a {
   padding: 22px 30px;
   width: 260px;
   color: #FFF;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
   position: relative;
@@ -2281,7 +2733,7 @@ a {
 
 .first-banner-txt a {
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -2320,7 +2772,7 @@ section.latest-rating-sec {
 }
 
 .latest-rating-txt h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -2333,7 +2785,7 @@ section.latest-rating-sec {
   background: #fff;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
-  margin: 0px 0px 40px 0px;
+  /* margin: 0px 0px 40px 0px; */
 }
 
 
@@ -2345,7 +2797,7 @@ section.latest-rating-sec {
 
 .latest-rating-user-txt h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2354,7 +2806,7 @@ section.latest-rating-sec {
 
 .latest-rating-user-txt select {
   color: #194D79;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -2380,14 +2832,14 @@ section.latest-rating-sec {
 
 .verified-rating-box h6 {
   color: #89C400;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 }
 
 .rating-of {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2395,7 +2847,7 @@ section.latest-rating-sec {
 }
 
 .karc-txt-logo h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2423,7 +2875,7 @@ section.latest-rating-sec {
 }
 
 .news-director-current h5 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -2436,7 +2888,7 @@ section.latest-rating-sec {
   background: #89C400;
   color: #FFF;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -2450,7 +2902,7 @@ section.latest-rating-sec {
 
 .director-name-txt h3 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2462,7 +2914,7 @@ section.latest-rating-sec {
 
 
 .review-director-para h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -2470,7 +2922,7 @@ section.latest-rating-sec {
 
 .review-director-para h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2479,7 +2931,7 @@ section.latest-rating-sec {
 
 .review-director-para p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2493,7 +2945,7 @@ section.latest-rating-sec {
 
 
 .racial-discrimination h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -2503,7 +2955,7 @@ section.latest-rating-sec {
 
 .racial-discrimination p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2517,7 +2969,7 @@ section.latest-rating-sec {
 
 .racial-discrimination h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2525,7 +2977,7 @@ section.latest-rating-sec {
 }
 
 .newroom-coworker-txt h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -2538,7 +2990,7 @@ section.latest-rating-sec {
 
 .newroom-coworker-txt h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2555,7 +3007,7 @@ section.latest-rating-sec {
 }
 
 .four-select-tab h5 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -2577,7 +3029,7 @@ section.latest-rating-sec {
 
 .four-select-tab ul li a {
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -2600,7 +3052,7 @@ section.latest-rating-sec {
 
 .like-report-txt ul li {
   color: #89C400;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2638,7 +3090,7 @@ section.latest-rating-sec {
 
 .latest-comment-txt-box p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2647,14 +3099,14 @@ section.latest-rating-sec {
 }
 
 .latest-comment-txt-box span {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
 }
 
 .like-report-submitted p {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -2664,7 +3116,7 @@ section.latest-rating-sec {
 .latest-rating-user-txt button {
   padding: 0px;
   color: #194D79;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -2683,7 +3135,7 @@ section.latest-rating-sec {
   background: transparent;
   box-shadow: none;
   color: #194D79;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -2709,7 +3161,7 @@ section.latest-rating-sec {
 }
 
 .job-detail-dropdown ul li {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -2718,7 +3170,7 @@ section.latest-rating-sec {
 
 .job-detail-dropdown ul li span {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -2740,7 +3192,7 @@ section.latest-rating-sec {
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
   color: #FFF;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2765,7 +3217,7 @@ section.latest-rating-sec {
 }
 
 .newsletter-side-head h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -2774,7 +3226,7 @@ section.latest-rating-sec {
 
 .newsletter-side-head a {
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -2793,7 +3245,7 @@ section.latest-rating-sec {
 
 .side-newsletter-txt h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2814,7 +3266,7 @@ section.latest-rating-sec {
 
 .side-subscribe-box h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2836,7 +3288,7 @@ section.latest-rating-sec {
 }
 
 .side-subscribe-box input::placeholder {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -2850,7 +3302,7 @@ section.latest-rating-sec {
   border-radius: 15px;
   color: #FFF;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2875,7 +3327,7 @@ section.latest-rating-sec {
 
 .follow-us-rate ul li a {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2892,7 +3344,7 @@ section.latest-rating-sec {
 }
 
 .newsletter-follow-box h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -2920,7 +3372,7 @@ section.ratemystation-shop-sec {
 
 section.ratemystation-shop-sec h4 {
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -2943,7 +3395,7 @@ section.ratemystation-shop-sec h4 {
 
 .ratemystation-prod-txt h3 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2954,7 +3406,7 @@ section.ratemystation-shop-sec h4 {
 
 .ratemystation-prod-txt h6 {
   color: #89C400;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2977,7 +3429,7 @@ section.ratemystation-shop-sec h4 {
   border: 2px solid #194D79;
   color: #194D79;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2998,7 +3450,7 @@ section.ratemystation-shop-sec h4 {
   color: #fff;
   background: #194D79;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3020,7 +3472,7 @@ section.ratemystation-shop-sec h4 {
 
 .ratemystation-allprod-btn a {
   color: #FFF;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -3073,7 +3525,7 @@ section.ratemystation-shop-sec h4 {
 }
 
 .looking-for-worktxt h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -3082,7 +3534,7 @@ section.ratemystation-shop-sec h4 {
 }
 
 .looking-for-worktxt p {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -3093,14 +3545,14 @@ section.ratemystation-shop-sec h4 {
 }
 
 .looking-for-worktxt a {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 37.5px;
   color: #000;
   background: #fff;
-  padding: 10px 30px;
+  padding: 10px 40px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   border: 1px solid #fff;
@@ -3132,7 +3584,7 @@ section.ratemystation-shop-sec h4 {
 }
 
 .ratemystation-about-txt h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -3156,7 +3608,7 @@ section.ratemystation-shop-sec h4 {
 
 
 .about-us-txt h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3167,7 +3619,7 @@ section.ratemystation-shop-sec h4 {
 }
 
 .about-us-txt h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -3189,7 +3641,7 @@ section.from-the-creator-sec {
 
 
 .from-the-creator-box h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3200,7 +3652,7 @@ section.from-the-creator-sec {
 
 
 .about-creator-txt h5 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -3212,7 +3664,7 @@ section.from-the-creator-sec {
 
 .about-creator-para p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3236,7 +3688,7 @@ section.from-the-creator-sec {
 }
 
 .about-creator-img-name h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -3246,7 +3698,7 @@ section.from-the-creator-sec {
 }
 
 .about-creator-img-name h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3282,7 +3734,7 @@ section.from-the-creator-sec {
 }
 
 .creator-messages h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3293,7 +3745,7 @@ section.from-the-creator-sec {
 }
 
 .creator-messages h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -3347,11 +3799,11 @@ section.your-journalism-sec {
 .your-journalism-txt {
   width: 40%;
   background: #fff;
-  padding: 70px 50px;
+  padding: 83px 50px;
 }
 
 .your-journalism-txt h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -3367,7 +3819,7 @@ section.your-journalism-sec {
 }
 
 .journal-date-written p {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -3383,7 +3835,7 @@ section.your-journalism-sec {
 
 .your-journalism-txt h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3404,7 +3856,7 @@ section.your-journalism-sec {
 }
 
 .newsletter-article-search input::placeholder {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3445,7 +3897,7 @@ section.your-journalism-sec {
 
 .filter-box p {
   margin: 0px;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3458,7 +3910,7 @@ section.your-journalism-sec {
   background: #F2F2F2;
   padding: 12px 20px;
   border-radius: 10px;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3476,7 +3928,7 @@ section.latest-article-recommend-sec {
 }
 
 .newsletter-latest-article-box h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -3518,7 +3970,7 @@ section.latest-article-recommend-sec {
 }
 
 .newsletter-article-date p {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3532,7 +3984,7 @@ section.latest-article-recommend-sec {
 
 .newsletter-article-text h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -3548,7 +4000,7 @@ section.latest-article-recommend-sec {
 }
 
 .newsletter-writtinsoul-txt p {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3569,7 +4021,7 @@ section.latest-article-recommend-sec {
 }
 
 .newsletter-likecomment-share span {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -3607,7 +4059,7 @@ section.latest-article-recommend-sec {
   float: left;
   padding: 15px 30px;
   text-decoration: none;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -3655,7 +4107,7 @@ section.latest-article-recommend-sec {
 
 
 .find-job-matter-txt h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -3680,7 +4132,7 @@ section.latest-article-recommend-sec {
 
 .find-job-select-box input::placeholder {
   color: #777;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -3697,7 +4149,7 @@ section.latest-article-recommend-sec {
   background: #89C400;
   box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.50);
   color: #FFF;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -3727,7 +4179,7 @@ section.search-job-sec {
 
 
 .newsletter-article-search h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -3759,7 +4211,7 @@ section.search-job-sec {
 }
 
 .assistant-director-txt h4 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3769,7 +4221,7 @@ section.search-job-sec {
 }
 
 .assistant-director-txt h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3809,7 +4261,7 @@ section.search-job-sec {
 
 .assistant-city-dollar-time p {
   margin: 0px;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3820,7 +4272,7 @@ section.search-job-sec {
 
 .assistant-news-director-box ul li {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3834,7 +4286,6 @@ section.search-job-sec {
   margin: 30px 0px 0px 20px;
 }
 
-
 .actively-hiring-updated {
   display: flex;
   align-items: center;
@@ -3843,7 +4294,7 @@ section.search-job-sec {
 
 .actively-hiring-updated p {
   margin: 0px;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -3851,16 +4302,13 @@ section.search-job-sec {
   color: #828282;
 }
 
-
-
-
 .actively-hiring-updated a {
   border-radius: 8px;
   background: #9BDB08;
   padding: 10px 20px;
   color: #FFF;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -3878,7 +4326,6 @@ section.search-job-sec {
   margin: 30px 0px 20px 0px;
 }
 
-
 .find-job-select-box {
   position: relative;
 }
@@ -3888,7 +4335,9 @@ section.search-job-sec {
   left: 15px;
   top: 10px;
 }
-
+body {
+  background-color: #F5F5F5;
+}
 
 /*********** View Job  Page CSS ENd ***********/
 
@@ -3913,7 +4362,7 @@ section.search-job-sec {
 }
 
 .shop-new-arrival h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -3922,7 +4371,7 @@ section.search-job-sec {
 }
 
 .shop-new-arrival h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -3933,7 +4382,7 @@ section.search-job-sec {
 
 .shop-new-arrival p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -3945,7 +4394,7 @@ section.search-job-sec {
 .shop-new-arrival a {
   color: #194D79;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3987,7 +4436,7 @@ section.search-job-sec {
 
 .shop-friend-themed h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3996,7 +4445,7 @@ section.search-job-sec {
 }
 
 .shop-friend-themed a {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -4039,7 +4488,7 @@ section.shop-product-search-sec {
 }
 
 .heading-see-all h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -4048,7 +4497,7 @@ section.shop-product-search-sec {
 }
 
 .heading-see-all a {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -4074,7 +4523,7 @@ section.shop-product-search-sec {
 }
 
 .shop-category h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -4085,7 +4534,7 @@ section.shop-product-search-sec {
 
 .shop-category ul li button {
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -4125,7 +4574,7 @@ section.shop-product-search-sec {
 
 .newsletter-article-decided h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4134,7 +4583,7 @@ section.shop-product-search-sec {
 
 .newsletter-article-decided p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4192,7 +4641,7 @@ section.shop-product-search-sec {
 
 
 .ratemystaion-contact-form h3 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -4202,7 +4651,7 @@ section.shop-product-search-sec {
 
 .ratemystaion-contact-form p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4212,7 +4661,7 @@ section.shop-product-search-sec {
 
 .ratemystaion-contact-form ul li {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -4252,7 +4701,7 @@ section.shop-product-search-sec {
 
 .input-field label {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4274,7 +4723,7 @@ section.shop-product-search-sec {
 }
 
 .input-field input::placeholder {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4303,7 +4752,7 @@ section.shop-product-search-sec {
 }
 
 .input-field textarea::placeholder {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4311,17 +4760,17 @@ section.shop-product-search-sec {
   color: #828282;
 }
 
-.contact-form-btn a {
+.contact-form-btn button {
   color: #194D79;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
   border: 2px solid #194D79;
-  padding: 12px 60px;
+  padding: 8px 60px;
   transition: all .6s ease;
 }
 
@@ -4329,9 +4778,13 @@ section.shop-product-search-sec {
   margin: 30px 0px 0px 0px;
 }
 
-.contact-form-btn a:hover {
+.contact-form-btn button:hover {
   background: #194D79;
   color: #fff;
+}
+
+.contact-form-btn button:focus {
+  outline: none;
 }
 
 
@@ -4357,7 +4810,7 @@ section.shop-product-search-sec {
 
 .contact-latest-updates p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -4366,7 +4819,7 @@ section.shop-product-search-sec {
 
 
 .contact-follow-like-btn ul li {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -4393,7 +4846,45 @@ section.shop-product-search-sec {
   padding: 30px 0px 0px 0px;
   border-top: 1px solid #E0E0E0;
 }
+footer {
+  width: 100%;
+}
 
+.main-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.ul-li-list-footer {
+  width: 70%;
+}
+
+.ul-li-list-footer ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 0px;
+}
+
+.icon-list-footer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ul-li-list-footer ul li a {
+  color: var(--Gray-3, #828282);
+font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px; /* 206.25% */
+  text-decoration: none;
+}
 /*********** Contact Us Page CSS End ***********/
 
 
@@ -4427,7 +4918,7 @@ section.shop-product-search-sec {
 
 .newsletter-detail-comment-para h6 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -4436,7 +4927,7 @@ section.shop-product-search-sec {
 
 .newsletter-detail-comment-para p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px !important;
   font-style: normal !important;
   font-weight: 300 !important;
@@ -4464,7 +4955,7 @@ section.shop-product-search-sec {
 
 .newsletter-comment-reaction ul li a {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -4477,7 +4968,7 @@ section.shop-product-search-sec {
 
 .newsletter-comment-box p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -4487,7 +4978,7 @@ section.shop-product-search-sec {
 
 
 .newsletter-comment-reaction p {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -4517,7 +5008,7 @@ section.shop-product-search-sec {
 }
 
 .newsletter-comment-input input::placeholder {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4561,7 +5052,7 @@ section.shop-product-search-sec {
 
 .soul-witness-txt h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -4570,7 +5061,7 @@ section.shop-product-search-sec {
 }
 
 .soul-witness-txt h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4582,7 +5073,7 @@ section.shop-product-search-sec {
 .soul-witness-acc-subs a {
   color: #194D79;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -4609,7 +5100,7 @@ section.shop-product-search-sec {
 
 .more-from-soul-witness-box h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -4621,7 +5112,7 @@ section.shop-product-search-sec {
 
 .more-soul-articletxt h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4630,7 +5121,7 @@ section.shop-product-search-sec {
 }
 
 .more-soul-articletxt span {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -4709,7 +5200,7 @@ section.shop-product-search-sec {
 
 .job-detailpg-txt h3 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -4717,7 +5208,7 @@ section.shop-product-search-sec {
 }
 
 .job-detailpg-txt h5 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -4742,13 +5233,14 @@ section.shop-product-search-sec {
   border-radius: 10px;
   color: #FFF;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
   border: 1px solid #194D79;
   transition: all .6s ease;
+  margin: 0px 0px 5px 0px;
 }
 
 .job-save-share {
@@ -4781,7 +5273,7 @@ section.shop-product-search-sec {
   background: transparent;
   border: 1px solid #BDBDBD;
   text-align: center;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -4804,7 +5296,7 @@ section.shop-product-search-sec {
 
 .job-desceiption-detail h3 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4815,7 +5307,7 @@ section.shop-product-search-sec {
 
 .job-desceiption-detail p {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4840,7 +5332,7 @@ section.shop-product-search-sec {
 
 .job-qualification-detail h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4856,7 +5348,7 @@ section.shop-product-search-sec {
   list-style: disc;
   margin: 5px 0px;
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4870,7 +5362,7 @@ section.shop-product-search-sec {
 
 .additional-information-job h4 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4884,7 +5376,7 @@ section.shop-product-search-sec {
 
 
 .job-add-career h6 {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -4895,7 +5387,7 @@ section.shop-product-search-sec {
 
 .job-add-career h5 {
   color: #000;
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -4914,7 +5406,7 @@ section.shop-product-search-sec {
 
 
 .addit-report-btn a {
-  font-family: "Public Sans";
+font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4950,7 +5442,760 @@ section.shop-product-search-sec {
 
 
 
+/* ****************** Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start ****************** */
+
+
+/*********** Job Opening Page CSS Start ***********/
+
+
+.job-opening-sec {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.job-opening-sec::before {
+  position: absolute;
+  content: "";
+  background: url(../img/first-banner-img.png) no-repeat top center;
+  background-size: cover;
+  height: 240px;
+  width: 100%;
+  z-index: -1;
+  top: 0px;
+}
+
+
+.job-openingpg-txt h5 {
+  font-family: "Public Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  color: #828282;
+}
+
+.job-openingpg-txt h3 {
+  font-family: "Public Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  color: #194D79;
+}
+
+.job-openingpg-txt h3 svg {
+  color: #89C400;
+}
+
+.job-openingpg-txt h6 {
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  color: #194D79;
+}
+
+.themelight {
+  background: transparent !important;
+  color: #194D79 !important;
+}
+
+.themelight:hover {
+  background: #194D79 !important;
+  color: #fff !important;
+}
+
+.newsletter-article-search h4 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-article-search h4 p {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+/*********** Job Opening Page CSS End ***********/
+
+
+
+
+/*********** Station Search Result Page CSS Start ***********/
+
+
+
+
+.station-search-result-txt h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.station-search-result-txt p {
+  color: var(--Gray-2, #4F4F4F);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.station-search-result-txt p span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.station-search-result-txt {
+  padding: 40px 0px;
+}
+
+.rms-profile-box {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  margin: 0px 0px 30px 0px;
+}
+
+.rms-profile-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rms-kabc-txt h3 {
+  color: var(--194-d-79, #194D79);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+}
+
+.rms-kabc-txt h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 20px 0px;
+}
+
+.rms-kabc-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rms-kabc-btn a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: #194D79;
+  padding: 8px 40px;
+  transition: all .6s ease;
+  border: 1px solid #194D79;
+}
+
+.rms-kabc-btn a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+.rms-kabc-txt h3 svg {
+  color: #89C400;
+}
+
+.rms-rating-review p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 5px 0px;
+}
+
+
+.rms-rating-review p span {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+
+.rms-dots-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.rms-dots-icon span {
+  color: #828282;
+  font-size: 24px;
+}
+
+.seeprofile-box-btn a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 40px;
+  background: var(--194-d-79, #194D79);
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
+  padding: 12px 35px;
+  border: 1px solid #194D79;
+  transition: all .6s ease;
+}
+
+.seeprofile-box-btn a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+.search-station-sec {
+  padding: 50px 0px 0px 0px;
+}
+
+.find-station-looking {
+  background: url(../img/findstations-img.png) no-repeat top center;
+  background-size: cover;
+  padding: 100px 30px 100px 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+.find-station-looking h4 {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 20px 0px;
+}
+
+.find-station-looking p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.5px;
+  margin: 0px 0px 30px 0px;
+}
+
+
+.find-station-looking a {
+  color: var(--000000, #000);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37.5px;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  transition: all .6s ease;
+}
+
+.find-station-looking a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.seeprofile-box-btn {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+
+
+/*********** Station Search Result Page CSS End ***********/
+
+
+
+/*********** News Director Search Result Page CSS Start ***********/
+
+.news-director-user-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.news-director-card-txt h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+}
+
+.news-director-card-txt p {
+  color: #777;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.news-director-card-txt p span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.news-director-card {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 30px 30px;
+  border-radius: 20px;
+  margin: 0px 0px 30px 0px;
+}
+
+.news-director-user-card img {
+  width: 100px;
+}
+
+.news-director-detail-btn a {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.news-director-detail-btn a {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border: 1px solid #194D79;
+  padding: 12px 50px;
+  border-radius: 10px;
+}
+
+.news-director-detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+section.director-search-result {
+  margin: 0px 0px 30px 0px;
+}
+
+section.director-search-result hr {
+  margin: 50px 0px 0px 0px;
+}
+
+
+.americon-prod-card-txt h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 30px 0px;
+}
+
+.americon-product-card-sec {
+  padding: 50px 0px;
+}
+
+.product-quality-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 50px 10px 0px;
+}
+
+
+.mycart-qualitytotal {
+  display: flex;
+  gap: 100px;
+}
+
+.product-quality-total h4 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+
+
+/*********** News Director Search Result Page CSS End ***********/
+
+
+
+/*********** My Cart Page CSS Start ***********/
+
+
+
+.americon-prod-cart {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 25px 20px;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  margin: 10px 0px 20px 0px;
+}
+
+
+.cart-counter {
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  padding: 10px 25px;
+}
+
+
+.cart-counter input {
+  width: 60px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+
+
+.americon-prod-cart h3 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  margin: 0px;
+  width: 210px;
+}
+
+.cart-counter span {
+  color: #828282;
+}
+
+.cart-counter input:focus {
+  outline: none;
+}
+
+.americon-prod-cart h4 {
+  color: #000;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+
+.mycart-order-summary {
+  border-radius: 20px;
+  background: #fff;
+  padding: 30px;
+  margin: 60px 0px 0px 0px;
+}
+
+.mycart-order-summary h4 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  margin: 0px 0px 30px 0px;
+}
+
+.ordersummary-subtotal h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.ordersummary-subtotal p {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.ordersummary-subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
+}
+
+.mycart-order-summary input {
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+}
+
+.mycart-order-summary input:focus {
+  outline: none;
+}
+
+.mycart-order-summary input::placeholder {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+.prod-order-total-txt {
+  margin: 30px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prod-order-total-txt h5 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30.5px;
+  margin: 0px;
+}
+
+.mycart-order-summary a {
+  color: #194D79;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 6px 20px;
+  margin: 30px 0px 0px 0px;
+  transition: all .6s ease;
+}
+
+.mycart-order-summary a:hover {
+  background: #194D79;
+  color: #fff;
+
+}
+
+
+/*********** My Cart Page CSS ENd ***********/
+
+
+
+
+/*********** Employer Login Page CSS Start ***********/
+
+
+.rating-real-journalist {
+  background: url(../img/employer-halfpg.png) no-repeat top center;
+  background-size: cover;
+  padding: 205px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-real-journalist h3 {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+section.employer-login-pg-sec {
+  padding: 50px 0px;
+}
+
+
+.rating-real-journalist img {
+  margin: 0px 0px 10px 0px;
+}
+
+.employer-login-box {
+  background: #fff;
+}
+
+.employer-newroom-box {
+  padding: 40px;
+}
+
+
+.employer-inputfield input {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--Gray-6, #F2F2F2);
+  border-radius: 10px;
+  border: none;
+}
+
+.employer-inputfield {
+  margin: 30px 0px;
+}
+
+.employer-inputfield label {
+  margin: 0px 0px 10px 0px;
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.employer-inputfield input::placeholder {
+  color: #777;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+.employer-inputfield input:focus {
+  outline: none;
+}
+
+
+.employer-login-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employerloginbtn {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 4px 50px;
+  transition: all .6s ease;
+}
+
+.employerloginbtn:hover {
+  background: #194D79;
+  color: #fff;
+}
+
+
+.employerforgotbtn {
+  color: #777;
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+
+/*********** Employer Login Page CSS End ***********/
+
+
+
+
+
+
 /******************* Shahdin Pages CSS End *******************/
-
-
-

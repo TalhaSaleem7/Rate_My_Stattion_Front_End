@@ -2,10 +2,11 @@ import React from "react";
 
 import kabc from '../img/kabc.png'
 import Award from "../Award/Award";
-import About from "../About/About";
 import Dirctors from "../Dirctors/Dirctors";
 import Openings from "../Openings/Openings";
 import Cardah from "../Cardah/Cardah";
+import About1 from "../About/About1";
+import Footerah from "../footerah/Footerah";
 
 
 
@@ -16,7 +17,7 @@ return(
 
 
 
-    <div>
+    <>
 
 <section class="KABC-ah">
         <div class="container-ah">
@@ -74,14 +75,12 @@ return(
 
                 <div class="About-main-box-1-ah">
 
-                    <About/>
+                    <About1/>
                     <Dirctors/>
                     <Award/>
                     <Openings/>
 
                 </div>
-
-
                 <div class="About-main-box-2-ah">
                     
                     <div class="About-main-box-2-tital-ah">
@@ -145,7 +144,8 @@ return(
         </div>
     </section>
 
-    </div>
+<Footerah/>
+    </>
     
 )
 

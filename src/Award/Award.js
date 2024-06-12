@@ -12,7 +12,7 @@ return(
 
 
 
-    <div>
+    <>
 
 <div class="About-main-card-1-ah">
                         <h2>Award</h2>
@@ -65,7 +65,7 @@ return(
                         </div>
                     </div>
 
-    </div>
+    </>
     
 )
 
