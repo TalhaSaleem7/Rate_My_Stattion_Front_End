@@ -54,7 +54,7 @@ const Jobopening = () => {
                         <Col lg={4}>
                             <div className="filter-short-box">
                                 <Row>
-                                    <Col>
+                                    <Col lg={6}>
                                         <div className="filter-box">
                                             <p>filter:</p>
                                             <select name="" id="">
@@ -64,7 +64,7 @@ const Jobopening = () => {
                                             </select>
                                         </div>
                                     </Col>
-                                    <Col>
+                                    <Col lg={6}>
                                         <div className="filter-box">
                                             <p>Short:</p>
                                             <select name="" id="">

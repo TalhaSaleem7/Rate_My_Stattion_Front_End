@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Slider from "react-slick";
 import JournalImage from '../img/journal-report.png';
@@ -18,7 +19,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Newslettersidesd from '../Newslettersidesecsd/Newslettersidesd';
 
+
+
+
+
+
+
+
 const Newsletter = () => {
+
+  const navigate = useNavigate();
+  const goto = () => {
+    navigate("/newsletterarticle");
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -109,7 +123,7 @@ const Newsletter = () => {
             <div className="newsletter-latest-article-box">
               <h3>Latest Articles</h3>
               {/* Article 1 */}
-              <div className="latest-article-box">
+              <div className="latest-article-box" onClick={goto}>
                 <img src={NewsletterLatestArticleImg} alt="Latest Article" />
                 <div className="newsletter-article-text">
                   <div className="newsletter-article-date">
@@ -130,7 +144,7 @@ const Newsletter = () => {
                 </div>
               </div>
               {/* Article 2 */}
-              <div className="newsletter-slide-article">
+              <div className="newsletter-slide-article" onClick={goto}>
                 <img src={NewsletterArticleImg2} alt="Latest Article" />
                 <div className="newsletter-article-text">
                   <div className="newsletter-article-date">
@@ -151,7 +165,7 @@ const Newsletter = () => {
                 </div>
               </div>
               {/* Article 3 */}
-              <div className="newsletter-slide-article">
+              <div className="newsletter-slide-article" onClick={goto}>
                 <img src={NewsletterArticleImg3} alt="Latest Article" />
                 <div className="newsletter-article-text">
                   <div className="newsletter-article-date">
@@ -172,7 +186,7 @@ const Newsletter = () => {
                 </div>
               </div>
               {/* Article 4 */}
-              <div className="newsletter-slide-article">
+              <div className="newsletter-slide-article" onClick={goto}>
                 <img src={NewsletterArticleImg4} alt="Latest Article" />
                 <div className="newsletter-article-text">
                   <div className="newsletter-article-date">

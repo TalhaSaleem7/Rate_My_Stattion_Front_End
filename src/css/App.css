@@ -2712,7 +2712,7 @@ font-family: "Public Sans", sans-serif;
 .select-station-drop select {
   border-radius: 25px 0px 0px 25px;
   background: #89C400;
-  padding: 22px 30px;
+  padding: 23px 30px;
   width: 260px;
   color: #FFF;
 font-family: "Public Sans", sans-serif;
@@ -4159,8 +4159,31 @@ font-family: "Public Sans", sans-serif;
   border: 1px solid #89C400;
 }
 
+
+
 .find-job-search-btn a i {
   margin-right: 10px;
+}
+
+.find-job-btn button {
+  color: #FFF !important;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  border-radius: 15px;
+  background: #89C400 !important;
+  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.50);
+  padding: 13px 30px;
+  border: 2px solid #89C400 !important;
+  transition: all .6s ease;
+  width: 100%;
+}
+
+.find-job-btn button:hover {
+  background: transparent !important;
+  color: #89C400  !important;
 }
 
 .find-job-search-btn {
@@ -5240,7 +5263,7 @@ font-family: "Public Sans", sans-serif;
   line-height: 33px;
   border: 1px solid #194D79;
   transition: all .6s ease;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px !important;
 }
 
 .job-save-share {
@@ -5267,6 +5290,10 @@ font-family: "Public Sans", sans-serif;
   justify-content: end;
   width: 100%;
   align-items: end;
+}
+
+.job-detailpg-nameflex img {
+  width: 137.856px;
 }
 
 .job-save-share a {
@@ -6084,6 +6111,7 @@ section.director-search-result hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .rating-real-journalist h3 {
@@ -6108,10 +6136,11 @@ section.employer-login-pg-sec {
 
 .employer-login-box {
   background: #fff;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
 .employer-newroom-box {
-  padding: 40px;
+  padding: 20px 40px 0px 40px;
 }
 
 
@@ -6190,11 +6219,726 @@ section.employer-login-pg-sec {
 }
 
 
+.employer-newroom-box button {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background: transparent;
+  border: none;
+}
+
+
+.employer-newroom-box button.text-white {
+  color: #89C400 !important;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-bottom: 3px solid #89C400;
+}
+
+
+.employer-dont-have-acc a {
+  color: #777;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.employer-dont-have-acc a span {
+  color: #89C400;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+
+
+
+.employer-dont-have-acc a {
+  color: #777;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.employer-dont-have-acc a span {
+  color: #89C400;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+
+.employer-dont-have-acc {
+  margin: 0px 0px 0px 40px;
+}
+
+
+.employer-newroom-box button:focus {
+  outline: none;
+}
+
+
+
+
+
 
 /*********** Employer Login Page CSS End ***********/
 
 
 
+
+/*********** Employer Register Page CSS Start ***********/
+
+
+.employerregister-field {
+  margin: 10px 0px;
+}
+
+
+.employer-register-subscription h3 {
+  color: #194D79;
+  font-family: "Public Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.employer-register-subscription {
+  padding: 30px 20px;
+  margin: 20px 0px 0px 0px;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  text-align: center;
+}
+
+.employer-choose-subscription h6 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.employer-subscription {
+  margin: 20px 0px 0px 0px;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  padding: 22px 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+
+
+.employer-subscription h5 {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0px;
+}
+
+.employer-subscription h6 {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 10px 0px;
+}
+
+.free-subscribe-four {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.employer-subscription span {
+  color: #000;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+
+.employer-save {
+  position: absolute;
+  border-radius: 8px;
+  background: #194D79;
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 2px 4px;
+  width: 80px;
+  bottom: -16px;
+}
+
+.employer-register-form form:focus {
+  outline: none;
+}
+
+
+.employer-register-btn {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0px 30px 40px;
+}
+
+.employer-register-btn a {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 5px 40px;
+  transition: all .6s ease;
+}
+
+.employer-input-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.employer-register-btn a:hover {
+  background: #194D79;
+  color: #fff;
+}
+
+
+.employer-input-checkbox label {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+
+.employer-input-checkbox input {
+  width: 18px;
+  height: 18px;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+}
+
+
+/*********** Employer Register Page CSS End ***********/
+
+
+/*********** Subscribption Page CSS Start ***********/
+
+.subcription-page-sec {
+  position: relative;
+  padding: 50px 0px;
+}
+
+.subcription-page-sec::before {
+  position: absolute;
+  content: "";
+  background: url(../img/first-banner-img.png) top center;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.subcribe-now-box {
+  padding: 40px 30px 30px 30px;
+  background: #fff;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+}
+
+.subcribe-now-box {
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-now-txt h3 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+}
+
+.subscribe-now-txt p {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 20px 0px;
+}
+
+.subscribe-now-txt ul li {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 8px 0px;
+  position: relative;
+}
+
+
+.subscribe-now-txt ul li::before {
+  position: absolute;
+  content: "";
+  color: #000;
+}
+
+.subscribe-now-txt ul li svg {
+  position: absolute;
+  left: -26px;
+  top: 12px;
+}
+
+.subcription-box {
+  border-radius: 10px;
+  border: 2px solid var(--Gray-5, #E0E0E0);
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.subcription-box h4 {
+  color: var(--194-d-79, #194D79);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 70px 0px 10px 0px;
+}
+
+.subcription-box h6 {
+  color: var(--Gray-3, #828282);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 40px 0px;
+}
+
+.subcription-box h5 {
+  color: #000;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0px 0px 80px 0px;
+}
+
+.subcription-box a {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border: 2px solid #194D79;
+  border-radius: 10px;
+  transition: all .6s ease;
+  padding: 12px 50px;
+}
+
+
+.subcription-box a:hover {
+  background: #194D79;
+  color: #fff;
+}
+
+
+.subcription-box::before {
+  position: absolute;
+  content: "Starter";
+  background: #E0E0E0;
+  width: 180px;
+  height: 40px;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0px 0px 15px 15px;
+  color: var(--Gray-3, #828282);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 6px 0px 0px 0px;
+}
+
+.recommend-box::before {
+  content: "Recomendation";
+}
+
+.best-value-box::before {
+  content: "Best Value";
+}
+
+
+.subcription-box span {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 150px;
+  border-radius: 8px;
+  background: #89C400;
+  padding: 6px 5px;
+}
+
+.new-subscription-discount {
+  margin: 20px 0px 0px 0px;
+  border-radius: 10px;
+  background: #89C400;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-subscription-discount p {
+  color: #FFF;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+
+.new-subscription-discount p span {
+  font-weight: bold;
+}
+
+.new-subscription-discount a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  border-radius: 5px;
+  border: 1px dashed #FFF;
+  padding: 10px 30px;
+}
+
+
+.station-secure-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.station-secure-box p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.station-secure-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.station-secure-box p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+  padding: 0px 90px 0px 0px;
+}
+
+.station-secure-box svg {
+  width: 50px;
+  height: 50px;
+}
+
+.subscribtion-credit-box {
+  margin: 30px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.subscription-credit p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 40px 0px 0px;
+}
+
+.subscription-credit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.subscription-credit img {
+  width: 250px;
+}
+
+
+
+/*********** Subscribption Page CSS End ***********/
+
+
+
+/*********** Submit A Station Form Page CSS Start ***********/
+
+
+.submit-station-form-sec {
+  padding: 50px 0px;
+}
+
+.submit-station-box {
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+}
+
+.submit-staion-form h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 40px 0px;
+  padding: 0px 0px 30px 0px;
+  position: relative;
+}
+
+.submit-staion-form h2::before {
+  position: absolute;
+  content: "";
+  background: #BDBDBD;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+}
+
+.submit-staion-field input {
+  width: 100%;
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  display: block;
+  border: none;
+  padding: 15px 25px;
+}
+
+.submit-staion-field label {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 6px 0px;
+}   
+
+.submit-staion-field select {
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  width: 100%;
+  display: block;
+  padding: 15px 25px;
+  border: none;
+}
+
+.submit-staion-field select option {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+.submit-staion-field select:focus {
+  outline: none;
+}
+
+.submit-staion-field input:focus {
+  outline: none;
+}
+
+.submit-staion-field {
+  margin: 0px 0px 40px 0px;
+}
+
+
+.submit-station-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-station-btn .submitbtn-dark {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: #194D79;
+  border: 1px solid #194D79;
+  transition: all .6s ease;
+}
+
+
+.submit-station-btn .submitbtn-dark:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+
+.submit-station-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-station-btn .submitbtn-dark {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: #194D79;
+  padding: 6px 40px;
+  border: 1px solid #194D79;
+  transition: all .6s ease;
+}
+
+
+.submit-station-btn .submitbtn-dark:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+.submit-station-btn .submitbtn-light {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  transition: all .6s ease;
+  padding: 6px 40px;
+}
+
+.submit-station-btn .submitbtn-light:hover {
+  background: #194D79;
+  color: #fff;
+}
+
+
+.submit-checkbox {
+  display: flex;
+  gap: 10px;
+}
+
+.submit-checkbox input {
+  width: 20px;
+  height: 25px;
+}
+
+.submit-checkbox label {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+/*********** Submit A Station Form Page CSS End ***********/
 
 
 
