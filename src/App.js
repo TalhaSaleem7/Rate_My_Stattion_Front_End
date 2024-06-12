@@ -148,8 +148,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/kabc" exact element={<KABC />} />
-
-        <Route path="/" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
         <Route path="/kabcah" exact element={<KABCah />} />
         <Route path="/kabcah1" exact element={<KABCah1 />} />
