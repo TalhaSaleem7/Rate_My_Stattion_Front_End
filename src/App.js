@@ -23,7 +23,6 @@ import Jobopening from './Jobopening/Jobopening';
 import StationSearchResult from './StationSearchResult/StationSearchResult';
 import DirectorSearchResult from './DirectorSearchResult/DirectorSearchResult';
 import MyCartSD from './MyCartSD/MyCartSD';
-import EmployerLoginPG from './EmployerLoginPG/EmployerLoginPG';
 
 
 
@@ -40,6 +39,10 @@ import Award2 from './Award/Award2';
 import Openings2 from './Openings/Openings2';
 import Station from './Station/Station';
 import Filter from './Filter/Filter';
+import EmployerLoginPg from './EmployerLoginPg/EmployerLoginPg';
+import EmployerRegisterPage from './EmployerRegisterPage/EmployerRegisterPage';
+import SubcriptionPage from './SubcriptionPage/SubcriptionPage';
+import SubmitAStationForm from './SubmitAStationForm/SubmitAStationForm';
 
 
 
@@ -56,7 +59,7 @@ function App() {
       <Router>
         <Routes>
 
-        <Route path="/" exact element={<KABC />} />
+        <Route path="/kabc" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
         <Route path="/Header" exact element={<Header />} />
 
@@ -76,7 +79,7 @@ function App() {
  
   l
         <Route path="/reportersd" exact element={<Reportersd/>} />
-        <Route path="/home" exact element={<Homepage/>} />
+        <Route path="/" exact element={<Homepage/>} />
         <Route path="/about" exact element={<About/>} />
         <Route path="/newsletter" exact element={<Newsletter/>} />
         <Route path="/newsletterarticle" exact element={<NewsletterArticle/>} />
@@ -88,7 +91,10 @@ function App() {
         <Route path="/StationSearchResult" exact element={<StationSearchResult/>} />
         <Route path="/DirectorSearchResult" exact element={<DirectorSearchResult/>} />
         <Route path="/mycart" exact element={<MyCartSD/>} />
-        <Route path="/employerlogin" exact element={<EmployerLoginPG/>} />
+        <Route path="/employerlogin" exact element={<EmployerLoginPg/>} />
+        <Route path="/employerregister" exact element={<EmployerRegisterPage/>} />
+        <Route path="/subscription" exact element={<SubcriptionPage/>} />
+        <Route path="/submitstaionform" exact element={<SubmitAStationForm/>} />
         </Routes>
       </Router>
    

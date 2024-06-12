@@ -62,7 +62,7 @@ const Viewjob = () => {
                     </span>
                   </div>
                 </Col>
-                <Col lg={3}>
+                <Col lg={4}>
                   <div className="find-job-select-box">
                     <input type="text" placeholder="Station name or category" />
                     <span>
@@ -81,10 +81,10 @@ const Viewjob = () => {
                     </span>
                   </div>
                 </Col>
-                <Col lg={3}>
+                <Col lg={2}>
                   <div className="find-job-btn">
                     <button className="btn">
-                      <RiSearchLine /> Find Jobs
+                      <RiSearchLine /> Search
                     </button>
                   </div>
                 </Col>
