@@ -44,14 +44,14 @@ import ApplyForm from "./Popups/Submitpopup_h.js/Apply_h";
 // import { Provider } from 'react-redux'; // Import Provider from react-redux
 
 
-import '../src/css/App.css';
+// import '../src/css/App.css';
 
-import Header from './Header/Header';
-import Reportersd from './reportersd/Reportersd';
-import { Homepage } from './Home/Homepage';
-import About from './About/About';
-import Newsletter from './Newsletter/Newsletter';
-import NewsletterArticle from './NewsletterArticle/NewsletterArticle';
+// import Header from './Header/Header';
+// import Reportersd from './reportersd/Reportersd';
+// import { Homepage } from './Home/Homepage';
+// import About from './About/About';
+// import Newsletter from './Newsletter/Newsletter';
+// import NewsletterArticle from './NewsletterArticle/NewsletterArticle';
 import Viewjob from './Viewjob/Viewjob';
 import Shop from './Shop/Shop';
 import Viewjobdetail from './Viewjobdetail/Viewjobdetail';
@@ -64,18 +64,18 @@ import MyCartSD from './MyCartSD/MyCartSD';
 
 
  
-import Dirctors from './Dirctors/Dirctors';
-import Award from './Award/Award';
-import Openings from './Openings/Openings';
-import Cardah from './Cardah/Cardah';
-import KABC from './KABC/KABC';
-import KABC2 from './KABC/KABC2';
-import About2 from './About/About2';
-import Dirctors2 from './Dirctors/Dirctors2';
-import Award2 from './Award/Award2';
-import Openings2 from './Openings/Openings2';
-import Station from './Station/Station';
-import Filter from './Filter/Filter';
+// import Dirctors from './Dirctors/Dirctors';
+// import Award from './Award/Award';
+// import Openings from './Openings/Openings';
+// import Cardah from './Cardah/Cardah';
+// import KABC from './KABC/KABC';
+// import KABC2 from './KABC/KABC2';
+// import About2 from './About/About2';
+// import Dirctors2 from './Dirctors/Dirctors2';
+// import Award2 from './Award/Award2';
+// import Openings2 from './Openings/Openings2';
+// import Station from './Station/Station';
+// import Filter from './Filter/Filter';
 import EmployerLoginPg from './EmployerLoginPg/EmployerLoginPg';
 import EmployerRegisterPage from './EmployerRegisterPage/EmployerRegisterPage';
 import SubcriptionPage from './SubcriptionPage/SubcriptionPage';
@@ -88,34 +88,34 @@ import SubmitAStationForm from './SubmitAStationForm/SubmitAStationForm';
 
 
 
-import Header from "./Header/Header";
-import Reportersd from "./reportersd/Reportersd";
-import { Homepage } from "./Home/Homepage";
-import About from "./About/About";
-import Newsletter from "./Newsletter/Newsletter";
-import NewsletterArticle from "./NewsletterArticle/NewsletterArticle";
-import Viewjob from "./Viewjob/Viewjob";
-import Shop from "./Shop/Shop";
-import Viewjobdetail from "./Viewjobdetail/Viewjobdetail";
-import Contactus from "./Contactus/Contactus";
-import Jobopening from "./Jobopening/Jobopening";
-import StationSearchResult from "./StationSearchResult/StationSearchResult";
-import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
-import MyCartSD from "./MyCartSD/MyCartSD";
+// import Header from "./Header/Header";
+// import Reportersd from "./reportersd/Reportersd";
+// import { Homepage } from "./Home/Homepage";
+// import About from "./About/About";
+// import Newsletter from "./Newsletter/Newsletter";
+// import NewsletterArticle from "./NewsletterArticle/NewsletterArticle";
+// import Viewjob from "./Viewjob/Viewjob";
+// import Shop from "./Shop/Shop";
+// import Viewjobdetail from "./Viewjobdetail/Viewjobdetail";
+// import Contactus from "./Contactus/Contactus";
+// import Jobopening from "./Jobopening/Jobopening";
+// import StationSearchResult from "./StationSearchResult/StationSearchResult";
+// import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
+// import MyCartSD from "./MyCartSD/MyCartSD";
 // import EmployerLoginPG from "./EmployerLoginPG/EmployerLoginPG";
 
-import Dirctors from "./Dirctors/Dirctors";
-import Award from "./Award/Award";
-import Openings from "./Openings/Openings";
-import Cardah from "./Cardah/Cardah";
-import KABC from "./KABC/KABC";
-import KABC2 from "./KABC/KABC2";
-import About2 from "./About/About2";
-import Dirctors2 from "./Dirctors/Dirctors2";
-import Award2 from "./Award/Award2";
-import Openings2 from "./Openings/Openings2";
-import Station from "./Station/Station";
-import Filter from "./Filter/Filter";
+// import Dirctors from "./Dirctors/Dirctors";
+// import Award from "./Award/Award";
+// import Openings from "./Openings/Openings";
+// import Cardah from "./Cardah/Cardah";
+// import KABC from "./KABC/KABC";
+// import KABC2 from "./KABC/KABC2";
+// import About2 from "./About/About2";
+// import Dirctors2 from "./Dirctors/Dirctors2";
+// import Award2 from "./Award/Award2";
+// import Openings2 from "./Openings/Openings2";
+// import Station from "./Station/Station";
+// import Filter from "./Filter/Filter";
 import About1 from "./About/About1";
 import Reportersd2 from "./reportersd/Reportersd2";
 import Chartah1 from "./Chart/Chartah1";
@@ -145,8 +145,7 @@ function App() {
         <Routes>
 
         <Route path="/kabc" exact element={<KABC />} />
-    <Router>
-      <Routes>
+  
         <Route path="/" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
         <Route path="/kabcah" exact element={<KABCah />} />
@@ -176,7 +175,7 @@ function App() {
         <Route path="/" exact element={<Homepage/>} />
         <Route path="/about" exact element={<About/>} />
         <Route path="/newsletter" exact element={<Newsletter/>} />
-        <Route path="/newsletterarticle" exact element={<NewsletterArticle/>} />
+        {/* <Route path="/newsletterarticle" exact element={<NewsletterArticle/>} /> */}
         <Route path="/viewjob" exact element={<Viewjob/>} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail/>} />
         <Route path="/shop" exact element={<Shop/>} />
@@ -189,8 +188,7 @@ function App() {
         <Route path="/employerregister" exact element={<EmployerRegisterPage/>} />
         <Route path="/subscription" exact element={<SubcriptionPage/>} />
         <Route path="/submitstaionform" exact element={<SubmitAStationForm/>} />
-        </Routes>
-      </Router>
+  
    
         <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/home" exact element={<Homepage />} />
@@ -241,11 +239,11 @@ function App() {
         <Route path="/home" exact element={<Homepage />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
-        <Route
+        {/* <Route
           path="/newsletterarticle"
           exact
           element={<NewsletterArticle />}
-        />
+        /> */}
         <Route path="/viewjob" exact element={<Viewjob />} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
         <Route path="/shop" exact element={<Shop />} />
@@ -262,7 +260,7 @@ function App() {
           element={<DirectorSearchResult />}
         />
         <Route path="/mycart" exact element={<MyCartSD />} />
-        <Route path="/employerlogin" exact element={<EmployerLoginPG />} />
+        {/* <Route path="/employerlogin" exact element={<EmployerLoginPG />} /> */}
       </Routes>
     </Router>
   );

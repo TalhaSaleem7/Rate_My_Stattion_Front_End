@@ -5263,7 +5263,7 @@ font-family: "Public Sans", sans-serif;
   line-height: 33px;
   border: 1px solid #194D79;
   transition: all .6s ease;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px !important;
 }
 
 .job-save-share {
@@ -5290,6 +5290,10 @@ font-family: "Public Sans", sans-serif;
   justify-content: end;
   width: 100%;
   align-items: end;
+}
+
+.job-detailpg-nameflex img {
+  width: 137.856px;
 }
 
 .job-save-share a {
