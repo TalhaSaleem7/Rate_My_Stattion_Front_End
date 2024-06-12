@@ -4,11 +4,11 @@ import { Provider } from "react-redux"; // Import Provider from react-redux
 
 import "../src/css/App.css";
 
-import Header from "./Header/Header";
-import Reportersd from "./reportersd/Reportersd";
-import { Homepage } from "./Home/Homepage";
+// import Header from "./Header/Header";
+// import Reportersd from "./reportersd/Reportersd";
+// import { Homepage } from "./Home/Homepage";
 import About from "./About/About";
-import Newsletter from "./Newsletter/Newsletter";
+// import Newsletter from "./Newsletter/Newsletter";
 
 import Dirctors from "./Dirctors/Dirctors";
 import Award from "./Award/Award";
@@ -36,13 +36,13 @@ import StationAboutForm from "./Popups/Station_profile_popups/Stationabout_h";
 import NewsDirectorForm from "./Popups/Station_profile_popups/Newsdirector_h";
 import AwardForm from "./Popups/Station_profile_popups/Award_h";
 import JobOpeningForm from "./Popups/Station_profile_popups/Jobopening_h";
-import SubmitNewsDirectorForm from "./Popups/Submitpopup_h.js/SubmitDirector_h";
-import ApplyForm from "./Popups/Submitpopup_h.js/Apply_h";
+import SubmitNewsDirectorForm from "./Popups/Submitpopup_h/SubmitDirector_h";
+import ApplyForm from "./Popups/Submitpopup_h/Apply_h";
 
 import Header from "./Header/Header";
 import Reportersd from "./reportersd/Reportersd";
 import { Homepage } from "./Home/Homepage";
-import About from "./About/About";
+// import About from "./About/About";
 import Newsletter from "./Newsletter/Newsletter";
 import NewsletterArticle from "./NewsletterArticle/NewsletterArticle";
 import Viewjob from "./Viewjob/Viewjob";
@@ -55,18 +55,18 @@ import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
 import MyCartSD from "./MyCartSD/MyCartSD";
 import EmployerLoginPG from "./EmployerLoginPG/EmployerLoginPG";
 
-import Dirctors from "./Dirctors/Dirctors";
-import Award from "./Award/Award";
-import Openings from "./Openings/Openings";
-import Cardah from "./Cardah/Cardah";
-import KABC from "./KABC/KABC";
-import KABC2 from "./KABC/KABC2";
-import About2 from "./About/About2";
-import Dirctors2 from "./Dirctors/Dirctors2";
-import Award2 from "./Award/Award2";
-import Openings2 from "./Openings/Openings2";
-import Station from "./Station/Station";
-import Filter from "./Filter/Filter";
+// import Dirctors from "./Dirctors/Dirctors";
+// import Award from "./Award/Award";
+// import Openings from "./Openings/Openings";
+// import Cardah from "./Cardah/Cardah";
+// import KABC from "./KABC/KABC";
+// import KABC2 from "./KABC/KABC2";
+// import About2 from "./About/About2";
+// import Dirctors2 from "./Dirctors/Dirctors2";
+// import Award2 from "./Award/Award2";
+// import Openings2 from "./Openings/Openings2";
+// import Station from "./Station/Station";
+// import Filter from "./Filter/Filter";
 import About1 from "./About/About1";
 import Reportersd2 from "./reportersd/Reportersd2";
 import Chartah1 from "./Chart/Chartah1";
@@ -160,9 +160,9 @@ function App() {
         <Route path="/Cooperah" exact element={<Cooperah />} />
         <Route path="/Cooperah1" exact element={<Cooperah1 />} />
 
-        <Route path="/reportersd" exact element={<Reportersd />} />
+        {/* <Route path="/reportersd" exact element={<Reportersd />} /> */}
         <Route path="/reportersd2" exact element={<Reportersd2 />} />
-        <Route path="/home" exact element={<Homepage />} />
+        {/* <Route path="/home" exact element={<Homepage />} /> */}
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
         <Route
