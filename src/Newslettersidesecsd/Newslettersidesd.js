@@ -9,11 +9,7 @@ import sidenewsletterimg3 from "../img/side-newsletter-img-3.png"
 const Newslettersidesd = () => {
     return (
         <>
-            <div class="newsletter-side-sec">
-                <div class="newsletter-side-head">
-                    <h3>Newsletter</h3>
-                    <a href="#">See all</a>
-                </div>
+          
                 <div class="row">
                     <div class="col-lg-12 col-md-6">
                         <div class="side-newsletter-box">
@@ -47,17 +43,7 @@ const Newslettersidesd = () => {
                         </div>
                     </div>
                 </div>
-                <div class="newsletter-follow-box">
-                    <h4>Follow RMS</h4>
-                    <div class="follow-us-rate">
-                        <ul>
-                            <li><a href="#"><i class="ri-facebook-fill"></i> @RateMyStation </a></li>
-                            <li><a href="#"><i class="ri-instagram-line"></i> @RateMyStation </a></li>
-                            <li><a href="#"><i class="ri-twitter-fill"></i>  @RateMyStation </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                
         </>
     )
 }

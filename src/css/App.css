@@ -1,22 +1,24 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  background-color: #F5F5F5;
+  background: #F5F5F5 !important;
 }
 
 section.KABC-ah {
   WIDTH: 100%;
   height: 295px;
-background-image: url(../img/BG.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url(../img/BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 90px;
 }
 
@@ -66,7 +68,9 @@ h1,h2,h3,h4,h5,p,a {
 }
 
 .KABC-tital-ah span {
-  display: flex;align-items: center;gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .KABC-tital-ah span h2 {
@@ -75,7 +79,8 @@ h1,h2,h3,h4,h5,p,a {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 101.667% */
+  line-height: 30.5px;
+  /* 101.667% */
 }
 
 .KABC-tital-ah p {
@@ -84,7 +89,8 @@ h1,h2,h3,h4,h5,p,a {
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 118.182% */
+  line-height: 26px;
+  /* 118.182% */
   display: flex;
   align-items: center;
   gap: 14px;
@@ -92,11 +98,12 @@ h1,h2,h3,h4,h5,p,a {
 
 .KABC-tital-ah span p {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .KABC-tital-ah {
@@ -125,11 +132,12 @@ span.See button {
   width: 100%;
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
 }
 
 span.Info {
@@ -149,12 +157,13 @@ span.Info button {
 button.Contact-ah {
   color: #194D79;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   border: 2px solid #194d79 !important;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   border-radius: 8px;
   padding: 5px 18px !important;
 }
@@ -165,7 +174,8 @@ span.Info button svg {
 }
 
 section.About-ah {
-  width: 100%;padding: 99px 0px;
+  width: 100%;
+  padding: 99px 0px;
 }
 
 .About-main-ah {
@@ -176,13 +186,13 @@ section.About-ah {
 
 .About-main-box-1-ah {
 
-width: 68%;
+  width: 68%;
 
-display: flex;
+  display: flex;
 
-flex-direction: column;
+  flex-direction: column;
 
-gap: 28px;
+  gap: 28px;
 }
 
 .About-main-box-2-tital-ah {
@@ -199,7 +209,7 @@ gap: 28px;
 
 .About-main-box-2-tital-ah h2 {
   color: var(--000000, #000);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -209,7 +219,7 @@ font-family: "Public Sans", sans-serif;
 .About-main-box-2-tital-ah a {
   color: var(--194-d-79, #194D79);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -227,21 +237,23 @@ font-family: "Public Sans", sans-serif;
 
 .About-main-card-1-ah h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .About-main-card-1-ah p {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   padding: 20px 0px 15px 0px;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .About-main-card-1-ah hr {
@@ -267,20 +279,22 @@ font-family: "Public Sans", sans-serif;
 
 .Industry-ah span h2 {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30.5px; /* 190.625% */
+  line-height: 30.5px;
+  /* 190.625% */
 }
 
 .Industry-ah span p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 0px;
 }
 
@@ -317,17 +331,19 @@ font-family: "Public Sans", sans-serif;
 }
 
 .Brooklyn-Simmons-tital {
-  display: flex;flex-direction: column;gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .Brooklyn-Simmons-tital span p {
   padding: 0px;
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; 
+  line-height: 26px;
 }
 
 .Brooklyn-Simmons-tital span {
@@ -338,11 +354,11 @@ font-family: "Public Sans", sans-serif;
 
 .Brooklyn-Simmons-tital h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; 
+  line-height: 26px;
 }
 
 .Brooklyn-Simmons-tital span a {
@@ -352,7 +368,7 @@ font-family: "Public Sans", sans-serif;
   padding: 8px;
   color: var(--Gray-3, #828282);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -369,11 +385,11 @@ font-family: "Public Sans", sans-serif;
   color: #194D79;
   text-align: center;
   padding: 5px 50px;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; 
+  line-height: 33px;
 }
 
 .latest-comment-txt-input-box {
@@ -443,20 +459,22 @@ font-family: "Public Sans", sans-serif;
 
 .Award-box-tital-ah h2 {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Award-box-tital-ah p {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 10px 0px;
 }
 
@@ -471,7 +489,7 @@ font-family: "Public Sans", sans-serif;
 .Award-a a {
   color: var(--194-d-79, #194D79);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -522,20 +540,22 @@ font-family: "Public Sans", sans-serif;
 
 .Job-list-1-ah span h2 {
   color: var(--Gray-1, #333);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 108.929% */
+  line-height: 30.5px;
+  /* 108.929% */
 }
 
 .Job-list-1-ah span p {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
   padding: 4px 0px;
 }
 
@@ -558,11 +578,12 @@ font-family: "Public Sans", sans-serif;
 .Job-list-2-ah span p {
   padding: 0px;
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Job-list-2-ah span svg {
@@ -587,7 +608,7 @@ font-family: "Public Sans", sans-serif;
   gap: 10px;
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -600,7 +621,7 @@ font-family: "Public Sans", sans-serif;
   align-items: center;
   gap: 10px;
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -647,11 +668,12 @@ font-family: "Public Sans", sans-serif;
 
 .Recommend-card-tital-ah h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 169.444% */
+  line-height: 30.5px;
+  /* 169.444% */
   text-transform: capitalize;
 }
 
@@ -664,18 +686,19 @@ font-family: "Public Sans", sans-serif;
   border-radius: 15px;
   margin: 5px 0px 15px 0px;
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Recommend-card-tital-ah button {
   width: 100%;
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -715,58 +738,65 @@ font-family: "Public Sans", sans-serif;
 
 
 .navtabs {
-display: flex;
-position: relative;
-align-items: center;
-padding-top: 30px;
-border-top: 1px solid #E0E0E0;
-margin-top: 30px;
-gap: 70px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid #E0E0E0;
+  margin-top: 30px;
+  gap: 70px;
 }
+
 .navtab {
-cursor: pointer;
-transition: color 0.3s;
-padding-bottom: 24px;
-color: var(--000000, #000);
-text-align: center;
-font-family: "Public Sans", sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 130% */
+  cursor: pointer;
+  transition: color 0.3s;
+  padding-bottom: 24px;
+  color: var(--000000, #000);
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* 130% */
 }
+
 .navtab:hover {
-color: #89C400;
+  color: #89C400;
 }
+
 .navtab.active {
-color: #89C400;
-font-weight: 600;
+  color: #89C400;
+  font-weight: 600;
 }
+
 .underline {
-position: absolute;
-bottom: 0px;
-height: 3px;
-background: #89C400;
-transition: left 0.3s ease, width 0.3s ease;
+  position: absolute;
+  bottom: 0px;
+  height: 3px;
+  background: #89C400;
+  transition: left 0.3s ease, width 0.3s ease;
 }
+
 .content {
-display: none;
-width: 100%;
+  display: none;
+  width: 100%;
 }
+
 .content.active {
-display: block;
+  display: block;
 }
 .footer {
-position: absolute;
-bottom: 10px;
-right: 10px;
-font-size: 14px;
-color: #000;
-transition: color 0.3s ease;
-font-family: "Public Sans", sans-serif;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #000;
+  transition: color 0.3s ease;
+  font-family: "Public Sans", sans-serif;
 }
 .footer a:hover {
-color: linear-gradient(145deg, #89C400, #89C400);
+  color: linear-gradient(145deg, #89C400, #89C400);
 }
 .ah-spas {
   padding-bottom: 0px;
@@ -792,6 +822,7 @@ span.edite-icon {
   align-items: center;
   gap: 15px;
 }
+
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
@@ -830,7 +861,8 @@ section.Statistic-ah {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .Overall-Statistic-ah ul {
@@ -883,7 +915,8 @@ section.Statistic-ah {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
   padding-bottom: 20px;
 }
 
@@ -936,7 +969,8 @@ span.\34 5 h2 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 108.333% */
+  line-height: 26px;
+  /* 108.333% */
 }
 
 span.\34 5 p {
@@ -995,9 +1029,11 @@ span.persent h3 {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   padding: 0px;
 }
+
 .bar-pogres-box-ah {
   width: 100%;
   padding-top: 30px;
@@ -1032,7 +1068,8 @@ span.persent h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 108.333% */
+  line-height: 26px;
+  /* 108.333% */
 }
 
 .pogras-card-ah span p {
@@ -1095,7 +1132,8 @@ span.parsent-icon p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
   text-align: center;
 }
 
@@ -1126,7 +1164,8 @@ span.parsent-icon p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
 }
 
 .Draft-ah {
@@ -1164,7 +1203,8 @@ span.parsent-icon p {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .Draft-ah span p {
@@ -1174,8 +1214,10 @@ span.parsent-icon p {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
+
 .About-main-card-1-hello-ah {
   width: 100%;
   display: flex;
@@ -1200,7 +1242,7 @@ span.parsent-icon p {
 .Hire-ah-box h2 {
   color: var(--ffffff, #FFF);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -1210,11 +1252,12 @@ font-family: "Public Sans", sans-serif;
 .Hire-ah-box p {
   color: #FFF;
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 31.5px; /* 157.5% */
+  line-height: 31.5px;
+  /* 157.5% */
   padding: 30px 35px;
 }
 
@@ -1226,11 +1269,12 @@ font-family: "Public Sans", sans-serif;
   border: 1px solid #FFF;
   color: var(--000000, #000);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 37.5px; /* 187.5% */
+  line-height: 37.5px;
+  /* 187.5% */
 }
 
 .job-ah-post {
@@ -1242,7 +1286,7 @@ font-family: "Public Sans", sans-serif;
 
 .job-ah-post h2 {
   color: var(--000000, #000);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -1251,7 +1295,7 @@ font-family: "Public Sans", sans-serif;
 
 .job-ah-post h2 span {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -1275,11 +1319,12 @@ font-family: "Public Sans", sans-serif;
 
 .job-ah-Filter-card p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .job-ah-Filter-card select {
@@ -1289,16 +1334,22 @@ font-family: "Public Sans", sans-serif;
   outline: none;
   padding: 10px 15px;
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
   width: 100%;
 }
 
 .Website-ah-box {
-  width: 100%;display: flex;flex-direction: column;align-items: center;gap: 30px;padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
 }
 
 
@@ -1329,7 +1380,7 @@ font-family: "Public Sans", sans-serif;
 
 .Website-ah-card span h3 {
   color: #9BDB08;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -1338,11 +1389,12 @@ font-family: "Public Sans", sans-serif;
 
 .Website-ah-card span h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 138.636% */
+  line-height: 30.5px;
+  /* 138.636% */
 }
 
 .width-give {
@@ -1361,11 +1413,12 @@ font-family: "Public Sans", sans-serif;
 
 .Popular-ti-ah h2 {
   color: var(--000000, #000);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Popular-ti-ah {
@@ -1384,11 +1437,12 @@ font-family: "Public Sans", sans-serif;
 .Popular-ti-ah-btn-box button {
   color: var(--Gray-3, #828282);
   text-align: center;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   border-radius: 10px;
   background: var(--Gray-6, #F2F2F2);
   border: none;
@@ -1412,7 +1466,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 183.333% */
+  line-height: 33px;
+  /* 183.333% */
   border: 1px solid #194d79;
   padding: 5px 45px;
 }
@@ -1456,7 +1511,7 @@ font-family: "Public Sans", sans-serif;
 
 .Angeles-logo-ah img {
   width: 100%;
- 
+
 }
 
 .Angeles-logo-side-box span h2 {
@@ -1465,7 +1520,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .Angeles-logo-side-box span p {
@@ -1474,7 +1530,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Angeles-ah-icon-side {
@@ -1490,6 +1547,7 @@ font-family: "Public Sans", sans-serif;
   align-items: center;
   gap: 34px;
 }
+
 .Jacob-card-ah-box {
   width: 100%;
   display: flex;
@@ -1534,7 +1592,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 100% */
+  line-height: 26px;
+  /* 100% */
 }
 
 .Director-ah-boxing-logo span p {
@@ -1543,7 +1602,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Director-ah-boxing p {
@@ -1583,7 +1643,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .Director-ah-boxing-list-logo span h2 {
@@ -1592,7 +1653,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Director-ah-boxing-list-span h2 {
@@ -1601,7 +1663,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 
@@ -1611,7 +1674,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   text-align: end;
 }
 
@@ -1634,8 +1698,10 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
 }
+
 img.width-hegit-ah {
   width: 10px;
   height: 10px;
@@ -1645,13 +1711,15 @@ button.interview-ah {
   background: #194D79;
   color: #fff;
 }
+
 .KABC-tital-ah p span {
   color: var(--194-d-79, #194D79);
   font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 118.182% */
+  line-height: 26px;
+  /* 118.182% */
 }
 
 .Office-ah-box {
@@ -1677,7 +1745,8 @@ button.interview-ah {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Office-ah-span p {
@@ -1686,7 +1755,8 @@ button.interview-ah {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   padding: 0px;
 }
 
@@ -1709,40 +1779,44 @@ button.interview-ah {
 
 .Current-ah-job-card span h2 {                
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Current-ah-job-card span h3 {
   color: var(--89-c-400, #89C400);
   text-align: right;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Current-ah-job-card span p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   padding: 0px;
 }
 
 .Current-ah-job p {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 12px 0px;
 }
 
@@ -1764,7 +1838,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Skills-ah-box p {
@@ -1773,9 +1848,11 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
-  padding: 10px 0px  0px 0px;
+  line-height: 26px;
+  /* 162.5% */
+  padding: 10px 0px 0px 0px;
 }
+
 .Education-ah-boxing {
   padding-top: 25px;
   width: 100%;
@@ -1804,29 +1881,32 @@ font-family: "Public Sans", sans-serif;
 
 .Education-side-ah h2 {
   color: #000;
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Education-side-ah h3 {
   color: var(--194-d-79, #194D79);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Education-side-ah p {
   color: var(--Gray-3, #828282);
-font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   padding: 0px;
 }
 
@@ -1837,7 +1917,8 @@ font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Job-Openings-card {
@@ -1866,20 +1947,22 @@ font-family: "Public Sans", sans-serif;
 
 .Job-Openings-list-1 span h2 {
   color: #000;
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Job-Openings-list-1 span p {
   color: var(--194-d-79, #194D79);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .Job-Openings-list-2 {
@@ -1900,11 +1983,12 @@ font-family: "Public Sans", sans-serif;
 
 .Job-Openings-list-2 span p {
   color: var(--194-d-79, #194D79);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .Job-Openings-list-2 span svg {
@@ -1930,7 +2014,7 @@ font-family: "Public Sans", sans-serif;
   border: 1px solid #89C400;
   padding: 8px 12px;
   color: var(--ffffff, #FFF);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -1942,7 +2026,7 @@ font-family: "Public Sans", sans-serif;
   align-items: center;
   gap: 5px;
   color: var(--Gray-3, #828282);
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -1994,20 +2078,22 @@ font-family: "Public Sans", sans-serif;
 
 .Applied-ah-list-1 span h2 {
   color: var(--Gray-1, #333);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 108.929% */
+  line-height: 30.5px;
+  /* 108.929% */
 }
 
 .Applied-ah-list-1 span p {
   color: var(--Gray-3, #828282);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
   padding-top: 4px;
 }
 
@@ -2038,11 +2124,12 @@ font-family: "Public Sans", sans-serif;
 
 .Applied-ah-list-2 span p {
   color: var(--194-d-79, #194D79);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Applied-ah-list-3 {
@@ -2059,7 +2146,7 @@ font-family: "Public Sans", sans-serif;
   background: transparent;
   padding: 10px 30px;
   color: var(--89-c-400, #89C400);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -2068,7 +2155,7 @@ font-family: "Public Sans", sans-serif;
 
 .Applied-ah-list-3 a {
   color: var(--Gray-3, #828282);
-      font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -2093,6 +2180,7 @@ button.change-red {
   color: #EB5757;
   border: 1px solid #EB5757;
 }
+
 .Schedule-ah-card {
   width: 100%;
   display: flex;
@@ -2135,21 +2223,23 @@ button.change-red {
 
 .Schedule-ah-list-1 span p {
   color: var(--Gray-3, #828282);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 0px;
 }
 
 .Schedule-ah-card-box h2 {
   color: #000;
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 39px; /* 139.286% */
+  line-height: 39px;
+  /* 139.286% */
   width: 90%;
   padding: 20px 0px 30px 0px;
 }
@@ -2180,31 +2270,34 @@ button.change-red {
 
 .Soul-icon-box span p {
   color: var(--Gray-3, #828282);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Schedule-ah-list-3 a {
   color: var(--Gray-3, #828282);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-decoration: none;
 }
 
 .Schedule-ah-list-3 a span {
   color: var(--194-d-79, #194D79);
-   font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
 }
+
 .more-class {
   padding: 40px 0px 40px 40px;
 }
@@ -2554,10 +2647,8 @@ li {
 }
 
 a {
-  text-decoration-line: none;
+  text-decoration-line: none !important;
 }
-
-
 
 
 /*********** First Banner Section CSS Start ***********/
@@ -3461,7 +3552,7 @@ font-family: "Public Sans", sans-serif;
   line-height: 37.5px;
   color: #000;
   background: #fff;
-  padding: 10px 30px;
+  padding: 10px 40px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   border: 1px solid #fff;
@@ -3708,7 +3799,7 @@ section.your-journalism-sec {
 .your-journalism-txt {
   width: 40%;
   background: #fff;
-  padding: 70px 50px;
+  padding: 83px 50px;
 }
 
 .your-journalism-txt h3 {
@@ -4669,7 +4760,7 @@ font-family: "Public Sans", sans-serif;
   color: #828282;
 }
 
-.contact-form-btn a {
+.contact-form-btn button {
   color: #194D79;
   text-align: center;
 font-family: "Public Sans", sans-serif;
@@ -4679,7 +4770,7 @@ font-family: "Public Sans", sans-serif;
   line-height: 33px;
   border-radius: 10px;
   border: 2px solid #194D79;
-  padding: 12px 60px;
+  padding: 8px 60px;
   transition: all .6s ease;
 }
 
@@ -4687,9 +4778,13 @@ font-family: "Public Sans", sans-serif;
   margin: 30px 0px 0px 0px;
 }
 
-.contact-form-btn a:hover {
+.contact-form-btn button:hover {
   background: #194D79;
   color: #fff;
+}
+
+.contact-form-btn button:focus {
+  outline: none;
 }
 
 
@@ -5145,6 +5240,7 @@ font-family: "Public Sans", sans-serif;
   line-height: 33px;
   border: 1px solid #194D79;
   transition: all .6s ease;
+  margin: 0px 0px 5px 0px;
 }
 
 .job-save-share {
@@ -5359,6 +5455,747 @@ font-family: "Public Sans", sans-serif;
 /******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start ****************** */
 
 
+/*********** Job Opening Page CSS Start ***********/
+
+
+.job-opening-sec {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.job-opening-sec::before {
+  position: absolute;
+  content: "";
+  background: url(../img/first-banner-img.png) no-repeat top center;
+  background-size: cover;
+  height: 240px;
+  width: 100%;
+  z-index: -1;
+  top: 0px;
+}
+
+
+.job-openingpg-txt h5 {
+  font-family: "Public Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  color: #828282;
+}
+
+.job-openingpg-txt h3 {
+  font-family: "Public Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  color: #194D79;
+}
+
+.job-openingpg-txt h3 svg {
+  color: #89C400;
+}
+
+.job-openingpg-txt h6 {
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  color: #194D79;
+}
+
+.themelight {
+  background: transparent !important;
+  color: #194D79 !important;
+}
+
+.themelight:hover {
+  background: #194D79 !important;
+  color: #fff !important;
+}
+
+.newsletter-article-search h4 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-article-search h4 p {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 
 
+/*********** Job Opening Page CSS End ***********/
+
+
+
+
+/*********** Station Search Result Page CSS Start ***********/
+
+
+
+
+.station-search-result-txt h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.station-search-result-txt p {
+  color: var(--Gray-2, #4F4F4F);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.station-search-result-txt p span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.station-search-result-txt {
+  padding: 40px 0px;
+}
+
+.rms-profile-box {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  margin: 0px 0px 30px 0px;
+}
+
+.rms-profile-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rms-kabc-txt h3 {
+  color: var(--194-d-79, #194D79);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+}
+
+.rms-kabc-txt h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 20px 0px;
+}
+
+.rms-kabc-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rms-kabc-btn a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: #194D79;
+  padding: 8px 40px;
+  transition: all .6s ease;
+  border: 1px solid #194D79;
+}
+
+.rms-kabc-btn a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+.rms-kabc-txt h3 svg {
+  color: #89C400;
+}
+
+.rms-rating-review p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 5px 0px;
+}
+
+
+.rms-rating-review p span {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+
+.rms-dots-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.rms-dots-icon span {
+  color: #828282;
+  font-size: 24px;
+}
+
+.seeprofile-box-btn a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 40px;
+  background: var(--194-d-79, #194D79);
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
+  padding: 12px 35px;
+  border: 1px solid #194D79;
+  transition: all .6s ease;
+}
+
+.seeprofile-box-btn a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+.search-station-sec {
+  padding: 50px 0px 0px 0px;
+}
+
+.find-station-looking {
+  background: url(../img/findstations-img.png) no-repeat top center;
+  background-size: cover;
+  padding: 100px 30px 100px 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+.find-station-looking h4 {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 20px 0px;
+}
+
+.find-station-looking p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.5px;
+  margin: 0px 0px 30px 0px;
+}
+
+
+.find-station-looking a {
+  color: var(--000000, #000);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37.5px;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  transition: all .6s ease;
+}
+
+.find-station-looking a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.seeprofile-box-btn {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+
+
+/*********** Station Search Result Page CSS End ***********/
+
+
+
+/*********** News Director Search Result Page CSS Start ***********/
+
+.news-director-user-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.news-director-card-txt h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+}
+
+.news-director-card-txt p {
+  color: #777;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.news-director-card-txt p span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.news-director-card {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 30px 30px;
+  border-radius: 20px;
+  margin: 0px 0px 30px 0px;
+}
+
+.news-director-user-card img {
+  width: 100px;
+}
+
+.news-director-detail-btn a {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.news-director-detail-btn a {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border: 1px solid #194D79;
+  padding: 12px 50px;
+  border-radius: 10px;
+}
+
+.news-director-detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+section.director-search-result {
+  margin: 0px 0px 30px 0px;
+}
+
+section.director-search-result hr {
+  margin: 50px 0px 0px 0px;
+}
+
+
+.americon-prod-card-txt h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 30px 0px;
+}
+
+.americon-product-card-sec {
+  padding: 50px 0px;
+}
+
+.product-quality-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 50px 10px 0px;
+}
+
+
+.mycart-qualitytotal {
+  display: flex;
+  gap: 100px;
+}
+
+.product-quality-total h4 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+
+
+/*********** News Director Search Result Page CSS End ***********/
+
+
+
+/*********** My Cart Page CSS Start ***********/
+
+
+
+.americon-prod-cart {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 25px 20px;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  margin: 10px 0px 20px 0px;
+}
+
+
+.cart-counter {
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  padding: 10px 25px;
+}
+
+
+.cart-counter input {
+  width: 60px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+
+
+.americon-prod-cart h3 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  margin: 0px;
+  width: 210px;
+}
+
+.cart-counter span {
+  color: #828282;
+}
+
+.cart-counter input:focus {
+  outline: none;
+}
+
+.americon-prod-cart h4 {
+  color: #000;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+
+.mycart-order-summary {
+  border-radius: 20px;
+  background: #fff;
+  padding: 30px;
+  margin: 60px 0px 0px 0px;
+}
+
+.mycart-order-summary h4 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  margin: 0px 0px 30px 0px;
+}
+
+.ordersummary-subtotal h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.ordersummary-subtotal p {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.ordersummary-subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
+}
+
+.mycart-order-summary input {
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+}
+
+.mycart-order-summary input:focus {
+  outline: none;
+}
+
+.mycart-order-summary input::placeholder {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+.prod-order-total-txt {
+  margin: 30px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prod-order-total-txt h5 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30.5px;
+  margin: 0px;
+}
+
+.mycart-order-summary a {
+  color: #194D79;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 6px 20px;
+  margin: 30px 0px 0px 0px;
+  transition: all .6s ease;
+}
+
+.mycart-order-summary a:hover {
+  background: #194D79;
+  color: #fff;
+
+}
+
+
+/*********** My Cart Page CSS ENd ***********/
+
+
+
+
+/*********** Employer Login Page CSS Start ***********/
+
+
+.rating-real-journalist {
+  background: url(../img/employer-halfpg.png) no-repeat top center;
+  background-size: cover;
+  padding: 205px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-real-journalist h3 {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+section.employer-login-pg-sec {
+  padding: 50px 0px;
+}
+
+
+.rating-real-journalist img {
+  margin: 0px 0px 10px 0px;
+}
+
+.employer-login-box {
+  background: #fff;
+}
+
+.employer-newroom-box {
+  padding: 40px;
+}
+
+
+.employer-inputfield input {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--Gray-6, #F2F2F2);
+  border-radius: 10px;
+  border: none;
+}
+
+.employer-inputfield {
+  margin: 30px 0px;
+}
+
+.employer-inputfield label {
+  margin: 0px 0px 10px 0px;
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.employer-inputfield input::placeholder {
+  color: #777;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+.employer-inputfield input:focus {
+  outline: none;
+}
+
+
+.employer-login-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employerloginbtn {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 4px 50px;
+  transition: all .6s ease;
+}
+
+.employerloginbtn:hover {
+  background: #194D79;
+  color: #fff;
+}
+
+
+.employerforgotbtn {
+  color: #777;
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+
+/*********** Employer Login Page CSS End ***********/
+
+
+
+
+
+
+/******************* Shahdin Pages CSS End *******************/

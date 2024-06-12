@@ -12,7 +12,7 @@ import ProdImage7 from '../img/ratemystation-prod-img-7.png';
 import ProdImage8 from '../img/ratemystation-prod-img-8.png';
 import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
 import Lookingforwork from '../Lookingforwork/Lookingforwork';
-
+import {RiFacebookFill, RiInstagramLine, RiTwitterFill } from 'react-icons/ri';
 
   
 
@@ -60,7 +60,23 @@ export const Homepage = () => {
               </div>
             </Col>
             <Col lg={4}>
-              <Newslettersidesd />
+            <div class="newsletter-side-sec">
+                <div class="newsletter-side-head">
+                    <h3>Newsletter</h3>
+                    <a href="#">See all</a>
+                </div> 
+                <Newslettersidesd />
+                <div class="newsletter-follow-box">
+                    <h4>Follow RMS</h4>
+                    <div class="follow-us-rate">
+                        <ul>
+                        <li><a href="#"><RiFacebookFill /> @RateMyStation </a></li>
+                        <li><a href="#"><RiInstagramLine /> @RateMyStation </a></li>
+                        <li><a href="#"><RiTwitterFill />  @RateMyStation </a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
             </Col>
           </Row>
         </Container>
@@ -196,7 +212,7 @@ export const Homepage = () => {
     </section>
 
 
-          <Lookingforwork />
+    <Lookingforwork />
 
 
     </>
