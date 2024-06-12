@@ -12,7 +12,7 @@ return(
 
 
 
-    <div>
+    <>
                                  <div class="About-main-card-1-ah">
                       <span class="edite">
                         <h2>Station’s Ratings</h2>
@@ -103,7 +103,7 @@ return(
     
                         </div>
 
-    </div>
+    </>
     
 )
 
