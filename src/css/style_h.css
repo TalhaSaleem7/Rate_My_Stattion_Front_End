@@ -80,7 +80,6 @@ ul {
 .account--setting--right--h--a,
 .setting--subscribe--card--two h1,
 .main--card--two--container h5,
-.faq--work--card--title--h a,
 .faq--work--card--info p,
 .news--director--img--h a,
 .award--img--h a,
@@ -228,7 +227,9 @@ ul {
   background: #ffffff;
   position: relative;
 }
-
+label {
+  font-size: var(--font-size-16);
+}
 .about--close--h,
 .experience--close--h {
   width: 18.8px;
@@ -485,11 +486,16 @@ Account Setting
 }
 .verify--image--container {
   gap: 20px;
-  padding-top: 4px;
+  padding-top: 20px;
   padding-bottom: 30px;
+  align-items: center;
+}
+.setting--verify--img--container {
+  display: flex;
+  gap: 20px;
 }
 .setting--verify--img {
-  width: 9.9%;
+  width: 75.8px;
   cursor: pointer;
 }
 
@@ -593,6 +599,7 @@ FAQ Search Styles
 }
 .faq--search--result--h .breadcrumb-item.active {
   color: #6c757d;
+  font-size: var(--font-size-16);
 }
 .faq--container--left-h .faq--card--container--h {
   padding: 24px 0px 19px 30px;
@@ -610,6 +617,9 @@ FAQ Search Styles
 .faq--card--container--h h3 {
   font-size: var(--font-size-18);
   padding-bottom: 11px;
+}
+.faq--card--container--h p {
+  font-size: var(--font-size-16);
 }
 
 .faq--card--container--h p,
@@ -773,6 +783,10 @@ FAQ Search Styles
   color: black;
   border: none;
 }
+.faq--detail--card--two .faq--detail--card--two--btn:hover {
+  background-color: #6c757d;
+  color: white;
+}
 
 .faq--search--detail--container-alt-2 {
   padding: 96px 0px 36px 0px;
@@ -818,12 +832,20 @@ FAQ Terms Styles
 
   position: relative;
 }
+
 .faq--work--card--h::before {
   content: url(../img/work_card_dots_h.png);
   position: absolute;
   display: block;
   top: 5%;
   right: 4%;
+}
+.faq--work--card--list ul,
+.faq--work--card--list li {
+  list-style: circle;
+}
+.faq--work--card--list ul {
+  padding-left: 1.1rem;
 }
 .faq--work--card--pad--h {
   padding-left: 0;
@@ -844,6 +866,7 @@ FAQ Terms Styles
 
 .faq--work--card--title--h a {
   font-size: var(--font-size-16);
+  color: #194d79;
 }
 
 .faq--work--card--body--h {
@@ -867,9 +890,7 @@ FAQ Terms Styles
 .faq--work--card--h p {
   margin-bottom: 0;
 }
-.work--list--li {
-  gap: 13px;
-}
+
 .faq--work--list--img {
   width: 7px;
   min-width: 7px;
@@ -1263,6 +1284,9 @@ Media Query
   .faq--main--card--two .main--card--two--container {
     max-width: 460px;
   }
+  .account--profile--img--h--cont {
+    width: 140px;
+  }
 }
 @media (max-width: 991px) {
   :root {
@@ -1278,7 +1302,9 @@ Media Query
   .faq--work--card--pad--h {
     max-width: 100%;
   }
-
+  .faq--search--detail--h button {
+    background-color: #828282;
+  }
   .account--setting--left--h {
     border-right: none;
     border-bottom: 1px solid #bdbdbd;
@@ -1318,8 +1344,12 @@ Media Query
     --font-size-20: 1.1rem;
     --font-size-24: 1.15rem;
     --font-size-28: 1.25rem;
-    --font-size-36: 1.75rem;
+    --font-size-36: 1.7rem;
     --font-size-48: 2rem;
+  }
+  .verify--image--container {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .account--profile--img--h {
     gap: 20px;
@@ -1337,29 +1367,78 @@ Media Query
     width: 90%;
   }
 }
+@media (max-width: 576px) {
+  :root {
+    --font-size-18: 0.95rem;
+    --font-size-20: 1rem;
+  }
+  .faq--term--card--one,
+  .faq--term--detail--h,
+  .work--forus--title--h,
+  .faq--search--detail--h,
+  .faq--detail--card--one,
+  .faq--search--detail--cont--h .faq--detail--related--title {
+    text-align: center;
+  }
+
+  .faq--detail--card--one--bottom--h {
+    flex-direction: column;
+  }
+
+  .faq--search--detail--h h1 {
+    padding-bottom: 20px;
+  }
+  .faq--search--detail--h form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .faq--search--detail--h form button {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 404px) {
   :root {
     --font-size-14: 0.7rem;
     --font-size-16: 0.8rem;
     --font-size-18: 0.9rem;
-    --font-size-20: 1.1rem;
-    --font-size-24: 1rem;
-    --font-size-28: 1.1rem;
+    --font-size-20: 1rem;
+    --font-size-24: 1.1rem;
+    --font-size-28: 1.125rem;
     --font-size-36: 1.3rem;
     --font-size-48: 1.7rem;
   }
+  .verify--image--container {
+    align-items: center;
+  }
+  .setting--verify--img {
+    width: 60px;
+  }
+  .row .account--setting--right--h,
+  .experience--address--inp--h,
+  .experience--email--inp--h,
+  .experience--job--inp--h,
+  .skills--inp--h {
+    text-align: center;
+  }
+
+  .faq--detail--card--one--bottom--h .about--btn--h--alt {
+    padding: 0.4rem 0rem;
+  }
+  .faq--detail--card--one--bottom--h {
+    gap: 20px;
+  }
+
   .faq--container--left-h .faq--card--sec--2--h {
     width: 100%;
   }
-  .experience--button--h,
-  .about--button--h {
-    flex-direction: column;
-  }
+
   .faq--card--sec--2--h {
     width: 20%;
   }
   .faq--work--card--info--h,
-  .faq--work--card--bottom--container {
+  .faq--work--card--bottom--container,
+  .experience--button--h,
+  .about--button--h {
     flex-direction: column;
   }
 }
