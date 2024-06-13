@@ -4,11 +4,7 @@ import { Provider } from "react-redux"; // Import Provider from react-redux
 
 import "../src/css/App.css";
 
-import Header from "./Header/Header";
-import Reportersd from "./reportersd/Reportersd";
-import { Homepage } from "./Home/Homepage";
 import About from "./About/About";
-import Newsletter from "./Newsletter/Newsletter";
 import Dirctors from "./Dirctors/Dirctors";
 import Award from "./Award/Award";
 import Openings from "./Openings/Openings";
@@ -35,21 +31,25 @@ import StationAboutForm from "./Popups/Station_profile_popups/Stationabout_h";
 import NewsDirectorForm from "./Popups/Station_profile_popups/Newsdirector_h";
 import AwardForm from "./Popups/Station_profile_popups/Award_h";
 import JobOpeningForm from "./Popups/Station_profile_popups/Jobopening_h";
-import SubmitNewsDirectorForm from "./Popups/Submitpopup_h.js/SubmitDirector_h";
-import ApplyForm from "./Popups/Submitpopup_h.js/Apply_h";
-import NewsletterArticle from './NewsletterArticle/NewsletterArticle';
-import Viewjob from './Viewjob/Viewjob';
-import Shop from './Shop/Shop';
-import Viewjobdetail from './Viewjobdetail/Viewjobdetail';
-import Contactus from './Contactus/Contactus';
-import Jobopening from './Jobopening/Jobopening';
-import StationSearchResult from './StationSearchResult/StationSearchResult';
-import DirectorSearchResult from './DirectorSearchResult/DirectorSearchResult';
-import MyCartSD from './MyCartSD/MyCartSD';
-import EmployerLoginPg from './EmployerLoginPg/EmployerLoginPg';
-import EmployerRegisterPage from './EmployerRegisterPage/EmployerRegisterPage';
-import SubcriptionPage from './SubcriptionPage/SubcriptionPage';
-import SubmitAStationForm from './SubmitAStationForm/SubmitAStationForm';
+import SubmitNewsDirectorForm from "./Popups/Submitpopup_h/SubmitDirector_h";
+import ApplyForm from "./Popups/Submitpopup_h/Apply_h";
+import Header from "./Header/Header";
+import Reportersd from "./reportersd/Reportersd";
+import { Homepage } from "./Home/Homepage";
+import Newsletter from "./Newsletter/Newsletter";
+import NewsletterArticle from "./NewsletterArticle/NewsletterArticle";
+import Viewjob from "./Viewjob/Viewjob";
+import Shop from "./Shop/Shop";
+import Viewjobdetail from "./Viewjobdetail/Viewjobdetail";
+import Contactus from "./Contactus/Contactus";
+import Jobopening from "./Jobopening/Jobopening";
+import StationSearchResult from "./StationSearchResult/StationSearchResult";
+import DirectorSearchResult from "./DirectorSearchResult/DirectorSearchResult";
+import MyCartSD from "./MyCartSD/MyCartSD";
+import EmployerLoginPg from "./EmployerLoginPg/EmployerLoginPg";
+import EmployerRegisterPage from "./EmployerRegisterPage/EmployerRegisterPage";
+import SubcriptionPage from "./SubcriptionPage/SubcriptionPage";
+import SubmitAStationForm from "./SubmitAStationForm/SubmitAStationForm";
 import About1 from "./About/About1";
 import Reportersd2 from "./reportersd/Reportersd2";
 import Chartah1 from "./Chart/Chartah1";
@@ -71,16 +71,15 @@ import Footerah from "./footerah/Footerah";
 import Buyerah from "./Buyerah/Buyerah";
 import Cooperah from "./Cooperah/Cooperah";
 import Cooperah1 from "./Cooperah/Cooperah1";
-
-
+import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
 
 function App() {
   return (
-  
-    
-      <Router>
-        <Routes>
-        <Route path="/" exact element={<Homepage/>} />
+
+
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Homepage />} />
         <Route path="/kabc" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
         <Route path="/kabcah" exact element={<KABCah />} />
@@ -101,22 +100,80 @@ function App() {
         <Route path="/Cardah" exact element={<Cardah />} />
         <Route path="/Station" exact element={<Station />} />
         <Route path="/Filter" exact element={<Filter />} />
-        <Route path="/reportersd" exact element={<Reportersd/>} />
-        <Route path="/about" exact element={<About/>} />
-        <Route path="/newsletter" exact element={<Newsletter/>} />
-        <Route path="/newsletterarticle" exact element={<NewsletterArticle/>} />
-        <Route path="/viewjob" exact element={<Viewjob/>} />
-        <Route path="/viewjobdetail" exact element={<Viewjobdetail/>} />
-        <Route path="/shop" exact element={<Shop/>} />
-        <Route path="/contactus" exact element={<Contactus/>} />
-        <Route path="/jobopening" exact element={<Jobopening/>} />
-        <Route path="/StationSearchResult" exact element={<StationSearchResult/>} />
-        <Route path="/DirectorSearchResult" exact element={<DirectorSearchResult/>} />
-        <Route path="/mycart" exact element={<MyCartSD/>} />
-        <Route path="/employerlogin" exact element={<EmployerLoginPg/>} />
-        <Route path="/employerregister" exact element={<EmployerRegisterPage/>} />
-        <Route path="/subscription" exact element={<SubcriptionPage/>} />
-        <Route path="/submitstaionform" exact element={<SubmitAStationForm/>} />
+        <Route path="/reportersd" exact element={<Reportersd />} />
+        <Route path="/" exact element={<Homepage />} />
+        <Route path="/about" exact element={<About />} />
+        <Route path="/newsletter" exact element={<Newsletter />} />
+        <Route
+          path="/newsletterarticle"
+          exact
+          element={<NewsletterArticle />}
+        />
+        <Route path="/viewjob" exact element={<Viewjob />} />
+        <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
+        <Route path="/shop" exact element={<Shop />} />
+        <Route path="/contactus" exact element={<Contactus />} />
+        <Route path="/jobopening" exact element={<Jobopening />} />
+        <Route
+          path="/StationSearchResult"
+          exact
+          element={<StationSearchResult />}
+        />
+        <Route
+          path="/DirectorSearchResult"
+          exact
+          element={<DirectorSearchResult />}
+        />
+        <Route path="/mycart" exact element={<MyCartSD />} />
+        <Route path="/employerlogin" exact element={<EmployerLoginPg />} />
+        <Route
+          path="/employerregister"
+          exact
+          element={<EmployerRegisterPage />}
+        />
+        <Route path="/subscription" exact element={<SubcriptionPage />} />
+        <Route
+          path="/submitstaionform"
+          exact
+          element={<SubmitAStationForm />}
+        />
+
+        <Route path="/reportersd" exact element={<Reportersd />} />
+        <Route path="/about" exact element={<About />} />
+        <Route path="/newsletter" exact element={<Newsletter />} />
+        <Route
+          path="/newsletterarticle"
+          exact
+          element={<NewsletterArticle />}
+        />
+        <Route path="/viewjob" exact element={<Viewjob />} />
+        <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
+        <Route path="/shop" exact element={<Shop />} />
+        <Route path="/contactus" exact element={<Contactus />} />
+        <Route path="/jobopening" exact element={<Jobopening />} />
+        <Route
+          path="/StationSearchResult"
+          exact
+          element={<StationSearchResult />}
+        />
+        <Route
+          path="/DirectorSearchResult"
+          exact
+          element={<DirectorSearchResult />}
+        />
+        <Route path="/mycart" exact element={<MyCartSD />} />
+        <Route path="/employerlogin" exact element={<EmployerLoginPg />} />
+        <Route
+          path="/employerregister"
+          exact
+          element={<EmployerRegisterPage />}
+        />
+        <Route path="/subscription" exact element={<SubcriptionPage />} />
+        <Route
+          path="/submitstaionform"
+          exact
+          element={<SubmitAStationForm />}
+        />
         <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/home" exact element={<Homepage />} />
         <Route path="/about" exact element={<About />} />
@@ -125,7 +182,10 @@ function App() {
         <Route path="/faqmainh" exact element={<FAQPage />} />
         <Route path="/faqdetailh" exact element={<FaqDetail />} />
         <Route path="/faqsearchresulth" exact element={<FaqSearchresult />} />
-        <Route path="/termandconditionh" exact element={<TermsAndConditions />}/>
+        <Route
+          path="/termandconditionh"
+          exact
+          element={<TermsAndConditions />} />
         <Route path="/workforush" exact element={<Workforus />} />
         <Route path="/abouth" exact element={<Abouth />} />
         <Route path="/experienceh" exact element={<ExperienceForm />} />
@@ -135,7 +195,11 @@ function App() {
         <Route path="/newsdirectorh" exact element={<NewsDirectorForm />} />
         <Route path="/awardh" exact element={<AwardForm />} />
         <Route path="/jobopeningh" exact element={<JobOpeningForm />} />
-        <Route path="/submitnewsdirectorh" exact element={<SubmitNewsDirectorForm />}/>
+        <Route
+          path="/submitnewsdirectorh"
+          exact
+          element={<SubmitNewsDirectorForm />}
+        />
         <Route path="/applyformh" exact element={<ApplyForm />} />
         <Route path="/Chartah1" exact element={<Chartah1 />} />
         <Route path="/Chartah2" exact element={<Chartah2 />} />
@@ -150,21 +214,39 @@ function App() {
         <Route path="/Buyerah" exact element={<Buyerah />} />
         <Route path="/Cooperah" exact element={<Cooperah />} />
         <Route path="/Cooperah1" exact element={<Cooperah1 />} />
+
+        {/* <Route path="/reportersd" exact element={<Reportersd />} /> */}
         <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/reportersd2" exact element={<Reportersd2 />} />
-        <Route path="/home" exact element={<Homepage />} />
+        {/* <Route path="/home" exact element={<Homepage />} /> */}
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
-        <Route path="/newsletterarticle" exact  element={<NewsletterArticle />}/>
+        <Route
+          path="/newsletterarticle"
+          exact
+          element={<NewsletterArticle />}
+        />
         <Route path="/viewjob" exact element={<Viewjob />} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
         <Route path="/shop" exact element={<Shop />} />
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
-        <Route path="/stationsearchresult" exact  element={<StationSearchResult />}/>
-        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />}/>
-        <Route path="/FAQ" exact element={<FAQPage />}/>
+        <Route path="/stationsearchresult" exact element={<StationSearchResult />} />
+        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />} />
+        <Route path="/FAQ" exact element={<FAQPage />} />
+        <Route
+          path="/StationSearchResult"
+          exact
+          element={<StationSearchResult />}
+        />
+        <Route
+          path="/DirectorSearchResult"
+          exact
+          element={<DirectorSearchResult />}
+        />
 
+
+        <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
       </Routes>
     </Router>
   );
