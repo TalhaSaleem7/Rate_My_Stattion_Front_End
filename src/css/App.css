@@ -2661,17 +2661,7 @@ section.Sweatshirt-sec {
 
 
 
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************//******************* Shahdin Pages CSS Start *******************/
+/******************* Shahdin Pages CSS Start *******************/
 
 
 ul {
@@ -2686,6 +2676,108 @@ li {
 a {
   text-decoration-line: none !important;
 }
+
+
+
+/*********** Header Main CSS Start ***********/
+
+header.header_main {
+  padding: 20px 0px 13px 0px;
+  margin: 0px 0px 15px 0px;
+  background: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo img {
+  width: 177.797px;
+}
+
+.header_nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0px 0px 0px 20px;
+}
+
+.header_nav ul li {
+  color: #000;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header_nav ul li::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  bottom: -5px;
+  border-radius: 5px;
+  background: #89C400;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all .6s ease;
+}
+
+.header_nav ul li:hover:before {
+  width: 100%;
+}
+
+
+.header_end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+
+.header_end a:nth-child(2) {
+  color: #194D79;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid #194D79;
+  padding: 5px 50px;
+  transition: all .6s ease;
+}
+
+.header_end a:hover:nth-child(2) {
+  background: #194D79;
+  color: #fff;
+}
+
+.header_end a:nth-child(1) {
+  position: relative;
+}
+
+.header_end a:nth-child(1) span {
+  position: absolute;
+  top: -9px;
+  right: -10px;
+  background: #89C400;
+  padding: 1px 7px;
+  border-radius: 50px;
+  color: #FFF;
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+/*********** Header Main CSS ENd ***********/
+
+
 
 
 /*********** First Banner Section CSS Start ***********/
@@ -2777,7 +2869,7 @@ font-family: "Public Sans", sans-serif;
   display: block;
   margin: 60px 0px 0px 0px !important;
   color: #fff;
-  text-decoration-line: underline Im !important;
+  text-decoration-line: underline !important;
 }
 
 
@@ -3442,7 +3534,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 30.5px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 10px 0px !important;
   height: 60px;
 }
 
@@ -4459,7 +4551,7 @@ font-family: "Public Sans", sans-serif;
   font-weight: 300;
   line-height: 26px;
   width: 350px;
-  margin: 10px 0px 80px 0px;
+  margin: 10px 0px 80px 0px !important;
 }
 
 .shop-new-arrival a {
@@ -4512,7 +4604,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 31px;
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 70px 0px  !important;
 }
 
 .shop-friend-themed a {
@@ -4650,6 +4742,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
+  margin: 0px 0px 20px 0px !important;
 }
 
 .newsletter-article-decided p {
@@ -4727,7 +4820,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  margin: 0px 0px 180px 0px;
+  margin: 0px 0px 180px 0px !important;
 }
 
 .ratemystaion-contact-form ul li {
@@ -4843,6 +4936,7 @@ font-family: "Public Sans", sans-serif;
   border: 2px solid #194D79;
   padding: 8px 60px;
   transition: all .6s ease;
+  background: transparent;
 }
 
 .contact-form-btn {
@@ -5581,6 +5675,19 @@ font-family: "Public Sans", sans-serif;
   color: #194D79;
 }
 
+.rms-kabc-btn .themelight {
+  border: 1px solid #194D79;
+  background: transparent !important;
+  color: #194D79 !important;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  transition: all .6s ease;
+}
+
 .themelight {
   background: transparent !important;
   color: #194D79 !important;
@@ -5630,6 +5737,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding: 0px 0px 10px 0px;
 }
 
 .station-search-result-txt p {
@@ -5694,8 +5802,8 @@ font-family: "Public Sans", sans-serif;
   gap: 10px;
 }
 
-.rms-kabc-btn a {
-  color: #FFF;
+.rms-kabc-btn .themedark {
+  color: #FFF !important;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -5703,8 +5811,8 @@ font-family: "Public Sans", sans-serif;
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  background: #194D79;
-  padding: 8px 40px;
+  background: #194D79 !important;
+  padding: 8px 30px;
   transition: all .6s ease;
   border: 1px solid #194D79;
 }
@@ -5725,7 +5833,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px !important;
 }
 
 
@@ -5792,7 +5900,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px !important;
 }
 
 .find-station-looking p {
@@ -5803,7 +5911,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 31.5px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px !important;
 }
 
 
@@ -5931,7 +6039,7 @@ section.director-search-result hr {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px !important;
 }
 
 .americon-product-card-sec {
@@ -5942,7 +6050,7 @@ section.director-search-result hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 50px 10px 0px;
+  margin: 10px 130px 20px 0px;
 }
 
 
@@ -5979,6 +6087,10 @@ section.director-search-result hr {
   padding: 25px 20px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   margin: 10px 0px 20px 0px;
+}
+
+.americon-prod-cart img {
+  width: 142.488px;
 }
 
 
@@ -6050,7 +6162,7 @@ section.director-search-result hr {
   font-style: normal;
   font-weight: 700;
   line-height: 30.5px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px !important;
 }
 
 .ordersummary-subtotal h6 {
@@ -6160,6 +6272,7 @@ section.director-search-result hr {
   align-items: center;
   justify-content: center;
   height: 100%;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .rating-real-journalist h3 {
@@ -6173,18 +6286,26 @@ section.director-search-result hr {
 }
 
 
+.employer-login-form {
+  padding: 0px 0px 130px 0px;
+}
+
+
 section.employer-login-pg-sec {
   padding: 50px 0px;
 }
 
 
 .rating-real-journalist img {
+  width: 177.797px;
   margin: 0px 0px 10px 0px;
 }
+
 
 .employer-login-box {
   background: #fff;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  border-radius: 20px;
 }
 
 .employer-newroom-box {
@@ -6290,14 +6411,7 @@ section.employer-login-pg-sec {
 }
 
 
-.employer-dont-have-acc a {
-  color: #777;
-  font-family: "Public Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 26px;
-}
+
 
 .employer-dont-have-acc a span {
   color: #89C400;
@@ -6332,6 +6446,7 @@ section.employer-login-pg-sec {
 
 .employer-dont-have-acc {
   margin: 0px 0px 0px 40px;
+
 }
 
 
@@ -6448,9 +6563,9 @@ section.employer-login-pg-sec {
   line-height: normal;
   left: 50%;
   transform: translate(-50%);
-  padding: 2px 4px;
+  padding: 4px 4px;
   width: 80px;
-  bottom: -16px;
+  bottom: -8px;
 }
 
 .employer-register-form form:focus {
@@ -6560,7 +6675,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px !important;
 }
 
 .subscribe-now-txt ul li {
@@ -6603,7 +6718,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  margin: 70px 0px 10px 0px;
+  padding: 70px 0px 10px 0px;
 }
 
 .subcription-box h6 {
@@ -6625,7 +6740,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
-  margin: 0px 0px 80px 0px;
+  padding: 0px 0px 80px 0px;
 }
 
 .subcription-box a {
@@ -6716,6 +6831,10 @@ section.employer-login-pg-sec {
   margin: 0px;
 }
 
+.subscribe-now-txt ul {
+  padding: 0px 0px 0px 20px;
+} 
+
 
 .new-subscription-discount p span {
   font-weight: bold;
@@ -6741,15 +6860,6 @@ section.employer-login-pg-sec {
   gap: 20px;
 }
 
-.station-secure-box p {
-  color: var(--Gray-3, #828282);
-  font-family: "Public Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0px;
-}
 
 .station-secure-box {
   display: flex;
@@ -6765,7 +6875,7 @@ section.employer-login-pg-sec {
   font-weight: 300;
   line-height: 26px;
   margin: 0px;
-  padding: 0px 90px 0px 0px;
+  padding: 0px 60px 0px 0px;
 }
 
 .station-secure-box svg {
@@ -6786,7 +6896,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  margin: 0px 40px 0px 0px;
+  padding: 0px 40px 0px 0px;
 }
 
 .subscription-credit {

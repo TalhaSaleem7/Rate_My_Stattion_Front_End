@@ -18,6 +18,8 @@ import { RiMore2Fill, RiThumbUpFill, RiChat3Fill, RiShareFill, RiArrowLeftSLine,
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Newslettersidesd from '../Newslettersidesecsd/Newslettersidesd';
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
 
 
@@ -44,6 +46,8 @@ const Newsletter = () => {
   return (
 
     <>
+
+    <Header/>
     <section className="your-journalism-sec">
       <Container>
         <Row>
@@ -317,7 +321,7 @@ const Newsletter = () => {
     </section>
 
 
-    
+    <Footerah/>
 
 
     </>

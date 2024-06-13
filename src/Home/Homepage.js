@@ -10,9 +10,12 @@ import ProdImage5 from '../img/ratemystation-prod-img-5.png';
 import ProdImage6 from '../img/ratemystation-prod-img-6.png';
 import ProdImage7 from '../img/ratemystation-prod-img-7.png';
 import ProdImage8 from '../img/ratemystation-prod-img-8.png';
+import TvShowsIcon from "../img/tv-shows-icon.png"
 import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
 import Lookingforwork from '../Lookingforwork/Lookingforwork';
-import {RiFacebookFill, RiInstagramLine, RiTwitterFill } from 'react-icons/ri';
+import {RiFacebookFill, RiInstagramLine, RiTwitterFill, RiSearchLine   } from 'react-icons/ri';
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
   
 
@@ -20,6 +23,7 @@ import {RiFacebookFill, RiInstagramLine, RiTwitterFill } from 'react-icons/ri';
 export const Homepage = () => {
   return (
     <>
+    <Header/>
       <section className="first-banner-sec">
         <Container>
           <Row>
@@ -28,15 +32,15 @@ export const Homepage = () => {
                 <h3>Find thousands of Ratings from real Journalists</h3>
                 <div className="search-station-box">
                   <div className="select-station-drop">
-                    <select name="" id="">
-                      <option value="">TV News</option>
+                    <select name="" id=""><img src={TvShowsIcon} alt="img"/>
+                      <option value=""> TV News</option>
                       <option value="">Lorem ipsum</option>
                       <option value="">Lorem ipsum</option>
                     </select>
                   </div>
                   <div className="search-stations-input">
                     <input type="search" name="" id="" placeholder="Search Stations..." />
-                    <span><i className="ri-search-line"></i></span>
+                    <span> <RiSearchLine /></span>
                   </div>
                 </div>
                 <a href="#">Find a News Director by name</a>
@@ -214,7 +218,7 @@ export const Homepage = () => {
 
     <Lookingforwork />
 
-
+    <Footerah/>
     </>
   );
 };

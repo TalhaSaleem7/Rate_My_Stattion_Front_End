@@ -75,8 +75,11 @@ import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
 
 function App() {
   return (
+
+
     <Router>
       <Routes>
+        <Route path="/" exact element={<Homepage />} />
         <Route path="/kabc" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
         <Route path="/kabcah" exact element={<KABCah />} />
@@ -182,7 +185,7 @@ function App() {
         <Route
           path="/termandconditionh"
           exact
-          element={<TermsAndConditions />}/>
+          element={<TermsAndConditions />} />
         <Route path="/workforush" exact element={<Workforus />} />
         <Route path="/abouth" exact element={<Abouth />} />
         <Route path="/experienceh" exact element={<ExperienceForm />} />
@@ -228,6 +231,9 @@ function App() {
         <Route path="/shop" exact element={<Shop />} />
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
+        <Route path="/stationsearchresult" exact element={<StationSearchResult />} />
+        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />} />
+        <Route path="/FAQ" exact element={<FAQPage />} />
         <Route
           path="/StationSearchResult"
           exact
@@ -240,7 +246,7 @@ function App() {
         />
 
 
-<Route path="/Sweatshirtah" exact element={<Sweatshirtah />}/>
+        <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
       </Routes>
     </Router>
   );
