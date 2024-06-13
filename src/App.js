@@ -71,6 +71,10 @@ import Footerah from "./footerah/Footerah";
 import Buyerah from "./Buyerah/Buyerah";
 import Cooperah from "./Cooperah/Cooperah";
 import Cooperah1 from "./Cooperah/Cooperah1";
+import RateThisProd from "./Popups/Rate_popup_h/Ratepopup_h";
+import StationInfoForm from "./Popups/Info_popup_h/Stationinfo_h";
+import UserInfoForm from "./Popups/Info_popup_h/Userinfo_h";
+import DirectorInfoForm from "./Popups/Info_popup_h/Directorinfo_h";
 
 function App() {
   return (
@@ -199,6 +203,9 @@ function App() {
           element={<SubmitNewsDirectorForm />}
         />
         <Route path="/applyformh" exact element={<ApplyForm />} />
+        <Route path="/stationinfoh" exact element={<StationInfoForm />} />
+        <Route path="/userinfoh" exact element={<UserInfoForm />} />
+        <Route path="/directorinfoh" exact element={<DirectorInfoForm />} />
         <Route path="/Chartah1" exact element={<Chartah1 />} />
         <Route path="/Chartah2" exact element={<Chartah2 />} />
         <Route path="/Chartah3" exact element={<Chartah3 />} />
@@ -239,6 +246,7 @@ function App() {
           exact
           element={<DirectorSearchResult />}
         />
+        <Route path="/rateh" exact element={<RateThisProd />} />
       </Routes>
     </Router>
   );
