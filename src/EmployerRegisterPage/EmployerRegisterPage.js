@@ -15,7 +15,7 @@ const EmployerRegisterPage = () => {
                         <Col lg={12}>
                             <div className="employer-login-box">
                                 <Row>
-                                    <Col lg={6}>
+                                    <Col lg={6} className='p-0'>
                                         <div className="rating-real-journalist">
                                             <img src={employerratemystation} alt="" />
                                             <h3>Find thousands of Ratings from real Journalists</h3>

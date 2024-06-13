@@ -13,11 +13,16 @@ import ProdImage7 from '../img/ratemystation-prod-img-7.png';
 import ProdImage8 from '../img/ratemystation-prod-img-8.png';
 import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
 import Lookingforwork from '../Lookingforwork/Lookingforwork';
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
 
 const About = () => {
   return (
     <>
+
+    <Header/>
+
      <section className="ratemystation-about-sec">
       <Container>
         <Row>
@@ -245,6 +250,7 @@ const About = () => {
 
     <Lookingforwork />
 
+    <Footerah/>
     </>
   )
 }

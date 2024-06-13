@@ -77,6 +77,7 @@ import Cooperah1 from "./Cooperah/Cooperah1";
 function App() {
   return (
   
+    
       <Router>
         <Routes>
         <Route path="/" exact element={<Homepage/>} />
@@ -160,8 +161,9 @@ function App() {
         <Route path="/shop" exact element={<Shop />} />
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
-        <Route path="/StationSearchResult" exact  element={<StationSearchResult />}/>
-        <Route path="/DirectorSearchResult" exact element={<DirectorSearchResult />}/>
+        <Route path="/stationsearchresult" exact  element={<StationSearchResult />}/>
+        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />}/>
+        <Route path="/FAQ" exact element={<FAQPage />}/>
 
       </Routes>
     </Router>
