@@ -38,7 +38,9 @@ const ApplyForm = () => {
                       />
                     </svg>
                   </div>
-                  <p>TV News | Los Angeles, CA | DMA: 2</p>
+                  <p>
+                    TV News <span>|</span> Los Angeles, CA <span>|</span> DMA: 2
+                  </p>
                 </div>
               </div>
               <div class="experience--close--h">

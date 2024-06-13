@@ -71,6 +71,10 @@ import Footerah from "./footerah/Footerah";
 import Buyerah from "./Buyerah/Buyerah";
 import Cooperah from "./Cooperah/Cooperah";
 import Cooperah1 from "./Cooperah/Cooperah1";
+import RateThisProd from "./Popups/Rate_popup_h/Ratepopup_h";
+import StationInfoForm from "./Popups/Info_popup_h/Stationinfo_h";
+import UserInfoForm from "./Popups/Info_popup_h/Userinfo_h";
+import DirectorInfoForm from "./Popups/Info_popup_h/Directorinfo_h";
 import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
 
 
@@ -140,6 +144,11 @@ function App() {
         <Route path="/faqdetailh" exact element={<FaqDetail />} />
         <Route path="/faqsearchresulth" exact element={<FaqSearchresult />} />
         <Route path="/termandconditionh" exact element={<TermsAndConditions />} />
+        <Route
+          path="/termandconditionh"
+          exact
+          element={<TermsAndConditions />}
+        />
         <Route path="/workforush" exact element={<Workforus />} />
         <Route path="/abouth" exact element={<Abouth />} />
         <Route path="/experienceh" exact element={<ExperienceForm />} />
@@ -151,6 +160,9 @@ function App() {
         <Route path="/jobopeningh" exact element={<JobOpeningForm />} />
         <Route path="/submitnewsdirectorh"  exact element={<SubmitNewsDirectorForm />}/>
         <Route path="/applyformh" exact element={<ApplyForm />} />
+        <Route path="/stationinfoh" exact element={<StationInfoForm />} />
+        <Route path="/userinfoh" exact element={<UserInfoForm />} />
+        <Route path="/directorinfoh" exact element={<DirectorInfoForm />} />
         <Route path="/Chartah1" exact element={<Chartah1 />} />
         <Route path="/Chartah2" exact element={<Chartah2 />} />
         <Route path="/Chartah3" exact element={<Chartah3 />} />
@@ -179,6 +191,30 @@ function App() {
         <Route path="/StationSearchResult" exact element={<StationSearchResult />}/>
         <Route path="/DirectorSearchResult"  exact  element={<DirectorSearchResult />}  />
         <Route path="/productdetail" exact element={<Sweatshirtah />} />
+        <Route
+          path="/stationsearchresult"
+          exact
+          element={<StationSearchResult />}
+        />
+        <Route
+          path="/directorsearchresult"
+          exact
+          element={<DirectorSearchResult />}
+        />
+        <Route path="/FAQ" exact element={<FAQPage />} />
+        <Route
+          path="/StationSearchResult"
+          exact
+          element={<StationSearchResult />}
+        />
+        <Route
+          path="/DirectorSearchResult"
+          exact
+          element={<DirectorSearchResult />}
+        />
+        <Route path="/rateh" exact element={<RateThisProd />} />
+
+        <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
       </Routes>
     </Router>
   );

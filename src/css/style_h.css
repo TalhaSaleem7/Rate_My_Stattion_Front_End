@@ -12,7 +12,9 @@
   --font-size-16: 1rem;
   --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
+  --font-size-22: 1.375rem;
   --font-size-24: 1.5rem;
+  --font-size-26: 1.625rem;
   --font-size-28: 1.75rem;
   --font-size-36: 2.25rem;
   --font-size-48: 3rem;
@@ -126,7 +128,8 @@ ul {
 .faq--right--card--body .faq--right--button--h,
 .faq--detail--card--two .faq--detail--card--two--btn,
 .faq--work--card--h,
-.news--director--img--h--cont {
+.news--director--img--h--cont,
+.rate--produch--img--h {
   border-radius: 15px;
 }
 .account--setting--left--h h1,
@@ -223,6 +226,7 @@ ul {
   max-width: 865.5px;
   padding: 30px;
   background: #ffffff;
+  position: relative;
 }
 
 .about--close--h,
@@ -736,6 +740,9 @@ FAQ Search Styles
   padding-left: 0;
   max-width: 560px;
 }
+.faq--detail--card--container--top--10 {
+  cursor: pointer;
+}
 .row .faq--detail--related--link--h a {
   text-decoration: none;
 }
@@ -913,8 +920,85 @@ Submit News Director popup
   gap: 10px;
 }
 /* ======================================
-Apply popup
+Info / Apply popup
 ====================================== */
+.director--info--popup--head--cont {
+  padding-bottom: 31px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 29px;
+  gap: 229px;
+}
+.director--info--heading--h {
+  padding-bottom: 20px;
+}
+.director--info--popup--btn--h a {
+  padding: 11px 51px;
+  border-radius: 10px;
+  background-color: #194d79;
+  border: 1px solid #194d79;
+  cursor: pointer;
+  transition: 0.6s all ease;
+}
+.director--info--popup--btn--h a:hover {
+  background: transparent;
+  color: black;
+}
+
+.director--info--popup--btn--h a {
+  font-size: var(--font-size-16);
+  font-weight: bold;
+  color: white;
+}
+.director--info--heading--h--alt h3 {
+  font-size: var(--font-size-26);
+}
+.director--popup--cont--2--alt {
+  padding-bottom: 43px;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.director--info--heading--h--alt {
+  padding-bottom: 29px;
+}
+.director--popup--title--text h2 {
+  font-size: var(--font-size-18);
+  font-weight: 600;
+}
+.director--info--popup--img {
+  width: 47px;
+}
+.director--info--list--ul,
+.director--info--list--li {
+  list-style: circle;
+}
+
+.director--info--list--ul {
+  padding-left: 2.5rem;
+}
+.director--info--list--li::marker {
+  color: #e0e0e0;
+}
+.director--info--list--li {
+  padding-left: 2rem;
+  padding-bottom: 20px;
+}
+.director--info--list--li--alt {
+  padding-bottom: 0;
+}
+.director--popup--title--text--2 h3 {
+  color: #89c400;
+  font-size: var(--font-size-16);
+}
+.info--popup--title--heading--alt h2 {
+  font-size: var(--font-size-16);
+}
+.info--popup--title--alt {
+  padding-bottom: 20px;
+}
+.director--popup--title--text p {
+  color: #828282;
+  font-size: var(--font-size-14);
+}
 .my--container--h--2 {
   height: 95vh;
   overflow-y: scroll;
@@ -931,6 +1015,58 @@ Apply popup
 .apply--popup--img {
   width: 58px;
 }
+.info--popup--img {
+  width: 74px;
+}
+.info--popup--img--alt {
+  width: 73px;
+  border-radius: 13px;
+}
+.info--popup--loc--img {
+  line-height: 0;
+}
+.info--popup--title {
+  gap: 26px;
+}
+.info--popup--title--heading h1 {
+  font-size: var(--font-size-26);
+  color: #194d79;
+}
+.info--close--h,
+.experience--close--h,
+.about--close--h {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+.info--popup--title--text p {
+  font-size: var(--font-size-14);
+  color: #828282;
+}
+.user--info--popup--title--text p {
+  font-size: var(--font-size-16);
+  color: #828282;
+}
+.user--info--popup--title--text h1 {
+  color: black;
+}
+.info--link--h {
+  gap: 19px;
+}
+.info--link--text h1 {
+  font-size: var(--font-size-22);
+}
+.info--link--text a {
+  font-size: var(--font-size-20);
+  color: #9bdb08;
+}
+.info--link--img {
+  border-radius: 9px;
+  background-color: #f2f2f2;
+  width: 56px;
+  height: 56px;
+}
 .apply--popup--title * {
   margin: 0;
 }
@@ -944,6 +1080,10 @@ Apply popup
 .apply--popup--title--text p {
   color: #828282;
   font-weight: 300;
+}
+.apply--popup--title--text p span {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .apply--popup--title--heading h1 {
   font-size: var(--font-size-24);
@@ -1047,6 +1187,31 @@ Apply popup
   background-color: #89c400;
 }
 
+/* ======================================
+Rate Popup Styles
+====================================== */
+.rate--produch--img--h {
+  max-width: 142px;
+  width: 100%;
+}
+.rate--product--main--h {
+  gap: 27px;
+  max-width: 412px;
+}
+.rate--product--main--h h1 {
+  font-size: var(--font-size-20);
+  font-weight: bold;
+}
+.rate--product--main--h,
+.rate--product--rating--h {
+  padding: 0;
+}
+.rate--product--rating--h label {
+  padding-bottom: 20px;
+}
+.rating--popup--cont--h {
+  padding-bottom: 22px;
+}
 /* ======================================
 Media Query
 ====================================== */
