@@ -30,7 +30,25 @@ import Footerah from '../footerah/Footerah';
 
 const Newsletter = () => {
 
-  const navigate = useNavigate();
+   
+  const navigate = useNavigate()
+
+  const proddetail = () => {
+    navigate('/productdetail')
+  }
+
+  const mycart = () => {
+    navigate('/mycart')
+  }
+
+  const shop = () => {
+    navigate('/shop')
+  }
+
+  const newsletter = () => {
+    navigate('/newsletter')
+  }
+
   const goto = () => {
     navigate("/newsletterarticle");
   };
@@ -228,7 +246,7 @@ const Newsletter = () => {
             <div className="newsletter-side-sec">
               <div className="newsletter-side-head">
                 <h3>Recommend</h3>
-                <a href="#">See all</a>
+                <a onClick={newsletter}>See all</a>
               </div>
               <Newslettersidesd />
               {/* Follow Us */}
@@ -263,8 +281,8 @@ const Newsletter = () => {
                 <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -277,8 +295,8 @@ const Newsletter = () => {
                 <h3>America Needs Local News Sweatshirt</h3>
                 <h6>$25.00 – $33.50</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -290,8 +308,8 @@ const Newsletter = () => {
                 <h3>Anonymous Source Onesie</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -303,8 +321,8 @@ const Newsletter = () => {
                 <h3>You Are A PKG Framed Poster</h3>
                 <h6>$26.00 – $105.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -313,7 +331,7 @@ const Newsletter = () => {
         <Row>
           <Col lg={12}>
             <div className="ratemystation-allprod-btn">
-              <Button href="#">See All Products</Button>
+              <a onClick={shop}>See All Products</a>
             </div>
           </Col>
         </Row>

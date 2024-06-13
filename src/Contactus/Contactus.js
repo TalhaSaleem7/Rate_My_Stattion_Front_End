@@ -1,10 +1,13 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { RiMapPin2Fill, RiPhoneFill, RiMailFill, RiFacebookFill, RiInstagramLine, RiTwitterFill } from 'react-icons/ri';
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
 const Contactus = () => {
   return (
     <>
+    <Header/>
      <section className="ratemystation-contact-sec">
             <Container>
                 <Row>
@@ -75,6 +78,7 @@ const Contactus = () => {
                 </Row>
             </Container>
         </section>
+        <Footerah/>
     </>
   )
 }
