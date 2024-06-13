@@ -77,8 +77,11 @@ import UserInfoForm from "./Popups/Info_popup_h/Userinfo_h";
 import DirectorInfoForm from "./Popups/Info_popup_h/Directorinfo_h";
 import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
 
+
+
 function App() {
   return (
+
     <Router>
       <Routes>
         <Route path="/" exact element={<Homepage />} />
@@ -88,7 +91,7 @@ function App() {
         <Route path="/kabcah1" exact element={<KABCah1 />} />
         <Route path="/Header" exact element={<Header />} />
         <Route path="/Footerah" exact element={<Footerah />} />
-        <Route path="/About" exact element={<About />} />
+        <Route path="/about" exact element={<About />} />
         <Route path="/About1" exact element={<About1 />} />
         <Route path="/About2" exact element={<About2 />} />
         <Route path="/Aboutah1" exact element={<Aboutah1 />} />
@@ -102,80 +105,36 @@ function App() {
         <Route path="/Cardah" exact element={<Cardah />} />
         <Route path="/Station" exact element={<Station />} />
         <Route path="/Filter" exact element={<Filter />} />
-        <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/" exact element={<Homepage />} />
-        <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
-        <Route
-          path="/newsletterarticle"
-          exact
-          element={<NewsletterArticle />}
-        />
+        <Route path="/newsletterarticle" exact element={<NewsletterArticle />} />
         <Route path="/viewjob" exact element={<Viewjob />} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
         <Route path="/shop" exact element={<Shop />} />
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
-        <Route
-          path="/StationSearchResult"
-          exact
-          element={<StationSearchResult />}
-        />
-        <Route
-          path="/DirectorSearchResult"
-          exact
-          element={<DirectorSearchResult />}
-        />
+        <Route path="/StationSearchResult" exact element={<StationSearchResult />}/>
+        <Route path="/DirectorSearchResult" exact element={<DirectorSearchResult />} />
         <Route path="/mycart" exact element={<MyCartSD />} />
         <Route path="/employerlogin" exact element={<EmployerLoginPg />} />
-        <Route
-          path="/employerregister"
-          exact
-          element={<EmployerRegisterPage />}
-        />
+        <Route path="/employerregister"  exact element={<EmployerRegisterPage />} />
         <Route path="/subscription" exact element={<SubcriptionPage />} />
-        <Route
-          path="/submitstaionform"
-          exact
-          element={<SubmitAStationForm />}
-        />
-
-        <Route path="/reportersd" exact element={<Reportersd />} />
+        <Route  path="/submitstaionform" exact  element={<SubmitAStationForm />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
-        <Route
-          path="/newsletterarticle"
-          exact
-          element={<NewsletterArticle />}
-        />
+        <Route path="/newsletterarticle" exact element={<NewsletterArticle />} />
         <Route path="/viewjob" exact element={<Viewjob />} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
         <Route path="/shop" exact element={<Shop />} />
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
-        <Route
-          path="/StationSearchResult"
-          exact
-          element={<StationSearchResult />}
-        />
-        <Route
-          path="/DirectorSearchResult"
-          exact
-          element={<DirectorSearchResult />}
-        />
+        <Route path="/StationSearchResult" exact element={<StationSearchResult />} />
+        <Route path="/DirectorSearchResult" exact element={<DirectorSearchResult />}/>
         <Route path="/mycart" exact element={<MyCartSD />} />
         <Route path="/employerlogin" exact element={<EmployerLoginPg />} />
-        <Route
-          path="/employerregister"
-          exact
-          element={<EmployerRegisterPage />}
-        />
+        <Route path="/employerregister" exact element={<EmployerRegisterPage />} />
         <Route path="/subscription" exact element={<SubcriptionPage />} />
-        <Route
-          path="/submitstaionform"
-          exact
-          element={<SubmitAStationForm />}
-        />
+        <Route path="/submitstaionform"  exact element={<SubmitAStationForm />} />
         <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/home" exact element={<Homepage />} />
         <Route path="/about" exact element={<About />} />
@@ -184,11 +143,8 @@ function App() {
         <Route path="/faqmainh" exact element={<FAQPage />} />
         <Route path="/faqdetailh" exact element={<FaqDetail />} />
         <Route path="/faqsearchresulth" exact element={<FaqSearchresult />} />
-        <Route
-          path="/termandconditionh"
-          exact
-          element={<TermsAndConditions />}
-        />
+        <Route path="/termandconditionh" exact element={<TermsAndConditions />} />
+        <Route path="/termandconditionh" exact element={<TermsAndConditions />} />
         <Route path="/workforush" exact element={<Workforus />} />
         <Route path="/abouth" exact element={<Abouth />} />
         <Route path="/experienceh" exact element={<ExperienceForm />} />
@@ -198,11 +154,7 @@ function App() {
         <Route path="/newsdirectorh" exact element={<NewsDirectorForm />} />
         <Route path="/awardh" exact element={<AwardForm />} />
         <Route path="/jobopeningh" exact element={<JobOpeningForm />} />
-        <Route
-          path="/submitnewsdirectorh"
-          exact
-          element={<SubmitNewsDirectorForm />}
-        />
+        <Route path="/submitnewsdirectorh"  exact element={<SubmitNewsDirectorForm />}/>
         <Route path="/applyformh" exact element={<ApplyForm />} />
         <Route path="/stationinfoh" exact element={<StationInfoForm />} />
         <Route path="/userinfoh" exact element={<UserInfoForm />} />
@@ -220,50 +172,33 @@ function App() {
         <Route path="/Buyerah" exact element={<Buyerah />} />
         <Route path="/Cooperah" exact element={<Cooperah />} />
         <Route path="/Cooperah1" exact element={<Cooperah1 />} />
-
-        {/* <Route path="/reportersd" exact element={<Reportersd />} /> */}
-        <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/reportersd2" exact element={<Reportersd2 />} />
-        {/* <Route path="/home" exact element={<Homepage />} /> */}
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
-        <Route
-          path="/newsletterarticle"
-          exact
-          element={<NewsletterArticle />}
-        />
+        <Route path="/newsletterarticle" exact  element={<NewsletterArticle />} />
         <Route path="/viewjob" exact element={<Viewjob />} />
         <Route path="/viewjobdetail" exact element={<Viewjobdetail />} />
         <Route path="/shop" exact element={<Shop />} />
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
-        <Route
-          path="/stationsearchresult"
-          exact
-          element={<StationSearchResult />}
-        />
-        <Route
-          path="/directorsearchresult"
-          exact
-          element={<DirectorSearchResult />}
-        />
+        <Route path="/stationsearchresult" exact  element={<StationSearchResult />} />
+        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />} />
         <Route path="/FAQ" exact element={<FAQPage />} />
-        <Route
-          path="/StationSearchResult"
-          exact
-          element={<StationSearchResult />}
-        />
-        <Route
-          path="/DirectorSearchResult"
-          exact
-          element={<DirectorSearchResult />}
-        />
+        <Route path="/StationSearchResult" exact element={<StationSearchResult />}/>
+        <Route path="/DirectorSearchResult"  exact  element={<DirectorSearchResult />}  />
+        <Route path="/productdetail" exact element={<Sweatshirtah />} />
+        <Route path="/stationsearchresult" exact  element={<StationSearchResult />}/>
+        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />} />
+        <Route path="/FAQ" exact element={<FAQPage />} />
+        <Route path="/StationSearchResult" exact element={<StationSearchResult />} />
+        <Route path="/DirectorSearchResult"  exact element={<DirectorSearchResult />} />
         <Route path="/rateh" exact element={<RateThisProd />} />
-
         <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
       </Routes>
     </Router>
   );
 }
+
+
 
 export default App;

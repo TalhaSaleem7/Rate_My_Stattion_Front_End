@@ -1,10 +1,19 @@
 import React from "react";
 
 import kabc from '../img/kabc.png'
+import { useNavigate } from "react-router-dom";
 
 
 const Footerah = ()=>{
+   const navigate = useNavigate()
 
+   const subscribe = () => {
+    navigate('/subscription')
+   }
+
+   const contactus = () => {
+    navigate('/contactus')
+   }
 
 return(
 
@@ -15,11 +24,10 @@ return(
        <div className="main-footer">
        <div className="ul-li-list-footer">
         <ul>
-
             <li><a href="#">Account Information</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a onClick={contactus}>Contact Us</a></li>
             <li><a href="#">Work for Us</a></li>
-            <li><a href="#">Subscribe</a></li>
+            <li><a onClick={subscribe}>Subscribe</a></li>
             <li><a href="#">Advertise</a></li>
             <li><a href="#">Terms & Conditions</a></li>
 
