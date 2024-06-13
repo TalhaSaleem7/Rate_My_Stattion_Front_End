@@ -1,10 +1,13 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import CreditCardImage from "../img/credit-subscription.jpg";
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
 const SubcriptionPage = () => {
   return (
     <>
+    <Header/>
       <div className="subcription-page-sec">
         <Container>
           <Row>
@@ -101,6 +104,7 @@ const SubcriptionPage = () => {
           </Row>
         </Container>
       </div>
+      <Footerah/>
     </>
   )
 }

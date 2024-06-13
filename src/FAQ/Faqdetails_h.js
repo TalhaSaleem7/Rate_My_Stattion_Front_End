@@ -1,6 +1,11 @@
 import Related from "./component/Relatedarticles_h";
 import Questioncard from "./component/Questioncard_h";
+
+
 const FaqDetail = () => {
+
+
+
   return (
     <div>
       <section className="w-100 faq--search--detail--section--h">

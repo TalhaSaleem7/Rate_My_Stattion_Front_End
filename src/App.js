@@ -144,11 +144,7 @@ function App() {
         <Route path="/faqdetailh" exact element={<FaqDetail />} />
         <Route path="/faqsearchresulth" exact element={<FaqSearchresult />} />
         <Route path="/termandconditionh" exact element={<TermsAndConditions />} />
-        <Route
-          path="/termandconditionh"
-          exact
-          element={<TermsAndConditions />}
-        />
+        <Route path="/termandconditionh" exact element={<TermsAndConditions />} />
         <Route path="/workforush" exact element={<Workforus />} />
         <Route path="/abouth" exact element={<Abouth />} />
         <Route path="/experienceh" exact element={<ExperienceForm />} />
@@ -191,33 +187,18 @@ function App() {
         <Route path="/StationSearchResult" exact element={<StationSearchResult />}/>
         <Route path="/DirectorSearchResult"  exact  element={<DirectorSearchResult />}  />
         <Route path="/productdetail" exact element={<Sweatshirtah />} />
-        <Route
-          path="/stationsearchresult"
-          exact
-          element={<StationSearchResult />}
-        />
-        <Route
-          path="/directorsearchresult"
-          exact
-          element={<DirectorSearchResult />}
-        />
+        <Route path="/stationsearchresult" exact  element={<StationSearchResult />}/>
+        <Route path="/directorsearchresult" exact element={<DirectorSearchResult />} />
         <Route path="/FAQ" exact element={<FAQPage />} />
-        <Route
-          path="/StationSearchResult"
-          exact
-          element={<StationSearchResult />}
-        />
-        <Route
-          path="/DirectorSearchResult"
-          exact
-          element={<DirectorSearchResult />}
-        />
+        <Route path="/StationSearchResult" exact element={<StationSearchResult />} />
+        <Route path="/DirectorSearchResult"  exact element={<DirectorSearchResult />} />
         <Route path="/rateh" exact element={<RateThisProd />} />
-
         <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
       </Routes>
     </Router>
   );
 }
+
+
 
 export default App;
