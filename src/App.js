@@ -71,6 +71,7 @@ import Footerah from "./footerah/Footerah";
 import Buyerah from "./Buyerah/Buyerah";
 import Cooperah from "./Cooperah/Cooperah";
 import Cooperah1 from "./Cooperah/Cooperah1";
+import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
 
 function App() {
   return (
@@ -96,7 +97,6 @@ function App() {
         <Route path="/Cardah" exact element={<Cardah />} />
         <Route path="/Station" exact element={<Station />} />
         <Route path="/Filter" exact element={<Filter />} />
-
         <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/" exact element={<Homepage />} />
         <Route path="/about" exact element={<About />} />
@@ -182,8 +182,7 @@ function App() {
         <Route
           path="/termandconditionh"
           exact
-          element={<TermsAndConditions />}
-        />
+          element={<TermsAndConditions />}/>
         <Route path="/workforush" exact element={<Workforus />} />
         <Route path="/abouth" exact element={<Abouth />} />
         <Route path="/experienceh" exact element={<ExperienceForm />} />
@@ -239,6 +238,9 @@ function App() {
           exact
           element={<DirectorSearchResult />}
         />
+
+
+<Route path="/Sweatshirtah" exact element={<Sweatshirtah />}/>
       </Routes>
     </Router>
   );
