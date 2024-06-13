@@ -18,7 +18,7 @@ const SeeProfileBox = () => {
                         <h3>Kabc  <RiVerifiedBadgeFill /></h3>
                         <h6>TV News   |   Los Angeles, CA   |   DMA: 2</h6>
                         <div className='rms-kabc-btn'>
-                            <a href="#">See Profile</a>
+                            <a href="#" className='themedark'>See Profile</a>
                             <a href="#" className='themelight'>See Ratings</a>
                         </div>
                     </div>

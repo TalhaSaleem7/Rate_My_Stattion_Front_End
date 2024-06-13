@@ -210,7 +210,7 @@ return(
                         <div class="Award-a">
                             <a href="#">3+ more</a>
                         </div>
-                    </div>
+        </div>
 
     </>
     

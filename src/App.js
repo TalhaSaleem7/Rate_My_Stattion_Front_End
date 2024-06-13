@@ -75,11 +75,13 @@ import RateThisProd from "./Popups/Rate_popup_h/Ratepopup_h";
 import StationInfoForm from "./Popups/Info_popup_h/Stationinfo_h";
 import UserInfoForm from "./Popups/Info_popup_h/Userinfo_h";
 import DirectorInfoForm from "./Popups/Info_popup_h/Directorinfo_h";
+import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" exact element={<Homepage />} />
         <Route path="/kabc" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
         <Route path="/kabcah" exact element={<KABCah />} />
@@ -100,7 +102,6 @@ function App() {
         <Route path="/Cardah" exact element={<Cardah />} />
         <Route path="/Station" exact element={<Station />} />
         <Route path="/Filter" exact element={<Filter />} />
-
         <Route path="/reportersd" exact element={<Reportersd />} />
         <Route path="/" exact element={<Homepage />} />
         <Route path="/about" exact element={<About />} />
@@ -237,6 +238,17 @@ function App() {
         <Route path="/contactus" exact element={<Contactus />} />
         <Route path="/jobopening" exact element={<Jobopening />} />
         <Route
+          path="/stationsearchresult"
+          exact
+          element={<StationSearchResult />}
+        />
+        <Route
+          path="/directorsearchresult"
+          exact
+          element={<DirectorSearchResult />}
+        />
+        <Route path="/FAQ" exact element={<FAQPage />} />
+        <Route
           path="/StationSearchResult"
           exact
           element={<StationSearchResult />}
@@ -247,6 +259,8 @@ function App() {
           element={<DirectorSearchResult />}
         />
         <Route path="/rateh" exact element={<RateThisProd />} />
+
+        <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
       </Routes>
     </Router>
   );
