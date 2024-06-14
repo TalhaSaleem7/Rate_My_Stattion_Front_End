@@ -151,7 +151,7 @@ return(
       </div>
 
 
-      <div id="ratings" class="content ">
+      <div id="ratings" class="content  ">
       <section class="About-ah">
       <Container>
                 <div class="About-main-ah">
@@ -259,7 +259,7 @@ return(
         </section>
       </div>
 
-      <div id="Contact" class="content ">
+      <div id="Contact" class="content  ">
       <section class="About-ah">
       <Container>
                 <div class="About-main-ah">
@@ -392,7 +392,7 @@ return(
     
 
       
-      <div id="Posteds" class="content ">
+      <div id="Posteds" class="content  ">
       <section class="About-ah">
       <Container>
                 <div class="About-main-ah">
