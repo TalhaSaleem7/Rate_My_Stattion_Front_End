@@ -68,9 +68,10 @@ return(
                 </div>
             </div>
         </Container>
-    </section>
+</section>
 
-    <section class="About-ah">
+    <section class="About-ah extara">
+
     <Container>
             <div class="About-main-ah">
 
@@ -82,6 +83,7 @@ return(
                     <Openings/>
 
                 </div>
+                
                 <div class="About-main-box-2-ah">
                     
                     <div class="About-main-box-2-tital-ah">
@@ -143,7 +145,8 @@ return(
 
             </div>
     </Container>
-    </section>
+
+</section>
 
 <Footerah/>
     </>

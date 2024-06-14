@@ -319,7 +319,7 @@ return(
     </section>
   </div>
   
-  <div id="Posteds" class="content active">
+  <div id="Posteds" class="content ">
     <section class="About-ah">
     <Container>
             <div class="About-main-ah">
@@ -364,7 +364,7 @@ return(
     </section>
   </div>
 
-  <div id="Contact" class="content ">
+  <div id="Contact" class="content active">
     <section class="About-ah">
     <Container>
             <div class="About-main-ah">
