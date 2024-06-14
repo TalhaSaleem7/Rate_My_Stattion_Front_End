@@ -7107,20 +7107,783 @@ section.employer-login-pg-sec {
 
 
 @media screen and (max-width: 1024px){
+  .KABC-part-1-ah {
+    width: 48%;
+}
 
-  
+.KABC-tital-ah {
+    gap: 8px;
+}
+
+.main-KABC-ah {
+    padding: 40px 30px 30px 40px;
+}
+
+.KABC-btn-box-ah {
+    width: 25%;
+    gap: 10px;
+}
+
+span.See button {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.Industry-ah span p {
+    font-size: 14px;
+}
+
+.Industry-ah span {
+    gap: 5px;
+}
+
+.About-main-card-1-ah {
+    padding: 20px;
+}
+
+.About-main-card-1-ah h2 {
+    font-size: 20px;
+}
+
+.Recommend-card-tital-ah h2 {
+    font-size: 16px;
+}
+
+.Job-list-1-ah span h2 {
+    font-size: 24px;
+}
+
+.Job-list-2-ah span p {
+    font-size: 12px;
+}
+
+.Job-list-2-ah {
+    padding: 8px 20px;
+}
+
+.Job-list-3-ah {
+    padding-top: 20px;
+}
+
+.Job-list-1-ah {
+    padding-bottom: 14px;
+}
+
+.About-main-box-2-tital-ah h2 {
+    font-size: 24px;
+}
+
+section.About-ah {
+    padding: 60px 0px;
+}
+
+.Recommend-card-tital-ah {
+    padding: 15px 20px;
+}
+.Industry-ah {
+  padding-top: 15px;
+}
+.Recommend-box-ah {
+  gap: 20px;
+}
+
+.padding-ah {
+  padding: 30px 0px 15px 0px;
+}
+
+.About-main-box-1-ah {
+  gap: 20px;
+}
+.ul-li-list-footer ul {
+  gap: 20px;
+}
+
+.ul-li-list-footer ul li a {
+  font-size: 14px;
+}
+
+.icon-list-footer {
+  gap: 15px;
+}
+.navtabs {
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navtab {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+section.Statistic-ah {
+  padding: 80px 0px;
+}
+
+.Overall-Statistic-ah h2 {
+  font-size: 20px;
+}
+
+.ratings-ah-1-TITAL span h2 {
+  font-size: 80px;
+}
+
+.ratings-ah-1-TITAL span p {
+  font-size: 20px;
+}
+
+.ratings-ah-1-TITAL h3 {
+  font-size: 18px;
+}
+
+.ratings-ah-1-bar {
+  gap: 8px;
+}
+
+span.\34 5 h2 {
+  font-size: 20px;
+}
+
+.pogras-card-ah span h2 {
+  font-size: 20px;
+}
+
+.bar-pogres-box-cards-ah {
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.gol-bar-tital {
+  width: 32%;
+}
+
+.gol-bar-tital span p {
+  font-size: 18px;
+}
+
+.gol-bar-head h2 {
+  font-size: 65px;
+}
+
+.gol-bar-head p {
+  font-size: 18px;
+}
+.Angeles-logo-side-box {
+  width: 60%;
+}
+
+.job-ah-post h2 {
+  font-size: 24px;
+}
+
+.job-ah-post h2 span {
+  font-size: 20px;
+}
+
+.Director-ah-boxing-logo span h2 {
+  font-size: 18px;
+}
+
+.Director-ah-boxing-logo span p {
+  font-size: 14px;
+}
+
+.Director-ah-boxing p {
+  font-size: 14px;
+}
+
+.Director-ah-boxing-3 button {
+  padding: 10px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.Director-ah-boxing-list-logo {
+  width: 50%;
+}
+
+.Director-ah-boxing-list-span h2 {
+  font-size: 14px;
+}
+
+.Director-ah-boxing-list-logo span h2 {
+  font-size: 16px;
+}
+
+.Director-ah-boxing-2 {
+  padding: 14px 0px 18px 0px;
+}
+.Angeles-logo-side-box span h2 {
+  font-size: 20px;
+}
 }
 
 
-
-
 @media screen and (max-width: 768px){
+  .About-main-ah {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
+.About-main-box-1-ah {
+    width: 100%;
+}
+
+.About-main-box-2-ah {
+    width: 60%;
+}
+
+section.About-ah {
+    padding: 40px 0px;
+}
+
+.KABC-btn-box-ah {
+    width: 34%;
+}
+
+span.See button {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+button.Contact-ah {
+    line-height: 28px;
+}
+
+.KABC-part-1-ah {
+    width: 60%;
+    gap: 30px;
+}
+.Angeles-logo-side-box {
+  width: 75%;
+}
+
+.Angeles-logo-ah {
+  width: 15%;
+}
+
+.KABC-tital-ah {
+    gap: 5px;
+}
+
+.KABC-tital-ah span h2 {
+    font-size: 24px;
+}
+
+.KABC-tital-ah p {
+    font-size: 18px;
+}
+
+.KABC-tital-ah span p {
+    font-size: 16px;
+}
+.Job-list-1-ah span h2 {
+  font-size: 20px;
+}
+.main-footer {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ul-li-list-footer {
+  width: 100%;
+}
+
+.ul-li-list-footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratings-ah-1 {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.ratings-ah-1-TITAL {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ratings-ah-1-box {
+  width: 34%;
+}
+
+
+.gol-bar-ah {
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.gol-bar-head {
+  width: 100%;
+}
+
+.gol-bar-tital {
+  width: 42%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.gol-bar-head h2 {
+  font-size: 55px;
+  text-align: center;
+}
+.ratings-ah-1-TITAL span h2 {
+  font-size: 60px;
+}
+
+.ratings-ah-1-TITAL span p {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.job-ah-post h2 {
+  font-size: 20px;
+}
+
+.job-ah-Filter {
+  width: 64%;
+  gap: 25px;
+}
+
+.job-ah-Filter-card p {
+  font-size: 16px;
+}
+
+.job-ah-Filter-card select {
+  padding: 8px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.director-urer img {
+  width: 10%;
+}
+
+.director-urer {
+  padding-bottom: 24px;
+}
+.Angeles-logo-side-box span h2 {
+  font-size: 20px;
+}
+
+.Jacob-card-ah {
+  width: 75%;
+}
+
+.Jacob-card-ah-box {
+  align-items: center;
+  justify-content: center;
+}
+
+.four-select-tab {
+  margin: 25px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+}
+
+.verified-rating-box h6 {
+  font-size: 14px;
+}
+.Hire-ah-box h2 {
+  font-size: 28px;
+}
+
+.Hire-ah-box p {
+  font-size: 18px;
+  padding: 20px 10px;
+}
+
+.Hire-ah-box button {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+.Hire-ah-box {
+  padding: 40px 20px;
+}
+
+.About-main-ah {
+  gap: 25px;
+}
+
+.job-ah-post h2 span {
+  font-size: 16px;
+}
+
+.main-tabs-ah {}
 }
 
 
 
 
 @media screen and (max-width: 600px){
+  .ul-li-list-footer ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.About-main-box-2-ah {
+    width: 100%;
+}
+
+.About-main-box-2-tital-ah h2 {
+    font-size: 18px;
+}
+
+.About-main-box-2-tital-ah a {
+    font-size: 15px;
+}
+
+.Recommend-box-ah {
+    gap: 20px;
+    padding-top: 25px;
+}
+
+.Recommend-card-tital-ah {
+    padding: 10px 14px;
+}
+
+.Recommend-card-tital-ah h2 {
+    font-size: 14px;
+}
+
+.KABC-box-ah {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.KABC-part-1-ah {
+    width: 100%;
+}
+
+.KABC-btn-box-ah {
+    width: 100%;
+}
+
+section.KABC-ah {
+    padding-top: 40px;
+}
+.Jacob-card-ah {
+  width: 100%;
+  padding: 20px;
+}
+
+.Director-ah-boxing-3 button {
+  padding: 10px;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.Director-ah-boxing-list-logo {
+  gap: 20px;
+}
+section.About-ah {
+    padding: 170px 0px 50px 0px;
+}
+.Angeles-ah-icon-side {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.Angeles-logo-side-box {
+  width: 100%;
+}
+
+.Angeles-ah-box {
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.Angeles-logo-ah {
+  width: 30%;
+}
+.About-main-card-1-ah h2 {
+    font-size: 18px;
+}
+
+.About-main-card-1-ah p {
+    padding: 15px 0px 10px 0px;
+    font-size: 14px;
+}
+.bar-pogres-box-cards-ah {
+  flex-direction: column;
+}
+
+.pogras-card-ah {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Overall-Statistic-ah {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Overall-Statistic-ah ul {
+  width: 100%;
+}
+
+.ratings-ah-1-box {
+  width: 100%;
+}
+
+.gol-bar-tital {
+  width: 100%;
+  gap: 15px;
+}
+
+.gol-bar-head h2 {
+  font-size: 45px;
+}
+
+.ratings-ah-1-bar {
+  width: 100%;
+}
+
+section.Statistic-ah {
+  padding: 160px 0px 50px 0px;
+}
+
+.navtabs {
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.main-KABC-ah {
+  padding: 30px 30px 20px 30px;
+}
+.Industry-ah {
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.gol-bar-box {
+  width: 70%;
+}
+.Brooklyn-Simmons-card {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Brooklyn-Simmons-logo-div {
+    width: 100%;
+    gap: 20px;
+}
+
+.Brooklyn-Simmons-card button {
+    line-height: 28px;
+}
+span.edite svg {
+  width: 20px;
+  height: 20px;
+}
+
+section.About-ah {}
+
+.Award-card-ah {
+    align-items: flex-start;
+}
+
+.About-main-card-1-ah h2 span {
+    font-size: 16px;
+}
+
+.Job-box-ah {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Job-card-ah {
+    width: 100%;
+}
+
+.Job-list-1-ah span h2 {
+    font-size: 18px;
+}
+
+.Job-list-2-ah {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.KABC-tital-ah span h2 {
+  font-size: 20px;
+}
+
+.ratings-ah-1-TITAL span h2 {
+  font-size: 60px;
+}
+
+.ratings-ah-1-TITAL span p {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.job-ah-post h2 {
+  font-size: 20px;
+}
+
+.job-ah-Filter {
+  width: 64%;
+  gap: 25px;
+}
+
+.job-ah-Filter-card p {
+  font-size: 16px;
+}
+
+.job-ah-Filter-card select {
+  padding: 8px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.director-urer img {
+  width: 10%;
+}
+
+.director-urer {
+  padding-bottom: 24px;
+}
+
+.Draft-ah {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Hire-ah-box h2 {
+  font-size: 24px;
+}
+
+.Hire-ah-box p {
+  font-size: 16px;
+  padding: 18px 8px;
+}
+
+.Hire-ah-box button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.Job-box-ah {}
+
+.four-select-tab {
+  margin: 25px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+}
+
+.verified-rating-box h6 {
+  font-size: 14px;
+}
+
+.scrllo-bar p {
+  padding: 0px;
+  line-height: 24px;
+}
+
+.w3-light-grey.w3-tiny {
+  height: 12px;
+}
+
+.About-main-card-1-ah h2 {
+  font-size: 16px;
+}
+
+.Popular-ti-ah-btn-box button {
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.Popular-ti-ah-btn-box {
+  gap: 12px;
+}
+
+.latest-rating-user-verified {
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rating-user-box {
+  width: 100%;
+}
+
+.verified-rating-box {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.job-ah-post {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.job-ah-Filter {
+  width: 100%;
+}
+
+.job-ah-post h2 {
+  font-size: 18px;
+}
+
+.job-ah-post h2 span {
+  font-size: 15px;
+}
+
+.review-news-director {
+  margin: 35px 0px 25px 0px;
+}
+
+.review-news-director {
+  margin: 25px 0px 20px 0px;
+}
+
+.review-director-para p {
+  font-size: 14px;
+}
+
+.racial-discrimination p {
+  font-size: 14px;
+}
+
+.racial-discrimination h5 {
+  font-size: 14px;
+}
+
+.like-report-txt ul li {
+  font-size: 14px;
+}
+
+.like-report-submitted {
+  margin: 12px 0px;
+}
+
+.latest-rating-comment-box {
+  margin: 25px 0px 5px 0px;
+}
+
+.latest-comment-txt-input-box input {
+  padding: 12px 40px 12px 18px;
+  font-size: 16px;
+}
+
+.latest-rating-box {
+  margin: 0px 0px 30px 0px;
+}
 
 }

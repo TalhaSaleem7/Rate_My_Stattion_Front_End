@@ -21,6 +21,7 @@ import Chartah3 from "../Chart/Chartah3";
 import Assistantah from "../Assistantah/Assistantah";
 import Jobah from "../Jobah/Jobah";
 import Footerah from "../footerah/Footerah";
+import { Container } from "react-bootstrap";
 
 
 
@@ -34,7 +35,7 @@ return(
     <>
 
 <section class="KABC-ah">
-        <div class="container-ah">
+<Container>
             <div class="main-KABC-ah ah-spas">
                 <div class="KABC-box-ah">
                     <div class="KABC-part-1-ah">
@@ -93,7 +94,7 @@ return(
                     <div class="underline"></div>
                   </div>
             </div>
-        </div>
+            </Container>
     </section>
 
 
@@ -101,9 +102,9 @@ return(
 
 <div class="main-tabs-ah">
   
-  <div id="Profile" class="content  ">
+  <div id="Profile" class="content   ">
     <section class="About-ah">
-        <div class="container-ah">
+    <Container>
             <div class="About-main-ah">
 
                 <div class="About-main-box-1-ah">
@@ -176,13 +177,13 @@ return(
                 </div>
 
             </div>
-        </div>
+            </Container>
     </section>
   </div>
 
   <div id="ratings" class="content   ">
     <section class="About-ah">
-        <div class="container-ah">
+    <Container>
             <div class="About-main-ah">
 
                 <div class="About-main-box-1-ah">
@@ -262,13 +263,13 @@ return(
                 </div>
 
             </div>
-        </div>
+            </Container>
     </section>
   </div>
 
-  <div id="Statistic" class="content active ">
+  <div id="Statistic" class="content  ">
    <section class="Statistic-ah">
-    <div class="container-ah">
+   <Container>
 
         <div class="main-Statistic-ah">
 
@@ -279,14 +280,13 @@ return(
 
 
         </div>
-
-    </div>
+        </Container>
    </section>
   </div>
 
-  <div id="Posted" class="content ">
+  <div id="Posted" class="content  ">
     <section class="About-ah">
-        <div class="container-ah">
+    <Container>
             <div class="About-main-ah">
 
                 <div class="About-main-box-1-ah">
@@ -315,13 +315,13 @@ return(
                 </div>
 
             </div>
-        </div>
+            </Container>
     </section>
   </div>
   
-  <div id="Posteds" class="content ">
+  <div id="Posteds" class="content active">
     <section class="About-ah">
-        <div class="container-ah">
+    <Container>
             <div class="About-main-ah">
 
                
@@ -360,13 +360,13 @@ return(
 
 
             </div>
-        </div>
+            </Container>
     </section>
   </div>
 
   <div id="Contact" class="content ">
     <section class="About-ah">
-        <div class="container-ah">
+    <Container>
             <div class="About-main-ah">
 
                 <div class="About-main-box-1-ah">
@@ -482,7 +482,7 @@ return(
                 </div>
 
             </div>
-        </div>
+            </Container>
     </section>
   </div>
 
