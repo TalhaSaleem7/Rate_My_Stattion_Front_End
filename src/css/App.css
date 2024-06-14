@@ -7115,6 +7115,8 @@ section.employer-login-pg-sec {
 
 
 
+
+
 /******************* Shahdin Pages CSS End *******************/
 
 
@@ -7148,7 +7150,171 @@ span.See button {
 .Industry-ah span p {
     font-size: 14px;
 }
+.station-search-result-txt h4 {
+  font-size: 30px;
+}
 
+.station-search-result-txt p {
+  font-size: 16px;
+}
+
+.station-search-result-txt p span {
+  font-size: 16px;
+}
+
+.station-search-result-txt {
+  padding: 40px 0px 20px 0px;
+}
+
+.search-station-sec {
+  padding: 45px 0px 0px 0px;
+}
+
+.rms-kabc-txt h3 {
+  font-size: 22px;
+}
+
+.rms-kabc-btn .themedark {
+  font-size: 12px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 8px 18px;
+}
+
+.news-director-card {
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: 0px 0px 25px 0px;
+}
+
+.news-director-card-txt h5 {
+  font-size: 20px;
+}
+
+.news-director-detail-btn a {
+  padding: 10px 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.rms-kabc-btn .themelight {
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
+}
+
+.rms-profile-box {
+  padding: 25px 20px;
+  margin: 0px 0px 24px 0px;
+}
+
+.seeprofile-box-btn a {
+  font-size: 16px;
+  padding: 10px 30px;
+}
+.ratemystation-prod-txt h3 {
+  font-size: 16px;
+  line-height: 20px;
+  height: 100%;
+}
+
+.ratemystation-prod-txt {
+  padding: 15px;
+}
+
+.ratemystation-prod-txt h6 {
+  font-size: 14px;
+  margin: 0px 0px 15px 0px;
+}
+
+.ratemystation-prod-btn {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ratemystation-shop-prod {
+  border-radius: 14px;
+}
+
+.ratemystation-shop-prod img {
+  height: 159px;
+  object-fit: contain;
+  object-position: top;
+}
+
+img {}
+
+.prod-abslt-ratems {
+  height: 100%;
+}
+
+h4 {}
+
+section.ratemystation-shop-sec h4 {
+  font-size: 24px;
+  margin: 0px 0px 34px 0px !important;
+}
+
+section.ratemystation-shop-sec {
+  padding: 30px 0px;
+}
+.find-station-looking {
+  padding: 40px 20px 40px 20px;
+}
+
+.find-station-looking h4 {
+  font-size: 24px;
+}
+
+.find-station-looking p {
+  font-size: 18px;
+  line-height: 28.5px;
+}
+
+.find-station-looking a {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.seeprofile-box-btn {
+  margin: 0px 0px 30px 0px;
+}
+
+.rms-abc-logo {
+  width: 18%;
+}
+
+.rms-profile-logo-box {
+  align-items: flex-start;
+}
+
+.rms-rating-review svg {
+  width: 150px;
+}
+
+.looking-for-work-sec {
+  padding: 35px 0px;
+}
+
+.looking-for-worktxt h4 {
+  font-size: 32px;
+}
+
+.looking-for-worktxt p {
+  font-size: 18px;
+  margin: 15px 0px 20px 0px !important;
+}
+
+.looking-for-worktxt a {
+  font-size: 18px;
+  line-height: 31.5px;
+  padding: 8px 42px;
+}
+
+.looking-for-worktxt {
+  padding: 50px 0px;
+}
 .Industry-ah span {
     gap: 5px;
 }
@@ -7422,7 +7588,9 @@ span.\34 5 h2 {
     align-items: center;
     gap: 30px;
 }
-
+.news-director-detail-btn {
+  justify-content: flex-end;
+}
 .About-main-box-1-ah {
     width: 100%;
 }
@@ -7438,7 +7606,10 @@ section.About-ah {
 .KABC-btn-box-ah {
     width: 34%;
 }
-
+.ratemystation-prod-txt h3 {
+  
+  height: 50px;
+}
 span.See button {
     padding: 5px;
     font-size: 14px;
@@ -7649,7 +7820,9 @@ button.Contact-ah {
 .Recommend-card-tital-ah {
     padding: 10px 14px;
 }
-
+section.director-search-result hr {
+  margin: 0px;
+}
 .Recommend-card-tital-ah h2 {
     font-size: 14px;
 }
@@ -7657,6 +7830,9 @@ button.Contact-ah {
   font-size: 22px;
 }
 
+.news-director-card-txt h5 {
+  font-size: 18px;
+}
 .Applied-ah-list-1 {
   padding-bottom: 18px;
 }
@@ -7666,7 +7842,25 @@ button.Contact-ah {
   border-radius: 20px;
   align-items: flex-start;
 }
+.rms-profile-logo-box {
+  flex-direction: column;
+}
 
+.station-search-result-txt h4 {
+  font-size: 18px;
+}
+
+.station-search-result-txt p {
+  font-size: 14px;
+}
+
+.station-search-result-txt p span {
+  font-size: 14px;
+}
+
+.search-station-sec {
+  padding: 20px 0px 0px 0px;
+}
 .Applied-ah-logo {
   width: 18%;
 }
