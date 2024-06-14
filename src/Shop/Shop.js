@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { RiSearchLine } from 'react-icons/ri';
 import shopnewarrival from "../img/shop-new-arrival-img.png"
 import themeimg1 from "../img/themed-img-1.png"
@@ -13,10 +14,30 @@ import ProdImage6 from '../img/ratemystation-prod-img-6.png';
 import ProdImage7 from '../img/ratemystation-prod-img-7.png';
 import ProdImage8 from '../img/ratemystation-prod-img-8.png';
 import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
 const Shop = () => {
+
+  
+    const navigate = useNavigate()
+  
+    const proddetail = () => {
+      navigate('/productdetail')
+    }
+  
+    const mycart = () => {
+      navigate('/mycart')
+    }
+  
+    const shop = () => {
+      navigate('/shop')
+    }
+
   return (
     <>
+
+      <Header/>
       <section className="shop-first-banner-sec">
         <Container>
           <Row>
@@ -128,8 +149,8 @@ const Shop = () => {
                   <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                   <h6>$18.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -142,8 +163,8 @@ const Shop = () => {
                   <h3>America Needs Local News Sweatshirt</h3>
                   <h6>$25.00 – $33.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -155,8 +176,8 @@ const Shop = () => {
                   <h3>Anonymous Source Onesie</h3>
                   <h6>$18.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -168,8 +189,8 @@ const Shop = () => {
                   <h3>You Are A PKG Framed Poster</h3>
                   <h6>$26.00 – $105.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -181,8 +202,8 @@ const Shop = () => {
                   <h3>#NewsBae Engraved Heart Necklace</h3>
                   <h6>$35.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -195,8 +216,8 @@ const Shop = () => {
                   <h3>America Needs Local News Bar Chain Bracelet</h3>
                   <h6>$30.50 – $33.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -209,8 +230,8 @@ const Shop = () => {
                   <h3>America Needs Local News Mug</h3>
                   <h6>$11.00 – $15.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -222,8 +243,8 @@ const Shop = () => {
                   <h3>Anchor Woman Pom-Pom Beanie</h3>
                   <h6>$19.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -254,8 +275,8 @@ const Shop = () => {
                   <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                   <h6>$18.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -268,8 +289,8 @@ const Shop = () => {
                   <h3>America Needs Local News Sweatshirt</h3>
                   <h6>$25.00 – $33.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -281,8 +302,8 @@ const Shop = () => {
                   <h3>Anonymous Source Onesie</h3>
                   <h6>$18.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -294,8 +315,8 @@ const Shop = () => {
                   <h3>You Are A PKG Framed Poster</h3>
                   <h6>$26.00 – $105.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -307,8 +328,8 @@ const Shop = () => {
                   <h3>#NewsBae Engraved Heart Necklace</h3>
                   <h6>$35.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -321,8 +342,8 @@ const Shop = () => {
                   <h3>America Needs Local News Bar Chain Bracelet</h3>
                   <h6>$30.50 – $33.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -335,8 +356,8 @@ const Shop = () => {
                   <h3>America Needs Local News Mug</h3>
                   <h6>$11.00 – $15.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -348,8 +369,8 @@ const Shop = () => {
                   <h3>Anchor Woman Pom-Pom Beanie</h3>
                   <h6>$19.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -391,8 +412,8 @@ const Shop = () => {
                   <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                   <h6>$18.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -405,8 +426,8 @@ const Shop = () => {
                   <h3>America Needs Local News Sweatshirt</h3>
                   <h6>$25.00 – $33.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -418,8 +439,8 @@ const Shop = () => {
                   <h3>Anonymous Source Onesie</h3>
                   <h6>$18.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -431,8 +452,8 @@ const Shop = () => {
                   <h3>You Are A PKG Framed Poster</h3>
                   <h6>$26.00 – $105.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -444,8 +465,8 @@ const Shop = () => {
                   <h3>#NewsBae Engraved Heart Necklace</h3>
                   <h6>$35.00</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -458,8 +479,8 @@ const Shop = () => {
                   <h3>America Needs Local News Bar Chain Bracelet</h3>
                   <h6>$30.50 – $33.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -472,8 +493,8 @@ const Shop = () => {
                   <h3>America Needs Local News Mug</h3>
                   <h6>$11.00 – $15.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -485,8 +506,8 @@ const Shop = () => {
                   <h3>Anchor Woman Pom-Pom Beanie</h3>
                   <h6>$19.50</h6>
                   <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
               </div>
@@ -495,7 +516,7 @@ const Shop = () => {
           <Row>
             <Col lg={12}>
               <div class="ratemystation-allprod-btn">
-                <a href="#">See All Product</a>
+                <a onClick={shop}>See All Product</a>
               </div>
             </Col>
           </Row>
@@ -503,7 +524,7 @@ const Shop = () => {
       </section>
 
 
-
+      <Footerah/>
 
 
     </>

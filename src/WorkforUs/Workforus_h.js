@@ -65,7 +65,7 @@ const WorkforUs = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <div className="faq--term--detail--h">
+              <div className="faq--term--detail--h work--forus--title--h">
                 <h1>Work for Us</h1>
                 <p>See our latest vacancies below.</p>
               </div>

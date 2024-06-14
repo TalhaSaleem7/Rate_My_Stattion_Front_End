@@ -1,5 +1,13 @@
-
-const JobCard = ({ title, company, workType, salary, employmentType, details, activelyHiring, updatedTime }) => {
+const JobCard = ({
+  title,
+  company,
+  workType,
+  salary,
+  employmentType,
+  details,
+  activelyHiring,
+  updatedTime,
+}) => {
   return (
     <div className="col faq--work--card--pad--h">
       <div className="card faq--work--card--h">
@@ -36,10 +44,10 @@ const JobCard = ({ title, company, workType, salary, employmentType, details, ac
           <div className="faq--work--card--list">
             <ul>
               {details.map((detail, index) => (
-                <li key={index} className="col-lg-12 work--list--li d-flex">
-                  <div className="faq--work--list--img">
+                <li key={index} className="col-lg-12 work--list--li ">
+                  {/* <div className="faq--work--list--img">
                     <img src={require("../../img/work_list_h.png")} alt="" />
-                  </div>
+                  </div> */}
                   {detail}
                 </li>
               ))}

@@ -415,6 +415,11 @@ font-family: "Public Sans", sans-serif;
   line-height: 26px; /* 162.5% */
 }
 
+.newsletter-detail-comment img {
+  width: 48.076px;
+}
+
+
 .latest-comment-txt-input-box button {
   background: transparent;
   border: none;
@@ -2682,8 +2687,7 @@ a {
 /*********** Header Main CSS Start ***********/
 
 header.header_main {
-  padding: 20px 0px 13px 0px;
-  margin: 0px 0px 15px 0px;
+  padding: 24px 0px 16px 0px;
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
 }
@@ -3568,7 +3572,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  padding: 8px 18px;
+  padding: 7px 14px;
   transition: all .6s ease;
 }
 
@@ -3589,7 +3593,7 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  padding: 8px 18px;
+  padding: 6px 18px;
   transition: all .6s ease;
 }
 
@@ -3605,7 +3609,7 @@ font-family: "Public Sans", sans-serif;
 }
 
 .ratemystation-allprod-btn a {
-  color: #FFF;
+  color: #FFF !important;
 font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -4970,7 +4974,7 @@ font-family: "Public Sans", sans-serif;
 
 
 .contact-latest-updates {
-  padding: 20px 50px;
+  padding: 20px 50px 20px 20px;
 }
 
 .contact-latest-updates p {
@@ -5138,9 +5142,12 @@ font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px !important;
 }
 
+.newsletter-comment-input img {
+  width: 48.076px;
+}
 
 .newsletter-comment-reaction p {
 font-family: "Public Sans", sans-serif;
@@ -5213,6 +5220,14 @@ font-family: "Public Sans", sans-serif;
 .soul-witness-user-imgtxt {
   display: flex;
   gap: 12px;
+}
+
+.soul-witness-user-imgtxt img {
+  width: 60.9px;
+}
+
+.more-soul-article img {
+  width: 144.4px;
 }
 
 .soul-witness-txt h4 {

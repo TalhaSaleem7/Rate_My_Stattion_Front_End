@@ -4,11 +4,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 import employerratemystation from "../img/employer-ratemy-station.png";
 import EmployerRegisterForm from '../EmployerRegisterForm/EmployerRegisterForm';
 import EmployerNewsroomForm from '../EmployerNewsroomForm/EmployerNewsroomForm';
+import Header from '../Header/Header';
+import Footerah from '../footerah/Footerah';
 
 const EmployerRegisterPage = () => {
     return (
         <>
-
+            <Header/>
             <section className="employer-login-pg-sec">
                 <Container>
                     <Row>
@@ -49,7 +51,7 @@ const EmployerRegisterPage = () => {
                     </Row>
                 </Container>
             </section>
-
+            <Footerah/>
         </>
     )
 }

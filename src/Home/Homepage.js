@@ -16,11 +16,31 @@ import Lookingforwork from '../Lookingforwork/Lookingforwork';
 import {RiFacebookFill, RiInstagramLine, RiTwitterFill, RiSearchLine   } from 'react-icons/ri';
 import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
+import { useNavigate } from 'react-router-dom';
 
   
 
 
 export const Homepage = () => {
+  
+  const navigate = useNavigate()
+
+  const proddetail = () => {
+    navigate('/productdetail')
+  }
+
+  const mycart = () => {
+    navigate('/mycart')
+  }
+
+  const shop = () => {
+    navigate('/shop')
+  }
+
+  const newsletter = () => {
+    navigate('/newsletter')
+  }
+
   return (
     <>
     <Header/>
@@ -67,7 +87,7 @@ export const Homepage = () => {
             <div class="newsletter-side-sec">
                 <div class="newsletter-side-head">
                     <h3>Newsletter</h3>
-                    <a href="#">See all</a>
+                    <a onClick={newsletter}>See all</a>
                 </div> 
                 <Newslettersidesd />
                 <div class="newsletter-follow-box">
@@ -104,8 +124,8 @@ export const Homepage = () => {
                 <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart}  variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -118,8 +138,8 @@ export const Homepage = () => {
                 <h3>America Needs Local News Sweatshirt</h3>
                 <h6>$25.00 – $33.50</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -131,8 +151,8 @@ export const Homepage = () => {
                 <h3>Anonymous Source Onesie</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -144,8 +164,8 @@ export const Homepage = () => {
                 <h3>You Are A PKG Framed Poster</h3>
                 <h6>$26.00 – $105.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -157,8 +177,8 @@ export const Homepage = () => {
                 <h3>#NewsBae Engraved Heart Necklace</h3>
                 <h6>$35.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -171,8 +191,8 @@ export const Homepage = () => {
                 <h3>America Needs Local News Bar Chain Bracelet</h3>
                 <h6>$30.50 – $33.50</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -185,8 +205,8 @@ export const Homepage = () => {
                 <h3>America Needs Local News Mug</h3>
                 <h6>$11.00 – $15.50</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -198,8 +218,8 @@ export const Homepage = () => {
                 <h3>Anchor Woman Pom-Pom Beanie</h3>
                 <h6>$19.50</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -208,7 +228,7 @@ export const Homepage = () => {
         <Row>
           <Col lg={12}>
             <div className="ratemystation-allprod-btn">
-              <Button href="#">See All Products</Button>
+              <a  onClick={shop}>See All Products</a>
             </div>
           </Col>
         </Row>

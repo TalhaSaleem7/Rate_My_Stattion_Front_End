@@ -1,6 +1,7 @@
-import chevron from "../../img/chevron_h.png"
-const FAQCard = ({ linkText }) => (
-    <div className="d-flex align-items-center faq--detail--card--container">
+import chevron from "../../img/chevron_h.png";
+const FAQCard = ({ linkText }) => {
+  return (
+    <div className="d-flex align-items-center faq--detail--card--container faq--detail--card--container--top--10">
       <div className="faq--detail--related--link--h">
         <a href="">{linkText}</a>
       </div>
@@ -9,4 +10,6 @@ const FAQCard = ({ linkText }) => (
       </div>
     </div>
   );
-  export default FAQCard
+};
+
+export default FAQCard;

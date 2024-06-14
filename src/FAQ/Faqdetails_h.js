@@ -1,6 +1,11 @@
 import Related from "./component/Relatedarticles_h";
 import Questioncard from "./component/Questioncard_h";
+
+
 const FaqDetail = () => {
+
+
+
   return (
     <div>
       <section className="w-100 faq--search--detail--section--h">
@@ -87,7 +92,11 @@ const FaqDetail = () => {
 
           <div className="col-lg-12 faq--search--detail--container">
             <div className="faq--search--detail--cont--h">
-              <h1 className="faq--detail--related--title">Related articles</h1>
+              <div>
+                <h1 className="faq--detail--related--title">
+                  Related articles
+                </h1>
+              </div>
               <div className="row row-cols-1 row-cols-lg-2 g-4 faq--detail--related--container--h">
                 <Related />
               </div>
