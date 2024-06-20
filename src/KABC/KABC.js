@@ -7,6 +7,7 @@ import Openings from "../Openings/Openings";
 import Cardah from "../Cardah/Cardah";
 import About1 from "../About/About1";
 import Footerah from "../footerah/Footerah";
+import { Container } from "react-bootstrap";
 
 
 
@@ -20,7 +21,7 @@ return(
     <>
 
 <section class="KABC-ah">
-        <div class="container-ah">
+    <Container>
             <div class="main-KABC-ah">
                 <div class="KABC-box-ah">
                     <div class="KABC-part-1-ah">
@@ -66,11 +67,12 @@ return(
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </Container>
+</section>
 
-    <section class="About-ah">
-        <div class="container-ah">
+    <section class="About-ah extara">
+
+    <Container>
             <div class="About-main-ah">
 
                 <div class="About-main-box-1-ah">
@@ -81,6 +83,7 @@ return(
                     <Openings/>
 
                 </div>
+                
                 <div class="About-main-box-2-ah">
                     
                     <div class="About-main-box-2-tital-ah">
@@ -141,8 +144,9 @@ return(
                 </div>
 
             </div>
-        </div>
-    </section>
+    </Container>
+
+</section>
 
 <Footerah/>
     </>

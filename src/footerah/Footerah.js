@@ -1,6 +1,7 @@
 import React from "react";
 
 import kabc from '../img/kabc.png'
+import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 
@@ -20,7 +21,7 @@ return(
     <>
 
 <footer>
-    <div className="container-ah">
+   <Container>
        <div className="main-footer">
        <div className="ul-li-list-footer">
         <ul>
@@ -52,7 +53,7 @@ return(
 
        </div>
         </div>
-    </div>
+        </Container>
 </footer>
     </>
     

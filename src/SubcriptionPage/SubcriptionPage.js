@@ -40,7 +40,7 @@ const SubcriptionPage = () => {
                   </Col>
                   <Col lg={8}>
                     <Row>
-                      <Col lg={4}>
+                      <Col lg={4} md={4}>
                         <div className="subcription-box">
                           <h4>1 Month</h4>
                           <h6>subcription</h6>
@@ -48,7 +48,7 @@ const SubcriptionPage = () => {
                           <a href="#">Subscribe</a>
                         </div>
                       </Col>
-                      <Col lg={4}>
+                      <Col lg={4} md={4}>
                         <div className="subcription-box recommend-box">
                           <h4>2 Months</h4>
                           <h6>subcription</h6>
@@ -57,7 +57,7 @@ const SubcriptionPage = () => {
                           <a href="#">Subscribe</a>
                         </div>
                       </Col>
-                      <Col lg={4}>
+                      <Col lg={4} md={4}>
                         <div className="subcription-box best-value-box">
                           <h4>6 Months</h4>
                           <h6>subcription</h6>

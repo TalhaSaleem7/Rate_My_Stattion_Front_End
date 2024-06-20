@@ -12,6 +12,7 @@ import Experianceah from "../Experianceah/Experianceah";
 import Skillsah from "../Skills/Skillsah";
 import Educationah from "../Educationah/Educationah";
 import Footerah from "../footerah/Footerah";
+import { Container } from "react-bootstrap";
 
 
 
@@ -25,7 +26,7 @@ return(
     <>
 
 <section class="KABC-ah">
-        <div class="container-ah">
+<Container>
             <div class="main-KABC-ah">
                 <div class="KABC-box-ah">
                     <div class="KABC-part-1-ah">
@@ -68,11 +69,11 @@ return(
                     </div>
                 </div>
             </div>
-        </div>
+            </Container>
     </section>
 
-    <section class="About-ah">
-        <div class="container-ah">
+    <section class="About-ah extara">
+    <Container>
             <div class="About-main-ah">
 
                 <div class="About-main-box-1-ah">
@@ -145,7 +146,7 @@ return(
                 </div>
 
             </div>
-        </div>
+            </Container>
     </section>
 
 

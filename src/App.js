@@ -119,7 +119,7 @@ function App() {
         <Route path="/employerlogin" exact element={<EmployerLoginPg />} />
         <Route path="/employerregister"  exact element={<EmployerRegisterPage />} />
         <Route path="/subscription" exact element={<SubcriptionPage />} />
-        <Route  path="/submitstaionform" exact  element={<SubmitAStationForm />} />
+        <Route path="/submitstaionform" exact  element={<SubmitAStationForm />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/newsletter" exact element={<Newsletter />} />
         <Route path="/newsletterarticle" exact element={<NewsletterArticle />} />

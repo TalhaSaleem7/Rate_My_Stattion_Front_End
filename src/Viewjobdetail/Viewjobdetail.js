@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { RiMapPin2Fill, RiMoneyDollarCircleFill, RiFlagFill, RiBookmarkFill, RiShareFill } from 'react-icons/ri';
 import jobCompLogo from '../img/job-comp-logo.jpg';
@@ -10,6 +11,23 @@ import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
 
 
 const Viewjobdetail = () => {
+
+  const navigate = useNavigate()
+
+  const proddetail = () => {
+    navigate('/productdetail')
+  }
+
+  const mycart = () => {
+    navigate('/mycart')
+  }
+
+  const shop = () => {
+    navigate('/shop')
+  }
+
+
+
   return (
     <>
      <section className="view-job-detail-sec">
@@ -90,13 +108,13 @@ const Viewjobdetail = () => {
                             <div className="additional-information-job">
                                 <h4>Additional Information</h4>
                                 <Row>
-                                    <Col lg={6}>
+                                    <Col lg={6} md={6}>
                                         <div className="job-add-career">
                                             <h6>Career Level</h6>
                                             <h5>Staff (non-management & non-supervisor) </h5>
                                         </div>
                                     </Col>
-                                    <Col lg={6}>
+                                    <Col lg={6} md={6}>
                                         <div className="job-add-career">
                                             <h6>Education level</h6>
                                             <h5>Bachelor Degree </h5>
@@ -104,13 +122,13 @@ const Viewjobdetail = () => {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col lg={6}>
+                                    <Col lg={6} md={6}>
                                         <div className="job-add-career">
                                             <h6>Years of Experience</h6>
                                             <h5>1 year</h5>
                                         </div>
                                     </Col>
-                                    <Col lg={6}>
+                                    <Col lg={6} md={6}>
                                         <div className="job-add-career">
                                             <h6>Job Type</h6>
                                             <h5>Full-Time</h5>
@@ -134,7 +152,7 @@ const Viewjobdetail = () => {
         <h4>RateMyStation's Shop</h4>
         <Container>
         <Row>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -142,13 +160,13 @@ const Viewjobdetail = () => {
                 <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -156,34 +174,34 @@ const Viewjobdetail = () => {
                 <h3>America Needs Local News Sweatshirt</h3>
                 <h6>$25.00 – $33.50</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage3} alt="Anonymous Source Onesie" />
               <div className="ratemystation-prod-txt">
                 <h3>Anonymous Source Onesie</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
               <div className="ratemystation-prod-txt">
                 <h3>You Are A PKG Framed Poster</h3>
                 <h6>$26.00 – $105.00</h6>
                 <div className="ratemystation-prod-btn">
-                  <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                  <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                  <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                  <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
               </div>
             </div>
