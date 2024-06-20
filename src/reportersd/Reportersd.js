@@ -33,7 +33,7 @@ const Reportersd = () => {
                 </div>
                 <div class="review-news-director">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 p-0">
                             <div class="director-urer">
                                 <img src={reviewdirectorimg} alt="" />
                                     <div class="director-name-txt">
@@ -67,7 +67,7 @@ const Reportersd = () => {
                 </div>
                 <div class="newroom-coworker-box">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="newroom-coworker-txt">
                                 <h6>Newsroom rating</h6>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="203" height="14" viewBox="0 0 203 14" fill="none">
@@ -80,7 +80,7 @@ const Reportersd = () => {
                                 <h5>This newsroom is friendly</h5>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="newroom-coworker-txt">
                                 <h6>Coworkers rating</h6>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="203" height="14" viewBox="0 0 203 14" fill="none">
@@ -93,7 +93,7 @@ const Reportersd = () => {
                                 <h5>Super friendly</h5>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="newroom-coworker-txt">
                                 <h6>Would recommend working here?</h6>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="203" height="14" viewBox="0 0 203 14" fill="none">

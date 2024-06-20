@@ -57,7 +57,7 @@ const Shop = () => {
             </Col>
             <Col lg={5}>
               <Row>
-                <Col lg={12}>
+                <Col lg={12} md={6}>
                   <div className="shop-friend-themed">
                     <h4>FRIENDS Themed <br /> Anchor Bucket Hat</h4>
                     <a href="#">Shop now</a>
@@ -66,11 +66,11 @@ const Shop = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={12}>
+                <Col lg={12} md={6}>
                   <div className="shop-friend-themed">
                     <h4>New Dope <br /> Mug Design</h4>
                     <a href="#">Shop now</a>
-                    <div className="themed-abslt-img">
+                    <div className="themed-abslt-img theme-mug">
                       <img src={thmeimg2} alt="" />
                     </div>
                   </div>
@@ -85,16 +85,16 @@ const Shop = () => {
       <section className="shop-product-search-sec">
         <Container>
           <Row>
-            <Col lg={8}>
+            <Col lg={8} md={6}>
               <div className="newsletter-article-search">
                 <input type="search" placeholder="Search product..." />
                 <span><RiSearchLine /></span>
               </div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className="filter-short-box">
                 <Row>
-                  <Col lg={6}>
+                  <Col lg={6} md={6}>
                     <div className="filter-box">
                       <p>filter:</p>
                       <select name="" id="">
@@ -104,7 +104,7 @@ const Shop = () => {
                       </select>
                     </div>
                   </Col>
-                  <Col lg={6}>
+                  <Col lg={6} md={6}>
                     <div className="filter-box">
                       <p>Short:</p>
                       <select name="" id="">
@@ -141,7 +141,7 @@ const Shop = () => {
             </Col>
           </Row>
           <Row>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -155,7 +155,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -169,7 +169,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage3} alt="Anonymous Source Onesie" />
                 <div className="ratemystation-prod-txt">
@@ -182,7 +182,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
                 <div className="ratemystation-prod-txt">
@@ -195,7 +195,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage5} alt="#NewsBae Engraved Heart Necklace" />
                 <div className="ratemystation-prod-txt">
@@ -208,7 +208,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage6} alt="America Needs Local News Bar Chain Bracelet" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -222,7 +222,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage7} alt="America Needs Local News Mug" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -236,7 +236,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage8} alt="Anchor Woman Pom-Pom Beanie" />
                 <div className="ratemystation-prod-txt">
@@ -267,7 +267,7 @@ const Shop = () => {
             </Col>
           </Row>
           <Row>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -281,7 +281,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -295,7 +295,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage3} alt="Anonymous Source Onesie" />
                 <div className="ratemystation-prod-txt">
@@ -308,7 +308,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
                 <div className="ratemystation-prod-txt">
@@ -321,7 +321,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage5} alt="#NewsBae Engraved Heart Necklace" />
                 <div className="ratemystation-prod-txt">
@@ -334,7 +334,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage6} alt="America Needs Local News Bar Chain Bracelet" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -348,7 +348,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage7} alt="America Needs Local News Mug" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -362,7 +362,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage8} alt="Anchor Woman Pom-Pom Beanie" />
                 <div className="ratemystation-prod-txt">
@@ -404,7 +404,7 @@ const Shop = () => {
             </Col>
           </Row>
           <Row>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -418,7 +418,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -432,7 +432,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage3} alt="Anonymous Source Onesie" />
                 <div className="ratemystation-prod-txt">
@@ -445,7 +445,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
                 <div className="ratemystation-prod-txt">
@@ -458,7 +458,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage5} alt="#NewsBae Engraved Heart Necklace" />
                 <div className="ratemystation-prod-txt">
@@ -471,7 +471,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage6} alt="America Needs Local News Bar Chain Bracelet" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -485,7 +485,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage7} alt="America Needs Local News Mug" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -499,7 +499,7 @@ const Shop = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage8} alt="Anchor Woman Pom-Pom Beanie" />
                 <div className="ratemystation-prod-txt">
