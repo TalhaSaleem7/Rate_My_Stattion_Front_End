@@ -111,7 +111,7 @@ const About = () => {
                     <p>Today, Rate My Station has helped thousands find the best news station to work for, and with your support, we can help thousands more in the future!</p>
                   </div>
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} md={2}>
                   <div className="inverted-commma-icon">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="88" height="67" viewBox="0 0 88 67" fill="none">
@@ -120,7 +120,7 @@ const About = () => {
                     </span>
                   </div>
                 </Col>
-                <Col lg={10}>
+                <Col lg={10} md={10}>
                   <div className="creator-messages">
                     <h6>Creator messages</h6>
                     <h4 className="mb-4">Last, but not least, we sell newsroom specific apparel you won’t find anywhere else!</h4>
@@ -145,7 +145,7 @@ const About = () => {
       <h4>RateMyStation's Shop</h4>
       <Container>
         <Row>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -159,7 +159,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -173,7 +173,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage3} alt="Anonymous Source Onesie" />
               <div className="ratemystation-prod-txt">
@@ -186,7 +186,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
               <div className="ratemystation-prod-txt">
@@ -199,7 +199,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage5} alt="#NewsBae Engraved Heart Necklace" />
               <div className="ratemystation-prod-txt">
@@ -212,7 +212,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage6} alt="America Needs Local News Bar Chain Bracelet" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -226,7 +226,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage7} alt="America Needs Local News Mug" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -240,7 +240,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage8} alt="Anchor Woman Pom-Pom Beanie" />
               <div className="ratemystation-prod-txt">

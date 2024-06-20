@@ -7324,8 +7324,12 @@ section.employer-login-pg-sec {
     font-size: 12px;
   }
 
+  .employer-dont-have-acc {
+    margin: 10px 0px 0px 40px;
+}
+
   .employer-dont-have-acc a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .employer-dont-have-acc a span {
@@ -7433,6 +7437,12 @@ section.employer-login-pg-sec {
   .satisfied h2 {
     font-size: 75px;
   }
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -7542,18 +7552,17 @@ section.employer-login-pg-sec {
   }
 
   .ratemystation-prod-btn {
-    flex-direction: column;
-    gap: 10px;
-  }
+    justify-content: space-between;
+    gap: 0px;
+}
+
 
   .ratemystation-shop-prod {
     border-radius: 14px;
   }
 
   .ratemystation-shop-prod img {
-    height: 159px;
-    object-fit: contain;
-    object-position: top;
+    object-fit: cover;
   }
 
 
@@ -8057,7 +8066,7 @@ section.employer-login-pg-sec {
   }
 
   .ratemystation-prod-txt h3 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24.5px;
     margin: 0px 0px 10px 0px !important;
     height: auto;
@@ -8693,6 +8702,39 @@ section.employer-login-pg-sec {
   .contact-latest-updates {
     padding: 0px 25px 20px 20px;
   }
+
+  .americon-prod-cart img {
+    width: 100px;
+}
+
+.americon-prod-cart h3 {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+}
+
+
+.cart-counter {
+  padding: 8px 12px;
+  margin: 0px 6px;
+}
+
+
+.americon-prod-cart h4 {
+  padding: 0px 10px;
+}
+
+.americon-prod-cart h6 {
+  margin: 0px;
+}
+
+
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -9305,10 +9347,11 @@ section.employer-login-pg-sec {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #194D79;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    box-shadow: 4px 0px 5px #0000002e;
   }
 
   .header_nav {
@@ -9318,21 +9361,18 @@ section.employer-login-pg-sec {
   }
 
   .header_nav button {
-    width: 40px;
-    background: #000;
-    color: #fff;
-  }
-
-  .header_nav button:hover {
-    color: #f1f1f1;
-  }
+    background: transparent;
+    color: #194D79;
+    border: none; 
+    font-size: 25px;
+}
 
   /* The navigation links inside the sidepanel */
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
@@ -9401,6 +9441,43 @@ section.employer-login-pg-sec {
     line-height: 23px;
     margin: 0px 0px 40px 0px !important;
   }
+
+  .employer-login-form {
+    padding: 0px 0px 20px 0px;
+}
+
+.employer-dont-have-acc {
+  margin: 0px 0px 20px 50px;
+}
+
+.employer-choose-subscription {
+  padding: 30px 0px 0px 0px;
+}
+
+.employer-inputfield input {
+  padding: 10px 10px;
+}
+
+
+.employer-register-btn {
+  margin: 15px 0px 30px 50px;
+}
+
+.Sweatshirt-ah-select-box {
+  justify-content: start;
+}
+
+.Sweatshirt-ah-select-card {
+  gap: 10px;
+  width: 100%;
+}
+
+
+.Sweatshirt-ah-select-card {
+  width: 100%;
+  margin: 0px 10px 0px 0px;
+}
+
 
 
 }
@@ -10790,14 +10867,14 @@ section.employer-login-pg-sec {
 
   .prod-light-btn {
     font-size: 14px;
-    padding: 10px 15px;
-  }
+    padding: 12px 30px;
+}
 
-  .prod-dark-btn {
-    font-size: 14px;
-    line-height: 19px;
-    padding: 10px 20px;
-  }
+.prod-dark-btn {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 12px 30px;
+}
 
 
   .newsletter-pagination-slide .pagination a {
@@ -10835,7 +10912,7 @@ section.employer-login-pg-sec {
   }
 
   .filter-box select {
-    padding: 8px 30px;
+    padding: 8px 50px;
     font-size: 14px;
   }
 
@@ -11085,19 +11162,94 @@ CONTACTUS */
   }
 
   .contact-follow-like-btn ul li {
-    font-family: "Public Sans", sans-serif;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    color: #fff;
-    border-radius: 10px;
-    padding: 15px 40px;
+    font-size: 12px;
+    padding: 4px 12px;
   }
 
-  .contact-follow-like-btn ul li {
-    padding: 4px 18px;
-  }
+
+  .contact-follow-topline {
+    padding: 20px 0px 0px 0px;
+    border-top: 1px solid #E0E0E0;
+    margin: 20px 0px 0px 0px;
+}
+
+
+.shop-category {
+  gap: 20px;
+  flex-direction: column;
+}
+
+
+.ratemystation-shop-prod {
+  border-radius: 20px;
+}
+
+.filter-box {
+  gap: 15px;
+}
+
+.rating-real-journalist {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.employer-newroom-box {
+  padding: 20px 20px 0px 20px;
+}
+
+.employer-inputfield input {
+  padding: 10px 12px;
+}
+
+
+.employer-dont-have-acc {
+  margin: 10px 0px 20px 40px;
+}
+
+
+.employer-register-btn {
+  margin: 15px 0px 30px 30px;
+}
+
+.employer-login-form {
+  padding: 0px 0px 20px 0px;
+}
+
+
+.rms-rating-review p {
+  margin: 10px 0px 5px 0px !important;
+}
+
+.americon-prod-cart {
+  align-items: start;
+  flex-direction: column;
+}
+
+.americon-prod-cart img {
+  margin: 0px 0px 10px 0px;
+}
+
+.americon-prod-cart h3 {
+  padding: 0px 0px 10px 0px;
+}
+
+
+.cart-counter {
+  padding: 8px 12px;
+  margin: 0px 0px 10px 0px;
+}
+
+.americon-prod-cart h6 {
+  display: none;
+}
+
+.product-quality-total {
+  margin: 10px 30px 20px 0px;
+}
+
+.mycart-qualitytotal {
+  gap: 30px;
+}
+
 
 
 }

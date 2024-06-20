@@ -18,7 +18,6 @@ import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
 
 const Shop = () => {
-
   
     const navigate = useNavigate()
   
