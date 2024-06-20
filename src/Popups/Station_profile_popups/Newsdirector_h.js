@@ -28,8 +28,8 @@ const NewsDirectorForm = () => {
                 </a>
               </div>
             </div>
-            <div class="d-flex align-items-end mb-3 mt-1 experience--title--cont--h">
-              <div class="experience--email--h">
+            <div class="d-flex align-items-end mb-3 mt-1 experience--title--cont--h experience--col--h">
+              <div class="experience--email--h experience--col--child--h">
                 <label for="inputEmail4" class="form-label form-label-alt">
                   Director’s name
                 </label>
@@ -40,7 +40,7 @@ const NewsDirectorForm = () => {
                   placeholder="Type here..."
                 />
               </div>
-              <div class="form-check experience--chkbox--h d-flex align-items-center">
+              <div class="form-check experience--chkbox--h d-flex align-items-center experience--col--child--h">
                 <input
                   class="form-check-input experience--form--check--input"
                   type="checkbox"

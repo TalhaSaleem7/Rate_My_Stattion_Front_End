@@ -54,8 +54,8 @@ const EducationForm = () => {
               />
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between">
-              <div className="experience--email--h">
+            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between  experience--col--h">
+              <div className="experience--email--h experience--col--child--h">
                 <label for="inputEmail4" className="form-label form-label-alt">
                   Start Date
                 </label>
@@ -71,7 +71,7 @@ const EducationForm = () => {
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div className="experience--email--h">
+              <div className="experience--email--h experience--col--child--h">
                 <select
                   className="form-select experience--job--inp--h"
                   id="inputGroupSelect01"
@@ -86,8 +86,8 @@ const EducationForm = () => {
               </div>
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between">
-              <div className="experience--email--h">
+            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between  experience--col--h">
+              <div className="experience--email--h experience--col--child--h">
                 <label for="inputEmail4" className="form-label form-label-alt">
                   End Date
                 </label>
@@ -103,7 +103,7 @@ const EducationForm = () => {
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div className="experience--email--h">
+              <div className="experience--email--h experience--col--child--h">
                 <select
                   className="form-select experience--job--inp--h"
                   id="inputGroupSelect01"

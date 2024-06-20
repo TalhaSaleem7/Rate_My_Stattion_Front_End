@@ -29,8 +29,8 @@ const SubmitNewsDirectorForm = () => {
               </div>
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 experience--title--cont--h">
-              <div className="sumbit--director--inp--h">
+            <div className="d-flex align-items-end mb-3 mt-1 experience--title--cont--h experience--col--h">
+              <div className="sumbit--director--inp--h experience--col--child--h">
                 <label
                   htmlFor="inputEmail4"
                   className="form-label form-label-alt"
@@ -44,7 +44,7 @@ const SubmitNewsDirectorForm = () => {
                   placeholder="Type here..."
                 />
               </div>
-              <div className="form-check experience--chkbox--h d-flex align-items-center">
+              <div className="form-check experience--chkbox--h d-flex align-items-center experience--col--child--h">
                 <input
                   className="form-check-input experience--form--check--input"
                   type="checkbox"
@@ -57,7 +57,7 @@ const SubmitNewsDirectorForm = () => {
             </div>
 
             <div class="d-flex align-items-end mb-3 mt-1 experience--title--cont--h ">
-              <div class="col-lg-12">
+              <div class="col-lg-12 w-100">
                 <label for="inputEmail4" class="form-label form-label-alt">
                   What station does/did this News Director work for?
                 </label>
@@ -91,7 +91,7 @@ const SubmitNewsDirectorForm = () => {
             </div>
 
             <div class="d-flex align-items-end mb-3 mt-1 experience--title--cont--h">
-              <div class="col-lg-12">
+              <div class="col-lg-12 w-100">
                 <label for="inputEmail4" class="form-label form-label-alt">
                   News director’s social media
                 </label>

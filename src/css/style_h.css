@@ -39,6 +39,21 @@ ul {
 /* ======================================
   Shared Styles
   ====================================== */
+input,
+select,
+option,
+textarea {
+  font-size: var(--font-size-16) !important;
+}
+.about--btn--h,
+.about--btn--h--alt,
+.about--btn--h--alt--2,
+.experience--btn--h,
+.experience--btn--h--alt,
+.experience--btn--h--alt--2 {
+  font-size: var(--font-size-16);
+  padding: 0.563em 0;
+}
 .faq--search--detail--h,
 .faq--detail--card--two,
 .faq--term--card--one,
@@ -246,6 +261,7 @@ label {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-size: var(--font-size-16);
 }
 .faq--detail--card--one--bottom--h .about--btn--h--alt,
 .faq--detail--card--one--bottom--h .about--btn--h--alt--2,
@@ -253,7 +269,7 @@ label {
 .about--btn--h {
   max-width: 133px;
   width: 100%;
-  padding: 0.563rem 0;
+
   border: 2px solid #194d79;
 }
 .experience--btn--h:focus,
@@ -525,6 +541,9 @@ FAQ Main Styles
 }
 .faq--main--search--icon--h {
   width: 24px;
+}
+.faq--main--search--icon--alt--h {
+  display: none;
 }
 .faq--search--detail--h button {
   font-size: var(--font-size-18);
@@ -886,6 +905,10 @@ FAQ Terms Styles
 .faq--work--card--info {
   gap: 10px;
 }
+.faq--work--card--info p,
+.faq--work--card--list li {
+  font-size: var(--font-size-16);
+}
 .faq--work--card--h h5,
 .faq--work--card--h p {
   margin-bottom: 0;
@@ -947,13 +970,15 @@ Info / Apply popup
   padding-bottom: 31px;
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 29px;
-  gap: 229px;
 }
 .director--info--heading--h {
   padding-bottom: 20px;
 }
 .director--info--popup--btn--h a {
-  padding: 11px 51px;
+  font-size: var(--font-size-16);
+  font-weight: bold;
+  color: white;
+  padding: 0.688em 3.188em;
   border-radius: 10px;
   background-color: #194d79;
   border: 1px solid #194d79;
@@ -962,14 +987,9 @@ Info / Apply popup
 }
 .director--info--popup--btn--h a:hover {
   background: transparent;
-  color: black;
+  color: #194d79;
 }
 
-.director--info--popup--btn--h a {
-  font-size: var(--font-size-16);
-  font-weight: bold;
-  color: white;
-}
 .director--info--heading--h--alt h3 {
   font-size: var(--font-size-26);
 }
@@ -1009,6 +1029,12 @@ Info / Apply popup
 .director--popup--title--text--2 h3 {
   color: #89c400;
   font-size: var(--font-size-16);
+}
+.info--popup--title--alt--h {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .info--popup--title--heading--alt h2 {
   font-size: var(--font-size-16);
@@ -1060,6 +1086,9 @@ Info / Apply popup
   top: 3%;
   right: 3%;
   cursor: pointer;
+}
+.info--close--h--alt {
+  top: 1%;
 }
 .info--popup--title--text p {
   font-size: var(--font-size-14);
@@ -1132,7 +1161,7 @@ Info / Apply popup
 .experience--job--inp--h--direc {
   position: relative;
 }
-.haha {
+.experience--job--inp--h--ha {
   position: absolute;
   left: 0;
   top: 100%;
@@ -1142,19 +1171,20 @@ Info / Apply popup
 .cuurent--news--director--drp--text {
   gap: 14px;
 }
-.asd {
+.experience--job--inp--h--asd {
   gap: 17px;
   padding-right: 0;
   padding-left: 0;
+  border-radius: 0;
 }
-.asd:hover {
+.experience--job--inp--h--asd:hover {
   background-color: #6c757d;
 }
-.fgh {
+.apply--form--drop--fgh {
   gap: 17px;
 
   padding: 0;
-  width: 50%;
+  width: 90%;
 }
 .experience--job--inp--h--direc {
   cursor: pointer;
@@ -1298,6 +1328,30 @@ Media Query
     --font-size-28: 1.5rem;
     --font-size-36: 1.8rem;
     --font-size-48: 2.5rem;
+
+    --font-size-22: 1.175rem;
+
+    --font-size-26: 1.45rem;
+  }
+  .rate--product--h {
+    gap: 15px;
+  }
+  .apply--yesno--chkbox--h {
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+  .apply--popup-chkbox--alt--h--a {
+    margin-top: 0 !important;
+    margin-bottom: 16px;
+  }
+  .apply--drop--h {
+    max-width: 100%;
+  }
+  .job--opening--qualify--h {
+    max-width: 100%;
+  }
+  .experience--col--h {
+    gap: 10px;
   }
   .faq--work--card--pad--h {
     max-width: 100%;
@@ -1346,6 +1400,28 @@ Media Query
     --font-size-28: 1.25rem;
     --font-size-36: 1.7rem;
     --font-size-48: 2rem;
+
+    --font-size-22: 1.125rem;
+
+    --font-size-26: 1.3rem;
+  }
+  .info--popup--title--alt--h {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .experience--chkbox--h {
+    padding: 0px 0px;
+  }
+  .faq--search--result--h > h1 {
+    padding-bottom: 10px;
+  }
+  .faq--container--left-h .faq--card--container--h {
+    padding: 20px;
+    gap: 15px;
+  }
+  .faq--container--left-h .faq--card--sec--1--h {
+    width: 100%;
   }
   .verify--image--container {
     flex-direction: column;
@@ -1366,11 +1442,29 @@ Media Query
   .faq--detail--card--two > div {
     width: 90%;
   }
+  .faq--search--detail--h .breadcrumb-item + .breadcrumb-item,
+  .faq--search--result--h .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem;
+  }
 }
 @media (max-width: 576px) {
   :root {
     --font-size-18: 0.95rem;
     --font-size-20: 1rem;
+
+    --font-size-22: 1.15rem;
+
+    --font-size-26: 1.4rem;
+  }
+  .experience--col--h {
+    flex-direction: column;
+  }
+  .experience--col--child--h {
+    align-self: flex-start;
+    max-width: 100%;
+  }
+  .faq--term--detail--h {
+    padding: 80px 0px;
   }
   .faq--term--card--one,
   .faq--term--detail--h,
@@ -1388,12 +1482,18 @@ Media Query
   .faq--search--detail--h h1 {
     padding-bottom: 20px;
   }
-  .faq--search--detail--h form {
-    flex-direction: column;
-    gap: 20px;
-  }
+
   .faq--search--detail--h form button {
-    margin: 0 auto;
+    display: none !important;
+  }
+  .faq--search--detail--h form {
+    position: relative;
+  }
+  .faq--main--search--icon--alt--h {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 19%;
   }
 }
 @media (max-width: 404px) {
@@ -1406,9 +1506,23 @@ Media Query
     --font-size-28: 1.125rem;
     --font-size-36: 1.3rem;
     --font-size-48: 1.7rem;
+
+    --font-size-22: 1.025rem;
+
+    --font-size-26: 1.15rem;
+  }
+  .rating--boxes--cont--h--alt {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .rate--product--h {
+    text-align: center;
   }
   .verify--image--container {
     align-items: center;
+  }
+  .rate--product--main--h {
+    flex-direction: column;
   }
   .setting--verify--img {
     width: 60px;
@@ -1420,7 +1534,19 @@ Media Query
   .skills--inp--h {
     text-align: center;
   }
+  .faq--search--detail--h {
+    padding: 60px 0px;
+  }
+  .faq--search--detail--h ol {
+    text-align: left;
+  }
 
+  .faq--main--search--icon--alt--h {
+    top: 10%;
+  }
+  .faq--main--h .faq--main--search--h {
+    padding: 10px 20px;
+  }
   .faq--detail--card--one--bottom--h .about--btn--h--alt {
     padding: 0.4rem 0rem;
   }
@@ -1440,5 +1566,8 @@ Media Query
   .experience--button--h,
   .about--button--h {
     flex-direction: column;
+  }
+  .faq--main--search--icon--alt--h {
+    right: 7%;
   }
 }

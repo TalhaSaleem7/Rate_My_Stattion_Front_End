@@ -60,7 +60,7 @@ const ApplyForm = () => {
             </div>
 
             <div class="d-flex align-items-end mb-3 pt-3 experience--title--cont--h ">
-              <div class="col-lg-12">
+              <div class="col-lg-12 w-100">
                 <label for="inputEmail4" class="form-label form-label-alt">
                   Your email address
                 </label>
@@ -73,8 +73,8 @@ const ApplyForm = () => {
               </div>
             </div>
 
-            <div class="d-flex align-items-end mb-3 mt-1 experience--title--cont--h">
-              <div class="experience--email--h">
+            <div class="d-flex align-items-end mb-3 mt-1 experience--title--cont--h experience--col--h">
+              <div class="experience--email--h experience--col--child--h">
                 <label for="inputEmail4" class="form-label form-label-alt">
                   What is/was your job position?
                 </label>
@@ -91,7 +91,7 @@ const ApplyForm = () => {
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="form-check experience--chkbox--h d-flex align-items-center">
+              <div class="form-check experience--chkbox--h d-flex align-items-center experience--col--child--h">
                 <input
                   class="form-check-input experience--form--check--input"
                   type="checkbox"
@@ -156,7 +156,7 @@ const ApplyForm = () => {
                     Does this station require you to sign a contract?
                   </label>
                 </div>
-                <div className="d-flex ">
+                <div className="d-flex apply--yesno--chkbox--h">
                   <div className="col-lg-6 d-flex align-items-center apply--popup-chkbox--1">
                     {" "}
                     <input
@@ -226,7 +226,7 @@ const ApplyForm = () => {
                 className="form-select experience--job--inp--h experience--job--inp--h--direc "
                 onClick={toggleVisibility}
               >
-                <div className="fgh experience--job--inp--h d-flex align-items-center">
+                <div className="apply--form--drop--fgh experience--job--inp--h d-flex align-items-center">
                   <div className="cuurent--news--director--drp--img">
                     <img
                       src={require("../../img/director-drop_h.png")}
@@ -240,8 +240,8 @@ const ApplyForm = () => {
                   </div>
                 </div>
                 {isVisible && (
-                  <div className="haha w-100 experience--job--inp--h">
-                    <div className="asd experience--job--inp--h d-flex align-items-center">
+                  <div className="experience--job--inp--h--ha w-100 experience--job--inp--h">
+                    <div className="experience--job--inp--h--asd experience--job--inp--h d-flex align-items-center">
                       <div className="cuurent--news--director--drp--img">
                         <img
                           src={require("../../img/director-drop_h.png")}
@@ -254,7 +254,7 @@ const ApplyForm = () => {
                         <p>Current</p>
                       </div>
                     </div>
-                    <div className="asd experience--job--inp--h d-flex align-items-center">
+                    <div className="experience--job--inp--h--asd experience--job--inp--h d-flex align-items-center">
                       <div className="cuurent--news--director--drp--img">
                         <img
                           src={require("../../img/director-drop_h.png")}
@@ -267,7 +267,7 @@ const ApplyForm = () => {
                         <p>Current</p>
                       </div>
                     </div>
-                    <div className="asd experience--job--inp--h d-flex align-items-center">
+                    <div className="experience--job--inp--h--asd experience--job--inp--h d-flex align-items-center">
                       <div className="cuurent--news--director--drp--img">
                         <img
                           src={require("../../img/director-drop_h.png")}
@@ -321,7 +321,7 @@ const ApplyForm = () => {
                   />
                   <label class="form-check-label">Racial Discrimination</label>
                 </div>
-                <div className="col-lg-6 d-flex align-items-center apply--popup-chkbox--1 mt-1">
+                <div className="col-lg-6 d-flex align-items-center apply--popup-chkbox--1 mt-1 apply--popup-chkbox--alt--h--a">
                   {" "}
                   <input
                     class="form-check-input experience--form--check--input"
@@ -330,7 +330,7 @@ const ApplyForm = () => {
                   />
                   <label class="form-check-label">Sexual Discrimination</label>
                 </div>
-                <div className="d-flex align-items-center apply--popup-chkbox--2 col-lg-6 mt-1">
+                <div className="d-flex align-items-center apply--popup-chkbox--2 col-lg-6 mt-1 apply--popup-chkbox--alt--h--a">
                   <input
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
@@ -399,7 +399,7 @@ const ApplyForm = () => {
                     Open to Creative Control
                   </label>
                 </div>
-                <div className="col-lg-6 d-flex align-items-center apply--popup-chkbox--1 mt-1">
+                <div className="col-lg-6 d-flex align-items-center apply--popup-chkbox--1 mt-1 apply--popup-chkbox--alt--h--a">
                   {" "}
                   <input
                     class="form-check-input experience--form--check--input"
@@ -408,7 +408,7 @@ const ApplyForm = () => {
                   />
                   <label class="form-check-label">Positive, Fun</label>
                 </div>
-                <div className="d-flex align-items-center apply--popup-chkbox--2 col-lg-6 mt-1">
+                <div className="d-flex align-items-center apply--popup-chkbox--2 col-lg-6 mt-1 apply--popup-chkbox--alt--h--a">
                   <input
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
@@ -477,8 +477,8 @@ const ApplyForm = () => {
                 <label for="inputEmail4" class="form-label form-label-alt">
                   Please verified your rating
                 </label>
-                <div className=" upload--document--container d-flex align-items-center col-lg-12 justify-content-between">
-                  <div className="upload--document--container d-flex align-items-center">
+                <div className=" upload--document--container d-flex align-items-center col-lg-12 justify-content-between experience--col--h">
+                  <div className="upload--document--container d-flex align-items-center  experience--col--child--h">
                     <div className="upload--document--img">
                       <img src={require("../../img/img-upload_h.png")} alt="" />
                     </div>
@@ -486,7 +486,7 @@ const ApplyForm = () => {
                       <a href="">Upload work document here</a>
                     </div>
                   </div>
-                  <div class="form-check experience--chkbox--h d-flex align-items-center">
+                  <div class="form-check experience--chkbox--h d-flex align-items-center experience--col--child--h">
                     <input
                       class="form-check-input experience--form--check--input"
                       type="checkbox"
@@ -510,28 +510,6 @@ const ApplyForm = () => {
                   </div>
                 </div>
               </div>
-              {/* <div class="form-check experience--chkbox--h d-flex align-items-center">
-                <input
-                  class="form-check-input experience--form--check--input"
-                  type="checkbox"
-                  id="gridCheck"
-                />
-                <label class="form-check-label">
-                  Link my profile experience information{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="21"
-                    height="21"
-                    viewBox="0 0 21 21"
-                    fill="none"
-                  >
-                    <path
-                      d="M0.44873 10.5951C0.44873 10.208 0.44873 9.81329 0.44873 9.42619C0.463916 9.28198 0.479103 9.14536 0.494289 9.00114C0.737265 6.84555 1.55731 4.94801 3.00758 3.3389C4.54896 1.63112 6.4624 0.560916 8.73271 0.158639C9.11236 0.0903274 9.49201 0.0523767 9.87166 0.00683594C10.2589 0.00683594 10.6537 0.00683594 11.041 0.00683594C11.3751 0.0523767 11.7092 0.0827373 12.0433 0.135868C14.1313 0.485014 15.9537 1.38065 17.4495 2.8835C19.697 5.13018 20.6841 7.85503 20.3956 11.0201C20.2058 13.1378 19.3705 15.0125 17.9506 16.6065C16.0676 18.7241 13.6985 19.8626 10.8663 19.9992C8.89216 20.0979 7.03947 19.6349 5.34622 18.6027C2.74941 17.0163 1.15488 14.7241 0.592998 11.7336C0.532254 11.3541 0.501882 10.9746 0.44873 10.5951ZM10.4563 1.82847C5.96885 1.81329 2.30143 5.47173 2.27105 9.98786C2.24068 14.4736 5.93089 18.17 10.4487 18.1852C14.9438 18.2004 18.6112 14.5419 18.6416 10.0182C18.6644 5.54004 14.9742 1.83606 10.4563 1.82847ZM9.54516 12.1207C9.54516 13.0239 9.53757 13.9271 9.54516 14.8304C9.55275 15.3844 9.95518 15.7791 10.4791 15.7564C10.9878 15.7412 11.3523 15.3541 11.3523 14.8C11.3599 13.7222 11.3523 12.6368 11.3523 11.559C11.3523 10.8531 11.3523 10.1548 11.3523 9.44896C11.3523 9.16813 11.2688 8.91765 11.0638 8.73549C10.7828 8.48501 10.4487 8.4167 10.0995 8.56092C9.75017 8.70513 9.54516 8.97837 9.54516 9.35788C9.54516 10.2839 9.55275 11.2023 9.54516 12.1207ZM9.24144 5.44896C9.23385 6.1093 9.77295 6.67097 10.4487 6.67856C11.1017 6.68615 11.656 6.13966 11.6636 5.48691C11.6712 4.81898 11.1321 4.2649 10.4563 4.2649C9.79573 4.24972 9.25663 4.78103 9.24144 5.44896Z"
-                      fill="#194D79"
-                    />
-                  </svg>
-                </label>
-              </div> */}
             </div>
 
             <div className="about--button--h pt-1 w-50">

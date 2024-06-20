@@ -13,8 +13,8 @@ function ExperienceForm() {
               </div>
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 experience--title--cont--h">
-              <div className="experience--email--h ">
+            <div className="d-flex align-items-end mb-3 mt-1 experience--title--cont--h experience--col--h">
+              <div className="experience--email--h experience--col--child--h">
                 <label
                   htmlFor="inputEmail4"
                   className="form-label form-label-alt"
@@ -28,7 +28,7 @@ function ExperienceForm() {
                   placeholder="Type here..."
                 />
               </div>
-              <div className="form-check experience--chkbox--h d-flex align-items-center">
+              <div className="form-check experience--chkbox--h d-flex align-items-center experience--col--child--h">
                 <input
                   className="form-check-input experience--form--check--input"
                   type="checkbox"
@@ -75,8 +75,8 @@ function ExperienceForm() {
               </select>
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between">
-              <div className="experience--email--h">
+            <div className="experience--col--h  d-flex align-items-end mb-3 mt-1 justify-content-between">
+              <div className="experience--email--h experience--col--child--h">
                 <label
                   htmlFor="inputStartMonth"
                   className="form-label form-label-alt"
@@ -95,7 +95,7 @@ function ExperienceForm() {
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div className="experience--email--h">
+              <div className="experience--email--h experience--col--child--h">
                 <select
                   className="form-select experience--job--inp--h"
                   id="inputStartYear"
@@ -110,8 +110,8 @@ function ExperienceForm() {
               </div>
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between">
-              <div className="experience--email--h">
+            <div className="experience--col--h d-flex align-items-end mb-3 mt-1 justify-content-between">
+              <div className="experience--email--h experience--col--child--h">
                 <label
                   htmlFor="inputEndMonth"
                   className="form-label form-label-alt"
@@ -130,7 +130,7 @@ function ExperienceForm() {
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div className="experience--email--h">
+              <div className="experience--email--h experience--col--child--h">
                 <select
                   className="form-select experience--job--inp--h"
                   id="inputEndYear"
