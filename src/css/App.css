@@ -8005,7 +8005,48 @@ width: 35%;
 .Applied-ah-list-3 {
   padding-top: 20px;
 }
+/* CONTACT US */
+.ratemystaion-contact-form {
+  padding: 40px;
+}
+.ratemystaion-contact-form p {
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0px 0px 85px 0px !important;
+}
+.contact-form-fields {
+  padding: 40px;
+}
+.ratemystaion-contact-form h3 {
+  font-size: 40px;
+}
+.ratemystaion-contact-form p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px 0px 110px 0px !important;
+}
 
+.ratemystaion-contact-form ul li {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.input-field {
+  margin: 0px 0px 15px 0px;
+}
+
+.input-field textarea {
+  height: 175px;
+}
+.contact-form-btn button {
+  padding: 8px 55px;
+}
+.contact-follow-like-btn ul li {
+  padding: 12px 30px;
+}
+.contact-latest-updates {
+  padding: 0px 25px 20px 20px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -8329,10 +8370,19 @@ span.See button {
   font-size: 14px;
   line-height: 25px;
 }
-
+/* CONTACT US */
+.ratemystaion-contact-form {
+  padding: 20px;
 }
-/* PRODUCT-DETAIL */
-
+.ratemystaion-contact-form h3 {
+  font-size: 37px;
+}
+.ratemystaion-contact-form p {
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0px 0px 40px 0px !important;
+}
+}
 
 
 @media screen and (max-width: 600px){
@@ -9470,4 +9520,25 @@ section.About-ah.extara {
 .Education-logo {
   width: 50%;
 }
+/* 
+CONTACTUS */
+.contact-form-fields {
+  padding: 0px;
+}
+.contact-form-fields {
+  padding: 0px;
+}
+.contact-follow-like-btn ul li {
+  font-family: "Public Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 40px;
+}
+.contact-follow-like-btn ul li {
+      padding: 4px 18px;
+  }
 }
