@@ -1,3 +1,5 @@
+import Header from "../Header/Header";
+import Footerah from "../footerah/Footerah";
 import JobCard from "./component/Jobcard_h";
 const jobData = [
   {
@@ -61,6 +63,7 @@ const jobData = [
 const WorkforUs = () => {
   return (
     <div>
+      <Header />
       <section className="w-100 faq--terms--detail--section--h">
         <div className="container">
           <div className="row">
@@ -86,6 +89,7 @@ const WorkforUs = () => {
           </div>
         </div>
       </div>
+      <Footerah />
     </div>
   );
 };

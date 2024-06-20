@@ -2684,7 +2684,9 @@ header.header_main {
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
 }
-
+.header-logo {
+  cursor: pointer;
+}
 .header-logo img {
   width: 177.797px;
 }
@@ -2731,7 +2733,9 @@ header.header_main {
   justify-content: end;
   gap: 30px;
 }
-
+.header_end a:hover {
+  cursor: pointer;
+}
 .header_end a:nth-child(2) {
   color: #194d79;
   text-align: center;
@@ -2748,7 +2752,7 @@ header.header_main {
 
 .header_end a:hover:nth-child(2) {
   background: #194d79;
-  color: #fff;
+  color: #fff !important;
 }
 
 .header_end a:nth-child(1) {
@@ -4913,7 +4917,7 @@ footer {
 }
 
 .ul-li-list-footer ul li a {
-  color: var(--Gray-3, #828282);
+  color: var(--Gray-3, #828282) !important;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -4923,6 +4927,10 @@ footer {
   text-decoration: none;
 }
 
+.ul-li-list-footer ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline !important;
+}
 /*********** Contact Us Page CSS End ***********/
 
 /*********** Newsletter Article Page CSS Start ***********/

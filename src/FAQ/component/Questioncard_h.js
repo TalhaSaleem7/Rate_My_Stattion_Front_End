@@ -1,4 +1,12 @@
-const Questioncard = ({className}) => {
+import { useNavigate } from "react-router-dom";
+import Contactus from "../../Contactus/Contactus";
+
+const Questioncard = ({ className }) => {
+  const navigate = useNavigate();
+  const contact = () => {
+    navigate("/Contactus");
+  };
+
   return (
     <div className={className}>
       <div className="faq--detail--card--two mx-auto">
@@ -9,6 +17,7 @@ const Questioncard = ({className}) => {
             quam. Et risus commodo natoque pulvinar eu, interdum.
           </p>
           <button
+            onClick={contact}
             type="button"
             className="btn btn-secondary faq--detail--card--two--btn"
           >

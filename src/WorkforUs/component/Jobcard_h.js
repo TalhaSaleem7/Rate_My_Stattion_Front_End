@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const JobCard = ({
   title,
   company,
@@ -8,8 +10,11 @@ const JobCard = ({
   activelyHiring,
   updatedTime,
 }) => {
+  const navigate = useNavigate();
+
+  const jobdetail = () => navigate("/viewjobdetail");
   return (
-    <div className="col faq--work--card--pad--h">
+    <div onClick={jobdetail} className="col faq--work--card--pad--h">
       <div className="card faq--work--card--h">
         <div className="card-body faq--work--card--body--h">
           <div className="card-title faq--work--card--title--container align-items-center d-flex">
@@ -45,9 +50,6 @@ const JobCard = ({
             <ul>
               {details.map((detail, index) => (
                 <li key={index} className="col-lg-12 work--list--li ">
-                  {/* <div className="faq--work--list--img">
-                    <img src={require("../../img/work_list_h.png")} alt="" />
-                  </div> */}
                   {detail}
                 </li>
               ))}

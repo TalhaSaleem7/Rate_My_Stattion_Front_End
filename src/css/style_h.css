@@ -143,7 +143,9 @@ textarea {
 .faq--detail--card--two .faq--detail--card--two--btn,
 .faq--work--card--h,
 .news--director--img--h--cont,
-.rate--produch--img--h {
+.rate--produch--img--h,
+.faq--main--h .faq--main--search--h,
+.faq--search--detail--h button {
   border-radius: 15px;
 }
 .account--setting--left--h h1,
@@ -158,8 +160,6 @@ textarea {
 .experience--input--h,
 .setting--subscribe--card,
 .setting--verify--img,
-.faq--main--h .faq--main--search--h,
-.faq--search--detail--h button,
 .faq--work--card--info--h,
 .faq--detail--card--one--bottom--h .about--btn--h--alt,
 .faq--detail--card--one--bottom--h .about--btn--h--alt--2,
@@ -194,8 +194,14 @@ textarea {
 .account--setting--container,
 .faq--work--card--h,
 .row .faq--main--card--one,
-.main--card--two--container {
+.main--card--two--container,
+.faq--detail--card--two--btn,
+.faq--right--button--h {
   box-shadow: 0px 4px 13px 0px #00000026;
+}
+.faq--main--h .faq--main--search--h,
+.faq--main--search--button--h {
+  box-shadow: 0px 4px 13px 0px #082a5380;
 }
 .account--setting--container .row,
 .container > .row,
@@ -404,6 +410,9 @@ Account Setting
   background-color: #828282a9;
   color: black;
 }
+.account--setting--container--pad--h {
+  padding-top: 65px;
+}
 .account--setting--container {
   background-color: #ffffff;
 }
@@ -550,6 +559,12 @@ FAQ Main Styles
   padding: 15px 50px;
   background-color: #194d79;
   border: none;
+  border: 2px solid #194d79;
+}
+.faq--search--detail--h button:hover {
+  background: transparent;
+  transition: all 0.6s ease;
+  border: 2px solid white;
 }
 .row .faq--main--card--one {
   padding: 35px 30px;
@@ -620,6 +635,9 @@ FAQ Search Styles
   color: #6c757d;
   font-size: var(--font-size-16);
 }
+.faq--card--container--h {
+  cursor: pointer;
+}
 .faq--container--left-h .faq--card--container--h {
   padding: 24px 0px 19px 30px;
   margin-bottom: 28px;
@@ -674,12 +692,14 @@ FAQ Search Styles
 }
 
 .faq--right--card--body .faq--right--button--h {
-  border: none;
+  border: 2px solid white;
   color: black;
   padding: 12px 0px;
 }
 .faq--right--card--body .faq--right--button--h:hover {
-  background-color: #828282;
+  background-color: transparent;
+  transition: all 0.6s ease;
+  color: white;
 }
 .faq--right--card--body .faq--right--button--h:active {
   background-color: #333333 !important;
@@ -775,6 +795,9 @@ FAQ Search Styles
 .row .faq--detail--related--link--h a {
   text-decoration: none;
 }
+.row .faq--detail--related--link--h a:hover {
+  text-decoration: underline !important;
+}
 
 .faq--detail--card--two {
   background-image: url(../img/detail_bg_2_h.png);
@@ -800,11 +823,12 @@ FAQ Search Styles
 .faq--detail--card--two .faq--detail--card--two--btn {
   padding: 13px 64px;
   color: black;
-  border: none;
+  border: 2px solid white;
 }
 .faq--detail--card--two .faq--detail--card--two--btn:hover {
-  background-color: #6c757d;
+  background-color: transparent;
   color: white;
+  transition: all 0.6s ease;
 }
 
 .faq--search--detail--container-alt-2 {
@@ -871,6 +895,7 @@ FAQ Terms Styles
   padding-right: 0;
   margin-top: 0;
   max-width: 630px;
+  cursor: pointer;
 }
 .work--for--us--card--h {
   column-gap: 20px;
