@@ -12,6 +12,10 @@ body {
   background: #F5F5F5 !important;
 }
 
+header.header_main_Mobile {
+  display: none;
+}
+
 section.KABC-ah {
   WIDTH: 100%;
   height: 295px;
@@ -2872,6 +2876,7 @@ header.header_main {
 .search-stations-input input::placeholder {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 300;
 }
@@ -7167,9 +7172,41 @@ section.employer-login-pg-sec {
 
 
 
+
+
 /******************* Shahdin Pages CSS End *******************/
+@media screen and (max-width: 1366px) {
+  header.header_main {
+    padding: 20px 0px 12px 0px;
+  }
+
+  .header_nav ul li {
+    font-size: 15px;
+  }
 
 
+  .header_end a:nth-child(1) span {
+    font-size: 11px;
+  }
+
+  .header_end a:nth-child(2) {
+    font-size: 16px;
+    padding: 3px 42px;
+  }
+
+  .rating-real-journalist h3 {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 40px;
+  }
+
+  .employer-newroom-box button.text-white {
+    font-size: 23px;
+  }
+
+
+}
 
 @media screen and (max-width: 1366px) {
   .first-banner-txt h3 {
@@ -7187,6 +7224,9 @@ section.employer-login-pg-sec {
     margin: 0px 0px 6px 0px;
   }
 
+  .employer-inputfield label {
+    font-size: 16px;
+  }
 
 
   .director-urer img {
@@ -7240,6 +7280,78 @@ section.employer-login-pg-sec {
   }
 
 
+  .employer-inputfield input {
+    padding: 13px 16px;
+  }
+
+  .employer-choose-subscription h6 {
+    font-size: 15px;
+  }
+
+  .free-subscribe-four {
+    gap: 11px;
+  }
+
+  .employer-register-subscription {
+    padding: 32px 15px;
+  }
+
+  .employer-register-subscription h3 {
+    font-size: 31px;
+  }
+
+  .employer-choose-subscription h6 {
+    font-size: 15px;
+  }
+
+  .employer-subscription {
+    padding: 20px 15px;
+  }
+
+  .employer-subscription h5 {
+    font-size: 19px
+  }
+
+  .employer-subscription h6 {
+    font-size: 15px;
+  }
+
+  .employer-subscription span {
+    font-size: 15px;
+  }
+
+  .employer-save {
+    font-size: 12px;
+  }
+
+  .employer-dont-have-acc a {
+    font-size: 16px;
+  }
+
+  .employer-dont-have-acc a span {
+    font-size: 15px;
+  }
+
+  .employer-register-btn a {
+    font-size: 15px;
+    padding: 4px 35px;
+  }
+
+  .employer-input-checkbox input {
+    width: 17px;
+    height: 17px;
+  }
+
+  .employer-input-checkbox label {
+    color: #000;
+    font-family: "Public Sans";
+    font-size: 15px;
+  }
+
+  .ul-li-list-footer ul li a {
+    font-size: 16px;
+  }
+
   .ul-li-list-footer ul {
     gap: 30px;
   }
@@ -7262,9 +7374,66 @@ section.employer-login-pg-sec {
     padding: 15px 0px;
   }
 
+  .icon-list-footer {
+    gap: 28px;
+  }
 
+  /* .subscribe-PAGE- */
+  .subscribe-now-txt h3 {
+    font-size: 40px;
+  }
+
+  .subcription-box h4 {
+    font-size: 28px;
+    padding: 50px 0px 10px 0px;
+  }
+
+  .subcription-box h6 {
+    font-size: 21px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .subcription-box a {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  /* PRODUCT-DETAIL-PAGE */
+  .Sweatshirt-ah h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .Sweatshirt-ah-select-box {
+    padding-top: 23px;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 20px;
+  }
+
+  .Sweatshirt-ah-select-card button {
+    font-size: 12px;
+  }
+
+  .Description-box-tital {
+    gap: 2px;
+    padding-top: 22px;
+  }
+
+  .Description-box-tital h2 {
+    font-size: 28px;
+  }
+
+  .Description-box-tital p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .satisfied h2 {
+    font-size: 75px;
+  }
 }
-
 
 @media screen and (max-width: 1024px) {
   .KABC-part-1-ah {
@@ -7294,6 +7463,171 @@ section.employer-login-pg-sec {
     font-size: 14px;
   }
 
+  .station-search-result-txt h4 {
+    font-size: 30px;
+  }
+
+  .station-search-result-txt p {
+    font-size: 16px;
+  }
+
+  .station-search-result-txt p span {
+    font-size: 16px;
+  }
+
+  .station-search-result-txt {
+    padding: 40px 0px 20px 0px;
+  }
+
+  .search-station-sec {
+    padding: 45px 0px 0px 0px;
+  }
+
+  .rms-kabc-txt h3 {
+    font-size: 22px;
+  }
+
+  .rms-kabc-btn .themedark {
+    font-size: 12px;
+    line-height: 22px;
+    border-radius: 8px;
+    padding: 8px 18px;
+  }
+
+  .news-director-card {
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .news-director-card-txt h5 {
+    font-size: 20px;
+  }
+
+  .news-director-detail-btn a {
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .rms-kabc-btn .themelight {
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 8px;
+  }
+
+  .rms-profile-box {
+    padding: 25px 20px;
+    margin: 0px 0px 24px 0px;
+  }
+
+  .seeprofile-box-btn a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .ratemystation-prod-txt h3 {
+    font-size: 16px;
+    line-height: 20px;
+    height: 100%;
+  }
+
+  .ratemystation-prod-txt {
+    padding: 15px;
+  }
+
+  .ratemystation-prod-txt h6 {
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .ratemystation-prod-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ratemystation-shop-prod {
+    border-radius: 14px;
+  }
+
+  .ratemystation-shop-prod img {
+    height: 159px;
+    object-fit: contain;
+    object-position: top;
+  }
+
+
+  .prod-abslt-ratems {
+    height: 100%;
+  }
+
+  section.ratemystation-shop-sec h4 {
+    font-size: 24px;
+    margin: 0px 0px 34px 0px !important;
+  }
+
+  section.ratemystation-shop-sec {
+    padding: 30px 0px;
+  }
+
+  .find-station-looking {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .find-station-looking h4 {
+    font-size: 24px;
+  }
+
+  .find-station-looking p {
+    font-size: 18px;
+    line-height: 28.5px;
+  }
+
+  .find-station-looking a {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .seeprofile-box-btn {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .rms-abc-logo {
+    width: 18%;
+  }
+
+  .rms-profile-logo-box {
+    align-items: flex-start;
+  }
+
+  .rms-rating-review svg {
+    width: 150px;
+  }
+
+  .looking-for-work-sec {
+    padding: 35px 0px;
+  }
+
+  .looking-for-worktxt h4 {
+    font-size: 32px;
+  }
+
+  .looking-for-worktxt p {
+    font-size: 18px;
+    margin: 15px 0px 20px 0px !important;
+  }
+
+  .looking-for-worktxt a {
+    font-size: 18px;
+    line-height: 31.5px;
+    padding: 8px 42px;
+  }
+
+  .looking-for-worktxt {
+    padding: 50px 0px;
+  }
+
   .Industry-ah span {
     gap: 5px;
   }
@@ -7316,6 +7650,58 @@ section.employer-login-pg-sec {
 
   .Job-list-2-ah span p {
     font-size: 12px;
+  }
+
+
+  .more-class {
+    padding: 10px 0px 10px 15px;
+  }
+
+  .Schedule-ah-card-box h2 {
+    padding: 20px 0px 20px 0px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .Schedule-ah-list-1 span p {
+    font-size: 14px;
+  }
+
+  .Schedule-ah-list-1 span {
+    gap: 8px;
+  }
+
+  .Soul-icon-box {
+    gap: 10px;
+  }
+
+  .Schedule-ah-list-3 a span {
+    font-size: 14px;
+  }
+
+  .Schedule-ah-list-3 a {
+    font-size: 14px;
+  }
+
+  .Soul-icon-box span p {
+    padding: 0px;
+  }
+
+  .Soul-icon-box span svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .KABC-tital-ah span h2 {
+    font-size: 24px;
+  }
+
+  .Award-a {
+    padding-top: 20px;
+  }
+
+  .Job-list-1-ah span h2 {
+    font-size: 20px;
   }
 
   .Job-list-2-ah {
@@ -7936,86 +8322,389 @@ section.employer-login-pg-sec {
     font-size: 38px;
     line-height: 53px;
     width: 380px;
+  }
+
+  .shop-new-arrival p {
+    font-size: 14px;
+    line-height: 26px;
+    width: 260px;
+    margin: 10px 0px 50px 0px !important;
+  }
+
+  .shop-new-arrival-img img {
+    width: 220px;
+  }
+
+
+  .themed-cap img {
+    width: 150px;
+  }
+
+  .themed-cap {
+    right: 0px;
+    top: 90px;
+  }
+
+  .theme-mug {
+    top: 70px;
+  }
+
+
+  .theme-mug img {
+    width: 150px;
+  }
+
+  .filter-box p {
+    font-size: 14px;
+  }
+
+  .filter-box select {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .filter-box {
+    gap: 5px;
+  }
+
+  .header_end a:nth-child(2) {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 0px 20px;
+  }
+
+  .header_end a:nth-child(1) svg {
+    width: 25px;
+  }
+
+
+  .header_end {
+    gap: 15px;
+  }
+
+  .header_nav ul {
+    margin: 0px 0px 0px 10px;
+    gap: 40px;
+  }
+
+  .shop-friend-themed {
+    padding: 26px 30px;
+  }
+
+  .header-logo img {
+    width: 155.797px;
+  }
+
+  .header_nav ul {
+    gap: 40px;
+    margin: 0px 0px 0px 18px;
+  }
+
+  .header_nav ul li {
+    font-size: 14px;
+  }
+
+  .header_end a:nth-child(1) span {
+    font-size: 10px;
+  }
+
+  .header_end {
+    gap: 30px
+  }
+
+  .header_end a:nth-child(2) {
+    font-size: 15px;
+    line-height: 28px;
+    padding: 4px 35px;
+  }
+
+  section.employer-login-pg-sec {
+    padding: 45px 0px;
+  }
+
+  .rating-real-journalist h3 {
+    font-size: 37px;
+  }
+
+  .employer-newroom-box button.text-white {
+    font-size: 21px;
+  }
+
+  .employer-newroom-box button {
+    color: #828282;
+    font-family: "Public Sans";
+    font-size: 22px;
+  }
+
+  .employer-inputfield label {
+    font-size: 15px;
+  }
+
+  .employer-inputfield input {
+    padding: 9px 4px;
+  }
+
+  .free-subscribe-four {
+    gap: 5px;
+  }
+
+  .employer-subscription {
+    padding: 15px 11px;
+  }
+
+  .employer-register-subscription {
+    padding: 28px 12px;
+  }
+
+  .employer-register-subscription h3 {
+    font-size: 27px;
+  }
+
+  .employer-choose-subscription h6 {
+    font-size: 13px;
+  }
+
+  .employer-subscription h5 {
+    font-size: 17px;
+  }
+
+  .employer-subscription h6 {
+    font-size: 13px;
+  }
+
+  .employer-subscription span {
+    font-size: 14px;
+  }
+
+  .employer-save {
+    font-size: 11px;
+  }
+
+  .employer-dont-have-acc a {
+    font-size: 13px;
+  }
+
+  .employer-register-btn a {
+    font-size: 14px;
+    padding: 4px 32px;
+  }
+
+  .employer-input-checkbox label {
+    font-size: 14px;
+  }
+
+
+  /* .subscribe-now-txt */
+  .station-secure-box p {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0px 25px 0px 0px;
+  }
+
+  .subcription-box::before {
+    width: 132px;
+    line-height: 24px;
+    font-size: 15px;
+    padding: 6px 0px 0px 0px;
+  }
+
+  .subcription-box a {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .subcription-box h4 {
+    font-size: 20px;
+    padding: 45px 0px 5px 0px;
+  }
+
+  .subcription-box h6 {
+    font-size: 19px;
+  }
+
+  .subcription-box h5 {
+    font-size: 22px;
+    line-height: 20px;
+    padding: 0px 0px 75px 0px;
+  }
+
+  .subcription-box span {
+    font-size: 11px;
+    width: 122px;
+    padding: 6px 5px;
+  }
+
+  .subscribe-now-txt h3 {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .subscribe-now-txt ul li {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 0px;
+  }
+
+  .subscribtion-credit-box {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  /* PRODUCT-DETAIL */
+  .About-main-card-1-ah h2 {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .Sweatshirt-ah-select-box {
+    padding-top: 12px;
+  }
+
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 35%;
+  }
+
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 35%;
+  }
+
+  .Sweatshirt-ah-select-box {
+    padding-top: 12px;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 20px !important;
+  }
+
+  .Sweatshirt-ah-select-card button {
+    font-size: 11px;
+  }
+
+  .Description-box-tital p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .Cooper-ah-box-main {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .Cooper-ah-tital {
+    padding: 12px 20px;
+  }
+
+  .Cooper-ah-tital h3 {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 8px 0px 2px 0px;
+  }
+
+  .satisfied h2 {
+    font-size: 30px;
+  }
+
+  .Applied-ah-list-1 span h2 {
+    font-size: 22px;
+  }
+
+  .Applied-ah-list-1 {
+    padding-bottom: 18px;
+  }
+
+  .Applied-ah-card {
+    padding: 24px 34px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+
+  .Applied-ah-logo {
+    width: 18%;
+  }
+
+  .Applied-ah-tital {
+    width: 76%;
+  }
+
+  .Applied-ah-list-2 span p {
+    font-size: 14px;
+  }
+
+  .Applied-ah-list-2 {
+    padding: 8px 15px;
+  }
+
+  .Applied-ah-list-3 {
+    padding-top: 20px;
+  }
+
+  /* CONTACT US */
+  .ratemystaion-contact-form {
+    padding: 40px;
+  }
+
+  .ratemystaion-contact-form p {
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0px 0px 85px 0px !important;
+  }
+
+  .contact-form-fields {
+    padding: 40px;
+  }
+
+  .ratemystaion-contact-form h3 {
+    font-size: 40px;
+  }
+
+  .ratemystaion-contact-form p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px 0px 110px 0px !important;
+  }
+
+  .ratemystaion-contact-form ul li {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .input-field {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .input-field textarea {
+    height: 175px;
+  }
+
+  .contact-form-btn button {
+    padding: 8px 55px;
+  }
+
+  .contact-follow-like-btn ul li {
+    padding: 12px 30px;
+  }
+
+  .contact-latest-updates {
+    padding: 0px 25px 20px 20px;
+  }
 }
-
-
-
-.shop-new-arrival p {
-  font-size: 14px;
-  line-height: 26px;
-  width: 260px;
-  margin: 10px 0px 50px 0px !important;
-}
-
-.shop-new-arrival-img img {
-  width: 220px;
-}
-
-
-.themed-cap img {
-  width: 150px;
-}
-
-.themed-cap {
-  right: 0px;
-  top: 90px;
-}
-
-.theme-mug {
-  top: 70px;
-}
-
-
-.theme-mug img {
-  width: 150px;
-}
-
-.filter-box p {
-  font-size: 14px;
-}
-
-.filter-box select {
-  padding: 10px 5px;
-  font-size: 12px;
-}
-
-.filter-box {
-  gap: 5px;
-}
-
-.header_end a:nth-child(2) {
-  font-size: 14px;
-  border-radius: 10px;
-  padding: 0px 20px;
-}
-
-.header_end a:nth-child(1) svg {
-  width: 25px;
-}
-
-
-.header_end {
-  gap: 15px;
-}
-
-.header_nav ul {
-  margin: 0px 0px 0px 10px;
-  gap: 40px;
-}
-
-.shop-friend-themed {
-  padding: 26px 30px;
-}
-
-
-}
-
 
 @media screen and (max-width: 768px) {
   .About-main-ah {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+
+
+  .news-director-detail-btn {
+    justify-content: flex-end;
   }
 
   .About-main-box-1-ah {
@@ -8033,6 +8722,12 @@ section.employer-login-pg-sec {
   .KABC-btn-box-ah {
     width: 34%;
   }
+
+
+  .ratemystation-prod-txt h3 {
+    height: 50px;
+  }
+
 
   span.See button {
     padding: 5px;
@@ -8411,51 +9106,600 @@ section.employer-login-pg-sec {
   .shop-new-arrival {
     margin: 0px 0px 20px 0px;
   }
-  
+
   .shop-friend-themed h4 {
     font-size: 20px;
     line-height: 30px;
     margin: 0px 0px 50px 0px !important;
   }
-  
+
   .themed-cap img {
     width: 120px;
   }
 
   .theme-mug img {
     width: 120px;
+  }
+
+
+  .shop-new-arrival {
+    padding: 30px 30px;
+  }
+
+  .shop-new-arrival h3 {
+    font-size: 37px;
+  }
+
+  .shop-new-arrival p {
+    width: 300px;
+    margin: 10px 0px 30px 0px !important;
+  }
+
+
+  .shop-category ul li button {
+    font-size: 12px;
+  }
+
+
+
+
+  .Job-list-1-ah span h2 {
+    font-size: 20px;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ul-li-list-footer {
+    width: 100%;
+  }
+
+  .ul-li-list-footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ratings-ah-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+  }
+
+  .ratings-ah-1-TITAL {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ratings-ah-1-box {
+    width: 34%;
+  }
+
+
+  .gol-bar-ah {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .gol-bar-head {
+    width: 100%;
+  }
+
+  .gol-bar-tital {
+    width: 42%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .gol-bar-head h2 {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .ratings-ah-1-TITAL span h2 {
+    font-size: 60px;
+  }
+
+  .ratings-ah-1-TITAL span p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .job-ah-post h2 {
+    font-size: 20px;
+  }
+
+  .job-ah-Filter {
+    width: 64%;
+    gap: 25px;
+  }
+
+  .job-ah-Filter-card p {
+    font-size: 16px;
+  }
+
+  .job-ah-Filter-card select {
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .director-urer img {
+    width: 10%;
+  }
+
+  .director-urer {
+    padding-bottom: 24px;
+  }
+
+  .Angeles-logo-side-box span h2 {
+    font-size: 20px;
+  }
+
+  .Jacob-card-ah {
+    width: 75%;
+  }
+
+  .Jacob-card-ah-box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .four-select-tab {
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .verified-rating-box h6 {
+    font-size: 14px;
+  }
+
+  .Hire-ah-box h2 {
+    font-size: 28px;
+  }
+
+  .Hire-ah-box p {
+    font-size: 18px;
+    padding: 20px 10px;
+  }
+
+  .Hire-ah-box button {
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 10px;
+  }
+
+  .Hire-ah-box {
+    padding: 40px 20px;
+  }
+
+  .About-main-ah {
+    gap: 25px;
+  }
+
+  .job-ah-post h2 span {
+    font-size: 16px;
+  }
+
+  header.header_main {
+    display: none;
+  }
+
+  header.header_main_Mobile {
+    display: block;
+    padding: 20px 0px 12px 0px;
+    background: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .header_nav {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+
+  .header_nav button {
+    width: 40px;
+    background: #000;
+    color: #fff;
+  }
+
+  .header_nav button:hover {
+    color: #f1f1f1;
+  }
+
+  /* The navigation links inside the sidepanel */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* SECTION */
+  section.employer-login-pg-sec {
+    padding: 40px 0px;
+  }
+
+  .rating-real-journalist {
+    padding: 140px 50px;
+  }
+
+  /* .subscribtion--PAGE */
+
+  .subcription-page-sec {
+    padding: 40px 0px;
+  }
+
+  .subscribe-now-txt h3 {
+    font-size: 37px;
+    line-height: 52px;
+  }
+
+  .subscribe-now-txt p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .subscribe-now-txt ul li {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 5px 0px;
+  }
+
+  .station-secure-box p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  /* CONTACT US */
+  .ratemystaion-contact-form {
+    padding: 20px;
+  }
+
+  .ratemystaion-contact-form h3 {
+    font-size: 37px;
+  }
+
+  .ratemystaion-contact-form p {
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0px 0px 40px 0px !important;
+  }
+
+
 }
-  
-
-.shop-new-arrival {
-  padding: 30px 30px;
-}
-
-.shop-new-arrival h3 {
-  font-size: 37px;
-}
-
-.shop-new-arrival p {
-  width: 300px;
-  margin: 10px 0px 30px 0px !important;
-}
-
-
-.shop-category ul li button {
-  font-size: 12px;
-}
-
-
-
-}
-
-
 
 
 @media screen and (max-width: 600px) {
   .ul-li-list-footer ul {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+  }
+
+  .About-main-box-2-ah {
+    width: 100%;
+  }
+
+  .About-main-box-2-tital-ah h2 {
+    font-size: 18px;
+  }
+
+  .About-main-box-2-tital-ah a {
+    font-size: 15px;
+  }
+
+  .Recommend-box-ah {
+    gap: 20px;
+    padding-top: 25px;
+  }
+
+  .Recommend-card-tital-ah {
+    padding: 10px 14px;
+  }
+
+  .Recommend-card-tital-ah h2 {
+    font-size: 14px;
+  }
+
+  section.director-search-result hr {
+    margin: 0px;
+  }
+
+  .Recommend-card-tital-ah h2 {
+    font-size: 14px;
+  }
+
+  .Applied-ah-list-1 span h2 {
+    font-size: 22px;
+  }
+
+  .news-director-card-txt h5 {
+    font-size: 18px;
+  }
+
+  .Applied-ah-list-1 {
+    padding-bottom: 18px;
+  }
+
+  .Applied-ah-card {
+    padding: 24px 34px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+
+  .rms-profile-logo-box {
+    flex-direction: column;
+  }
+
+  .station-search-result-txt h4 {
+    font-size: 18px;
+  }
+
+  .station-search-result-txt p {
+    font-size: 14px;
+  }
+
+  .station-search-result-txt p span {
+    font-size: 14px;
+  }
+
+  .search-station-sec {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .Applied-ah-logo {
+    width: 18%;
+  }
+
+  .Applied-ah-tital {
+    width: 76%;
+  }
+
+  .Applied-ah-list-2 span p {
+    font-size: 14px;
+  }
+
+  .Applied-ah-list-2 {
+    padding: 8px 15px;
+  }
+
+  .Applied-ah-list-3 {
+    padding-top: 20px;
+  }
+
+
+
+  .Applied-ah-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Applied-ah-tital {
+    width: 100%;
+  }
+
+  .Applied-ah-list-1 span h2 {
+    font-size: 20px;
+  }
+
+  .Applied-ah-list-1 {
+    padding-bottom: 15px;
+  }
+
+  .Applied-ah-card {
+    padding: 15px 20px;
+  }
+
+  .Applied-ah-list-1 span p {
+    font-size: 18px;
+  }
+
+  .Applied-ah-list-2 span p {
+    font-size: 12px;
+  }
+
+  .Applied-ah-list-2 span {
+    gap: 5px;
+  }
+
+  .Applied-ah-list-2 span svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .KABC-box-ah {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .KABC-part-1-ah {
+    width: 100%;
+  }
+
+
+  .Schedule-ah-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .Schedule-ah-card-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .Schedule-ah-imger {
+    width: 32%;
+  }
+
+  .KABC-btn-box-ah {
+    width: 100%;
+  }
+
+  section.KABC-ah {
+    padding-top: 40px;
+  }
+
+  .Jacob-card-ah {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Director-ah-boxing-3 button {
+    padding: 10px;
+    line-height: 22px;
+    font-size: 12px;
+  }
+
+  .Director-ah-boxing-list-logo {
+    gap: 20px;
+  }
+
+  section.About-ah {
+    padding: 170px 0px 50px 0px;
+  }
+
+  .Director-ah-boxing-3 button {
+    padding: 10px;
+    font-size: 11px;
+    line-height: 5px;
+  }
+
+  .About-main-card-1-ah h2 span {
+    font-size: 15px;
+  }
+
+  .Sweatshirt-ah-select-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    padding-top: 3px;
+    justify-content: flex-start;
+  }
+
+  .Sweatshirt-ah-select-card button {
+    font-size: 10px;
+    line-height: 29px;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 11px !important;
+  }
+
+  .Sweatshirt-ah-select-card select {
+    padding: 11px;
+    font-size: 11px;
+    line-height: 26px;
+  }
+
+  .Sweatshirt-ah-select-card p {
+    font-size: 13px;
+  }
+
+  .Description-box-tital {
+    gap: 1px;
+    padding-top: 15px;
+  }
+
+  .Description-box-tital p {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .Description-box-tital a {
+    font-size: 14px;
+  }
+
+  .Cooper-ah-imger {
+    width: 8%;
+  }
+
+  .Cooper-ah-tital h3 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .About-main-card-1-ah h2 {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .Cooper-ah-box-main {
+    padding-top: 10px;
+  }
+
+  .About-main-card-1-ah {
+    padding: 20px;
+  }
+
+  .Award-a a {
+    font-size: 16px;
+  }
+
+  .satisfied button {
+    font-size: 15px;
+    line-height: 29px;
+    padding: 7px;
+  }
+
+  .satisfied h3 {
+    font-size: 17px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .ratings-ah-1-bar {
+    gap: 15px;
+  }
+
+  .Award-a {
+    padding-top: 10px;
+  }
+
+
+
+
+  .ul-li-list-footer ul {
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
 
@@ -8542,6 +9786,20 @@ section.employer-login-pg-sec {
 
   .About-main-card-1-ah h2 {
     font-size: 18px;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 15px 0px 10px 0px;
+    font-size: 14px;
+  }
+
+  .bar-pogres-box-cards-ah {
+    flex-direction: column;
+  }
+
+  .pogras-card-ah {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .About-main-card-1-ah p {
@@ -8691,7 +9949,7 @@ section.employer-login-pg-sec {
   }
 
   .director-urer {
-    padding-bottom: 14px;
+    padding-bottom: 24px;
   }
 
   .Draft-ah {
@@ -8779,6 +10037,642 @@ section.employer-login-pg-sec {
 
   .review-news-director {
     margin: 35px 0px 25px 0px;
+  }
+
+  .review-news-director {
+    margin: 25px 0px 20px 0px;
+  }
+
+  .review-director-para p {
+    font-size: 14px;
+  }
+
+  .racial-discrimination p {
+    font-size: 14px;
+  }
+
+  .racial-discrimination h5 {
+    font-size: 14px;
+  }
+
+  .like-report-txt ul li {
+    font-size: 14px;
+  }
+
+  .like-report-submitted {
+    margin: 12px 0px;
+  }
+
+  .latest-rating-comment-box {
+    margin: 25px 0px 5px 0px;
+  }
+
+  .latest-comment-txt-input-box input {
+    padding: 12px 40px 12px 18px;
+    font-size: 16px;
+  }
+
+  .latest-rating-box {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .free-subscribe-four {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .employer-register-subscription {
+    padding: 28px 24px;
+  }
+
+  .employer-subscription {
+    width: 47%;
+    padding: 15px 11px;
+  }
+
+  .new-subscription-discount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .new-subscription-discount p {
+    font-size: 13px;
+  }
+
+  .new-subscription-discount a {
+    font-size: 14px;
+  }
+
+  /* .subscribe- */
+  .subcription-page-sec {
+    padding: 35px 0px;
+  }
+
+  .subscribe-now-txt h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .subscribe-now-txt p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .subscribe-now-txt ul li {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 0px;
+  }
+
+  .subscribe-now-txt ul li svg {
+    position: absolute;
+    left: -26px;
+    top: 8px;
+  }
+
+  .subcription-box {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .station-secure-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+  }
+
+  .station-secure-box svg {
+    width: 50px;
+    height: 25px;
+  }
+
+  .station-secure-box p {
+    font-size: 13px;
+    line-height: 23px;
+    padding: 0px 5px 0px 0px;
+
+  }
+
+  .subscription-credit p {
+    font-size: 14px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  .subcription-box h4 {
+    font-size: 20px;
+    padding: 40px 0px 5px 0px;
+  }
+
+  .subcription-box h6 {
+    font-size: 19px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  /* PRODUCT-QUALITY */
+  .Cooper-ah-box {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .America-Sweatshirt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .America-ah-part-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+  }
+
+  .About-main-card-1-ah h2 {
+    font-size: 19px;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 14px 0px 10px 0px;
+    font-size: 16px;
+  }
+
+  .Sweatshirt-ah-select-card input {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .Sweatshirt-ah-select-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-top: 3px;
+    justify-content: flex-start;
+  }
+
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 35%;
+  }
+
+  .Sweatshirt-ah-select-card select {
+    padding: 11px;
+    width: 100px;
+    font-size: 11px;
+    line-height: 26px;
+  }
+
+  .Sweatshirt-ah-select-card input {
+    padding: 6px;
+    width: 100px;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 14px 0px 10px 0px;
+    font-size: 16px;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 13px !important;
+  }
+
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+  }
+
+  .Sweatshirt-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 60px 0px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Cooper-ah-imger {
+    width: 17%;
+  }
+
+  .Cooper-ah-tital-head {
+    width: 100%;
+    display: flex;
+    align-items: left;
+
+  }
+
+  .Brooklyn-Simmons-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Overall-Statistic-ah ul {
+    width: 100%;
+  }
+
+  .ratings-ah-1-box {
+    width: 100%;
+  }
+
+  .gol-bar-tital {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .gol-bar-head h2 {
+    font-size: 45px;
+  }
+
+  .ratings-ah-1-bar {
+    width: 100%;
+  }
+
+  section.Statistic-ah {
+    padding: 160px 0px 50px 0px;
+  }
+
+  .navtabs {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .main-KABC-ah {
+    padding: 30px 30px 20px 30px;
+  }
+
+  .Industry-ah {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .gol-bar-box {
+    width: 70%;
+  }
+
+  .Brooklyn-Simmons-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Brooklyn-Simmons-logo-div {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .Brooklyn-Simmons-card button {
+    line-height: 28px;
+  }
+
+  span.edite svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Website-ah-card span h2 {
+    font-size: 18px;
+  }
+
+  .Website-ah-card span h3 {
+    font-size: 18px;
+  }
+
+  .Website-ah-card button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Website-ah-card button {
+    padding: 10px;
+  }
+
+  .Website-ah-box {
+    gap: 20px;
+    padding-top: 35px;
+  }
+
+  .Award-card-ah {
+    align-items: flex-start;
+  }
+
+  .About-main-card-1-ah h2 span {
+    font-size: 16px;
+  }
+
+  .Job-box-ah {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Job-card-ah {
+    width: 100%;
+  }
+
+  .Job-list-1-ah span h2 {
+    font-size: 18px;
+  }
+
+  .Job-list-2-ah {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .KABC-tital-ah span h2 {
+    font-size: 20px;
+  }
+
+  .ratings-ah-1-TITAL span h2 {
+    font-size: 60px;
+  }
+
+  .ratings-ah-1-TITAL span p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .job-ah-post h2 {
+    font-size: 20px;
+  }
+
+  .job-ah-Filter {
+    width: 64%;
+    gap: 25px;
+  }
+
+  .job-ah-Filter-card p {
+    font-size: 16px;
+  }
+
+  .job-ah-Filter-card select {
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .director-urer img {
+    width: 10%;
+  }
+
+  .director-urer {
+    padding-bottom: 14px;
+  }
+
+  .Draft-ah {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Hire-ah-box h2 {
+    font-size: 24px;
+  }
+
+  .Hire-ah-box p {
+    font-size: 16px;
+    padding: 18px 8px;
+  }
+
+  .Draft-ah {
+    flex-direction: column;
+  }
+
+  .Cooper-ah-tital-head {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .Hire-ah-box h2 {
+    font-size: 24px;
+  }
+
+  .Hire-ah-box p {
+    font-size: 16px;
+    padding: 18px 8px;
+  }
+
+  .Office-ah-logo {
+    width: 20%;
+  }
+
+  .Office-ah-span p {
+    padding: 0px;
+  }
+
+  .Current-ah-job-card span h3 {
+    font-size: 12px;
+  }
+
+  .Skills-ah-box-main {
+    padding-top: 14px;
+    gap: 10px;
+  }
+
+  .Skills-ah-box p {
+    padding: 10px 0px 4px 0px;
+    line-height: 20px;
+  }
+
+  .Current-ah-job p {
+    line-height: 20px;
+  }
+
+  .Education-side-ah h4 {
+    line-height: 20px;
+  }
+
+  .Education-side-ah p {
+    padding: 0px;
+  }
+
+  .Education-ah-boxing {
+    gap: 25px;
+  }
+
+  .About-main-card-1-ah p {
+    line-height: 20px;
+  }
+
+  .Hire-ah-box button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .Hire-ah-box button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .four-select-tab {
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .verified-rating-box h6 {
+    font-size: 14px;
+  }
+
+  .scrllo-bar p {
+    padding: 0px;
+    line-height: 24px;
+  }
+
+  .w3-light-grey.w3-tiny {
+    height: 12px;
+  }
+
+  .About-main-card-1-ah h2 {
+    font-size: 16px;
+  }
+
+  .About-main-card-1-ah h2 {
+    font-size: 21px;
+  }
+
+  .Cooper-ah-tital-head span {
+    color: #000;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  img {
+    width: 76%;
+  }
+
+  .America-ah {
+    width: 100%;
+  }
+
+  .Sweatshirt-ah {
+    width: 100%;
+  }
+
+
+  .Sweatshirt-part-1 {
+    width: 100%;
+  }
+
+  .Award-a {
+    padding-top: 10px;
+  }
+
+  .Sweatshirt-part-2 {
+    width: 100%;
+  }
+
+  .satisfied h2 {
+    font-size: 30px;
+    padding-top: 15px;
+    text-align: left;
+  }
+
+  .satisfied h3 {
+    text-align: left;
+  }
+
+  .satisfied p {
+    text-align: left;
+  }
+
+  .ratings-ah-1-bar {
+    gap: 0px;
+  }
+
+  .my-ah-class {
+    padding: 25px 0px;
+  }
+
+  .satisfied button {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 9px;
+  }
+
+  .Popular-ti-ah-btn-box button {
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+
+  .Popular-ti-ah-btn-box {
+    gap: 12px;
+  }
+
+  .latest-rating-user-verified {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .rating-user-box {
+    width: 100%;
+  }
+
+  .verified-rating-box {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .job-ah-post {
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job-ah-Filter {
+    width: 100%;
+  }
+
+  .job-ah-post h2 {
+    font-size: 18px;
+  }
+
+  .job-ah-post h2 span {
+    font-size: 15px;
+  }
+
+  .review-news-director {
+    margin: 35px 0px 25px 0px;
+  }
+
+  .review-news-director {
+    margin: 25px 0px 20px 0px;
+  }
+
+  .review-news-director {
+    margin: 35px 0px 25px 0px;
+  }
+
+  section.About-ah.extara {
+    padding: 50px 0px 50px 0px;
   }
 
   .review-news-director {
@@ -9169,6 +11063,40 @@ section.employer-login-pg-sec {
 
   .themed-abslt-img img {
     width: 150px;
+  }
+
+
+  .latest-rating-box {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .Education-logo {
+    width: 50%;
+  }
+
+  /* 
+CONTACTUS */
+  .contact-form-fields {
+    padding: 0px;
+  }
+
+  .contact-form-fields {
+    padding: 0px;
+  }
+
+  .contact-follow-like-btn ul li {
+    font-family: "Public Sans", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 40px;
+  }
+
+  .contact-follow-like-btn ul li {
+    padding: 4px 18px;
   }
 
 

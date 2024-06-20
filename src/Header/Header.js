@@ -1,52 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import HeaderMainLogo from "../img/header_logo_img.png"
 import { useNavigate } from 'react-router-dom'
 
-
 const Header = () => {
   const navigate = useNavigate();
-  const home = () => {
-    navigate("/");
-  };
   
-  const about = () => {
-    navigate("/About");
+  // State and functions for side panel
+  const [panelWidth, setPanelWidth] = useState("0");
+
+  const openNav = () => {
+    setPanelWidth("250px");
   };
 
-  const newsletter = () => {
-    navigate("/Newsletter");
+  const closeNav = () => {
+    setPanelWidth("0");
   };
 
-  const job = () => {
-    navigate("/Viewjob");
-  };
+  const home = () => navigate("/");
+  const about = () => navigate("/About");
+  const newsletter = () => navigate("/Newsletter");
+  const job = () => navigate("/Viewjob");
+  const shop = () => navigate("/Shop");
+  const contact = () => navigate("/Contactus");
+  const faq = () => navigate("/FAQ");
+  const cart = () => navigate("/mycart");
+  const login = () => navigate("/employerlogin");
 
-  const shop = () => {
-    navigate("/Shop");
-  };
-  
-  const contact = () => {
-    navigate("/Contactus");
-  };
-
-  const faq = () => {
-    navigate("/FAQ");
-  };
-
-  const cart = () => {
-    navigate("/mycart");
-  };
-  
-  const login = () => {
-    navigate("/employerlogin");
-  };
-  
-  
   return (
     <>
-
-      <header className="header_main">
+   <header className="header_main">
         <Container>
           <Row>
             <Col lg={2}>
@@ -79,8 +62,31 @@ const Header = () => {
         </Container>
       </header>
 
+      <header className="header_main_Mobile">
+        <Container>
+          <Row>
+            <Col lg={2}>
+              <div className="header-logo">
+                <img onClick={home} src={HeaderMainLogo} alt="img" />
+              </div>
+            </Col>
+          </Row>
+          <div className="header_nav">
+              <button onClick={openNav}>☰</button>
+              <div id="mySidepanel" className="sidepanel" style={{ width: panelWidth }}>
+                <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>×</a>
+                <a href="#" onClick={about}>About</a>
+                <a href="#" onClick={newsletter}>Newsletter</a>
+                <a href="#" onClick={job}>Jobs</a>
+                <a href="#" onClick={shop}>Shop</a>
+                <a href="#" onClick={contact}>Contact</a>
+                <a href="#" onClick={faq}>FAQ</a>
+              </div>
+              </div>
+        </Container>
+      </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

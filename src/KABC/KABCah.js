@@ -72,7 +72,7 @@ return(
             </Container>
     </section>
 
-    <section class="About-ah">
+    <section class="About-ah extara">
     <Container>
             <div class="About-main-ah">
 
