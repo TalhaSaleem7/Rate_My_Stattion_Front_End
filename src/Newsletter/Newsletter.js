@@ -105,13 +105,13 @@ const Newsletter = () => {
      <section className="articles-writer-sec">
       <Container>
         <Row>
-          <Col lg={8}>
+          <Col lg={8} md={6}>
             <div className="newsletter-article-search">
                 <input type="search" placeholder="Search articles or writer" />   
                 <span><RiSearchLine /></span>
             </div>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={6}>
             <div className="filter-short-box">
               <div className="filter-box">
                 <p>Filter:</p>
@@ -273,7 +273,7 @@ const Newsletter = () => {
       <h4>RateMyStation's Shop</h4>
       <Container>
         <Row>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -287,7 +287,7 @@ const Newsletter = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
               <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -301,7 +301,7 @@ const Newsletter = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage3} alt="Anonymous Source Onesie" />
               <div className="ratemystation-prod-txt">
@@ -314,7 +314,7 @@ const Newsletter = () => {
               </div>
             </div>
           </Col>
-          <Col lg={3} md={6}>
+          <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
               <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
               <div className="ratemystation-prod-txt">

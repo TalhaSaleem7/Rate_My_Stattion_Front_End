@@ -20,11 +20,28 @@ import ProdImage4 from '../img/ratemystation-prod-img-4.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Newslettersidesd from '../Newslettersidesecsd/Newslettersidesd';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 const NewsletterArticle = () => {
+
+
+    const navigate = useNavigate();
+
+    const mycart = () => {
+        navigate("/mycart")
+    }
+
+    const proddetail = () => {
+        navigate('/productdetail')
+    }
+
+    const shop = () => {
+        navigate('/shop')
+    }
+
     const settings = {
         dots: true,
         infinite: true,
@@ -34,6 +51,9 @@ const NewsletterArticle = () => {
         autoplay: true,
         autoplaySpeed: 5000,
     };
+
+  
+
     return (
         <>
         <section className="newsletter-article-sec">
@@ -187,6 +207,9 @@ const NewsletterArticle = () => {
                                         <li><a href="#"><RiThumbUpFill /> 35</a></li>
                                         <li><a href="#"><RiChat3Fill /> 25</a></li>
                                         <li><a href="#"><RiShareFill /> 15</a></li>
+                                       
+                                    </ul>
+                                    <ul>
                                         <li><a href="#"><RiBookmarkFill /></a></li>
                                         <li><a href="#"><RiFlagFill /></a></li>
                                     </ul>
@@ -319,7 +342,7 @@ const NewsletterArticle = () => {
         <h4>RateMyStation's Shop</h4>
         <Container>
         <Row>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
                 <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -327,13 +350,13 @@ const NewsletterArticle = () => {
                 <h3>Don’t Make Me Use My News Voice Face Mask</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
                 </div>
             </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
                 <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -341,34 +364,34 @@ const NewsletterArticle = () => {
                 <h3>America Needs Local News Sweatshirt</h3>
                 <h6>$25.00 – $33.50</h6>
                 <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
                 </div>
             </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
                 <img src={ProdImage3} alt="Anonymous Source Onesie" />
                 <div className="ratemystation-prod-txt">
                 <h3>Anonymous Source Onesie</h3>
                 <h6>$18.00</h6>
                 <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
                 </div>
             </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
             <div className="ratemystation-shop-prod">
                 <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
                 <div className="ratemystation-prod-txt">
                 <h3>You Are A PKG Framed Poster</h3>
                 <h6>$26.00 – $105.00</h6>
                 <div className="ratemystation-prod-btn">
-                    <Button href="#" variant="light" className="prod-light-btn">View Details</Button>
-                    <Button href="#" variant="dark" className="prod-dark-btn">Add to cart</Button>
+                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
+                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                 </div>
                 </div>
             </div>
@@ -377,7 +400,7 @@ const NewsletterArticle = () => {
         <Row>
             <Col lg={12}>
             <div className="ratemystation-allprod-btn">
-                <Button href="#">See All Products</Button>
+                <a onClick={shop}>See All Products</a>
             </div>
             </Col>
         </Row>

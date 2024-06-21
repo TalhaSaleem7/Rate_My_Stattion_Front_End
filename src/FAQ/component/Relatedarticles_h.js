@@ -4,25 +4,25 @@ const Related = () => {
     {
       id: 1,
       text: "Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam?",
-      url: "",
+      url: "#",
       imgSrc: ChevronImage,
     },
     {
       id: 2,
       text: "Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam?",
-      url: "",
+      url: "#",
       imgSrc: ChevronImage,
     },
     {
       id: 3,
       text: "Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam?",
-      url: "",
+      url: "#",
       imgSrc: ChevronImage,
     },
     {
       id: 4,
       text: "Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam?",
-      url: "",
+      url: "#",
       imgSrc: ChevronImage,
     },
   ];

@@ -32,7 +32,7 @@ const RateThisProd = () => {
                     <label htmlFor="">
                       How is the overall product quality?
                     </label>
-                    <div className="d-flex rating--boxes--cont--h rating--popup--cont--h">
+                    <div className="d-flex rating--boxes--cont--h rating--boxes--cont--h--alt rating--popup--cont--h">
                       <span></span>
                       <span></span>
                       <span></span>
@@ -57,7 +57,7 @@ const RateThisProd = () => {
                 placeholder="Type here..."
               ></textarea>
             </div>
-            <div className="about--button--h pt-1 w-50">
+            <div className="about--button--h pt-1 ">
               <button
                 type="button"
                 className="btn btn-primary about--btn--h about--btn--h--alt"

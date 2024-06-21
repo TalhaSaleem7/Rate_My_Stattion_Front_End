@@ -4,12 +4,10 @@
   box-sizing: border-box;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  background: #F5F5F5 !important;
+  background: #f5f5f5 !important;
 }
 
 header.header_main_Mobile {
@@ -17,7 +15,7 @@ header.header_main_Mobile {
 }
 
 section.KABC-ah {
-  WIDTH: 100%;
+  width: 100%;
   height: 295px;
   background-image: url(../img/BG.png);
   background-position: center;
@@ -25,7 +23,6 @@ section.KABC-ah {
   background-size: cover;
   padding-top: 90px;
 }
-
 
 h1,
 h2,
@@ -38,7 +35,6 @@ a {
 }
 
 .container-ah {
-
   width: 100%;
   max-width: 1270px;
   margin: 0 auto;
@@ -84,7 +80,7 @@ a {
 }
 
 .KABC-tital-ah span h2 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -107,7 +103,7 @@ a {
 }
 
 .KABC-tital-ah span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -138,9 +134,9 @@ span.See button {
   padding: 10px;
   border: 1px solid hsl(207.5deg 65.75% 28.63%);
   border-radius: 10px;
-  background: #194D79;
+  background: #194d79;
   width: 100%;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -165,7 +161,7 @@ span.Info button {
 }
 
 button.Contact-ah {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -195,7 +191,6 @@ section.About-ah {
 }
 
 .About-main-box-1-ah {
-
   width: 68%;
 
   display: flex;
@@ -206,7 +201,6 @@ section.About-ah {
 }
 
 .About-main-box-2-tital-ah {
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -227,7 +221,7 @@ section.About-ah {
 }
 
 .About-main-box-2-tital-ah a {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -268,7 +262,7 @@ section.About-ah {
 
 .About-main-card-1-ah hr {
   height: 2px;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border: none;
 }
 
@@ -288,7 +282,7 @@ section.About-ah {
 }
 
 .Industry-ah span h2 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -348,7 +342,7 @@ section.About-ah {
 
 .Brooklyn-Simmons-tital span p {
   padding: 0px;
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -374,7 +368,7 @@ section.About-ah {
 .Brooklyn-Simmons-tital span a {
   border-radius: 8px;
   width: 80px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   padding: 8px;
   color: var(--Gray-3, #828282);
   text-align: center;
@@ -387,12 +381,11 @@ section.About-ah {
   transition: 0.3s;
 }
 
-
 .Brooklyn-Simmons-card button {
   border-radius: 10px;
   background: transparent;
-  border: 2px solid #194D79;
-  color: #194D79;
+  border: 2px solid #194d79;
+  color: #194d79;
   text-align: center;
   padding: 5px 50px;
   font-family: "Public Sans", sans-serif;
@@ -413,7 +406,7 @@ section.About-ah {
 .latest-comment-txt-input-box input {
   width: 100%;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   border: none;
   padding: 15px 44px 15px 20px;
   outline: none;
@@ -430,7 +423,6 @@ section.About-ah {
   width: 48.076px;
 }
 
-
 .latest-comment-txt-input-box button {
   background: transparent;
   border: none;
@@ -440,7 +432,7 @@ section.About-ah {
 
 .Brooklyn-Simmons-tital span a:hover {
   color: #fff;
-  background-color: #89C400;
+  background-color: #89c400;
 }
 
 .Award-box-ah {
@@ -458,7 +450,7 @@ section.About-ah {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .Award-box-logo-ah {
@@ -475,7 +467,7 @@ section.About-ah {
 }
 
 .Award-box-tital-ah h2 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -504,7 +496,7 @@ section.About-ah {
 }
 
 .Award-a a {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -566,7 +558,7 @@ section.About-ah {
 }
 
 .Job-list-1-ah span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -582,7 +574,7 @@ section.About-ah {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   padding: 10px 30px;
 }
 
@@ -594,7 +586,7 @@ section.About-ah {
 
 .Job-list-2-ah span p {
   padding: 0px;
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -618,12 +610,12 @@ section.About-ah {
 
 .Job-list-3-ah button {
   border-radius: 8px;
-  background: var(--9-bdb-08, #9BDB08);
+  background: var(--9-bdb-08, #9bdb08);
   border: 1px solid #9bdb08;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
@@ -680,7 +672,6 @@ section.About-ah {
 .Recommend-card-tital-ah {
   width: 100%;
   padding: 20px 25px;
-
 }
 
 .Recommend-card-tital-ah h2 {
@@ -696,7 +687,7 @@ section.About-ah {
 
 .Recommend-card-tital-ah input {
   width: 100%;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
   outline: none;
   padding: 16px;
@@ -713,15 +704,15 @@ section.About-ah {
 
 .Recommend-card-tital-ah button {
   width: 100%;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  background: #194D79;
-  border: 1px solid #194D79;
+  background: #194d79;
+  border: 1px solid #194d79;
   border-radius: 15px;
   padding: 16px 0px;
 }
@@ -731,8 +722,6 @@ section.About-ah {
   align-items: center;
   gap: 30px;
   padding-bottom: 10px;
-
-
 }
 
 .padding-ah {
@@ -747,19 +736,16 @@ section.About-ah {
   gap: 18px;
 }
 
-
-
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
 /* tabs-code-html-css-code tabs-code-html-css-code-tabs-code-html-css-code tabs-code-html-css-code   */
-
 
 .navtabs {
   display: flex;
   position: relative;
   align-items: center;
   padding-top: 30px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
   margin-top: 30px;
   gap: 70px;
 }
@@ -779,11 +765,11 @@ section.About-ah {
 }
 
 .navtab:hover {
-  color: #89C400;
+  color: #89c400;
 }
 
 .navtab.active {
-  color: #89C400;
+  color: #89c400;
   font-weight: 600;
 }
 
@@ -791,7 +777,7 @@ section.About-ah {
   position: absolute;
   bottom: 0px;
   height: 3px;
-  background: #89C400;
+  background: #89c400;
   transition: left 0.3s ease, width 0.3s ease;
 }
 
@@ -815,7 +801,7 @@ section.About-ah {
 }
 
 .footer a:hover {
-  color: linear-gradient(145deg, #89C400, #89C400);
+  color: linear-gradient(145deg, #89c400, #89c400);
 }
 
 .ah-spas {
@@ -825,7 +811,7 @@ section.About-ah {
 .main-tabs-ah {
   width: 100%;
   padding-top: 60px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 span.edite {
@@ -861,7 +847,6 @@ section.Statistic-ah {
   flex-direction: column;
   gap: 30px;
 }
-
 
 .Statistic-card-ah {
   width: 100%;
@@ -944,7 +929,7 @@ section.Statistic-ah {
 }
 
 .ratings-ah-1-TITAL h3 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -958,7 +943,7 @@ section.Statistic-ah {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   padding: 10px 20px;
 }
 
@@ -977,8 +962,6 @@ section.Statistic-ah {
   align-items: center;
   gap: 10px;
 }
-
-
 
 span.\34 5 {
   display: flex;
@@ -1027,13 +1010,13 @@ span.persent h3 {
 
 .w3-light-grey.w3-tiny {
   width: 90%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 50px;
   height: 14px;
 }
 
 .w3-container.w3-green {
-  background-color: #89C400;
+  background-color: #89c400;
   border-radius: 50px;
   height: 100%;
 }
@@ -1072,7 +1055,7 @@ span.persent h3 {
 
 .pogras-card-ah {
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   display: flex;
   padding: 10px 20px;
   align-items: center;
@@ -1263,7 +1246,7 @@ span.parsent-icon p {
 }
 
 .Hire-ah-box h2 {
-  color: var(--ffffff, #FFF);
+  color: var(--ffffff, #fff);
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 36px;
@@ -1273,7 +1256,7 @@ span.parsent-icon p {
 }
 
 .Hire-ah-box p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
@@ -1289,7 +1272,7 @@ span.parsent-icon p {
   padding: 14px;
   background-color: #fff;
   border-radius: 14px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   color: var(--000000, #000);
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -1375,7 +1358,6 @@ span.parsent-icon p {
   padding-top: 50px;
 }
 
-
 .Website-ah-card {
   width: 100%;
   display: flex;
@@ -1386,7 +1368,7 @@ span.parsent-icon p {
 .Website-ah-card button {
   padding: 14px;
   border-radius: 9px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   border: none;
 }
 
@@ -1402,7 +1384,7 @@ span.parsent-icon p {
 }
 
 .Website-ah-card span h3 {
-  color: #9BDB08;
+  color: #9bdb08;
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -1421,12 +1403,11 @@ span.parsent-icon p {
 }
 
 .width-give {
-  WIDTH: 25%;
+  width: 25%;
 }
 
-
 .width-hell {
-  WIDTH: 65%;
+  width: 65%;
 }
 
 .Popular-ti-ah {
@@ -1467,7 +1448,7 @@ span.parsent-icon p {
   line-height: 26px;
   /* 162.5% */
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   border: none;
   padding: 5px 15px;
 }
@@ -1481,9 +1462,9 @@ span.parsent-icon p {
 
 .job-post-btn-box button {
   border-radius: 40px;
-  background: var(--194-d-79, #194D79);
+  background: var(--194-d-79, #194d79);
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -1495,20 +1476,18 @@ span.parsent-icon p {
   padding: 5px 45px;
 }
 
-
 .KABC-logo-ah button {
   border-radius: 8px;
-  background: var(--89-c-400, #89C400);
+  background: var(--89-c-400, #89c400);
   padding: 6px 20px;
   border: 1px solid #89c400;
-  color: #FFF;
+  color: #fff;
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-
 
 .Angeles-ah-box {
   width: 100%;
@@ -1534,7 +1513,6 @@ span.parsent-icon p {
 
 .Angeles-logo-ah img {
   width: 100%;
-
 }
 
 .Angeles-logo-side-box span h2 {
@@ -1548,7 +1526,7 @@ span.parsent-icon p {
 }
 
 .Angeles-logo-side-box span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1620,7 +1598,7 @@ span.parsent-icon p {
 }
 
 .Director-ah-boxing-logo span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1630,7 +1608,7 @@ span.parsent-icon p {
 }
 
 .Director-ah-boxing p {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1681,7 +1659,7 @@ span.parsent-icon p {
 }
 
 .Director-ah-boxing-list-span h2 {
-  color: var(--Gray-2, #4F4F4F);
+  color: var(--Gray-2, #4f4f4f);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1689,7 +1667,6 @@ span.parsent-icon p {
   line-height: 26px;
   /* 162.5% */
 }
-
 
 .Director-ah-boxing-list-span p {
   color: var(--Gray-3, #828282);
@@ -1715,7 +1692,7 @@ span.parsent-icon p {
   background: transparent;
   border: 2px solid #194d79;
   padding: 12px;
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -1731,12 +1708,12 @@ img.width-hegit-ah {
 }
 
 button.interview-ah {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
 
 .KABC-tital-ah p span {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -1783,7 +1760,6 @@ button.interview-ah {
   padding: 0px;
 }
 
-
 .Current-ah-job {
   width: 100%;
   background-image: url(../img/two-line.png);
@@ -1801,7 +1777,7 @@ button.interview-ah {
 }
 
 .Current-ah-job-card span h2 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1811,7 +1787,7 @@ button.interview-ah {
 }
 
 .Current-ah-job-card span h3 {
-  color: var(--89-c-400, #89C400);
+  color: var(--89-c-400, #89c400);
   text-align: right;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -1856,7 +1832,7 @@ button.interview-ah {
 }
 
 .Skills-ah-box h2 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1913,7 +1889,7 @@ button.interview-ah {
 }
 
 .Education-side-ah h3 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1979,7 +1955,7 @@ button.interview-ah {
 }
 
 .Job-Openings-list-1 span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1995,7 +1971,7 @@ button.interview-ah {
   justify-content: space-between;
   width: 100%;
   border-radius: 5px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
 }
 
 .Job-Openings-list-2 span {
@@ -2005,7 +1981,7 @@ button.interview-ah {
 }
 
 .Job-Openings-list-2 span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2027,16 +2003,15 @@ button.interview-ah {
   padding-top: 20px;
 }
 
-
 .Job-Openings-list-3 button {
   border-radius: 5px;
-  background: var(--89-c-400, #89C400);
+  background: var(--89-c-400, #89c400);
   display: flex;
   align-items: center;
   gap: 5px;
-  border: 1px solid #89C400;
+  border: 1px solid #89c400;
   padding: 8px 12px;
-  color: var(--ffffff, #FFF);
+  color: var(--ffffff, #fff);
   font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -2130,7 +2105,7 @@ button.interview-ah {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   padding: 10px 30px;
 }
 
@@ -2146,7 +2121,7 @@ button.interview-ah {
 }
 
 .Applied-ah-list-2 span p {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2165,10 +2140,10 @@ button.interview-ah {
 
 .Applied-ah-list-3 button {
   border-radius: 8px;
-  border: 1px solid var(--89-c-400, #89C400);
+  border: 1px solid var(--89-c-400, #89c400);
   background: transparent;
   padding: 10px 30px;
-  color: var(--89-c-400, #89C400);
+  color: var(--89-c-400, #89c400);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2195,13 +2170,13 @@ button.interview-ah {
 }
 
 button.changhe-blue {
-  color: #194D79;
-  border: 1px solid #194D79;
+  color: #194d79;
+  border: 1px solid #194d79;
 }
 
 button.change-red {
-  color: #EB5757;
-  border: 1px solid #EB5757;
+  color: #eb5757;
+  border: 1px solid #eb5757;
 }
 
 .Schedule-ah-card {
@@ -2313,7 +2288,7 @@ button.change-red {
 }
 
 .Schedule-ah-list-3 a span {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2340,7 +2315,7 @@ button.change-red {
 }
 
 .satisfied h3 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
@@ -2352,7 +2327,7 @@ button.change-red {
 }
 
 .satisfied button {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -2362,7 +2337,7 @@ button.change-red {
   /* 206.25% */
   background: transparent;
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   padding: 12px;
   width: 100%;
 }
@@ -2383,8 +2358,6 @@ button.change-red {
   padding: 50px 0px;
 }
 
-
-
 .Cooper-ah-box {
   display: flex;
   width: 100%;
@@ -2394,7 +2367,7 @@ button.change-red {
 }
 
 .Cooper-ah-imger {
-  width: 4%;
+  width: 6.2%;
 }
 
 .Cooper-ah-imger img {
@@ -2402,10 +2375,10 @@ button.change-red {
 }
 
 .Cooper-ah-tital {
-  width: 94%;
+  width: 90%;
   padding: 20px 25px;
   border-radius: 0px 10px 10px 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
 }
 
 .Cooper-ah-tital-head {
@@ -2560,7 +2533,7 @@ button.change-red {
 .Sweatshirt-ah-select-card select {
   border: 1px solid #f2f2f2;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   outline: none;
   padding: 10px;
   color: #000;
@@ -2580,7 +2553,9 @@ button.change-red {
   justify-content: space-between;
   padding: 30px 0px 60px 0px;
 }
-
+.Sweatshirt--box--alt {
+  align-items: flex-start;
+}
 .Sweatshirt-part-1 {
   width: 67%;
 }
@@ -2617,7 +2592,7 @@ section.Sweatshirt-sec {
 }
 
 .Description-box-tital h2 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans";
   font-size: 20px;
   font-style: normal;
@@ -2638,7 +2613,7 @@ section.Sweatshirt-sec {
 }
 
 .Description-box-tital a {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
@@ -2650,7 +2625,7 @@ section.Sweatshirt-sec {
 .Sweatshirt-ah-select-card input {
   border: 1px solid #f2f2f2;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   outline: none;
   padding: 10px;
   color: #000;
@@ -2664,10 +2639,10 @@ section.Sweatshirt-sec {
 
 .Sweatshirt-ah-select-card button {
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   width: 100%;
   background: transparent;
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -2687,26 +2662,7 @@ section.Sweatshirt-sec {
   /* 129.167% */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************* Shahdin Pages CSS Start *******************/
-
 
 ul {
   margin: 0px;
@@ -2721,8 +2677,6 @@ a {
   text-decoration-line: none !important;
 }
 
-
-
 /*********** Header Main CSS Start ***********/
 
 header.header_main {
@@ -2730,7 +2684,9 @@ header.header_main {
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
 }
-
+.header-logo {
+  cursor: pointer;
+}
 .header-logo img {
   width: 177.797px;
 }
@@ -2761,16 +2717,15 @@ header.header_main {
   width: 0%;
   bottom: -5px;
   border-radius: 5px;
-  background: #89C400;
+  background: #89c400;
   left: 50%;
   transform: translate(-50%);
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .header_nav ul li:hover:before {
   width: 100%;
 }
-
 
 .header_end {
   display: flex;
@@ -2778,9 +2733,11 @@ header.header_main {
   justify-content: end;
   gap: 30px;
 }
-
+.header_end a:hover {
+  cursor: pointer;
+}
 .header_end a:nth-child(2) {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -2788,14 +2745,14 @@ header.header_main {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   padding: 5px 50px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .header_end a:hover:nth-child(2) {
-  background: #194D79;
-  color: #fff;
+  background: #194d79;
+  color: #fff !important;
 }
 
 .header_end a:nth-child(1) {
@@ -2806,10 +2763,10 @@ header.header_main {
   position: absolute;
   top: -9px;
   right: -10px;
-  background: #89C400;
+  background: #89c400;
   padding: 1px 7px;
   border-radius: 50px;
-  color: #FFF;
+  color: #fff;
   font-family: "Public Sans";
   font-size: 12px;
   font-style: normal;
@@ -2817,11 +2774,7 @@ header.header_main {
   line-height: 20px;
 }
 
-
 /*********** Header Main CSS ENd ***********/
-
-
-
 
 /*********** First Banner Section CSS Start ***********/
 
@@ -2843,7 +2796,6 @@ header.header_main {
   margin: 0px 0px 50px 0px !important;
 }
 
-
 .select-station-drop select option {
   font-size: 14px;
 }
@@ -2853,7 +2805,6 @@ header.header_main {
   flex-direction: column;
   align-items: center;
 }
-
 
 .search-station-box {
   display: flex;
@@ -2867,26 +2818,26 @@ header.header_main {
   padding: 24px 20px;
   width: 650px;
   border-radius: 0px 20px 20px 0px;
-  background: #FFF;
-  box-shadow: 5px 0px 13px 0px rgba(8, 42, 83, 0.50);
+  background: #fff;
+  box-shadow: 5px 0px 13px 0px rgba(8, 42, 83, 0.5);
   border: none;
   font-size: 18px;
 }
 
 .search-stations-input input::placeholder {
   font-family: "Public Sans", sans-serif;
+  font-size: 14px;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
 }
 
-
 .select-station-drop select {
   border-radius: 25px 0px 0px 25px;
-  background: #89C400;
+  background: #89c400;
   padding: 23px 30px;
   width: 260px;
-  color: #FFF;
+  color: #fff;
   font-family: "Public Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -2897,11 +2848,9 @@ header.header_main {
   outline: none;
 }
 
-
 .select-station-drop select:focus {
   outline: none;
 }
-
 
 .first-banner-txt a {
   text-align: center;
@@ -2915,7 +2864,6 @@ header.header_main {
   text-decoration-line: underline !important;
 }
 
-
 .search-stations-input {
   position: relative;
 }
@@ -2925,19 +2873,13 @@ header.header_main {
   right: 20px;
   top: 2px;
   font-size: 40px;
-  color: #194D79;
+  color: #194d79;
   cursor: pointer;
 }
 
-
 /*********** First Banner Section CSS End ***********/
 
-
-
-
-
 /*********** Latest Rating Section CSS Start ***********/
-
 
 section.latest-rating-sec {
   padding: 60px 0px;
@@ -2960,7 +2902,6 @@ section.latest-rating-sec {
   margin: 0px 0px 40px 0px;
 }
 
-
 .rating-user-box {
   display: flex;
   align-items: center;
@@ -2982,7 +2923,7 @@ section.latest-rating-sec {
 }
 
 .latest-rating-user-txt select {
-  color: #194D79;
+  color: #194d79;
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -3008,7 +2949,7 @@ section.latest-rating-sec {
 }
 
 .verified-rating-box h6 {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -3031,11 +2972,10 @@ section.latest-rating-sec {
   color: #000;
 }
 
-
 .review-news-director {
   margin: 50px 0px 30px 0px;
   border-radius: 8px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 20px 20px;
 }
 
@@ -3062,8 +3002,8 @@ section.latest-rating-sec {
 
 .news-director-current a {
   border-radius: 6px;
-  background: #89C400;
-  color: #FFF;
+  background: #89c400;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 10px;
@@ -3088,7 +3028,6 @@ section.latest-rating-sec {
 .director-name-txt {
   margin: 10px 0px 0px 0px;
 }
-
 
 .review-director-para h6 {
   font-family: "Public Sans", sans-serif;
@@ -3119,7 +3058,6 @@ section.latest-rating-sec {
   color: #000;
   font-size: 14px;
 }
-
 
 .racial-discrimination h6 {
   font-family: "Public Sans", sans-serif;
@@ -3174,12 +3112,11 @@ section.latest-rating-sec {
   line-height: 26px;
 }
 
-
 .four-select-tab {
   display: flex;
   gap: 20px;
   margin: 30px 0px 0px 0px;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   padding: 0px 0px 30px 0px;
 }
 
@@ -3214,10 +3151,9 @@ section.latest-rating-sec {
   color: #828282;
   text-decoration-line: none;
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 8px 10px;
 }
-
 
 .like-report-submitted {
   margin: 20px 0px;
@@ -3226,16 +3162,15 @@ section.latest-rating-sec {
   justify-content: space-between;
 }
 
-
 .like-report-txt ul li {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 5px 15px;
 }
 
@@ -3251,7 +3186,6 @@ section.latest-rating-sec {
   color: #828282;
 }
 
-
 .latest-rating-comment-box {
   margin: 40px 0px 20px 0px;
   display: flex;
@@ -3260,7 +3194,7 @@ section.latest-rating-sec {
 }
 
 .latest-comment-txt-box {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 10px;
   padding: 20px 20px;
 }
@@ -3292,7 +3226,7 @@ section.latest-rating-sec {
 
 .latest-rating-user-txt button {
   padding: 0px;
-  color: #194D79;
+  color: #194d79;
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -3311,7 +3245,7 @@ section.latest-rating-sec {
 .latest-rating-user-txt .accordion-button:not(.collapsed) {
   background: transparent;
   box-shadow: none;
-  color: #194D79;
+  color: #194d79;
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -3328,7 +3262,7 @@ section.latest-rating-sec {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 8px;
   position: absolute;
   padding: 10px 20px 0px 20px;
@@ -3358,16 +3292,15 @@ section.latest-rating-sec {
   padding: 0px;
 }
 
-
 .latest-rating-loadmore-btn {
   text-align: center;
 }
 
 .latest-rating-loadmore-btn a {
   border-radius: 40px;
-  background: #194D79;
+  background: #194d79;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -3375,16 +3308,15 @@ section.latest-rating-sec {
   font-weight: 700;
   line-height: 33px;
   padding: 12px 40px;
-  border: 1px solid #194D79;
-  transition: all .6s ease;
+  border: 1px solid #194d79;
+  transition: all 0.6s ease;
   text-decoration: none;
 }
 
 .latest-rating-loadmore-btn a:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
-
 
 .newsletter-side-head {
   display: flex;
@@ -3407,7 +3339,7 @@ section.latest-rating-sec {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  color: #194D79;
+  color: #194d79;
 }
 
 .side-newsletter-box {
@@ -3429,11 +3361,9 @@ section.latest-rating-sec {
   line-height: 30.5px;
 }
 
-
 .side-newsletter-box img {
   width: 100%;
 }
-
 
 .side-subscribe-box {
   background: #fff;
@@ -3452,7 +3382,7 @@ section.latest-rating-sec {
 }
 
 .side-subscribe-box input {
-  background: #F2F2F2;
+  background: #f2f2f2;
   width: 100%;
   border-radius: 10px;
   padding: 15px 20px;
@@ -3473,23 +3403,23 @@ section.latest-rating-sec {
 }
 
 .side-subscribe-box button {
-  background: #194D79;
+  background: #194d79;
   padding: 12px 20px;
   width: 100%;
   border-radius: 15px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  border: 1px solid #194D79;
-  transition: all .6s ease;
+  border: 1px solid #194d79;
+  transition: all 0.6s ease;
 }
 
 .side-subscribe-box button:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
 
 .follow-us-rate {
@@ -3535,13 +3465,7 @@ section.latest-rating-sec {
 
 /*********** Latest Rating Section CSS End ***********/
 
-
-
-
 /*********** RateMyStation's Shop Section CSS Start ***********/
-
-
-
 
 section.ratemystation-shop-sec {
   padding: 50px 0px 50px 0px;
@@ -3557,10 +3481,9 @@ section.ratemystation-shop-sec h4 {
   margin: 0px 0px 50px 0px !important;
 }
 
-
 .ratemystation-shop-prod {
   border-radius: 25px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
   margin: 20px 0px 20px 0px;
   position: relative;
@@ -3582,7 +3505,7 @@ section.ratemystation-shop-sec h4 {
 }
 
 .ratemystation-prod-txt h6 {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -3603,8 +3526,8 @@ section.ratemystation-shop-sec h4 {
 
 .prod-light-btn {
   border-radius: 10px;
-  border: 2px solid #194D79;
-  color: #194D79;
+  border: 2px solid #194d79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -3612,20 +3535,20 @@ section.ratemystation-shop-sec h4 {
   font-weight: 700;
   line-height: 33px;
   padding: 7px 14px;
-  transition: all .6s ease;
+  cursor: pointer;
+  transition: all 0.6s ease;
 }
 
 .prod-light-btn:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
 
-
 .prod-dark-btn {
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   color: #fff;
-  background: #194D79;
+  background: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -3633,14 +3556,14 @@ section.ratemystation-shop-sec h4 {
   font-weight: 700;
   line-height: 33px;
   padding: 6px 18px;
-  transition: all .6s ease;
+  cursor: pointer;
+  transition: all 0.6s ease;
 }
 
 .prod-dark-btn:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
-
 
 .ratemystation-allprod-btn {
   margin: 40px 0px 0px 0px;
@@ -3648,23 +3571,23 @@ section.ratemystation-shop-sec h4 {
 }
 
 .ratemystation-allprod-btn a {
-  color: #FFF !important;
+  color: #fff !important;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
   border-radius: 40px;
-  background: #194D79;
+  background: #194d79;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
   padding: 15px 30px;
-  transition: all .6s ease;
-  border: 1px solid #194D79;
+  transition: all 0.6s ease;
+  border: 1px solid #194d79;
 }
 
 .ratemystation-allprod-btn a:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
 
 .prod-abslt-ratems {
@@ -3675,19 +3598,13 @@ section.ratemystation-shop-sec h4 {
   top: 0px;
 }
 
-
-
 /*********** RateMyStation's Shop Section CSS ENd ***********/
 
-
-
 /*********** Looking for work Section CSS Start ***********/
-
 
 .looking-for-work-sec {
   padding: 50px 0px;
 }
-
 
 .looking-for-worktxt {
   background: url(../img/looking-work-bg-img.png) no-repeat top center;
@@ -3733,7 +3650,7 @@ section.ratemystation-shop-sec h4 {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   border: 1px solid #fff;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .looking-for-worktxt a:hover {
@@ -3741,16 +3658,9 @@ section.ratemystation-shop-sec h4 {
   color: #fff;
 }
 
-
 /*********** Looking for work Section CSS End ***********/
 
-
-
-
-
-
 /*********** About Us Page CSS Start ***********/
-
 
 .ratemystation-about-sec {
   background: url(../img/first-banner-img.png) no-repeat top center;
@@ -3773,8 +3683,6 @@ section.ratemystation-shop-sec h4 {
   padding: 0px 0px 150px 0px;
 }
 
-
-
 .about-us-txt {
   padding: 30px 20px 20px 20px;
   background: #fff;
@@ -3783,7 +3691,6 @@ section.ratemystation-shop-sec h4 {
   margin: -150px 0px 0px 0px;
 }
 
-
 .about-us-txt h6 {
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -3791,7 +3698,7 @@ section.ratemystation-shop-sec h4 {
   font-weight: 700;
   line-height: 30.5px;
   text-transform: uppercase;
-  color: #194D79;
+  color: #194d79;
   margin: 0px 0px 10px 0px;
 }
 
@@ -3804,7 +3711,6 @@ section.ratemystation-shop-sec h4 {
   margin: 0px 0px 20px 0px !important;
 }
 
-
 section.from-the-creator-sec {
   padding: 30px 0px 50px 0px;
 }
@@ -3816,7 +3722,6 @@ section.from-the-creator-sec {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
-
 .from-the-creator-box h6 {
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -3824,9 +3729,8 @@ section.from-the-creator-sec {
   font-weight: 700;
   line-height: 30.5px;
   text-transform: uppercase;
-  color: #194D79;
+  color: #194d79;
 }
-
 
 .about-creator-txt h5 {
   font-family: "Public Sans", sans-serif;
@@ -3837,7 +3741,6 @@ section.from-the-creator-sec {
   color: #000;
   margin: 0px 0px 30px 0px !important;
 }
-
 
 .about-creator-para p {
   color: #000;
@@ -3855,7 +3758,7 @@ section.from-the-creator-sec {
 
 .about-creator-img-name {
   border-radius: 0px 15px 15px 15px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
   position: absolute;
   content: "";
@@ -3886,7 +3789,7 @@ section.from-the-creator-sec {
 .about-creator-img-name::before {
   position: absolute;
   content: "";
-  background: #89C400;
+  background: #89c400;
   height: 87px;
   width: 10px;
   left: -1px;
@@ -3906,7 +3809,7 @@ section.from-the-creator-sec {
 
 .creator-messages {
   margin: 50px 0px 0px 0px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 0px 10px 10px 10px;
   padding: 40px 50px 40px 50px;
 }
@@ -3919,7 +3822,7 @@ section.from-the-creator-sec {
   line-height: 30.5px;
   /* 190.625% */
   text-transform: uppercase;
-  color: #194D79;
+  color: #194d79;
 }
 
 .creator-messages h4 {
@@ -3931,14 +3834,9 @@ section.from-the-creator-sec {
   color: #000;
 }
 
-
 /*********** About Us Page CSS End ***********/
 
-
-
-
 /*********** Newsletter Page CSS Start ***********/
-
 
 section.your-journalism-sec {
   position: relative;
@@ -3959,7 +3857,6 @@ section.your-journalism-sec {
 .your-journalism-img img {
   width: 100%;
 }
-
 
 .journalism-img-txt {
   display: flex;
@@ -4006,10 +3903,9 @@ section.your-journalism-sec {
 }
 
 .journal-date-written p span {
-  color: #194D79;
+  color: #194d79;
   font-weight: 600;
 }
-
 
 .your-journalism-txt h5 {
   color: #000;
@@ -4029,7 +3925,6 @@ section.your-journalism-sec {
   width: 264.901px;
 }
 
-
 .newsletter-article-search input {
   border-radius: 10px;
   padding: 12px 20px;
@@ -4046,17 +3941,13 @@ section.your-journalism-sec {
   line-height: 33px;
 }
 
-
 .newsletter-article-search {
   position: relative;
 }
 
-
-
 .newsletter-article-search input:focus {
   outline: none;
 }
-
 
 .newsletter-article-search span {
   position: absolute;
@@ -4090,7 +3981,7 @@ section.your-journalism-sec {
 
 .filter-box select {
   border: 1px solid #828282;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 12px 20px;
   border-radius: 10px;
   font-family: "Public Sans", sans-serif;
@@ -4104,7 +3995,6 @@ section.your-journalism-sec {
 .filter-box select:focus {
   outline: none;
 }
-
 
 section.latest-article-recommend-sec {
   margin: 50px 0px 0px 0px;
@@ -4123,7 +4013,6 @@ section.latest-article-recommend-sec {
 .latest-article-box img {
   width: 100%;
 }
-
 
 .latest-article-box img {
   width: 100%;
@@ -4174,7 +4063,6 @@ section.latest-article-recommend-sec {
   line-height: 39px;
 }
 
-
 .newsletter-writtinsoul-txt {
   display: flex;
   align-items: center;
@@ -4193,10 +4081,9 @@ section.latest-article-recommend-sec {
 }
 
 .newsletter-writtinsoul-txt p span {
-  color: #194D79;
+  color: #194d79;
   font-weight: 600;
 }
-
 
 .newsletter-likecomment-share {
   display: flex;
@@ -4215,7 +4102,6 @@ section.latest-article-recommend-sec {
 .latest-article-box {
   margin: 0px 0px 30px 0px;
 }
-
 
 .newsletter-slide-article {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
@@ -4249,36 +4135,26 @@ section.latest-article-recommend-sec {
   line-height: 33px;
 }
 
-
 .newsletter-pagination-slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
 .newsletter-pagination-slide .pagination a:hover {
-  background: #F2F2F2;
-  padding: 15px 30px;
+  background: #f2f2f2;
+  padding: 8px 20px;
   border-radius: 10px;
-  color: #194D79;
-
+  color: #194d79;
 }
 
 .newsletter-pagination-slide .pagination a i {
-  color: #194D79;
+  color: #194d79;
 }
-
-
 
 /*********** Newsletter Page CSS End ***********/
 
-
-
-
 /*********** View Job  Page CSS Start ***********/
-
-
 
 .job-start-matter-sec {
   background: url(../img/view-job-bg-img.png) no-repeat top center;
@@ -4287,7 +4163,6 @@ section.latest-article-recommend-sec {
   width: 100%;
   height: 100%;
 }
-
 
 .find-job-matter-txt h4 {
   font-family: "Public Sans", sans-serif;
@@ -4299,15 +4174,14 @@ section.latest-article-recommend-sec {
   margin: 0px 0px 30px 0px;
 }
 
-
 .find-job-matter {
   margin: 20px 0px 10px 0px;
 }
 
 .find-job-select-box input {
   border-radius: 15px;
-  background: #FFF;
-  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.50);
+  background: #fff;
+  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.5);
   padding: 14px 40px 14px 50px;
   width: 100%;
   border: none;
@@ -4326,63 +4200,58 @@ section.latest-article-recommend-sec {
   outline: none;
 }
 
-
 .find-job-search-btn a {
   border-radius: 15px;
-  background: #89C400;
-  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.50);
-  color: #FFF;
+  background: #89c400;
+  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.5);
+  color: #fff;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
   padding: 15px 50px;
-  transition: all .6s ease;
-  border: 1px solid #89C400;
+  transition: all 0.6s ease;
+  border: 1px solid #89c400;
 }
-
-
 
 .find-job-search-btn a i {
   margin-right: 10px;
 }
 
 .find-job-btn button {
-  color: #FFF !important;
+  color: #fff !important;
   font-family: "Public Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
   border-radius: 15px;
-  background: #89C400 !important;
-  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.50);
+  background: #89c400 !important;
+  box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.5);
   padding: 13px 30px;
-  border: 2px solid #89C400 !important;
-  transition: all .6s ease;
+  border: 2px solid #89c400 !important;
+  transition: all 0.6s ease;
   width: 100%;
 }
 
 .find-job-btn button:hover {
   background: transparent !important;
-  color: #89C400 !important;
+  color: #89c400 !important;
 }
 
 .find-job-search-btn {
   margin: 15px 0px 0px 0px;
 }
 
-
 .find-job-search-btn a:hover {
   background: transparent;
-  color: #89C400;
+  color: #89c400;
 }
 
 section.search-job-sec {
   padding: 50px 0px 50px 0px;
 }
-
 
 .newsletter-article-search h3 {
   font-family: "Public Sans", sans-serif;
@@ -4394,7 +4263,6 @@ section.search-job-sec {
   margin: 0px;
 }
 
-
 .assistant-news-director-box {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   padding: 30px;
@@ -4402,7 +4270,6 @@ section.search-job-sec {
   border-radius: 20px;
   margin: 0px 0px 30px 0px;
 }
-
 
 .assistant-logo-txt-more {
   display: flex;
@@ -4438,12 +4305,10 @@ section.search-job-sec {
   width: 60px;
 }
 
-
 .assistant-more-icon span {
   font-size: 25px;
   color: #828282;
 }
-
 
 .assistant-city-dollar-time {
   display: flex;
@@ -4452,7 +4317,7 @@ section.search-job-sec {
   padding: 0px 20px;
   margin: 20px 0px 0px 0px;
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .assistant-city-dollar-time {
@@ -4462,7 +4327,7 @@ section.search-job-sec {
   padding: 12px 30px;
   margin: 20px 0px 0px 0px;
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .assistant-city-dollar-time p {
@@ -4472,9 +4337,8 @@ section.search-job-sec {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  color: #194D79;
+  color: #194d79;
 }
-
 
 .assistant-news-director-box ul li {
   color: #000;
@@ -4510,21 +4374,21 @@ section.search-job-sec {
 
 .actively-hiring-updated a {
   border-radius: 8px;
-  background: #9BDB08;
+  background: #9bdb08;
   padding: 10px 20px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  border: 1px solid #9BDB08;
-  transition: all .6s ease;
+  border: 1px solid #9bdb08;
+  transition: all 0.6s ease;
 }
 
 .actively-hiring-updated a:hover {
-  color: #9BDB08;
+  color: #9bdb08;
   background: transparent;
 }
 
@@ -4543,12 +4407,10 @@ section.search-job-sec {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /*********** View Job  Page CSS ENd ***********/
-
-
 
 /*********** Shop Page CSS Start ***********/
 
@@ -4574,7 +4436,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 30.5px;
-  color: #89C400;
+  color: #89c400;
 }
 
 .shop-new-arrival h3 {
@@ -4599,24 +4461,23 @@ body {
 }
 
 .shop-new-arrival a {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  border: 1px solid #194D79;
+  border: 1px solid #194d79;
   padding: 10px 20px;
   border-radius: 10px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .shop-new-arrival a:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
-
 
 .shop-new-arrival-img {
   position: absolute;
@@ -4628,7 +4489,6 @@ body {
   width: 290px;
   border-radius: 0px 0px 20px 0px;
 }
-
 
 .shop-friend-themed {
   padding: 30px 30px;
@@ -4658,10 +4518,9 @@ body {
   font-weight: 600;
   line-height: 26px;
   /* 162.5% */
-  color: #194D79;
+  color: #194d79;
   text-decoration-line: underline;
 }
-
 
 .themed-abslt-img {
   position: absolute;
@@ -4682,11 +4541,9 @@ body {
   width: 230px;
 }
 
-
 section.shop-product-search-sec {
   padding: 50px 0px;
 }
-
 
 .heading-see-all {
   display: flex;
@@ -4709,9 +4566,8 @@ section.shop-product-search-sec {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #194D79;
+  color: #194d79;
 }
-
 
 .shop-category {
   display: flex;
@@ -4738,7 +4594,6 @@ section.shop-product-search-sec {
   color: #000;
 }
 
-
 .shop-category ul li button {
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -4747,31 +4602,22 @@ section.shop-product-search-sec {
   font-weight: 300;
   line-height: normal;
   color: #828282;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   border: none;
 }
-
 
 .shop-category ul li button:hover {
   color: #194d79;
 }
 
-
-
-
 /*********** Shop Page CSS End ***********/
 
-
-
 /*********** Newsletter Article Page CSS Start ***********/
-
-
 
 .newsletter-article-detail .newsletter-article-text {
   background: transparent;
   filter: none;
 }
-
 
 .newsletter-article-detail {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
@@ -4802,13 +4648,12 @@ section.shop-product-search-sec {
   padding: 30px 0px;
 }
 
-
 .article-reactions {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
-  border-bottom: 2px solid #E0E0E0;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .article-reactions ul {
@@ -4822,11 +4667,7 @@ section.shop-product-search-sec {
   font-size: 22px;
 }
 
-
-
 /*********** Newsletter Article Page CSS End ***********/
-
-
 
 /*********** Contact Us Page CSS Start ***********/
 
@@ -4846,7 +4687,6 @@ section.shop-product-search-sec {
   left: 0px;
   z-index: -1;
 }
-
 
 .ratemystaion-contact-form h3 {
   font-family: "Public Sans", sans-serif;
@@ -4876,14 +4716,12 @@ section.shop-product-search-sec {
   line-height: 26px;
 }
 
-
 .contact-form-station {
   padding: 20px;
   background: #fff;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
-
 
 .ratemystaion-contact-form ul {
   padding: 0px;
@@ -4902,7 +4740,6 @@ section.shop-product-search-sec {
   padding: 50px;
 }
 
-
 .contact-form-fields {
   padding: 50px;
 }
@@ -4919,7 +4756,7 @@ section.shop-product-search-sec {
 
 .input-field input {
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   display: block;
   padding: 12px 20px;
   width: 100%;
@@ -4939,11 +4776,9 @@ section.shop-product-search-sec {
   color: #828282;
 }
 
-
 .input-field {
   margin: 0px 0px 20px 0px;
 }
-
 
 .input-field textarea {
   display: block;
@@ -4952,7 +4787,7 @@ section.shop-product-search-sec {
   padding: 10px 20px;
   height: 200px;
   border: none;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .input-field textarea:focus {
@@ -4969,7 +4804,7 @@ section.shop-product-search-sec {
 }
 
 .contact-form-btn button {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -4977,9 +4812,9 @@ section.shop-product-search-sec {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   padding: 8px 60px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   background: transparent;
 }
 
@@ -4988,7 +4823,7 @@ section.shop-product-search-sec {
 }
 
 .contact-form-btn button:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
 
@@ -4996,13 +4831,11 @@ section.shop-product-search-sec {
   outline: none;
 }
 
-
 .ratemystaion-contact-form ul li:nth-child(1) {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 
 .contact-follow-like-btn ul {
   display: flex;
@@ -5011,7 +4844,6 @@ section.shop-product-search-sec {
   padding: 0px;
   margin: 0px;
 }
-
 
 .contact-latest-updates {
   padding: 20px 50px 20px 20px;
@@ -5026,7 +4858,6 @@ section.shop-product-search-sec {
   line-height: 26px;
 }
 
-
 .contact-follow-like-btn ul li {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -5038,22 +4869,21 @@ section.shop-product-search-sec {
   padding: 15px 40px;
 }
 
-
 .contact-follow-like-btn ul li:nth-child(1) {
-  background: #1877F2;
+  background: #1877f2;
 }
 
 .contact-follow-like-btn ul li:nth-child(2) {
-  background: #EE2987;
+  background: #ee2987;
 }
 
 .contact-follow-like-btn ul li:nth-child(3) {
-  background: #55ACEE;
+  background: #55acee;
 }
 
 .contact-follow-topline {
   padding: 30px 0px 0px 0px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
 }
 
 footer {
@@ -5087,7 +4917,7 @@ footer {
 }
 
 .ul-li-list-footer ul li a {
-  color: var(--Gray-3, #828282);
+  color: var(--Gray-3, #828282) !important;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -5097,22 +4927,20 @@ footer {
   text-decoration: none;
 }
 
+.ul-li-list-footer ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline !important;
+}
 /*********** Contact Us Page CSS End ***********/
 
-
-
-
-
 /*********** Newsletter Article Page CSS Start ***********/
-
 
 .newsletter-long-txt {
   padding: 0px 30px;
 }
 
-
 .newsletter-article-slider {
-  border-top: 2px solid #E0E0E0;
+  border-top: 2px solid #e0e0e0;
 }
 
 .newsletter-detail-comment {
@@ -5124,7 +4952,7 @@ footer {
 
 .newsletter-detail-comment-para {
   padding: 20px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 0px 10px 10px 10px;
 }
 
@@ -5201,7 +5029,6 @@ footer {
   color: #828282;
 }
 
-
 .newsletter-comment-input {
   display: flex;
   align-items: center;
@@ -5211,7 +5038,7 @@ footer {
 
 .newsletter-comment-input input {
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 12px 20px;
   width: 100%;
   border: none;
@@ -5237,21 +5064,18 @@ footer {
   right: 20px;
   background: transparent;
   border: none;
-  color: #194D79;
+  color: #194d79;
   font-size: 25px;
 }
-
 
 .newsletter-comment-typebox input:focus {
   outline: none;
 }
 
-
 .other-newsletter-articles {
   padding: 10px 0px 40px 0px;
-  border-top: 2px solid #E0E0E0;
+  border-top: 2px solid #e0e0e0;
 }
-
 
 .soul-witness-acc-subs {
   display: flex;
@@ -5292,9 +5116,8 @@ footer {
   color: #828282;
 }
 
-
 .soul-witness-acc-subs a {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -5303,21 +5126,20 @@ footer {
   line-height: 33px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   padding: 6px 50px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   border-radius: 10px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .soul-witness-acc-subs a:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
-
 
 .more-from-soul-witness-box {
   padding: 40px;
   margin: 30px 0px 0px 0px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 15px;
 }
 
@@ -5330,8 +5152,6 @@ footer {
   line-height: 26px;
   margin: 0px 0px 30px 0px;
 }
-
-
 
 .more-soul-articletxt h4 {
   color: #000;
@@ -5352,14 +5172,12 @@ footer {
   color: #828282;
 }
 
-
 .more-soul-article {
   display: flex;
   align-items: center;
   gap: 20px;
   margin: 20px 0px 0px 0px;
 }
-
 
 .newsletter-input-search {
   margin: 10px 0px 20px 0px;
@@ -5369,11 +5187,10 @@ footer {
 .newsletter-input-search input {
   padding: 10px 20px;
   width: 100%;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border: 1px solid #828282;
   border-radius: 10px;
 }
-
 
 .newsletter-input-search span {
   position: absolute;
@@ -5383,19 +5200,13 @@ footer {
   color: #828282;
 }
 
-
 .newsletter-input-search input:focus {
   outline: none;
 }
 
-
-
 /*********** Newsletter Article Page CSS End ***********/
 
-
-
 /*********** View Job Detail Page CSS Start ***********/
-
 
 .view-job-detail-sec {
   position: relative;
@@ -5412,7 +5223,6 @@ footer {
   z-index: -1;
   top: 0px;
 }
-
 
 .job-detail-name-description {
   background: #fff;
@@ -5451,18 +5261,18 @@ footer {
 }
 
 .job-select-opts a {
-  background: #194D79;
+  background: #194d79;
   padding: 10px 70px;
   border-radius: 10px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  border: 1px solid #194D79;
-  transition: all .6s ease;
+  border: 1px solid #194d79;
+  transition: all 0.6s ease;
   margin: 0px 0px 5px 0px !important;
 }
 
@@ -5479,10 +5289,8 @@ footer {
 
 .job-select-opts a:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
-
-
 
 .job-select-opts {
   display: flex;
@@ -5498,7 +5306,7 @@ footer {
 
 .job-save-share a {
   background: transparent;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -5509,17 +5317,14 @@ footer {
   padding: 8px 20px;
 }
 
-
 .job-save-share a i {
   color: #828282;
   margin: 0px 5px 0px 0px;
 }
 
-
 .job-desceiption-detail hr {
   margin: 40px 0px 30px 0px;
 }
-
 
 .job-desceiption-detail h3 {
   color: #000;
@@ -5528,9 +5333,8 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: 30.5px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px !important;
 }
-
 
 .job-desceiption-detail p {
   color: #000;
@@ -5540,8 +5344,6 @@ footer {
   font-weight: 300;
   line-height: 26px;
 }
-
-
 
 .view-job-detail-description {
   background: #fff;
@@ -5566,7 +5368,6 @@ footer {
   line-height: 30.5px;
 }
 
-
 .job-qualification-point ul {
   margin: 0px 0px 0px 30px;
 }
@@ -5582,7 +5383,6 @@ footer {
   line-height: 26px;
 }
 
-
 .additional-information-job {
   margin: 30px 0px 0px 0px;
 }
@@ -5596,11 +5396,9 @@ footer {
   line-height: 30.5px;
 }
 
-
 .job-qualification-detail hr {
   margin: 40px 0px 30px 0px;
 }
-
 
 .job-add-career h6 {
   font-family: "Public Sans", sans-serif;
@@ -5625,12 +5423,9 @@ footer {
   margin: 20px 0px 10px 0px;
 }
 
-
-
 .additional-information-job hr {
   margin: 30px 0px 20px 0px;
 }
-
 
 .addit-report-btn a {
   font-family: "Public Sans", sans-serif;
@@ -5641,11 +5436,10 @@ footer {
   color: #828282;
 }
 
-
 .view-job-detail-sec::after {
   position: absolute;
   content: "";
-  background: #BDBDBD;
+  background: #bdbdbd;
   height: 1px;
   width: 90%;
   left: 50%;
@@ -5656,7 +5450,7 @@ footer {
 .newsletter-article-sec::before {
   position: absolute;
   content: "";
-  background: #BDBDBD;
+  background: #bdbdbd;
   height: 1px;
   width: 90%;
   left: 50%;
@@ -5664,10 +5458,7 @@ footer {
   bottom: -6px;
 }
 
-
 /*********** View Job Detail Page CSS End ***********/
-
-
 
 /* ****************** Shahdin Pages CSS Start *******************/
 /******************* Shahdin Pages CSS Start *******************/
@@ -5692,9 +5483,7 @@ footer {
 /******************* Shahdin Pages CSS Start *******************/
 /******************* Shahdin Pages CSS Start ****************** */
 
-
 /*********** Job Opening Page CSS Start ***********/
-
 
 .job-opening-sec {
   padding: 50px 0px;
@@ -5712,7 +5501,6 @@ footer {
   top: 0px;
 }
 
-
 .job-openingpg-txt h5 {
   font-family: "Public Sans";
   font-size: 22px;
@@ -5728,11 +5516,11 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: 30.5px;
-  color: #194D79;
+  color: #194d79;
 }
 
 .job-openingpg-txt h3 svg {
-  color: #89C400;
+  color: #89c400;
 }
 
 .job-openingpg-txt h6 {
@@ -5741,29 +5529,29 @@ footer {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  color: #194D79;
+  color: #194d79;
 }
 
 .rms-kabc-btn .themelight {
-  border: 1px solid #194D79;
+  border: 1px solid #194d79;
   background: transparent !important;
-  color: #194D79 !important;
+  color: #194d79 !important;
   padding: 8px 30px;
   border-radius: 10px;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .themelight {
   background: transparent !important;
-  color: #194D79 !important;
+  color: #194d79 !important;
 }
 
 .themelight:hover {
-  background: #194D79 !important;
+  background: #194d79 !important;
   color: #fff !important;
 }
 
@@ -5787,17 +5575,9 @@ footer {
   line-height: normal;
 }
 
-
-
 /*********** Job Opening Page CSS End ***********/
 
-
-
-
 /*********** Station Search Result Page CSS Start ***********/
-
-
-
 
 .station-search-result-txt h4 {
   color: var(--000000, #000);
@@ -5810,7 +5590,7 @@ footer {
 }
 
 .station-search-result-txt p {
-  color: var(--Gray-2, #4F4F4F);
+  color: var(--Gray-2, #4f4f4f);
   font-family: "Public Sans";
   font-size: 18px;
   font-style: normal;
@@ -5847,7 +5627,7 @@ footer {
 }
 
 .rms-kabc-txt h3 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   font-family: "Public Sans";
   font-size: 24px;
   font-style: normal;
@@ -5872,7 +5652,7 @@ footer {
 }
 
 .rms-kabc-btn .themedark {
-  color: #FFF !important;
+  color: #fff !important;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -5880,19 +5660,19 @@ footer {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  background: #194D79 !important;
+  background: #194d79 !important;
   padding: 8px 30px;
-  transition: all .6s ease;
-  border: 1px solid #194D79;
+  transition: all 0.6s ease;
+  border: 1px solid #194d79;
 }
 
 .rms-kabc-btn a:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
 
 .rms-kabc-txt h3 svg {
-  color: #89C400;
+  color: #89c400;
 }
 
 .rms-rating-review p {
@@ -5905,7 +5685,6 @@ footer {
   margin: 0px 0px 5px 0px !important;
 }
 
-
 .rms-rating-review p span {
   color: #000;
   font-family: "Public Sans";
@@ -5914,7 +5693,6 @@ footer {
   font-weight: 700;
   line-height: 26px;
 }
-
 
 .rms-dots-icon {
   position: absolute;
@@ -5928,7 +5706,7 @@ footer {
 }
 
 .seeprofile-box-btn a {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 18px;
@@ -5936,16 +5714,16 @@ footer {
   font-weight: 700;
   line-height: 33px;
   border-radius: 40px;
-  background: var(--194-d-79, #194D79);
+  background: var(--194-d-79, #194d79);
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
   padding: 12px 35px;
-  border: 1px solid #194D79;
-  transition: all .6s ease;
+  border: 1px solid #194d79;
+  transition: all 0.6s ease;
 }
 
 .seeprofile-box-btn a:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
 
 .search-station-sec {
@@ -5960,9 +5738,8 @@ footer {
   border-radius: 20px;
 }
 
-
 .find-station-looking h4 {
-  color: var(--ffffff, #FFF);
+  color: var(--ffffff, #fff);
   text-align: center;
   font-family: "Public Sans";
   font-size: 36px;
@@ -5973,7 +5750,7 @@ footer {
 }
 
 .find-station-looking p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 20px;
@@ -5982,7 +5759,6 @@ footer {
   line-height: 31.5px;
   margin: 0px 0px 30px 0px !important;
 }
-
 
 .find-station-looking a {
   color: var(--000000, #000);
@@ -5996,7 +5772,7 @@ footer {
   padding: 15px 30px;
   border-radius: 10px;
   border: 1px solid #fff;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .find-station-looking a:hover {
@@ -6009,11 +5785,7 @@ footer {
   margin: 0px 0px 40px 0px;
 }
 
-
-
 /*********** Station Search Result Page CSS End ***********/
-
-
 
 /*********** News Director Search Result Page CSS Start ***********/
 
@@ -6063,7 +5835,7 @@ footer {
 }
 
 .news-director-detail-btn a {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -6073,14 +5845,14 @@ footer {
 }
 
 .news-director-detail-btn a {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  border: 1px solid #194D79;
+  border: 1px solid #194d79;
   padding: 12px 50px;
   border-radius: 10px;
 }
@@ -6099,7 +5871,6 @@ section.director-search-result {
 section.director-search-result hr {
   margin: 50px 0px 0px 0px;
 }
-
 
 .americon-prod-card-txt h4 {
   color: var(--000000, #000);
@@ -6122,7 +5893,6 @@ section.director-search-result hr {
   margin: 10px 130px 20px 0px;
 }
 
-
 .mycart-qualitytotal {
   display: flex;
   gap: 100px;
@@ -6137,15 +5907,9 @@ section.director-search-result hr {
   line-height: 26px;
 }
 
-
-
 /*********** News Director Search Result Page CSS End ***********/
 
-
-
 /*********** My Cart Page CSS Start ***********/
-
-
 
 .americon-prod-cart {
   background: #fff;
@@ -6162,15 +5926,13 @@ section.director-search-result hr {
   width: 142.488px;
 }
 
-
 .cart-counter {
   display: flex;
   gap: 10px;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   padding: 10px 25px;
 }
-
 
 .cart-counter input {
   width: 60px;
@@ -6184,8 +5946,6 @@ section.director-search-result hr {
   font-weight: 700;
   line-height: 26px;
 }
-
-
 
 .americon-prod-cart h3 {
   color: #000;
@@ -6215,7 +5975,6 @@ section.director-search-result hr {
   font-weight: 600;
   line-height: 31px;
 }
-
 
 .mycart-order-summary {
   border-radius: 20px;
@@ -6263,7 +6022,7 @@ section.director-search-result hr {
 
 .mycart-order-summary input {
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   width: 100%;
   padding: 15px 20px;
   border: none;
@@ -6281,7 +6040,6 @@ section.director-search-result hr {
   font-weight: 300;
   line-height: 26px;
 }
-
 
 .prod-order-total-txt {
   margin: 30px 0px 20px 0px;
@@ -6301,7 +6059,7 @@ section.director-search-result hr {
 }
 
 .mycart-order-summary a {
-  color: #194D79;
+  color: #194d79;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
@@ -6311,26 +6069,20 @@ section.director-search-result hr {
   width: 100%;
   display: block;
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   padding: 6px 20px;
   margin: 30px 0px 0px 0px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .mycart-order-summary a:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
-
 }
-
 
 /*********** My Cart Page CSS ENd ***********/
 
-
-
-
 /*********** Employer Login Page CSS Start ***********/
-
 
 .rating-real-journalist {
   background: url(../img/employer-halfpg.png) no-repeat top center;
@@ -6345,7 +6097,7 @@ section.director-search-result hr {
 }
 
 .rating-real-journalist h3 {
-  color: var(--ffffff, #FFF);
+  color: var(--ffffff, #fff);
   text-align: center;
   font-family: "Public Sans";
   font-size: 48px;
@@ -6354,22 +6106,18 @@ section.director-search-result hr {
   line-height: normal;
 }
 
-
 .employer-login-form {
   padding: 0px 0px 130px 0px;
 }
-
 
 section.employer-login-pg-sec {
   padding: 50px 0px;
 }
 
-
 .rating-real-journalist img {
   width: 177.797px;
   margin: 0px 0px 10px 0px;
 }
-
 
 .employer-login-box {
   background: #fff;
@@ -6381,12 +6129,11 @@ section.employer-login-pg-sec {
   padding: 20px 40px 0px 40px;
 }
 
-
 .employer-inputfield input {
   display: block;
   width: 100%;
   padding: 16px 20px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   border-radius: 10px;
   border: none;
 }
@@ -6414,11 +6161,9 @@ section.employer-login-pg-sec {
   line-height: 26px;
 }
 
-
 .employer-inputfield input:focus {
   outline: none;
 }
-
 
 .employer-login-btns {
   display: flex;
@@ -6427,7 +6172,7 @@ section.employer-login-pg-sec {
 }
 
 .employerloginbtn {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -6435,16 +6180,15 @@ section.employer-login-pg-sec {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   padding: 4px 50px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .employerloginbtn:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
-
 
 .employerforgotbtn {
   color: #777;
@@ -6455,7 +6199,6 @@ section.employer-login-pg-sec {
   font-weight: 300;
   line-height: 26px;
 }
-
 
 .employer-newroom-box button {
   color: #828282;
@@ -6468,22 +6211,18 @@ section.employer-login-pg-sec {
   border: none;
 }
 
-
 .employer-newroom-box button.text-white {
-  color: #89C400 !important;
+  color: #89c400 !important;
   font-family: "Public Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-bottom: 3px solid #89C400;
+  border-bottom: 3px solid #89c400;
 }
 
-
-
-
 .employer-dont-have-acc a span {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
@@ -6491,8 +6230,6 @@ section.employer-login-pg-sec {
   line-height: 26px;
   text-decoration-line: underline;
 }
-
-
 
 .employer-dont-have-acc a {
   color: #777;
@@ -6504,7 +6241,7 @@ section.employer-login-pg-sec {
 }
 
 .employer-dont-have-acc a span {
-  color: #89C400;
+  color: #89c400;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
@@ -6515,34 +6252,22 @@ section.employer-login-pg-sec {
 
 .employer-dont-have-acc {
   margin: 0px 0px 0px 40px;
-
 }
-
 
 .employer-newroom-box button:focus {
   outline: none;
 }
 
-
-
-
-
-
 /*********** Employer Login Page CSS End ***********/
 
-
-
-
 /*********** Employer Register Page CSS Start ***********/
-
 
 .employerregister-field {
   margin: 10px 0px;
 }
 
-
 .employer-register-subscription h3 {
-  color: #194D79;
+  color: #194d79;
   font-family: "Public Sans";
   font-size: 32px;
   font-style: normal;
@@ -6554,7 +6279,7 @@ section.employer-login-pg-sec {
   padding: 30px 20px;
   margin: 20px 0px 0px 0px;
   border-radius: 10px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   text-align: center;
 }
 
@@ -6571,17 +6296,15 @@ section.employer-login-pg-sec {
 .employer-subscription {
   margin: 20px 0px 0px 0px;
   border-radius: 10px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   padding: 22px 20px;
   text-align: center;
   position: relative;
   width: 100%;
 }
 
-
-
 .employer-subscription h5 {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 20px;
@@ -6607,7 +6330,6 @@ section.employer-login-pg-sec {
   gap: 20px;
 }
 
-
 .employer-subscription span {
   color: #000;
   text-align: center;
@@ -6618,12 +6340,11 @@ section.employer-login-pg-sec {
   line-height: 26px;
 }
 
-
 .employer-save {
   position: absolute;
   border-radius: 8px;
-  background: #194D79;
-  color: #FFF;
+  background: #194d79;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 12px;
@@ -6641,7 +6362,6 @@ section.employer-login-pg-sec {
   outline: none;
 }
 
-
 .employer-register-btn {
   display: flex;
   gap: 20px;
@@ -6649,7 +6369,7 @@ section.employer-login-pg-sec {
 }
 
 .employer-register-btn a {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -6657,9 +6377,9 @@ section.employer-login-pg-sec {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   padding: 5px 40px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .employer-input-checkbox {
@@ -6669,10 +6389,9 @@ section.employer-login-pg-sec {
 }
 
 .employer-register-btn a:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
-
 
 .employer-input-checkbox label {
   color: #000;
@@ -6684,16 +6403,13 @@ section.employer-login-pg-sec {
   margin: 0px;
 }
 
-
 .employer-input-checkbox input {
   width: 18px;
   height: 18px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
-
 /*********** Employer Register Page CSS End ***********/
-
 
 /*********** Subscribption Page CSS Start ***********/
 
@@ -6758,7 +6474,6 @@ section.employer-login-pg-sec {
   position: relative;
 }
 
-
 .subscribe-now-txt ul li::before {
   position: absolute;
   content: "";
@@ -6773,14 +6488,14 @@ section.employer-login-pg-sec {
 
 .subcription-box {
   border-radius: 10px;
-  border: 2px solid var(--Gray-5, #E0E0E0);
+  border: 2px solid var(--Gray-5, #e0e0e0);
   padding: 30px;
   text-align: center;
   position: relative;
 }
 
 .subcription-box h4 {
-  color: var(--194-d-79, #194D79);
+  color: var(--194-d-79, #194d79);
   text-align: center;
   font-family: "Public Sans";
   font-size: 36px;
@@ -6813,30 +6528,28 @@ section.employer-login-pg-sec {
 }
 
 .subcription-box a {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  border: 2px solid #194D79;
+  border: 2px solid #194d79;
   border-radius: 10px;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   padding: 12px 50px;
 }
 
-
 .subcription-box a:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
-
 
 .subcription-box::before {
   position: absolute;
   content: "Starter";
-  background: #E0E0E0;
+  background: #e0e0e0;
   width: 180px;
   height: 40px;
   top: 0px;
@@ -6861,9 +6574,8 @@ section.employer-login-pg-sec {
   content: "Best Value";
 }
 
-
 .subcription-box span {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 14px;
@@ -6876,14 +6588,14 @@ section.employer-login-pg-sec {
   transform: translate(-50%);
   width: 150px;
   border-radius: 8px;
-  background: #89C400;
+  background: #89c400;
   padding: 6px 5px;
 }
 
 .new-subscription-discount {
   margin: 20px 0px 0px 0px;
   border-radius: 10px;
-  background: #89C400;
+  background: #89c400;
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -6891,7 +6603,7 @@ section.employer-login-pg-sec {
 }
 
 .new-subscription-discount p {
-  color: #FFF;
+  color: #fff;
   font-family: "Public Sans";
   font-size: 16px;
   font-style: normal;
@@ -6904,13 +6616,12 @@ section.employer-login-pg-sec {
   padding: 0px 0px 0px 20px;
 }
 
-
 .new-subscription-discount p span {
   font-weight: bold;
 }
 
 .new-subscription-discount a {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -6918,17 +6629,15 @@ section.employer-login-pg-sec {
   font-weight: 700;
   line-height: 26px;
   border-radius: 5px;
-  border: 1px dashed #FFF;
+  border: 1px dashed #fff;
   padding: 10px 30px;
 }
-
 
 .station-secure-box {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 
 .station-secure-box {
   display: flex;
@@ -6955,7 +6664,7 @@ section.employer-login-pg-sec {
 .subscribtion-credit-box {
   margin: 30px 0px 0px 0px;
   padding: 30px 0px 0px 0px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .subscription-credit p {
@@ -6979,14 +6688,9 @@ section.employer-login-pg-sec {
   width: 250px;
 }
 
-
-
 /*********** Subscribption Page CSS End ***********/
 
-
-
 /*********** Submit A Station Form Page CSS Start ***********/
-
 
 .submit-station-form-sec {
   padding: 50px 0px;
@@ -7014,7 +6718,7 @@ section.employer-login-pg-sec {
 .submit-staion-form h2::before {
   position: absolute;
   content: "";
-  background: #BDBDBD;
+  background: #bdbdbd;
   width: 100%;
   height: 2px;
   bottom: 0px;
@@ -7023,7 +6727,7 @@ section.employer-login-pg-sec {
 .submit-staion-field input {
   width: 100%;
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   display: block;
   border: none;
   padding: 15px 25px;
@@ -7098,7 +6802,7 @@ section.employer-login-pg-sec {
 }
 .submit-staion-field select {
   border-radius: 10px;
-  background: var(--Gray-6, #F2F2F2);
+  background: var(--Gray-6, #f2f2f2);
   width: 100%;
   display: block;
   padding: 15px 25px;
@@ -7114,7 +6818,6 @@ section.employer-login-pg-sec {
   line-height: 26px;
 }
 
-
 .submit-staion-field select:focus {
   outline: none;
 }
@@ -7127,7 +6830,6 @@ section.employer-login-pg-sec {
   margin: 0px 0px 40px 0px;
 }
 
-
 .submit-station-btn {
   display: flex;
   align-items: center;
@@ -7135,7 +6837,7 @@ section.employer-login-pg-sec {
 }
 
 .submit-station-btn .submitbtn-dark {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -7143,15 +6845,14 @@ section.employer-login-pg-sec {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  background: #194D79;
-  border: 1px solid #194D79;
-  transition: all .6s ease;
+  background: #194d79;
+  border: 1px solid #194d79;
+  transition: all 0.6s ease;
 }
-
 
 .submit-station-btn .submitbtn-dark:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
 
 
@@ -7177,7 +6878,7 @@ section.employer-login-pg-sec {
 }
 
 .submit-station-btn .submitbtn-dark {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -7185,20 +6886,19 @@ section.employer-login-pg-sec {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  background: #194D79;
+  background: #194d79;
   padding: 6px 40px;
-  border: 1px solid #194D79;
-  transition: all .6s ease;
+  border: 1px solid #194d79;
+  transition: all 0.6s ease;
 }
-
 
 .submit-station-btn .submitbtn-dark:hover {
   background: transparent;
-  color: #194D79;
+  color: #194d79;
 }
 
 .submit-station-btn .submitbtn-light {
-  color: #194D79;
+  color: #194d79;
   text-align: center;
   font-family: "Public Sans";
   font-size: 16px;
@@ -7206,16 +6906,15 @@ section.employer-login-pg-sec {
   font-weight: 700;
   line-height: 33px;
   border-radius: 10px;
-  border: 2px solid #194D79;
-  transition: all .6s ease;
+  border: 2px solid #194d79;
+  transition: all 0.6s ease;
   padding: 6px 40px;
 }
 
 .submit-station-btn .submitbtn-light:hover {
-  background: #194D79;
+  background: #194d79;
   color: #fff;
 }
-
 
 .submit-checkbox {
   display: flex;
@@ -7236,12 +6935,7 @@ section.employer-login-pg-sec {
   line-height: 26px;
 }
 
-
 /*********** Submit A Station Form Page CSS End ***********/
-
-
-
-
 
 /******************* Shahdin Pages CSS End *******************/
 @media screen and (max-width: 1366px) {
@@ -7253,7 +6947,6 @@ section.employer-login-pg-sec {
     font-size: 15px;
   }
 
-
   .header_end a:nth-child(1) span {
     font-size: 11px;
   }
@@ -7264,7 +6957,7 @@ section.employer-login-pg-sec {
   }
 
   .rating-real-journalist h3 {
-    color: var(--ffffff, #FFF);
+    color: var(--ffffff, #fff);
     text-align: center;
     font-family: "Public Sans";
     font-size: 40px;
@@ -7273,10 +6966,75 @@ section.employer-login-pg-sec {
   .employer-newroom-box button.text-white {
     font-size: 23px;
   }
+}
 
+@media screen and (max-width: 1366px) {
+  .first-banner-txt h3 {
+    width: 70%;
+  }
+
+  .search-stations-input input::placeholder {
+    font-size: 18px;
+  }
+
+  .news-director-current {
+    align-items: start;
+    gap: 5px;
+    flex-direction: column;
+    margin: 0px 0px 6px 0px;
+  }
 
   .employer-inputfield label {
     font-size: 16px;
+  }
+
+  .director-urer img {
+    width: 60px;
+  }
+
+  .director-urer {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+  }
+
+  .director-name-txt h3 {
+    font-size: 16px;
+  }
+
+  .director-name-txt {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .prod-dark-btn {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 8px 8px;
+  }
+
+  .prod-light-btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 5px;
+  }
+
+  .ratemystation-prod-txt h3 {
+    font-size: 17px;
+    line-height: 25.5px;
+    margin: 0px 0px 10px 0px !important;
+    height: 60px;
+  }
+
+  .looking-for-worktxt {
+    padding: 56px 0px;
+    border-radius: 10px;
+  }
+
+  .looking-for-worktxt p {
+    font-size: 20px;
+    width: 50%;
+    line-height: 31.5px;
+    margin: 20px 0px 20px 0px !important;
   }
 
   .employer-inputfield input {
@@ -7308,7 +7066,7 @@ section.employer-login-pg-sec {
   }
 
   .employer-subscription h5 {
-    font-size: 19px
+    font-size: 19px;
   }
 
   .employer-subscription h6 {
@@ -7323,8 +7081,12 @@ section.employer-login-pg-sec {
     font-size: 12px;
   }
 
+  .employer-dont-have-acc {
+    margin: 10px 0px 0px 40px;
+  }
+
   .employer-dont-have-acc a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .employer-dont-have-acc a span {
@@ -7355,14 +7117,32 @@ section.employer-login-pg-sec {
     gap: 30px;
   }
 
+  .about-creator-img img {
+    width: 400px;
+  }
+
+  .your-journalism-txt {
+    padding: 65px 50px;
+  }
+
+  .your-journalism-txt h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .journal-date-written {
+    padding: 15px 0px;
+  }
+
   .icon-list-footer {
     gap: 28px;
   }
 
   /* .subscribe-PAGE- */
   .subscribe-now-txt h3 {
-    font-size: 40px;  
+    font-size: 40px;
   }
+
   .subcription-box h4 {
     font-size: 28px;
     padding: 50px 0px 10px 0px;
@@ -7382,31 +7162,37 @@ section.employer-login-pg-sec {
   .Sweatshirt-ah h2 {
     font-size: 32px;
     line-height: 45px;
-}
-.Sweatshirt-ah-select-box {
-  padding-top: 23px;
-}
-.Sweatshirt-ah-select-card h2{
-  font-size: 20px;
-}
-.Sweatshirt-ah-select-card button {
-  font-size: 12px;
-}
+  }
 
-.Description-box-tital {
-  gap: 2px;
-  padding-top: 22px;
-}
-.Description-box-tital h2 {
-  font-size: 28px;
-}
-.Description-box-tital p {
-  font-size: 15px;
-  line-height: 25px;
-}
-.satisfied h2 {
-  font-size: 75px;
-}
+  .Sweatshirt-ah-select-box {
+    padding-top: 23px;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 20px;
+  }
+
+  .Sweatshirt-ah-select-card button {
+    font-size: 12px;
+  }
+
+  .Description-box-tital {
+    gap: 2px;
+    padding-top: 22px;
+  }
+
+  .Description-box-tital h2 {
+    font-size: 28px;
+  }
+
+  .Description-box-tital p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .satisfied h2 {
+    font-size: 75px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -7437,174 +7223,169 @@ section.employer-login-pg-sec {
     font-size: 14px;
   }
 
+  .station-search-result-txt h4 {
+    font-size: 30px;
+  }
+
+  .station-search-result-txt p {
+    font-size: 16px;
+  }
+
+  .station-search-result-txt p span {
+    font-size: 16px;
+  }
+
+  .station-search-result-txt {
+    padding: 40px 0px 20px 0px;
+  }
+
+  .search-station-sec {
+    padding: 45px 0px 0px 0px;
+  }
+
+  .rms-kabc-txt h3 {
+    font-size: 22px;
+  }
+
+  .rms-kabc-btn .themedark {
+    font-size: 12px;
+    line-height: 22px;
+    border-radius: 8px;
+    padding: 8px 18px;
+  }
+
+  .news-director-card {
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .news-director-card-txt h5 {
+    font-size: 20px;
+  }
+
+  .news-director-detail-btn a {
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .rms-kabc-btn .themelight {
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 8px;
+  }
+
+  .rms-profile-box {
+    padding: 25px 20px;
+    margin: 0px 0px 24px 0px;
+  }
+
+  .seeprofile-box-btn a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .ratemystation-prod-txt h3 {
+    font-size: 16px;
+    line-height: 20px;
+    height: 100%;
+  }
+
+  .ratemystation-prod-txt {
+    padding: 15px;
+  }
+
+  .ratemystation-prod-txt h6 {
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .ratemystation-prod-btn {
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .ratemystation-shop-prod {
+    border-radius: 14px;
+  }
+
+  .ratemystation-shop-prod img {
+    object-fit: cover;
+  }
+
+  .prod-abslt-ratems {
+    height: 100%;
+  }
+
+  section.ratemystation-shop-sec h4 {
+    font-size: 24px;
+    margin: 0px 0px 34px 0px !important;
+  }
+
+  section.ratemystation-shop-sec {
+    padding: 30px 0px;
+  }
+
+  .find-station-looking {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .find-station-looking h4 {
+    font-size: 24px;
+  }
+
+  .find-station-looking p {
+    font-size: 18px;
+    line-height: 28.5px;
+  }
+
+  .find-station-looking a {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .seeprofile-box-btn {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .rms-abc-logo {
+    width: 18%;
+  }
+
+  .rms-profile-logo-box {
+    align-items: flex-start;
+  }
+
+  .rms-rating-review svg {
+    width: 150px;
+  }
+
+  .looking-for-work-sec {
+    padding: 35px 0px;
+  }
+
+  .looking-for-worktxt h4 {
+    font-size: 32px;
+  }
+
+  .looking-for-worktxt p {
+    font-size: 18px;
+    margin: 15px 0px 20px 0px !important;
+  }
+
+  .looking-for-worktxt a {
+    font-size: 18px;
+    line-height: 31.5px;
+    padding: 8px 42px;
+  }
+
+  .looking-for-worktxt {
+    padding: 50px 0px;
+  }
+
   .Industry-ah span {
-}
-.station-search-result-txt h4 {
-  font-size: 30px;
-}
-
-.station-search-result-txt p {
-  font-size: 16px;
-}
-
-.station-search-result-txt p span {
-  font-size: 16px;
-}
-
-.station-search-result-txt {
-  padding: 40px 0px 20px 0px;
-}
-
-.search-station-sec {
-  padding: 45px 0px 0px 0px;
-}
-
-.rms-kabc-txt h3 {
-  font-size: 22px;
-}
-
-.rms-kabc-btn .themedark {
-  font-size: 12px;
-  line-height: 22px;
-  border-radius: 8px;
-  padding: 8px 18px;
-}
-
-.news-director-card {
-  padding: 20px 20px;
-  border-radius: 10px;
-  margin: 0px 0px 25px 0px;
-}
-
-.news-director-card-txt h5 {
-  font-size: 20px;
-}
-
-.news-director-detail-btn a {
-  padding: 10px 30px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.rms-kabc-btn .themelight {
-  font-size: 14px;
-  line-height: 24px;
-  border-radius: 8px;
-}
-
-.rms-profile-box {
-  padding: 25px 20px;
-  margin: 0px 0px 24px 0px;
-}
-
-.seeprofile-box-btn a {
-  font-size: 16px;
-  padding: 10px 30px;
-}
-.ratemystation-prod-txt h3 {
-  font-size: 16px;
-  line-height: 20px;
-  height: 100%;
-}
-
-.ratemystation-prod-txt {
-  padding: 15px;
-}
-
-.ratemystation-prod-txt h6 {
-  font-size: 14px;
-  margin: 0px 0px 15px 0px;
-}
-
-.ratemystation-prod-btn {
-  flex-direction: column;
-  gap: 10px;
-}
-
-.ratemystation-shop-prod {
-  border-radius: 14px;
-}
-
-.ratemystation-shop-prod img {
-  height: 159px;
-  object-fit: contain;
-  object-position: top;
-}
-
-img {}
-
-.prod-abslt-ratems {
-  height: 100%;
-}
-
-h4 {}
-
-section.ratemystation-shop-sec h4 {
-  font-size: 24px;
-  margin: 0px 0px 34px 0px !important;
-}
-
-section.ratemystation-shop-sec {
-  padding: 30px 0px;
-}
-.find-station-looking {
-  padding: 40px 20px 40px 20px;
-}
-
-.find-station-looking h4 {
-  font-size: 24px;
-}
-
-.find-station-looking p {
-  font-size: 18px;
-  line-height: 28.5px;
-}
-
-.find-station-looking a {
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-}
-
-.seeprofile-box-btn {
-  margin: 0px 0px 30px 0px;
-}
-
-.rms-abc-logo {
-  width: 18%;
-}
-
-.rms-profile-logo-box {
-  align-items: flex-start;
-}
-
-.rms-rating-review svg {
-  width: 150px;
-}
-
-.looking-for-work-sec {
-  padding: 35px 0px;
-}
-
-.looking-for-worktxt h4 {
-  font-size: 32px;
-}
-
-.looking-for-worktxt p {
-  font-size: 18px;
-  margin: 15px 0px 20px 0px !important;
-}
-
-.looking-for-worktxt a {
-  font-size: 18px;
-  line-height: 31.5px;
-  padding: 8px 42px;
-}
-
-.looking-for-worktxt {
-  padding: 50px 0px;
-}
-.Industry-ah span {
     gap: 5px;
   }
 
@@ -7628,56 +7409,58 @@ section.ratemystation-shop-sec {
     font-size: 12px;
   }
 
+  .more-class {
+    padding: 10px 0px 10px 15px;
+  }
 
-.more-class {
-  padding: 10px 0px 10px 15px;
-}
+  .Schedule-ah-card-box h2 {
+    padding: 20px 0px 20px 0px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-.Schedule-ah-card-box h2 {
-  padding: 20px 0px 20px 0px;
-  font-size: 18px;
-  line-height: 24px;
-}
+  .Schedule-ah-list-1 span p {
+    font-size: 14px;
+  }
 
-.Schedule-ah-list-1 span p {
-  font-size: 14px;
-}
+  .Schedule-ah-list-1 span {
+    gap: 8px;
+  }
 
-.Schedule-ah-list-1 span {
-  gap: 8px;
-}
+  .Soul-icon-box {
+    gap: 10px;
+  }
 
-.Soul-icon-box {
-  gap: 10px;
-}
+  .Schedule-ah-list-3 a span {
+    font-size: 14px;
+  }
 
-.Schedule-ah-list-3 a span {
-  font-size: 14px;
-}
+  .Schedule-ah-list-3 a {
+    font-size: 14px;
+  }
 
-.Schedule-ah-list-3 a {
-  font-size: 14px;
-}
+  .Soul-icon-box span p {
+    padding: 0px;
+  }
 
-.Soul-icon-box span p {
-  padding: 0px;
-}
+  .Soul-icon-box span svg {
+    width: 15px;
+    height: 15px;
+  }
 
-.Soul-icon-box span svg {
-  width: 15px;
-  height: 15px;
-}
-.KABC-tital-ah span h2 {
-  font-size: 24px;
-}
-.Award-a {
-  padding-top: 20px;
-}
+  .KABC-tital-ah span h2 {
+    font-size: 24px;
+  }
 
-.Job-list-1-ah span h2 {
-  font-size: 20px;
-}
-.Job-list-2-ah {
+  .Award-a {
+    padding-top: 20px;
+  }
+
+  .Job-list-1-ah span h2 {
+    font-size: 20px;
+  }
+
+  .Job-list-2-ah {
     padding: 8px 20px;
   }
 
@@ -7843,6 +7626,507 @@ section.ratemystation-shop-sec {
     font-size: 20px;
   }
 
+  .first-banner-txt h3 {
+    font-size: 48px;
+    width: 70%;
+    margin: 0px 0px 50px 0px !important;
+  }
+
+  .search-stations-input input {
+    width: 450px;
+    padding: 20px 20px;
+  }
+
+  .select-station-drop select {
+    padding: 20px 30px;
+    width: 220px;
+  }
+
+  .first-banner-txt a {
+    font-size: 20px;
+  }
+
+  .news-director-current {
+    gap: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .review-director-para h6 {
+    font-size: 12px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  .review-director-para h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .review-director-para p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .director-urer {
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .news-director-current h5 {
+    font-size: 12px;
+    margin: 0px 0px 2px 0px !important;
+  }
+
+  .news-director-current a {
+    font-size: 8px;
+    margin: 0px 0px 4px 0px !important;
+  }
+
+  .review-news-director {
+    padding: 20px 20px;
+    margin: 30px 0px 20px 0px !important;
+  }
+
+  .director-urer img {
+    width: 50px;
+  }
+
+  .director-name-txt {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .director-name-txt h3 {
+    font-size: 14px;
+  }
+
+  .latest-rating-user-txt h5 {
+    font-size: 16px;
+  }
+
+  .verified-rating-box h6 {
+    font-size: 14px;
+  }
+
+  .header-logo img {
+    width: 100%;
+  }
+
+  .racial-discrimination h6 {
+    font-size: 12px;
+  }
+
+  .racial-discrimination p {
+    font-size: 14px;
+  }
+
+  .racial-discrimination h5 {
+    font-size: 14px;
+  }
+
+  .newroom-coworker-txt svg {
+    width: 100%;
+  }
+
+  .newroom-coworker-txt h6 {
+    font-size: 12px;
+  }
+
+  .four-select-tab ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 8px;
+  }
+
+  .like-report-txt ul li {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 4px 15px;
+  }
+
+  .latest-rating-comment-box {
+    margin: 30px 0px 20px 0px;
+    gap: 10px;
+  }
+
+  .latest-comment-txt-box span {
+    font-size: 12px;
+  }
+
+  .latest-comment-txt-box {
+    padding: 10px 10px;
+  }
+
+  .latest-comment-txt-box p {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  .newsletter-follow-box h4 {
+    font-size: 22px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .follow-us-rate ul li a {
+    font-size: 16px;
+  }
+
+  .side-subscribe-box h5 {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .side-subscribe-box input {
+    padding: 12px 20px;
+    margin: 0px 0px 20px 0px;
+    border: none;
+  }
+
+  .side-subscribe-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .side-newsletter-txt h5 {
+    font-size: 16px;
+  }
+
+  .latest-rating-loadmore-btn a {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+
+  section.ratemystation-shop-sec h4 {
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  section.latest-rating-sec {
+    padding: 50px 0px;
+  }
+
+  .ratemystation-prod-txt h3 {
+    font-size: 16px;
+    line-height: 24.5px;
+    margin: 0px 0px 10px 0px !important;
+    height: auto;
+  }
+
+  .prod-abslt-ratems {
+    width: 30px !important;
+    height: 45px;
+  }
+
+  .prod-light-btn {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 4px;
+  }
+
+  .prod-dark-btn {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 8px;
+  }
+
+  .ratemystation-prod-txt h6 {
+    font-size: 12px;
+  }
+
+  .ratemystation-allprod-btn a {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 12px 20px;
+  }
+
+  .looking-for-worktxt h4 {
+    font-size: 26px;
+  }
+
+  .looking-for-worktxt p {
+    font-size: 18px;
+    line-height: 28.5px;
+    margin: 15px 0px 20px 0px !important;
+  }
+
+  .looking-for-worktxt a {
+    font-size: 16px;
+    line-height: 17.5px;
+    padding: 14px 30px;
+  }
+
+  .looking-for-worktxt {
+    padding: 40px 0px;
+  }
+
+  .looking-for-work-sec {
+    padding: 30px 0px;
+  }
+
+  .ratemystation-about-txt h3 {
+    font-size: 38px;
+    line-height: 53px;
+  }
+
+  .about-us-txt h4 {
+    font-size: 20px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .about-creator-txt h5 {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px !important;
+  }
+
+  .about-creator-para p {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .about-creator-img-name {
+    border-radius: 0px 15px 15px 15px;
+    padding: 8px 20px 5px 30px;
+    bottom: 20px;
+    right: 30px;
+  }
+
+  .about-creator-img-name::before {
+    height: 72px;
+    left: 0px;
+  }
+
+  .about-creator-img-name h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about-creator-img-name h6 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .about-creator-img img {
+    width: 330px;
+  }
+
+  .creator-messages {
+    margin: 40px 0px 0px 0px;
+    padding: 30px 30px 20px 30px;
+  }
+
+  .creator-messages h4 {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .your-journalism-txt {
+    padding: 20px 35px 50px 35px;
+  }
+
+  .your-journalism-txt h3 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .your-journalism-txt h5 {
+    font-size: 14px;
+  }
+
+  .journal-date-written {
+    padding: 10px 0px;
+  }
+
+  .journalism-slider .slick-dots {
+    text-align: left;
+    bottom: -30px;
+  }
+
+  .newsletter-likecomment-share {
+    gap: 10px;
+  }
+
+  .newsletter-writtinsoul-txt p {
+    font-size: 12px;
+  }
+
+  .newsletter-article-text h4 {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .newsletter-pagination-slide .pagination {
+    padding: 5px 0px;
+    border-radius: 20px;
+  }
+
+  .newsletter-slide-article img {
+    width: 200px;
+  }
+
+  .more-soul-article img {
+    width: 100px;
+  }
+
+  .more-soul-articletxt h4 {
+    font-size: 20px;
+  }
+
+  .find-job-select-box span svg {
+    width: 15px;
+  }
+
+  .find-job-select-box input {
+    padding: 12px 40px 12px 40px;
+  }
+
+  .find-job-select-box input::placeholder {
+    font-size: 14px;
+  }
+
+  .find-job-btn button {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 9px 10px;
+  }
+
+  .filter-box select {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .filter-box p {
+    font-size: 16px;
+  }
+
+  .assistant-city-dollar-time {
+    padding: 8px 20px;
+  }
+
+  .assistant-city-dollar-time p {
+    font-size: 12px;
+  }
+
+  .assistant-director-txt h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .assistant-director-txt h6 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .assistant-news-director-box ul li {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .newsletter-pagination-slide .pagination a {
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .find-job-matter-txt h4 {
+    font-size: 40px;
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  .job-select-opts a {
+    padding: 8px 65px;
+    font-size: 16px;
+  }
+
+  .job-save-share a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .job-detail-name-description {
+    padding: 40px 30px;
+  }
+
+  .job-detailpg-nameflex img {
+    width: 120px;
+  }
+
+  .job-opening-btn a {
+    padding: 8px 35px;
+    font-size: 16px;
+  }
+
+  .shop-new-arrival h3 {
+    font-size: 38px;
+    line-height: 53px;
+    width: 380px;
+  }
+
+  .shop-new-arrival p {
+    font-size: 14px;
+    line-height: 26px;
+    width: 260px;
+    margin: 10px 0px 50px 0px !important;
+  }
+
+  .shop-new-arrival-img img {
+    width: 220px;
+  }
+
+  .themed-cap img {
+    width: 150px;
+  }
+
+  .themed-cap {
+    right: 0px;
+    top: 90px;
+  }
+
+  .theme-mug {
+    top: 70px;
+  }
+
+  .theme-mug img {
+    width: 150px;
+  }
+
+  .filter-box p {
+    font-size: 14px;
+  }
+
+  .filter-box select {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .filter-box {
+    gap: 5px;
+  }
+
+  .header_end a:nth-child(2) {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 0px 20px;
+  }
+
+  .header_end a:nth-child(1) svg {
+    width: 25px;
+  }
+
+  .header_end {
+    gap: 15px;
+  }
+
+  .header_nav ul {
+    margin: 0px 0px 0px 10px;
+    gap: 40px;
+  }
+
+  .shop-friend-themed {
+    padding: 26px 30px;
+  }
+
   .header-logo img {
     width: 155.797px;
   }
@@ -7861,7 +8145,7 @@ section.ratemystation-shop-sec {
   }
 
   .header_end {
-    gap: 30px
+    gap: 30px;
   }
 
   .header_end a:nth-child(2) {
@@ -7944,18 +8228,20 @@ section.ratemystation-shop-sec {
   .employer-input-checkbox label {
     font-size: 14px;
   }
-/* .subscribe-now-txt */
-.station-secure-box p {
-  font-size: 14px;
-  line-height: 23px;
-  padding: 0px 25px 0px 0px;
-}
+
+  /* .subscribe-now-txt */
+  .station-secure-box p {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0px 25px 0px 0px;
+  }
+
   .subcription-box::before {
     width: 132px;
     line-height: 24px;
     font-size: 15px;
     padding: 6px 0px 0px 0px;
-}
+  }
 
   .subcription-box a {
     font-size: 15px;
@@ -7976,108 +8262,216 @@ section.ratemystation-shop-sec {
     line-height: 20px;
     padding: 0px 0px 75px 0px;
   }
+
   .subcription-box span {
     font-size: 11px;
     width: 122px;
     padding: 6px 5px;
-}
-.subscribe-now-txt h3 {
-  font-size: 30px;
-  line-height: 55px;
-}
-.subscribe-now-txt ul li {
-  font-size: 16px;
-  line-height: 22px;
-  padding: 6px 0px;
-}
-.subscribtion-credit-box {
-  margin: 20px 0px 0px 0px;
-  padding: 20px 0px 0px 0px;
-}
+  }
+
+  .subscribe-now-txt h3 {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .subscribe-now-txt ul li {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 0px;
+  }
+
+  .subscribtion-credit-box {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+
   /* PRODUCT-DETAIL */
   .About-main-card-1-ah h2 {
     font-size: 26px;
     line-height: 37px;
-}
+  }
+
   .Sweatshirt-ah-select-box {
     padding-top: 12px;
-}
-.Sweatshirt-ah-select-card {
-display: flex;
-align-items: center;
-gap: 13px;
-width: 35%;
-}
-.Sweatshirt-ah-select-card {
-display: flex;
-align-items: center;
-gap: 13px;
-width: 35%;
-}
+  }
 
-.Sweatshirt-ah-select-box {
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 46%;
+    max-width: 50%;
+  }
+
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 46%;
+    max-width: 50%;
+  }
+
+  .Sweatshirt-ah-select-box {
     padding-top: 12px;
-}
-.Sweatshirt-ah-select-card h2 {
+  }
+
+  .Sweatshirt-ah-select-card h2 {
     font-size: 20px !important;
-}
-.Sweatshirt-ah-select-card button {
+  }
+
+  .Sweatshirt-ah-select-card button {
     font-size: 11px;
-}
-.Description-box-tital p {
-  font-size: 14px;
-  line-height: 24px;
-}
-.Cooper-ah-box-main {
-  width: 100%;
-  padding-top: 15px;
+  }
+
+  .Description-box-tital p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .Cooper-ah-box-main {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .Cooper-ah-tital {
+    padding: 12px 20px;
+  }
+
+  .Cooper-ah-tital h3 {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 8px 0px 2px 0px;
+  }
+
+  .satisfied h2 {
+    font-size: 30px;
+  }
+
+  .Applied-ah-list-1 span h2 {
+    font-size: 22px;
+  }
+
+  .Applied-ah-list-1 {
+    padding-bottom: 18px;
+  }
+
+  .Applied-ah-card {
+    padding: 24px 34px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+
+  .Applied-ah-logo {
+    width: 18%;
+  }
+
+  .Applied-ah-tital {
+    width: 76%;
+  }
+
+  .Applied-ah-list-2 span p {
+    font-size: 14px;
+  }
+
+  .Applied-ah-list-2 {
+    padding: 8px 15px;
+  }
+
+  .Applied-ah-list-3 {
+    padding-top: 20px;
+  }
+
+  /* CONTACT US */
+  .ratemystaion-contact-form {
+    padding: 40px;
+  }
+
+  .ratemystaion-contact-form p {
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0px 0px 85px 0px !important;
+  }
+
+  .contact-form-fields {
+    padding: 40px;
+  }
+
+  .ratemystaion-contact-form h3 {
+    font-size: 40px;
+  }
+
+  .ratemystaion-contact-form p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px 0px 110px 0px !important;
+  }
+
+  .ratemystaion-contact-form ul li {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .input-field {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .input-field textarea {
+    height: 175px;
+  }
+
+  .contact-form-btn button {
+    padding: 8px 55px;
+  }
+
+  .contact-follow-like-btn ul li {
+    padding: 12px 30px;
+  }
+
+  .contact-latest-updates {
+    padding: 0px 25px 20px 20px;
+  }
+
+  .americon-prod-cart img {
+    width: 100px;
+  }
+
+  .americon-prod-cart h3 {
+    color: #000;
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0px;
+  }
+
+  .cart-counter {
+    padding: 8px 12px;
+    margin: 0px 6px;
+  }
+
+  .americon-prod-cart h4 {
+    padding: 0px 10px;
+  }
+
+  .americon-prod-cart h6 {
+    margin: 0px;
+  }
 }
 
-.Cooper-ah-tital {
-  padding: 12px 20px;
-}
-.Cooper-ah-tital h3 {
-  font-size: 15px;
-  line-height: 21px;
-  padding: 8px 0px 2px 0px;
-}
-.satisfied h2{
-  font-size: 30px;
-}
-.Applied-ah-list-1 span h2 {
-  font-size: 22px;
-}
+@media (max-width: 991px) {
+  .Sweatshirt--box--alt {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Sweatshirt--part--alt {
+    width: 100%;
+  }
 
-.Applied-ah-list-1 {
-  padding-bottom: 18px;
-}
-
-.Applied-ah-card {
-  padding: 24px 34px;
-  border-radius: 20px;
-  align-items: flex-start;
-}
-
-.Applied-ah-logo {
-  width: 18%;
-}
-
-.Applied-ah-tital {
-  width: 76%;
-}
-
-.Applied-ah-list-2 span p {
-  font-size: 14px;
-}
-
-.Applied-ah-list-2 {
-  padding: 8px 15px;
-}
-
-.Applied-ah-list-3 {
-  padding-top: 20px;
-}
-
+  .rate--product--button--container--ah {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -8087,12 +8481,23 @@ width: 35%;
     gap: 30px;
   }
 
+  .America-Sweatshirt {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Sweatshirt-ah {
+    width: 100%;
+  }
+  .Cooper-ah-imger {
+    width: 9%;
+  }
+
+  .news-director-detail-btn {
+    justify-content: flex-end;
+  }
+
   .About-main-box-1-ah {
-}
-.news-director-detail-btn {
-  justify-content: flex-end;
-}
-.About-main-box-1-ah {
     width: 100%;
   }
 
@@ -8108,13 +8513,11 @@ width: 35%;
     width: 34%;
   }
 
+  .ratemystation-prod-txt h3 {
+    height: 50px;
+  }
+
   span.See button {
-}
-.ratemystation-prod-txt h3 {
-  
-  height: 50px;
-}
-span.See button {
     padding: 5px;
     font-size: 14px;
     line-height: 30px;
@@ -8189,6 +8592,360 @@ span.See button {
     width: 34%;
   }
 
+  .gol-bar-ah {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .gol-bar-head {
+    width: 100%;
+  }
+
+  .gol-bar-tital {
+    width: 42%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .gol-bar-head h2 {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .ratings-ah-1-TITAL span h2 {
+    font-size: 60px;
+  }
+
+  .ratings-ah-1-TITAL span p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .job-ah-post h2 {
+    font-size: 20px;
+  }
+
+  .job-ah-Filter {
+    width: 64%;
+    gap: 25px;
+  }
+
+  .job-ah-Filter-card p {
+    font-size: 16px;
+  }
+
+  .job-ah-Filter-card select {
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .director-urer img {
+    width: 10%;
+  }
+
+  .director-urer {
+    padding-bottom: 10px;
+  }
+
+  .Angeles-logo-side-box span h2 {
+    font-size: 20px;
+  }
+
+  .Jacob-card-ah {
+    width: 75%;
+  }
+
+  .Jacob-card-ah-box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .four-select-tab {
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .verified-rating-box h6 {
+    font-size: 14px;
+  }
+
+  .Hire-ah-box h2 {
+    font-size: 28px;
+  }
+
+  .Hire-ah-box p {
+    font-size: 18px;
+    padding: 20px 10px;
+  }
+
+  .Hire-ah-box button {
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 10px;
+  }
+
+  .Hire-ah-box {
+    padding: 40px 20px;
+  }
+
+  .About-main-ah {
+    gap: 25px;
+  }
+
+  .job-ah-post h2 span {
+    font-size: 16px;
+  }
+
+  .search-station-box {
+    width: 100%;
+  }
+
+  .first-banner-txt h3 {
+    font-size: 40px;
+    width: 80%;
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  .select-station-drop select {
+    padding: 16px 20px;
+    width: 200px;
+  }
+
+  .search-stations-input input {
+    width: 400px;
+    padding: 17px 15px;
+  }
+
+  .search-stations-input svg {
+    width: 30px;
+  }
+
+  .newroom-coworker-txt svg {
+    width: 150px;
+  }
+
+  .newroom-coworker-txt h6 {
+    font-size: 11px;
+  }
+
+  .newroom-coworker-txt h5 {
+    font-size: 14px;
+  }
+
+  .newsletter-side-sec {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .newsletter-follow-box h4 {
+    font-size: 22px;
+    margin: 0px 0px 20px 15px !important;
+  }
+
+  .follow-us-rate {
+    padding: 20px 20px 10px 20px;
+  }
+
+  .looking-for-worktxt p {
+    font-size: 16px;
+    margin: 10px 0px 10px 0px !important;
+    width: 80%;
+  }
+
+  .looking-for-worktxt {
+    border-radius: 10px;
+  }
+
+  .looking-for-worktxt h4 {
+    font-size: 24px;
+  }
+
+  .looking-for-worktxt a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .search-stations-input input {
+    width: 400px;
+    padding: 17px 15px;
+  }
+
+  .your-journalism-img {
+    width: 50%;
+  }
+
+  .your-journalism-txt h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .your-journalism-txt {
+    width: 50%;
+    padding: 20px 25px 45px 25px;
+  }
+
+  .journal-date-written p {
+    font-size: 12px;
+  }
+
+  .journal-date-written {
+    padding: 5px 0px;
+  }
+
+  .your-journalism-img img {
+    height: 360px;
+    object-fit: cover;
+  }
+
+  .newsletter-article-search input {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .newsletter-article-search span {
+    right: 10px;
+    top: 4px;
+  }
+
+  .filter-box p {
+    font-size: 14px;
+  }
+
+  .filter-short-box {
+    gap: 20px;
+    justify-content: end;
+  }
+
+  .filter-box select {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+
+  .ratemystation-prod-txt {
+    padding: 20px 15px;
+  }
+
+  .newsletter-detail-comment-para {
+    border-radius: 0px 10px 10px 10px;
+  }
+
+  .find-job-select-box {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .job-select-opts {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .job-detailpg-nameflex img {
+    width: 120px;
+  }
+
+  .job-detailpg-txt h3 {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0px 0px 5px 0px;
+  }
+
+  .job-detailpg-txt h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .job-detail-name-description {
+    padding: 30px 20px;
+  }
+
+  .job-openingpg-txt h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .job-openingpg-txt h5 {
+    font-size: 18px;
+  }
+
+  .job-openingpg-txt h6 {
+    font-size: 16px;
+  }
+
+  .newsletter-article-search h4 {
+    font-size: 24px;
+  }
+
+  .shop-new-arrival {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .shop-friend-themed h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px 0px 50px 0px !important;
+  }
+
+  .themed-cap img {
+    width: 120px;
+  }
+
+  .theme-mug img {
+    width: 120px;
+  }
+
+  .shop-new-arrival {
+    padding: 30px 30px;
+  }
+
+  .shop-new-arrival h3 {
+    font-size: 37px;
+  }
+
+  .shop-new-arrival p {
+    width: 300px;
+    margin: 10px 0px 30px 0px !important;
+  }
+
+  .shop-category ul li button {
+    font-size: 12px;
+  }
+
+  .Job-list-1-ah span h2 {
+    font-size: 20px;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ul-li-list-footer {
+    width: 100%;
+  }
+
+  .ul-li-list-footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ratings-ah-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+  }
+
+  .ratings-ah-1-TITAL {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ratings-ah-1-box {
+    width: 34%;
+  }
 
   .gol-bar-ah {
     flex-direction: column;
@@ -8308,26 +9065,18 @@ span.See button {
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
   }
 
-  /* The sidepanel */
   .sidepanel {
     height: 100%;
-    /* Full-height */
     width: 0;
-    /* Initial width */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     top: 0;
     left: 0;
-    background-color: #111;
-    /* Black */
+    background-color: #194d79;
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     padding-top: 60px;
-    /* Place content 60px from the top */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidepanel */
+    box-shadow: 4px 0px 5px #0000002e;
   }
 
   .header_nav {
@@ -8344,6 +9093,10 @@ span.See button {
 
   .header_nav button:hover {
     color: #f1f1f1;
+    background: transparent;
+    color: #194d79;
+    border: none;
+    font-size: 25px;
   }
 
   /* The navigation links inside the sidepanel */
@@ -8351,7 +9104,7 @@ span.See button {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
@@ -8379,278 +9132,370 @@ span.See button {
     padding: 140px 50px;
   }
 
-/* .subscribtion--PAGE */
+  /* .subscribtion--PAGE */
 
   .subcription-page-sec {
     padding: 40px 0px;
-}
-.subscribe-now-txt h3 {
-  font-size: 37px;
-  line-height: 52px;
-}
-.subscribe-now-txt p {
-  font-size: 15px;
-  line-height: 25px;
-}
-.subscribe-now-txt ul li {
-  font-size: 15px;
-  line-height: 21px;
-  padding: 5px 0px;
-}
-.station-secure-box p {
-  font-size: 14px;
-  line-height: 25px;
+  }
+
+  .subscribe-now-txt h3 {
+    font-size: 37px;
+    line-height: 52px;
+  }
+
+  .subscribe-now-txt p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .subscribe-now-txt ul li {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 5px 0px;
+  }
+
+  .station-secure-box p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  /* CONTACT US */
+  .ratemystaion-contact-form {
+    padding: 20px;
+  }
+
+  .ratemystaion-contact-form h3 {
+    font-size: 37px;
+  }
+
+  .ratemystaion-contact-form p {
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0px 0px 40px 0px !important;
+  }
+
+  .employer-login-form {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .employer-dont-have-acc {
+    margin: 0px 0px 20px 50px;
+  }
+
+  .employer-choose-subscription {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .employer-inputfield input {
+    padding: 10px 10px;
+  }
+
+  .employer-register-btn {
+    margin: 15px 0px 30px 50px;
+  }
+
+  .Sweatshirt-ah-select-box {
+    justify-content: start;
+  }
+
+  .Sweatshirt-ah-select-card {
+    gap: 10px;
+    width: 48%;
+  }
+
+  .Sweatshirt-ah-select-card {
+    width: 48%;
+    margin: 0px 10px 0px 0px;
+  }
 }
 
-}
-/* PRODUCT-DETAIL */
-
-
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .ul-li-list-footer ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-}
-
-.About-main-box-2-ah {
+  }
+  .Sweatshirt-ah-select-card button {
+    width: 40%;
+  }
+  .About-main-box-2-ah {
     width: 100%;
-}
+  }
 
-.About-main-box-2-tital-ah h2 {
+  .About-main-box-2-tital-ah h2 {
     font-size: 18px;
-}
+  }
 
-.About-main-box-2-tital-ah a {
+  .About-main-box-2-tital-ah a {
     font-size: 15px;
-}
+  }
 
-.Recommend-box-ah {
+  .Recommend-box-ah {
     gap: 20px;
     padding-top: 25px;
-}
+  }
 
-.Recommend-card-tital-ah {
+  .Recommend-card-tital-ah {
     padding: 10px 14px;
-}
-section.director-search-result hr {
-  margin: 0px;
-}
-.Recommend-card-tital-ah h2 {
+  }
+
+  .Recommend-card-tital-ah h2 {
     font-size: 14px;
-}
-.Applied-ah-list-1 span h2 {
-  font-size: 22px;
-}
+  }
 
-.news-director-card-txt h5 {
-  font-size: 18px;
-}
-.Applied-ah-list-1 {
-  padding-bottom: 18px;
-}
+  section.director-search-result hr {
+    margin: 0px;
+  }
 
-.Applied-ah-card {
-  padding: 24px 34px;
-  border-radius: 20px;
-  align-items: flex-start;
-}
-.rms-profile-logo-box {
-  flex-direction: column;
-}
+  .Recommend-card-tital-ah h2 {
+    font-size: 14px;
+  }
 
-.station-search-result-txt h4 {
-  font-size: 18px;
-}
+  .Applied-ah-list-1 span h2 {
+    font-size: 22px;
+  }
 
-.station-search-result-txt p {
-  font-size: 14px;
-}
+  .news-director-card-txt h5 {
+    font-size: 18px;
+  }
 
-.station-search-result-txt p span {
-  font-size: 14px;
-}
+  .Applied-ah-list-1 {
+    padding-bottom: 18px;
+  }
 
-.search-station-sec {
-  padding: 20px 0px 0px 0px;
-}
-.Applied-ah-logo {
-  width: 18%;
-}
+  .Applied-ah-card {
+    padding: 24px 34px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
 
-.Applied-ah-tital {
-  width: 76%;
-}
+  .rms-profile-logo-box {
+    flex-direction: column;
+  }
 
-.Applied-ah-list-2 span p {
-  font-size: 14px;
-}
+  .station-search-result-txt h4 {
+    font-size: 18px;
+  }
 
-.Applied-ah-list-2 {
-  padding: 8px 15px;
-}
+  .station-search-result-txt p {
+    font-size: 14px;
+  }
 
-.Applied-ah-list-3 {
-  padding-top: 20px;
-}
+  .station-search-result-txt p span {
+    font-size: 14px;
+  }
 
-.job-ah-Filter {}
+  .search-station-sec {
+    padding: 20px 0px 0px 0px;
+  }
 
-.Applied-ah-card {
-  flex-direction: column;
-  gap: 20px;
-}
+  .Applied-ah-logo {
+    width: 18%;
+  }
 
-.Applied-ah-tital {
-  width: 100%;
-}
+  .Applied-ah-tital {
+    width: 76%;
+  }
 
-.Applied-ah-list-1 span h2 {
-  font-size: 20px;
-}
+  .Applied-ah-list-2 span p {
+    font-size: 14px;
+  }
 
-.Applied-ah-list-1 {
-  padding-bottom: 15px;
-}
+  .Applied-ah-list-2 {
+    padding: 8px 15px;
+  }
 
-.Applied-ah-card {
-  padding: 15px 20px;
-}
+  .Applied-ah-list-3 {
+    padding-top: 20px;
+  }
 
-.Applied-ah-list-1 span p {
-  font-size: 18px;
-}
-
-.Applied-ah-list-2 span p {
-  font-size: 12px;
-}
-
-.Applied-ah-list-2 span {
-  gap: 5px;
-}
-
-.Applied-ah-list-2 span svg {
-  width: 14px;
-  height: 14px;
-}
-.KABC-box-ah {
+  .Applied-ah-card {
     flex-direction: column;
     gap: 20px;
-}
+  }
 
-.KABC-part-1-ah {
+  .Applied-ah-tital {
     width: 100%;
-}
-.Schedule-ah-card {
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-}
+  }
 
-.Schedule-ah-card-box {
-  width: 100%;
-  padding: 0px;
-}
+  .Applied-ah-list-1 span h2 {
+    font-size: 20px;
+  }
 
-.Schedule-ah-imger {
-  width: 32%;
-}
-.KABC-btn-box-ah {
+  .Applied-ah-list-1 {
+    padding-bottom: 15px;
+  }
+
+  .Applied-ah-card {
+    padding: 15px 20px;
+  }
+
+  .Applied-ah-list-1 span p {
+    font-size: 18px;
+  }
+
+  .Applied-ah-list-2 span p {
+    font-size: 12px;
+  }
+
+  .Applied-ah-list-2 span {
+    gap: 5px;
+  }
+
+  .Applied-ah-list-2 span svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .KABC-box-ah {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .KABC-part-1-ah {
     width: 100%;
-}
+  }
 
-section.KABC-ah {
+  .Schedule-ah-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .Schedule-ah-card-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .Schedule-ah-imger {
+    width: 32%;
+  }
+
+  .KABC-btn-box-ah {
+    width: 100%;
+  }
+
+  section.KABC-ah {
     padding-top: 40px;
-}
-.Jacob-card-ah {
-  width: 100%;
-  padding: 20px;
-}
+  }
 
-.Director-ah-boxing-3 button {
-  padding: 10px;
-  font-size: 11px;
-  line-height: 5px;
-}
-.About-main-card-1-ah h2 span {
-  font-size: 15px;
-}
-.Sweatshirt-ah-select-box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 65px;
-  padding-top: 3px;
-  justify-content: flex-start;
-}
-.Sweatshirt-ah-select-card button {
-  font-size: 10px;
-  line-height: 29px;
-}
-.Sweatshirt-ah-select-card h2 {
-  font-size: 11px !important;
-}
-.Sweatshirt-ah-select-card select {
-  padding:11px;
-  font-size:11px;
-  line-height: 26px;
-}
-.Sweatshirt-ah-select-card p {
-  font-size: 13px;
-}
-.Description-box-tital {
-  gap: 1px;
-  padding-top: 15px;
-}
-.Description-box-tital p {
-  font-size: 12px;
-  line-height: 23px;
-}
-.Description-box-tital a {
-  font-size: 14px;
-}
-.Cooper-ah-imger {
-  width: 8%;
-}
+  .Jacob-card-ah {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Director-ah-boxing-3 button {
+    padding: 10px;
+    line-height: 22px;
+    font-size: 12px;
+  }
+
+  .Director-ah-boxing-list-logo {
+    gap: 20px;
+  }
+
+  section.About-ah {
+    padding: 170px 0px 50px 0px;
+  }
+
+  .Director-ah-boxing-3 button {
+    padding: 10px;
+    font-size: 11px;
+    line-height: 5px;
+  }
+
+  .About-main-card-1-ah h2 span {
+    font-size: 15px;
+  }
+
+  .Sweatshirt-ah-select-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    padding-top: 3px;
+    justify-content: center;
+  }
+
+  .Sweatshirt-ah-select-card button {
+    font-size: 10px;
+    line-height: 29px;
+    width: 50%;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 11px !important;
+  }
+
+  .Sweatshirt-ah-select-card select {
+    padding: 11px;
+    font-size: 11px;
+    line-height: 26px;
+  }
+
+  .Sweatshirt-ah-select-card p {
+    font-size: 13px;
+  }
+
+  .Description-box-tital {
+    gap: 1px;
+    padding-top: 15px;
+  }
+
+  .Description-box-tital p {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .Description-box-tital a {
+    font-size: 14px;
+  }
+
+  .Cooper-ah-imger {
+    width: 8%;
+  }
 
   .Cooper-ah-tital h3 {
-              font-size: 13px;
-      line-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
   }
 
   .About-main-card-1-ah h2 {
-      font-size: 20px;
-      line-height: 31px;
+    font-size: 20px;
+    line-height: 31px;
   }
+
   .Cooper-ah-box-main {
     padding-top: 10px;
-}
-.About-main-card-1-ah {
-  padding: 20px;
-}
-.Award-a a {
-  font-size: 16px;
-}
-.satisfied button {
-  font-size: 15px;
-  line-height: 29px;
-  padding: 7px;
-}
-.satisfied h3 {
-  font-size: 17px;
-  padding: 10px 0px 10px 0px;
-}
-.ratings-ah-1-bar {
-  gap: 15px;
-}
-.Award-a {
-  padding-top: 10px;
-}
+  }
 
+  .About-main-card-1-ah {
+    padding: 20px;
+  }
 
+  .Award-a a {
+    font-size: 16px;
+  }
 
+  .satisfied button {
+    font-size: 15px;
+    line-height: 29px;
+    padding: 7px;
+  }
+
+  .satisfied h3 {
+    font-size: 17px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .ratings-ah-1-bar {
+    gap: 15px;
+  }
+
+  .Award-a {
+    padding-top: 10px;
+  }
 
   .ul-li-list-footer ul {
     flex-direction: column;
@@ -8757,6 +9602,20 @@ section.KABC-ah {
     justify-content: space-between;
   }
 
+  .About-main-card-1-ah p {
+    padding: 15px 0px 10px 0px;
+    font-size: 14px;
+  }
+
+  .bar-pogres-box-cards-ah {
+    flex-direction: column;
+  }
+
+  .pogras-card-ah {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .Overall-Statistic-ah {
     flex-direction: column;
     gap: 20px;
@@ -8824,8 +9683,6 @@ section.KABC-ah {
     width: 20px;
     height: 20px;
   }
-
-  section.About-ah {}
 
   .Award-card-ah {
     align-items: flex-start;
@@ -8913,8 +9770,6 @@ section.KABC-ah {
     padding: 8px;
     font-size: 14px;
   }
-
-  .Job-box-ah {}
 
   .four-select-tab {
     margin: 25px 0px 0px 0px;
@@ -9035,511 +9890,1055 @@ section.KABC-ah {
     width: 47%;
     padding: 15px 11px;
   }
+
   .new-subscription-discount {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-}
-.new-subscription-discount p {
-  font-size: 13px;
-}
-.new-subscription-discount a {
-  font-size: 14px;
-}
+  }
 
-/* .subscribe- */
-.subcription-page-sec {
-  padding: 35px 0px;
-}
+  .new-subscription-discount p {
+    font-size: 13px;
+  }
 
-.subscribe-now-txt h3 {
-  font-size: 30px;
-  line-height: 45px;
-}
-.subscribe-now-txt p {
-  font-size: 14px;
-  line-height: 24px;
-}
-.subscribe-now-txt ul li {
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 0px;
-}
-.subscribe-now-txt ul li svg {
-  position: absolute;
-  left: -26px;
-  top: 8px;
-}
-.subcription-box {
-  margin-bottom: 20px;
-  padding: 15px;
-}
-.station-secure-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 11px;
-}
-.station-secure-box svg {
-  width: 50px;
-  height: 25px;
-}
-.station-secure-box p {
-  font-size: 13px;
-  line-height: 23px;
-  padding: 0px 5px 0px 0px;
+  .new-subscription-discount a {
+    font-size: 14px;
+  }
 
-}
-.subscription-credit p {
-  font-size: 14px;
-  line-height: 30px;
-  padding-bottom: 10px;
-}
+  /* .subscribe- */
+  .subcription-page-sec {
+    padding: 35px 0px;
+  }
 
-.subcription-box h4 {
-  font-size: 20px;
-  padding: 40px 0px 5px 0px;
-}
-.subcription-box h6 {
-  font-size: 19px;
-  margin: 0px 0px 25px 0px;
-}
+  .subscribe-now-txt h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-/* PRODUCT-QUALITY */
-.Cooper-ah-box {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 15px;
-}
-.America-Sweatshirt {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.America-ah-part-2 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 0px;
-}
-.About-main-card-1-ah h2 {
-  font-size: 19px;
-}
+  .subscribe-now-txt p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
-.About-main-card-1-ah p {
-  padding: 14px 0px 10px 0px;
-  font-size: 16px;
-} 
-.Sweatshirt-ah-select-card input {
-  padding: 5px;
-  font-size: 14px;
-  line-height: 25px;
-}
-.Sweatshirt-ah-select-box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding-top: 3px;
-  justify-content: flex-start;
-}
-.Sweatshirt-ah-select-card {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 35%;
-}
-.Sweatshirt-ah-select-card select {
-  padding: 11px;
-  width: 100px;
-  font-size: 11px;
-  line-height: 26px;
-}
+  .subscribe-now-txt ul li {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 0px;
+  }
 
-.Sweatshirt-ah-select-card input {
-  padding: 6px;
-  width: 100px;
-}
+  .subscribe-now-txt ul li svg {
+    position: absolute;
+    left: -26px;
+    top: 8px;
+  }
 
-.About-main-card-1-ah p {
-  padding: 14px 0px 10px 0px;
-  font-size: 16px;
-}
-.Sweatshirt-ah-select-card h2 {
-  font-size: 13px !important;
-}
-.Sweatshirt-ah-select-card {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 50%;
-}
+  .subcription-box {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
 
-.About-main-card-1-ah p {
-  padding: 10px 0px 10px 0px;
-  font-size: 16px;
-}
-.Sweatshirt-box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 30px 0px 60px 0px;
-  flex-direction: column;
-  gap: 20px;
-}
-.Cooper-ah-imger {
-  width: 17%;
-}
-.Cooper-ah-tital-head {
-  width: 100%;
-  display: flex;
-  align-items: left;
-
-}
-.Brooklyn-Simmons-card {
-    flex-direction: column;
-    gap: 20px;
-}
-
-.Brooklyn-Simmons-logo-div {
-    width: 100%;
-    gap: 20px;
-}
-
-.Brooklyn-Simmons-card button {
-    line-height: 28px;
-}
-span.edite svg {
-  width: 20px;
-  height: 20px;
-}
-
-.Website-ah-card span h2 {
-  font-size: 18px;
-}
-
-.Website-ah-card span h3 {
-  font-size: 18px;
-}
-
-.Website-ah-card button svg {
-  width: 20px;
-  height: 20px;
-}
-
-.Website-ah-card button {
-  padding: 10px;
-}
-
-.Website-ah-box {
-  gap: 20px;
-  padding-top: 35px;
-}
-
-.Award-card-ah {
+  .station-secure-box {
+    display: flex;
     align-items: flex-start;
-}
+    gap: 11px;
+  }
 
-.About-main-card-1-ah h2 span {
+  .station-secure-box svg {
+    width: 50px;
+    height: 25px;
+  }
+
+  .station-secure-box p {
+    font-size: 13px;
+    line-height: 23px;
+    padding: 0px 5px 0px 0px;
+  }
+
+  .subscription-credit p {
+    font-size: 14px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  .subcription-box h4 {
+    font-size: 20px;
+    padding: 40px 0px 5px 0px;
+  }
+
+  .subcription-box h6 {
+    font-size: 19px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  /* PRODUCT-QUALITY */
+  .Cooper-ah-box {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .America-Sweatshirt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .America-ah-part-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+  }
+
+  .About-main-card-1-ah h2 {
+    font-size: 19px;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 14px 0px 10px 0px;
     font-size: 16px;
-}
+  }
 
-.Job-box-ah {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-}
+  .Sweatshirt-ah-select-card input {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 25px;
+  }
 
-.Job-card-ah {
+  .Sweatshirt-ah-select-box {
     width: 100%;
-}
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-top: 3px;
+    justify-content: center;
+  }
 
-.Job-list-1-ah span h2 {
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 35%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .Sweatshirt-ah-select-card select {
+    padding: 11px;
+    width: 100px;
+    font-size: 11px;
+    line-height: 26px;
+  }
+
+  .Sweatshirt-ah-select-card input {
+    padding: 6px;
+    width: 100px;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 14px 0px 10px 0px;
+    font-size: 16px;
+  }
+
+  .Sweatshirt-ah-select-card h2 {
+    font-size: 13px !important;
+  }
+
+  .Sweatshirt-ah-select-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+  }
+
+  .About-main-card-1-ah p {
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+  }
+
+  .Sweatshirt-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 60px 0px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Cooper-ah-imger {
+    width: 17%;
+  }
+
+  .Cooper-ah-tital-head {
+    width: 100%;
+    display: flex;
+    align-items: left;
+  }
+
+  .Brooklyn-Simmons-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Overall-Statistic-ah ul {
+    width: 100%;
+  }
+
+  .ratings-ah-1-box {
+    width: 100%;
+  }
+
+  .gol-bar-tital {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .gol-bar-head h2 {
+    font-size: 45px;
+  }
+
+  .ratings-ah-1-bar {
+    width: 100%;
+  }
+
+  section.Statistic-ah {
+    padding: 160px 0px 50px 0px;
+  }
+
+  .navtabs {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .main-KABC-ah {
+    padding: 30px 30px 20px 30px;
+  }
+
+  .Industry-ah {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .gol-bar-box {
+    width: 70%;
+  }
+
+  .Brooklyn-Simmons-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Brooklyn-Simmons-logo-div {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .Brooklyn-Simmons-card button {
+    line-height: 28px;
+  }
+
+  span.edite svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Website-ah-card span h2 {
     font-size: 18px;
-}
+  }
 
-.Job-list-2-ah {
+  .Website-ah-card span h3 {
+    font-size: 18px;
+  }
+
+  .Website-ah-card button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Website-ah-card button {
+    padding: 10px;
+  }
+
+  .Website-ah-box {
+    gap: 20px;
+    padding-top: 35px;
+  }
+
+  .Award-card-ah {
+    align-items: flex-start;
+  }
+
+  .About-main-card-1-ah h2 span {
+    font-size: 16px;
+  }
+
+  .Job-box-ah {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Job-card-ah {
+    width: 100%;
+  }
+
+  .Job-list-1-ah span h2 {
+    font-size: 18px;
+  }
+
+  .Job-list-2-ah {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
-}
-.KABC-tital-ah span h2 {
-  font-size: 20px;
-}
+  }
 
-.ratings-ah-1-TITAL span h2 {
-  font-size: 60px;
-}
+  .KABC-tital-ah span h2 {
+    font-size: 20px;
+  }
 
-.ratings-ah-1-TITAL span p {
-  font-size: 16px;
-  padding-bottom: 5px;
-}
+  .ratings-ah-1-TITAL span h2 {
+    font-size: 60px;
+  }
 
-.job-ah-post h2 {
-  font-size: 20px;
-}
+  .ratings-ah-1-TITAL span p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
 
-.job-ah-Filter {
-  width: 64%;
-  gap: 25px;
-}
+  .job-ah-post h2 {
+    font-size: 20px;
+  }
 
-.job-ah-Filter-card p {
-  font-size: 16px;
-}
+  .job-ah-Filter {
+    width: 64%;
+    gap: 25px;
+  }
 
-.job-ah-Filter-card select {
-  padding: 8px 10px;
-  font-size: 15px;
-  border-radius: 5px;
-}
+  .job-ah-Filter-card p {
+    font-size: 16px;
+  }
 
-.director-urer img {
-  width: 10%;
-}
+  .job-ah-Filter-card select {
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
 
-.director-urer {
-  padding-bottom: 24px;
-}
+  .director-urer img {
+    width: 10%;
+  }
 
-.Draft-ah {
-  flex-direction: column;
-}
+  .director-urer {
+    padding-bottom: 14px;
+  }
 
-.Cooper-ah-tital-head {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  flex-direction: column;}
-.Hire-ah-box h2 {
-  font-size: 24px;
-}
+  .Draft-ah {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.Hire-ah-box p {
-  font-size: 16px;
-  padding: 18px 8px;
-}
-.Office-ah-logo {
-  width: 20%;
-}
+  .Hire-ah-box h2 {
+    font-size: 24px;
+  }
 
-.Office-ah-span p {
-  padding: 0px;
-}
+  .Hire-ah-box p {
+    font-size: 16px;
+    padding: 18px 8px;
+  }
 
-.Current-ah-job-card span h3 {
-  font-size: 12px;
-}
+  .Draft-ah {
+    flex-direction: column;
+  }
 
-.Skills-ah-box-main {
-  padding-top: 14px;
-  gap: 10px;
-}
+  .Cooper-ah-tital-head {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
 
-.Skills-ah-box p {
-  padding: 10px 0px 4px 0px;
-  line-height: 20px;
-}
+  .Hire-ah-box h2 {
+    font-size: 24px;
+  }
 
-.Current-ah-job p {
-  line-height: 20px;
-}
+  .Hire-ah-box p {
+    font-size: 16px;
+    padding: 18px 8px;
+  }
 
-.Education-side-ah h4 {
-  line-height: 20px;
-}
+  .Office-ah-logo {
+    width: 20%;
+  }
 
-.Education-side-ah p {
-  padding: 0px;
-}
+  .Office-ah-span p {
+    padding: 0px;
+  }
 
-.Education-ah-boxing {
-  gap: 25px;
-}
+  .Current-ah-job-card span h3 {
+    font-size: 12px;
+  }
 
-.About-main-card-1-ah p {
-  line-height: 20px;
-}
-.Hire-ah-box button {
-  padding: 8px;
-  font-size: 14px;
-}
+  .Skills-ah-box-main {
+    padding-top: 14px;
+    gap: 10px;
+  }
 
-.Job-box-ah {}
+  .Skills-ah-box p {
+    padding: 10px 0px 4px 0px;
+    line-height: 20px;
+  }
 
-.four-select-tab {
-  margin: 25px 0px 0px 0px;
-  padding: 0px 0px 20px 0px;
-}
+  .Current-ah-job p {
+    line-height: 20px;
+  }
 
-.verified-rating-box h6 {
-  font-size: 14px;
-}
+  .Education-side-ah h4 {
+    line-height: 20px;
+  }
 
-.scrllo-bar p {
-  padding: 0px;
-  line-height: 24px;
-}
+  .Education-side-ah p {
+    padding: 0px;
+  }
 
-.w3-light-grey.w3-tiny {
-  height: 12px;
-}
+  .Education-ah-boxing {
+    gap: 25px;
+  }
 
-.About-main-card-1-ah h2 {
-  font-size: 21px;
-}
-.Cooper-ah-tital-head span {
-color: #000;
-font-family: "Public Sans", sans-serif;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: 23px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 10px;
-}
+  .About-main-card-1-ah p {
+    line-height: 20px;
+  }
 
-img {
-width: 76%;
-}
+  .Hire-ah-box button {
+    padding: 8px;
+    font-size: 14px;
+  }
 
-.America-ah {
-  width: 100%;
-} 
-.Sweatshirt-ah {
-  width: 100%;
-}
+  .Hire-ah-box button {
+    padding: 8px;
+    font-size: 14px;
+  }
 
+  .four-select-tab {
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+  }
 
-.Sweatshirt-part-1 {
-  width: 100%;
-}
-.Award-a {
-  padding-top: 10px;
-}
+  .verified-rating-box h6 {
+    font-size: 14px;
+  }
 
-.Sweatshirt-part-2 {
-  width: 100%;
-}
+  .scrllo-bar p {
+    padding: 0px;
+    line-height: 24px;
+  }
 
-.satisfied h2{
-  font-size: 30px;
-  padding-top: 15px;
-  text-align: left;
-}
-.satisfied h3{
-  text-align: left;
-}
-.satisfied p{
-  text-align: left;
-}
-.ratings-ah-1-bar {
-  gap: 0px;
-}
+  .w3-light-grey.w3-tiny {
+    height: 12px;
+  }
 
-.my-ah-class {
-  padding: 25px 0px;
-}
+  .About-main-card-1-ah h2 {
+    font-size: 16px;
+  }
 
-.satisfied button {
-  font-size: 16px;
-  line-height: 30px;
-  padding: 9px;
-}
+  .About-main-card-1-ah h2 {
+    font-size: 21px;
+  }
 
-.Popular-ti-ah-btn-box button {
-  font-size: 14px;
-  padding: 4px 12px;
-  border-radius: 8px;
-}
+  .Cooper-ah-tital-head span {
+    color: #000;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
 
-.Popular-ti-ah-btn-box {
-  gap: 12px;
-}
+  img {
+    width: 76%;
+  }
 
-.latest-rating-user-verified {
-  flex-direction: column;
-  gap: 18px;
-}
+  .America-ah {
+    width: 100%;
+  }
 
-.rating-user-box {
-  width: 100%;
-}
+  .Sweatshirt-ah {
+    width: 100%;
+  }
 
-.verified-rating-box {
-  width: 100%;
-  justify-content: space-between;
-}
+  .Sweatshirt-part-1 {
+    width: 100%;
+  }
 
-.job-ah-post {
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 10px;
-}
+  .Award-a {
+    padding-top: 10px;
+  }
 
-.job-ah-Filter {
-  width: 100%;
-}
+  .Sweatshirt-part-2 {
+    width: 100%;
+  }
 
-.job-ah-post h2 {
-  font-size: 18px;
-}
+  .satisfied h2 {
+    font-size: 30px;
+    padding-top: 15px;
+    text-align: left;
+  }
 
-.job-ah-post h2 span {
-  font-size: 15px;
-}
+  .satisfied h3 {
+    text-align: left;
+  }
 
-.review-news-director {
-  margin: 35px 0px 25px 0px;
-}
-section.About-ah.extara {
-  padding: 50px 0px 50px 0px;
-}
-.review-news-director {
-  margin: 25px 0px 20px 0px;
-}
+  .satisfied p {
+    text-align: left;
+  }
 
-.review-director-para p {
-  font-size: 14px;
-}
+  .ratings-ah-1-bar {
+    gap: 0px;
+  }
 
-.racial-discrimination p {
-  font-size: 14px;
-}
+  .my-ah-class {
+    padding: 25px 0px;
+  }
 
-.racial-discrimination h5 {
-  font-size: 14px;
-}
+  .satisfied button {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 9px;
+  }
 
-.like-report-txt ul li {
-  font-size: 14px;
-}
+  .Popular-ti-ah-btn-box button {
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
 
-.like-report-submitted {
-  margin: 12px 0px;
-}
+  .Popular-ti-ah-btn-box {
+    gap: 12px;
+  }
 
-.latest-rating-comment-box {
-  margin: 25px 0px 5px 0px;
-}
+  .latest-rating-user-verified {
+    flex-direction: column;
+    gap: 18px;
+  }
 
-.latest-comment-txt-input-box input {
-  padding: 12px 40px 12px 18px;
-  font-size: 16px;
-}
+  .rating-user-box {
+    width: 100%;
+  }
 
-.latest-rating-box {
-  margin: 0px 0px 30px 0px;
-}
-.Education-logo {
-  width: 50%;
-}
+  .verified-rating-box {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .job-ah-post {
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job-ah-Filter {
+    width: 100%;
+  }
+
+  .job-ah-post h2 {
+    font-size: 18px;
+  }
+
+  .job-ah-post h2 span {
+    font-size: 15px;
+  }
+
+  .review-news-director {
+    margin: 35px 0px 25px 0px;
+  }
+
+  .review-news-director {
+    margin: 25px 0px 20px 0px;
+  }
+
+  .review-news-director {
+    margin: 35px 0px 25px 0px;
+  }
+
+  section.About-ah.extara {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .review-news-director {
+    margin: 25px 0px 20px 0px;
+  }
+
+  .review-director-para p {
+    font-size: 14px;
+  }
+
+  .racial-discrimination p {
+    font-size: 14px;
+  }
+
+  .racial-discrimination h5 {
+    font-size: 14px;
+  }
+
+  .like-report-txt ul li {
+    font-size: 14px;
+  }
+
+  .like-report-submitted {
+    margin: 12px 0px;
+  }
+
+  .latest-rating-comment-box {
+    margin: 25px 0px 5px 0px;
+  }
+
+  .latest-comment-txt-input-box input {
+    padding: 12px 40px 12px 18px;
+    font-size: 16px;
+  }
+
+  .latest-rating-box {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .select-station-drop select {
+    width: 130px;
+    font-size: 14px;
+  }
+
+  .search-stations-input input::placeholder {
+    font-size: 14px;
+  }
+
+  .search-stations-input input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 1px 0px 0px 0px;
+  }
+
+  .search-stations-input svg {
+    width: 30px;
+    position: relative;
+    top: -10px;
+  }
+
+  .first-banner-txt h3 {
+    font-size: 35px;
+    width: 100%;
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  .first-banner-txt a {
+    font-size: 18px;
+    margin: 40px 0px 0px 0px !important;
+  }
+
+  .first-banner-sec {
+    padding: 50px 0px;
+  }
+
+  .latest-rating-txt h3 {
+    font-size: 30px;
+  }
+
+  .news-director-current {
+    gap: 10px;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .latest-rating-txt h3 {
+    font-size: 20px;
+  }
+
+  .director-urer img {
+    width: 20%;
+  }
+
+  .prod-abslt-ratems {
+    width: 50px !important;
+    height: 75px;
+  }
+
+  .ratemystation-prod-txt h3 {
+    font-size: 20px;
+  }
+
+  .ratemystation-prod-txt h6 {
+    font-size: 16px;
+  }
+
+  .ratemystation-prod-btn {
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .prod-light-btn {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+
+  .prod-dark-btn {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 12px 30px;
+  }
+
+  .newsletter-pagination-slide .pagination a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
+  .journalism-img-txt {
+    flex-direction: column;
+  }
+
+  .your-journalism-img {
+    width: 100%;
+    display: none;
+  }
+
+  .your-journalism-txt {
+    width: 100%;
+    padding: 20px 25px 45px 25px;
+  }
+
+  .newsletter-article-search {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .newsletter-article-search span {
+    right: 10px;
+    top: 35px;
+  }
+
+  .filter-short-box {
+    justify-content: space-between;
+  }
+
+  .filter-box select {
+    padding: 8px 50px;
+    font-size: 14px;
+  }
+
+  .newsletter-likecomment-share {
+    gap: 15px;
+  }
+
+  .newsletter-slide-article {
+    flex-direction: column;
+  }
+
+  .newsletter-slide-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .newsletter-slide-article .newsletter-article-text {
+    border-radius: 0px 0px 20px 20px;
+    filter: none;
+  }
+
+  section.ratemystation-shop-sec h4 {
+    font-size: 30px;
+  }
+
+  .newsletter-comment-reaction ul {
+    gap: 10px;
+  }
+
+  .newsletter-detail-comment {
+    gap: 10px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .newsletter-detail-comment-para p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .newsletter-comment-reaction ul li a {
+    font-size: 12px;
+  }
+
+  .soul-witness-acc-subs a {
+    font-size: 14px;
+    line-height: 26px;
+    padding: 4px 20px;
+  }
+
+  .soul-witness-txt h4 {
+    font-size: 18px;
+  }
+
+  .article-reactions ul li a {
+    font-size: 16px;
+  }
+
+  .soul-witness-txt h6 {
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  .soul-witness-user-imgtxt img {
+    width: 50px;
+  }
+
+  .more-soul-article {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .more-soul-articletxt h4 {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .more-from-soul-witness-box {
+    padding: 30px 20px;
+  }
+
+  .job-start-matter-sec {
+    padding: 50px 0px;
+  }
+
+  .assistant-director-txt h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .assistant-city-dollar-time p {
+    font-size: 11px;
+  }
+
+  .assistant-city-dollar-time {
+    padding: 8px 10px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .assistant-news-director-box ul li {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .actively-hiring-updated a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .job-detailpg-nameflex {
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .job-detailpg-nameflex img {
+    width: 100px;
+  }
+
+  .job-detail-name-description {
+    padding: 30px 20px;
+  }
+
+  .job-select-opts {
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .job-save-share {
+    margin: 10px 0px 0px 0px;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .job-select-opts a {
+    width: 100%;
+  }
+
+  .job-save-share a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .job-qualification-point {
+    flex-direction: column;
+  }
+
+  .filter-box select {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .shop-new-arrival {
+    padding: 30px 40px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .shop-new-arrival-img img {
+    width: 150px;
+  }
+
+  .shop-new-arrival h6 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .shop-new-arrival h3 {
+    font-size: 28px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .shop-new-arrival p {
+    margin: 10px 0px 20px 0px !important;
+    padding: 0px 100px 0px 0px;
+    width: 100%;
+  }
+
+  .themed-cap {
+    right: 0px;
+    top: 40%;
+  }
+
+  .shop-friend-themed h4 {
+    color: #000;
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+    margin: 0px 0px 40px 0px !important;
+  }
+
+  .themed-cap img {
+    width: 150px;
+  }
+
+  .themed-abslt-img {
+    top: 40px;
+  }
+
+  .themed-abslt-img img {
+    width: 150px;
+  }
+
+  .latest-rating-box {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .Education-logo {
+    width: 50%;
+  }
+
+  /* 
+CONTACTUS */
+  .contact-form-fields {
+    padding: 0px;
+  }
+
+  .contact-form-fields {
+    padding: 0px;
+  }
+
+  .contact-follow-like-btn ul li {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+
+  .contact-follow-topline {
+    padding: 20px 0px 0px 0px;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .shop-category {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .ratemystation-shop-prod {
+    border-radius: 20px;
+  }
+
+  .filter-box {
+    gap: 15px;
+  }
+
+  .rating-real-journalist {
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .employer-newroom-box {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .employer-inputfield input {
+    padding: 10px 12px;
+  }
+
+  .employer-dont-have-acc {
+    margin: 10px 0px 20px 40px;
+  }
+
+  .employer-register-btn {
+    margin: 15px 0px 30px 30px;
+  }
+
+  .employer-login-form {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .rms-rating-review p {
+    margin: 10px 0px 5px 0px !important;
+  }
+
+  .americon-prod-cart {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .americon-prod-cart img {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .americon-prod-cart h3 {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .cart-counter {
+    padding: 8px 12px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .americon-prod-cart h6 {
+    display: none;
+  }
+
+  .product-quality-total {
+    margin: 10px 30px 20px 0px;
+  }
+
+  .mycart-qualitytotal {
+    gap: 30px;
+  }
 }

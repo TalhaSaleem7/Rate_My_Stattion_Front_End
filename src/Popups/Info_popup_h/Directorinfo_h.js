@@ -5,24 +5,25 @@ const DirectorInfoForm = () => {
         <div class="row">
           <div class="col">
             <div class=" d-flex align-items-center director--info--popup--head--cont">
-              <div className="info--popup--title d-flex align-items-center">
-                <div className="info--popup--img--alt ">
-                  <img src={require("../../img/admin.png")} alt="" />
+              <div className="info--popup--title--alt--h">
+                <div className="info--popup--title  d-flex align-items-center">
+                  <div className="info--popup--img--alt ">
+                    <img src={require("../../img/admin.png")} alt="" />
+                  </div>
+                  <div className="user--info--popup--title--text">
+                    <div className="info--popup--title--heading d-flex align-items-center">
+                      <h1>Brooklyn Simmons </h1>
+                    </div>
+                    <div className="info--popup--title--text--h d-flex align-items-center">
+                      <p>News Director</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="user--info--popup--title--text">
-                  <div className="info--popup--title--heading d-flex align-items-center">
-                    <h1>Brooklyn Simmons </h1>
-                  </div>
-                  <div className="info--popup--title--text--h d-flex align-items-center">
-                    <p>News Director</p>
-                  </div>
+                <div className="director--info--popup--btn--h">
+                  <a href="">See Profile</a>
                 </div>
               </div>
-              <div className="director--info--popup--btn--h">
-                <a href="">See Profile</a>
-              </div>
-
-              <div class="info--close--h">
+              <div class="info--close--h info--close--h--alt">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"

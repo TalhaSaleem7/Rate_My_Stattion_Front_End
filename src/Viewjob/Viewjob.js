@@ -40,7 +40,7 @@ const Viewjob = () => {
               </div>
               <div className="find-job-matter">
                 <Row>
-                  <Col lg={3}>
+                  <Col lg={3} md={6}>
                     <div className="find-job-select-box">
                       <input
                         type="text"
@@ -62,7 +62,7 @@ const Viewjob = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col lg={3}>
+                  <Col lg={3} md={6}>
                     <div className="find-job-select-box">
                       <input type="text" placeholder="Area, city, or town" />
                       <span>
@@ -81,7 +81,7 @@ const Viewjob = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col lg={4}>
+                  <Col lg={4} md={6}>
                     <div className="find-job-select-box">
                       <input type="text" placeholder="Station name or category" />
                       <span>
@@ -100,7 +100,7 @@ const Viewjob = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col lg={2}>
+                  <Col lg={2} md={6}>
                     <div className="find-job-btn">
                       <button className="btn">
                         <RiSearchLine /> Search
@@ -121,12 +121,12 @@ const Viewjob = () => {
       <section className="search-job-sec">
         <Container>
           <Row>
-            <Col lg={8}>
+            <Col lg={7} md={6}>
               <div className="newsletter-article-search">
                 <h3>Recommend for you</h3>
               </div>
             </Col>
-            <Col lg={4}>
+            <Col lg={5} md={6}>
               <div className="filter-short-box">
                 <div className="filter-box">
                   <p>Filter:</p>
@@ -203,7 +203,7 @@ const Viewjob = () => {
         <h4>RateMyStation's Shop</h4>
         <Container>
           <Row>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -217,7 +217,7 @@ const Viewjob = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
@@ -231,7 +231,7 @@ const Viewjob = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage3} alt="Anonymous Source Onesie" />
                 <div className="ratemystation-prod-txt">
@@ -244,7 +244,7 @@ const Viewjob = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+            <Col lg={3} md={4}>
               <div className="ratemystation-shop-prod">
                 <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
                 <div className="ratemystation-prod-txt">

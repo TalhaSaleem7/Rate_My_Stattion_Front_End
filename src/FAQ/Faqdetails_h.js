@@ -1,13 +1,12 @@
 import Related from "./component/Relatedarticles_h";
 import Questioncard from "./component/Questioncard_h";
-
+import Header from "../Header/Header";
+import Footerah from "../footerah/Footerah";
 
 const FaqDetail = () => {
-
-
-
   return (
     <div>
+      <Header />
       <section className="w-100 faq--search--detail--section--h">
         <div className="container">
           <div className="row">
@@ -106,6 +105,8 @@ const FaqDetail = () => {
           <Questioncard className="col-lg-12 faq--search--detail--container faq--search--detail--container-alt-2" />
         </div>
       </div>
+
+      <Footerah />
     </div>
   );
 };
