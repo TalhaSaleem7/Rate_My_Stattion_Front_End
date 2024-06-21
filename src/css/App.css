@@ -2736,7 +2736,7 @@ header.header_main {
 .header_end a:hover {
   cursor: pointer;
 }
-.header_end a:nth-child(2) {
+.login-btn {
   color: #194d79;
   text-align: center;
   font-family: "Public Sans";
@@ -2750,16 +2750,16 @@ header.header_main {
   transition: all 0.6s ease;
 }
 
-.header_end a:hover:nth-child(2) {
+.login-btn{
   background: #194d79;
   color: #fff !important;
 }
 
-.header_end a:nth-child(1) {
+.header_end a {
   position: relative;
 }
 
-.header_end a:nth-child(1) span {
+.header_end a span {
   position: absolute;
   top: -9px;
   right: -10px;
@@ -6887,11 +6887,11 @@ section.employer-login-pg-sec {
 #bar1,#bar3 {
   width: 70%;
 }
-
+/* 
 #checkbox:checked + .toggle .bars {
   position: absolute;
   transition-duration: .5s;
-}
+} */
 
 #checkbox:checked + .toggle #bar2 {
   transform: scaleX(0);
@@ -6976,19 +6976,82 @@ section.employer-login-pg-sec {
   transition-duration: .5s;
   top: 18px;
     position: absolute;
+    background-color: #fff;
+
 }
 .toggle #barz3 {
   width: 100%;
   transform: rotate(-45deg);
   transition-duration: .5s;
+  background-color: #fff;
 }
 
-
+nav.helo-drop label {
+  width: 100%;
+}
 
 .submit-station-btn {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+
+/* body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
+
+h1 {padding: 40px; text-align: center; font-size: 1.5em;}
+
+li a {text-decoration : none; color : #2d2f31;} */
+
+
+nav {
+ 
+  background: #d9d9d9;
+
+}
+
+.drop-out {
+  padding : 10px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+  width: 100%;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+
+
+
+
+
+
+
+
+dl, ol, ul{
+  margin: 0px !important;
 }
 
 .submit-station-btn .submitbtn-dark {
@@ -7068,7 +7131,7 @@ section.employer-login-pg-sec {
     font-size: 11px;
   }
 
-  .header_end a:nth-child(2) {
+  .login-btn {
     font-size: 16px;
     padding: 3px 42px;
   }
@@ -8227,7 +8290,7 @@ section.employer-login-pg-sec {
     gap: 5px;
   }
 
-  .header_end a:nth-child(2) {
+  .login-btn {
     font-size: 14px;
     border-radius: 10px;
     padding: 0px 20px;
@@ -8271,7 +8334,7 @@ section.employer-login-pg-sec {
     gap: 30px;
   }
 
-  .header_end a:nth-child(2) {
+  .login-btn {
     font-size: 15px;
     line-height: 28px;
     padding: 4px 35px;
