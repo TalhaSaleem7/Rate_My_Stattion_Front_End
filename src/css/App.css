@@ -7038,7 +7038,64 @@ section.employer-login-pg-sec {
   line-height: 26px;
   margin: 0px 0px 6px 0px;
 }
+#checkbox {
+  display: none;
+}
 
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(25 77 121);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
 .submit-staion-field select {
   border-radius: 10px;
   background: var(--Gray-6, #F2F2F2);
@@ -7096,6 +7153,21 @@ section.employer-login-pg-sec {
   background: transparent;
   color: #194D79;
 }
+
+
+ .toggle #barz1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+  top: 18px;
+    position: absolute;
+}
+.toggle #barz3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
 
 
 .submit-station-btn {
@@ -8261,13 +8333,13 @@ span.See button {
   .header_nav {
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 12px;
   }
 
   .header_nav button {
     width: 40px;
-    background: #000;
-    color: #fff;
+  border: none;
+  background-color:transparent;
   }
 
   .header_nav button:hover {

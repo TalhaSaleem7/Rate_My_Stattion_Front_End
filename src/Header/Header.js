@@ -10,7 +10,7 @@ const Header = () => {
   const [panelWidth, setPanelWidth] = useState("0");
 
   const openNav = () => {
-    setPanelWidth("250px");
+    setPanelWidth("100%");
   };
 
   const closeNav = () => {
@@ -72,9 +72,22 @@ const Header = () => {
             </Col>
           </Row>
           <div className="header_nav">
-              <button onClick={openNav}>☰</button>
+              <button onClick={openNav} >
+              <input type="checkbox" id="checkbox"/>
+    <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3" ></div>
+    </label>
+              </button>
               <div id="mySidepanel" className="sidepanel" style={{ width: panelWidth }}>
-                <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>×</a>
+                <a href="javascript:void(0)" className="closebtn" > 
+                <div class="toggle"  onClick={closeNav}>
+        <div class="bars" id="barz1"></div>
+    
+        <div class="bars" id="barz3" ></div>
+    </div>
+                </a>
                 <a href="#" onClick={about}>About</a>
                 <a href="#" onClick={newsletter}>Newsletter</a>
                 <a href="#" onClick={job}>Jobs</a>
