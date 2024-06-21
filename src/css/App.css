@@ -2796,6 +2796,8 @@ header.header_main {
   margin: 0px 0px 50px 0px !important;
 }
 
+
+
 .select-station-drop select option {
   font-size: 14px;
 }
@@ -2832,14 +2834,25 @@ header.header_main {
   font-weight: 300;
 }
 
+
+.select-station-drop {
+  position: relative;
+}
+
+.select-tv-icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
 .select-station-drop select {
   border-radius: 25px 0px 0px 25px;
   background: #89c400;
-  padding: 23px 30px;
+  padding: 21.5px 30px 22.5px 70px;
   width: 260px;
   color: #fff;
   font-family: "Public Sans", sans-serif;
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 700;
   position: relative;
 }
@@ -2876,6 +2889,7 @@ header.header_main {
   color: #194d79;
   cursor: pointer;
 }
+
 
 /*********** First Banner Section CSS End ***********/
 
@@ -2977,12 +2991,31 @@ section.latest-rating-sec {
   border-radius: 8px;
   background: #f2f2f2;
   padding: 20px 20px;
+  position: relative;
 }
+
+
+.review-news-director-second {
+  margin: 120px 0px 0px 0px;
+}
+
+.reporter-topline {
+  position: absolute;
+  top: -40px;
+  z-index: 999;
+  width: 100%;
+  left: 0px;
+}
+
 
 .director-urer {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.director-urer img {
+  width: 51.991px;
 }
 
 .news-director-current {
@@ -3430,6 +3463,7 @@ section.latest-rating-sec {
 
 .follow-us-rate ul {
   padding: 0px;
+  margin: 0px;
 }
 
 .follow-us-rate ul li a {
@@ -3444,6 +3478,12 @@ section.latest-rating-sec {
 .follow-us-rate ul li a i {
   margin-right: 10px;
   font-size: 22px;
+}
+
+.follow-us-rate ul li a svg {
+  width: 30px;
+  height: 28px;
+  margin: 0px 12px 0px 0px;
 }
 
 .follow-us-rate ul li {
@@ -3464,6 +3504,101 @@ section.latest-rating-sec {
 }
 
 /*********** Latest Rating Section CSS End ***********/
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.profile-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.profile-details h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  width: 700px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.jobdetail-click-btn h6 {
+  color: #194D79;
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 5px 0px 0px 0px;
+}
+
+.job-detail {
+  text-align: center;
+  flex: 1;
+}
+
+.job-detail span {
+  display: block;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.job-detail p {
+  margin: 5px 0 0;
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.rating img {
+  margin-left: 5px;
+  width: 50px;
+}
+
+
 
 /*********** RateMyStation's Shop Section CSS Start ***********/
 
@@ -5460,28 +5595,7 @@ footer {
 
 /*********** View Job Detail Page CSS End ***********/
 
-/* ****************** Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start ****************** */
+
 
 /*********** Job Opening Page CSS Start ***********/
 
@@ -6938,6 +7052,9 @@ section.employer-login-pg-sec {
 /*********** Submit A Station Form Page CSS End ***********/
 
 /******************* Shahdin Pages CSS End *******************/
+
+
+
 @media screen and (max-width: 1366px) {
   header.header_main {
     padding: 20px 0px 12px 0px;
@@ -7638,9 +7755,15 @@ section.employer-login-pg-sec {
   }
 
   .select-station-drop select {
-    padding: 20px 30px;
+    padding: 20.5px 30px 20.5px 70px;
     width: 220px;
-  }
+    margin: 0.4px 0px 0px 0px;
+    font-size: 18px !important;
+}
+
+.select-tv-icon {
+  top: 14px;
+}
 
   .first-banner-txt a {
     font-size: 20px;
@@ -7680,7 +7803,7 @@ section.employer-login-pg-sec {
 
   .news-director-current a {
     font-size: 8px;
-    margin: 0px 0px 4px 0px !important;
+    margin: 3px 0px 0px 0px !important;
   }
 
   .review-news-director {
@@ -8457,6 +8580,31 @@ section.employer-login-pg-sec {
   .americon-prod-cart h6 {
     margin: 0px;
   }
+
+  .review-news-director-second {
+    margin: 120px 0px 0px 0px !important;
+  }
+  
+  .job-details {
+    width: 480px;
+}
+
+.job-detail p {
+  font-size: 14px;
+}
+
+.job-detail span {
+  font-size: 10px;
+}
+
+.job-detail {
+  flex: auto;
+}
+
+.search-stations-input span {
+  top: -2px;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -8472,6 +8620,8 @@ section.employer-login-pg-sec {
     width: 50%;
     margin: 0 auto;
   }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -8710,9 +8860,29 @@ section.employer-login-pg-sec {
   }
 
   .select-station-drop select {
-    padding: 16px 20px;
+    padding: 18px 20px 17px 65px;
     width: 200px;
-  }
+    margin: 0.5px 0px 0px 0px;
+    font-size: 16px !important;
+}
+
+.select-tv-icon {
+  top: 10px;
+  left: 25px;
+}
+
+.select-tv-icon svg {
+  width: 30px;
+}
+
+.select-tv-icon svg {
+  width: 30px;
+}
+
+.search-stations-input span {
+  top: -6px;
+}
+
 
   .search-stations-input input {
     width: 400px;
@@ -9855,9 +10025,7 @@ section.employer-login-pg-sec {
     font-size: 14px;
   }
 
-  .like-report-txt ul li {
-    font-size: 14px;
-  }
+
 
   .like-report-submitted {
     margin: 12px 0px;
@@ -10491,7 +10659,7 @@ section.employer-login-pg-sec {
   }
 
   .like-report-txt ul li {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .like-report-submitted {
@@ -10513,8 +10681,19 @@ section.employer-login-pg-sec {
 
   .select-station-drop select {
     width: 130px;
-    font-size: 14px;
-  }
+    padding: 14.5px 0px 14.5px 50px;
+    margin: 1.2px 0px 0px 0px;
+    font-size: 12px !important;
+}
+
+.select-tv-icon {
+  top: 4px;
+  left: 25px;
+}
+
+.select-tv-icon svg {
+  width: 20px;
+}
 
   .search-stations-input input::placeholder {
     font-size: 14px;
@@ -10527,10 +10706,11 @@ section.employer-login-pg-sec {
   }
 
   .search-stations-input svg {
-    width: 30px;
+    width: 25px;
     position: relative;
-    top: -10px;
-  }
+    top: -3px;
+    right: -10px;
+}
 
   .first-banner-txt h3 {
     font-size: 35px;
@@ -10628,8 +10808,9 @@ section.employer-login-pg-sec {
   }
 
   .filter-box select {
-    padding: 8px 50px;
+    padding: 8px 30px;
     font-size: 14px;
+    margin: 0px 0px 10px 0px;
   }
 
   .newsletter-likecomment-share {
@@ -10788,9 +10969,7 @@ section.employer-login-pg-sec {
     flex-direction: column;
   }
 
-  .filter-box select {
-    margin: 0px 0px 10px 0px;
-  }
+
 
   .shop-new-arrival {
     padding: 30px 40px;
@@ -10941,4 +11120,20 @@ CONTACTUS */
   .mycart-qualitytotal {
     gap: 30px;
   }
+
+
+  .job-details {
+    width: 350px;
+    left: 10px;
+    top: 80px;
+}
+
+  .job-detail p {
+    font-size: 10px;
+}
+
+.review-news-director-second {
+  margin: 55px 0px 0px 0px !important;
+}
+
 }

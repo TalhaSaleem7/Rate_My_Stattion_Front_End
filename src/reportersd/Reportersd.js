@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { RiThumbUpFill, RiFlagFill, RiVerifiedBadgeFill  } from 'react-icons/ri';
 import Latestuserratingicon from "../img/latest-rating-user-icon.png";
 import karbabclogo from "../img/karc-abc-logo.png";
 import reviewdirectorimg from "../img/review-director-img.png"; 
@@ -23,7 +23,7 @@ const Reportersd = () => {
                         </div>
                     </div>
                     <div class="verified-rating-box">
-                        <h6><span><i class="ri-verified-badge-fill"></i></span> Verified Rating <span
+                        <h6><span><RiVerifiedBadgeFill /></span> Verified Rating <span
                             class="rating-of">of</span></h6>
                         <div class="karc-txt-logo">
                             <img src={karbabclogo} alt="" />
@@ -33,6 +33,11 @@ const Reportersd = () => {
                 </div>
                 <div class="review-news-director">
                     <div class="row">
+                    <div class="col-lg-12">
+                        <div class="reporter-topline">
+                          <hr/>
+                        </div>
+                      </div>
                         <div class="col-lg-4 p-0">
                             <div class="director-urer">
                                 <img src={reviewdirectorimg} alt="" />
@@ -119,8 +124,8 @@ const Reportersd = () => {
                 <div class="like-report-submitted">
                     <div class="like-report-txt">
                         <ul>
-                            <li><span><i class="ri-thumb-up-fill"></i></span> Liked</li>
-                            <li><span><i class="ri-flag-fill"></i></span> Report</li>
+                            <li><span><RiThumbUpFill /></span> Liked</li>
+                            <li><span><RiFlagFill /></span> Report</li>
                         </ul>
                     </div>
                     <p>submitted: 03-24-21</p>
