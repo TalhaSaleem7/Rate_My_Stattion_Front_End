@@ -8,6 +8,8 @@ import Cardah from "../Cardah/Cardah";
 import About1 from "../About/About1";
 import Footerah from "../footerah/Footerah";
 import { Container } from "react-bootstrap";
+import Header1 from "../Header/Header2";
+import Header from "../Header/Header";
 
 
 
@@ -19,6 +21,8 @@ return(
 
 
     <>
+
+<Header1/>
 
 <section class="KABC-ah">
     <Container>

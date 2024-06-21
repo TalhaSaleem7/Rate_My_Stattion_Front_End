@@ -29,10 +29,10 @@ const EmployerLoginPg = () => {
                                         <div className="employer-newroom-box">
                                             <Tabs aria-label="Pills" style="pills">
                                                 <Tabs.Item active title="Employee">
-                                                    <EmployerLoginForm/>
+                                                <EmployerLoginForm/>
                                                 </Tabs.Item>
                                                 <Tabs.Item title="Newsroom">
-                                                    <NewsroomLoginForm/>
+                                                <NewsroomLoginForm/>
                                                 </Tabs.Item>
                                             </Tabs>
                                         </div>

@@ -76,6 +76,7 @@ import StationInfoForm from "./Popups/Info_popup_h/Stationinfo_h";
 import UserInfoForm from "./Popups/Info_popup_h/Userinfo_h";
 import DirectorInfoForm from "./Popups/Info_popup_h/Directorinfo_h";
 import Sweatshirtah from "./Sweatshirtah/Sweatshirtah";
+import Header1 from "./Header/Header2";
 
 
 
@@ -90,6 +91,7 @@ function App() {
         <Route path="/kabcah" exact element={<KABCah />} />
         <Route path="/kabcah1" exact element={<KABCah1 />} />
         <Route path="/Header" exact element={<Header />} />
+        <Route path="/Header1" exact element={<Header1 />} />
         <Route path="/Footerah" exact element={<Footerah />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/About1" exact element={<About1 />} />
