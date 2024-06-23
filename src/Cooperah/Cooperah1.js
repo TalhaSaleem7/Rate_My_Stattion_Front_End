@@ -8,8 +8,11 @@ import moudal1 from "../img/moudal1.jpg";
 import moudal2 from "../img/moudal2.jpg";
 import moudal3 from "../img/moudal3.jpg";
 import moudal4 from "../img/moudal4.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Cooperah1 = () => {
+  const navigate = useNavigate();
+  const cart = () => navigate("/mycart");
   return (
     <>
       <div class="About-main-card-1-ah">
@@ -63,7 +66,7 @@ const Cooperah1 = () => {
 
               <div class="Sweatshirt-ah-select-card">
                 <h2>$33.50</h2>
-                <button>Add to cart</button>
+                <button onClick={cart}>Add to cart</button>
               </div>
             </div>
 

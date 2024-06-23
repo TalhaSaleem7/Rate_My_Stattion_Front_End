@@ -196,7 +196,8 @@ textarea {
 .row .faq--main--card--one,
 .main--card--two--container,
 .faq--detail--card--two--btn,
-.faq--right--button--h {
+.faq--right--button--h,
+ul.save--share--pop {
   box-shadow: 0px 4px 13px 0px #00000026;
 }
 .faq--main--h .faq--main--search--h,
@@ -340,7 +341,7 @@ label {
   padding: 0;
 }
 .experience--desc--h {
-  height: 175px;
+  max-height: 175px;
 }
 
 /* ======================================
@@ -887,12 +888,15 @@ FAQ Terms Styles
   position: relative;
 }
 
-.faq--work--card--h::before {
-  content: url(../img/work_card_dots_h.png);
+.faq--work--card--h--dots {
   position: absolute;
-  display: block;
+
   top: 5%;
-  right: 4%;
+  right: 1.5%;
+}
+.faq--work--card--h--dots svg {
+  width: 30px;
+  color: #828282;
 }
 .faq--work--card--list ul,
 .faq--work--card--list li {
@@ -1316,13 +1320,17 @@ ul.save--share--pop li {
   font-size: var(--font-size-16);
   font-weight: 800;
   cursor: pointer;
+  align-items: center;
+  margin: 0;
 }
 
 ul.save--share--pop {
   padding: 10px;
   border-radius: 5px;
-  background: white;
-  max-width: 200px;
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  background-color: white;
 }
 
 ul.save--share--pop li:hover {
@@ -1330,6 +1338,16 @@ ul.save--share--pop li:hover {
   border-radius: 5px;
 }
 
+/* ======================================
+Popup Position
+====================================== */
+
+.popup--cont--h {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* ======================================
 Media Query
 ====================================== */

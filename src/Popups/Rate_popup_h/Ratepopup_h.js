@@ -1,7 +1,7 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
-const RateThisProd = () => {
+const RateThisProd = ({ close }) => {
   return (
-    <div className="container">
+    <div className="container popup--cont--h">
       <div className="my--container--h mx-auto">
         <div className="row">
           <div className="col">
@@ -61,12 +61,14 @@ const RateThisProd = () => {
               <button
                 type="button"
                 className="btn btn-primary about--btn--h about--btn--h--alt"
+                onClick={close}
               >
                 Submit
               </button>
               <button
                 type="button"
                 className="btn btn-outline-primary about--btn--h about--btn--h--alt--2"
+                onClick={close}
               >
                 Cancel
               </button>
