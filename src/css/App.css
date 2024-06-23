@@ -7000,6 +7000,13 @@ section.employer-login-pg-sec {
 nav.helo-drop label {
   font-weight: bold;
   width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user--pic--header {
+  width: 43%;
+  border-radius: 5px;
 }
 
 .submit-station-btn {
@@ -7024,10 +7031,11 @@ nav.helo-drop {
   display: block;
   width: 100%;
 }
-.drop-out span {
-  font-size: 18px;
+.drop-out {
+  font-size: 16px;
   font-weight: bold;
   color: black;
+  cursor: pointer;
 }
 .drop-out::after {
   float: right;
@@ -7056,16 +7064,25 @@ nav.helo-drop {
 ul.slide a {
   color: black;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  gap: 5px;
+}
+ul.slide svg {
+  width: 25px;
 }
 .slide hr {
   margin: 0;
 }
 .slide li {
-  width: max-content;
+  width: 100%;
   padding: 10px;
+  text-align: left;
 }
 .slide li:hover {
-  background-color: #bdbdbd;
+  background-color: #e0e0e0;
+  border-radius: 5px;
 }
 #touch {
   position: absolute;
