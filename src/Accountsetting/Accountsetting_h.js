@@ -6,6 +6,8 @@ import VerifyComponent from "./component/Verify_h";
 import PasswordComponent from "./component/Password_h";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
+import { useNavigate } from "react-router-dom";
+import Header1 from "../Header/Header2";
 
 const AccountSettings = () => {
   const [activeTab, setActiveTab] = useState("Profile");
@@ -14,9 +16,11 @@ const AccountSettings = () => {
     setActiveTab(tabName);
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
-      <Header />
+      <Header1 />
       <div className="container account--setting--container--pad--h">
         <div className="account--setting--container">
           <div className="row account--setting--row--h">

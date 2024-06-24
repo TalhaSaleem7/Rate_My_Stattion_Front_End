@@ -13,6 +13,10 @@ body {
 header.header_main_Mobile {
   display: none;
 }
+header.header_main .container,
+header.header_main .row > * {
+  padding: 0;
+}
 
 section.KABC-ah {
   width: 100%;
@@ -149,8 +153,7 @@ span.See button {
 span.Info {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;  
   gap: 10px;
 }
 
@@ -171,7 +174,7 @@ button.Contact-ah {
   line-height: 33px;
   /* 206.25% */
   border-radius: 8px;
-  padding: 5px 18px !important;
+  padding: 5px 28px !important;
 }
 
 span.Info button svg {
@@ -1607,6 +1610,10 @@ span.parsent-icon p {
   /* 162.5% */
 }
 
+.search-stations-input span::after {
+  display: none;
+}
+
 .Director-ah-boxing p {
   color: #89c400;
   font-family: "Public Sans", sans-serif;
@@ -2451,7 +2458,7 @@ button.change-red {
 }
 
 .America-ah {
-  width: 44%;
+  width: 50%;
 }
 
 .Sweatshirt-ah {
@@ -2686,16 +2693,16 @@ header.header_main {
 }
 .header-logo {
   cursor: pointer;
+  width: 80.1%;
 }
 .header-logo img {
-  width: 177.797px;
+  width: 100%;
 }
 
 .header_nav ul {
   display: flex;
   align-items: center;
-  gap: 50px;
-  margin: 0px 0px 0px 20px;
+  justify-content: space-between;
 }
 
 .header_nav ul li {
@@ -2731,7 +2738,7 @@ header.header_main {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 30px;
+  gap: 20px;
 }
 .header_end a:hover {
   cursor: pointer;
@@ -2750,32 +2757,97 @@ header.header_main {
   transition: all 0.6s ease;
 }
 
-.login-btn{
+.login-btn {
+  background: transparent;
+  color: #194d79 !important;
+}
+.login-btn:hover {
+  transition: all 0.6s ease;
   background: #194d79;
   color: #fff !important;
 }
-
 .header_end a {
   position: relative;
 }
 
 .header_end a span {
   position: absolute;
-  top: -9px;
-  right: -10px;
+  top: -6px;
+  right: 4px;
   background: #89c400;
-  padding: 1px 7px;
-  border-radius: 50px;
+  padding: 0px 4px;
+  border-radius: 100%;
   color: #fff;
   font-family: "Public Sans";
-  font-size: 12px;
+  font-size: 9px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.7;
+}
+
+.header_end a svg {
+  padding: 5px 7px 5px 5px;
+  border-radius: 10px;
+  height: 36px;
+  transition: all 0.6s ease;
+  width: 42px;
+}
+
+.header_end a svg:hover {
+  background: #d7d7d7;
 }
 
 /*********** Header Main CSS ENd ***********/
 
+.rms--header--row {
+  align-items: center;
+}
+.rms_header_logo {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.rms--header--row > * {
+  padding: 0 !important;
+}
+
+.rms_header_logo--cont {
+  width: 91px;
+}
+
+.rms_header_logo a {
+  align-self: center;
+}
+
+section.rms_header {
+  padding: 15px 0px;
+  background-color: white;
+  box-shadow: 0px 4px 12px 0px #00000026;
+  position: relative;
+}
+
+.rms--header--slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 98px;
+  background: #e0e0e0;
+}
+
+.toggle.clicked .bars:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+
+.toggle.clicked .bars:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.toggle.clicked .bars:nth-child(3) {
+  transform: scaleX(0);
+}
 /*********** First Banner Section CSS Start ***********/
 
 .first-banner-sec {
@@ -2819,9 +2891,30 @@ header.header_main {
   width: 650px;
   border-radius: 0px 20px 20px 0px;
   background: #fff;
-  box-shadow: 5px 0px 13px 0px rgba(8, 42, 83, 0.5);
+  box-shadow: 6px 0px 13px 0px rgba(8, 42, 83, 0.5);
   border: none;
   font-size: 18px;
+}
+.search-stations-input--rms input {
+  padding: 10px 20px;
+  box-shadow: none;
+  background-color: #f2f2f2;
+  font-size: 16px !important;
+}
+.search-stations-input--rms--alt input {
+  border-radius: 15px;
+  padding: 17px 28px;
+  width: 100%;
+}
+.search-stations-input--rms input::placeholder {
+  font-size: 16px !important;
+}
+.search-stations-input--rms .search-stations-input svg {
+  width: 30px;
+}
+.search-stations-input.full-width input {
+  width: 890px;
+  border-radius: 20px;
 }
 
 .search-stations-input input::placeholder {
@@ -2831,18 +2924,28 @@ header.header_main {
   font-style: normal;
   font-weight: 300;
 }
+/* 
+.select-station-drop {
+  position: relative;
+}
+
+.select-tv-icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
 
 .select-station-drop select {
   border-radius: 25px 0px 0px 25px;
   background: #89c400;
-  padding: 23px 30px;
+  padding: 21.5px 30px 22.5px 70px;
   width: 260px;
   color: #fff;
   font-family: "Public Sans", sans-serif;
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 700;
   position: relative;
-}
+} */
 
 .search-stations-input input:focus {
   outline: none;
@@ -2850,6 +2953,90 @@ header.header_main {
 
 .select-station-drop select:focus {
   outline: none;
+}
+
+.select-station-drop {
+  display: flex;
+  align-items: center;
+  /* margin: 10.5px 0px 10px 0px; */
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  padding: 14.5px 10px 15.3px 30px;
+  background-color: #89c400;
+  position: relative;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: -6px 0px 13px 0px rgba(8, 42, 83, 0.5);
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+}
+.search-stations-input--rms .select-container {
+  padding: 10px 20px;
+  box-shadow: none;
+}
+.select-container:hover {
+  background-color: #75a111;
+}
+
+.select-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.select-box {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #fff;
+  font-family: "Public Sans";
+  font-size: 22px !important;
+  width: 100%; /* Ensure the select-box takes the full width */
+}
+
+.select-box option {
+  padding: 10px;
+  font-size: 22px !important;
+  color: #000;
+}
+
+.select-tv-icon svg {
+  color: #fff;
+}
+
+.first-banner-txt a {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  margin: 60px 0px 0px 0px !important;
+  color: #fff;
+  text-decoration-line: underline !important;
+}
+
+.search-stations-input {
+  position: relative;
+  display: flex;
+}
+
+.search-stations-input span {
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  font-size: 40px;
+  color: #194d79;
+  cursor: pointer;
 }
 
 .first-banner-txt a {
@@ -2876,7 +3063,19 @@ header.header_main {
   color: #194d79;
   cursor: pointer;
 }
-
+.search-stations-input--rms span {
+  top: -2px;
+}
+.search-stations-input--rms--alt span {
+  top: -4px;
+}
+.search-stations-input--rms span svg {
+  width: 24px;
+}
+.search-stations-input--rms .select-box,
+.search-stations-input--rms option {
+  font-size: 16px !important;
+}
 /*********** First Banner Section CSS End ***********/
 
 /*********** Latest Rating Section CSS Start ***********/
@@ -2977,12 +3176,29 @@ section.latest-rating-sec {
   border-radius: 8px;
   background: #f2f2f2;
   padding: 20px 20px;
+  position: relative;
+}
+
+.review-news-director-second {
+  margin: 120px 0px 0px 0px;
+}
+
+.reporter-topline {
+  position: absolute;
+  top: -40px;
+  z-index: 999;
+  width: 100%;
+  left: 0px;
 }
 
 .director-urer {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.director-urer img {
+  width: 51.991px;
 }
 
 .news-director-current {
@@ -3331,8 +3547,11 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 700;
   color: #000;
+  cursor: pointer;
 }
-
+.newsletter-side-head-alt h3 {
+  cursor: default;
+}
 .newsletter-side-head a {
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -3340,12 +3559,16 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 300;
   color: #194d79;
+  cursor: pointer;
 }
-
+.newsletter-side-head a:hover {
+  text-decoration: underline !important;
+}
 .side-newsletter-box {
   margin: 0px 0px 30px 0px;
   background: #fff;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .side-newsletter-txt {
@@ -3364,6 +3587,8 @@ section.latest-rating-sec {
 .side-newsletter-box img {
   width: 100%;
 }
+
+
 
 .side-subscribe-box {
   background: #fff;
@@ -3430,6 +3655,7 @@ section.latest-rating-sec {
 
 .follow-us-rate ul {
   padding: 0px;
+  margin: 0px;
 }
 
 .follow-us-rate ul li a {
@@ -3444,6 +3670,12 @@ section.latest-rating-sec {
 .follow-us-rate ul li a i {
   margin-right: 10px;
   font-size: 22px;
+}
+
+.follow-us-rate ul li a svg {
+  width: 30px;
+  height: 28px;
+  margin: 0px 12px 0px 0px;
 }
 
 .follow-us-rate ul li {
@@ -3464,6 +3696,100 @@ section.latest-rating-sec {
 }
 
 /*********** Latest Rating Section CSS End ***********/
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.profile-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.profile-details h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  width: 700px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobdetail-click-btn h6 {
+  color: #194d79;
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 5px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.job-detail {
+  text-align: center;
+  flex: 1;
+}
+
+.job-detail span {
+  display: block;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.job-detail p {
+  margin: 5px 0 0;
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.rating img {
+  margin-left: 5px;
+  width: 50px;
+}
 
 /*********** RateMyStation's Shop Section CSS Start ***********/
 
@@ -3568,6 +3894,7 @@ section.ratemystation-shop-sec h4 {
 .ratemystation-allprod-btn {
   margin: 40px 0px 0px 0px;
   text-align: center;
+  cursor: pointer;
 }
 
 .ratemystation-allprod-btn a {
@@ -3587,7 +3914,7 @@ section.ratemystation-shop-sec h4 {
 
 .ratemystation-allprod-btn a:hover {
   background: transparent;
-  color: #194d79;
+  color: #194d79 !important;
 }
 
 .prod-abslt-ratems {
@@ -3647,6 +3974,7 @@ section.ratemystation-shop-sec h4 {
   color: #000;
   background: #fff;
   padding: 10px 40px;
+  cursor: pointer;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   border: 1px solid #fff;
@@ -3655,7 +3983,7 @@ section.ratemystation-shop-sec h4 {
 
 .looking-for-worktxt a:hover {
   background: transparent;
-  color: #fff;
+  color: #fff !important;
 }
 
 /*********** Looking for work Section CSS End ***********/
@@ -4101,12 +4429,14 @@ section.latest-article-recommend-sec {
 
 .latest-article-box {
   margin: 0px 0px 30px 0px;
+  cursor: pointer;
 }
 
 .newsletter-slide-article {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   display: flex;
   margin: 0px 0px 30px 0px;
+  cursor: pointer;
 }
 
 .newsletter-slide-article .newsletter-article-text {
@@ -4269,6 +4599,7 @@ section.search-job-sec {
   background: #fff;
   border-radius: 20px;
   margin: 0px 0px 30px 0px;
+  cursor: pointer;
 }
 
 .assistant-logo-txt-more {
@@ -4734,6 +5065,8 @@ section.shop-product-search-sec {
 
 .ratemystaion-contact-form ul li svg {
   margin-right: 10px;
+  color: #194D79;
+  font-size: 20px;
 }
 
 .ratemystaion-contact-form {
@@ -4915,7 +5248,9 @@ footer {
   align-items: center;
   gap: 30px;
 }
-
+.icon-list-footer svg:hover path {
+  fill: #89c400;
+}
 .ul-li-list-footer ul li a {
   color: var(--Gray-3, #828282) !important;
   font-family: "Public Sans", sans-serif;
@@ -4929,7 +5264,8 @@ footer {
 
 .ul-li-list-footer ul li a:hover {
   cursor: pointer;
-  text-decoration: underline !important;
+
+  color: black !important;
 }
 /*********** Contact Us Page CSS End ***********/
 
@@ -5459,29 +5795,6 @@ footer {
 }
 
 /*********** View Job Detail Page CSS End ***********/
-
-/* ****************** Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start *******************/
-/******************* Shahdin Pages CSS Start ****************** */
 
 /*********** Job Opening Page CSS Start ***********/
 
@@ -6126,7 +6439,7 @@ section.employer-login-pg-sec {
 }
 
 .employer-newroom-box {
-  padding: 20px 40px 0px 40px;
+  padding: 20px 40px 0px 20px;
 }
 
 .employer-inputfield input {
@@ -6492,6 +6805,7 @@ section.employer-login-pg-sec {
   padding: 30px;
   text-align: center;
   position: relative;
+  transition: all .6s ease;
 }
 
 .subcription-box h4 {
@@ -6564,6 +6878,7 @@ section.employer-login-pg-sec {
   font-weight: 600;
   line-height: 26px;
   padding: 6px 0px 0px 0px;
+  transition: all .6s ease;
 }
 
 .recommend-box::before {
@@ -6614,6 +6929,15 @@ section.employer-login-pg-sec {
 
 .subscribe-now-txt ul {
   padding: 0px 0px 0px 20px;
+}
+
+.subcription-box:hover {
+  border-color: #194d79;
+}
+
+.subcription-box:hover:before {
+  background: #194d79;
+  color: #fff;
 }
 
 .new-subscription-discount p span {
@@ -6703,6 +7027,14 @@ section.employer-login-pg-sec {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
+
+.submit-select-svg {
+  position: absolute;
+  top: 44px;
+  left: 15px;
+}
+
+
 .submit-staion-form h2 {
   color: var(--000000, #000);
   font-family: "Public Sans";
@@ -6710,7 +7042,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 40px 0px !important;
   padding: 0px 0px 30px 0px;
   position: relative;
 }
@@ -6755,22 +7087,28 @@ section.employer-login-pg-sec {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  transition-duration: .5s;
+  gap: 8px;
+  transition-duration: 0.5s;
+}
+.rms--toggle {
+  width: 27px;
+  height: fit-content;
+  gap: 6px;
 }
 
 .bars {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background-color: rgb(25 77 121);
   border-radius: 4px;
 }
 
 #bar2 {
-  transition-duration: .8s;
+  transition-duration: 0.8s;
 }
 
-#bar1,#bar3 {
+#bar1,
+#bar3 {
   width: 70%;
 }
 /* 
@@ -6781,23 +7119,23 @@ section.employer-login-pg-sec {
 
 #checkbox:checked + .toggle #bar2 {
   transform: scaleX(0);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar1 {
   width: 100%;
   transform: rotate(45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar3 {
   width: 100%;
   transform: rotate(-45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle {
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   transform: rotate(180deg);
 }
 .submit-staion-field select {
@@ -6805,7 +7143,7 @@ section.employer-login-pg-sec {
   background: var(--Gray-6, #f2f2f2);
   width: 100%;
   display: block;
-  padding: 15px 25px;
+  padding: 15px 25px 15px 45px;
   border: none;
 }
 
@@ -6828,12 +7166,63 @@ section.employer-login-pg-sec {
 
 .submit-staion-field {
   margin: 0px 0px 40px 0px;
+  position: relative;
 }
 
 .submit-station-btn {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.submit-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.submit-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.submit-checkbox label {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+}
+
+.submit-checkbox label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+}
+
+
+.submit-checkbox input[type="checkbox"]:checked + label::before {
+  border-color: #89C400;
+  background: #89C400;
+}
+
+.submit-checkbox label::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 8px;
+  height: 13px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.submit-checkbox input[type="checkbox"]:checked + label::after {
+  opacity: 1;
 }
 
 .submit-station-btn .submitbtn-dark {
@@ -6855,25 +7244,31 @@ section.employer-login-pg-sec {
   color: #194d79;
 }
 
-
- .toggle #barz1 {
+.toggle #barz1 {
   width: 100%;
   transform: rotate(45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   top: 18px;
-    position: absolute;
-    background-color: #fff;
-
+  position: absolute;
+  background-color: #fff;
 }
 .toggle #barz3 {
   width: 100%;
   transform: rotate(-45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   background-color: #fff;
 }
 
 nav.helo-drop label {
+  font-weight: bold;
   width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user--pic--header {
+  width: 43%;
+  border-radius: 5px;
 }
 
 .submit-station-btn {
@@ -6882,63 +7277,103 @@ nav.helo-drop label {
   gap: 10px;
 }
 
-
-
 /* body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
 
 h1 {padding: 40px; text-align: center; font-size: 1.5em;}
 
 li a {text-decoration : none; color : #2d2f31;} */
 
-
-nav {
- 
-  background: #d9d9d9;
-
+nav.helo-drop {
+  position: relative;
 }
 
 .drop-out {
-  padding : 10px;
-  background : #2d2f31; 
-  color : white;
-  font-size : 1.2em;
-  font-variant : small-caps;
-  cursor : pointer;
+  padding: 10px;
+  cursor: pointer;
   display: block;
   width: 100%;
 }
 
-span::after {
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+.drop-out {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.drop-out::after {
   float: right;
   right: 10%;
-  content: "+";
+  content: ">";
+  transform: rotate(90deg);
+  translate: 10px;
+  font-family: cursive;
 }
 
 .slide {
-  clear:both;
-  width:100%;
-  height:0px;
+  clear: both;
+  width: max-content;
+  height: 0;
   overflow: hidden;
   text-align: center;
-  transition: height .4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  background: white;
+  top: 55px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 13px 0px #00000026;
+  z-index: 2;
 }
 
-.slide li {padding : 30px;}
-
-#touch {position: absolute; opacity: 0; height: 0px;}    
-
-#touch:checked + .slide {height: 300px;} 
-
-
-
-
-
-
-
-
-dl, ol, ul{
-  margin: 0px !important;
+ul.slide a {
+  color: black;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  gap: 5px;
 }
+ul.slide svg {
+  width: 25px;
+  padding: 0px;
+}
+.slide hr {
+  margin: 0;
+}
+.slide li {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+.slide li:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked + .slide {
+  height: max-content;
+  padding: 10px;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked + .slide {
+  height: fit-content;
+}
+
 
 .submit-station-btn .submitbtn-dark {
   color: #fff;
@@ -7000,7 +7435,14 @@ dl, ol, ul{
 
 /*********** Submit A Station Form Page CSS End ***********/
 
+ul.rms--header--slide li a {
+  color: #000;
+}
+
+
+
 /******************* Shahdin Pages CSS End *******************/
+
 @media screen and (max-width: 1366px) {
   header.header_main {
     padding: 20px 0px 12px 0px;
@@ -7141,7 +7583,9 @@ dl, ol, ul{
   }
 
   .employer-save {
-    font-size: 12px;
+    font-size: 10px;
+    width: 65px;
+    padding: 2px 4px;
   }
 
   .employer-dont-have-acc {
@@ -7149,7 +7593,7 @@ dl, ol, ul{
   }
 
   .employer-dont-have-acc a {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .employer-dont-have-acc a span {
@@ -7292,18 +7736,69 @@ dl, ol, ul{
     font-size: 14px;
   }
 
+  .search-stations-input--rms--alt input {
+    width: 100% !important;
+}
+
+  ul.save--share--pop li {
+    padding: 6px;
+}
+
   .station-search-result-txt h4 {
     font-size: 30px;
   }
+
+  ul.save--share--pop {
+    padding: 5px;
+    border-radius: 8px;
+    width: 160px;
+    right: 20px;
+}
 
   .station-search-result-txt p {
     font-size: 16px;
   }
 
+  .article-reactions ul li a {
+    font-size: 18px;
+}
+
   .station-search-result-txt p span {
     font-size: 16px;
   }
 
+  .search-stations-input--rms .select-container {
+    padding: 0px 20px;
+    box-shadow: none;
+}
+
+.search-stations-input--rms .select-box, .search-stations-input--rms option {
+  font-size: 16px !important;
+  padding: 15px 10px 15px 10px;
+  width: 120px;
+}
+
+.select-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.search-stations-input--rms span {
+  top: 2px !important;
+}
+
+.search-stations-input--rms input {
+  padding: 10px 20px ;
+  width: 400px;
+}
+
+.rms_header_logo {
+  gap: 20px;
+}
+
+.search-stations-input--rms {
+  margin: 0px 20px;
+}
   .station-search-result-txt {
     padding: 40px 0px 20px 0px;
   }
@@ -7703,12 +8198,26 @@ dl, ol, ul{
 
   .search-stations-input input {
     width: 450px;
-    padding: 20px 20px;
+    padding: 15px 20px;
   }
 
   .select-station-drop select {
-    padding: 20px 30px;
-    width: 220px;
+    padding: 18.5px 30px 18.5px 20px;
+    width: 150px;
+    margin: 0.4px 0px 0px 0px;
+    font-size: 18px !important;
+  }
+
+  .select-container {
+    padding: 2px 10px 2px 30px;
+  }
+
+  .search-stations-input.full-width input {
+    width: 720px;
+  }
+
+  .select-tv-icon {
+    top: 14px;
   }
 
   .first-banner-txt a {
@@ -7749,7 +8258,7 @@ dl, ol, ul{
 
   .news-director-current a {
     font-size: 8px;
-    margin: 0px 0px 4px 0px !important;
+    margin: 3px 0px 0px 0px !important;
   }
 
   .review-news-director {
@@ -7775,10 +8284,6 @@ dl, ol, ul{
 
   .verified-rating-box h6 {
     font-size: 14px;
-  }
-
-  .header-logo img {
-    width: 100%;
   }
 
   .racial-discrimination h6 {
@@ -8180,29 +8685,24 @@ dl, ol, ul{
   }
 
   .header_end a:nth-child(1) svg {
-    width: 25px;
-  }
+    width: 38px;
+}
+
+.header_end a span {
+  top: -3px;
+  right: -2px;
+  padding: 0px 6px;
+  font-size: 10px;
+}
+
+
 
   .header_end {
-    gap: 15px;
-  }
-
-  .header_nav ul {
-    margin: 0px 0px 0px 10px;
-    gap: 40px;
+    gap: 20px;
   }
 
   .shop-friend-themed {
     padding: 26px 30px;
-  }
-
-  .header-logo img {
-    width: 155.797px;
-  }
-
-  .header_nav ul {
-    gap: 40px;
-    margin: 0px 0px 0px 18px;
   }
 
   .header_nav ul li {
@@ -8213,14 +8713,14 @@ dl, ol, ul{
     font-size: 10px;
   }
 
-  .header_end {
-    gap: 30px;
+  .header_end a svg {
+    height: 30px;
   }
 
   .login-btn {
     font-size: 15px;
     line-height: 28px;
-    padding: 4px 35px;
+    padding: 4px 25px;
   }
 
   section.employer-login-pg-sec {
@@ -8242,11 +8742,32 @@ dl, ol, ul{
   }
 
   .employer-inputfield label {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .employerregister-field {
+    margin: 8px 0px;
+  }
+
+  .employer-newroom-box {
+    padding: 20px 40px 0px 10px;
+  }
+
+  .employer-dont-have-acc {
+    margin: 10px 0px 0px 20px;
+  }
+
+  .employer-register-btn {
+    margin: 15px 0px 30px 20px;
   }
 
   .employer-inputfield input {
-    padding: 9px 4px;
+    padding: 9px 8px;
+  }
+
+  .employer-inputfield input::placeholder {
+    font-size: 12px;
+    line-height: 22px;
   }
 
   .free-subscribe-four {
@@ -8286,6 +8807,10 @@ dl, ol, ul{
   }
 
   .employer-dont-have-acc a {
+    font-size: 11px;
+  }
+
+  .employer-dont-have-acc a span {
     font-size: 13px;
   }
 
@@ -8526,9 +9051,69 @@ dl, ol, ul{
   .americon-prod-cart h6 {
     margin: 0px;
   }
+
+  .review-news-director-second {
+    margin: 120px 0px 0px 0px !important;
+  }
+
+  .job-details {
+    width: 480px;
+  }
+
+  .job-detail p {
+    font-size: 14px;
+  }
+
+  .job-detail span {
+    font-size: 10px;
+  }
+
+  .job-detail {
+    flex: auto;
+  }
+
+  .search-stations-input span {
+    top: 8px;
+    font-size: 32px;
+  }
+
+  .helo-drop  .drop-out {
+    padding: 2px;
+  }
+
+  nav.helo-drop label {
+    gap: 5px;
+  }
+
+  .header-end-rmssearch {
+    gap: 10px;
+  }
+  .header--end--logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .header-end-rmssearch  a svg {
+    height: 30px;
+    padding: 5px 3px 5px 0px;
+    width: 30px;
+  }
+
+  .user--pic--header {
+    width: 30%;
+  }
+
 }
 
 @media (max-width: 991px) {
+  .header--2--main--cont {
+    max-width: 850px !important;
+  }
+  .header--2--main--row {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
   .Sweatshirt--box--alt {
     flex-direction: column;
     gap: 30px;
@@ -8541,6 +9126,12 @@ dl, ol, ul{
     width: 50%;
     margin: 0 auto;
   }
+
+  .search-stations-input--rms--alt input {
+    width: 100% !important;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -8554,7 +9145,9 @@ dl, ol, ul{
     flex-direction: column;
     text-align: center;
   }
-
+  .header-logo {
+    width: 35%;
+  }
   .Sweatshirt-ah {
     width: 100%;
   }
@@ -8569,6 +9162,33 @@ dl, ol, ul{
   .About-main-box-1-ah {
     width: 100%;
   }
+
+  .rms_header_logo a {
+    display: none;
+    }
+
+    .rms_header .header_end {
+        display: none;
+    }
+
+
+    .rms_header .header_nav {
+      display: none;
+    }
+
+    .rms--header--slide {
+      display: none;
+    }
+
+    .rms-mobile-header-logo .header-logo img{
+      display: none;
+    }
+
+    .rms-mobile-header-logo {
+      padding: 0px !important;
+  }
+  
+
 
   .About-main-box-2-ah {
     width: 60%;
@@ -8779,8 +9399,32 @@ dl, ol, ul{
   }
 
   .select-station-drop select {
-    padding: 16px 20px;
-    width: 200px;
+    padding: 18px 20px 17px 10px;
+    width: 120px;
+    margin: 0.5px 0px 0px 0px;
+    font-size: 16px !important;
+  }
+
+  .select-tv-icon {
+    top: 10px;
+    left: 25px;
+  }
+
+  .select-tv-icon svg {
+    width: 30px;
+  }
+
+  .select-tv-icon svg {
+    width: 30px;
+  }
+
+  .search-stations-input span {
+    top: 4px;
+  }
+
+  .search-stations-input.full-width input {
+    width: 570px;
+    padding: 20px 15px;
   }
 
   .search-stations-input input {
@@ -8965,6 +9609,7 @@ dl, ol, ul{
 
   .shop-new-arrival {
     padding: 30px 30px;
+    margin: 0px 10px 20px 10px;
   }
 
   .shop-new-arrival h3 {
@@ -9156,8 +9801,8 @@ dl, ol, ul{
 
   .header_nav button {
     width: 40px;
-  border: none;
-  background-color:transparent;
+    border: none;
+    background-color: transparent;
   }
 
   .header_nav button:hover {
@@ -9186,7 +9831,7 @@ dl, ol, ul{
   /* Position and style the close button (top right corner) */
   .sidepanel .closebtn {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -9275,6 +9920,26 @@ dl, ol, ul{
   .Sweatshirt-ah-select-card {
     width: 48%;
     margin: 0px 10px 0px 0px;
+  }
+
+  .ratemystation-about-txt h3 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .about-us-txt h4 {
+    font-size: 17px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .about-creator-txt h5 {
+    font-size: 17px;
+    margin: 0px 0px 20px 0px !important;
+  }
+
+  .creator-messages h4 {
+    font-size: 17px;
+    margin: 0px 0px 5px 0px !important;
   }
 }
 
@@ -9488,10 +10153,11 @@ dl, ol, ul{
   }
 
   .Sweatshirt-ah-select-card button {
-    font-size: 10px;
-    line-height: 29px;
-    width: 50%;
-  }
+    font-size: 11px;
+    line-height: 24px;
+    width: 100%;
+}
+
 
   .Sweatshirt-ah-select-card h2 {
     font-size: 11px !important;
@@ -9530,10 +10196,6 @@ dl, ol, ul{
     line-height: 20px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 20px;
-    line-height: 31px;
-  }
 
   .Cooper-ah-box-main {
     padding-top: 10px;
@@ -9653,9 +10315,6 @@ dl, ol, ul{
     width: 30%;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 18px;
-  }
 
   .About-main-card-1-ah p {
     padding: 15px 0px 10px 0px;
@@ -9671,10 +10330,6 @@ dl, ol, ul{
     justify-content: space-between;
   }
 
-  .About-main-card-1-ah p {
-    padding: 15px 0px 10px 0px;
-    font-size: 14px;
-  }
 
   .bar-pogres-box-cards-ah {
     flex-direction: column;
@@ -9858,9 +10513,6 @@ dl, ol, ul{
     height: 12px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 16px;
-  }
 
   .Popular-ti-ah-btn-box button {
     font-size: 14px;
@@ -9921,10 +10573,6 @@ dl, ol, ul{
   }
 
   .racial-discrimination h5 {
-    font-size: 14px;
-  }
-
-  .like-report-txt ul li {
     font-size: 14px;
   }
 
@@ -10057,6 +10705,8 @@ dl, ol, ul{
     flex-direction: column;
   }
 
+
+
   .America-ah-part-2 {
     width: 100%;
     display: flex;
@@ -10065,9 +10715,6 @@ dl, ol, ul{
     padding: 30px 0px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 19px;
-  }
 
   .About-main-card-1-ah p {
     padding: 14px 0px 10px 0px;
@@ -10084,10 +10731,11 @@ dl, ol, ul{
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 60px;
     padding-top: 3px;
     justify-content: center;
-  }
+    margin: 0px 0px 10px 0px;
+}
+
 
   .Sweatshirt-ah-select-card {
     display: flex;
@@ -10110,11 +10758,6 @@ dl, ol, ul{
     width: 100px;
   }
 
-  .About-main-card-1-ah p {
-    padding: 14px 0px 10px 0px;
-    font-size: 16px;
-  }
-
   .Sweatshirt-ah-select-card h2 {
     font-size: 13px !important;
   }
@@ -10127,9 +10770,10 @@ dl, ol, ul{
   }
 
   .About-main-card-1-ah p {
-    padding: 10px 0px 10px 0px;
-    font-size: 16px;
-  }
+    padding: 10px 0px 5px 0px;
+    font-size: 14px;
+    line-height: 20px;
+}
 
   .Sweatshirt-box {
     width: 100%;
@@ -10380,9 +11024,6 @@ dl, ol, ul{
     gap: 25px;
   }
 
-  .About-main-card-1-ah p {
-    line-height: 20px;
-  }
 
   .Hire-ah-box button {
     padding: 8px;
@@ -10412,13 +11053,13 @@ dl, ol, ul{
     height: 12px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 16px;
-  }
+
 
   .About-main-card-1-ah h2 {
-    font-size: 21px;
-  }
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 0px 0px 0px;
+}
 
   .Cooper-ah-tital-head span {
     color: #000;
@@ -10560,7 +11201,8 @@ dl, ol, ul{
   }
 
   .like-report-txt ul li {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 4px 8px;
   }
 
   .like-report-submitted {
@@ -10581,8 +11223,19 @@ dl, ol, ul{
   }
 
   .select-station-drop select {
-    width: 130px;
-    font-size: 14px;
+    width: 75px;
+    padding: 14.5px 0px 14.5px 12px;
+    margin: 1.2px 0px 0px 0px;
+    font-size: 12px !important;
+  }
+
+  .select-tv-icon {
+    top: 4px;
+    left: 25px;
+  }
+
+  .select-tv-icon svg {
+    width: 20px;
   }
 
   .search-stations-input input::placeholder {
@@ -10596,9 +11249,10 @@ dl, ol, ul{
   }
 
   .search-stations-input svg {
-    width: 30px;
+    width: 24px;
     position: relative;
-    top: -10px;
+    top: 0px;
+    right: -01px;
   }
 
   .first-banner-txt h3 {
@@ -10628,7 +11282,7 @@ dl, ol, ul{
   }
 
   .latest-rating-txt h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .director-urer img {
@@ -10697,8 +11351,9 @@ dl, ol, ul{
   }
 
   .filter-box select {
-    padding: 8px 50px;
+    padding: 8px 30px;
     font-size: 14px;
+    margin: 0px 0px 10px 0px;
   }
 
   .newsletter-likecomment-share {
@@ -10857,10 +11512,6 @@ dl, ol, ul{
     flex-direction: column;
   }
 
-  .filter-box select {
-    margin: 0px 0px 10px 0px;
-  }
-
   .shop-new-arrival {
     padding: 30px 40px;
     margin: 0px 0px 10px 0px;
@@ -11009,5 +11660,66 @@ CONTACTUS */
 
   .mycart-qualitytotal {
     gap: 30px;
+  }
+
+  .job-details {
+    width: 350px;
+    left: 10px;
+    top: 80px;
+  }
+
+  .job-detail p {
+    font-size: 10px;
+  }
+
+  .review-news-director-second {
+    margin: 55px 0px 0px 0px !important;
+  }
+
+  .select-box option {
+    font-size: 14px !important;
+  }
+  .search-stations-input svg {
+    top: 0px;
+    right: 0px;
+  }
+
+  .search-stations-input.full-width input {
+    width: 350px;
+    padding: 15px 15px;
+}
+.like-report-submitted p {
+  font-size: 12px;
+}
+
+.follow-us-rate ul li a svg {
+  width: 20px;
+}
+
+.select-station-drop select {
+  padding: 18px 0px 18px 0px;
+}
+
+.select-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-latest-updates {
+  padding: 0px 25px 20px 0px;
+}
+
+.contact-follow-like-btn ul {
+  justify-content: space-between;
+}
+
+
+
+}
+@media (max-width: 425px) {
+  .toggle {
+    width: 30px;
+    height: 33px;
+    gap: 6px;
   }
 }

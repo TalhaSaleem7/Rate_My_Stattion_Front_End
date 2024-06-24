@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Saveshare from "../../Popouts/Save_pop_h";
 
 const JobCard = ({
   title,
@@ -13,9 +15,26 @@ const JobCard = ({
   const navigate = useNavigate();
 
   const jobdetail = () => navigate("/viewjobdetail");
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = (event) => {
+    event.stopPropagation();
+    setIsOpen(!isOpen);
+  };
   return (
     <div onClick={jobdetail} className="col faq--work--card--pad--h">
       <div className="card faq--work--card--h">
+        <div onClick={toggle} className="faq--work--card--h--dots">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
+          {isOpen && <Saveshare />}
+        </div>
         <div className="card-body faq--work--card--body--h">
           <div className="card-title faq--work--card--title--container align-items-center d-flex">
             <div className="faq--work--card--title--img--h">

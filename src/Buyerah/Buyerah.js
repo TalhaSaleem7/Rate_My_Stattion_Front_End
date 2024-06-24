@@ -1,8 +1,14 @@
 import React from "react";
-
+import RateThisProd from "../Popups/Rate_popup_h/Ratepopup_h";
+import { useState } from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 
 const Buyerah = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="About-main-card-1-ah">
@@ -70,10 +76,11 @@ const Buyerah = () => {
             </div>
           </div>{" "}
           <div className="rate--product--button--container--ah">
-            <button>Rate this product</button>
+            <button onClick={toggle}>Rate this product</button>
           </div>
         </div>
       </div>
+      {isOpen && <RateThisProd close={toggle} />}
     </>
   );
 };

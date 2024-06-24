@@ -14,6 +14,9 @@ import newsuser3 from "../img/newsuser3.png"
 import newsuser4 from "../img/newsuser4.png"
 import newsuser5 from "../img/newsuser5.png"
 import newsuser6 from "../img/newsuser6.png"
+import RmsHeader from '../Rmsheader/RmsHeader';
+import Footerah from '../footerah/Footerah';
+import RmsHeaderAlt from '../Rmsheader/RmsHeaderalt';
 
 const NewsdirectorData = [
   {
@@ -73,6 +76,11 @@ const DirectorSearchResult = () => {
 
   return (
     <>
+
+
+        <RmsHeaderAlt/>
+
+    
         <section className="director-search-result">
           <Container>
             <Row>
@@ -159,6 +167,8 @@ const DirectorSearchResult = () => {
             </section>
 
             <Lookingforwork /> 
+
+            <Footerah/>
     </>
   )
 }

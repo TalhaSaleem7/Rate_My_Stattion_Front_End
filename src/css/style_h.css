@@ -196,7 +196,8 @@ textarea {
 .row .faq--main--card--one,
 .main--card--two--container,
 .faq--detail--card--two--btn,
-.faq--right--button--h {
+.faq--right--button--h,
+ul.save--share--pop {
   box-shadow: 0px 4px 13px 0px #00000026;
 }
 .faq--main--h .faq--main--search--h,
@@ -328,6 +329,35 @@ label {
   border-radius: 10px;
   color: #828282;
 }
+.drop--position {
+  position: relative;
+}
+.experience--job--inp--h--dropdown {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+}
+.experience--job--inp--h--dropdown--click {
+  cursor: pointer;
+}
+.experience--job--inp--h--dropdown--click--rad {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.experience--job--inp--h--dropdown li {
+  padding: 11.8px 16.8px;
+}
+.experience--job--inp--h--dropdown li {
+  font-size: 16px;
+  color: black;
+}
+.experience--job--inp--h--dropdown li:hover {
+  background-color: #bdbdbd;
+  cursor: pointer;
+}
 .experience--form--check--input {
   width: 27.66px;
   height: 27.66px;
@@ -340,7 +370,7 @@ label {
   padding: 0;
 }
 .experience--desc--h {
-  height: 175px;
+  max-height: 175px;
 }
 
 /* ======================================
@@ -407,7 +437,7 @@ Account Setting
   border-radius: 0;
 }
 .account--setting--left--h .list-group-item.active {
-  background-color: #828282a9;
+  background-color: #f2f2f2;
   color: black;
 }
 .account--setting--container--pad--h {
@@ -634,6 +664,13 @@ FAQ Search Styles
 .faq--search--result--h .breadcrumb-item.active {
   color: #6c757d;
   font-size: var(--font-size-16);
+  cursor: pointer;
+}
+.faq--search--result--h .breadcrumb-item.active:hover {
+  text-decoration: underline;
+}
+.faq--search--result--h .breadcrumb {
+  padding-bottom: 1.5em;
 }
 .faq--card--container--h {
   cursor: pointer;
@@ -718,8 +755,11 @@ FAQ Search Styles
 
 .faq--search--detail--h .breadcrumb-item.active {
   color: white;
+  cursor: pointer;
 }
-
+.faq--search--detail--h .breadcrumb-item.active:hover {
+  text-decoration: underline;
+}
 .faq--search--detail--h h1,
 .faq--term--detail--h h1 {
   font-size: var(--font-size-48);
@@ -769,7 +809,7 @@ FAQ Search Styles
 }
 
 .faq--detail--related--link--h {
-  max-width: 92.7%;
+  max-width: 85%;
 }
 
 .faq--detail--related--container--h {
@@ -781,6 +821,7 @@ FAQ Search Styles
 }
 .faq--detail--related--img--h {
   width: 10px;
+  margin: 0px 30px 0px 0px;
 }
 
 .faq--main--card--one .faq--detail--card--container,
@@ -876,12 +917,15 @@ FAQ Terms Styles
   position: relative;
 }
 
-.faq--work--card--h::before {
-  content: url(../img/work_card_dots_h.png);
+.faq--work--card--h--dots {
   position: absolute;
-  display: block;
+
   top: 5%;
-  right: 4%;
+  right: 1.5%;
+}
+.faq--work--card--h--dots svg {
+  width: 30px;
+  color: #828282;
 }
 .faq--work--card--list ul,
 .faq--work--card--list li {
@@ -1288,6 +1332,51 @@ Rate Popup Styles
 .rating--popup--cont--h {
   padding-bottom: 22px;
 }
+
+/* ======================================
+Rate Popup Styles
+====================================== */
+ul.save--share--pop svg {
+  width: 20px;
+  color: #828282;
+}
+
+ul.save--share--pop li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding: 10px;
+  font-size: var(--font-size-16);
+  font-weight: 800;
+  cursor: pointer;
+  align-items: center;
+  margin: 0;
+}
+
+ul.save--share--pop {
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  background-color: white;
+}
+
+ul.save--share--pop li:hover {
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* ======================================
+Popup Position
+====================================== */
+
+.popup--cont--h {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* ======================================
 Media Query
 ====================================== */
@@ -1520,7 +1609,31 @@ Media Query
     right: 5%;
     top: 19%;
   }
+
+  
+  .faq--work--card--h p {
+    font-size: 10px;
+  }
+
+  .faq--work--card--info--h {
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .faq--work--card--info {
+    gap: 2px;
+  }
+
+  .faq--work--card--bottom {
+    margin-top: 10px;
 }
+
+}
+
+
+
+
 @media (max-width: 404px) {
   :root {
     --font-size-14: 0.7rem;
@@ -1595,4 +1708,6 @@ Media Query
   .faq--main--search--icon--alt--h {
     right: 7%;
   }
+
+
 }

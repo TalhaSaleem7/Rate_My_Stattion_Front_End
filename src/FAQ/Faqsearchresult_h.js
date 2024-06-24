@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import FaqSearchResultCard from "./component/Faqsearchresultcard_h";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
+import RmsSearchHeader from "../Rmsheader/RmsSearchHeader";
 function FaqSearchresult() {
   const navigate = useNavigate();
 
@@ -9,7 +10,7 @@ function FaqSearchresult() {
 
   return (
     <>
-      <Header />
+      <RmsSearchHeader/>
       <div className="container">
         <div className="row">
           <div className="col " style={{ paddingLeft: "0", paddingRight: "0" }}>
