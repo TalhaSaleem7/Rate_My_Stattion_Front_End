@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Row, Col, Button, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Reportersd from "../reportersd/Reportersd";
 import Newslettersidesd from "../Newslettersidesecsd/Newslettersidesd";
 import ProdImage1 from "../img/ratemystation-prod-img-1.png";
@@ -14,7 +14,6 @@ import ProdImage8 from "../img/ratemystation-prod-img-8.png";
 import Latestuserratingicon from "../img/latest-rating-user-icon.png";
 import karbabclogo from "../img/karc-abc-logo.png";
 import reviewdirectorimg from "../img/review-director-img.png";
-import TvShowsIcon from "../img/tv-shows-icon.png";
 import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
 import Lookingforwork from "../Lookingforwork/Lookingforwork";
 import {
@@ -58,6 +57,12 @@ export const Homepage = () => {
     setIsOpen(!isOpen);
   };
 
+  const [isSearchByName, setIsSearchByName] = useState(false);
+
+  const toggleSearchMode = () => {
+    setIsSearchByName(!isSearchByName);
+  };
+
   return (
     <>
       <Header />
@@ -67,7 +72,7 @@ export const Homepage = () => {
             <Col lg={12}>
               <div className="first-banner-txt">
                 <h3>Find thousands of Ratings from real Journalists</h3>
-                <div className="search-station-box">
+                {/* <div className="search-station-box">
                   <HomeSelectOption/>
                   <div className="search-stations-input">
                     <input
@@ -82,7 +87,35 @@ export const Homepage = () => {
                     </span>
                   </div>
                 </div>
-                <a href="#">Find a News Director by name</a>
+                <a href="#">Find a News Director by name</a> */}
+                 <div className="header">
+                  <div className={`search-stations-input ${isSearchByName ? 'full-width' : ''}`}>
+                    {isSearchByName ? (
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        placeholder="Search News Director..."
+                      />
+                    ) : (
+                      <>
+                        <HomeSelectOption />
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          placeholder="Search Stations..."
+                        />
+                      </>
+                    )}
+                    <span>
+                      <RiSearchLine onClick={searchstaion} />
+                    </span>
+                  </div>
+                  <a href="#" onClick={toggleSearchMode}>
+                    {isSearchByName ? 'Find a Station by name' : 'Find a News Director by name'}
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>

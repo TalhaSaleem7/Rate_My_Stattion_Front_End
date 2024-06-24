@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Lookingforwork = () => {
   const navigate = useNavigate();
 
-  const SubscribePg = () => {
+  const subscribe = () => {
     navigate("/subscription");
   };
   return (
@@ -15,11 +15,12 @@ const Lookingforwork = () => {
             <div class="col-lg-12">
               <div class="looking-for-worktxt">
                 <h4>Looking for Work?</h4>
+
                 <p>
                   Subscribe to our Job Center for instant access to thousands of
                   job opportunities in media.
                 </p>
-                <a onClick={SubscribePg}>Subscribe</a>
+                <a onClick={subscribe}>Subscribe</a>
               </div>
             </div>
           </div>
