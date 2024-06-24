@@ -7262,7 +7262,13 @@ dl, ol, ul{
   .KABC-part-1-ah {
     width: 48%;
   }
+  .Brooklyn-Simmons-tital span p {
+    font-size: 12px;
+}
 
+.About-main-card-1-ah h2 {
+    font-size: 18px;
+}
   .KABC-tital-ah {
     gap: 8px;
   }
