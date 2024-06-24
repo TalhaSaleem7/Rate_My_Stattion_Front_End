@@ -2,11 +2,12 @@ import Related from "./component/Relatedarticles_h";
 import Questioncard from "./component/Questioncard_h";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
+import Header1 from "../Header/Header2";
 
 const FaqDetail = () => {
   return (
     <div>
-      <Header />
+      <Header1 />
       <section className="w-100 faq--search--detail--section--h">
         <div className="container">
           <div className="row">

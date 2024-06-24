@@ -24,8 +24,11 @@ import Stationsnaw from "../Stationsah/Stationsnaw";
 import Footerah from "../footerah/Footerah";
 import { Container } from "react-bootstrap";
 import Header1 from "../Header/Header2";
+import { useNavigate } from "react-router-dom";
 
-const kabcah1 = () => {
+const Kabcah1 = () => {
+  const navigate = useNavigate();
+  const usersetting = () => navigate("/accountsettingh");
   return (
     <>
       <Header1 />
@@ -78,7 +81,7 @@ const kabcah1 = () => {
 
               <div class="KABC-btn-box-ah">
                 <span class="See">
-                  <button class="more">
+                  <button onClick={usersetting} class="more">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -533,4 +536,4 @@ const kabcah1 = () => {
   );
 };
 
-export default kabcah1;
+export default Kabcah1;

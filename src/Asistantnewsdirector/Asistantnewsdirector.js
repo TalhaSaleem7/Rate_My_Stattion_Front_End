@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import Saveshare from "../Popouts/Save_pop_h";
 import abcLogo from "../img/karc-abc-logo.png";
 import {
   RiMapPin2Fill,
@@ -13,6 +15,12 @@ import Viewjobdetail from "../Viewjobdetail/Viewjobdetail";
 const Asistantnewsdirector = () => {
   const navigate = useNavigate();
   const jobdetail = () => navigate("/viewjobdetail");
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = (event) => {
+    event.stopPropagation();
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <div onClick={jobdetail} className="assistant-news-director-box">
@@ -26,9 +34,10 @@ const Asistantnewsdirector = () => {
               <h6>KABC</h6>
             </div>
           </div>
-          <div className="assistant-more-icon">
+          <div onClick={toggle} className="assistant-more-icon">
             <span>
               <RiMore2Fill />
+              {isOpen && <Saveshare />}
             </span>
           </div>
         </div>
