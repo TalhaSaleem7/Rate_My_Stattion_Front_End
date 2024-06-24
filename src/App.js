@@ -80,6 +80,8 @@ import Header1 from "./Header/Header2";
 import Saveshare from "./Popouts/Save_pop_h";
 import Editdel from "./Popouts/Edit_pop_h";
 import Previewh from "./Popouts/Preview_pop_h";
+import RmsHeader from "./Rmsheader/RmsHeader";
+import RmsHeaderAlt from "./Rmsheader/RmsHeaderalt";
 
 function App() {
   return (
@@ -88,6 +90,8 @@ function App() {
         <Route path="/saveshareh" exact element={<Saveshare />} />
         <Route path="/Editdelh" exact element={<Editdel />} />
         <Route path="/Previewh" exact element={<Previewh />} />
+        <Route path="/rmsheader" exact element={<RmsHeader />} />
+        <Route path="/rmsheaderalt" exact element={<RmsHeaderAlt />} />
 
         <Route path="/" exact element={<Homepage />} />
         <Route path="/kabc" exact element={<KABC />} />

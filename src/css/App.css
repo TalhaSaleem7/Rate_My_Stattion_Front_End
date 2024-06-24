@@ -2693,16 +2693,16 @@ header.header_main {
 }
 .header-logo {
   cursor: pointer;
+  width: 80.1%;
 }
 .header-logo img {
-  width: 177.797px;
+  width: 100%;
 }
 
 .header_nav ul {
   display: flex;
   align-items: center;
-  gap: 50px;
-  margin: 0px 0px 0px 20px !important;
+  justify-content: space-between;
 }
 
 .header_nav ul li {
@@ -2738,7 +2738,7 @@ header.header_main {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 30px;
+  gap: 20px;
 }
 .header_end a:hover {
   cursor: pointer;
@@ -2772,56 +2772,82 @@ header.header_main {
 
 .header_end a span {
   position: absolute;
-  top: -9px;
-  right: -10px;
+  top: -6px;
+  right: 4px;
   background: #89c400;
-  padding: 1px 7px;
-  border-radius: 50px;
+  padding: 0px 4px;
+  border-radius: 100%;
   color: #fff;
   font-family: "Public Sans";
-  font-size: 12px;
+  font-size: 9px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.7;
 }
-
 
 .header_end a svg {
   padding: 5px 7px 5px 5px;
   border-radius: 10px;
-  width: 38px;
-  height: 38px;
-  transition: all .6s ease;
+  height: 36px;
+  transition: all 0.6s ease;
+  width: 42px;
 }
 
 .header_end a svg:hover {
   background: #d7d7d7;
 }
 
-
-
 /*********** Header Main CSS ENd ***********/
 
+.rms--header--row {
+  align-items: center;
+}
 .rms_header_logo {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.rms--header--row > * {
+  padding: 0 !important;
 }
 
-.rms_header_logo img {
-  width: 120px;
+.rms_header_logo--cont {
+  width: 91px;
 }
 
 .rms_header_logo a {
-  font-size: 30px;
+  align-self: center;
 }
 
 section.rms_header {
   padding: 15px 0px;
+  background-color: white;
+  box-shadow: 0px 4px 12px 0px #00000026;
+  position: relative;
 }
 
+.rms--header--slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 98px;
+  background: #e0e0e0;
+}
 
+.toggle.clicked .bars:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
 
+.toggle.clicked .bars:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.toggle.clicked .bars:nth-child(3) {
+  transform: scaleX(0);
+}
 /*********** First Banner Section CSS Start ***********/
 
 .first-banner-sec {
@@ -2869,13 +2895,27 @@ section.rms_header {
   border: none;
   font-size: 18px;
 }
-
+.search-stations-input--rms input {
+  padding: 10px 20px;
+  box-shadow: none;
+  background-color: #f2f2f2;
+  font-size: 16px !important;
+}
+.search-stations-input--rms--alt input {
+  border-radius: 15px;
+  padding: 17px 28px;
+  width: 100%;
+}
+.search-stations-input--rms input::placeholder {
+  font-size: 16px !important;
+}
+.search-stations-input--rms .search-stations-input svg {
+  width: 30px;
+}
 .search-stations-input.full-width input {
   width: 890px;
   border-radius: 20px;
 }
-
-
 
 .search-stations-input input::placeholder {
   font-family: "Public Sans", sans-serif;
@@ -2915,7 +2955,6 @@ section.rms_header {
   outline: none;
 }
 
-
 .select-station-drop {
   display: flex;
   align-items: center;
@@ -2926,15 +2965,18 @@ section.rms_header {
   display: flex;
   align-items: center;
   padding: 14.5px 10px 15.3px 30px;
-  background-color: #89C400;
+  background-color: #89c400;
   position: relative;
   border-radius: 20px 0px 0px 20px;
   box-shadow: -6px 0px 13px 0px rgba(8, 42, 83, 0.5);
-  width: 100%; 
+  width: 100%;
   max-width: 400px;
   cursor: pointer;
 }
-
+.search-stations-input--rms .select-container {
+  padding: 10px 20px;
+  box-shadow: none;
+}
 .select-container:hover {
   background-color: #75a111;
 }
@@ -2956,7 +2998,7 @@ section.rms_header {
   -webkit-appearance: none;
   -moz-appearance: none;
   color: #fff;
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
   font-size: 22px !important;
   width: 100%; /* Ensure the select-box takes the full width */
 }
@@ -2966,7 +3008,6 @@ section.rms_header {
   font-size: 22px !important;
   color: #000;
 }
-
 
 .select-tv-icon svg {
   color: #fff;
@@ -2998,9 +3039,6 @@ section.rms_header {
   cursor: pointer;
 }
 
-
-
-
 .first-banner-txt a {
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -3025,7 +3063,19 @@ section.rms_header {
   color: #194d79;
   cursor: pointer;
 }
-
+.search-stations-input--rms span {
+  top: -2px;
+}
+.search-stations-input--rms--alt span {
+  top: -4px;
+}
+.search-stations-input--rms span svg {
+  width: 24px;
+}
+.search-stations-input--rms .select-box,
+.search-stations-input--rms option {
+  font-size: 16px !important;
+}
 /*********** First Banner Section CSS End ***********/
 
 /*********** Latest Rating Section CSS Start ***********/
@@ -7040,6 +7090,11 @@ section.employer-login-pg-sec {
   gap: 8px;
   transition-duration: 0.5s;
 }
+.rms--toggle {
+  width: 27px;
+  height: fit-content;
+  gap: 6px;
+}
 
 .bars {
   width: 100%;
@@ -7228,7 +7283,6 @@ h1 {padding: 40px; text-align: center; font-size: 1.5em;}
 
 li a {text-decoration : none; color : #2d2f31;} */
 
-
 nav.helo-drop {
   position: relative;
 }
@@ -7240,12 +7294,10 @@ nav.helo-drop {
   width: 100%;
 }
 
-
 .slide {
-  clear:both;
-  width:100%;
-  height:0px;
-
+  clear: both;
+  width: 100%;
+  height: 0px;
 }
 .drop-out {
   font-size: 16px;
@@ -7276,8 +7328,6 @@ nav.helo-drop {
   box-shadow: 0px 4px 13px 0px #00000026;
   z-index: 2;
 }
-
-
 
 ul.slide a {
   color: black;
@@ -7314,10 +7364,15 @@ ul.slide svg {
   padding: 10px;
 }
 
-#touch {position: absolute; opacity: 0; height: 0px;}    
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
 
-#touch:checked + .slide {height: fit-content;}
-
+#touch:checked + .slide {
+  height: fit-content;
+}
 
 
 .submit-station-btn .submitbtn-dark {
@@ -7525,9 +7580,7 @@ ul.slide svg {
     font-size: 10px;
     width: 65px;
     padding: 2px 4px;
-}
-
-
+  }
 
   .employer-dont-have-acc {
     margin: 10px 0px 0px 40px;
@@ -7540,7 +7593,6 @@ ul.slide svg {
   .employer-dont-have-acc a span {
     font-size: 15px;
   }
-  
 
   .employer-register-btn a {
     font-size: 15px;
@@ -8102,13 +8154,12 @@ ul.slide svg {
     padding: 20px 20px;
   }
 
-
   .select-station-drop select {
     padding: 18.5px 30px 18.5px 20px;
     width: 150px;
     margin: 0.4px 0px 0px 0px;
-    font-size: 18px !important; 
-  } 
+    font-size: 18px !important;
+  }
 
   .select-container {
     padding: 2px 10px 2px 30px;
@@ -8116,7 +8167,7 @@ ul.slide svg {
 
   .search-stations-input.full-width input {
     width: 720px;
-}
+  }
 
   .select-tv-icon {
     top: 14px;
@@ -8186,10 +8237,6 @@ ul.slide svg {
 
   .verified-rating-box h6 {
     font-size: 14px;
-  }
-
-  .header-logo img {
-    width: 100%;
   }
 
   .racial-discrimination h6 {
@@ -8607,17 +8654,8 @@ ul.slide svg {
     gap: 20px;
   }
 
-  .header_nav ul {
-    margin: 0px 0px 0px 20px !important;
-    gap: 40px;
-  }
-
   .shop-friend-themed {
     padding: 26px 30px;
-  }
-
-  .header-logo img {
-    width: 155.797px;
   }
 
   .header_nav ul li {
@@ -8628,6 +8666,9 @@ ul.slide svg {
     font-size: 10px;
   }
 
+  .header_end a svg {
+    height: 30px;
+  }
 
   .login-btn {
     font-size: 15px;
@@ -8659,20 +8700,19 @@ ul.slide svg {
 
   .employerregister-field {
     margin: 8px 0px;
-}
+  }
 
-.employer-newroom-box {
-  padding: 20px 40px 0px 10px;
-}
+  .employer-newroom-box {
+    padding: 20px 40px 0px 10px;
+  }
 
-.employer-dont-have-acc {
-  margin: 10px 0px 0px 20px;
-}
+  .employer-dont-have-acc {
+    margin: 10px 0px 0px 20px;
+  }
 
-.employer-register-btn {
-  margin: 15px 0px 30px 20px;
-}
-
+  .employer-register-btn {
+    margin: 15px 0px 30px 20px;
+  }
 
   .employer-inputfield input {
     padding: 9px 8px;
@@ -8682,7 +8722,6 @@ ul.slide svg {
     font-size: 12px;
     line-height: 22px;
   }
-  
 
   .free-subscribe-four {
     gap: 5px;
@@ -8726,7 +8765,7 @@ ul.slide svg {
 
   .employer-dont-have-acc a span {
     font-size: 13px;
-}
+  }
 
   .employer-register-btn a {
     font-size: 14px;
@@ -8990,12 +9029,16 @@ ul.slide svg {
     top: 8px;
     font-size: 32px;
   }
-
 }
 
-
-
 @media (max-width: 991px) {
+  .header--2--main--cont {
+    max-width: 850px !important;
+  }
+  .header--2--main--row {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
   .Sweatshirt--box--alt {
     flex-direction: column;
     gap: 30px;
@@ -9021,7 +9064,9 @@ ul.slide svg {
     flex-direction: column;
     text-align: center;
   }
-
+  .header-logo {
+    width: 35%;
+  }
   .Sweatshirt-ah {
     width: 100%;
   }
@@ -9250,7 +9295,7 @@ ul.slide svg {
     width: 120px;
     margin: 0.5px 0px 0px 0px;
     font-size: 16px !important;
-}
+  }
 
   .select-tv-icon {
     top: 10px;
@@ -9782,21 +9827,13 @@ ul.slide svg {
   .about-creator-txt h5 {
     font-size: 17px;
     margin: 0px 0px 20px 0px !important;
-    }
+  }
 
-
-    .creator-messages h4 {
-      font-size: 17px;
-      margin: 0px 0px 5px 0px !important;
-    }
-
+  .creator-messages h4 {
+    font-size: 17px;
+    margin: 0px 0px 5px 0px !important;
+  }
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 600px) {
   .ul-li-list-footer ul {
@@ -11082,7 +11119,7 @@ ul.slide svg {
     padding: 14.5px 0px 14.5px 12px;
     margin: 1.2px 0px 0px 0px;
     font-size: 12px !important;
-}
+  }
 
   .select-tv-icon {
     top: 4px;
@@ -11108,7 +11145,7 @@ ul.slide svg {
     position: relative;
     top: 0px;
     right: -01px;
-}
+  }
 
   .first-banner-txt h3 {
     font-size: 35px;
@@ -11570,4 +11607,11 @@ CONTACTUS */
 
 
 
+}
+@media (max-width: 425px) {
+  .toggle {
+    width: 30px;
+    height: 33px;
+    gap: 6px;
+  }
 }
