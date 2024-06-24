@@ -2871,6 +2871,13 @@ section.rms_header {
   font-size: 18px;
 }
 
+.search-stations-input.full-width input {
+  width: 890px;
+  border-radius: 20px;
+}
+
+
+
 .search-stations-input input::placeholder {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
@@ -2913,7 +2920,7 @@ section.rms_header {
 .select-station-drop {
   display: flex;
   align-items: center;
-  margin: 10.5px 0px 10px 0px;
+  /* margin: 10.5px 0px 10px 0px; */
 }
 
 .select-container {
@@ -2980,6 +2987,7 @@ section.rms_header {
 
 .search-stations-input {
   position: relative;
+  display: flex;
 }
 
 .search-stations-input span {
@@ -6378,7 +6386,7 @@ section.employer-login-pg-sec {
 }
 
 .employer-newroom-box {
-  padding: 20px 40px 0px 40px;
+  padding: 20px 40px 0px 20px;
 }
 
 .employer-inputfield input {
@@ -7160,10 +7168,12 @@ nav.helo-drop {
 }
 
 
-/* .slide {
+.slide {
   clear:both;
   width:100%;
   height:0px;
+
+}
 .drop-out {
   font-size: 16px;
   font-weight: bold;
@@ -7191,9 +7201,11 @@ nav.helo-drop {
   top: 55px;
   border-radius: 8px;
   box-shadow: 0px 4px 13px 0px #00000026;
-
   z-index: 2;
 }
+
+
+
 ul.slide a {
   color: black;
   font-weight: bold;
@@ -7204,6 +7216,7 @@ ul.slide a {
 }
 ul.slide svg {
   width: 25px;
+  padding: 0px;
 }
 .slide hr {
   margin: 0;
@@ -7230,7 +7243,7 @@ ul.slide svg {
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
-#touch:checked + .slide {height: 300px;} */
+#touch:checked + .slide {height: fit-content;}
 
 
 dl,
@@ -7441,20 +7454,25 @@ ul {
   }
 
   .employer-save {
-    font-size: 12px;
-  }
+    font-size: 10px;
+    width: 65px;
+    padding: 2px 4px;
+}
+
+
 
   .employer-dont-have-acc {
     margin: 10px 0px 0px 40px;
   }
 
   .employer-dont-have-acc a {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .employer-dont-have-acc a span {
     font-size: 15px;
   }
+  
 
   .employer-register-btn a {
     font-size: 15px;
@@ -8000,12 +8018,21 @@ ul {
     padding: 20px 20px;
   }
 
+
   .select-station-drop select {
-    padding: 20.5px 30px 20.5px 70px;
-    width: 220px;
+    padding: 18.5px 30px 18.5px 20px;
+    width: 150px;
     margin: 0.4px 0px 0px 0px;
-    font-size: 18px !important;
+    font-size: 18px !important; 
+  } 
+
+  .select-container {
+    padding: 2px 10px 2px 30px;
   }
+
+  .search-stations-input.full-width input {
+    width: 720px;
+}
 
   .select-tv-icon {
     top: 14px;
@@ -8537,12 +8564,35 @@ ul {
   }
 
   .employer-inputfield label {
-    font-size: 15px;
+    font-size: 14px;
   }
 
+  .employerregister-field {
+    margin: 8px 0px;
+}
+
+.employer-newroom-box {
+  padding: 20px 40px 0px 10px;
+}
+
+.employer-dont-have-acc {
+  margin: 10px 0px 0px 20px;
+}
+
+.employer-register-btn {
+  margin: 15px 0px 30px 20px;
+}
+
+
   .employer-inputfield input {
-    padding: 9px 4px;
+    padding: 9px 8px;
   }
+
+  .employer-inputfield input::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  
 
   .free-subscribe-four {
     gap: 5px;
@@ -8581,8 +8631,12 @@ ul {
   }
 
   .employer-dont-have-acc a {
-    font-size: 13px;
+    font-size: 11px;
   }
+
+  .employer-dont-have-acc a span {
+    font-size: 13px;
+}
 
   .employer-register-btn a {
     font-size: 14px;
@@ -8843,9 +8897,13 @@ ul {
   }
 
   .search-stations-input span {
-    top: -2px;
+    top: 8px;
+    font-size: 32px;
   }
+
 }
+
+
 
 @media (max-width: 991px) {
   .Sweatshirt--box--alt {
@@ -9098,11 +9156,11 @@ ul {
   }
 
   .select-station-drop select {
-    padding: 18px 20px 17px 65px;
-    width: 200px;
+    padding: 18px 20px 17px 10px;
+    width: 120px;
     margin: 0.5px 0px 0px 0px;
     font-size: 16px !important;
-  }
+}
 
   .select-tv-icon {
     top: 10px;
@@ -9118,7 +9176,12 @@ ul {
   }
 
   .search-stations-input span {
-    top: -6px;
+    top: 4px;
+  }
+
+  .search-stations-input.full-width input {
+    width: 570px;
+    padding: 20px 15px;
   }
 
   .search-stations-input input {
@@ -9614,7 +9677,35 @@ ul {
     width: 48%;
     margin: 0px 10px 0px 0px;
   }
+
+  .ratemystation-about-txt h3 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .about-us-txt h4 {
+    font-size: 17px;
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .about-creator-txt h5 {
+    font-size: 17px;
+    margin: 0px 0px 20px 0px !important;
+    }
+
+
+    .creator-messages h4 {
+      font-size: 17px;
+      margin: 0px 0px 5px 0px !important;
+    }
+
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   .ul-li-list-footer ul {
@@ -10915,11 +11006,11 @@ ul {
   }
 
   .select-station-drop select {
-    width: 130px;
-    padding: 14.5px 0px 14.5px 50px;
+    width: 75px;
+    padding: 14.5px 0px 14.5px 12px;
     margin: 1.2px 0px 0px 0px;
     font-size: 12px !important;
-  }
+}
 
   .select-tv-icon {
     top: 4px;
@@ -10941,11 +11032,11 @@ ul {
   }
 
   .search-stations-input svg {
-    width: 25px;
+    width: 24px;
     position: relative;
-    top: -3px;
-    right: -10px;
-  }
+    top: 0px;
+    right: -01px;
+}
 
   .first-banner-txt h3 {
     font-size: 35px;
