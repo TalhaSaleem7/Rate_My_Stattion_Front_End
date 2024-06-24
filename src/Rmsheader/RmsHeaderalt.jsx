@@ -1,58 +1,78 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import HeaderMainLogo from "../img/header_logo_img.png";
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
+import HomeSelectOption from "../Homeselectoption/HomeSelectOption";
+import RmsHeaderLogo from "../img/rms_header.png";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RiSearchLine } from "react-icons/ri";
+import { useState } from "react";
 
-const Header1 = () => {
+const RmsHeaderAlt = () => {
   const navigate = useNavigate();
 
-  // State and functions for side panel
-  const [panelWidth, setPanelWidth] = useState("0");
-
-  const openNav = () => {
-    setPanelWidth("100%");
-  };
-
-  const closeNav = () => {
-    setPanelWidth("0");
-  };
-
-  const home = () => navigate("/");
-  const about = () => navigate("/About");
-  const newsletter = () => navigate("/Newsletter");
-  const job = () => navigate("/Viewjob");
-  const shop = () => navigate("/Shop");
-  const contact = () => navigate("/Contactus");
-  const faq = () => navigate("/FAQ");
   const cart = () => navigate("/mycart");
   const login = () => navigate("/employerlogin");
   const userprofile = () => navigate("/kabcah1");
   const usersetting = () => navigate("/accountsettingh");
 
+  const [isSearchByName, setIsSearchByName] = useState(false);
+
+  const toggleSearchMode = () => {
+    setIsSearchByName(!isSearchByName);
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const togglerms = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
   return (
     <>
-      <header className="header_main">
-        <Container className="header--2--main--cont">
-          <Row className="header--2--main--row">
+      <section className="rms_header">
+        <Container>
+          <Row className="rms--header--row">
             <Col lg={2}>
-              <div className="header-logo">
-                <img onClick={home} src={HeaderMainLogo} alt="img" />
+              <div className="rms_header_logo">
+                <div className="rms_header_logo--cont">
+                  <img src={require("../img/work_img_h.png")} alt="img" />
+                </div>
+                <a href="#">
+                  <input onClick={togglerms} type="checkbox" id="checkbox" />
+                  <label
+                    htmlFor="checkbox"
+                    className={`toggle rms--toggle ${clicked ? "clicked" : ""}`}
+                    onClick={handleClick}
+                  >
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                  </label>
+                </a>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={7}>
               <div className="header_nav">
-                <ul>
-                  <li onClick={home}>Home</li>
-                  <li onClick={about}>About</li>
-                  <li onClick={newsletter}>Newsletter</li>
-                  <li onClick={job}>Jobs</li>
-                  <li onClick={shop}>Shop</li>
-                  <li onClick={contact}>Contact</li>
-                  <li onClick={faq}>FAQ</li>
-                </ul>
+                <div className="search-stations-input search-stations-input--rms search-stations-input--rms--alt">
+                  <input
+                    className=""
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="Search Stations..."
+                  />
+
+                  <span>
+                    <RiSearchLine />
+                  </span>
+                </div>
               </div>
             </Col>
-            <Col lg={4}>
+            <Col lg={3}>
               <div className="header_end">
                 <div className="header--end--logo">
                   <a>
@@ -178,62 +198,20 @@ const Header1 = () => {
             </Col>
           </Row>
         </Container>
-      </header>
-
-      <header className="header_main_Mobile">
-        <Container>
-          <Row>
-            <Col lg={2}>
-              <div className="header-logo">
-                <img onClick={home} src={HeaderMainLogo} alt="img" />
-              </div>
-            </Col>
-          </Row>
-          <div className="header_nav">
-            <button onClick={openNav}>
-              <input type="checkbox" id="checkbox" />
-              <label for="checkbox" class="toggle">
-                <div class="bars"></div>
-                <div class="bars"></div>
-                <div class="bars"></div>
-              </label>
-            </button>
-            <div
-              id="mySidepanel"
-              className="sidepanel"
-              style={{ width: panelWidth }}
-            >
-              <a href="javascript:void(0)" className="closebtn">
-                <div class="toggle" onClick={closeNav}>
-                  <div class="bars" id="barz1"></div>
-
-                  <div class="bars" id="barz3"></div>
-                </div>
-              </a>
-              <a href="#" onClick={about}>
-                About
-              </a>
-              <a href="#" onClick={newsletter}>
-                Newsletter
-              </a>
-              <a href="#" onClick={job}>
-                Jobs
-              </a>
-              <a href="#" onClick={shop}>
-                Shop
-              </a>
-              <a href="#" onClick={contact}>
-                Contact
-              </a>
-              <a href="#" onClick={faq}>
-                FAQ
-              </a>
-            </div>
-          </div>
-        </Container>
-      </header>
+      </section>
+      {isOpen && (
+        <ul className="rms--header--slide">
+          <li>Home</li>
+          <li>About</li>
+          <li>Newsletter</li>
+          <li>Jobs</li>
+          <li>Shop</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      )}
     </>
   );
 };
 
-export default Header1;
+export default RmsHeaderAlt;
