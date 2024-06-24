@@ -26,6 +26,7 @@ const StationSearchResult = () => {
     navigate("/shop");
   };
 
+  
   return (
     <>
       <RmsHeader />

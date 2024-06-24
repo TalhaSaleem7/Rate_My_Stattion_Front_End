@@ -153,8 +153,7 @@ span.See button {
 span.Info {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;  
   gap: 10px;
 }
 
@@ -175,7 +174,7 @@ button.Contact-ah {
   line-height: 33px;
   /* 206.25% */
   border-radius: 8px;
-  padding: 5px 18px !important;
+  padding: 5px 28px !important;
 }
 
 span.Info button svg {
@@ -2459,7 +2458,7 @@ button.change-red {
 }
 
 .America-ah {
-  width: 44%;
+  width: 50%;
 }
 
 .Sweatshirt-ah {
@@ -3588,6 +3587,8 @@ section.latest-rating-sec {
 .side-newsletter-box img {
   width: 100%;
 }
+
+
 
 .side-subscribe-box {
   background: #fff;
@@ -5064,6 +5065,8 @@ section.shop-product-search-sec {
 
 .ratemystaion-contact-form ul li svg {
   margin-right: 10px;
+  color: #194D79;
+  font-size: 20px;
 }
 
 .ratemystaion-contact-form {
@@ -5626,8 +5629,8 @@ footer {
 }
 
 .job-select-opts {
-  display: grid;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   justify-content: end;
   width: 100%;
   align-items: end;
@@ -6802,6 +6805,7 @@ section.employer-login-pg-sec {
   padding: 30px;
   text-align: center;
   position: relative;
+  transition: all .6s ease;
 }
 
 .subcription-box h4 {
@@ -6874,6 +6878,7 @@ section.employer-login-pg-sec {
   font-weight: 600;
   line-height: 26px;
   padding: 6px 0px 0px 0px;
+  transition: all .6s ease;
 }
 
 .recommend-box::before {
@@ -6924,6 +6929,15 @@ section.employer-login-pg-sec {
 
 .subscribe-now-txt ul {
   padding: 0px 0px 0px 20px;
+}
+
+.subcription-box:hover {
+  border-color: #194d79;
+}
+
+.subcription-box:hover:before {
+  background: #194d79;
+  color: #fff;
 }
 
 .new-subscription-discount p span {
@@ -7013,6 +7027,14 @@ section.employer-login-pg-sec {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
+
+.submit-select-svg {
+  position: absolute;
+  top: 44px;
+  left: 15px;
+}
+
+
 .submit-staion-form h2 {
   color: var(--000000, #000);
   font-family: "Public Sans";
@@ -7020,7 +7042,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 40px 0px !important;
   padding: 0px 0px 30px 0px;
   position: relative;
 }
@@ -7065,7 +7087,7 @@ section.employer-login-pg-sec {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   transition-duration: 0.5s;
 }
 .rms--toggle {
@@ -7076,7 +7098,7 @@ section.employer-login-pg-sec {
 
 .bars {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background-color: rgb(25 77 121);
   border-radius: 4px;
 }
@@ -7121,7 +7143,7 @@ section.employer-login-pg-sec {
   background: var(--Gray-6, #f2f2f2);
   width: 100%;
   display: block;
-  padding: 15px 25px;
+  padding: 15px 25px 15px 45px;
   border: none;
 }
 
@@ -7144,12 +7166,63 @@ section.employer-login-pg-sec {
 
 .submit-staion-field {
   margin: 0px 0px 40px 0px;
+  position: relative;
 }
 
 .submit-station-btn {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.submit-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.submit-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.submit-checkbox label {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+}
+
+.submit-checkbox label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+}
+
+
+.submit-checkbox input[type="checkbox"]:checked + label::before {
+  border-color: #89C400;
+  background: #89C400;
+}
+
+.submit-checkbox label::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 8px;
+  height: 13px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.submit-checkbox input[type="checkbox"]:checked + label::after {
+  opacity: 1;
 }
 
 .submit-station-btn .submitbtn-dark {
@@ -7301,11 +7374,6 @@ ul.slide svg {
   height: fit-content;
 }
 
-dl,
-ol,
-ul {
-  margin: 0px !important;
-}
 
 .submit-station-btn .submitbtn-dark {
   color: #fff;
@@ -7656,13 +7724,29 @@ ul {
     font-size: 14px;
   }
 
+
+  ul.save--share--pop li {
+    padding: 6px;
+}
+
   .station-search-result-txt h4 {
     font-size: 30px;
   }
 
+  ul.save--share--pop {
+    padding: 5px;
+    border-radius: 8px;
+    width: 160px;
+    right: 20px;
+}
+
   .station-search-result-txt p {
     font-size: 16px;
   }
+
+  .article-reactions ul li a {
+    font-size: 18px;
+}
 
   .station-search-result-txt p span {
     font-size: 16px;
@@ -8553,8 +8637,21 @@ ul {
     padding: 0px 20px;
   }
 
+  .header_end a:nth-child(1) svg {
+    width: 38px;
+}
+
+.header_end a span {
+  top: -3px;
+  right: -2px;
+  padding: 0px 6px;
+  font-size: 10px;
+}
+
+
+
   .header_end {
-    gap: 15px;
+    gap: 20px;
   }
 
   .shop-friend-themed {
@@ -8568,6 +8665,7 @@ ul {
   .header_end a:nth-child(1) span {
     font-size: 10px;
   }
+
   .header_end a svg {
     height: 30px;
   }
@@ -8575,7 +8673,7 @@ ul {
   .login-btn {
     font-size: 15px;
     line-height: 28px;
-    padding: 4px 35px;
+    padding: 4px 25px;
   }
 
   section.employer-login-pg-sec {
@@ -9403,6 +9501,7 @@ ul {
 
   .shop-new-arrival {
     padding: 30px 30px;
+    margin: 0px 10px 20px 10px;
   }
 
   .shop-new-arrival h3 {
@@ -9946,10 +10045,11 @@ ul {
   }
 
   .Sweatshirt-ah-select-card button {
-    font-size: 10px;
-    line-height: 29px;
-    width: 50%;
-  }
+    font-size: 11px;
+    line-height: 24px;
+    width: 100%;
+}
+
 
   .Sweatshirt-ah-select-card h2 {
     font-size: 11px !important;
@@ -9988,10 +10088,6 @@ ul {
     line-height: 20px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 20px;
-    line-height: 31px;
-  }
 
   .Cooper-ah-box-main {
     padding-top: 10px;
@@ -10111,9 +10207,6 @@ ul {
     width: 30%;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 18px;
-  }
 
   .About-main-card-1-ah p {
     padding: 15px 0px 10px 0px;
@@ -10129,10 +10222,6 @@ ul {
     justify-content: space-between;
   }
 
-  .About-main-card-1-ah p {
-    padding: 15px 0px 10px 0px;
-    font-size: 14px;
-  }
 
   .bar-pogres-box-cards-ah {
     flex-direction: column;
@@ -10316,9 +10405,6 @@ ul {
     height: 12px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 16px;
-  }
 
   .Popular-ti-ah-btn-box button {
     font-size: 14px;
@@ -10511,6 +10597,8 @@ ul {
     flex-direction: column;
   }
 
+
+
   .America-ah-part-2 {
     width: 100%;
     display: flex;
@@ -10519,9 +10607,6 @@ ul {
     padding: 30px 0px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 19px;
-  }
 
   .About-main-card-1-ah p {
     padding: 14px 0px 10px 0px;
@@ -10538,10 +10623,11 @@ ul {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 60px;
     padding-top: 3px;
     justify-content: center;
-  }
+    margin: 0px 0px 10px 0px;
+}
+
 
   .Sweatshirt-ah-select-card {
     display: flex;
@@ -10564,11 +10650,6 @@ ul {
     width: 100px;
   }
 
-  .About-main-card-1-ah p {
-    padding: 14px 0px 10px 0px;
-    font-size: 16px;
-  }
-
   .Sweatshirt-ah-select-card h2 {
     font-size: 13px !important;
   }
@@ -10581,9 +10662,10 @@ ul {
   }
 
   .About-main-card-1-ah p {
-    padding: 10px 0px 10px 0px;
-    font-size: 16px;
-  }
+    padding: 10px 0px 5px 0px;
+    font-size: 14px;
+    line-height: 20px;
+}
 
   .Sweatshirt-box {
     width: 100%;
@@ -10834,9 +10916,6 @@ ul {
     gap: 25px;
   }
 
-  .About-main-card-1-ah p {
-    line-height: 20px;
-  }
 
   .Hire-ah-box button {
     padding: 8px;
@@ -10866,13 +10945,13 @@ ul {
     height: 12px;
   }
 
-  .About-main-card-1-ah h2 {
-    font-size: 16px;
-  }
+
 
   .About-main-card-1-ah h2 {
-    font-size: 21px;
-  }
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 0px 0px 0px;
+}
 
   .Cooper-ah-tital-head span {
     color: #000;
@@ -11015,6 +11094,7 @@ ul {
 
   .like-report-txt ul li {
     font-size: 12px;
+    padding: 4px 8px;
   }
 
   .like-report-submitted {
@@ -11094,7 +11174,7 @@ ul {
   }
 
   .latest-rating-txt h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .director-urer img {
@@ -11487,6 +11567,46 @@ CONTACTUS */
   .review-news-director-second {
     margin: 55px 0px 0px 0px !important;
   }
+
+  .select-box option {
+    font-size: 14px !important;
+  }
+  .search-stations-input svg {
+    top: 0px;
+    right: 0px;
+  }
+
+  .search-stations-input.full-width input {
+    width: 350px;
+    padding: 15px 15px;
+}
+.like-report-submitted p {
+  font-size: 12px;
+}
+
+.follow-us-rate ul li a svg {
+  width: 20px;
+}
+
+.select-station-drop select {
+  padding: 18px 0px 18px 0px;
+}
+
+.select-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-latest-updates {
+  padding: 0px 25px 20px 0px;
+}
+
+.contact-follow-like-btn ul {
+  justify-content: space-between;
+}
+
+
+
 }
 @media (max-width: 425px) {
   .toggle {

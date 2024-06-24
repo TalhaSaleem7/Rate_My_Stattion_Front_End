@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 import { RiVerifiedBadgeFill, RiMore2Fill } from 'react-icons/ri';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import rmsabc from "../img/job-comp-logo.jpg"
 
 
 const SeeProfileBox = () => {
+
+    const navigate = useNavigate()
+    const seeprofile = () => {
+        navigate("/kabc2");
+      };
+
+
   return (
     <>
      <div className='rms-profile-box'>
@@ -18,8 +26,8 @@ const SeeProfileBox = () => {
                         <h3>Kabc  <RiVerifiedBadgeFill /></h3>
                         <h6>TV News   |   Los Angeles, CA   |   DMA: 2</h6>
                         <div className='rms-kabc-btn'>
-                            <a href="#" className='themedark'>See Profile</a>
-                            <a href="#" className='themelight'>See Ratings</a>
+                            <a onClick={seeprofile} className='themedark'>See Profile</a>
+                            <a onClick={seeprofile} className='themelight'>See Ratings</a>
                         </div>
                     </div>
                 </div>

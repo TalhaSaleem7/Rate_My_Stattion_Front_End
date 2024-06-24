@@ -231,7 +231,7 @@ const KABC2 = () => {
           </section>
         </div>
 
-        <div id="ratings" class="content   ">
+        <div id="ratings" class="content  active ">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">
@@ -439,7 +439,7 @@ const KABC2 = () => {
           </section>
         </div>
 
-        <div id="Contact" class="content active">
+        <div id="Contact" class="content ">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">

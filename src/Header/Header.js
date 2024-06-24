@@ -108,23 +108,15 @@ const Header = () => {
                   <div class="bars" id="barz3"></div>
                 </div>
               </a>
+              <a href="#" onClick={about}>About</a>
+              <a href="#" onClick={newsletter}>Newsletter</a>
+              <a href="#" onClick={job}>Jobs</a>
+              <a href="#" onClick={shop}>Shop</a>
+              <a href="#" onClick={contact}>Contact</a>
+              <a href="#" onClick={faq}>FAQ</a>
+              <a href="#" onClick={login}>Login</a>
               <a href="#" onClick={about}>
                 About
-              </a>
-              <a href="#" onClick={newsletter}>
-                Newsletter
-              </a>
-              <a href="#" onClick={job}>
-                Jobs
-              </a>
-              <a href="#" onClick={shop}>
-                Shop
-              </a>
-              <a href="#" onClick={contact}>
-                Contact
-              </a>
-              <a href="#" onClick={faq}>
-                FAQ
               </a>
             </div>
           </div>
