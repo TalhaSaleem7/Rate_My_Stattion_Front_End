@@ -4,10 +4,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import HomeSelectOption from "../Homeselectoption/HomeSelectOption";
 import RmsHeaderLogo from "../img/rms_header.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import HeaderMainLogo from "../img/header_logo_img.png";
 import { RiSearchLine } from "react-icons/ri";
 import { useState } from "react";
 
-const RmsHeaderAlt = () => {
+const RmsSearchHeader = () => {
   const navigate = useNavigate();
 
   const cart = () => navigate("/mycart");
@@ -31,6 +32,25 @@ const RmsHeaderAlt = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
+  
+  const home = () => navigate("/");
+  const about = () => navigate("/About");
+  const newsletter = () => navigate("/Newsletter");
+  const job = () => navigate("/Viewjob");
+  const shop = () => navigate("/Shop");
+  const contact = () => navigate("/Contactus");
+  const faq = () => navigate("/FAQ");
+
+  const [panelWidth, setPanelWidth] = useState("0");
+
+  const openNav = () => {
+    setPanelWidth("100%");
+  };
+
+  const closeNav = () => {
+    setPanelWidth("0");
+  };
+
   return (
     <>
       <section className="rms_header">
@@ -73,7 +93,7 @@ const RmsHeaderAlt = () => {
               </div>
             </Col>
             <Col lg={3}>
-              <div className="header_end">
+              <div className="header_end header-end-rmssearch">
                 <div className="header--end--logo">
                   <a>
                     <svg
@@ -201,17 +221,57 @@ const RmsHeaderAlt = () => {
       </section>
       {isOpen && (
         <ul className="rms--header--slide">
-          <li>Home</li>
-          <li>About</li>
-          <li>Newsletter</li>
-          <li>Jobs</li>
-          <li>Shop</li>
-          <li>Contact</li>
-          <li>FAQ</li>
+          <li><a href="#" onClick={about}>About</a></li>
+          <li><a href="#" onClick={newsletter}>Newsletter</a></li>
+          <li><a href="#" onClick={job}>Jobs</a></li>
+          <li><a href="#" onClick={shop}>Shop</a></li>
+          <li><a href="#" onClick={contact}>Contact</a></li>
+          <li><a href="#" onClick={faq}>FAQ</a></li>
+          <li><a href="#" onClick={login}>Login</a></li>
         </ul>
       )}
+
+
+
+<header className="header_main_Mobile  rms-mobile-header-logo">
+        <Container>
+          <div className="header_nav">
+            <button onClick={openNav}>
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox" class="toggle">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+              </label>
+            </button>
+            <div
+              id="mySidepanel"
+              className="sidepanel"
+              style={{ width: panelWidth }}
+            >
+              <a href="javascript:void(0)" className="closebtn">
+                <div class="toggle" onClick={closeNav}>
+                  <div class="bars" id="barz1"></div>
+
+                  <div class="bars" id="barz3"></div>
+                </div>
+              </a>
+              <a href="#" onClick={about}>About</a>
+              <a href="#" onClick={newsletter}>Newsletter</a>
+              <a href="#" onClick={job}>Jobs</a>
+              <a href="#" onClick={shop}>Shop</a>
+              <a href="#" onClick={contact}>Contact</a>
+              <a href="#" onClick={faq}>FAQ</a>
+              <a href="#" onClick={login}>Login</a>
+              <a href="#" onClick={about}>
+                About
+              </a>
+            </div>
+          </div>
+        </Container>
+      </header>
     </>
   );
 };
 
-export default RmsHeaderAlt;
+export default RmsSearchHeader;

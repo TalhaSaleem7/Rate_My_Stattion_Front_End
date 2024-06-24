@@ -7435,6 +7435,12 @@ ul.slide svg {
 
 /*********** Submit A Station Form Page CSS End ***********/
 
+ul.rms--header--slide li a {
+  color: #000;
+}
+
+
+
 /******************* Shahdin Pages CSS End *******************/
 
 @media screen and (max-width: 1366px) {
@@ -7724,6 +7730,9 @@ ul.slide svg {
     font-size: 14px;
   }
 
+  .search-stations-input--rms--alt input {
+    width: 100% !important;
+}
 
   ul.save--share--pop li {
     padding: 6px;
@@ -7752,6 +7761,38 @@ ul.slide svg {
     font-size: 16px;
   }
 
+  .search-stations-input--rms .select-container {
+    padding: 0px 20px;
+    box-shadow: none;
+}
+
+.search-stations-input--rms .select-box, .search-stations-input--rms option {
+  font-size: 16px !important;
+  padding: 15px 10px 15px 10px;
+  width: 120px;
+}
+
+.select-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.search-stations-input--rms span {
+  top: 2px !important;
+}
+
+.search-stations-input--rms input {
+  padding: 10px 20px ;
+  width: 400px;
+}
+
+.rms_header_logo {
+  gap: 20px;
+}
+
+.search-stations-input--rms {
+  margin: 0px 20px;
+}
   .station-search-result-txt {
     padding: 40px 0px 20px 0px;
   }
@@ -8151,7 +8192,7 @@ ul.slide svg {
 
   .search-stations-input input {
     width: 450px;
-    padding: 20px 20px;
+    padding: 15px 20px;
   }
 
   .select-station-drop select {
@@ -9029,6 +9070,34 @@ ul.slide svg {
     top: 8px;
     font-size: 32px;
   }
+
+  .helo-drop  .drop-out {
+    padding: 2px;
+  }
+
+  nav.helo-drop label {
+    gap: 5px;
+  }
+
+  .header-end-rmssearch {
+    gap: 10px;
+  }
+  .header--end--logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .header-end-rmssearch  a svg {
+    height: 30px;
+    padding: 5px 3px 5px 0px;
+    width: 30px;
+  }
+
+  .user--pic--header {
+    width: 30%;
+  }
+
 }
 
 @media (max-width: 991px) {
@@ -9051,6 +9120,12 @@ ul.slide svg {
     width: 50%;
     margin: 0 auto;
   }
+
+  .search-stations-input--rms--alt input {
+    width: 100% !important;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -9081,6 +9156,33 @@ ul.slide svg {
   .About-main-box-1-ah {
     width: 100%;
   }
+
+  .rms_header_logo a {
+    display: none;
+    }
+
+    .rms_header .header_end {
+        display: none;
+    }
+
+
+    .rms_header .header_nav {
+      display: none;
+    }
+
+    .rms--header--slide {
+      display: none;
+    }
+
+    .rms-mobile-header-logo .header-logo img{
+      display: none;
+    }
+
+    .rms-mobile-header-logo {
+      padding: 0px !important;
+  }
+  
+
 
   .About-main-box-2-ah {
     width: 60%;

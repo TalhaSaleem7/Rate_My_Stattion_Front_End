@@ -45,21 +45,6 @@ const StationSearchResult = () => {
           </Row>
         </Container>
       </section>
-      <section>
-        <Container>
-          <Row>
-            <Col lg={12}>
-              <div className="station-search-result-txt">
-                <h4>Here are your result for "Lorem Ipsum"</h4>
-                <p>
-                  There are 12 Stations with <span>"Lorem Ipsum"</span> on{" "}
-                  <span>TV News Category</span>
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
 
       <section className="search-station-sec">
         <Container>
