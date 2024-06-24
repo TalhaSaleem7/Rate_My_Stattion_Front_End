@@ -1,6 +1,10 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
-
+import { useState } from "react";
 function ExperienceForm() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="container">
       <div className="my--container--h mx-auto">
@@ -55,24 +59,30 @@ function ExperienceForm() {
               />
             </div>
 
-            <div className="mb-3 mt-1 col-12">
+            <div className="mb-3 mt-1 col-12 drop--position">
               <label
                 htmlFor="inputJobType"
                 className="form-label form-label-alt"
               >
                 Job Type
               </label>
-              <select
-                className="form-select experience--job--inp--h"
-                id="inputJobType"
+              <div
+                onClick={toggle}
+                className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                  isOpen ? `experience--job--inp--h--dropdown--click--rad` : ``
+                }`}
+                id="inputWorkPlace"
               >
-                <option value="" style={{ display: "none" }}>
-                  Choose options
-                </option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+                Choose Option...
+              </div>
+              {isOpen && (
+                <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                  <li>Option</li>
+
+                  <li>Option</li>
+                  <li>Option</li>
+                </ul>
+              )}
             </div>
 
             <div className="experience--col--h  d-flex align-items-end mb-3 mt-1 justify-content-between">

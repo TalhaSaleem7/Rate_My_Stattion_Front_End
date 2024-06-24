@@ -1,5 +1,10 @@
 import Buttonh from "./savecnclbtn_h";
+import { useState } from "react";
 const ProfileComponent = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <h1 className="account-setting-right-title">Profile</h1>
@@ -33,21 +38,28 @@ const ProfileComponent = () => {
           placeholder="Type here..."
         />
       </div>
-      <div className="mb-3 mt-1 col-12">
+      <div className="mb-3 mt-1 col-12 drop--position">
         <label htmlFor="inputWorkPlace" className="form-label form-label-alt">
           Work Place
         </label>
-        <select
-          className="form-select experience--job--inp--h"
+
+        <div
+          onClick={toggle}
+          className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+            isOpen ? `experience--job--inp--h--dropdown--click--rad` : ``
+          }`}
           id="inputWorkPlace"
         >
-          <option value="" selected disabled style={{display:"none"}}>
-            Choose Station
-          </option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          Choose Option...
+        </div>
+        {isOpen && (
+          <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+            <li>Option</li>
+
+            <li>Option</li>
+            <li>Option</li>
+          </ul>
+        )}
       </div>
       <div className="col-12 mb-3 mt-1">
         <label htmlFor="inputJobTitle" className="form-label form-label-alt">
@@ -71,7 +83,7 @@ const ProfileComponent = () => {
           placeholder="Type here..."
         />
       </div>
-     <Buttonh />
+      <Buttonh />
     </>
   );
 };
