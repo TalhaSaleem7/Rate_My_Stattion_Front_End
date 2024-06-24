@@ -329,6 +329,35 @@ label {
   border-radius: 10px;
   color: #828282;
 }
+.drop--position {
+  position: relative;
+}
+.experience--job--inp--h--dropdown {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+}
+.experience--job--inp--h--dropdown--click {
+  cursor: pointer;
+}
+.experience--job--inp--h--dropdown--click--rad {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.experience--job--inp--h--dropdown li {
+  padding: 11.8px 16.8px;
+}
+.experience--job--inp--h--dropdown li {
+  font-size: 16px;
+  color: black;
+}
+.experience--job--inp--h--dropdown li:hover {
+  background-color: #bdbdbd;
+  cursor: pointer;
+}
 .experience--form--check--input {
   width: 27.66px;
   height: 27.66px;
