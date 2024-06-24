@@ -94,6 +94,7 @@ const Header = () => {
               <a href="#" onClick={shop}>Shop</a>
               <a href="#" onClick={contact}>Contact</a>
               <a href="#" onClick={faq}>FAQ</a>
+              <a href="#" onClick={login}>Login</a>
             </div>
           </div>
         </Container>
