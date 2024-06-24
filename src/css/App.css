@@ -2782,7 +2782,42 @@ header.header_main {
   line-height: 20px;
 }
 
+
+.header_end a svg {
+  padding: 5px 7px 5px 5px;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  transition: all .6s ease;
+}
+
+.header_end a svg:hover {
+  background: #d7d7d7;
+}
+
+
+
 /*********** Header Main CSS ENd ***********/
+
+.rms_header_logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rms_header_logo img {
+  width: 120px;
+}
+
+.rms_header_logo a {
+  font-size: 30px;
+}
+
+section.rms_header {
+  padding: 15px 0px;
+}
+
+
 
 /*********** First Banner Section CSS Start ***********/
 
@@ -2827,7 +2862,7 @@ header.header_main {
   width: 650px;
   border-radius: 0px 20px 20px 0px;
   background: #fff;
-  box-shadow: 5px 0px 13px 0px rgba(8, 42, 83, 0.5);
+  box-shadow: 6px 0px 13px 0px rgba(8, 42, 83, 0.5);
   border: none;
   font-size: 18px;
 }
@@ -2839,7 +2874,7 @@ header.header_main {
   font-style: normal;
   font-weight: 300;
 }
-
+/* 
 .select-station-drop {
   position: relative;
 }
@@ -2860,7 +2895,7 @@ header.header_main {
   font-size: 22px !important;
   font-weight: 700;
   position: relative;
-}
+} */
 
 .search-stations-input input:focus {
   outline: none;
@@ -2869,6 +2904,91 @@ header.header_main {
 .select-station-drop select:focus {
   outline: none;
 }
+
+
+.select-station-drop {
+  display: flex;
+  align-items: center;
+  margin: 10.5px 0px 10px 0px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  padding: 14.5px 10px 15.3px 30px;
+  background-color: #89C400;
+  position: relative;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: -6px 0px 13px 0px rgba(8, 42, 83, 0.5);
+  width: 100%; 
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.select-container:hover {
+  background-color: #75a111;
+}
+
+.select-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.select-box {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #fff;
+  font-family: 'Public Sans';
+  font-size: 22px !important;
+  width: 100%; /* Ensure the select-box takes the full width */
+}
+
+.select-box option {
+  padding: 10px;
+  font-size: 22px !important;
+  color: #000;
+}
+
+
+.select-tv-icon svg {
+  color: #fff;
+}
+
+.first-banner-txt a {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  margin: 60px 0px 0px 0px !important;
+  color: #fff;
+  text-decoration-line: underline !important;
+}
+
+.search-stations-input {
+  position: relative;
+}
+
+.search-stations-input span {
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  font-size: 40px;
+  color: #194d79;
+  cursor: pointer;
+}
+
+
+
 
 .first-banner-txt a {
   text-align: center;
@@ -3565,6 +3685,7 @@ section.latest-rating-sec {
   font-weight: 600;
   line-height: normal;
   margin: 5px 0px 0px 0px;
+  cursor: pointer;
 }
 
 .job-detail {
@@ -3790,6 +3911,7 @@ section.ratemystation-shop-sec h4 {
   color: #000;
   background: #fff;
   padding: 10px 40px;
+  cursor: pointer;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   border: 1px solid #fff;
@@ -3798,7 +3920,7 @@ section.ratemystation-shop-sec h4 {
 
 .looking-for-worktxt a:hover {
   background: transparent;
-  color: #fff;
+  color: #fff !important;
 }
 
 /*********** Looking for work Section CSS End ***********/
@@ -8333,7 +8455,7 @@ ul {
   }
 
   .header_nav ul {
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 20px !important;
     gap: 40px;
   }
 
@@ -8343,11 +8465,6 @@ ul {
 
   .header-logo img {
     width: 155.797px;
-  }
-
-  .header_nav ul {
-    gap: 40px;
-    margin: 0px 0px 0px 18px;
   }
 
   .header_nav ul li {

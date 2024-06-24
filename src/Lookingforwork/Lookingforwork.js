@@ -1,6 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Lookingforwork = () => {
+    const navigate = useNavigate();
+
+    const SubscribePg = () => {
+        navigate("/subscription");
+      };
   return (
     <>
      <section class="looking-for-work-sec">
@@ -10,7 +16,7 @@ const Lookingforwork = () => {
                     <div class="looking-for-worktxt">
                         <h4>Looking for Work?</h4>
                         <p>Subscribe to our Job Center for instant access to thousands of job opportunities in media.</p>
-                        <a href="#">Subscribe</a>
+                        <a onClick={SubscribePg}>Subscribe</a>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+import Footerah from "../footerah/Footerah";
 
 const TermsAndConditions = () => {
   return (
@@ -99,7 +100,12 @@ const TermsAndConditions = () => {
             </div>
           </div>
         </div>
-      </div></>
+      </div>
+                  
+      <Footerah/>
+
+      </>
+
   );
 }
 

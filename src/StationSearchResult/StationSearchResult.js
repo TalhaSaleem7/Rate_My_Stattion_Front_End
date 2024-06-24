@@ -9,6 +9,7 @@ import ProdImage2 from '../img/ratemystation-prod-img-2.png';
 import ProdImage3 from '../img/ratemystation-prod-img-3.png';
 import ProdImage4 from '../img/ratemystation-prod-img-4.png';
 import Lookingforwork from '../Lookingforwork/Lookingforwork';
+import RmsHeader from '../Rmsheader/RmsHeader';
 
 
 
@@ -30,6 +31,8 @@ const StationSearchResult = () => {
 
     return (
         <>
+
+        <RmsHeader/>
             <section>
                 <Container>
                     <Row>
