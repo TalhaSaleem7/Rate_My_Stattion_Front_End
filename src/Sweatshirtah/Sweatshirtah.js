@@ -3,10 +3,13 @@ import { Container } from "react-bootstrap";
 import Cooperah1 from "../Cooperah/Cooperah1";
 import Cooperah from "../Cooperah/Cooperah";
 import Buyerah from "../Buyerah/Buyerah";
+import Header from "../Header/Header";
+import Footerah from "../footerah/Footerah";
 
 const Sweatshirtah = () => {
   return (
     <>
+      <Header />
       <section className="Sweatshirt-sec">
         <Container>
           <div className="Sweatshirt">
@@ -24,6 +27,7 @@ const Sweatshirtah = () => {
           </div>
         </Container>
       </section>
+      <Footerah />
     </>
   );
 };

@@ -13,6 +13,10 @@ body {
 header.header_main_Mobile {
   display: none;
 }
+header.header_main .container,
+header.header_main .row > * {
+  padding: 0;
+}
 
 section.KABC-ah {
   width: 100%;
@@ -2754,11 +2758,15 @@ header.header_main {
   transition: all 0.6s ease;
 }
 
-.login-btn{
+.login-btn {
+  background: transparent;
+  color: #194d79 !important;
+}
+.login-btn:hover {
+  transition: all 0.6s ease;
   background: #194d79;
   color: #fff !important;
 }
-
 .header_end a {
   position: relative;
 }
@@ -2778,7 +2786,42 @@ header.header_main {
   line-height: 20px;
 }
 
+
+.header_end a svg {
+  padding: 5px 7px 5px 5px;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  transition: all .6s ease;
+}
+
+.header_end a svg:hover {
+  background: #d7d7d7;
+}
+
+
+
 /*********** Header Main CSS ENd ***********/
+
+.rms_header_logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rms_header_logo img {
+  width: 120px;
+}
+
+.rms_header_logo a {
+  font-size: 30px;
+}
+
+section.rms_header {
+  padding: 15px 0px;
+}
+
+
 
 /*********** First Banner Section CSS Start ***********/
 
@@ -2799,8 +2842,6 @@ header.header_main {
   color: #fff;
   margin: 0px 0px 50px 0px !important;
 }
-
-
 
 .select-station-drop select option {
   font-size: 14px;
@@ -2825,7 +2866,7 @@ header.header_main {
   width: 650px;
   border-radius: 0px 20px 20px 0px;
   background: #fff;
-  box-shadow: 5px 0px 13px 0px rgba(8, 42, 83, 0.5);
+  box-shadow: 6px 0px 13px 0px rgba(8, 42, 83, 0.5);
   border: none;
   font-size: 18px;
 }
@@ -2837,8 +2878,7 @@ header.header_main {
   font-style: normal;
   font-weight: 300;
 }
-
-
+/* 
 .select-station-drop {
   position: relative;
 }
@@ -2859,7 +2899,7 @@ header.header_main {
   font-size: 22px !important;
   font-weight: 700;
   position: relative;
-}
+} */
 
 .search-stations-input input:focus {
   outline: none;
@@ -2867,6 +2907,63 @@ header.header_main {
 
 .select-station-drop select:focus {
   outline: none;
+}
+
+
+.select-station-drop {
+  display: flex;
+  align-items: center;
+  margin: 10.5px 0px 10px 0px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  padding: 14.5px 10px 15.3px 30px;
+  background-color: #89C400;
+  position: relative;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: -6px 0px 13px 0px rgba(8, 42, 83, 0.5);
+  width: 100%; 
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.select-container:hover {
+  background-color: #75a111;
+}
+
+.select-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.select-box {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #fff;
+  font-family: 'Public Sans';
+  font-size: 22px !important;
+  width: 100%; /* Ensure the select-box takes the full width */
+}
+
+.select-box option {
+  padding: 10px;
+  font-size: 22px !important;
+  color: #000;
+}
+
+
+.select-tv-icon svg {
+  color: #fff;
 }
 
 .first-banner-txt a {
@@ -2894,6 +2991,33 @@ header.header_main {
   cursor: pointer;
 }
 
+
+
+
+.first-banner-txt a {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  margin: 60px 0px 0px 0px !important;
+  color: #fff;
+  text-decoration-line: underline !important;
+}
+
+.search-stations-input {
+  position: relative;
+}
+
+.search-stations-input span {
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  font-size: 40px;
+  color: #194d79;
+  cursor: pointer;
+}
 
 /*********** First Banner Section CSS End ***********/
 
@@ -2998,7 +3122,6 @@ section.latest-rating-sec {
   position: relative;
 }
 
-
 .review-news-director-second {
   margin: 120px 0px 0px 0px;
 }
@@ -3010,7 +3133,6 @@ section.latest-rating-sec {
   width: 100%;
   left: 0px;
 }
-
 
 .director-urer {
   display: flex;
@@ -3368,8 +3490,11 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 700;
   color: #000;
+  cursor: pointer;
 }
-
+.newsletter-side-head-alt h3 {
+  cursor: default;
+}
 .newsletter-side-head a {
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -3377,12 +3502,16 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 300;
   color: #194d79;
+  cursor: pointer;
 }
-
+.newsletter-side-head a:hover {
+  text-decoration: underline !important;
+}
 .side-newsletter-box {
   margin: 0px 0px 30px 0px;
   background: #fff;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .side-newsletter-txt {
@@ -3543,23 +3672,24 @@ section.latest-rating-sec {
 .job-details {
   display: flex;
   justify-content: space-between;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 10px;
   border-radius: 8px;
   position: absolute;
   width: 700px;
   margin: 10px 0px 0px 0px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .jobdetail-click-btn h6 {
-  color: #194D79;
+  color: #194d79;
   font-family: "Public Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin: 5px 0px 0px 0px;
+  cursor: pointer;
 }
 
 .job-detail {
@@ -3601,8 +3731,6 @@ section.latest-rating-sec {
   margin-left: 5px;
   width: 50px;
 }
-
-
 
 /*********** RateMyStation's Shop Section CSS Start ***********/
 
@@ -3707,6 +3835,7 @@ section.ratemystation-shop-sec h4 {
 .ratemystation-allprod-btn {
   margin: 40px 0px 0px 0px;
   text-align: center;
+  cursor: pointer;
 }
 
 .ratemystation-allprod-btn a {
@@ -3726,7 +3855,7 @@ section.ratemystation-shop-sec h4 {
 
 .ratemystation-allprod-btn a:hover {
   background: transparent;
-  color: #194d79;
+  color: #194d79 !important;
 }
 
 .prod-abslt-ratems {
@@ -3786,6 +3915,7 @@ section.ratemystation-shop-sec h4 {
   color: #000;
   background: #fff;
   padding: 10px 40px;
+  cursor: pointer;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   border: 1px solid #fff;
@@ -3794,7 +3924,7 @@ section.ratemystation-shop-sec h4 {
 
 .looking-for-worktxt a:hover {
   background: transparent;
-  color: #fff;
+  color: #fff !important;
 }
 
 /*********** Looking for work Section CSS End ***********/
@@ -4240,12 +4370,14 @@ section.latest-article-recommend-sec {
 
 .latest-article-box {
   margin: 0px 0px 30px 0px;
+  cursor: pointer;
 }
 
 .newsletter-slide-article {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   display: flex;
   margin: 0px 0px 30px 0px;
+  cursor: pointer;
 }
 
 .newsletter-slide-article .newsletter-article-text {
@@ -4408,6 +4540,7 @@ section.search-job-sec {
   background: #fff;
   border-radius: 20px;
   margin: 0px 0px 30px 0px;
+  cursor: pointer;
 }
 
 .assistant-logo-txt-more {
@@ -5054,7 +5187,9 @@ footer {
   align-items: center;
   gap: 30px;
 }
-
+.icon-list-footer svg:hover path {
+  fill: #89c400;
+}
 .ul-li-list-footer ul li a {
   color: var(--Gray-3, #828282) !important;
   font-family: "Public Sans", sans-serif;
@@ -5068,7 +5203,8 @@ footer {
 
 .ul-li-list-footer ul li a:hover {
   cursor: pointer;
-  text-decoration: underline !important;
+
+  color: black !important;
 }
 /*********** Contact Us Page CSS End ***********/
 
@@ -5432,8 +5568,8 @@ footer {
 }
 
 .job-select-opts {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column; */
   justify-content: end;
   width: 100%;
   align-items: end;
@@ -5598,8 +5734,6 @@ footer {
 }
 
 /*********** View Job Detail Page CSS End ***********/
-
-
 
 /*********** Job Opening Page CSS Start ***********/
 
@@ -6874,7 +7008,7 @@ section.employer-login-pg-sec {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .bars {
@@ -6885,10 +7019,11 @@ section.employer-login-pg-sec {
 }
 
 #bar2 {
-  transition-duration: .8s;
+  transition-duration: 0.8s;
 }
 
-#bar1,#bar3 {
+#bar1,
+#bar3 {
   width: 70%;
 }
 /* 
@@ -6899,23 +7034,23 @@ section.employer-login-pg-sec {
 
 #checkbox:checked + .toggle #bar2 {
   transform: scaleX(0);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar1 {
   width: 100%;
   transform: rotate(45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle #bar3 {
   width: 100%;
   transform: rotate(-45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 #checkbox:checked + .toggle {
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   transform: rotate(180deg);
 }
 .submit-staion-field select {
@@ -6973,25 +7108,31 @@ section.employer-login-pg-sec {
   color: #194d79;
 }
 
-
- .toggle #barz1 {
+.toggle #barz1 {
   width: 100%;
   transform: rotate(45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   top: 18px;
-    position: absolute;
-    background-color: #fff;
-
+  position: absolute;
+  background-color: #fff;
 }
 .toggle #barz3 {
   width: 100%;
   transform: rotate(-45deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   background-color: #fff;
 }
 
 nav.helo-drop label {
+  font-weight: bold;
   width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user--pic--header {
+  width: 43%;
+  border-radius: 5px;
 }
 
 .submit-station-btn {
@@ -7000,8 +7141,6 @@ nav.helo-drop label {
   gap: 10px;
 }
 
-
-
 /* body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
 
 h1 {padding: 40px; text-align: center; font-size: 1.5em;}
@@ -7009,14 +7148,13 @@ h1 {padding: 40px; text-align: center; font-size: 1.5em;}
 li a {text-decoration : none; color : #2d2f31;} */
 
 
+nav.helo-drop {
+  position: relative;
+}
 
 .drop-out {
-  padding : 10px;
-  background : #2d2f31; 
-  color : white;
-  font-size : 1.2em;
-  font-variant : small-caps;
-  cursor : pointer;
+  padding: 10px;
+  cursor: pointer;
   display: block;
   width: 100%;
 }
@@ -7026,21 +7164,78 @@ li a {text-decoration : none; color : #2d2f31;} */
   clear:both;
   width:100%;
   height:0px;
-  overflow: hidden;
-  text-align: center;
-  transition: height .4s ease;
+.drop-out {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.drop-out::after {
+  float: right;
+  right: 10%;
+  content: ">";
+  transform: rotate(90deg);
+  translate: 10px;
+  font-family: cursive;
 }
 
-.slide li {padding : 30px;}
+.slide {
+  clear: both;
+  width: max-content;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: absolute;
+  background: white;
+  top: 55px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 13px 0px #00000026;
+
+  z-index: 2;
+}
+ul.slide a {
+  color: black;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  gap: 5px;
+}
+ul.slide svg {
+  width: 25px;
+}
+.slide hr {
+  margin: 0;
+}
+.slide li {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+.slide li:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked + .slide {
+  height: max-content;
+  padding: 10px;
+}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
 #touch:checked + .slide {height: 300px;} */
 
 
-
-
-dl, ol, ul{
+dl,
+ol,
+ul {
   margin: 0px !important;
 }
 
@@ -7105,8 +7300,6 @@ dl, ol, ul{
 /*********** Submit A Station Form Page CSS End ***********/
 
 /******************* Shahdin Pages CSS End *******************/
-
-
 
 @media screen and (max-width: 1366px) {
   header.header_main {
@@ -7812,11 +8005,11 @@ dl, ol, ul{
     width: 220px;
     margin: 0.4px 0px 0px 0px;
     font-size: 18px !important;
-}
+  }
 
-.select-tv-icon {
-  top: 14px;
-}
+  .select-tv-icon {
+    top: 14px;
+  }
 
   .first-banner-txt a {
     font-size: 20px;
@@ -8295,7 +8488,7 @@ dl, ol, ul{
   }
 
   .header_nav ul {
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 20px !important;
     gap: 40px;
   }
 
@@ -8305,11 +8498,6 @@ dl, ol, ul{
 
   .header-logo img {
     width: 155.797px;
-  }
-
-  .header_nav ul {
-    gap: 40px;
-    margin: 0px 0px 0px 18px;
   }
 
   .header_nav ul li {
@@ -8637,27 +8825,26 @@ dl, ol, ul{
   .review-news-director-second {
     margin: 120px 0px 0px 0px !important;
   }
-  
+
   .job-details {
     width: 480px;
-}
+  }
 
-.job-detail p {
-  font-size: 14px;
-}
+  .job-detail p {
+    font-size: 14px;
+  }
 
-.job-detail span {
-  font-size: 10px;
-}
+  .job-detail span {
+    font-size: 10px;
+  }
 
-.job-detail {
-  flex: auto;
-}
+  .job-detail {
+    flex: auto;
+  }
 
-.search-stations-input span {
-  top: -2px;
-}
-
+  .search-stations-input span {
+    top: -2px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -8673,8 +8860,6 @@ dl, ol, ul{
     width: 50%;
     margin: 0 auto;
   }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -8917,25 +9102,24 @@ dl, ol, ul{
     width: 200px;
     margin: 0.5px 0px 0px 0px;
     font-size: 16px !important;
-}
+  }
 
-.select-tv-icon {
-  top: 10px;
-  left: 25px;
-}
+  .select-tv-icon {
+    top: 10px;
+    left: 25px;
+  }
 
-.select-tv-icon svg {
-  width: 30px;
-}
+  .select-tv-icon svg {
+    width: 30px;
+  }
 
-.select-tv-icon svg {
-  width: 30px;
-}
+  .select-tv-icon svg {
+    width: 30px;
+  }
 
-.search-stations-input span {
-  top: -6px;
-}
-
+  .search-stations-input span {
+    top: -6px;
+  }
 
   .search-stations-input input {
     width: 400px;
@@ -9310,8 +9494,8 @@ dl, ol, ul{
 
   .header_nav button {
     width: 40px;
-  border: none;
-  background-color:transparent;
+    border: none;
+    background-color: transparent;
   }
 
   .header_nav button:hover {
@@ -10078,8 +10262,6 @@ dl, ol, ul{
     font-size: 14px;
   }
 
-
-
   .like-report-submitted {
     margin: 12px 0px;
   }
@@ -10737,16 +10919,16 @@ dl, ol, ul{
     padding: 14.5px 0px 14.5px 50px;
     margin: 1.2px 0px 0px 0px;
     font-size: 12px !important;
-}
+  }
 
-.select-tv-icon {
-  top: 4px;
-  left: 25px;
-}
+  .select-tv-icon {
+    top: 4px;
+    left: 25px;
+  }
 
-.select-tv-icon svg {
-  width: 20px;
-}
+  .select-tv-icon svg {
+    width: 20px;
+  }
 
   .search-stations-input input::placeholder {
     font-size: 14px;
@@ -10763,7 +10945,7 @@ dl, ol, ul{
     position: relative;
     top: -3px;
     right: -10px;
-}
+  }
 
   .first-banner-txt h3 {
     font-size: 35px;
@@ -11022,8 +11204,6 @@ dl, ol, ul{
     flex-direction: column;
   }
 
-
-
   .shop-new-arrival {
     padding: 30px 40px;
     margin: 0px 0px 10px 0px;
@@ -11174,19 +11354,17 @@ CONTACTUS */
     gap: 30px;
   }
 
-
   .job-details {
     width: 350px;
     left: 10px;
     top: 80px;
-}
+  }
 
   .job-detail p {
     font-size: 10px;
-}
+  }
 
-.review-news-director-second {
-  margin: 55px 0px 0px 0px !important;
-}
-
+  .review-news-director-second {
+    margin: 55px 0px 0px 0px !important;
+  }
 }

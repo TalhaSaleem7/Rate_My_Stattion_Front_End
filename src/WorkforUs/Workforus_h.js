@@ -1,4 +1,5 @@
 import Header from "../Header/Header";
+import Header1 from "../Header/Header2";
 import Footerah from "../footerah/Footerah";
 import JobCard from "./component/Jobcard_h";
 const jobData = [
@@ -63,7 +64,7 @@ const jobData = [
 const WorkforUs = () => {
   return (
     <div>
-      <Header />
+      <Header1 />
       <section className="w-100 faq--terms--detail--section--h">
         <div className="container">
           <div className="row">

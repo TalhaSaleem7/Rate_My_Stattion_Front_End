@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
   const navigate = useNavigate();
-  
+
   // State and functions for side panel
   const [panelWidth, setPanelWidth] = useState("0");
 
@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-   <header className="header_main">
+      <header className="header_main">
         <Container>
           <Row>
             <Col lg={2}>
@@ -72,30 +72,30 @@ const Header = () => {
             </Col>
           </Row>
           <div className="header_nav">
-              <button onClick={openNav} >
-              <input type="checkbox" id="checkbox"/>
-    <label for="checkbox" class="toggle">
-        <div class="bars" ></div>
-        <div class="bars"></div>
-        <div class="bars"  ></div>
-    </label>
-              </button>
-              <div id="mySidepanel" className="sidepanel" style={{ width: panelWidth }}>
-                <a href="javascript:void(0)" className="closebtn" > 
-                <div class="toggle"  onClick={closeNav}>
-        <div class="bars" id="barz1"></div>
-    
-        <div class="bars" id="barz3" ></div>
-    </div>
-                </a>
-                <a href="#" onClick={about}>About</a>
-                <a href="#" onClick={newsletter}>Newsletter</a>
-                <a href="#" onClick={job}>Jobs</a>
-                <a href="#" onClick={shop}>Shop</a>
-                <a href="#" onClick={contact}>Contact</a>
-                <a href="#" onClick={faq}>FAQ</a>
-              </div>
-              </div>
+            <button onClick={openNav} >
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox" class="toggle">
+                <div class="bars" ></div>
+                <div class="bars"></div>
+                <div class="bars"  ></div>
+              </label>
+            </button>
+            <div id="mySidepanel" className="sidepanel" style={{ width: panelWidth }}>
+              <a href="javascript:void(0)" className="closebtn" >
+                <div class="toggle" onClick={closeNav}>
+                  <div class="bars" id="barz1"></div>
+
+                  <div class="bars" id="barz3" ></div>
+                </div>
+              </a>
+              <a href="#" onClick={about}>About</a>
+              <a href="#" onClick={newsletter}>Newsletter</a>
+              <a href="#" onClick={job}>Jobs</a>
+              <a href="#" onClick={shop}>Shop</a>
+              <a href="#" onClick={contact}>Contact</a>
+              <a href="#" onClick={faq}>FAQ</a>
+            </div>
+          </div>
         </Container>
       </header>
     </>
