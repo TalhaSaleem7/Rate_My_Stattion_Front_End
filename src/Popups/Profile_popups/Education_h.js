@@ -1,6 +1,28 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
-
+import { useState } from "react";
 const EducationForm = () => {
+  const [isStartDateMonth, setIsStartDateMonth] = useState(false);
+  const [isStartDateYear, setIsStartDateYear] = useState(false);
+
+  const [isEndDateMonth, setIsEndDateMonth] = useState(false);
+  const [isEndDateYear, setIsEndDateYear] = useState(false);
+
+  const toggleStartMonth = () => {
+    setIsStartDateMonth(!isStartDateMonth);
+  };
+
+  const toggleStartYear = () => {
+    setIsStartDateYear(!isStartDateYear);
+  };
+
+  const toggleEndMonth = () => {
+    setIsEndDateMonth(!isEndDateMonth);
+  };
+
+  const toggleEndYear = () => {
+    setIsEndDateYear(!isEndDateYear);
+  };
+
   return (
     <div className="container">
       <div className="my--container--h mx-auto">
@@ -54,67 +76,105 @@ const EducationForm = () => {
               />
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between  experience--col--h">
-              <div className="experience--email--h experience--col--child--h">
-                <label for="inputEmail4" className="form-label form-label-alt">
+            <div className="experience--col--h  d-flex align-items-end mb-3 mt-1 justify-content-between">
+              <div className="experience--email--h experience--col--child--h drop--position">
+                <label
+                  htmlFor="inputStartMonth"
+                  className="form-label form-label-alt"
+                >
                   Start Date
                 </label>
-                <select
-                  className="form-select experience--job--inp--h"
-                  id="inputGroupSelect01"
+                <div
+                  onClick={toggleStartMonth}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                    isStartDateMonth
+                      ? `experience--job--inp--h--dropdown--click--rad`
+                      : ``
+                  }`}
+                  id="inputWorkPlace"
                 >
-                  <option selected style={{ display: "none" }}>
-                    Month
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Month
+                </div>
+                {isStartDateMonth && (
+                  <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                    <li onClick={toggleStartMonth}>Option</li>
+
+                    <li onClick={toggleStartMonth}>Option</li>
+                    <li onClick={toggleStartMonth}>Option</li>
+                  </ul>
+                )}
               </div>
-              <div className="experience--email--h experience--col--child--h">
-                <select
-                  className="form-select experience--job--inp--h"
-                  id="inputGroupSelect01"
+              <div className="experience--email--h experience--col--child--h drop--position">
+                <div
+                  onClick={toggleStartYear}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                    isStartDateYear
+                      ? `experience--job--inp--h--dropdown--click--rad`
+                      : ``
+                  }`}
+                  id="inputWorkPlace"
                 >
-                  <option selected style={{ display: "none" }}>
-                    Year
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Year
+                </div>
+                {isStartDateYear && (
+                  <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                    <li onClick={toggleStartYear}>Option</li>
+
+                    <li onClick={toggleStartYear}>Option</li>
+                    <li onClick={toggleStartYear}>Option</li>
+                  </ul>
+                )}
               </div>
             </div>
 
-            <div className="d-flex align-items-end mb-3 mt-1 justify-content-between  experience--col--h">
-              <div className="experience--email--h experience--col--child--h">
-                <label for="inputEmail4" className="form-label form-label-alt">
-                  End Date
+            <div className="experience--col--h  d-flex align-items-end mb-3 mt-1 justify-content-between">
+              <div className="experience--email--h experience--col--child--h drop--position">
+                <label
+                  htmlFor="inputEndMonth"
+                  className="form-label form-label-alt"
+                >
+                  Start Date
                 </label>
-                <select
-                  className="form-select experience--job--inp--h"
-                  id="inputGroupSelect01"
+                <div
+                  onClick={toggleEndMonth}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                    isEndDateMonth
+                      ? `experience--job--inp--h--dropdown--click--rad`
+                      : ``
+                  }`}
+                  id="inputWorkPlace"
                 >
-                  <option selected style={{ display: "none" }}>
-                    Month
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Month
+                </div>
+                {isEndDateMonth && (
+                  <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                    <li onClick={toggleEndMonth}>Option</li>
+
+                    <li onClick={toggleEndMonth}>Option</li>
+                    <li onClick={toggleEndMonth}>Option</li>
+                  </ul>
+                )}
               </div>
-              <div className="experience--email--h experience--col--child--h">
-                <select
-                  className="form-select experience--job--inp--h"
-                  id="inputGroupSelect01"
+              <div className="experience--email--h experience--col--child--h drop--position">
+                <div
+                  onClick={toggleEndYear}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                    isEndDateYear
+                      ? `experience--job--inp--h--dropdown--click--rad`
+                      : ``
+                  }`}
+                  id="inputWorkPlace"
                 >
-                  <option selected style={{ display: "none" }}>
-                    Year
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Year
+                </div>
+                {isEndDateYear && (
+                  <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                    <li onClick={toggleEndYear}>Option</li>
+
+                    <li onClick={toggleEndYear}>Option</li>
+                    <li onClick={toggleEndYear}>Option</li>
+                  </ul>
+                )}
               </div>
             </div>
             <div className="mb-3">
