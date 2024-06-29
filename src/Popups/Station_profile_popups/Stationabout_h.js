@@ -1,6 +1,10 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
-
+import { useState } from "react";
 const StationAboutForm = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="container">
       <div className="my--container--h mx-auto">
@@ -27,24 +31,30 @@ const StationAboutForm = () => {
                 placeholder="Type here..."
               ></textarea>
             </div>
-            <div className="mb-3 mt-1 col-12">
+            <div className="mb-3 mt-1 col-12 drop--position">
               <label
                 htmlFor="inputGroupSelect01"
                 className="form-label form-label-alt"
               >
                 Industry
               </label>
-              <select
-                className="form-select experience--job--inp--h"
-                id="inputGroupSelect01"
+              <div
+                onClick={toggle}
+                className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                  isOpen ? `experience--job--inp--h--dropdown--click--rad` : ``
+                }`}
+                id="inputWorkPlace"
               >
-                <option value="" style={{ display: "none" }}>
-                  Choose options
-                </option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+                Choose Option...
+              </div>
+              {isOpen && (
+                <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                  <li onClick={toggle}>Option</li>
+
+                  <li onClick={toggle}>Option</li>
+                  <li onClick={toggle}>Option</li>
+                </ul>
+              )}
             </div>
             <div className="col-12 mb-3 mt-1">
               <label

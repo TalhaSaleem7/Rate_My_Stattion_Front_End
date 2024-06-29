@@ -7540,7 +7540,25 @@ ul.rms--header--slide li a {
     line-height: 23px;
     padding: 8px 8px;
   }
+  section.About-ah {
+    padding: 150px 0px 10px 0px;
+}
 
+.KABC-tital-ah span h2 {
+    font-size: 24px;
+}
+
+.Schedule-ah-card-box h2 {
+    font-size: 22px;
+}
+
+.Job-list-1-ah span h2 {
+    font-size: 22px;
+}
+
+.About-main-box-2-tital-ah h2 {
+    font-size: 22px;
+}
   .prod-light-btn {
     font-size: 16px;
     line-height: 24px;
@@ -7724,13 +7742,28 @@ ul.rms--header--slide li a {
   .satisfied h2 {
     font-size: 75px;
   }
+  span.See button {
+    font-size: 14px;
+    gap: 10px;
+}
+
+span.Info button {
+    font-size: 14px;
+    padding: 5px 15px !important;
+}
 }
 
 @media screen and (max-width: 1024px) {
   .KABC-part-1-ah {
     width: 48%;
   }
+  .Brooklyn-Simmons-tital span p {
+    font-size: 12px;
+}
 
+.About-main-card-1-ah h2 {
+    font-size: 18px;
+}
   .KABC-tital-ah {
     gap: 8px;
   }
@@ -9960,6 +9993,24 @@ ul.rms--header--slide li a {
     font-size: 17px;
     margin: 0px 0px 5px 0px !important;
   }
+
+  .About-main-box-2-ah {
+    width: 100%;
+}
+
+.Recommend-box-ah {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.Recommend-card-ah {
+    width: 48%;
+}
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -10033,7 +10084,11 @@ ul.rms--header--slide li a {
   .station-search-result-txt p {
     font-size: 14px;
   }
-
+  .toggle {
+    width: 30px;
+    height: 33px;
+    gap: 6px;
+  }
   .station-search-result-txt p span {
     font-size: 14px;
   }
@@ -10045,7 +10100,9 @@ ul.rms--header--slide li a {
   .Applied-ah-logo {
     width: 18%;
   }
-
+  .Recommend-card-ah {
+    width: 100%;
+}
   .Applied-ah-tital {
     width: 76%;
   }
@@ -11733,12 +11790,10 @@ CONTACTUS */
 }
 
 
+section.About-ah {
+  padding: 150px 0px 10px 0px;
+}
+}
 
-}
-@media (max-width: 425px) {
-  .toggle {
-    width: 30px;
-    height: 33px;
-    gap: 6px;
-  }
-}
+
+

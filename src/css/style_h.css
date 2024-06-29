@@ -339,6 +339,7 @@ label {
   overflow: hidden;
   width: 100%;
   position: absolute;
+  z-index: 2;
 }
 .experience--job--inp--h--dropdown--click {
   cursor: pointer;
@@ -1610,7 +1611,6 @@ Media Query
     top: 19%;
   }
 
-  
   .faq--work--card--h p {
     font-size: 10px;
   }
@@ -1627,12 +1627,8 @@ Media Query
 
   .faq--work--card--bottom {
     margin-top: 10px;
+  }
 }
-
-}
-
-
-
 
 @media (max-width: 404px) {
   :root {
@@ -1708,6 +1704,4 @@ Media Query
   .faq--main--search--icon--alt--h {
     right: 7%;
   }
-
-
 }

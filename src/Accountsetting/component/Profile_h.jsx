@@ -54,10 +54,10 @@ const ProfileComponent = () => {
         </div>
         {isOpen && (
           <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
-            <li>Option</li>
+            <li onClick={toggle}>Option</li>
 
-            <li>Option</li>
-            <li>Option</li>
+            <li onClick={toggle}>Option</li>
+            <li onClick={toggle}>Option</li>
           </ul>
         )}
       </div>

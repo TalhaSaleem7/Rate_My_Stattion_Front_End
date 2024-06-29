@@ -1,4 +1,17 @@
+import { useState } from "react";
 const JobOpeningForm = () => {
+  const [isExp, setIsExp] = useState(false);
+
+  const [isEdu, setIsEdu] = useState(false);
+
+  const yearToggle = () => {
+    setIsExp(!isExp);
+  };
+
+  const educationToggle = () => {
+    setIsEdu(!isEdu);
+  };
+
   return (
     <div class="container">
       <div class="my--container--h mx-auto">
@@ -128,37 +141,49 @@ const JobOpeningForm = () => {
                 id="exampleFormControlInput1"
                 placeholder="Type here..."
               />
-              <div class="mb-3 mt-1 col-12">
-                <label for="inputAddress" class="form-label form-label-alt">
+              <div class="mb-3 mt-1 col-12 drop--position">
+                <label for="inputAddress" class="form-label form-label-alt ">
                   Years of experience
                 </label>
-                <select
-                  class="form-select experience--job--inp--h"
-                  id="inputGroupSelect01"
+                <div
+                  onClick={yearToggle}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                    isExp ? `experience--job--inp--h--dropdown--click--rad` : ``
+                  }`}
+                  id="inputWorkPlace"
                 >
-                  <option selected style={{ display: "none" }}>
-                    Choose options
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Choose Option...
+                </div>
+                {isExp && (
+                  <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                    <li onClick={yearToggle}>Option</li>
+
+                    <li onClick={yearToggle}>Option</li>
+                    <li onClick={yearToggle}>Option</li>
+                  </ul>
+                )}
               </div>
-              <div class="mb-3 mt-1 col-12">
+              <div class="mb-3 mt-1 col-12 drop--position">
                 <label for="inputAddress" class="form-label form-label-alt">
                   Education level
                 </label>
-                <select
-                  class="form-select experience--job--inp--h"
-                  id="inputGroupSelect01"
+                <div
+                  onClick={educationToggle}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
+                    isEdu ? `experience--job--inp--h--dropdown--click--rad` : ``
+                  }`}
+                  id="inputWorkPlace"
                 >
-                  <option selected style={{ display: "none" }}>
-                    Choose options
-                  </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                  Choose Option...
+                </div>
+                {isEdu && (
+                  <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
+                    <li onClick={educationToggle}>Option</li>
+
+                    <li onClick={educationToggle}>Option</li>
+                    <li onClick={educationToggle}>Option</li>
+                  </ul>
+                )}
               </div>
 
               <div class="row job--opening--qualify--cont--h">
