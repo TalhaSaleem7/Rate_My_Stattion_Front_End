@@ -2669,6 +2669,8 @@ section.Sweatshirt-sec {
   /* 129.167% */
 }
 
+
+
 /******************* Shahdin Pages CSS Start *******************/
 
 ul {
@@ -2687,14 +2689,16 @@ a {
 /*********** Header Main CSS Start ***********/
 
 header.header_main {
-  padding: 24px 0px 16px 0px;
+  padding: 27px 0px 13px 0px;
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
 }
+
 .header-logo {
   cursor: pointer;
-  width: 80.1%;
+  padding: 0px 75px 0px 0px;
 }
+
 .header-logo img {
   width: 100%;
 }
@@ -2703,6 +2707,8 @@ header.header_main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0px;
+  gap: 48px;
 }
 
 .header_nav ul li {
@@ -2730,7 +2736,8 @@ header.header_main {
   transition: all 0.6s ease;
 }
 
-.header_nav ul li:hover:before {
+.header_nav ul li:hover::before,
+.header_nav ul li.active::before {
   width: 100%;
 }
 
@@ -2738,7 +2745,7 @@ header.header_main {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 20px;
+  gap: 21px;
 }
 .header_end a:hover {
   cursor: pointer;
@@ -2753,7 +2760,7 @@ header.header_main {
   line-height: 33px;
   border-radius: 10px;
   border: 2px solid #194d79;
-  padding: 5px 50px;
+  padding: 6px 53px;
   transition: all 0.6s ease;
 }
 
@@ -2796,6 +2803,7 @@ header.header_main {
 .header_end a svg:hover {
   background: #d7d7d7;
 }
+
 
 /*********** Header Main CSS ENd ***********/
 
@@ -2855,7 +2863,8 @@ section.rms_header {
   background-size: cover;
   width: 100%;
   height: 100%;
-  padding: 100px 0px;
+  padding: 77px 0px;
+  margin: 17px 0px 0px 0px;
 }
 
 .first-banner-txt h3 {
@@ -2865,7 +2874,7 @@ section.rms_header {
   width: 60%;
   font-weight: 700;
   color: #fff;
-  margin: 0px 0px 50px 0px !important;
+  margin: 0px 0px 54px 0px !important;
 }
 
 .select-station-drop select option {
@@ -2888,8 +2897,8 @@ section.rms_header {
 
 .search-stations-input input {
   padding: 24px 20px;
-  width: 650px;
-  border-radius: 0px 20px 20px 0px;
+  width: 707px;
+  border-radius: 0px 25px 25px 0px;
   background: #fff;
   box-shadow: 6px 0px 13px 0px rgba(8, 42, 83, 0.5);
   border: none;
@@ -2913,8 +2922,9 @@ section.rms_header {
   width: 30px;
 }
 .search-stations-input.full-width input {
-  width: 890px;
+  width: 963.215px;
   border-radius: 20px;
+  height: 82.832px;
 }
 
 .search-stations-input input::placeholder {
@@ -2958,16 +2968,15 @@ section.rms_header {
 .select-station-drop {
   display: flex;
   align-items: center;
-  /* margin: 10.5px 0px 10px 0px; */
 }
 
 .select-container {
   display: flex;
   align-items: center;
-  padding: 14.5px 10px 15.3px 30px;
+  padding: 20.92px 30px 20.92px 30px;
   background-color: #89c400;
   position: relative;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 25px 0px 0px 25px;
   box-shadow: -6px 0px 13px 0px rgba(8, 42, 83, 0.5);
   width: 100%;
   max-width: 400px;
@@ -2982,7 +2991,7 @@ section.rms_header {
 }
 
 .select-icon {
-  margin-right: 10px;
+  margin-right: 18px;
   width: 40px;
   height: 40px;
   color: #fff;
@@ -2991,7 +3000,7 @@ section.rms_header {
 .select-box {
   border: none;
   outline: none;
-  padding: 5px;
+  padding: 5px 25px 5px 5px;
   background: none;
   cursor: pointer;
   appearance: none;
@@ -3020,7 +3029,7 @@ section.rms_header {
   font-style: normal;
   font-weight: 700;
   display: block;
-  margin: 60px 0px 0px 0px !important;
+  margin: 49px 0px 0px 0px !important;
   color: #fff;
   text-decoration-line: underline !important;
 }
@@ -3032,8 +3041,8 @@ section.rms_header {
 
 .search-stations-input span {
   position: absolute;
-  right: 20px;
-  top: 2px;
+  right: 34px;
+  top: 8px;
   font-size: 40px;
   color: #194d79;
   cursor: pointer;
@@ -3055,14 +3064,6 @@ section.rms_header {
   position: relative;
 }
 
-.search-stations-input span {
-  position: absolute;
-  right: 20px;
-  top: 2px;
-  font-size: 40px;
-  color: #194d79;
-  cursor: pointer;
-}
 .search-stations-input--rms span {
   top: -2px;
 }
@@ -3081,7 +3082,7 @@ section.rms_header {
 /*********** Latest Rating Section CSS Start ***********/
 
 section.latest-rating-sec {
-  padding: 60px 0px;
+  padding: 36px 0px 36px 0px;
 }
 
 .latest-rating-txt h3 {
@@ -3089,22 +3090,34 @@ section.latest-rating-sec {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  margin: 0px 0px 20px 0px !important;
+  margin: 0px 0px 36px 0px !important;
   color: #000;
 }
 
 .latest-rating-box {
-  padding: 30px;
+  padding: 29px 29px 32px 32px;
   background: #fff;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 30px 0px;
+}
+
+.latesthomepg-line {
+  margin: 70px 0px 0px 0px;
+}
+
+.latesthomepg-line hr {
+  color: #BDBDBD;
 }
 
 .rating-user-box {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.reporter-topline hr {
+  color: #F2F2F2;
 }
 
 .rating-user-box img {
@@ -3139,7 +3152,7 @@ section.latest-rating-sec {
 .verified-rating-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 .karc-txt-logo {
@@ -3153,6 +3166,7 @@ section.latest-rating-sec {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  margin: 0px;
 }
 
 .rating-of {
@@ -3175,12 +3189,13 @@ section.latest-rating-sec {
   margin: 50px 0px 30px 0px;
   border-radius: 8px;
   background: #f2f2f2;
-  padding: 20px 20px;
+  padding: 23px 9px 18px 20px;
   position: relative;
 }
 
+
 .review-news-director-second {
-  margin: 120px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
 }
 
 .reporter-topline {
@@ -3295,7 +3310,7 @@ section.latest-rating-sec {
 }
 
 .racial-discrimination {
-  margin: 30px 0px;
+  margin: 25px 0px 25px 0px;
 }
 
 .racial-discrimination h5 {
@@ -3313,6 +3328,7 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 400;
   color: #828282;
+  margin: 0px 0px 20px 0px; 
 }
 
 .newroom-coworker-txt svg {
@@ -3330,11 +3346,14 @@ section.latest-rating-sec {
 
 .four-select-tab {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 22px;
   margin: 30px 0px 0px 0px;
   border-bottom: 1px solid #e0e0e0;
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 25px 0px;
 }
+
+
 
 .four-select-tab h5 {
   font-family: "Public Sans", sans-serif;
@@ -3347,7 +3366,7 @@ section.latest-rating-sec {
 
 .four-select-tab ul {
   display: flex;
-  gap: 10px;
+  gap: 9px;
   align-items: center;
   margin: 0px;
   padding: 0px;
@@ -3371,6 +3390,7 @@ section.latest-rating-sec {
   padding: 8px 10px;
 }
 
+
 .like-report-submitted {
   margin: 20px 0px;
   display: flex;
@@ -3387,7 +3407,7 @@ section.latest-rating-sec {
   line-height: 33px;
   border-radius: 10px;
   background: #f2f2f2;
-  padding: 5px 15px;
+  padding: 6px 12px 6px 12px;
 }
 
 .like-report-txt ul {
@@ -3403,16 +3423,16 @@ section.latest-rating-sec {
 }
 
 .latest-rating-comment-box {
-  margin: 40px 0px 20px 0px;
+  margin: 27px 0px 0px 0px;
   display: flex;
-  gap: 20px;
+  gap: 17px;
   align-items: start;
 }
 
 .latest-comment-txt-box {
   background: #f2f2f2;
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 15px 28px 20px 21px;
 }
 
 .latest-comment-txt-box p {
@@ -3538,7 +3558,7 @@ section.latest-rating-sec {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 36px 0px;
 }
 
 .newsletter-side-head h3 {
@@ -3565,15 +3585,16 @@ section.latest-rating-sec {
   text-decoration: underline !important;
 }
 .side-newsletter-box {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 28px 0px;
   background: #fff;
   border-radius: 20px;
   cursor: pointer;
 }
 
 .side-newsletter-txt {
-  padding: 20px;
+  padding: 18px 25px 20px 25px;
 }
+
 
 .side-newsletter-txt h5 {
   color: #000;
@@ -3592,7 +3613,7 @@ section.latest-rating-sec {
 
 .side-subscribe-box {
   background: #fff;
-  padding: 20px;
+  padding: 20px 25px 24px 25px;
   border-radius: 20px;
 }
 
@@ -3603,7 +3624,7 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 700;
   line-height: 30.5px;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px !important;
 }
 
 .side-subscribe-box input {
@@ -3649,7 +3670,7 @@ section.latest-rating-sec {
 
 .follow-us-rate {
   background: #fff;
-  padding: 20px;
+  padding: 26px 20px 26px 29px;
   border-radius: 20px;
 }
 
@@ -3679,7 +3700,7 @@ section.latest-rating-sec {
 }
 
 .follow-us-rate ul li {
-  padding: 6px 0px;
+  padding: 6px 0px 15px 0px;
 }
 
 .newsletter-follow-box h4 {
@@ -3736,6 +3757,7 @@ section.latest-rating-sec {
   border-radius: 8px;
   position: absolute;
   width: 700px;
+  z-index: 999;
   margin: 10px 0px 0px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -3794,7 +3816,7 @@ section.latest-rating-sec {
 /*********** RateMyStation's Shop Section CSS Start ***********/
 
 section.ratemystation-shop-sec {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 15px 0px;
 }
 
 section.ratemystation-shop-sec h4 {
@@ -3816,8 +3838,9 @@ section.ratemystation-shop-sec h4 {
 }
 
 .ratemystation-prod-txt {
-  padding: 20px;
+  padding: 17px 18px 18px 18px;
 }
+
 
 .ratemystation-prod-txt h3 {
   color: #000;
@@ -3930,7 +3953,7 @@ section.ratemystation-shop-sec h4 {
 /*********** Looking for work Section CSS Start ***********/
 
 .looking-for-work-sec {
-  padding: 50px 0px;
+  padding: 50px 0px 10px 0px;
 }
 
 .looking-for-worktxt {
@@ -3938,7 +3961,7 @@ section.ratemystation-shop-sec h4 {
   background-size: cover;
   height: 100%;
   width: 100%;
-  padding: 66px 0px;
+  padding: 61px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -3962,7 +3985,7 @@ section.ratemystation-shop-sec h4 {
   width: 50%;
   line-height: 31.5px;
   color: #fff;
-  margin: 20px 0px 30px 0px !important;
+  margin: 23px 0px 38px 0px !important;
 }
 
 .looking-for-worktxt a {
@@ -3995,7 +4018,7 @@ section.ratemystation-shop-sec h4 {
   background-size: cover;
   height: 100%;
   width: 100%;
-  padding: 50px 0px;
+  padding: 63px 0px 50px 0px;
 }
 
 .ratemystation-about-txt h3 {
@@ -4036,7 +4059,7 @@ section.ratemystation-shop-sec h4 {
   font-style: normal;
   font-weight: 600;
   line-height: 33px;
-  margin: 0px 0px 20px 0px !important;
+  margin: 0px 0px 28px 0px !important;
 }
 
 section.from-the-creator-sec {
@@ -4044,7 +4067,7 @@ section.from-the-creator-sec {
 }
 
 .from-the-creator-box {
-  padding: 30px 20px;
+  padding: 31px 29px 37px 30px;
   background: #fff;
   border-radius: 12px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
@@ -4058,6 +4081,7 @@ section.from-the-creator-sec {
   line-height: 30.5px;
   text-transform: uppercase;
   color: #194d79;
+  margin: 0px 0px 12px 0px;
 }
 
 .about-creator-txt h5 {
@@ -4067,7 +4091,7 @@ section.from-the-creator-sec {
   font-weight: 600;
   line-height: 33px;
   color: #000;
-  margin: 0px 0px 30px 0px !important;
+  margin: 0px 0px 37px 0px !important;
 }
 
 .about-creator-para p {
@@ -4132,14 +4156,14 @@ section.from-the-creator-sec {
 
 .inverted-commma-icon {
   text-align: center;
-  margin: 50px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
 }
 
 .creator-messages {
-  margin: 50px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   background: #f2f2f2;
   border-radius: 0px 10px 10px 10px;
-  padding: 40px 50px 40px 50px;
+  padding: 36px 53px 36px 52px;
 }
 
 .creator-messages h6 {
@@ -9141,7 +9165,8 @@ ul.rms--header--slide li a {
   }
   .header-logo {
     width: 35%;
-  }
+    padding: 0px;
+}
   .Sweatshirt-ah {
     width: 100%;
   }

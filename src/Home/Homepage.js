@@ -88,7 +88,6 @@ export const Homepage = () => {
                   </div>
                 </div>
                 <a href="#">Find a News Director by name</a> */}
-                 <div className="header">
                   <div className={`search-stations-input ${isSearchByName ? 'full-width' : ''}`}>
                     {isSearchByName ? (
                       <input
@@ -115,7 +114,6 @@ export const Homepage = () => {
                   <a href="#" onClick={toggleSearchMode}>
                     {isSearchByName ? 'Find a Station by name' : 'Find a News Director by name'}
                   </a>
-                </div>
               </div>
             </Col>
           </Row>
@@ -476,6 +474,13 @@ export const Homepage = () => {
                   </div>
                 </div>
               </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+               <div className="latesthomepg-line">
+                  <hr/>
+               </div>
             </Col>
           </Row>
         </Container>
