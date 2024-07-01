@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Slider from "react-slick";
 import JournalImage from "../img/journal-report.png";
+import JournalImageOne from "../img/journal-report-1.png"
+import JournalImageTwo from "../img/journal-report-2.png"
 import NewsletterLatestArticleImg from "../img/newsletter-latestarticle-img.png";
 import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
 import NewsletterArticleImg2 from "../img/newsletter-article-img-2.png";
@@ -60,6 +62,9 @@ const Newsletter = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    fade: true,
+    autoplay: true,        
+    autoplaySpeed: 3000,   
   };
 
   return (
@@ -68,6 +73,7 @@ const Newsletter = () => {
       <section className="your-journalism-sec">
         <Container>
           <Row>
+          <Slider {...settings}>
             <Col lg={12}>
               <div className="journalism-img-txt">
                 <div className="your-journalism-img">
@@ -87,7 +93,7 @@ const Newsletter = () => {
                     </p>
                   </div>
                   <div className="journalism-slider">
-                    <Slider {...settings}>
+                  
                       <div>
                         <h5>
                           Feugiat sagittis, turpis et a fermentum blandit amet
@@ -97,29 +103,71 @@ const Newsletter = () => {
                           auctor pulvinar dignissim mauris non ultrices. Sed.
                         </h5>
                       </div>
-                      <div>
-                        <h5>
-                          Feugiat sagittis, turpis et a fermentum blandit amet
-                          in phasellus. Nibh nunc ultrices ac at at sit purus
-                          pellentesque a. Urna, eget elit at risus tempus, fames
-                          amet. Nulla cursus diam vel amet lacus, sem id. Cursus
-                          auctor pulvinar dignissim mauris non ultrices. Sed.
-                        </h5>
-                      </div>
-                      <div>
-                        <h5>
-                          Feugiat sagittis, turpis et a fermentum blandit amet
-                          in phasellus. Nibh nunc ultrices ac at at sit purus
-                          pellentesque a. Urna, eget elit at risus tempus, fames
-                          amet. Nulla cursus diam vel amet lacus, sem id. Cursus
-                          auctor pulvinar dignissim mauris non ultrices. Sed.
-                        </h5>
-                      </div>
-                    </Slider>
                   </div>
                 </div>
               </div>
             </Col>
+            <Col lg={12}>
+              <div className="journalism-img-txt">
+                <div className="your-journalism-img">
+                  <img src={JournalImageOne} alt="Journal Report" />
+                </div>
+                <div className="your-journalism-txt">
+                  <h3>
+                  Elementum quis aliquam vitae convallis. Nam eu id integer nec. 
+                  </h3>
+                  <div className="journal-date-written">
+                    <p>
+                      <RiTimeLine /> May 24, 2022
+                    </p>
+                    <p>
+                      Written by <span>Soul Witness</span>
+                    </p>
+                  </div>
+                  <div className="journalism-slider">
+                  
+                      <div>
+                        <h5>
+                            Sed nisl, cras morbi in porttitor magna egestas quis id. Velit nisi interdum feugiat viverra at tortor. Neque, natoque semper feugiat massa habitasse sit et. Tortor vehicula sed magna enim justo porta pellentesque pellentesque. Varius auctor ipsum eget imperdiet ac. 
+                        </h5>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col lg={12}>
+              <div className="journalism-img-txt">
+                <div className="your-journalism-img">
+                  <img src={JournalImageTwo} alt="Journal Report" />
+                </div>
+                <div className="your-journalism-txt">
+                  <h3>
+                    Scelerisque aliquet viverra tincidunt eget mi commodo cursus hac ut. 
+                  </h3>
+                  <div className="journal-date-written">
+                    <p>
+                      <RiTimeLine /> May 24, 2022
+                    </p>
+                    <p>
+                      Written by <span>Soul Witness</span>
+                    </p>
+                  </div>
+                  <div className="journalism-slider">
+                  
+                      <div>
+                        <h5>
+                          Feugiat sagittis, turpis et a fermentum blandit amet
+                          in phasellus. Nibh nunc ultrices ac at at sit purus
+                          pellentesque a. Urna, eget elit at risus tempus, fames
+                          amet. Nulla cursus diam vel amet lacus, sem id. Cursus
+                          auctor pulvinar dignissim mauris non ultrices. Sed.
+                        </h5>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            </Slider>
           </Row>
         </Container>
       </section>
@@ -350,6 +398,11 @@ const Newsletter = () => {
                   </div>
                 </div>
               </div>
+            </Col>
+            <Col lg={12}>
+               <div className="latesthomepg-line">
+                  <hr/>
+               </div>
             </Col>
           </Row>
         </Container>

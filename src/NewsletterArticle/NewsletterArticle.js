@@ -11,6 +11,8 @@ import {
   RiInstagramLine,
   RiTwitterFill,
   RiSearchLine,
+  RiSaveFill,
+  RiSendPlaneFill  
 } from "react-icons/ri";
 
 // Importing images
@@ -233,26 +235,26 @@ const NewsletterArticle = () => {
                     <ul>
                       <li>
                         <a href="#">
-                          <RiThumbUpFill /> 35
+                          <RiThumbUpFill />
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <RiChat3Fill /> 25
+                          <RiChat3Fill />
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <RiShareFill /> 15
+                          <RiShareFill />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                        <RiBookmarkFill />
                         </a>
                       </li>
                     </ul>
                     <ul>
-                      <li>
-                        <a href="#">
-                          <RiBookmarkFill />
-                        </a>
-                      </li>
                       <li>
                         <a href="#">
                           <RiFlagFill />
@@ -326,7 +328,7 @@ const NewsletterArticle = () => {
                       <div class="newsletter-comment-typebox">
                         <input type="text" placeholder="Write comment..." />
                         <button type="submit">
-                          <i class="ri-send-plane-fill"></i>
+                           <RiSendPlaneFill />
                         </button>
                       </div>
                     </div>

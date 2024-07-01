@@ -130,6 +130,11 @@ const About = () => {
               </Row>
             </div>
           </Col>
+          <Col lg={12}>
+               <div className="latesthomepg-line">
+                  <hr/>
+               </div>
+            </Col>
         </Row>
       </Container>
     </section>
