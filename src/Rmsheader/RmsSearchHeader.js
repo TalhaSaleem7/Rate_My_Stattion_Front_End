@@ -219,6 +219,7 @@ const RmsSearchHeader = () => {
           </Row>
         </Container>
       </section>
+      
       {isOpen && (
         <ul className="rms--header--slide">
           <li><a href="#" onClick={about}>About</a></li>
@@ -258,7 +259,7 @@ const RmsSearchHeader = () => {
               </a>
               <a href="#" onClick={about}>About</a>
               <a href="#" onClick={newsletter}>Newsletter</a>
-              <a href="#" onClick={job}>Jobs</a>
+              <a href="#" onClick={job}>Job </a>
               <a href="#" onClick={shop}>Shop</a>
               <a href="#" onClick={contact}>Contact</a>
               <a href="#" onClick={faq}>FAQ</a>

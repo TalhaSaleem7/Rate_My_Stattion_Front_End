@@ -2864,7 +2864,7 @@ section.rms_header {
   background-size: cover;
   width: 100%;
   height: 100%;
-  padding: 77px 0px;
+  padding: 87px 0px;
   margin: 17px 0px 0px 0px;
 }
 
@@ -7529,6 +7529,7 @@ ul.rms--header--slide li a {
   .employer-newroom-box button.text-white {
     font-size: 23px;
   }
+  
 }
 
 @media screen and (max-width: 1366px) {
@@ -10481,8 +10482,10 @@ span.Info button {
   }
 
   .navtabs {
-    justify-content: flex-start;
     gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .main-KABC-ah {
@@ -10937,6 +10940,9 @@ span.Info button {
   .navtabs {
     justify-content: flex-start;
     gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .main-KABC-ah {
