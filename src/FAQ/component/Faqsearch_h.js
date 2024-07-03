@@ -17,7 +17,7 @@ const FAQSearch = () => {
                 <input
                   className="form-control me-3 faq--main--search--h"
                   type="search"
-                  placeholder="Search"
+                  placeholder="Search question or topic..."
                   aria-label="Search"
                 />
                 <button
