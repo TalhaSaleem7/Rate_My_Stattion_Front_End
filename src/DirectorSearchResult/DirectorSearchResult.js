@@ -92,6 +92,9 @@ const DirectorSearchResult = () => {
               </Col>
               <Col lg={8}>
                 <NewsDirectorCard directors={NewsdirectorData}/>
+                <div className="seeprofile-box-btn">
+                <a href="#">Load more</a>
+              </div>
               </Col>
             </Row>
             <Row>

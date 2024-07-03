@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Slider from "react-slick";
 import JournalImage from "../img/journal-report.png";
 import JournalImageOne from "../img/journal-report-1.png"
-import JournalImageTwo from "../img/journal-report-2.png"
+import JournalImageTwo from "../img/journal-report-2.jpg"
 import NewsletterLatestArticleImg from "../img/newsletter-latestarticle-img.png";
 import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
 import NewsletterArticleImg2 from "../img/newsletter-article-img-2.png";
@@ -526,13 +526,6 @@ const Newsletter = () => {
                     </a>
                   </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={12}>
-              <div className="ratemystation-allprod-btn">
-                <a onClick={shop}>See All Products</a>
               </div>
             </Col>
           </Row>

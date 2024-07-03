@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Saveshare from "../Popouts/Save_pop_h";
-import abcLogo from "../img/karc-abc-logo.png";
+import abcLogo from "../img/abc-logoimg.png";
 import {
   RiMapPin2Fill,
   RiMoneyDollarCircleFill,

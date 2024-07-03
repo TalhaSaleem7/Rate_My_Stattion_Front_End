@@ -28,7 +28,7 @@ const EmployerLoginPg = () => {
                       <h3>Find thousands of Ratings from real Journalists</h3>
                     </div>
                   </Col>
-                  <Col lg={6}>
+                  <Col lg={6} className="p-0">
                     <div className="employer-newroom-box">
                       <Tabs aria-label="Pills" style="pills">
                         <Tabs.Item active title="Employee">

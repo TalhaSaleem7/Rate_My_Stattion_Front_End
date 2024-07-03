@@ -138,7 +138,9 @@ const Jobopening = () => {
               <Asistantnewsdirector />
             </Col>
             <Col lg={12}>
+              <div className="job-opening-hr">
               <hr />
+              </div>
             </Col>
           </Row>
         </Container>

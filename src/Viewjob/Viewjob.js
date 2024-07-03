@@ -131,9 +131,9 @@ const Viewjob = () => {
                 <div className="filter-box">
                   <p>Filter:</p>
                   <select name="" id="">
-                    <option value="">Writer</option>
-                    <option value="">Writer</option>
-                    <option value="">Writer</option>
+                    <option value="">Job title</option>
+                    <option value="">Job title</option>
+                    <option value="">Job title</option>
                   </select>
                 </div>
                 <div className="filter-box">
@@ -255,13 +255,6 @@ const Viewjob = () => {
                     <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
                   </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={12}>
-              <div className="ratemystation-allprod-btn">
-                <a onClick={shop}>See All Products</a>
               </div>
             </Col>
           </Row>
