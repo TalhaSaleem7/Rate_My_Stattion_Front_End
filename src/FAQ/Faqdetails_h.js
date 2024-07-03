@@ -17,7 +17,7 @@ const FaqDetail = () => {
                   style={{ "--bs-breadcrumb-divider": "' > '" }}
                   aria-label="breadcrumb"
                 >
-                  <ol className="breadcrumb">
+                  <ol className="breadcrumb bread-crumb-h">
                     <li className="breadcrumb-item active">FAQs</li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Search results
