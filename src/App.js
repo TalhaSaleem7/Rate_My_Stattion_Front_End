@@ -82,6 +82,8 @@ import Editdel from "./Popouts/Edit_pop_h";
 import Previewh from "./Popouts/Preview_pop_h";
 import RmsHeader from "./Rmsheader/RmsHeader";
 import RmsHeaderAlt from "./Rmsheader/RmsHeaderalt";
+import JobOpenNewsroom from "./admin/jobOpenNewsroomh";
+import JobOpenRateh from "./admin/JobRateStationh";
 
 function App() {
   return (
@@ -220,6 +222,9 @@ function App() {
         <Route path="/applyformh" exact element={<ApplyForm />} />
         <Route path="/stationinfoh" exact element={<StationInfoForm />} />
         <Route path="/userinfoh" exact element={<UserInfoForm />} />
+        <Route path="/jobopennewsroomh" exact element={<JobOpenNewsroom />} />
+        <Route path="/jobopenrateh" exact element={<JobOpenRateh />} />
+
         <Route path="/directorinfoh" exact element={<DirectorInfoForm />} />
         <Route path="/Chartah1" exact element={<Chartah1 />} />
         <Route path="/Chartah2" exact element={<Chartah2 />} />

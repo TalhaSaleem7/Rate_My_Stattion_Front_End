@@ -1397,6 +1397,299 @@ Popup Position
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* ======================================
+Dashboard Job Opening NewsRoom
+====================================== */
+.job--open--dash--news--h--card--list li svg {
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+.job-card--cont--alt--h--2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.job--open--dash--news--h--head {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 31px;
+}
+
+.job--open--dash--news--h--title h1 {
+  font-family: "Public Sans";
+  font-size: var(--font-size-24);
+  font-weight: 700;
+}
+
+.job--open--dash--news--h--filter--cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0px 32px 0px;
+}
+.job--open--dash--news--h--filter--main {
+  max-width: 540px;
+  width: 100%;
+}
+.job--open--dash--news--h--filter--main,
+.job--open--dash--news--h--filter--sort {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.job--open--dash--news--h--search--cont input {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 16px;
+  line-height: 2.2em; /* 206.25% */
+  border-radius: 10px;
+  border: 1px solid var(--Gray-3, #828282);
+  background: transparent;
+  padding: 6px 16px;
+  width: 100%;
+}
+
+.job--open--dash--news--h--search--cont svg {
+  position: absolute;
+  top: 26%;
+  right: 6%;
+}
+
+.job--open--dash--news--h--search--cont {
+  position: relative;
+  flex-basis: 28.59%;
+}
+
+.job--open--dash--news--h--filter--main {
+  flex-basis: 48.65%;
+}
+ul.job--open--dash--news--h--filter--dropdown {
+  display: none;
+}
+.job--open--dash--news--h--filter--sort {
+  flex-basis: 18%;
+}
+.job--open--dash--news--h--filter--main label,
+.job--open--dash--news--h--filter--sort label {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px; /* 144.444% */
+}
+
+.job--open--dash--news--h--filter--drop {
+  border-radius: 10px;
+  border: 1px solid #828282;
+  padding: 10px 17px;
+  max-width: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job--open--dash--news--h--filter--drop span {
+  color: #828282;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+.dashboard-container-h .col-lg-12,
+.dashboard-container-h {
+  padding: 0;
+}
+
+.dashboard-container-h {
+  padding: 25px 40px 40px 40px;
+  max-width: 1190px;
+  width: 100%;
+}
+
+.job--open--dash--news--h--card--img {
+  width: 8.15%;
+}
+
+.job--open--dash--news--h--card--head {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.job--open--dash--news--h--card--title h1 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px; /* 127.083% */
+}
+
+.job--open--dash--news--h--card--title p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 162.5% */
+}
+
+.job--open--dash--news--h--card {
+  padding: 27px 40px 32px 40px;
+  background: #ffffff;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  border-radius: 15px;
+  width: 49.1%;
+}
+
+.job--open--dash--news--h--card--job--info {
+  border-radius: 10px;
+  background: var(--Gray-6, #f2f2f2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  margin-top: 32px;
+}
+
+.job--open--dash--news--h--card--location,
+.job--open--dash--news--h--card--money,
+.job--open--dash--news--h--card--time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.job--open--dash--news--h--card--location p,
+.job--open--dash--news--h--card--money p,
+.job--open--dash--news--h--card--time p {
+  color: var(--194-d-79, #194d79);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 162.5% */
+}
+.job--open--dash--news--h--card--list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 162.5% */
+}
+
+.job--open--dash--news--h--card--list {
+  padding-top: 26px;
+}
+
+.job--open--dash--news--h--card--lower a {
+  border-radius: 10px;
+  background: var(--194-d-79, #194d79);
+  color: var(--ffffff, #fff);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; /* 206.25% */
+  padding-block: 7px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.job--open--dash--news--h--card--lower {
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ======================================
+Job Open Rate
+====================================== */
+.job--open--dash--rate--h--card--lower a:first-child {
+  color: var(--ffffff, #fff);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; /* 206.25% */
+  border-radius: 10px;
+  background: var(--194-d-79, #194d79);
+  padding: 6px 72px;
+  border: 2px solid #194d79;
+}
+
+.job--open--dash--rate--h--card--lower {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 24px;
+}
+
+.job--open--dash--rate--h--card--lower a:last-child {
+  color: var(--194-d-79, #194d79);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; /* 206.25% */
+  border-radius: 10px;
+  border: 2px solid var(--194-d-79, #194d79);
+}
+
+.job--open--dash--rate--h--card--lower a:nth-child(2) {
+  color: var(--194-d-79, #194d79);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; /* 206.25% */
+  border-radius: 10px;
+  border: 2px solid var(--194-d-79, #194d79);
+  padding: 6px 72px;
+}
+.job--open--dash--news--h--filter--main--alt,
+.job--open--dash--rate--h--filter--sort--alt {
+  flex-basis: auto;
+}
+.job--rate--dash--h--filter--sort--cont {
+  display: flex;
+  flex-basis: 55%;
+}
+
+.job--open--dash--rate--h--filter--sort--alt {
+  width: 50%;
+}
+.job--open--dash--rate--h--btn--cont a {
+  border-radius: 10px;
+  background: var(--194-d-79, #194d79);
+  padding: 7px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ffffff, #fff);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; /* 206.25% */
+}
 /* ======================================
 Media Query
 ====================================== */
