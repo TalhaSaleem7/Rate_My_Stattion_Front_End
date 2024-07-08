@@ -1,13 +1,13 @@
-const JobOpenDashHead = () => {
+const StationRatingDashHeadh = () => {
   return (
     <>
       <section className="job--open--dash--news--h--head">
         <div className="job--open--dash--news--h--title">
-          <h1>Newsroom’s Jop Openings</h1>
+          <h1>Station’s Ratings</h1>
         </div>
         <div className="job--open--dash--news--h--filter--cont">
           <div className="job--open--dash--news--h--search--cont">
-            <input type="text" placeholder="Search" name="" id="" />
+            <input type="text" placeholder="Search by username" name="" id="" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -26,7 +26,7 @@ const JobOpenDashHead = () => {
           <div className="job--open--dash--news--h--filter--main">
             <label htmlFor="">Filter: </label>
             <div className="job--open--dash--news--h--filter--drop">
-              <span>Station</span>{" "}
+              <span>Type</span>{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
@@ -49,7 +49,7 @@ const JobOpenDashHead = () => {
             </div>
 
             <div className="job--open--dash--news--h--filter--drop">
-              <span>Job Type</span>{" "}
+              <span>Location</span>{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
@@ -72,7 +72,7 @@ const JobOpenDashHead = () => {
             </div>
 
             <div className="job--open--dash--news--h--filter--drop">
-              <span>Profession</span>{" "}
+              <span>Options</span>{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
@@ -126,4 +126,4 @@ const JobOpenDashHead = () => {
   );
 };
 
-export default JobOpenDashHead;
+export default StationRatingDashHeadh;
