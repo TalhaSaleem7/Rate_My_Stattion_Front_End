@@ -1027,6 +1027,7 @@ FAQ Terms Styles
 .faq--work--card--bottom--alt {
   background-color: transparent;
   color: #828282;
+  padding: 0;
 }
 .faq--work--bottom--img--h {
   width: 16px;
@@ -1427,6 +1428,8 @@ Dashboard Job Opening NewsRoom
   align-items: center;
   justify-content: space-between;
   padding: 25px 0px 32px 0px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 .job--open--dash--news--h--filter--main {
   max-width: 540px;
@@ -1454,12 +1457,14 @@ Dashboard Job Opening NewsRoom
 .job--open--dash--news--h--search--cont svg {
   position: absolute;
   top: 26%;
-  right: 6%;
+  right: 4%;
 }
 
 .job--open--dash--news--h--search--cont {
   position: relative;
   flex-basis: 28.59%;
+  flex-grow: 1;
+  min-width: 221px;
 }
 
 .job--open--dash--news--h--filter--main {
@@ -1475,9 +1480,9 @@ ul.job--open--dash--news--h--filter--dropdown {
 .job--open--dash--news--h--filter--sort label {
   color: #828282;
   font-family: "Public Sans";
-  font-size: 18px;
+  font-size: var(--font-size-18);
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
 }
 
 .job--open--dash--news--h--filter--drop {
@@ -1489,14 +1494,16 @@ ul.job--open--dash--news--h--filter--dropdown {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  white-space: nowrap;
+  gap: 5px;
 }
 
 .job--open--dash--news--h--filter--drop span {
   color: #828282;
   font-family: "Public Sans";
-  font-size: 18px;
+  font-size: var(--font-size-18);
   font-weight: 400;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
 }
 
 .dashboard-container-h .col-lg-12,
@@ -1523,7 +1530,7 @@ ul.job--open--dash--news--h--filter--dropdown {
 .job--open--dash--news--h--card--title h1 {
   color: var(--000000, #000);
   font-family: "Public Sans";
-  font-size: 24px;
+  font-size: var(--font-size-24);
   font-style: normal;
   font-weight: 700;
   line-height: 30.5px; /* 127.083% */
@@ -1532,18 +1539,19 @@ ul.job--open--dash--news--h--filter--dropdown {
 .job--open--dash--news--h--card--title p {
   color: var(--Gray-3, #828282);
   font-family: "Public Sans";
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 300;
   line-height: 26px; /* 162.5% */
 }
-
-.job--open--dash--news--h--card {
-  padding: 40px 32px 27px 32px;
+.job--open--dash--news--h--card--parent--cont {
   background: #ffffff;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   border-radius: 15px;
   width: 49.1%;
+}
+.job--open--dash--news--h--card {
+  padding: 40px 32px 0px 32px;
 }
 
 .job--open--dash--news--h--card--job--info {
@@ -1569,7 +1577,7 @@ ul.job--open--dash--news--h--filter--dropdown {
 .job--open--dash--news--h--card--time p {
   color: var(--194-d-79, #194d79);
   font-family: "Public Sans";
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 300;
   line-height: 26px; /* 162.5% */
@@ -1580,12 +1588,14 @@ ul.job--open--dash--news--h--filter--dropdown {
   gap: 13px;
   color: var(--000000, #000);
   font-family: "Public Sans";
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
 }
-
+.job--open--dash--news--h--card--list li + li {
+  padding-top: 9px;
+}
 .job--open--dash--news--h--card--list {
   padding-top: 26px;
 }
@@ -1596,22 +1606,27 @@ ul.job--open--dash--news--h--filter--dropdown {
   color: var(--ffffff, #fff);
   text-align: center;
   font-family: "Public Sans";
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 700;
   line-height: 33px; /* 206.25% */
   padding-block: 7px;
-  max-width: 450px;
-  width: 100%;
+  /* max-width: 450px;
+  width: 100%; */
+  flex-grow: 1;
 }
 
 .job--open--dash--news--h--card--lower {
-  padding-top: 24px;
+  padding: 24px 34px 27px 34px;
   border-top: 1px solid #e0e0e0;
   margin-top: 26px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+}
+.job--open--dash--news--h--card--lower svg {
+  flex-shrink: 0;
 }
 
 /* ======================================
@@ -1747,6 +1762,14 @@ Media Query
   .account--profile--img--h--cont {
     width: 140px;
   }
+  .job-card--cont--alt--h--2 {
+    flex-direction: column;
+  }
+
+  .job--open--dash--news--h--card--parent--cont {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 991px) {
   :root {
@@ -1823,6 +1846,9 @@ Media Query
   .faq--main--card--two .main--card--two--container {
     max-width: 100%;
   }
+  .job--open--dash--news--h--card--parent--cont {
+    width: 80%;
+  }
 }
 @media (max-width: 768px) {
   :root {
@@ -1879,6 +1905,12 @@ Media Query
   .faq--search--detail--h .breadcrumb-item + .breadcrumb-item,
   .faq--search--result--h .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem;
+  }
+  .job--open--dash--news--h--search--cont svg {
+    right: 15px;
+  }
+  .job--open--dash--news--h--card--parent--cont {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -1946,6 +1978,10 @@ Media Query
 
   .faq--work--card--bottom {
     margin-top: 10px;
+  }
+  .job--open--dash--news--h--card--job--info {
+    flex-direction: column;
+    align-items: self-start;
   }
 }
 

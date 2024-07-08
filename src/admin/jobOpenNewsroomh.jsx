@@ -11,12 +11,6 @@ const JobOpenNewsroom = () => {
           </div>
           <div className="col-lg-12 job-card--cont--alt--h--2">
             <JobOpenNewsCardh />
-            <JobOpenNewsCardh />
-
-            <JobOpenNewsCardh />
-            <JobOpenNewsCardh />
-            <JobOpenNewsCardh />
-            <JobOpenNewsCardh />
           </div>
         </div>
       </div>
