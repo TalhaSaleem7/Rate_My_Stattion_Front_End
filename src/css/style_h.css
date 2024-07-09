@@ -2023,7 +2023,7 @@ Admin Header
 .admin--header--main--cont--h {
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15.9px 20px;
 }
 
 .admin--headedr--title--h {
@@ -2100,13 +2100,19 @@ Admin Sidebar
 
 section.sidebar--cont--admin--h {
   width: 250px;
-  height: 100vh;
+  height: calc(100vh - 87.02px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #ffffff;
 }
-
+section.sidebar--cont--admin--h--collapse {
+  overflow: hidden;
+  width: 59px;
+}
+.admin--sidebar--collapse--h {
+  cursor: pointer;
+}
 .admin--sidebar--items--cont--h {
   display: grid;
 }
@@ -2123,6 +2129,7 @@ section.sidebar--cont--admin--h {
   font-size: var(--font-size-16);
   line-height: 33px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .admin--sidebar--text--h {
@@ -2135,7 +2142,7 @@ section.sidebar--cont--admin--h {
 
 .admin--sidebar--collapse--h {
   display: flex;
-  gap: 13px;
+  gap: 28px;
   align-items: end;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -2145,6 +2152,7 @@ section.sidebar--cont--admin--h {
   color: #194d79;
   font-size: var(--font-size-16);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .admin--sidebar--item--h-cont ul {
@@ -2162,6 +2170,18 @@ section.sidebar--cont--admin--h {
 }
 .admin-li-color-h-alt {
   color: #89c400;
+}
+
+.woo-stat-card-1 {
+  background-color: #f2f2f2;
+  box-shadow: none;
+}
+.woo-stat-card-2 {
+  background-color: #ffffff;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.25);
+}
+.woo--statistics--cards--cont {
+  padding-top: 28px;
 }
 /* ======================================
 Media Query

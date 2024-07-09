@@ -7,7 +7,11 @@ const AdminSidebarh = () => {
   const [isWoo, setIsWoo] = useState(false);
   const [isReport, setIsReport] = useState(false);
   const [isSetting, setIsSetting] = useState(false);
+  const [isCollapse, setIsCollapse] = useState(false);
 
+  const toggleCollapse = () => {
+    setIsCollapse(!isCollapse);
+  };
   const toggleApproval = () => {
     setIsApproval(!isApproval);
     setIsUser(false);
@@ -63,7 +67,11 @@ const AdminSidebarh = () => {
   };
 
   return (
-    <section className="sidebar--cont--admin--h">
+    <section
+      className={`sidebar--cont--admin--h ${
+        isCollapse ? "sidebar--cont--admin--h--collapse" : ""
+      }`}
+    >
       <div className="admin--sidebar--items--cont--h">
         <div className="admin--sidebar--item--h">
           <div className="admin--sidebr--logo--h">
@@ -376,7 +384,7 @@ const AdminSidebarh = () => {
         </div>
       </div>
 
-      <div className="admin--sidebar--collapse--h">
+      <div onClick={toggleCollapse} className="admin--sidebar--collapse--h">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="11"
