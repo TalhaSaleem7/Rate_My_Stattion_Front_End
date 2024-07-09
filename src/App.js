@@ -83,6 +83,36 @@ import Previewh from "./Popouts/Preview_pop_h";
 import RmsHeader from "./Rmsheader/RmsHeader";
 import RmsHeaderAlt from "./Rmsheader/RmsHeaderalt";
 
+
+import Btn from "./admin/btn";
+import Dash1ah from "./admin/dash1ah";
+import Dash2ah from "./admin/dash2ah";
+import Dash3ah from "./admin/dash3ah";
+import Dash4ah from "./admin/dash4ah";
+import Dash5ah from "./admin/dash5ah";
+import Dash6ah from "./admin/dash6ah";
+import Dash7ah from "./admin/dash7ah";
+import Dash8ah from "./admin/dash8ah";
+import Dash9ah from "./admin/dash9ah";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function App() {
   return (
     <Router>
@@ -292,6 +322,46 @@ function App() {
         />
         <Route path="/rateh" exact element={<RateThisProd />} />
         <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
+
+
+
+
+
+
+
+{/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
+admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
+
+        <Route path="/btn" exact element={<Btn  />} /> 
+        <Route path="/dah1" exact element={<Dash1ah />} />
+        <Route path="/dah2" exact element={<Dash2ah />} />
+        <Route path="/dah3" exact element={<Dash3ah />} />
+        <Route path="/dah4" exact element={<Dash4ah />} />
+        <Route path="/dah5" exact element={<Dash5ah  />} />
+        <Route path="/dah6" exact element={<Dash6ah  />} />
+        <Route path="/dah7" exact element={<Dash7ah  />} />
+        <Route path="/dah8" exact element={<Dash8ah  />} />
+        <Route path="/dah9" exact element={<Dash9ah  />} />
+
+
+{/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
+admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
+
+
+
+
+
+
+
+
+
+
+
+
       </Routes>
     </Router>
   );
