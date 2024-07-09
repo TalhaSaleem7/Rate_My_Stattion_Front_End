@@ -6,6 +6,7 @@ import WooCommerceChart from "./component_hamza_dashboard/WooCommerceChart";
 import DashboardInsightChart from "./component_hamza_dashboard/DasboardInsightCharth";
 import DashInsightHeadh from "./component_hamza_dashboard/DashInsightHeadh";
 import InsightSecTwoh from "./component_hamza_dashboard/InsightSecTwoh";
+import DashboardInsightChartTwo from "./component_hamza_dashboard/DashboardInsightChartTwoh";
 
 const DashInsightSech = () => {
   return (
@@ -15,6 +16,7 @@ const DashInsightSech = () => {
           <DashInsightHeadh />
           <DashboardInsightChart />
           <InsightSecTwoh />
+          <DashboardInsightChartTwo />
         </div>
       </div>
     </div>

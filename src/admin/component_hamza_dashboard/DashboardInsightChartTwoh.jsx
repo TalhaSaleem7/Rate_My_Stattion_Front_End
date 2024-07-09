@@ -5,7 +5,7 @@ import { callback } from "chart.js/helpers";
 
 Chart.register(...registerables);
 
-const DashboardInsightChart = () => {
+const DashboardInsightChartTwo = () => {
   const [cardData, setCardData] = useState({
     visitors: 1545,
     visitorsChange: 0,
@@ -152,14 +152,14 @@ const DashboardInsightChart = () => {
     <div className="chart-container" style={{ marginBottom: "28px" }}>
       <div className="chart-title-cont-h">
         <div className="chart-title-heading-h">
-          <h1>Page Visit</h1>
+          <h1>Page Views</h1>
         </div>
       </div>
       <div className="stats-container">
         <div className="stat-card stat-card-1">
           <div className="stat-card-left">
             <h1>{cardData.visitors}</h1>
-            <p>Visitors</p>
+            <p>View</p>
           </div>
           <div className="stat-card-right">
             <svg
@@ -189,7 +189,7 @@ const DashboardInsightChart = () => {
         <div className="stat-card stat-card-2">
           <div className="stat-card-left">
             <h1>{cardData.visits}</h1>
-            <p>Visits</p>
+            <p>Comments</p>
           </div>
           <div className="stat-card-right">
             <svg
@@ -221,4 +221,4 @@ const DashboardInsightChart = () => {
   );
 };
 
-export default DashboardInsightChart;
+export default DashboardInsightChartTwo;

@@ -87,6 +87,8 @@ import JobOpenRateh from "./admin/JobRateStationh";
 import DashHomeh from "./admin/DashboardHomeh";
 import DashStationRating from "./admin/DashboardStationRatingh";
 import DashInsightSech from "./admin/DashboardInsighth";
+import AdminHeader from "./admin/AdminHeader/AdminHeader";
+import AdminSidebarh from "./admin/AdminSidebar/AdminSidebarh";
 
 function App() {
   return (
@@ -234,6 +236,8 @@ function App() {
           element={<DashStationRating />}
         />
         <Route path="/Dashboardinsighth" exact element={<DashInsightSech />} />
+        <Route path="/adminheaderh" exact element={<AdminHeader />} />
+        <Route path="/adminsidebarh" exact element={<AdminSidebarh />} />
 
         <Route path="/directorinfoh" exact element={<DirectorInfoForm />} />
         <Route path="/Chartah1" exact element={<Chartah1 />} />

@@ -1,7 +1,13 @@
 import JobOpenNewsCardButtonh from "./JobOpenNewsCardButton";
 import assisstant from "../../img/Assistant.png";
-
+import AdminEditDel from "./AdminEditDelPoph";
+import { useState } from "react";
 const JobOpenNewsCardh = () => {
+  const [isEdit, setIsEdit] = useState(false);
+  const EditDel = () => {
+    setIsEdit(!isEdit);
+  };
+
   const data = [
     {
       img: assisstant,
@@ -209,7 +215,7 @@ const JobOpenNewsCardh = () => {
           </div>
         </div>
 
-        <div className="col-lg-12 d-flex justify-content-between faq--work--card--bottom--container">
+        <div className="col-lg-12 d-flex justify-content-between faq--work--card--bottom--container job--open--card--bottom--container">
           <div className="d-flex faq--work--card--bottom">
             <div className="faq--work--bottom--img--h">
               <img src={require("../../img/tick_h.png")} alt="" />
@@ -226,18 +232,24 @@ const JobOpenNewsCardh = () => {
       </div>
       <div className="job--open--dash--news--h--card--lower">
         <JobOpenNewsCardButtonh />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="7"
-          height="26"
-          viewBox="0 0 7 26"
-          fill="none"
+        <div
+          // onClick={EditDel}
+          className="job--open--dash--news--h--card--lower--svg"
         >
-          <circle cx="3.42105" cy="3.42105" r="3.42105" fill="#828282" />
-          <circle cx="3.42105" cy="13" r="3.42105" fill="#828282" />
-          <circle cx="3.42105" cy="22.5789" r="3.42105" fill="#828282" />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="7"
+            height="26"
+            viewBox="0 0 7 26"
+            fill="none"
+          >
+            <circle cx="3.42105" cy="3.42105" r="3.42105" fill="#828282" />
+            <circle cx="3.42105" cy="13" r="3.42105" fill="#828282" />
+            <circle cx="3.42105" cy="22.5789" r="3.42105" fill="#828282" />
+          </svg>
+        </div>
       </div>
+      {/* {isEdit && <AdminEditDel />} */}
     </div>
   ));
 };

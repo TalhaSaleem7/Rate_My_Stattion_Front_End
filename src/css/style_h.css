@@ -1468,10 +1468,32 @@ Dashboard Job Opening NewsRoom
 }
 
 .job--open--dash--news--h--filter--main {
-  flex-basis: 48.65%;
+  flex-basis: 100%;
+  flex-wrap: wrap;
 }
 ul.job--open--dash--news--h--filter--dropdown {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  /* top: 47px; */
+  z-index: 1;
+  width: 100%;
+  /* left: 0; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #828282;
+  background-color: #f2f2f2;
+  color: #828282;
+  font-size: var(--font-size-18);
+  font-weight: 400;
+  line-height: 26px;
+}
+ul.job--open--dash--news--h--filter--dropdown li {
+  padding: 10px 17px;
+
+  &:hover {
+    background-color: #828282;
+    color: #ffffff;
+  }
 }
 .job--open--dash--news--h--filter--sort {
   flex-basis: 18%;
@@ -1488,7 +1510,7 @@ ul.job--open--dash--news--h--filter--dropdown {
 .job--open--dash--news--h--filter--drop {
   border-radius: 10px;
   border: 1px solid #828282;
-  padding: 10px 17px;
+  padding: 0.56em 0.95em;
   max-width: 150px;
   width: 100%;
   display: flex;
@@ -1496,6 +1518,17 @@ ul.job--open--dash--news--h--filter--dropdown {
   justify-content: space-between;
   white-space: nowrap;
   gap: 5px;
+  position: relative;
+  font-size: var(--font-size-18);
+}
+.job--open--dash--news--h--filter--drop--cont {
+  max-width: 150px;
+  width: 100%;
+  position: relative;
+}
+.borderradiusnone {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .job--open--dash--news--h--filter--drop svg {
   flex-shrink: 0;
@@ -1613,7 +1646,7 @@ ul.job--open--dash--news--h--filter--dropdown {
   font-style: normal;
   font-weight: 700;
   line-height: 33px; /* 206.25% */
-  padding-block: 7px;
+  padding-block: 0.44em;
   /* max-width: 450px;
   width: 100%; */
   flex-grow: 1;
@@ -1631,7 +1664,9 @@ ul.job--open--dash--news--h--filter--dropdown {
 .job--open--dash--news--h--card--lower svg {
   flex-shrink: 0;
 }
-
+.job--open--dash--news--h--card--lower--svg {
+  position: relative;
+}
 /* ======================================
 Job Open Rate
 ====================================== */
@@ -1647,15 +1682,19 @@ Job Open Rate
   background: var(--194-d-79, #194d79);
   padding: 6px 72px;
   border: 2px solid #194d79;
+  flex-grow: 1;
 }
 
 .job--open--dash--rate--h--card--lower {
   margin-top: 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-top: 1px solid #e0e0e0;
-  padding-top: 24px;
+  padding: 24px 32px 27px 32px;
+  gap: 10px;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 
 .job--open--dash--rate--h--card--lower a:last-child {
@@ -1681,6 +1720,7 @@ Job Open Rate
   border-radius: 10px;
   border: 2px solid var(--194-d-79, #194d79);
   padding: 6px 72px;
+  flex-grow: 1;
 }
 .job--open--dash--news--h--filter--main--alt,
 .job--open--dash--rate--h--filter--sort--alt {
@@ -1688,7 +1728,8 @@ Job Open Rate
 }
 .job--rate--dash--h--filter--sort--cont {
   display: flex;
-  flex-basis: 55%;
+  flex-basis: 100%;
+  max-width: 610px;
 }
 
 .job--open--dash--rate--h--filter--sort--alt {
@@ -1826,6 +1867,7 @@ Chart
   display: flex;
   gap: 19px;
   flex-wrap: wrap;
+  padding-bottom: 28px;
 }
 
 .dash--sec--one--card--h {
@@ -1930,6 +1972,7 @@ Chart
   justify-content: space-between;
   align-items: center;
   padding-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .dash--insight--sec--title--h h1 {
@@ -1953,7 +1996,10 @@ Chart
   gap: 17px;
   max-width: 157px;
 }
-
+.dash--insight--dropdown--cont--h {
+  max-width: 157px;
+  position: relative;
+}
 .insight--sec--two--stat--bottom {
   display: flex;
   align-items: center;
@@ -1968,6 +2014,154 @@ Chart
 
 .insight--sec--two--stat--bottom--right--svg svg {
   display: block;
+}
+
+/* ======================================
+Admin Header
+====================================== */
+
+.admin--header--main--cont--h {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.admin--headedr--title--h {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.admin--header--right--sec--h {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.admin--header--user--info--h {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.admin--header--main--h {
+  box-shadow: 0px 4px 12px 0px #00000026;
+}
+
+.admin--header--text--h h1 {
+  font-size: var(--font-size-28);
+  font-weight: 400;
+}
+
+.admin--header--logo--h {
+  width: 37%;
+}
+
+.admin--header--user--text--h h1 {
+  font-size: var(--font-size-16);
+  font-weight: 700;
+}
+
+.admin--header--user--text--h p {
+  font-size: var(--font-size-14);
+  font-weight: 400;
+  color: #828282;
+}
+
+.admin--header--user--img--h {
+  width: 29.1%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.admin--header--notification--h {
+  position: relative;
+}
+.admin--header--notification--h::before {
+  content: "2";
+  padding: 9px;
+  position: absolute;
+  top: -5px;
+  background: #9bdb08;
+  border-radius: 100%;
+  font-size: 12px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  right: -6px;
+}
+
+/* ======================================
+Admin Sidebar
+====================================== */
+
+section.sidebar--cont--admin--h {
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.admin--sidebar--items--cont--h {
+  display: grid;
+}
+.admin--sidebar--item--h {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-block: 8px;
+  padding-inline: 20px;
+  cursor: pointer;
+}
+
+.admin--sidebar--text--h h1 {
+  font-size: var(--font-size-16);
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.admin--sidebar--text--h {
+  margin-right: auto;
+}
+
+.admin--sidebar--item--h svg {
+  flex-shrink: 0;
+}
+
+.admin--sidebar--collapse--h {
+  display: flex;
+  gap: 13px;
+  align-items: end;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.admin--sidebar--collapse--h h1 {
+  color: #194d79;
+  font-size: var(--font-size-16);
+  font-weight: 700;
+}
+
+.admin--sidebar--item--h-cont ul {
+  padding-left: 60px;
+}
+
+.admin--sidebar--item--h-cont li {
+  font-size: var(--font-size-14);
+  font-weight: 400;
+  line-height: 33px;
+  cursor: pointer;
+}
+.svg-fill-color {
+  fill: #89c400;
+}
+.admin-li-color-h-alt {
+  color: #89c400;
 }
 /* ======================================
 Media Query
@@ -2033,6 +2227,13 @@ Media Query
   .job--open--dash--news--h--card--parent--cont {
     width: 60%;
     margin: 0 auto;
+  }
+  .station--rate--card--h {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .dash--sec--one--card--cont--h {
+    justify-content: center;
   }
 }
 @media (max-width: 991px) {
@@ -2113,6 +2314,10 @@ Media Query
   .job--open--dash--news--h--card--parent--cont {
     width: 80%;
   }
+  .station--rate--card--h {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 768px) {
   :root {
@@ -2176,8 +2381,14 @@ Media Query
   .job--open--dash--news--h--card--parent--cont {
     width: 100%;
   }
+  .station--rate--card--h {
+    width: 90%;
+  }
 }
 @media (max-width: 576px) {
+  .dashboard-container-h {
+    padding: 25px 10px 40px 10px;
+  }
   :root {
     --font-size-18: 0.95rem;
     --font-size-20: 1rem;
@@ -2246,6 +2457,22 @@ Media Query
   .job--open--dash--news--h--card--job--info {
     flex-direction: column;
     align-items: self-start;
+  }
+  .station--rate--card--h {
+    width: 100%;
+  }
+  .station--rating--score--cont {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .job--open--card--bottom--container {
+    flex-direction: column;
+  }
+  .job--open--dash--news--h--card {
+    padding: 20px 15px 0px 15px;
+  }
+  .job--open--dash--news--h--card--lower {
+    padding: 24px 15px 27px 15px;
   }
 }
 
@@ -2322,5 +2549,17 @@ Media Query
   }
   .faq--main--search--icon--alt--h {
     right: 7%;
+  }
+  .job--open--dash--news--h--card--head {
+    flex-direction: column;
+  }
+  .job--open--dash--news--h--card--img {
+    width: 30%;
+  }
+  .job--open--dash--news--h--card--heading {
+    justify-content: center;
+  }
+  .job--open--dash--news--h--card--title p {
+    text-align: center;
   }
 }
