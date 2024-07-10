@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const AdminSidebarh = () => {
   const [isApproval, setIsApproval] = useState(false);
@@ -73,6 +74,7 @@ const AdminSidebarh = () => {
       }`}
     >
       <div className="admin--sidebar--items--cont--h">
+      <Link   to="/Dashbord" >
         <div className="admin--sidebar--item--h">
           <div className="admin--sidebr--logo--h">
             <svg
@@ -92,6 +94,8 @@ const AdminSidebarh = () => {
             <h1>Home</h1>
           </div>
         </div>
+        </Link>
+
 
         <div className="admin--sidebar--item--h-cont">
           <div onClick={toggleApproval} className="admin--sidebar--item--h">
@@ -130,11 +134,24 @@ const AdminSidebarh = () => {
           </div>
           {isApproval && (
             <ul className="admin--sidebr--list--h">
+
+              <Link   to="/Dashbord/Dash1ah" >
               <li>New Ratings</li>
+              </Link>
+
+              <Link   to="/Dashbord/Dash2ah" >
               <li>New Stations</li>
+              </Link>
+              <Link   to="/Dashbord/Dash3ah" >
               <li>New News Director</li>
+              </Link>
+              <Link   to="/Dashbord/Dash4ah" >
               <li>Rating Verification</li>
+              </Link>
+
+              <Link   to="/Dashbord/Dash5ah" >
               <li>Account Verification </li>
+              </Link>
             </ul>
           )}
         </div>

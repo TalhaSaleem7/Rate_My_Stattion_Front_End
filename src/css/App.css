@@ -7597,7 +7597,7 @@ section.ah1 {
   font-weight: 700;
   line-height: 33px; /* 206.25% */
   border: 2px solid #194d79;
-  width: 20%;
+  width: 24%;
   transition: 0.3s;
 }
 
@@ -7712,7 +7712,7 @@ span.approved-s p {
 }
 
 .ahd-card-body-start-btn button {
-  padding: 8px 35px;
+  padding: 8px 0px;
   border-radius: 10px;
   background: var(--194-d-79, #194D79);
   color: var(--ffffff, #FFF);
@@ -8060,7 +8060,7 @@ span.sl-icon svg {
 }
 
 .Reporter-dah-body-new-last button {
-  width: 48%;
+  width: 45%;
   padding: 8px 35px;
   border-radius: 10px;
   background: var(--194-d-79, #194D79);
@@ -8535,6 +8535,25 @@ span.Orders-2-li-1 h4 span {
     background: transparent;
     color: #194d79;
 }
+
+
+.main-box-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-bar-my {
+  width: 250px;
+}
+
+.side-box-my {
+  width: 87%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+header {width: 100%;background: white;position: relative;}
 /* ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
@@ -8554,7 +8573,32 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
 
 
+@media screen and (max-width: 1600px) {
+  .ahd-card-body-start {
+    padding: 30px 20px;
+}
 
+.ahd-card-body-start-1 span h2 {
+    font-size: 20px;
+}
+
+.ahd-card-body-start-1 span p {
+    font-size: 14px;
+}
+
+.ahd-card-body-start-1 {
+    gap: 20px;
+}
+
+.ahd-card-body-end {
+    padding: 15px 25px;
+    gap: 20px;
+}
+
+.ahd-card-body-end span p {
+    font-size: 14px;
+}
+}
 
 
 
@@ -10265,7 +10309,104 @@ span.Info button {
     padding: 40px 40px;
 }
 
+.ahd-box-1 h2 {
+  font-size: 20px;
+}
 
+.ahd-box-btn {
+  padding-top: 18px;
+}
+
+.ahd-box-btn-card button {
+  padding: 5px 25px;
+  font-size: 14px;
+}
+
+.ahd-box-1 {
+  padding-bottom: 25px;
+}
+
+.ahd-card-head p {
+  font-size: 14px;
+}
+
+span.approved-s p {
+  font-size: 14px;
+}
+
+.ahd-card-head {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.Reporter-dah-box-dp span h2 {
+  font-size: 16px;
+}
+
+.Reporter-dah-box-dp-2 h2 {
+  font-size: 16px;
+}
+
+.Reporter-dah-box {
+  padding: 30px 25px 25px 25px;
+}
+
+.Simmons-dah-id-site span p {
+  font-size: 12px;
+}
+
+.Simmons-dah-dp-site {
+  width: 35%;
+}
+
+.Simmons-dah-id-site h2 {
+  font-size: 15px;
+}
+
+.Simmons-dah-tital-site h3 {
+  font-size: 14px;
+  line-height: 
+20px;
+}
+
+.Simmons-dah-h2 h2 {
+  font-size: 14px;
+}
+
+.Simmons-dah-h2 h3 {
+  font-size: 14px;
+}
+
+.Reporter-dah-body-new {
+  gap: 20px;
+}
+
+.Simmons-dah-more-card p {
+  font-size: 12px;
+}
+
+.Simmons-dah-more-card h2 {
+  font-size: 14px;
+}
+
+.Reporter-dah-body-new-last {
+  padding: 20px 24px;
+}
+
+.Reporter-dah-body-new-last button {
+  padding: 5px 30px;
+  font-size: 14px;
+}
+
+.ahd-box-2 {
+  gap: 25px;
+}
+
+.Reporter-dah-body-new-last svg {
+  width: 10px;
+  height: 24px;
+}
+
+.container.dashboard-container-h {}
 }
 
 @media (max-width: 991px) {
@@ -10323,7 +10464,23 @@ span.Info button {
   .news-director-detail-btn {
     justify-content: flex-end;
   }
+  .ahd-card-body-start-btn {
+    width: 35%;
+}
 
+.ahd-card-body-start-btn button {
+    line-height: 25px;
+}
+.Uploaded-documents-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Uploaded-documents-card {
+  width: 100%;
+}
   .About-main-box-1-ah {
     width: 100%;
   }
@@ -10339,7 +10496,102 @@ span.Info button {
     .rms-kabc-btn .themedark {
       padding: 8px 30px;
   }
+  section.ah1 {
+    padding: 20px 35px;
+}
 
+.ahd-box-1 h2 {
+    font-size: 16px;
+}
+
+.ahd-box-1 p {
+    font-size: 14px;
+}
+
+.ahd-box-btn {
+    padding-top: 15px;
+}
+
+.ahd-box-btn-card button {
+    padding: 5px 25px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.ahd-box-1 {
+    padding-bottom: 20px;
+}
+
+.ahd-box-2 {
+    gap: 20px;
+    padding: 24px 0px;
+}
+
+.ahd-card-head {
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+}
+
+.ahd-card {
+    width: 100%;
+}
+
+.Reporter-dah-box {
+    padding: 20px;
+}
+
+.Reporter-dah-box-dp span h2 {
+    font-size: 14px;
+}
+
+.Reporter-dah-box-dp-2 p {
+    font-size: 14px;
+}
+
+.dp-imger {}
+
+.dp-imger {
+    width: 40px;
+}
+
+.Reporter-dah-body-new {
+    padding: 20px;
+}
+
+.Simmons-dah-tital-site h3 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.Simmons-dah-dp-site {
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+    width: 30%;
+}
+
+.Simmons-dah-img-site {
+    width: 54px;
+}
+
+.Simmons-dah-id-site h2 {
+    font-size: 14px;
+}
+
+.Simmons-dah-more-btn button {
+    padding: 4px 15px;
+    font-size: 14px;
+}
+
+.Simmons-dah-more-box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Reporter-dah-body-new-last button {
+    line-height: 30px;
+}
 
     .rms_header .header_nav {
       display: none;
@@ -11168,7 +11420,26 @@ span.Info button {
   .Recommend-card-tital-ah h2 {
     font-size: 14px;
   }
+  .ahd-card-body-start-btn {
+    width: 100%;
+}
 
+.ahd-card-body-start-btn button {
+    line-height: 25px;
+}
+
+.ahd-card-body-start {
+    padding: 20PX;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ahd-card-body-end {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
   section.director-search-result hr {
     margin: 0px;
   }
@@ -11184,7 +11455,145 @@ span.Info button {
   .news-director-card-txt h5 {
     font-size: 18px;
   }
+  section.ah1 {
+    padding: 20px 35px;
+}
 
+.ahd-box-1 h2 {
+    font-size: 16px;
+}
+
+.ahd-box-1 p {
+    font-size: 14px;
+}
+
+.ahd-box-btn {
+    padding-top: 15px;
+}
+
+.ahd-box-btn-card button {
+    padding: 5px 25px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.ahd-box-1 {
+    padding-bottom: 20px;
+}
+
+.ahd-box-2 {
+    gap: 20px;
+    padding: 24px 0px;
+}
+
+.ahd-card-head {
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+}
+
+.ahd-card {
+    width: 100%;
+}
+
+.Reporter-dah-box {
+    padding: 20px;
+}
+
+.Reporter-dah-box-dp span h2 {
+    font-size: 14px;
+}
+
+.Reporter-dah-box-dp-2 p {
+    font-size: 14px;
+}
+
+.dp-imger {}
+
+.dp-imger {
+    width: 40px;
+}
+
+.Reporter-dah-body-new {
+    padding: 20px;
+}
+
+.Simmons-dah-tital-site h3 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.Simmons-dah-dp-site {
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Simmons-dah-img-site {
+    width: 54px;
+}
+
+.Simmons-dah-id-site h2 {
+    font-size: 14px;
+}
+
+.Simmons-dah-more-btn button {
+    padding: 4px 15px;
+    font-size: 14px;
+}
+
+.Simmons-dah-more-box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Reporter-dah-body-new-last button {
+    line-height: 30px;
+}
+
+.ahd-box-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section.ah1 {
+    padding: 20px;
+}
+
+.ahd-card-head {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.Reporter-dah-box-dp {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.Reporter-dah-box-dp-2 {
+    gap: 5px;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.Reporter-dah-box {
+    padding: 15px;
+}
+
+.Simmons-dah-box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Simmons-dah-tital-site {
+    width: 100%;
+}
   .Applied-ah-list-1 {
     padding-bottom: 18px;
   }

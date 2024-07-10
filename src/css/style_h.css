@@ -2099,12 +2099,13 @@ Admin Sidebar
 ====================================== */
 
 section.sidebar--cont--admin--h {
-  width: 250px;
+  width: 100%;
   height: calc(100vh - 87.02px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #ffffff;
+  padding: 30px 0px;
 }
 section.sidebar--cont--admin--h--collapse {
   overflow: hidden;
