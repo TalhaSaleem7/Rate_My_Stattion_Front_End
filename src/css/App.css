@@ -13,8 +13,9 @@ body {
 header.header_main_Mobile {
   display: none;
 }
+
 header.header_main .container,
-header.header_main .row > * {
+header.header_main .row>* {
   padding: 0;
 }
 
@@ -153,7 +154,7 @@ span.See button {
 span.Info {
   width: 100%;
   display: flex;
-  align-items: center;  
+  align-items: center;
   gap: 10px;
 }
 
@@ -2561,9 +2562,11 @@ button.change-red {
   justify-content: space-between;
   padding: 30px 0px 60px 0px;
 }
+
 .Sweatshirt--box--alt {
   align-items: flex-start;
 }
+
 .Sweatshirt-part-1 {
   width: 67%;
 }
@@ -2748,9 +2751,11 @@ header.header_main {
   justify-content: end;
   gap: 21px;
 }
+
 .header_end a:hover {
   cursor: pointer;
 }
+
 .login-btn {
   color: #194d79;
   text-align: center;
@@ -2769,11 +2774,13 @@ header.header_main {
   background: transparent;
   color: #194d79 !important;
 }
+
 .login-btn:hover {
   transition: all 0.6s ease;
   background: #194d79;
   color: #fff !important;
 }
+
 .header_end a {
   position: relative;
 }
@@ -2811,12 +2818,14 @@ header.header_main {
 .rms--header--row {
   align-items: center;
 }
+
 .rms_header_logo {
   display: flex;
   justify-content: flex-start;
   gap: 27px;
 }
-.rms--header--row > * {
+
+.rms--header--row>* {
   padding: 0 !important;
 }
 
@@ -2857,6 +2866,7 @@ section.rms_header {
 .toggle.clicked .bars:nth-child(3) {
   transform: scaleX(0);
 }
+
 /*********** First Banner Section CSS Start ***********/
 
 .first-banner-sec {
@@ -2905,23 +2915,28 @@ section.rms_header {
   border: none;
   font-size: 18px;
 }
+
 .search-stations-input--rms input {
   padding: 10px 20px;
   box-shadow: none;
   background-color: #f2f2f2;
   font-size: 16px !important;
 }
+
 .search-stations-input--rms--alt input {
   border-radius: 15px;
   padding: 17px 28px;
   width: 100%;
 }
+
 .search-stations-input--rms input::placeholder {
   font-size: 16px !important;
 }
+
 .search-stations-input--rms .search-stations-input svg {
   width: 30px;
 }
+
 .search-stations-input.full-width input {
   width: 963.215px;
   border-radius: 20px;
@@ -2935,6 +2950,7 @@ section.rms_header {
   font-style: normal;
   font-weight: 300;
 }
+
 /* 
 .select-station-drop {
   position: relative;
@@ -2983,11 +2999,13 @@ section.rms_header {
   max-width: 400px;
   cursor: pointer;
 }
+
 .search-stations-input--rms .select-container {
   padding: 12px 30px 12px 30px;
   box-shadow: none;
   border-radius: 15px 0px 0px 15px;
 }
+
 .select-container:hover {
   background-color: #75a111;
 }
@@ -3011,7 +3029,8 @@ section.rms_header {
   color: #fff;
   font-family: "Public Sans";
   font-size: 22px !important;
-  width: 100%; /* Ensure the select-box takes the full width */
+  width: 100%;
+  /* Ensure the select-box takes the full width */
 }
 
 .select-box option {
@@ -3058,16 +3077,20 @@ section.rms_header {
 .search-stations-input--rms span {
   top: -2px;
 }
+
 .search-stations-input--rms--alt span {
   top: -4px;
 }
+
 .search-stations-input--rms span svg {
   width: 24px;
 }
+
 .search-stations-input--rms .select-box,
 .search-stations-input--rms option {
   font-size: 16px !important;
 }
+
 /*********** First Banner Section CSS End ***********/
 
 /*********** Latest Rating Section CSS Start ***********/
@@ -3319,7 +3342,7 @@ section.latest-rating-sec {
   font-style: normal;
   font-weight: 400;
   color: #828282;
-  margin: 0px 0px 20px 0px; 
+  margin: 0px 0px 20px 0px;
 }
 
 .newroom-coworker-txt svg {
@@ -3560,9 +3583,11 @@ section.latest-rating-sec {
   color: #000;
   cursor: pointer;
 }
+
 .newsletter-side-head-alt h3 {
   cursor: default;
 }
+
 .newsletter-side-head a {
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -3572,9 +3597,11 @@ section.latest-rating-sec {
   color: #194d79;
   cursor: pointer;
 }
+
 .newsletter-side-head a:hover {
   text-decoration: underline !important;
 }
+
 .side-newsletter-box {
   margin: 0px 0px 28px 0px;
   background: #fff;
@@ -4204,6 +4231,7 @@ section.your-journalism-sec {
 .your-journalism-sec button.slick-arrow.slick-prev {
   visibility: hidden;
 }
+
 .your-journalism-sec button.slick-arrow.slick-next {
   visibility: hidden;
 }
@@ -4229,7 +4257,7 @@ section.your-journalism-sec {
 .your-journalism-txt {
   width: 40%;
   background: #fff;
-  padding: 70px 50px; 
+  padding: 70px 50px;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -4374,7 +4402,7 @@ section.your-journalism-sec {
 }
 
 section.latest-article-recommend-sec {
-  margin: 0px 0px 0px 0px; 
+  margin: 0px 0px 0px 0px;
 }
 
 .newsletter-latest-article-box h3 {
@@ -4540,7 +4568,7 @@ section.latest-article-recommend-sec {
 
 .newsletter-article-detail .latest-article-box {
   margin: 0px;
-} 
+}
 
 
 /*********** Newsletter Page CSS End ***********/
@@ -4931,7 +4959,7 @@ body {
 
 section.shop-product-search-sec {
   padding: 0px;
-} 
+}
 
 .heading-see-all {
   display: flex;
@@ -5035,7 +5063,7 @@ section.shop-product-search-sec {
 
 .newsletter-article-decided {
   padding: 34px 0px 30px 0px;
-}     
+}
 
 .article-reactions {
   display: flex;
@@ -5307,9 +5335,11 @@ footer {
   align-items: center;
   gap: 30px;
 }
+
 .icon-list-footer svg:hover path {
   fill: #89c400;
 }
+
 .ul-li-list-footer ul li a {
   color: var(--Gray-3, #828282) !important;
   font-family: "Public Sans", sans-serif;
@@ -5326,6 +5356,7 @@ footer {
 
   color: black !important;
 }
+
 /*********** Contact Us Page CSS End ***********/
 
 /*********** Newsletter Article Page CSS Start ***********/
@@ -5619,7 +5650,7 @@ footer {
   top: 0px;
 }
 
-.job-detail-name-description {  
+.job-detail-name-description {
   background: #fff;
   padding: 70px 49px 67px 59px;
   border-radius: 15px;
@@ -5708,7 +5739,7 @@ footer {
 }
 
 .job-opening-hr {
-  padding: 12px 0px 0px 0px;  
+  padding: 12px 0px 0px 0px;
 }
 
 .job-save-share a {
@@ -6289,7 +6320,7 @@ section.director-search-result hr {
 
 .mycart-qualitytotal {
   display: flex;
-  gap: 108px  ;
+  gap: 108px;
 }
 
 .product-quality-total h4 {
@@ -7152,6 +7183,7 @@ section.employer-login-pg-sec {
   line-height: 26px;
   margin: 0px 0px 6px 0px;
 }
+
 #checkbox {
   display: none;
 }
@@ -7168,6 +7200,7 @@ section.employer-login-pg-sec {
   gap: 8px;
   transition-duration: 0.5s;
 }
+
 .rms--toggle {
   width: 27px;
   height: fit-content;
@@ -7189,33 +7222,35 @@ section.employer-login-pg-sec {
 #bar3 {
   width: 70%;
 }
+
 /* 
 #checkbox:checked + .toggle .bars {
   position: absolute;
   transition-duration: .5s;
 } */
 
-#checkbox:checked + .toggle #bar2 {
+#checkbox:checked+.toggle #bar2 {
   transform: scaleX(0);
   transition-duration: 0.5s;
 }
 
-#checkbox:checked + .toggle #bar1 {
+#checkbox:checked+.toggle #bar1 {
   width: 100%;
   transform: rotate(45deg);
   transition-duration: 0.5s;
 }
 
-#checkbox:checked + .toggle #bar3 {
+#checkbox:checked+.toggle #bar3 {
   width: 100%;
   transform: rotate(-45deg);
   transition-duration: 0.5s;
 }
 
-#checkbox:checked + .toggle {
+#checkbox:checked+.toggle {
   transition-duration: 0.5s;
   transform: rotate(180deg);
 }
+
 .submit-staion-field select {
   border-radius: 10px;
   background: var(--Gray-6, #f2f2f2);
@@ -7281,7 +7316,7 @@ section.employer-login-pg-sec {
 }
 
 
-.submit-checkbox input[type="checkbox"]:checked + label::before {
+.submit-checkbox input[type="checkbox"]:checked+label::before {
   border-color: #89C400;
   background: #89C400;
 }
@@ -7299,7 +7334,7 @@ section.employer-login-pg-sec {
   transform: rotate(45deg);
 }
 
-.submit-checkbox input[type="checkbox"]:checked + label::after {
+.submit-checkbox input[type="checkbox"]:checked+label::after {
   opacity: 1;
 }
 
@@ -7330,6 +7365,7 @@ section.employer-login-pg-sec {
   position: absolute;
   background-color: #fff;
 }
+
 .toggle #barz3 {
   width: 100%;
   transform: rotate(-45deg);
@@ -7344,6 +7380,7 @@ nav.helo-drop label {
   gap: 10px;
   align-items: center;
 }
+
 .user--pic--header {
   width: 43%;
   border-radius: 5px;
@@ -7377,12 +7414,14 @@ nav.helo-drop {
   width: 100%;
   height: 0px;
 }
+
 .drop-out {
   font-size: 16px;
   font-weight: bold;
   color: black;
   cursor: pointer;
 }
+
 .drop-out::after {
   float: right;
   right: 10%;
@@ -7415,29 +7454,34 @@ ul.slide a {
   place-items: center;
   gap: 5px;
 }
+
 ul.slide svg {
   width: 25px;
   padding: 0px;
 }
+
 .slide hr {
   margin: 0;
 }
+
 .slide li {
   width: 100%;
   padding: 10px;
   text-align: left;
 }
+
 .slide li:hover {
   background-color: #e0e0e0;
   border-radius: 5px;
 }
+
 #touch {
   position: absolute;
   opacity: 0;
   height: 0px;
 }
 
-#touch:checked + .slide {
+#touch:checked+.slide {
   height: max-content;
   padding: 10px;
 }
@@ -7448,7 +7492,7 @@ ul.slide svg {
   height: 0px;
 }
 
-#touch:checked + .slide {
+#touch:checked+.slide {
   height: fit-content;
 }
 
@@ -7511,11 +7555,1986 @@ ul.slide svg {
   line-height: 26px;
 }
 
-/*********** Submit A Station Form Page CSS End ***********/
-
 ul.rms--header--slide li a {
   color: #000;
 }
+
+
+/*********** Submit A Station Form Page CSS End ***********/
+
+
+
+/*********** Product Dashboard Page CSS Start ***********/
+
+.dashboard_product_head {
+  padding: 33px 0px 33px 0px;
+}
+
+.dashboard_product_head h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dashboard_addnewprod {
+  margin: 27px 0px 0px 0px;
+}
+
+.addnewprod_head a {
+  color: var(--ffffff, #FFF);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  border-radius: 10px;
+  background: #194D79;
+  padding: 12px 24px 12px 21px;
+  border: 1px solid #194D79;
+  transition: all .6s ease;
+}
+
+.addnewprod_head a svg {
+  margin: -2px 13px 0px 0px;
+  width: 22.507px;
+  height: 22.507px;
+}
+
+
+.addnewprod_head a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+
+.dashprod_filter_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+.dashfilter-select-box label {
+  color: var(--Gray-3, #828282);
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.dashfilter-select-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashfilter-select-box select {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 9px 56px 11px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--Gray-3, #828282);
+  background: #F2F2F2;
+}
+
+.dashstock_box select {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 9px 97px 11px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--Gray-3, #828282);
+  background: #F2F2F2;
+}
+
+.dashfilter-stock {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+.product_dashboard_box {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 22px 32px 29px 31px;
+  border-radius: 10px;
+}
+
+.product_dashboard_header_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product_dashboard_header_left input {
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+}
+
+.product_dashboard_header_left select {
+  border: none;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.product_dashboard_header_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prodash_headright_select select {
+  border: none;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product_dashboard_header {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0px 0px 17px 0px;
+}
+
+
+.inline_product {
+  margin: 22px 0px 0px 0px;
+}
+
+.inlineprod_save {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.inlineprod_namebox {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.inlineprod_namebox img {
+  width: 44px;
+}
+
+.inlineprod_name h3 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0px 0px 7px 0px;
+  width: 290px;
+}
+
+.inlineprod_name p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.inlineprod_save input {
+  width: 23px;
+  height: 23px;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.inlinprod_detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px 0px 0px;
+}
+
+.inlineprod_instock h6 {
+  color: var(--89-c-400, #89C400);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding: 4px 15px;
+  border-radius: 10px;
+  background: rgba(137, 196, 0, 0.10);
+  margin: 0px 20px 0px 0px;
+}
+
+.inlineprod_price p {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding: 0px 20px 0px 0px;
+}
+
+.inlineprod_category p {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 130px;
+  text-align: center;
+  padding: 0px 50px 0px 0px;
+}
+
+.inlineprod_dtpub p {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.inlineprod_action {
+  margin: 0px 0px 0px 80px;
+  border-radius: 10px;
+  background: #F2F2F2;
+  padding: 6px 10px;
+  color: #828282;
+}
+
+.inlineprod_instock h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.inlineprod_amout {
+  margin: 0px 50px 0px 40px;
+}
+
+
+.inlineprod_allowed {
+  margin: 0px 80px 0px 30px;
+}
+
+
+
+
+
+/*********** Product Dashboard Page CSS End ***********/
+
+
+
+
+/*********** Order Dashboard Page CSS Start ***********/
+
+
+.order_dashboard_header_right {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.prodash_status_select select {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+
+.order-header-select {
+  display: flex;
+  align-items: center;
+  gap: 49px;
+}
+
+.order-number-name {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  margin: 5px 0px 0px 0px;
+}
+
+.order-number-name h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.order-number-name h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.inlineprod_completed h6 {
+  color: var(--89-c-400, #89C400);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: rgba(137, 196, 0, 0.10);
+  width: 115px;
+  height: 33px;
+  text-align: center;
+}
+
+.inlineprod_processing h6 {
+  color: var(--Yellow, #F2C94C);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: rgba(242, 201, 76, 0.10);
+  width: 115px;
+  height: 33px;
+  text-align: center;
+}
+
+.inlineprod_canceled h6 {
+  color: var(--Red, #EB5757);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: rgba(235, 87, 87, 0.10);
+  width: 115px;
+  height: 33px;
+  text-align: center;
+}
+
+.inlineprod_view a {
+  color: var(--ffffff, #FFF);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  padding: 10px 27px;
+
+}
+
+.inlineprod_view {
+  margin: 0px 0px 0px 60px;
+}
+
+
+
+
+/*********** Order Dashboard Page CSS End ***********/
+
+
+
+
+/*********** Setting Dashboard Page CSS Start ***********/
+
+
+
+.setting_dashboard_tabs .react-tabs__tab-list {
+  border: none;
+}
+
+
+
+.setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab {
+  color: var(--000000, #000);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding: 9px 36px;
+  background: #fff;
+}
+
+
+.setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab--selected {
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  padding: 9px 36px;
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+
+.setting_dashboard_setting {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  padding: 31px 31px 37px 31px;
+  background: #fff;
+  margin: 32px 0px 0px 0px;
+  border-radius: 15px;
+}
+
+.setting_dashboard_setting h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  padding: 0px 0px 10px 0px;
+}
+
+.setting_dashboard_setting p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 0px 4px 0px;
+}
+
+
+.store_input_box {
+  margin: 20px 0px 0px 0px;
+}
+
+.store_input_box label {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 0px 0px 10px 0px;
+}
+
+.store_input_box input {
+  background: #F2F2F2;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  padding: 10px 0px 10px 21px;
+  width: 100%;
+}
+
+.store_input_box input:focus {
+  outline: none;
+}
+
+.store_input_box select {
+  background: #F2F2F2;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  padding: 10px 0px 13px 16px;
+  width: 100%;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.store_first_form_btn a {
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 53px;
+  padding: 15px 48px;
+}
+
+.store_first_form_btn {
+  margin: 20px 0px 0px 0px;
+}
+
+
+.store_checkbox input {
+  width: 27.664px;
+  height: 27.664px;
+  border-radius: 7px;
+  border: 1px solid var(--Gray-4, #BDBDBD);
+}
+
+.store_checkbox {
+  display: flex;
+  align-items: center;
+  margin: 53px 0px 0px 0px;
+  gap: 15px;
+}
+
+.store_checkbox_box_txt h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 0px;
+}
+
+.store_checkbox_box_txt h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.general-dashboard h4 {
+  padding: 0px;
+}
+
+
+.general-dashboard {
+  margin: 28px 0px 0px 0px;
+}
+
+
+.dashprod-sort {
+  justify-content: end;
+}
+
+
+/*********** Setting Dashboard Page CSS End ***********/
+
+
+
+/*********** Report Rating Dashboard Page CSS Start ***********/
+
+
+.ignore_delete_btns .ignore_all {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  padding: 6px 57px;
+  border: 1px solid #194D79;
+}
+
+
+.ignore_delete_btns .delete_all {
+  color: var(--194-d-79, #194D79);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid var(--194-d-79, #194D79);
+  padding: 6px 57px;
+}
+
+
+.ignore_delete_btns {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.dashboard_product_head p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0px 0px 0px;
+}
+
+.reported-rating-border {
+  position: relative;
+}
+
+.reported-rating-border::before {
+  position: absolute;
+  content: "";
+  background: #E0E0E0;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+}
+
+.dashreport_rating_box {
+  background: #E0E0E0;
+  margin: 32px 0px 0px 0px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+
+.dashreport_rating_box h1 {
+  padding: 18px 0px 16px 30px;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dashreport_rating_box h1 span {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.report_ratingigdel_btn {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.report_ratingigdel_btn .ignore_all {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  width: 100%;
+  border: 2px solid var(--194-d-79, #194D79);
+  padding: 6px 0px;
+  transition: all .6s ease;
+}
+
+
+.report_ratingigdel_btn .delete_all {
+  color: var(--194-d-79, #194D79);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid var(--194-d-79, #194D79);
+  width: 100%;
+  padding: 6px 0px;
+  transition: all .6s ease;
+}
+
+.report_ratingigdel_btn {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin: 24px 0px 0px 0px;
+}
+
+.report_ratingigdel_btn .ignore_all:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+.report_ratingigdel_btn .delete_all:hover {
+  background: #194D79;
+  color: #fff;
+}
+
+
+/*********** Report Rating Dashboard Page CSS End ***********/
+
+
+
+/*********** Reported DMS Dashboard Page CSS Start ***********/
+
+
+.reported_dms_head h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reported_dms_head {
+  padding: 33px 0px 47px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.reported_dms_head::before {
+  position: absolute;
+  content: "";
+  background: #E0E0E0;
+  width: 100%;
+  height: 1px;
+  bottom: 25px;
+}
+
+.reported_dms_chatsuggestbox {
+  background: #E0E0E0;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0px 0px 28px 0px;
+}
+
+.reported_dms_chatsuggestbox h1 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 18px 0px 15px 30px;
+}
+
+.reported_dms_chatsuggestbox h1 span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.reported_dms_chatman img {
+  width: 73.725px;
+}
+
+.reported_dms_mandata h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.reported_dms_mandata p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.reported_dms_mandata p span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.reported_dms_chatman {
+  background: #fff;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  padding: 30px 30px 30px 31px;
+  border-radius: 20px;
+}
+
+.reported_dms_chatman img {
+  width: 73.725px;
+}
+
+.reported_dms_mandata h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.reported_dms_mandata p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.reported_dms_mandata p span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.reported_dms_manchat {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0px 0px 26px 0px;
+}
+
+
+.reported_dms_chatman a {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  width: 100%;
+  padding: 6px 0px;
+  display: inline-block;
+  transition: all .6s ease;
+  border: 1px solid #194D79;
+}
+
+.reported_dms_chatman a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+
+.reported_chat_userOne img {
+  width: 39px;
+}
+
+
+.username_chat_flex {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+
+.reported_chat_userOne {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reported_chat_userOne h6 {
+  margin: 0px;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+}
+
+.username_chat_flex span {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.reported_dashboard_chatbox {
+  border-radius: 15px;
+  background: var(--ffffff, #FFF);
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.chatmain_head_flex {
+  padding: 20px 24px 18px 31px;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.chattingbox_left img {
+  width: 46px;
+  height: 46px;
+}
+
+
+.chattingbox_left {
+  display: flex;
+  gap: 8px;
+  margin: 0px 0px 18px 0px;
+}
+
+.chatting_mxg p {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  border-radius: 10px 10px 10px 0px;
+  background: var(--Gray-6, #F2F2F2);
+  padding: 6px 17px;
+}
+
+.reported_chatting_box {
+  padding: 67px 31px 28px 31px;
+  border: 1px solid #E0E0E0;
+}
+
+.chattingbox_left span {
+  color: var(--Gray-3, #828282);
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 5px 0px 0px 0px;
+}
+
+.chattingbox_right {
+  display: flex;
+  gap: 8px;
+  margin: 0px 0px 18px 0px;
+  justify-content: end;
+}
+
+
+.chattingbox_right img {
+    width: 46px;
+    height: 46px;
+}
+
+.chatting_boxmxgme span {
+  color: var(--Gray-3, #828282);
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.chatting_boxmxgme {
+    text-align: end;
+}
+
+.chatting_mxgme p {
+  border-radius: 10px 10px 10px 0px;
+  background: var(--194-d-79, #194D79);
+  color: var(--ffffff, #FFF);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  padding: 6px 18px;
+}
+
+.report_chat_btn {
+  padding: 20px 31px 23px 31px;
+  display: flex;
+  gap: 15px;
+}
+
+.report_chat_btn a {
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  width: 100%;
+  padding: 6px 0px;
+}
+
+
+.report_chat_btn a {
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  width: 100%;
+  padding: 6px 0px;
+  border: 1px solid #194D79; 
+}
+
+.report_chat_btn a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+
+.report_chat_btn select {
+  color: var(--194-d-79, #194D79);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 2px solid var(--194-d-79, #194D79);
+  width: 100%;
+  padding: 6px 0px;
+}
+
+
+/*********** Reported DMS Dashboard Page CSS End ***********/
+
+
+/*********** Reported Article Dashboard Page CSS Start ***********/
+
+
+.dashnewsletter_article_box {
+  margin: 32px 0px 0px 0px;
+  background: #E0E0E0;
+  border-radius: 20px;
+}
+
+.dashnewsletter_article_box h1 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #E0E0E0;
+  padding: 17px 30px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dashnewsletter_article_box h1 span {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dashboard_newletter_box {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 30px  30px 24px 37px;
+  position: relative;
+  margin: 0px 0px 28px 0px;
+  border-radius: 20px;
+}
+
+.dashboard_newletter_box::before {
+  position: absolute;
+  content: "";
+  background: #E0E0E0;
+  height: 1px;
+  width: 100%;
+  left: 0px;
+  bottom: 100px;
+}
+
+
+.dashnewsletter_box {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  padding: 0px 0px 40px 0px;
+}
+
+.dashnewsletter_box img {
+  width: 191.069px;
+  height: 191.069px;
+}
+
+.dashboard_newsletter_txt h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.dashboard_newsletter_txt h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+
+/*********** Reported Article Dashboard Page CSS END ***********/
+
+
+
+/*********** Pages Dashboard Page CSS Start ***********/
+
+
+.dashboard_pages_head h3 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.dashboard_pages_head {
+  padding: 33px 0px 25px 0px;
+}
+
+.pagesdash_add_search {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.pagesdash_pagessearch input {
+  background: #F2F2F2;
+  border-radius: 10px;
+  border: 1px solid var(--Gray-3, #828282);
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  width: 100%;
+  display: inline-block;
+  padding: 6px 18px 6px 16px;
+}
+
+.pagesdash_pagessearch {
+  position: relative;
+}
+
+.pagesdash_pagessearch span {
+  color: #828282;
+  position: absolute;
+  right: 18px;
+  font-size: 24px;
+  top: 3px;
+}
+
+.pagesdash_pagessearch {
+  position: relative;
+  width: 100%;
+}
+
+.addnewprod_head {
+  width: 60%;
+}
+
+.pagesdash_filter_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagesdash_filter_flex h5 {
+  color: var(--Gray-3, #828282);
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.pagesdash_filter_flex select {
+  border-radius: 10px;
+  border: 1px solid var(--Gray-3, #828282);
+  background: #F2F2F2;
+  padding: 11px 35px;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.dashpages_data_box {
+  margin: 32px 0px 56px 0px;
+  background: #fff;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  padding: 22px 32px 33px 31px;
+  border-radius: 20px;
+}
+
+
+.dashpages_data_box table thead tr th {
+  padding: 0px 0px 17px 0px;
+}
+
+.dashpages_data_box table thead {
+  border-bottom: 1px solid #E0E0E0;
+} 
+
+.dashpages_data_box table thead tr th input {
+  width: 23px;
+  border-radius: 5px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  height: 23px;
+  margin: 0px 20px 0px 0px;
+}
+
+.dashpages_data_box table thead tr th select {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.dashpages_data_box table tbody tr td {
+  padding: 31px 0px 0px 0px;
+}
+
+.dashpages_data_box table tbody tr td input {
+  border-radius: 5px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  width: 23px;
+  height: 23px;
+}
+
+.dashpages_data_box table tbody tr td h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  width: 297px;
+  line-height: 26px;
+}
+
+.dashpages_data_box table tbody tr td h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0px 60px 0px 0px;
+}
+
+
+
+.pagesdash_published {
+  color: var(--89-c-400, #89C400);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: rgba(137, 196, 0, 0.10);
+  border: none;
+  padding: 8px 27px;
+  margin: 0px 50px 0px 0px;
+}
+
+.dashpages_data_box table tbody tr td h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;    
+  width: 200px;
+  padding: 0px 90px 0px 0px;
+}
+
+.dashpages_data_box table thead tr th ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0px;
+    padding: 0px 60px 0px 0px;
+}
+
+
+.dashpages_data_box table tbody tr td ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 60px 0px 0px;
+  margin: 0px;
+}
+
+
+.dashpages_data_box table thead tr th h3 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.billing_sec_head {
+  padding: 32px 0px 25px 0px;
+}
+
+.billing_sec_head h3 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+/*********** Pages Dashboard Page CSS End ***********/
+
+
+/*********** Billing Dashboard Page CSS Start ***********/
+
+
+.billing_earning_box {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  padding: 24px 27px 36px 27px;
+  border-radius: 20px;
+  margin: 0px 0px 32px 0px;
+}
+
+.billing_earning_box h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  padding: 0px 0px 22px 0px;
+}
+
+.billing_earning_box h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  padding: 0px 0px 22px 0px;
+}
+
+.billing_payment_box {
+  border-radius: 10px;
+  background: var(--Gray-6, #F2F2F2);
+  padding: 25px 28px 24px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.billing_payment_number h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 0px 0px 12px 0px;
+}
+
+.billing_payment_number h6 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0px;
+}
+
+
+.billing_earning_box a {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  border-radius: 10px;
+  background: var(--194-d-79, #194D79);
+  width: 100%;
+  display: inline-block;
+  margin: 28px 0px 0px 0px !important;
+  padding: 6px 0px;
+  transition: all .6s ease;
+  border: 1px solid #194D79;
+}
+
+
+.billing_earning_box a:hover {
+  background: transparent;
+  color: #194D79;
+}
+
+
+.withdrawal_options_box {
+  border-radius: 20px;
+  background: #fff;
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  padding: 24px 27px 12px 27px;
+}
+
+.withdrawal_options_box h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+  padding: 0px 0px 22px 0px;
+}
+
+
+.blldash_billing_transfer_box {
+  border-radius: 10px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  padding: 21px 26px 25px 23px;
+  display: flex;
+  gap: 24px;
+  margin: 0px 0px 16px 0px;
+}
+
+
+.billdash_billingtransfer_name {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0px;
+}
+
+
+.billdash_billingtransfer_name h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+.checkbox-wrapper:hover .check {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.checkbox-wrapper .background {
+  fill: #194D79;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .stroke {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .check {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke-dashoffset: 22;
+  stroke-dasharray: 22;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  -appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-wrapper input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + svg .background {
+  fill: #194D79;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + svg .stroke {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + svg .check {
+  stroke-dashoffset: 0;
+}
+
+.billdash_payment_namewedit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.billdash_payment_namewedit a {
+  color: var(--194-d-79, #194D79);
+  text-align: right;
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+.transaction_histroy_head h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.transaction_histroy_head {
+  padding: 0px 0px 25px 0px;
+}
+
+.transaction_histroy_table {
+    padding: 26px 32px 31px 31px;
+    filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+    background: #fff;
+    border-radius: 20px;
+    margin: 0px 0px 36px 0px;
+}
+
+.transaction_histroy_table table thead tr th select {
+    color: var(--Gray-3, #828282);
+    font-family: "Public Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin: 0px 65px 0px 0px;
+}
+
+
+.transaction_histroy_table table thead tr th {
+  padding: 0px 0px 20px 0px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+
+.transaction_histroy_table table tbody tr td {
+  padding: 31px 0px 0px 0px;
+}
+
+.transaction_histroy_table table tbody tr td h4 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.transaction_histroy_table table tbody tr td h3 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.transaction_histroy_table table tbody tr td p {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.transaction_histroy_table table tbody tr td h6 {
+  margin: 0px;
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.transaction_histroy_table table tbody tr td h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.transaction_progress_btn {
+  color: var(--Yellow, #F2C94C);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: rgba(242, 201, 76, 0.10);
+  padding: 8px 45px;
+}
+
+.transaction_paid_btn {
+  color: var(--89-c-400, #89C400);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 10px;
+  background: rgba(137, 196, 0, 0.10);
+  padding: 8px 15px;
+}
+
+.newsletter_filter_flex {
+  justify-content: end;
+  gap: 8px;
+}
+
+
+.email_subceriber_box {
+    border-radius: 15px;
+    background: var(--ffffff, #FFF);
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
+    padding: 22px 30px 32px 31px;
+    margin: 0px 0px 45px 0px;
+}
+
+.dashboard_subscriber_head h2 {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dashboard_subscriber_head {
+  padding: 0px 0px 25px 0px;
+}
+
+.email_subcriber_flex p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.email_subcriber_flex h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.5px;
+}
+
+.email_subcriber_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 25px 0px;
+}
+
+.email_subscriber_table {
+  width: 100%;
+}
+
+.email_subscriber_table table thead tr th h3 {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.email_subscriber_table table thead tr th {
+  padding: 0px 0px 25px 0px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.email_subscriber_table table tbody tr td h4 {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    padding: 0px 90px 0px 0px;
+}
+
+.email_subscriber_table table tbody tr td {
+    padding: 19px 0px 0px 0px;
+}
+
+
+.email_subscriber_table table tbody tr td h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  padding: 0px 50px 0px 0px;
+}
+
+.email_subscriber_table table tbody tr td h6 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  margin: 0px;
+  padding: 0px 50px 0px 0px;
+}
+
+/*********** Billing Dashboard Page CSS End ***********/
+
+
+/*********** Newsletter Dashboard Page CSS Start ***********/
+
+
+.dashnewsletter_data_box {
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
+  background: #fff;
+  border-radius: 20px;
+  padding: 22px 32px 18px 31px;
+  margin: 32px 0px 32px 0px;
+}
+
+
+.dashnewsletter_data_box table thead tr th select {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+
+.dashnewsletter_data_box table thead tr th {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0px 0px 17px 0px;
+}
+
+
+.dashnewsletter_data_box table thead tr th input {
+  width: 23px;
+  height: 23px;
+  margin: 0px 20px 0px 0px;
+}
+
+.dashnewsletter_data_box table tbody tr td input {
+  width: 23px;
+  height: 23px;
+}
+
+.dashnewsletter_data_box table tbody tr td h6 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0px;
+}
+
+
+.dashnewsletter_data_box table tbody tr td h2 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0px 0px 0px 28px;
+}
+
+.dashnewsletter_data_box table tbody tr td h5 {
+  color: var(--000000, #000);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0px 39px 0px 0px;
+}
+
+.progress-container {
+  width: 163px;
+  height: 35px;
+  background-color: rgba(137, 196, 0, 0.1); /* Adjust the background color */
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0px 34px 0px 0px;
+}
+
+.progress-bars {
+  height: 100%;
+  background-color: #89c400; /* Adjust the progress color */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+
+.setting_icon_view {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.setting_icon_view a {
+    border-radius: 10px;
+    background: var(--194-d-79, #194D79);
+    color: var(--ffffff, #FFF);
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    padding: 4px 27px;
+}
+
+
+.dashnewsletter_data_box table tbody tr td {
+  padding: 26px 0px 0px 0px;
+}
+
+.dashnewsletter_data_box table tbody tr td .progress-container {
+  margin: 0px 0px 0px 38px;
+}
+
+
+.dashnewsletter_data_box table tbody tr td .setting_icon_view {
+  margin: 0px 0px 0px 34px;
+}
+
+
+
+
+
+
+/*********** Newsletter Dashboard Page CSS ENd ***********/
 
 
 
@@ -8632,7 +10651,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .employer-newroom-box button.text-white {
     font-size: 23px;
   }
-  
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -8678,25 +10697,27 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     line-height: 23px;
     padding: 8px 8px;
   }
+
   section.About-ah {
     padding: 150px 0px 10px 0px;
-}
+  }
 
-.KABC-tital-ah span h2 {
+  .KABC-tital-ah span h2 {
     font-size: 24px;
-}
+  }
 
-.Schedule-ah-card-box h2 {
+  .Schedule-ah-card-box h2 {
     font-size: 22px;
-}
+  }
 
-.Job-list-1-ah span h2 {
+  .Job-list-1-ah span h2 {
     font-size: 22px;
-}
+  }
 
-.About-main-box-2-tital-ah h2 {
+  .About-main-box-2-tital-ah h2 {
     font-size: 22px;
-}
+  }
+
   .prod-light-btn {
     font-size: 16px;
     line-height: 24px;
@@ -8880,36 +10901,38 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .satisfied h2 {
     font-size: 75px;
   }
+
   span.See button {
     font-size: 14px;
     gap: 10px;
-}
+  }
 
-span.Info button {
+  span.Info button {
     font-size: 14px;
     padding: 5px 15px !important;
-}
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .KABC-part-1-ah {
     width: 48%;
   }
+
   .Brooklyn-Simmons-tital span p {
     font-size: 12px;
-}
+  }
 
-.About-main-card-1-ah h2 {
+  .About-main-card-1-ah h2 {
     font-size: 18px;
-}
+  }
 
-.rms-abc-logo img {
-  width: 100%;
-}
+  .rms-abc-logo img {
+    width: 100%;
+  }
 
-.rms-kabc-txt h6 {
-  margin: 0px 0px 18px 0px;
-}
+  .rms-kabc-txt h6 {
+    margin: 0px 0px 18px 0px;
+  }
 
   .KABC-tital-ah {
     gap: 8px;
@@ -8936,11 +10959,11 @@ span.Info button {
 
   .search-stations-input--rms--alt input {
     width: 100% !important;
-}
+  }
 
   ul.save--share--pop li {
     padding: 6px;
-}
+  }
 
   .station-search-result-txt h4 {
     font-size: 30px;
@@ -8951,7 +10974,7 @@ span.Info button {
     border-radius: 8px;
     width: 160px;
     right: 20px;
-}
+  }
 
   .station-search-result-txt p {
     font-size: 16px;
@@ -8959,7 +10982,7 @@ span.Info button {
 
   .article-reactions ul li a {
     font-size: 18px;
-}
+  }
 
   .station-search-result-txt p span {
     font-size: 16px;
@@ -8968,35 +10991,37 @@ span.Info button {
   .search-stations-input--rms .select-container {
     padding: 0px 20px;
     box-shadow: none;
-}
+  }
 
-.search-stations-input--rms .select-box, .search-stations-input--rms option {
-  font-size: 16px !important;
-  padding: 15px 10px 15px 10px;
-  width: 120px;
-}
+  .search-stations-input--rms .select-box,
+  .search-stations-input--rms option {
+    font-size: 16px !important;
+    padding: 15px 10px 15px 10px;
+    width: 120px;
+  }
 
-.select-icon {
-  width: 30px;
-  height: 30px;
-}
+  .select-icon {
+    width: 30px;
+    height: 30px;
+  }
 
-.search-stations-input--rms span {
-  top: 2px !important;
-}
+  .search-stations-input--rms span {
+    top: 2px !important;
+  }
 
-.search-stations-input--rms input {
-  padding: 10px 20px ;
-  width: 400px;
-}
+  .search-stations-input--rms input {
+    padding: 10px 20px;
+    width: 400px;
+  }
 
-.rms_header_logo {
-  gap: 20px;
-}
+  .rms_header_logo {
+    gap: 20px;
+  }
 
-.search-stations-input--rms {
-  margin: 0px 20px;
-}
+  .search-stations-input--rms {
+    margin: 0px 20px;
+  }
+
   .station-search-result-txt {
     padding: 40px 0px 20px 0px;
   }
@@ -9014,7 +11039,7 @@ span.Info button {
     line-height: 22px;
     border-radius: 8px;
     padding: 8px 20px;
-}
+  }
 
   .news-director-card {
     padding: 20px 20px;
@@ -9885,14 +11910,14 @@ span.Info button {
 
   .header_end a:nth-child(1) svg {
     width: 38px;
-}
+  }
 
-.header_end a span {
-  top: -3px;
-  right: -2px;
-  padding: 0px 6px;
-  font-size: 10px;
-}
+  .header_end a span {
+    top: -3px;
+    right: -2px;
+    padding: 0px 6px;
+    font-size: 10px;
+  }
 
 
 
@@ -10277,7 +12302,7 @@ span.Info button {
     font-size: 32px;
   }
 
-  .helo-drop  .drop-out {
+  .helo-drop .drop-out {
     padding: 2px;
   }
 
@@ -10288,13 +12313,14 @@ span.Info button {
   .header-end-rmssearch {
     gap: 10px;
   }
+
   .header--end--logo {
     display: flex;
     align-items: center;
     gap: 4px;
   }
 
-  .header-end-rmssearch  a svg {
+  .header-end-rmssearch a svg {
     height: 30px;
     padding: 5px 3px 5px 0px;
     width: 30px;
@@ -10307,6 +12333,40 @@ span.Info button {
   .shop-new-arrival {
     height: auto;
     padding: 40px 40px;
+  }
+
+  .chatmain_head_flex {
+    padding: 10px 20px 10px 20px;
+}
+
+
+.reported_chat_userOne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reported_chatting_box {
+  padding: 40px 20px 25px 20px;
+  border: 1px solid #E0E0E0;
+}
+
+.reported_chatting_box {
+  padding: 40px 20px 25px 20px;
+  border: 1px solid #E0E0E0;
+}
+
+.chatting_mxg p {
+  font-size: 14px;
+}
+
+.chatting_mxgme p {
+  font-size: 14px;
+}
+
+
+.ignore_delete_btns .ignore_all {
+  padding: 6px 47px;
 }
 
 .ahd-box-1 h2 {
@@ -10413,14 +12473,17 @@ span.approved-s p {
   .header--2--main--cont {
     max-width: 850px !important;
   }
+
   .header--2--main--row {
     display: grid !important;
     grid-template-columns: auto auto auto;
   }
+
   .Sweatshirt--box--alt {
     flex-direction: column;
     gap: 30px;
   }
+
   .Sweatshirt--part--alt {
     width: 100%;
   }
@@ -10434,7 +12497,7 @@ span.approved-s p {
     width: 100% !important;
   }
 
-  
+
 
 
 }
@@ -10450,13 +12513,16 @@ span.approved-s p {
     flex-direction: column;
     text-align: center;
   }
+
   .header-logo {
     width: 35%;
     padding: 0px;
-}
+  }
+
   .Sweatshirt-ah {
     width: 100%;
   }
+
   .Cooper-ah-imger {
     width: 9%;
   }
@@ -10487,14 +12553,14 @@ span.approved-s p {
 
   .rms_header_logo a {
     display: block;
-    }
+  }
 
-    .rms_header .header_end {
-        display: none;
-    }
+  .rms_header .header_end {
+    display: none;
+  }
 
-    .rms-kabc-btn .themedark {
-      padding: 8px 30px;
+  .rms-kabc-btn .themedark {
+    padding: 8px 30px;
   }
   section.ah1 {
     padding: 20px 35px;
@@ -10593,22 +12659,22 @@ span.approved-s p {
     line-height: 30px;
 }
 
-    .rms_header .header_nav {
-      display: none;
-    }
-
-    .rms--header--slide {
-      display: none;
-    }
-
-    .rms-mobile-header-logo .header-logo img{
-      display: none;
-    }
-
-    .rms-mobile-header-logo {
-      padding: 0px !important;
+  .rms_header .header_nav {
+    display: none;
   }
-  
+
+  .rms--header--slide {
+    display: none;
+  }
+
+  .rms-mobile-header-logo .header-logo img {
+    display: none;
+  }
+
+  .rms-mobile-header-logo {
+    padding: 0px !important;
+  }
+
 
 
   .About-main-box-2-ah {
@@ -11366,26 +13432,73 @@ span.approved-s p {
 
   .About-main-box-2-ah {
     width: 100%;
-}
+  }
 
-.Recommend-box-ah {
+  .Recommend-box-ah {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-}
+  }
 
-.Recommend-card-ah {
+  .Recommend-card-ah {
     width: 48%;
+  }
+
+  .rms_header_logo a label {
+    display: none;
+  }
+
+  .setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab {
+    padding: 9px 25px;
+  }
+
+  .reported_dms_chatman {
+    padding: 20px 20px 20px 21px;
+  }
+
+  .reported_dms_mandata h4 {
+    font-size: 20px;
 }
 
-.rms_header_logo a label {
-  display: none;
+.reported_dms_mandata p span {
+  font-size: 14px;
+}
+.reported_dms_mandata p  {
+  font-size: 14px;
+}
+
+.reported_dms_chatman a {
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
+.chatmain_head_flex {
+  padding: 20px 20px 20px 20px;
+}
+
+.reported_chat_userOne {
+  gap: 10px;
+}
+
+.reported_chat_userOne h6 {
+  line-height: 20.5px;
+}
+
+.username_chat_flex {
+  gap: 26px;
+}
+
+.chatmain_head_flex {
+  padding: 20px 20px 20px 20px;
 }
 
 
+
 }
+
+
 
 @media screen and (max-width: 600px) {
   .ul-li-list-footer ul {
@@ -11393,9 +13506,11 @@ span.approved-s p {
     align-items: flex-start;
     gap: 10px;
   }
+
   .Sweatshirt-ah-select-card button {
     width: 40%;
   }
+
   .About-main-box-2-ah {
     width: 100%;
   }
@@ -11615,11 +13730,13 @@ section.ah1 {
   .station-search-result-txt p {
     font-size: 14px;
   }
+
   .toggle {
     width: 30px;
     height: 33px;
     gap: 6px;
   }
+
   .station-search-result-txt p span {
     font-size: 14px;
   }
@@ -11631,9 +13748,11 @@ section.ah1 {
   .Applied-ah-logo {
     width: 18%;
   }
+
   .Recommend-card-ah {
     width: 100%;
-}
+  }
+
   .Applied-ah-tital {
     width: 76%;
   }
@@ -11763,7 +13882,7 @@ section.ah1 {
     font-size: 11px;
     line-height: 24px;
     width: 100%;
-}
+  }
 
 
   .Sweatshirt-ah-select-card h2 {
@@ -12343,7 +14462,7 @@ section.ah1 {
     padding-top: 3px;
     justify-content: center;
     margin: 0px 0px 10px 0px;
-}
+  }
 
 
   .Sweatshirt-ah-select-card {
@@ -12382,7 +14501,7 @@ section.ah1 {
     padding: 10px 0px 5px 0px;
     font-size: 14px;
     line-height: 20px;
-}
+  }
 
   .Sweatshirt-box {
     width: 100%;
@@ -12671,7 +14790,7 @@ section.ah1 {
     font-size: 20px;
     line-height: 30px;
     padding: 0px 0px 0px 0px;
-}
+  }
 
   .Cooper-ah-tital-head span {
     color: #000;
@@ -13292,6 +15411,7 @@ CONTACTUS */
   .select-box option {
     font-size: 14px !important;
   }
+
   .search-stations-input svg {
     top: 0px;
     right: 0px;
@@ -13301,6 +15421,7 @@ CONTACTUS */
     width: 350px;
     padding: 15px 15px;
   }
+
   .like-report-submitted p {
     font-size: 12px;
   }
@@ -13340,10 +15461,186 @@ CONTACTUS */
     padding: 30px 20px 30px 20px;
   }
 
-  
+  .setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab {
+    padding: 10px 25px;
+    margin: 0px 0px 10px 0px;
+  }
 
+  .setting_dashboard_tabs .react-tabs__tab-list {
+    border: none;
+    text-align: center;
+  }
+
+
+  .setting_dashboard_setting {
+    padding: 31px 21px 27px 21px;
+
+  }
+
+  .setting_dashboard_setting p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+  }
+
+
+  .store_checkbox {
+    margin: 25px 0px 0px 0px;
+  }
+
+  .store_checkbox_box_txt h6 br {
+    display: none;
+  }
+
+  .reported_dms_head h4 {
+    font-size: 20px;
+}
+
+.reported_dms_chatsuggestbox h1 {
+  font-size: 14px;
+  padding: 10px 10px 10px 20px;
+}
+
+.reported_dms_chatman {
+  padding: 20px 20px 20px 21px;
+}
+
+.reported_dms_mandata h4 {
+  font-size: 18px;
+}
+
+.reported_dms_mandata p {
+  font-size: 14px;  
+}
+
+.reported_dms_manchat {
+  gap: 15px;
+  margin: 0px 0px 15px 0px;
+}
+
+.reported_dms_chatman img {
+  width: 50px;
+}
+
+.reported_dms_chatman a {
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
+.reported_dms_chatsuggestbox {
+  margin: 0px 0px 20px 0px;
+}
+
+.chatmain_head_flex {
+  padding: 20px 20px 18px 20px;
+}
+
+.reported_chat_userOne {
+  gap: 10px;
+}
+
+.reported_chat_userOne h6 {
+  font-size: 14px;
+  line-height: 20.5px;
+}
+
+
+.username_chat_flex {
+  gap: 10px;
+}
+
+
+.chatmain_head_flex {
+  padding: 15px 15px 15px 15px;
+}
+
+
+.reported_chatting_box {
+  padding: 47px 20px 18px 20px;
+}
+
+
+.chatting_mxg p {
+  font-size: 12px;
+  padding: 6px 17px;
+}
+
+.chatting_mxgme p {
+  font-size: 12px;
+  line-height: 23px;
+}
+
+.report_chat_btn {
+  padding: 20px 20px 20px 20px;
+  gap: 10px;
+}
+
+
+.report_chat_btn a {
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
+
+.report_chat_btn select {
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
+
+.reported_dms_mandata p span {
+  font-size: 14px;
+}
+
+.reported_dashboard_chatbox {
+  margin: 0px 0px 30px 0px;
+}
+
+.ignore_delete_btns .ignore_all {
+  padding: 6px 47px;
+}
+
+.dashfilter-stock {
+  width: 100%;
+}
+
+.dashfilter-select-box {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+}
+
+.dashfilter-select-box select {
+  width: 100%;
+}
+
+.dashnewsletter_box {
+  align-items: start;
+  gap: 28px;
+  flex-direction: column;
+}
+
+
+.dashnewsletter_box img {
+  width: 120px;
+  height: 120px;
+}
+
+.dashboard_newsletter_txt h6 {
+  font-size: 14px;
+}
+
+.dashboard_newsletter_txt h4 {
+  font-size: 20px;
+  line-height: 29px;
 
 }
 
 
+.dashboard_newletter_box {
+  padding: 20px 20px 20px 20px;
+}
 
+
+
+
+}
