@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import { Provider } from "react-redux"; // Import Provider from react-redux
 
 import "../src/css/App.css";
@@ -102,6 +103,8 @@ import Dash8ah from "./admin/dash8ah";
 import Dash9ah from "./admin/dash9ah";
 import Orders from "./admin/Orders_popup";
 import WooStatistich from "./admin/WooStatistich";
+import MainLayouts from "./admin/layout/Mainlayouts";
+import Dashbord from "./admin/dashboard";
 
 
 function App() {
@@ -333,7 +336,7 @@ admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
 admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
 admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
 
-        <Route path="/btn" exact element={<Btn  />} /> 
+        {/* <Route path="/btn" exact element={<Btn  />} /> 
         <Route path="/Orders_popup" exact element={<Orders />} />
         <Route path="/dah1" exact element={<Dash1ah />} />
         <Route path="/dah2" exact element={<Dash2ah />} />
@@ -343,7 +346,26 @@ admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
         <Route path="/dah6" exact element={<Dash6ah />} />
         <Route path="/dah7" exact element={<Dash7ah />} />
         <Route path="/dah8" exact element={<Dash8ah />} />
-        <Route path="/dah9" exact element={<Dash9ah />} />
+        <Route path="/dah9" exact element={<Dash9ah />} /> */}
+
+
+
+
+        {/* <Routes> */}
+      <Route path="/Dashbord" element={<MainLayouts />}>
+        <Route index element={<DashHomeh />} />
+        <Route path="DashHomeh" element={<DashHomeh />} />
+        <Route path="Dash1ah" element={<Dash1ah />} />
+        <Route path="Dash2ah" element={<Dash2ah />} />
+        <Route path="Dash3ah" element={<Dash3ah />} />
+        <Route path="Dash4ah" element={<Dash4ah />} />
+        <Route path="Dash5ah" element={<Dash5ah />} />
+        <Route path="Dash6ah" element={<Dash6ah />} />
+        <Route path="Dash7ah" element={<Dash7ah />} />
+        <Route path="Dash8ah" element={<Dash8ah />} />
+        <Route path="Dash9ah" element={<Dash9ah />} />
+      </Route>
+    {/* </Routes> */}
 
         {/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
 admin-routesadmin-routesadmin-routesadmin-routesadmin-routes

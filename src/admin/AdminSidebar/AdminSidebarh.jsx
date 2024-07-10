@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 const AdminSidebarh = () => {
   const [isApproval, setIsApproval] = useState(false);
   const [isUser, setIsUser] = useState(false);
@@ -77,25 +79,27 @@ const AdminSidebarh = () => {
       }`}
     >
       <div className="admin--sidebar--items--cont--h">
-        <div className="admin--sidebar--item--h">
-          <div className="admin--sidebr--logo--h">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-            >
-              <path
-                d="M12.0601 0H12.9386C12.9583 0.0146106 12.9804 0.0256473 13.0039 0.0326047C13.9574 0.153894 14.7505 0.586884 15.4575 1.23115C18.1907 3.72171 20.9285 6.20749 23.6708 8.68849C24.172 9.13286 24.5472 9.70145 24.7587 10.337C24.8598 10.6428 24.9211 10.9623 25 11.2753V21.0867C24.9817 21.1728 24.9609 21.2576 24.9465 21.3443C24.5956 23.5138 22.9012 25.0104 20.7215 24.9999C15.239 24.9739 9.7565 24.9928 4.274 24.9882C3.97335 24.9933 3.67293 24.9683 3.37721 24.9139C2.42209 24.7265 1.56225 24.2119 0.945796 23.4588C0.329347 22.7057 -0.00510485 21.7612 5.89106e-05 20.7881C5.89106e-05 17.795 0.00331997 14.8025 5.89106e-05 11.8088C5.89106e-05 10.5424 0.456607 9.48209 1.39579 8.63045C4.16117 6.12207 6.92612 3.61477 9.69063 1.10856C10.2086 0.634878 10.8361 0.297207 11.5168 0.125854C11.6968 0.0762949 11.8788 0.0404298 12.0601 0Z"
-                fill="black"
-              />
-            </svg>
+        <Link to="/Dashbord">
+          <div className="admin--sidebar--item--h">
+            <div className="admin--sidebr--logo--h">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+              >
+                <path
+                  d="M12.0601 0H12.9386C12.9583 0.0146106 12.9804 0.0256473 13.0039 0.0326047C13.9574 0.153894 14.7505 0.586884 15.4575 1.23115C18.1907 3.72171 20.9285 6.20749 23.6708 8.68849C24.172 9.13286 24.5472 9.70145 24.7587 10.337C24.8598 10.6428 24.9211 10.9623 25 11.2753V21.0867C24.9817 21.1728 24.9609 21.2576 24.9465 21.3443C24.5956 23.5138 22.9012 25.0104 20.7215 24.9999C15.239 24.9739 9.7565 24.9928 4.274 24.9882C3.97335 24.9933 3.67293 24.9683 3.37721 24.9139C2.42209 24.7265 1.56225 24.2119 0.945796 23.4588C0.329347 22.7057 -0.00510485 21.7612 5.89106e-05 20.7881C5.89106e-05 17.795 0.00331997 14.8025 5.89106e-05 11.8088C5.89106e-05 10.5424 0.456607 9.48209 1.39579 8.63045C4.16117 6.12207 6.92612 3.61477 9.69063 1.10856C10.2086 0.634878 10.8361 0.297207 11.5168 0.125854C11.6968 0.0762949 11.8788 0.0404298 12.0601 0Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div className="admin--sidebar--text--h">
+              <h1>Home</h1>
+            </div>
           </div>
-          <div className="admin--sidebar--text--h">
-            <h1>Home</h1>
-          </div>
-        </div>
+        </Link>
 
         <div className="admin--sidebar--item--h-cont">
           <div onClick={toggleApproval} className="admin--sidebar--item--h">
@@ -139,11 +143,23 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-              <li>New Ratings</li>
-              <li>New Stations</li>
-              <li>New News Director</li>
-              <li>Rating Verification</li>
-              <li>Account Verification </li>
+              <Link to="/Dashbord/Dash1ah">
+                <li>New Ratings</li>
+              </Link>
+
+              <Link to="/Dashbord/Dash2ah">
+                <li>New Stations</li>
+              </Link>
+              <Link to="/Dashbord/Dash3ah">
+                <li>New News Director</li>
+              </Link>
+              <Link to="/Dashbord/Dash4ah">
+                <li>Rating Verification</li>
+              </Link>
+
+              <Link to="/Dashbord/Dash5ah">
+                <li>Account Verification </li>
+              </Link>
             </motion.ul>
           )}
         </div>
