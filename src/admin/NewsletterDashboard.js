@@ -8,8 +8,7 @@ import WritterSubscriberBox from '../WritterSubscriberBox/WritterSubscriberBox'
 const NewsletterDashboard = () => {
     return (
         <>
-            <section className="pages_dashboard_sec">
-                <Container>
+    <section className="ah1">
                     <Row>
                         <Col lg={12}>
                             <div className="dashboard_pages_head">
@@ -52,7 +51,7 @@ const NewsletterDashboard = () => {
                             <WritterSubscriberBox/>
                         </Col>
                     </Row>
-                </Container>
+           
             </section>
         </>
     )

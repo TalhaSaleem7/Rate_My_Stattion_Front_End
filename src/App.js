@@ -115,6 +115,7 @@ import Orders from "./admin/Orders_popup";
 import WooStatistich from "./admin/WooStatistich";
 import MainLayouts from "./admin/layout/Mainlayouts";
 import Dashbord from "./admin/dashboard";
+import AdminManagement from "./admin/AdminManagement";
 
 
 function App() {
@@ -301,7 +302,23 @@ admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
         <Route path="Dash6ah" element={<Dash6ah />} />
         <Route path="Dash7ah" element={<Dash7ah />} />
         <Route path="Dash8ah" element={<Dash8ah />} />
+        <Route path="DashStationRating" element={<DashStationRating />} />
         <Route path="Dash9ah" element={<Dash9ah />} />
+        <Route path="DashInsightSech" element={<DashInsightSech />} />
+        <Route path="JobOpenNewsroom" element={<JobOpenNewsroom />} />
+        <Route path="JobOpenRateh" element={<JobOpenRateh />} />
+        <Route path="WooStatistich" element={<WooStatistich />} />
+        <Route path="ProductDashboard" element={<ProductDashboard />} />
+        <Route path="OrderDashboard" element={<OrderDashboard />} />
+        <Route path="CuponsDashoard" element={<CuponsDashoard />} />
+        <Route path="SettingDashboard" element={<SettingDashboard />} />
+        <Route path="ReportRatingDashboard" element={<ReportRatingDashboard />} />
+        <Route path="ReportedDms" element={<ReportedDms />} />
+        <Route path="ReportedArticleDashboard" element={<ReportedArticleDashboard />} />
+        <Route path="PagesDashboard" element={<PagesDashboard />} />
+        <Route path="NewsletterDashboard" element={<NewsletterDashboard />} />
+        <Route path="AdminManagement" element={<AdminManagement />} />
+        <Route path="BillingDashboard" element={<BillingDashboard />} />
       </Route>
     {/* </Routes> */}
 

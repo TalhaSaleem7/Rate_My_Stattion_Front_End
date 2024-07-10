@@ -8,8 +8,7 @@ import { FaCirclePlus } from "react-icons/fa6";
 const OrderDashboard = () => {
   return (
     <>
-      <section className="product_dashboard_pg">
-        <Container>
+      <section className="ah1">
           <Row>
             <Col lg={12}>
               <div className="dashboard_product_head">
@@ -316,7 +315,7 @@ const OrderDashboard = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+
       </section>
     </>
   );

@@ -4,8 +4,7 @@ import JobOpenDashHead from "./component_hamza_dashboard/JobOpenNewsHeadh";
 
 const JobOpenNewsroom = () => {
   return (
-    <div className="dash--job--open--news--h">
-      <div className="container dashboard-container-h">
+    <section className="ah1">
         <div className="row">
           <div className="col-lg-12">
             <JobOpenDashHead />
@@ -14,8 +13,7 @@ const JobOpenNewsroom = () => {
             <JobOpenNewsCardh />
           </div>
         </div>
-      </div>
-    </div>
+        </section>
   );
 };
 

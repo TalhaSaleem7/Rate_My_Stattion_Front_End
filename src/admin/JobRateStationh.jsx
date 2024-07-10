@@ -4,8 +4,7 @@ import JobOpenRateCardh from "./component_hamza_dashboard/JobRateStationCardh";
 
 const JobOpenRateh = () => {
   return (
-    <div className="dash--job--open--news--h">
-      <div className="container dashboard-container-h">
+<section className="ah1">
         <div className="row">
           <div className="col-lg-12">
             <JobOpenRateDashHead />
@@ -14,8 +13,7 @@ const JobOpenRateh = () => {
             <JobOpenRateCardh />
           </div>
         </div>
-      </div>
-    </div>
+        </section>
   );
 };
 

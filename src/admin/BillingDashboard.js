@@ -7,8 +7,7 @@ import TransactionHistroyTable from '../TransactionHistroyTable/TransactionHistr
 const BillingDashboard = () => {
     
     return (
-        <section className="billing_dashboard_sec">
-            <Container>
+<section className="ah1">
                 <Row>
                     <Col lg={12}>
                         <div className="billing_sec_head">
@@ -87,7 +86,7 @@ const BillingDashboard = () => {
                         <TransactionHistroyTable/>
                     </Col>
                 </Row>
-            </Container>
+           
         </section>
     )
 }

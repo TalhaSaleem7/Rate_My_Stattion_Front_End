@@ -10,7 +10,7 @@ import DashboardInsightChartTwo from "./component_hamza_dashboard/DashboardInsig
 
 const DashInsightSech = () => {
   return (
-    <div className="container dashboard-container-h">
+    <section className="ah1">
       <div className="row">
         <div className="col-lg-12">
           <DashInsightHeadh />
@@ -19,7 +19,7 @@ const DashInsightSech = () => {
           <DashboardInsightChartTwo />
         </div>
       </div>
-    </div>
+      </section>
   );
 };
 export default DashInsightSech;

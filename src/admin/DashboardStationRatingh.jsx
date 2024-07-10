@@ -3,8 +3,9 @@ import StationRatingDashHeadh from "./component_hamza_dashboard/DashStationRatin
 
 const DashStationRating = () => {
   return (
+    <section className="ah1">
     <div className="dash--job--open--news--h">
-      <div className="container dashboard-container-h">
+
         <div className="row">
           <div className="col-lg-12">
             <StationRatingDashHeadh />
@@ -13,8 +14,9 @@ const DashStationRating = () => {
             <DashStationRateCardh />
           </div>
         </div>
-      </div>
+
     </div>
+    </section>
   );
 };
 

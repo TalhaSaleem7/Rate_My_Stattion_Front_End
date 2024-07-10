@@ -6,7 +6,7 @@ import WooCommerceChart from "./component_hamza_dashboard/WooCommerceChart";
 
 const DashHomeh = () => {
   return (
-    <div className="container dashboard-container-h">
+    <section className="ah1">
       <div className="row">
         <div className="col-lg-12">
           <HomeSecOneh />
@@ -26,7 +26,9 @@ const DashHomeh = () => {
           </div>
         </div>
       </div>
-    </div>
+      </section>
+    
   );
+
 };
 export default DashHomeh;

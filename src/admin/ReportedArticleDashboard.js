@@ -8,8 +8,7 @@ const ReportedArticleDashboard = () => {
   return (
     <>
 
-      <section className="dashboard_dms_sec">
-        <Container>
+<section className="ah1">
           <Row>
             <Col lg={12}>
               <div className="dashboard_product_head reported-rating-border">
@@ -53,7 +52,7 @@ const ReportedArticleDashboard = () => {
               <DashboardNewsletterArticle/>
             </Col>
           </Row>
-        </Container>
+      
       </section>
 
 

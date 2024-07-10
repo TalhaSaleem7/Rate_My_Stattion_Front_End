@@ -79,6 +79,7 @@ const AdminSidebarh = () => {
       }`}
     >
       <div className="admin--sidebar--items--cont--h">
+
         <Link to="/Dashbord">
           <div className="admin--sidebar--item--h">
             <div className="admin--sidebr--logo--h">
@@ -90,6 +91,7 @@ const AdminSidebarh = () => {
                 fill="none"
               >
                 <path
+                    className={`${isUser ? "svg-fill-color" : ""}`}
                   d="M12.0601 0H12.9386C12.9583 0.0146106 12.9804 0.0256473 13.0039 0.0326047C13.9574 0.153894 14.7505 0.586884 15.4575 1.23115C18.1907 3.72171 20.9285 6.20749 23.6708 8.68849C24.172 9.13286 24.5472 9.70145 24.7587 10.337C24.8598 10.6428 24.9211 10.9623 25 11.2753V21.0867C24.9817 21.1728 24.9609 21.2576 24.9465 21.3443C24.5956 23.5138 22.9012 25.0104 20.7215 24.9999C15.239 24.9739 9.7565 24.9928 4.274 24.9882C3.97335 24.9933 3.67293 24.9683 3.37721 24.9139C2.42209 24.7265 1.56225 24.2119 0.945796 23.4588C0.329347 22.7057 -0.00510485 21.7612 5.89106e-05 20.7881C5.89106e-05 17.795 0.00331997 14.8025 5.89106e-05 11.8088C5.89106e-05 10.5424 0.456607 9.48209 1.39579 8.63045C4.16117 6.12207 6.92612 3.61477 9.69063 1.10856C10.2086 0.634878 10.8361 0.297207 11.5168 0.125854C11.6968 0.0762949 11.8788 0.0404298 12.0601 0Z"
                   fill="black"
                 />
@@ -144,7 +146,7 @@ const AdminSidebarh = () => {
               className="admin--sidebr--list--h"
             >
               <Link to="/Dashbord/Dash1ah">
-                <li>New Ratings</li>
+                <li >New Ratings</li>
               </Link>
 
               <Link to="/Dashbord/Dash2ah">
@@ -206,15 +208,25 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-              <li>Employee Account</li>
-              <li>Newsroom Account</li>
-              <li>Unauthorized Account</li>
-              <li>Station’s Ratings</li>
-              <li>Subscription</li>
+              <Link to="/Dashbord/Dash6ah"><li>Employee Ac
+              count</li></Link>
+<Link to="/Dashbord/Dash7ah">              
+              <li>Newsroom Account</li></Link>
+
+<Link to="/Dashbord/Dash8ah">
+              <li>Unauthorized Account</li></Link>
+
+<Link to="/Dashbord/DashStationRating">
+              <li>Station’s Ratings</li></Link>
+
+<Link to="/Dashbord/Dash9ah">
+              <li>Subscription</li></Link>
+              
             </motion.ul>
           )}
         </div>
 
+        <Link to="/Dashbord/DashInsightSech">
         <div className="admin--sidebar--item--h">
           <div className="admin--sidebr--logo--h">
             <svg
@@ -234,6 +246,9 @@ const AdminSidebarh = () => {
             <h1>Insight</h1>
           </div>
         </div>
+        </Link>
+
+
 
         <div className="admin--sidebar--item--h-cont">
           <div onClick={toggleJob} className="admin--sidebar--item--h">
@@ -277,8 +292,12 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
+                  <Link to="/Dashbord/JobOpenNewsroom">
               <li>Newsroom</li>
+              </Link>
+              <Link to="/Dashbord/JobOpenRateh">
               <li>Rate My Station</li>
+              </Link>
             </motion.ul>
           )}
         </div>
@@ -325,11 +344,21 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-              <li>Statistic</li>
-              <li>Product</li>
-              <li>Order</li>
-              <li>Coupons</li>
-              <li>Settings</li>
+                     <Link to="/Dashbord/WooStatistich">
+              <li>Statistic</li></Link>
+
+              <Link to="/Dashbord/ProductDashboard">
+              <li>Product</li></Link>
+
+              <Link to="/Dashbord/OrderDashboard">
+              <li>Order</li></Link>
+
+              <Link to="/Dashbord/CuponsDashoard">
+              <li>Coupons</li></Link>
+
+              <Link to="/Dashbord/SettingDashboard">
+              <li>Settings</li></Link>
+
             </motion.ul>
           )}
         </div>
@@ -376,9 +405,14 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-              <li>Reported Ratings</li>
-              <li>Reported DMs</li>
-              <li>Reported Articles</li>
+              <Link to="/Dashbord/ReportRatingDashboard">
+              <li>Reported Ratings</li></Link>
+
+              <Link to="/Dashbord/ReportedDms">
+              <li>Reported DMs</li></Link>
+
+              <Link to="/Dashbord/ReportedArticleDashboard">
+              <li>Reported Articles</li></Link>
             </motion.ul>
           )}
         </div>
@@ -425,10 +459,14 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-              <li>Pages</li>
-              <li>Newsletter</li>
-              <li>Admin</li>
-              <li>Billing</li>
+                 <Link to="/Dashbord/PagesDashboard">
+              <li>Pages</li></Link>
+              <Link to="/Dashbord/NewsletterDashboard">
+              <li>Newsletter</li></Link>
+              <Link to="/Dashbord/AdminManagement">
+              <li>Admin</li></Link>
+              <Link to="/Dashbord/BillingDashboard">
+              <li>Billing</li></Link>
             </motion.ul>
           )}
         </div>

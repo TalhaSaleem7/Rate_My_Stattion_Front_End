@@ -4,7 +4,7 @@ import WooStatsSecTwoh from "./component_hamza_dashboard/WooStatisticSecTwoh";
 
 const WooStatistich = () => {
   return (
-    <div className="container dashboard-container-h">
+<section className="ah1">
       <div className="row">
         <div className="col-lg-12">
           <WooStatisticHeadh />
@@ -12,7 +12,7 @@ const WooStatistich = () => {
           <WooStatsSecTwoh />
         </div>
       </div>
-    </div>
+      </section>
   );
 };
 

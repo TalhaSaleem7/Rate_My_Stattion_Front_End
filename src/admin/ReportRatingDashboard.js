@@ -22,8 +22,7 @@ const ReportRatingDashboard = () => {
 
     return (
         <>
-            <section className="product_dashboard_pg">
-                <Container>
+        <section className="ah1">
                     <Row>
                         <Col lg={12}>
                             <div className="dashboard_product_head reported-rating-border">
@@ -658,7 +657,7 @@ const ReportRatingDashboard = () => {
                             </div>
                         </Col>
                     </Row>
-                </Container>
+              
             </section>
         </>
     );

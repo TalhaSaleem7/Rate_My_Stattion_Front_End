@@ -4350,7 +4350,7 @@ section.your-journalism-sec {
 .filter-box {
   display: flex;
   align-items: center;
-  /* justify-content: end; */
+  justify-content: end;
   gap: 10px;
   width: 100%;
   flex-wrap: wrap;
@@ -8599,7 +8599,27 @@ ul.rms--header--slide li a {
   margin: 0px 0px 28px 0px;
   border-radius: 20px;
 }
+.main-box-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.side-box-my {}
+
+
+
+.side-box-my {
+  width: 87%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  background: white;
+}
 .dashboard_newletter_box::before {
   position: absolute;
   content: "";
@@ -8654,7 +8674,7 @@ ul.rms--header--slide li a {
 }
 
 .dashboard_pages_head {
-  padding: 33px 0px 25px 0px;
+  padding: 0px 0px 25px 0px;
 }
 
 .pagesdash_add_search {
@@ -8844,7 +8864,7 @@ ul.rms--header--slide li a {
 }
 
 .billing_sec_head {
-  padding: 32px 0px 25px 0px;
+  padding: 0px 0px 25px 0px;
 }
 
 .billing_sec_head h3 {
@@ -9462,7 +9482,7 @@ section.ah1 {
 }
 
 .ahd-box-btn-card button {
-  padding: 8px 35px;
+  padding: 8px 0px;
   border-radius: 10px;
   background: var(--194-d-79, #194d79);
   color: var(--ffffff, #fff);
@@ -10440,28 +10460,28 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 @media screen and (max-width: 1600px) {
   .ahd-card-body-start {
     padding: 30px 20px;
-  }
+}
 
-  .ahd-card-body-start-1 span h2 {
+.ahd-card-body-start-1 span h2 {
     font-size: 20px;
-  }
+}
 
-  .ahd-card-body-start-1 span p {
+.ahd-card-body-start-1 span p {
     font-size: 14px;
-  }
+}
 
-  .ahd-card-body-start-1 {
+.ahd-card-body-start-1 {
     gap: 20px;
-  }
+}
 
-  .ahd-card-body-end {
+.ahd-card-body-end {
     padding: 15px 25px;
     gap: 20px;
-  }
+}
 
-  .ahd-card-body-end span p {
+.ahd-card-body-end span p {
     font-size: 14px;
-  }
+}
 }
 
 @media screen and (max-width: 1366px) {
@@ -10769,6 +10789,11 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .rms-abc-logo img {
     width: 100%;
   }
+  .side-box-my {
+    width: 100%;
+}
+
+
 
   .rms-kabc-txt h6 {
     margin: 0px 0px 18px 0px;
@@ -10832,6 +10857,19 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     padding: 0px 20px;
     box-shadow: none;
   }
+  .side-bar-my {
+    position: absolute;
+    z-index: 99;
+}
+
+header {
+    z-index: 999;
+}
+
+section.ah1 {
+    padding-left: 80px;
+}
+
 
   .search-stations-input--rms .select-box,
   .search-stations-input--rms option {
@@ -12216,6 +12254,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .ahd-box-btn-card button {
     padding: 5px 25px;
     font-size: 14px;
+    width: 48%;
   }
 
   .ahd-box-1 {
@@ -12365,7 +12404,9 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .ahd-card-body-start-btn {
     width: 35%;
   }
-
+  .ahd-card {
+    width: 100%;
+}
   .ahd-card-body-start-btn button {
     line-height: 25px;
   }
@@ -12395,961 +12436,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     padding: 8px 30px;
   }
 }
-@media (max-width: 991px) {
-  .header--2--main--cont {
-    max-width: 850px !important;
-  }
-  .header--2--main--row {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  .Sweatshirt--box--alt {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .Sweatshirt--part--alt {
-    width: 100%;
-  }
 
-  .rate--product--button--container--ah {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .search-stations-input--rms--alt input {
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .About-main-ah {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .America-Sweatshirt {
-    flex-direction: column;
-    text-align: center;
-  }
-  .header-logo {
-    width: 35%;
-    padding: 0px;
-  }
-  .Sweatshirt-ah {
-    width: 100%;
-  }
-  .Cooper-ah-imger {
-    width: 9%;
-  }
-
-  .news-director-detail-btn {
-    justify-content: flex-end;
-  }
-
-  .About-main-box-1-ah {
-    width: 100%;
-  }
-
-  .rms_header_logo a {
-    display: block;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .ahd-card-body-start {
-    padding: 30px 20px;
-  }
-
-  .ahd-card-body-start-1 span h2 {
-    font-size: 20px;
-  }
-
-  .ahd-card-body-start-1 span p {
-    font-size: 14px;
-  }
-
-  .ahd-card-body-start-1 {
-    gap: 20px;
-  }
-
-  .ahd-card-body-end {
-    padding: 15px 25px;
-    gap: 20px;
-  }
-
-  .ahd-card-body-end span p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  header.header_main {
-    padding: 20px 0px 12px 0px;
-  }
-
-  .header_nav ul li {
-    font-size: 15px;
-  }
-
-  .header_end a:nth-child(1) span {
-    font-size: 11px;
-  }
-
-  .login-btn {
-    font-size: 16px;
-    padding: 3px 42px;
-  }
-
-  .rating-real-journalist h3 {
-    color: var(--ffffff, #fff);
-    text-align: center;
-    font-family: "Public Sans";
-    font-size: 40px;
-  }
-
-  .employer-newroom-box button.text-white {
-    font-size: 23px;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .first-banner-txt h3 {
-    width: 70%;
-  }
-
-  .rms_header .header_nav {
-    display: none;
-  }
-
-  .rms--header--slide {
-    display: none;
-  }
-
-  .rms-mobile-header-logo .header-logo img {
-    display: none;
-  }
-
-  .rms-mobile-header-logo {
-    padding: 0px !important;
-  }
-
-  .About-main-box-2-ah {
-    width: 60%;
-  }
-
-  section.About-ah {
-    padding: 40px 0px;
-  }
-
-  .KABC-btn-box-ah {
-    width: 34%;
-  }
-
-  .ratemystation-prod-txt h3 {
-    height: 50px;
-  }
-
-  span.See button {
-    padding: 5px;
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  button.Contact-ah {
-    line-height: 28px;
-  }
-
-  .KABC-part-1-ah {
-    width: 60%;
-    gap: 30px;
-  }
-
-  .Angeles-logo-side-box {
-    width: 75%;
-  }
-
-  .Angeles-logo-ah {
-    width: 15%;
-  }
-
-  .KABC-tital-ah {
-    gap: 5px;
-  }
-
-  .KABC-tital-ah span h2 {
-    font-size: 24px;
-  }
-
-  .KABC-tital-ah p {
-    font-size: 18px;
-  }
-
-  .KABC-tital-ah span p {
-    font-size: 16px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 20px;
-  }
-
-  .main-footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .ul-li-list-footer {
-    width: 100%;
-  }
-
-  .ul-li-list-footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .ratings-ah-1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 40px;
-  }
-
-  .ratings-ah-1-TITAL {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .ratings-ah-1-box {
-    width: 34%;
-  }
-
-  .gol-bar-ah {
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-  }
-
-  .gol-bar-head {
-    width: 100%;
-  }
-
-  .gol-bar-tital {
-    width: 42%;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 55px;
-    text-align: center;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 60px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .job-ah-post h2 {
-    font-size: 20px;
-  }
-
-  .job-ah-Filter {
-    width: 64%;
-    gap: 25px;
-  }
-
-  .job-ah-Filter-card p {
-    font-size: 16px;
-  }
-
-  .job-ah-Filter-card select {
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .director-urer img {
-    width: 10%;
-  }
-
-  .director-urer {
-    padding-bottom: 10px;
-  }
-
-  .Angeles-logo-side-box span h2 {
-    font-size: 20px;
-  }
-
-  .Jacob-card-ah {
-    width: 75%;
-  }
-
-  .Jacob-card-ah-box {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .four-select-tab {
-    margin: 25px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 28px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 18px;
-    padding: 20px 10px;
-  }
-
-  .Hire-ah-box button {
-    padding: 10px;
-    font-size: 15px;
-    line-height: 25px;
-    border-radius: 10px;
-  }
-
-  .Hire-ah-box {
-    padding: 40px 20px;
-  }
-
-  .About-main-ah {
-    gap: 25px;
-  }
-
-  .job-ah-post h2 span {
-    font-size: 16px;
-  }
-
-  .search-station-box {
-    width: 100%;
-  }
-
-  .first-banner-txt h3 {
-    font-size: 40px;
-    width: 80%;
-    margin: 0px 0px 30px 0px !important;
-  }
-
-  .select-station-drop select {
-    padding: 18px 20px 17px 10px;
-    width: 120px;
-    margin: 0.5px 0px 0px 0px;
-    font-size: 16px !important;
-  }
-
-  .select-tv-icon {
-    top: 10px;
-    left: 25px;
-  }
-
-  .select-tv-icon svg {
-    width: 30px;
-  }
-
-  .select-tv-icon svg {
-    width: 30px;
-  }
-
-  .search-stations-input span {
-    top: 4px;
-  }
-
-  .search-stations-input.full-width input {
-    width: 570px;
-    padding: 20px 15px;
-  }
-
-  .search-stations-input input {
-    width: 400px;
-    padding: 17px 15px;
-  }
-
-  .search-stations-input svg {
-    width: 30px;
-  }
-
-  .newroom-coworker-txt svg {
-    width: 150px;
-  }
-
-  .newroom-coworker-txt h6 {
-    font-size: 11px;
-  }
-
-  .newroom-coworker-txt h5 {
-    font-size: 14px;
-  }
-
-  .newsletter-side-sec {
-    padding: 50px 0px 0px 0px;
-  }
-
-  .newsletter-follow-box h4 {
-    font-size: 22px;
-    margin: 0px 0px 20px 15px !important;
-  }
-
-  .follow-us-rate {
-    padding: 20px 20px 10px 20px;
-  }
-
-  .looking-for-worktxt p {
-    font-size: 16px;
-    margin: 10px 0px 10px 0px !important;
-    width: 80%;
-  }
-
-  .looking-for-worktxt {
-    border-radius: 10px;
-  }
-
-  .looking-for-worktxt h4 {
-    font-size: 24px;
-  }
-
-  .looking-for-worktxt a {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  .search-stations-input input {
-    width: 400px;
-    padding: 17px 15px;
-  }
-
-  .your-journalism-img {
-    width: 50%;
-  }
-
-  .your-journalism-txt h3 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .your-journalism-txt {
-    width: 50%;
-    padding: 20px 25px 45px 25px;
-  }
-
-  .journal-date-written p {
-    font-size: 12px;
-  }
-
-  .journal-date-written {
-    padding: 5px 0px;
-  }
-
-  .your-journalism-img img {
-    height: 360px;
-    object-fit: cover;
-  }
-
-  .newsletter-article-search input {
-    padding: 10px 20px;
-    width: 100%;
-  }
-
-  .newsletter-article-search span {
-    right: 10px;
-    top: 4px;
-  }
-
-  .filter-box p {
-    font-size: 14px;
-  }
-
-  .filter-short-box {
-    gap: 20px;
-    justify-content: end;
-  }
-
-  .filter-box select {
-    padding: 6px 10px;
-    font-size: 16px;
-  }
-
-  .ratemystation-prod-txt {
-    padding: 20px 15px;
-  }
-
-  .newsletter-detail-comment-para {
-    border-radius: 0px 10px 10px 10px;
-  }
-
-  .find-job-select-box {
-    margin: 0px 0px 10px 0px;
-  }
-
-  .job-select-opts {
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .job-detailpg-nameflex img {
-    width: 120px;
-  }
-
-  .job-detailpg-txt h3 {
-    font-size: 24px;
-    line-height: 30px;
-    padding: 0px 0px 5px 0px;
-  }
-
-  .job-detailpg-txt h5 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .job-detail-name-description {
-    padding: 30px 20px;
-  }
-
-  .job-openingpg-txt h3 {
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .job-openingpg-txt h5 {
-    font-size: 18px;
-  }
-
-  .job-openingpg-txt h6 {
-    font-size: 16px;
-  }
-
-  .newsletter-article-search h4 {
-    font-size: 24px;
-  }
-
-  .shop-new-arrival {
-    margin: 0px 0px 20px 0px;
-    height: auto;
-  }
-
-  .shop-friend-themed h4 {
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0px 0px 50px 0px !important;
-  }
-
-  .themed-cap img {
-    width: 120px;
-  }
-
-  .theme-mug img {
-    width: 120px;
-  }
-
-  .shop-new-arrival {
-    padding: 30px 30px;
-    margin: 0px 10px 20px 10px;
-  }
-
-  .shop-new-arrival h3 {
-    font-size: 37px;
-  }
-
-  .shop-new-arrival p {
-    width: 300px;
-    margin: 10px 0px 30px 0px !important;
-  }
-
-  .shop-category ul li button {
-    font-size: 12px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 20px;
-  }
-
-  .main-footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .ul-li-list-footer {
-    width: 100%;
-  }
-
-  .ul-li-list-footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .ratings-ah-1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 40px;
-  }
-
-  .ratings-ah-1-TITAL {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .ratings-ah-1-box {
-    width: 34%;
-  }
-
-  .gol-bar-ah {
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-  }
-
-  .gol-bar-head {
-    width: 100%;
-  }
-
-  .gol-bar-tital {
-    width: 42%;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 55px;
-    text-align: center;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 60px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .job-ah-post h2 {
-    font-size: 20px;
-  }
-
-  .job-ah-Filter {
-    width: 64%;
-    gap: 25px;
-  }
-
-  .job-ah-Filter-card p {
-    font-size: 16px;
-  }
-
-  .job-ah-Filter-card select {
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .director-urer img {
-    width: 10%;
-  }
-
-  .director-urer {
-    padding-bottom: 24px;
-  }
-
-  .Angeles-logo-side-box span h2 {
-    font-size: 20px;
-  }
-
-  .Jacob-card-ah {
-    width: 75%;
-  }
-
-  .Jacob-card-ah-box {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .four-select-tab {
-    margin: 25px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 28px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 18px;
-    padding: 20px 10px;
-  }
-
-  .Hire-ah-box button {
-    padding: 10px;
-    font-size: 15px;
-    line-height: 25px;
-    border-radius: 10px;
-  }
-
-  .Hire-ah-box {
-    padding: 40px 20px;
-  }
-
-  .About-main-ah {
-    gap: 25px;
-  }
-
-  .job-ah-post h2 span {
-    font-size: 16px;
-  }
-
-  header.header_main {
-    display: none;
-  }
-
-  header.header_main_Mobile {
-    display: block;
-    padding: 20px 0px 12px 0px;
-    background: #fff;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
-  }
-
-  .sidepanel {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #194d79;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-    box-shadow: 4px 0px 5px #0000002e;
-  }
-
-  .header_nav {
-    position: absolute;
-    right: 30px;
-    top: 12px;
-  }
-
-  .header_nav button {
-    width: 40px;
-    border: none;
-    background-color: transparent;
-  }
-
-  .header_nav button:hover {
-    color: #f1f1f1;
-    background: transparent;
-    color: #194d79;
-    border: none;
-    font-size: 25px;
-  }
-
-  /* The navigation links inside the sidepanel */
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
-  }
-
-  /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-
-  /* Position and style the close button (top right corner) */
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  /* SECTION */
-  section.employer-login-pg-sec {
-    padding: 40px 0px;
-  }
-
-  .rating-real-journalist {
-    padding: 140px 50px;
-  }
-
-  /* .subscribtion--PAGE */
-
-  .subcription-page-sec {
-    padding: 40px 0px;
-  }
-
-  .subscribe-now-txt h3 {
-    font-size: 37px;
-    line-height: 52px;
-  }
-
-  .subscribe-now-txt p {
-    font-size: 15px;
-    line-height: 25px;
-  }
-
-  .subscribe-now-txt ul li {
-    font-size: 15px;
-    line-height: 21px;
-    padding: 5px 0px;
-  }
-
-  .station-secure-box p {
-    font-size: 14px;
-    line-height: 25px;
-  }
-
-  /* CONTACT US */
-  .ratemystaion-contact-form {
-    padding: 20px;
-  }
-
-  .ratemystaion-contact-form h3 {
-    font-size: 37px;
-  }
-
-  .ratemystaion-contact-form p {
-    font-size: 13px;
-    line-height: 23px;
-    margin: 0px 0px 40px 0px !important;
-  }
-
-  .employer-login-form {
-    padding: 0px 0px 20px 0px;
-  }
-
-  .employer-dont-have-acc {
-    margin: 0px 0px 20px 50px;
-  }
-
-  .employer-choose-subscription {
-    padding: 30px 0px 0px 0px;
-  }
-
-  .employer-inputfield input {
-    padding: 10px 10px;
-  }
-
-  .employer-register-btn {
-    margin: 15px 0px 30px 50px;
-  }
-
-  .Sweatshirt-ah-select-box {
-    justify-content: start;
-  }
-
-  .Sweatshirt-ah-select-card {
-    gap: 10px;
-    width: 48%;
-  }
-
-  .Sweatshirt-ah-select-card {
-    width: 48%;
-    margin: 0px 10px 0px 0px;
-  }
-
-  .ratemystation-about-txt h3 {
-    font-size: 32px;
-    line-height: 48px;
-  }
-
-  .about-us-txt h4 {
-    font-size: 17px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .about-creator-txt h5 {
-    font-size: 17px;
-    margin: 0px 0px 20px 0px !important;
-  }
-
-  .creator-messages h4 {
-    font-size: 17px;
-    margin: 0px 0px 5px 0px !important;
-  }
-
-  .About-main-box-2-ah {
-    width: 100%;
-  }
-
-  .Recommend-box-ah {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .Recommend-card-ah {
-    width: 48%;
-  }
-
-  .rms_header_logo a label {
-    display: none;
-  }
-
-  .setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab {
-    padding: 9px 25px;
-  }
-
-  .reported_dms_chatman {
-    padding: 20px 20px 20px 21px;
-  }
-
-  .reported_dms_mandata h4 {
-    font-size: 20px;
-  }
-
-  .reported_dms_mandata p span {
-    font-size: 14px;
-  }
-  .reported_dms_mandata p {
-    font-size: 14px;
-  }
-
-  .reported_dms_chatman a {
-    font-size: 14px;
-    padding: 4px 0px;
-  }
-
-  .chatmain_head_flex {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .reported_chat_userOne {
-    gap: 10px;
-  }
-
-  .reported_chat_userOne h6 {
-    line-height: 20.5px;
-  }
-
-  .username_chat_flex {
-    gap: 26px;
-  }
-
-  .chatmain_head_flex {
-    padding: 20px 20px 20px 20px;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .ul-li-list-footer ul {
@@ -13389,6 +12476,9 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .ahd-card-body-start-btn {
     width: 100%;
   }
+  section.ah1 {
+    padding-left: 70px !important;
+}
 
   .ahd-card-body-start-btn button {
     line-height: 25px;
@@ -13441,6 +12531,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     padding: 5px 25px;
     font-size: 14px;
     line-height: 28px;
+    width: 48%;
   }
 
   .ahd-box-1 {
@@ -13600,7 +12691,10 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .Applied-ah-logo {
     width: 18%;
   }
-
+  .job--open--dash--news--h--filter--main, .job--open--dash--news--h--filter--sort {
+    align-items: flex-start;
+    flex-direction: column;
+}
   .Recommend-card-ah {
     width: 100%;
   }

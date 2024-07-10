@@ -7,8 +7,7 @@ import 'react-tabs/style/react-tabs.css';
 const SettingDashboard = () => {
     return (
         <>
-            <section className="product_dashboard_pg">
-                <Container>
+        <section className="ah1">
                     <Row>
                         <Col lg={12}>
                             <div className="dashboard_product_head">
@@ -340,7 +339,7 @@ const SettingDashboard = () => {
                             </div>
                         </Col>
                     </Row>
-                </Container>
+              
             </section>
         </>
     );

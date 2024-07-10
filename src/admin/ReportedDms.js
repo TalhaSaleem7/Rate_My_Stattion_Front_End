@@ -6,8 +6,7 @@ import chatOneMan from "../img/userOneChat.png"
 const ReportedDms = () => {
   return (
     <>
-      <section className="dashboard_dms_sec">
-        <Container>
+<section className="ah1">
           <Row>
             <Col lg={12}>
               <div className="reported_dms_head">
@@ -150,7 +149,7 @@ const ReportedDms = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+       
       </section>
     </>
   )

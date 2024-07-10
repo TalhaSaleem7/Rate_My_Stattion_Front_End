@@ -7,8 +7,7 @@ import PagesDashboardTable from '../PagesDashboardTable/PagesDashboardTable';
 const PagesDashboard = () => {
   return (
     <>
-      <secrtion className="pages_dashboard_sec">
-        <Container>
+ <section className="ah1">
           <Row>
             <Col lg={12}>
               <div className="dashboard_pages_head">
@@ -54,8 +53,8 @@ const PagesDashboard = () => {
               <PagesDashboardTable />
             </Col>
           </Row>
-        </Container>
-      </secrtion>
+    
+      </section>
     </>
   )
 }
