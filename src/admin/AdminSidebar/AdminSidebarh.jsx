@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 const AdminSidebarh = () => {
   const [isApproval, setIsApproval] = useState(false);
   const [isUser, setIsUser] = useState(false);
@@ -66,6 +66,10 @@ const AdminSidebarh = () => {
     setIsSetting(!isSetting);
   };
 
+  const boxVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <section
       className={`sidebar--cont--admin--h ${
@@ -129,13 +133,18 @@ const AdminSidebarh = () => {
             </svg>
           </div>
           {isApproval && (
-            <ul className="admin--sidebr--list--h">
+            <motion.ul
+              initial="hidden"
+              animate="visible"
+              variants={boxVariants}
+              className="admin--sidebr--list--h"
+            >
               <li>New Ratings</li>
               <li>New Stations</li>
               <li>New News Director</li>
               <li>Rating Verification</li>
               <li>Account Verification </li>
-            </ul>
+            </motion.ul>
           )}
         </div>
 
@@ -175,13 +184,18 @@ const AdminSidebarh = () => {
             </svg>
           </div>
           {isUser && (
-            <ul className="admin--sidebr--list--h">
+            <motion.ul
+              initial="hidden"
+              animate="visible"
+              variants={boxVariants}
+              className="admin--sidebr--list--h"
+            >
               <li>Employee Account</li>
               <li>Newsroom Account</li>
               <li>Unauthorized Account</li>
               <li>Station’s Ratings</li>
               <li>Subscription</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
 
@@ -241,10 +255,15 @@ const AdminSidebarh = () => {
             </svg>
           </div>
           {isJob && (
-            <ul className="admin--sidebr--list--h">
+            <motion.ul
+              initial="hidden"
+              animate="visible"
+              variants={boxVariants}
+              className="admin--sidebr--list--h"
+            >
               <li>Newsroom</li>
               <li>Rate My Station</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
 
@@ -284,13 +303,18 @@ const AdminSidebarh = () => {
             </svg>
           </div>
           {isWoo && (
-            <ul className="admin--sidebr--list--h">
+            <motion.ul
+              initial="hidden"
+              animate="visible"
+              variants={boxVariants}
+              className="admin--sidebr--list--h"
+            >
               <li>Statistic</li>
               <li>Product</li>
               <li>Order</li>
               <li>Coupons</li>
               <li>Settings</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
 
@@ -330,11 +354,16 @@ const AdminSidebarh = () => {
             </svg>
           </div>
           {isReport && (
-            <ul className="admin--sidebr--list--h">
+            <motion.ul
+              initial="hidden"
+              animate="visible"
+              variants={boxVariants}
+              className="admin--sidebr--list--h"
+            >
               <li>Reported Ratings</li>
               <li>Reported DMs</li>
               <li>Reported Articles</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
 
@@ -374,12 +403,17 @@ const AdminSidebarh = () => {
             </svg>
           </div>
           {isSetting && (
-            <ul className="admin--sidebr--list--h">
+            <motion.ul
+              initial="hidden"
+              animate="visible"
+              variants={boxVariants}
+              className="admin--sidebr--list--h"
+            >
               <li>Pages</li>
               <li>Newsletter</li>
               <li>Admin</li>
               <li>Billing</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
       </div>

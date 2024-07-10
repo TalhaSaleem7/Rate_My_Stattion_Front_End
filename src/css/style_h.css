@@ -1498,6 +1498,9 @@ ul.job--open--dash--news--h--filter--dropdown li {
 .job--open--dash--news--h--filter--sort {
   flex-basis: 18%;
 }
+.employee--dash--h--filter--sort {
+  flex-basis: 14%;
+}
 .job--open--dash--news--h--filter--main label,
 .job--open--dash--news--h--filter--sort label {
   color: #828282;
@@ -2105,10 +2108,14 @@ section.sidebar--cont--admin--h {
   flex-direction: column;
   justify-content: space-between;
   background-color: #ffffff;
+  transition-duration: 500ms;
 }
-section.sidebar--cont--admin--h--collapse {
+.sidebar--cont--admin--h--collapse {
   overflow: hidden;
-  width: 59px;
+  width: 59px !important;
+}
+.admin--sidebar--collapse--h svg {
+  flex-shrink: 0;
 }
 .admin--sidebar--collapse--h {
   cursor: pointer;
