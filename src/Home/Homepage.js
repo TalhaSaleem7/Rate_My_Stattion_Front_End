@@ -34,6 +34,7 @@ export const Homepage = () => {
   const navigate = useNavigate();
 
   const searchstaion = () => navigate("/stationsearchresult");
+  console.log("Screen Width", window.innerWidth)
 
   const proddetail = () => {
     navigate("/productdetail");
@@ -171,7 +172,6 @@ export const Homepage = () => {
                       </div>
                     </div>
                   </div>
-
                   <div class="review-news-director review-news-director-second">
                     <div class="row">
                       <div class="col-lg-12">

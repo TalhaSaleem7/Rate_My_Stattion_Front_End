@@ -2138,6 +2138,8 @@ section.sidebar--cont--admin--h {
   line-height: 33px;
   font-weight: 700;
   white-space: nowrap;
+  color: #000;
+  cursor: pointer;
 }
 
 .admin--sidebar--text--h {
@@ -2171,7 +2173,9 @@ section.sidebar--cont--admin--h {
   font-size: var(--font-size-14);
   font-weight: 400;
   line-height: 33px;
+
   cursor: pointer;
+  color: #000;
 }
 .svg-fill-color {
   fill: #89c400;
