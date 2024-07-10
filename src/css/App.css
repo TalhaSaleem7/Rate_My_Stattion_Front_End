@@ -8311,4361 +8311,4546 @@ td.gg-td {
 .dropdown a:hover {
   border-radius: 10px;
   background: var(--Gray-6, #f2f2f2);
-}
-/* ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
-ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
-ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
-ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
-
-@media screen and (max-width: 1366px) {
-  header.header_main {
-    padding: 20px 0px 12px 0px;
+  .dropdown a:hover {
+    border-radius: 10px;
+    background: var(--Gray-6, #f2f2f2);
   }
 
-  .header_nav ul li {
-    font-size: 15px;
-  }
-
-  .header_end a:nth-child(1) span {
-    font-size: 11px;
-  }
-
-  .login-btn {
-    font-size: 16px;
-    padding: 3px 42px;
-  }
-
-  .rating-real-journalist h3 {
-    color: var(--ffffff, #fff);
-    text-align: center;
-    font-family: "Public Sans";
-    font-size: 40px;
-  }
-
-  .employer-newroom-box button.text-white {
-    font-size: 23px;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .first-banner-txt h3 {
-    width: 70%;
-  }
-
-  .search-stations-input input::placeholder {
-    font-size: 18px;
-  }
-
-  .news-director-current {
-    align-items: start;
-    gap: 5px;
-    flex-direction: column;
-    margin: 0px 0px 6px 0px;
-  }
-
-  .employer-inputfield label {
-    font-size: 16px;
-  }
-
-  .director-urer img {
-    width: 60px;
-  }
-
-  .director-urer {
+  .Orders_popup {
+    width: 100%;
     display: flex;
-    align-items: start;
-    gap: 5px;
-  }
-
-  .director-name-txt h3 {
-    font-size: 16px;
-  }
-
-  .director-name-txt {
-    margin: 0px 0px 0px 0px;
-  }
-
-  .prod-dark-btn {
-    font-size: 16px;
-    line-height: 23px;
-    padding: 8px 8px;
-  }
-  section.About-ah {
-    padding: 150px 0px 10px 0px;
-  }
-
-  .KABC-tital-ah span h2 {
-    font-size: 24px;
-  }
-
-  .Schedule-ah-card-box h2 {
-    font-size: 22px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 22px;
-  }
-
-  .About-main-box-2-tital-ah h2 {
-    font-size: 22px;
-  }
-  .prod-light-btn {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 8px 5px;
-  }
-
-  .ratemystation-prod-txt h3 {
-    font-size: 17px;
-    line-height: 25.5px;
-    margin: 0px 0px 10px 0px !important;
-    height: 60px;
-  }
-
-  .looking-for-worktxt {
-    padding: 56px 0px;
-    border-radius: 10px;
-  }
-
-  .looking-for-worktxt p {
-    font-size: 20px;
-    width: 50%;
-    line-height: 31.5px;
-    margin: 20px 0px 20px 0px !important;
-  }
-
-  .employer-inputfield input {
-    padding: 13px 16px;
-  }
-
-  .employer-choose-subscription h6 {
-    font-size: 15px;
-  }
-
-  .free-subscribe-four {
-    gap: 11px;
-  }
-
-  .employer-register-subscription {
-    padding: 32px 15px;
-  }
-
-  .employer-register-subscription h3 {
-    font-size: 31px;
-  }
-
-  .employer-choose-subscription h6 {
-    font-size: 15px;
-  }
-
-  .employer-subscription {
-    padding: 20px 15px;
-  }
-
-  .employer-subscription h5 {
-    font-size: 19px;
-  }
-
-  .employer-subscription h6 {
-    font-size: 15px;
-  }
-
-  .employer-subscription span {
-    font-size: 15px;
-  }
-
-  .employer-save {
-    font-size: 10px;
-    width: 65px;
-    padding: 2px 4px;
-  }
-
-  .employer-dont-have-acc {
-    margin: 10px 0px 0px 40px;
-  }
-
-  .employer-dont-have-acc a {
-    font-size: 12px;
-  }
-
-  .employer-dont-have-acc a span {
-    font-size: 15px;
-  }
-
-  .employer-register-btn a {
-    font-size: 15px;
-    padding: 4px 35px;
-  }
-
-  .employer-input-checkbox input {
-    width: 17px;
-    height: 17px;
-  }
-
-  .employer-input-checkbox label {
-    color: #000;
-    font-family: "Public Sans";
-    font-size: 15px;
-  }
-
-  .ul-li-list-footer ul li a {
-    font-size: 16px;
-  }
-
-  .ul-li-list-footer ul {
-    gap: 30px;
-  }
-
-  .about-creator-img img {
-    width: 400px;
-  }
-
-  .your-journalism-txt {
-    padding: 65px 50px;
-  }
-
-  .your-journalism-txt h3 {
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-  .journal-date-written {
-    padding: 15px 0px;
-  }
-
-  .icon-list-footer {
-    gap: 28px;
-  }
-
-  /* .subscribe-PAGE- */
-  .subscribe-now-txt h3 {
-    font-size: 40px;
-  }
-
-  .subcription-box h4 {
-    font-size: 28px;
-    padding: 50px 0px 10px 0px;
-  }
-
-  .subcription-box h6 {
-    font-size: 21px;
-    margin: 0px 0px 30px 0px;
-  }
-
-  .subcription-box a {
-    font-size: 16px;
-    padding: 12px 25px;
-  }
-
-  /* PRODUCT-DETAIL-PAGE */
-  .Sweatshirt-ah h2 {
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  .Sweatshirt-ah-select-box {
-    padding-top: 23px;
-  }
-
-  .Sweatshirt-ah-select-card h2 {
-    font-size: 20px;
-  }
-
-  .Sweatshirt-ah-select-card button {
-    font-size: 12px;
-  }
-
-  .Description-box-tital {
-    gap: 2px;
-    padding-top: 22px;
-  }
-
-  .Description-box-tital h2 {
-    font-size: 28px;
-  }
-
-  .Description-box-tital p {
-    font-size: 15px;
-    line-height: 25px;
-  }
-
-  .satisfied h2 {
-    font-size: 75px;
-  }
-  span.See button {
-    font-size: 14px;
-    gap: 10px;
-  }
-
-  span.Info button {
-    font-size: 14px;
-    padding: 5px 15px !important;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .KABC-part-1-ah {
-    width: 48%;
-  }
-  .Brooklyn-Simmons-tital span p {
-    font-size: 12px;
-  }
-
-  .About-main-card-1-ah h2 {
-    font-size: 18px;
-  }
-
-  .rms-abc-logo img {
-    width: 100%;
-  }
-
-  .rms-kabc-txt h6 {
-    margin: 0px 0px 18px 0px;
-  }
-
-  .KABC-tital-ah {
-    gap: 8px;
-  }
-
-  .main-KABC-ah {
-    padding: 40px 30px 30px 40px;
-  }
-
-  .KABC-btn-box-ah {
-    width: 25%;
-    gap: 10px;
-  }
-
-  span.See button {
-    padding: 8px;
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  .Industry-ah span p {
-    font-size: 14px;
-  }
-
-  .search-stations-input--rms--alt input {
-    width: 100% !important;
-  }
-
-  ul.save--share--pop li {
-    padding: 6px;
-  }
-
-  .station-search-result-txt h4 {
-    font-size: 30px;
-  }
-
-  ul.save--share--pop {
-    padding: 5px;
-    border-radius: 8px;
-    width: 160px;
-    right: 20px;
-  }
-
-  .station-search-result-txt p {
-    font-size: 16px;
-  }
-
-  .article-reactions ul li a {
-    font-size: 18px;
-  }
-
-  .station-search-result-txt p span {
-    font-size: 16px;
-  }
-
-  .search-stations-input--rms .select-container {
-    padding: 0px 20px;
-    box-shadow: none;
-  }
-
-  .search-stations-input--rms .select-box,
-  .search-stations-input--rms option {
-    font-size: 16px !important;
-    padding: 15px 10px 15px 10px;
-    width: 120px;
-  }
-
-  .select-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .search-stations-input--rms span {
-    top: 2px !important;
-  }
-
-  .search-stations-input--rms input {
-    padding: 10px 20px;
-    width: 400px;
-  }
-
-  .rms_header_logo {
-    gap: 20px;
-  }
-
-  .search-stations-input--rms {
-    margin: 0px 20px;
-  }
-  .station-search-result-txt {
-    padding: 40px 0px 20px 0px;
-  }
-
-  .search-station-sec {
-    padding: 45px 0px 0px 0px;
-  }
-
-  .rms-kabc-txt h3 {
-    font-size: 22px;
-  }
-
-  .rms-kabc-btn .themedark {
-    font-size: 14px;
-    line-height: 22px;
-    border-radius: 8px;
-    padding: 8px 20px;
-  }
-
-  .news-director-card {
-    padding: 20px 20px;
-    border-radius: 10px;
-    margin: 0px 0px 25px 0px;
-  }
-
-  .news-director-card-txt h5 {
-    font-size: 20px;
-  }
-
-  .news-director-detail-btn a {
-    padding: 10px 30px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .rms-kabc-btn .themelight {
-    font-size: 14px;
-    line-height: 24px;
-    border-radius: 8px;
-    padding: 8px 20px;
-  }
-
-  .rms-profile-box {
-    padding: 25px 20px;
-    margin: 0px 0px 24px 0px;
-  }
-
-  .seeprofile-box-btn a {
-    font-size: 16px;
-    padding: 10px 30px;
-  }
-
-  .ratemystation-prod-txt h3 {
-    font-size: 16px;
-    line-height: 20px;
-    height: 100%;
-  }
-
-  .ratemystation-prod-txt {
-    padding: 15px;
-  }
-
-  .ratemystation-prod-txt h6 {
-    font-size: 14px;
-    margin: 0px 0px 15px 0px;
-  }
-
-  .ratemystation-prod-btn {
-    justify-content: space-between;
-    gap: 0px;
-  }
-
-  .ratemystation-shop-prod {
-    border-radius: 14px;
-  }
-
-  .ratemystation-shop-prod img {
-    object-fit: cover;
-  }
-
-  .prod-abslt-ratems {
-    height: 100%;
-  }
-
-  section.ratemystation-shop-sec h4 {
-    font-size: 24px;
-    margin: 0px 0px 34px 0px !important;
-  }
-
-  section.ratemystation-shop-sec {
-    padding: 30px 0px;
-  }
-
-  .find-station-looking {
-    padding: 40px 20px 40px 20px;
-  }
-
-  .find-station-looking h4 {
-    font-size: 24px;
-  }
-
-  .find-station-looking p {
-    font-size: 18px;
-    line-height: 28.5px;
-  }
-
-  .find-station-looking a {
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
-  }
-
-  .seeprofile-box-btn {
-    margin: 0px 0px 30px 0px;
-  }
-
-  .rms-abc-logo {
-    width: 18%;
-  }
-
-  .rms-profile-logo-box {
-    align-items: flex-start;
-  }
-
-  .rms-rating-review svg {
-    width: 150px;
-  }
-
-  .looking-for-work-sec {
-    padding: 35px 0px;
-  }
-
-  .looking-for-worktxt h4 {
-    font-size: 32px;
-  }
-
-  .looking-for-worktxt p {
-    font-size: 18px;
-    margin: 15px 0px 20px 0px !important;
-  }
-
-  .looking-for-worktxt a {
-    font-size: 18px;
-    line-height: 31.5px;
-    padding: 8px 42px;
-  }
-
-  .looking-for-worktxt {
-    padding: 50px 0px;
-  }
-
-  .Industry-ah span {
-    gap: 5px;
-  }
-
-  .About-main-card-1-ah {
-    padding: 20px;
-  }
-
-  .About-main-card-1-ah h2 {
-    font-size: 20px;
-  }
-
-  .Recommend-card-tital-ah h2 {
-    font-size: 16px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 24px;
-  }
-
-  .Job-list-2-ah span p {
-    font-size: 12px;
-  }
-
-  .more-class {
-    padding: 10px 0px 10px 15px;
-  }
-
-  .Schedule-ah-card-box h2 {
-    padding: 20px 0px 20px 0px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .Schedule-ah-list-1 span p {
-    font-size: 14px;
-  }
-
-  .Schedule-ah-list-1 span {
-    gap: 8px;
-  }
-
-  .Soul-icon-box {
-    gap: 10px;
-  }
-
-  .Schedule-ah-list-3 a span {
-    font-size: 14px;
-  }
-
-  .Schedule-ah-list-3 a {
-    font-size: 14px;
-  }
-
-  .Soul-icon-box span p {
-    padding: 0px;
-  }
-
-  .Soul-icon-box span svg {
-    width: 15px;
-    height: 15px;
-  }
-
-  .KABC-tital-ah span h2 {
-    font-size: 24px;
-  }
-
-  .Award-a {
-    padding-top: 20px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 20px;
-  }
-
-  .Job-list-2-ah {
-    padding: 8px 20px;
-  }
-
-  .Job-list-3-ah {
-    padding-top: 20px;
-  }
-
-  .Job-list-1-ah {
-    padding-bottom: 14px;
-  }
-
-  .About-main-box-2-tital-ah h2 {
-    font-size: 24px;
-  }
-
-  section.About-ah {
-    padding: 60px 0px;
-  }
-
-  .Recommend-card-tital-ah {
-    padding: 15px 20px;
-  }
-
-  .Industry-ah {
-    padding-top: 15px;
-  }
-
-  .Recommend-box-ah {
-    gap: 20px;
-  }
-
-  .padding-ah {
-    padding: 30px 0px 15px 0px;
-  }
-
-  .About-main-box-1-ah {
-    gap: 20px;
-  }
-
-  .ul-li-list-footer ul {
-    gap: 20px;
-  }
-
-  .ul-li-list-footer ul li a {
-    font-size: 14px;
-  }
-
-  .icon-list-footer {
-    gap: 15px;
-  }
-
-  .navtabs {
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .navtab {
-    font-size: 16px;
-    padding-bottom: 15px;
-  }
-
-  section.Statistic-ah {
-    padding: 80px 0px;
-  }
-
-  .Overall-Statistic-ah h2 {
-    font-size: 20px;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 80px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 20px;
-  }
-
-  .ratings-ah-1-TITAL h3 {
-    font-size: 18px;
-  }
-
-  .ratings-ah-1-bar {
-    gap: 8px;
-  }
-
-  span.\34 5 h2 {
-    font-size: 20px;
-  }
-
-  .pogras-card-ah span h2 {
-    font-size: 20px;
-  }
-
-  .bar-pogres-box-cards-ah {
-    gap: 15px;
-    padding-bottom: 20px;
-  }
-
-  .gol-bar-tital {
-    width: 32%;
-  }
-
-  .gol-bar-tital span p {
-    font-size: 18px;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 65px;
-  }
-
-  .gol-bar-head p {
-    font-size: 18px;
-  }
-
-  .Angeles-logo-side-box {
-    width: 60%;
-  }
-
-  .job-ah-post h2 {
-    font-size: 24px;
-  }
-
-  .job-ah-post h2 span {
-    font-size: 20px;
-  }
-
-  .Director-ah-boxing-logo span h2 {
-    font-size: 18px;
-  }
-
-  .Director-ah-boxing-logo span p {
-    font-size: 14px;
-  }
-
-  .Director-ah-boxing p {
-    font-size: 14px;
-  }
-
-  .Director-ah-boxing-3 button {
-    padding: 10px;
-    line-height: 24px;
-    font-size: 14px;
-  }
-
-  .Director-ah-boxing-list-logo {
-    width: 50%;
-  }
-
-  .Director-ah-boxing-list-span h2 {
-    font-size: 14px;
-  }
-
-  .Director-ah-boxing-list-logo span h2 {
-    font-size: 16px;
-  }
-
-  .Director-ah-boxing-2 {
-    padding: 14px 0px 18px 0px;
-  }
-
-  .Angeles-logo-side-box span h2 {
-    font-size: 20px;
-  }
-
-  .first-banner-txt h3 {
-    font-size: 48px;
-    width: 70%;
-    margin: 0px 0px 50px 0px !important;
-  }
-
-  .search-stations-input input {
-    width: 450px;
-    padding: 15px 20px;
-  }
-
-  .select-station-drop select {
-    padding: 18.5px 30px 18.5px 20px;
-    width: 150px;
-    margin: 0.4px 0px 0px 0px;
-    font-size: 18px !important;
-  }
-
-  .select-container {
-    padding: 2px 10px 2px 30px;
-  }
-
-  .search-stations-input.full-width input {
-    width: 720px;
-  }
-
-  .select-tv-icon {
-    top: 14px;
-  }
-
-  .first-banner-txt a {
-    font-size: 20px;
-  }
-
-  .news-director-current {
-    gap: 0px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .review-director-para h6 {
-    font-size: 12px;
-    margin: 0px 0px 5px 0px;
-  }
-
-  .review-director-para h5 {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .review-director-para p {
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  .director-urer {
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .news-director-current h5 {
-    font-size: 12px;
-    margin: 0px 0px 2px 0px !important;
-  }
-
-  .news-director-current a {
-    font-size: 8px;
-    margin: 3px 0px 0px 0px !important;
-  }
-
-  .review-news-director {
-    padding: 20px 20px;
-    margin: 30px 0px 20px 0px !important;
-  }
-
-  .director-urer img {
-    width: 50px;
-  }
-
-  .director-name-txt {
-    margin: 0px 0px 0px 0px;
-  }
-
-  .director-name-txt h3 {
-    font-size: 14px;
-  }
-
-  .latest-rating-user-txt h5 {
-    font-size: 16px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .racial-discrimination h6 {
-    font-size: 12px;
-  }
-
-  .racial-discrimination p {
-    font-size: 14px;
-  }
-
-  .racial-discrimination h5 {
-    font-size: 14px;
-  }
-
-  .newroom-coworker-txt svg {
-    width: 100%;
-  }
-
-  .newroom-coworker-txt h6 {
-    font-size: 12px;
-  }
-
-  .four-select-tab ul li a {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 6px 8px;
-  }
-
-  .like-report-txt ul li {
-    font-size: 14px;
-    line-height: 28px;
-    padding: 4px 15px;
-  }
-
-  .latest-rating-comment-box {
-    margin: 30px 0px 20px 0px;
-    gap: 10px;
-  }
-
-  .latest-comment-txt-box span {
-    font-size: 12px;
-  }
-
-  .latest-comment-txt-box {
-    padding: 10px 10px;
-  }
-
-  .latest-comment-txt-box p {
-    font-size: 14px;
-    line-height: 26px;
-    margin: 0px 0px 5px 0px;
-  }
-
-  .newsletter-follow-box h4 {
-    font-size: 22px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .follow-us-rate ul li a {
-    font-size: 16px;
-  }
-
-  .side-subscribe-box h5 {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .side-subscribe-box input {
-    padding: 12px 20px;
-    margin: 0px 0px 20px 0px;
-    border: none;
-  }
-
-  .side-subscribe-box button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  .side-newsletter-txt h5 {
-    font-size: 16px;
-  }
-
-  .latest-rating-loadmore-btn a {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-
-  section.ratemystation-shop-sec h4 {
-    margin: 0px 0px 30px 0px !important;
-  }
-
-  section.latest-rating-sec {
-    padding: 50px 0px;
-  }
-
-  .ratemystation-prod-txt h3 {
-    font-size: 16px;
-    line-height: 24.5px;
-    margin: 0px 0px 10px 0px !important;
-    height: auto;
-  }
-
-  .prod-abslt-ratems {
-    width: 30px !important;
-    height: 45px;
-  }
-
-  .prod-light-btn {
-    font-size: 12px;
-    line-height: 20px;
-    padding: 5px 4px;
-  }
-
-  .prod-dark-btn {
-    font-size: 12px;
-    line-height: 20px;
-    padding: 5px 8px;
-  }
-
-  .ratemystation-prod-txt h6 {
-    font-size: 12px;
-  }
-
-  .ratemystation-allprod-btn a {
-    font-size: 16px;
-    line-height: 23px;
-    padding: 12px 20px;
-  }
-
-  .looking-for-worktxt h4 {
-    font-size: 26px;
-  }
-
-  .looking-for-worktxt p {
-    font-size: 18px;
-    line-height: 28.5px;
-    margin: 15px 0px 20px 0px !important;
-  }
-
-  .looking-for-worktxt a {
-    font-size: 16px;
-    line-height: 17.5px;
-    padding: 14px 30px;
-  }
-
-  .looking-for-worktxt {
+    align-items: center;
+    justify-content: center;
     padding: 40px 0px;
   }
 
-  .looking-for-work-sec {
-    padding: 30px 0px;
+  .main-Orders {
+    width: 666px;
+    border-radius: 15px;
+    background: #fff;
+    padding: 30px;
   }
 
-  .ratemystation-about-txt h3 {
-    font-size: 38px;
-    line-height: 53px;
-  }
-
-  .about-us-txt h4 {
-    font-size: 20px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .about-creator-txt h5 {
-    font-size: 20px;
-    margin: 0px 0px 20px 0px !important;
-  }
-
-  .about-creator-para p {
-    font-size: 14px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .about-creator-img-name {
-    border-radius: 0px 15px 15px 15px;
-    padding: 8px 20px 5px 30px;
-    bottom: 20px;
-    right: 30px;
-  }
-
-  .about-creator-img-name::before {
-    height: 72px;
-    left: 0px;
-  }
-
-  .about-creator-img-name h4 {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .about-creator-img-name h6 {
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  .about-creator-img img {
-    width: 330px;
-  }
-
-  .creator-messages {
-    margin: 40px 0px 0px 0px;
-    padding: 30px 30px 20px 30px;
-  }
-
-  .creator-messages h4 {
-    font-size: 18px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .your-journalism-txt {
-    padding: 20px 35px 50px 35px;
-  }
-
-  .your-journalism-txt h3 {
-    font-size: 22px;
-    line-height: 35px;
-  }
-
-  .your-journalism-txt h5 {
-    font-size: 14px;
-  }
-
-  .journal-date-written {
-    padding: 10px 0px;
-  }
-
-  .journalism-slider .slick-dots {
-    text-align: left;
-    bottom: -30px;
-  }
-
-  .newsletter-likecomment-share {
-    gap: 10px;
-  }
-
-  .newsletter-writtinsoul-txt p {
-    font-size: 12px;
-  }
-
-  .newsletter-article-text h4 {
-    font-size: 22px;
-    line-height: 34px;
-  }
-
-  .newsletter-pagination-slide .pagination {
-    padding: 5px 0px;
-    border-radius: 20px;
-  }
-
-  .newsletter-slide-article img {
-    width: 200px;
-  }
-
-  .more-soul-article img {
-    width: 100px;
-  }
-
-  .more-soul-articletxt h4 {
-    font-size: 20px;
-  }
-
-  .find-job-select-box span svg {
-    width: 15px;
-  }
-
-  .find-job-select-box input {
-    padding: 12px 40px 12px 40px;
-  }
-
-  .find-job-select-box input::placeholder {
-    font-size: 14px;
-  }
-
-  .find-job-btn button {
-    font-size: 16px;
-    line-height: 26px;
-    padding: 9px 10px;
-  }
-
-  .filter-box select {
-    padding: 12px 16px;
-    font-size: 14px;
-  }
-
-  .filter-box p {
-    font-size: 16px;
-  }
-
-  .assistant-city-dollar-time {
-    padding: 8px 20px;
-  }
-
-  .assistant-city-dollar-time p {
-    font-size: 12px;
-  }
-
-  .assistant-director-txt h4 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .assistant-director-txt h6 {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .assistant-news-director-box ul li {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0px 0px 15px 0px;
-  }
-
-  .newsletter-pagination-slide .pagination a {
-    padding: 8px 20px;
-    font-size: 18px;
-    line-height: 33px;
-  }
-
-  .find-job-matter-txt h4 {
-    font-size: 40px;
-    margin: 0px 0px 30px 0px !important;
-  }
-
-  .job-select-opts a {
-    padding: 8px 65px;
-    font-size: 16px;
-  }
-
-  .job-save-share a {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
-
-  .job-detail-name-description {
-    padding: 40px 30px;
-  }
-
-  .job-detailpg-nameflex img {
-    width: 120px;
-  }
-
-  .job-opening-btn a {
-    padding: 8px 35px;
-    font-size: 16px;
-  }
-
-  .shop-new-arrival h3 {
-    font-size: 38px;
-    line-height: 53px;
-    width: 380px;
-  }
-
-  .shop-new-arrival p {
-    font-size: 14px;
-    line-height: 26px;
-    width: 260px;
-    margin: 10px 0px 50px 0px !important;
-  }
-
-  .shop-new-arrival-img img {
-    width: 220px;
-  }
-
-  .themed-cap img {
-    width: 150px;
-  }
-
-  .themed-cap {
-    right: 0px;
-    top: 90px;
-  }
-
-  .theme-mug {
-    top: 70px;
-  }
-
-  .theme-mug img {
-    width: 150px;
-  }
-
-  .filter-box p {
-    font-size: 14px;
-  }
-
-  .filter-box select {
-    padding: 10px 5px;
-    font-size: 12px;
-  }
-
-  .filter-box {
-    gap: 5px;
-  }
-
-  .login-btn {
-    font-size: 14px;
-    border-radius: 10px;
-    padding: 0px 20px;
-  }
-
-  .header_end a:nth-child(1) svg {
-    width: 38px;
-  }
-
-  .header_end a span {
-    top: -3px;
-    right: -2px;
-    padding: 0px 6px;
-    font-size: 10px;
-  }
-
-  .header_end {
-    gap: 20px;
-  }
-
-  .shop-friend-themed {
-    padding: 26px 30px;
-    height: auto;
-  }
-
-  .header_nav ul li {
-    font-size: 14px;
-  }
-
-  .header_end a:nth-child(1) span {
-    font-size: 10px;
-  }
-
-  .header_end a svg {
-    height: 30px;
-  }
-
-  .login-btn {
-    font-size: 15px;
-    line-height: 28px;
-    padding: 4px 25px;
-  }
-
-  section.employer-login-pg-sec {
-    padding: 45px 0px;
-  }
-
-  .rating-real-journalist h3 {
-    font-size: 37px;
-  }
-
-  .employer-newroom-box button.text-white {
-    font-size: 21px;
-  }
-
-  .employer-newroom-box button {
-    color: #828282;
-    font-family: "Public Sans";
-    font-size: 22px;
-  }
-
-  .employer-inputfield label {
-    font-size: 14px;
-  }
-
-  .employerregister-field {
-    margin: 8px 0px;
-  }
-
-  .employer-newroom-box {
-    padding: 20px 40px 0px 10px;
-  }
-
-  .employer-dont-have-acc {
-    margin: 10px 0px 0px 20px;
-  }
-
-  .employer-register-btn {
-    margin: 15px 0px 30px 20px;
-  }
-
-  .employer-inputfield input {
-    padding: 9px 8px;
-  }
-
-  .employer-inputfield input::placeholder {
-    font-size: 12px;
-    line-height: 22px;
-  }
-
-  .free-subscribe-four {
-    gap: 5px;
-  }
-
-  .employer-subscription {
-    padding: 15px 11px;
-  }
-
-  .employer-register-subscription {
-    padding: 28px 12px;
-  }
-
-  .employer-register-subscription h3 {
-    font-size: 27px;
-  }
-
-  .employer-choose-subscription h6 {
-    font-size: 13px;
-  }
-
-  .employer-subscription h5 {
-    font-size: 17px;
-  }
-
-  .employer-subscription h6 {
-    font-size: 13px;
-  }
-
-  .employer-subscription span {
-    font-size: 14px;
-  }
-
-  .employer-save {
-    font-size: 11px;
-  }
-
-  .employer-dont-have-acc a {
-    font-size: 11px;
-  }
-
-  .employer-dont-have-acc a span {
-    font-size: 13px;
-  }
-
-  .employer-register-btn a {
-    font-size: 14px;
-    padding: 4px 32px;
-  }
-
-  .employer-input-checkbox label {
-    font-size: 14px;
-  }
-
-  /* .subscribe-now-txt */
-  .station-secure-box p {
-    font-size: 14px;
-    line-height: 23px;
-    padding: 0px 25px 0px 0px;
-  }
-
-  .subcription-box::before {
-    width: 132px;
-    line-height: 24px;
-    font-size: 15px;
-    padding: 6px 0px 0px 0px;
-  }
-
-  .subcription-box a {
-    font-size: 15px;
-    padding: 10px 12px;
-  }
-
-  .subcription-box h4 {
-    font-size: 20px;
-    padding: 45px 0px 5px 0px;
-  }
-
-  .subcription-box h6 {
-    font-size: 19px;
-  }
-
-  .subcription-box h5 {
-    font-size: 22px;
-    line-height: 20px;
-    padding: 0px 0px 75px 0px;
-  }
-
-  .subcription-box span {
-    font-size: 11px;
-    width: 122px;
-    padding: 6px 5px;
-  }
-
-  .subscribe-now-txt h3 {
-    font-size: 30px;
-    line-height: 55px;
-  }
-
-  .subscribe-now-txt ul li {
-    font-size: 16px;
-    line-height: 22px;
-    padding: 6px 0px;
-  }
-
-  .subscribtion-credit-box {
-    margin: 20px 0px 0px 0px;
-    padding: 20px 0px 0px 0px;
-  }
-
-  /* PRODUCT-DETAIL */
-  .About-main-card-1-ah h2 {
-    font-size: 26px;
-    line-height: 37px;
-  }
-
-  .Sweatshirt-ah-select-box {
-    padding-top: 12px;
-  }
-
-  .Sweatshirt-ah-select-card {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    width: 46%;
-    max-width: 50%;
-  }
-
-  .Sweatshirt-ah-select-card {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    width: 46%;
-    max-width: 50%;
-  }
-
-  .Sweatshirt-ah-select-box {
-    padding-top: 12px;
-  }
-
-  .Sweatshirt-ah-select-card h2 {
-    font-size: 20px !important;
-  }
-
-  .Sweatshirt-ah-select-card button {
-    font-size: 11px;
-  }
-
-  .Description-box-tital p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .Cooper-ah-box-main {
+  .Orders-1 {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .Orders-1 h2 {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .Orders-1 button {
+    color: var(--89-c-400, #89c400);
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 206.25% */
+    border-radius: 10px;
+    background: rgba(137, 196, 0, 0.1);
+    border: none;
+    padding: 5px 15px;
+  }
+
+  .Orders-2 {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .Orders-2 h2 {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .Orders-2-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 15px;
   }
 
-  .Cooper-ah-tital {
-    padding: 12px 20px;
-  }
-
-  .Cooper-ah-tital h3 {
-    font-size: 15px;
-    line-height: 21px;
-    padding: 8px 0px 2px 0px;
-  }
-
-  .satisfied h2 {
-    font-size: 30px;
-  }
-
-  .Applied-ah-list-1 span h2 {
-    font-size: 22px;
-  }
-
-  .Applied-ah-list-1 {
-    padding-bottom: 18px;
-  }
-
-  .Applied-ah-card {
-    padding: 24px 34px;
-    border-radius: 20px;
+  .Orders-2-card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
   }
 
-  .Applied-ah-logo {
-    width: 18%;
-  }
-
-  .Applied-ah-tital {
-    width: 76%;
-  }
-
-  .Applied-ah-list-2 span p {
-    font-size: 14px;
-  }
-
-  .Applied-ah-list-2 {
-    padding: 8px 15px;
-  }
-
-  .Applied-ah-list-3 {
-    padding-top: 20px;
-  }
-
-  /* CONTACT US */
-  .ratemystaion-contact-form {
-    padding: 40px;
-  }
-
-  .ratemystaion-contact-form p {
-    font-size: 13px;
-    line-height: 23px;
-    margin: 0px 0px 85px 0px !important;
-  }
-
-  .contact-form-fields {
-    padding: 40px;
-  }
-
-  .ratemystaion-contact-form h3 {
-    font-size: 40px;
-  }
-
-  .ratemystaion-contact-form p {
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0px 0px 110px 0px !important;
-  }
-
-  .ratemystaion-contact-form ul li {
-    font-size: 15px;
-    line-height: 22px;
-  }
-
-  .input-field {
-    margin: 0px 0px 15px 0px;
-  }
-
-  .input-field textarea {
-    height: 175px;
-  }
-
-  .contact-form-btn button {
-    padding: 8px 55px;
-  }
-
-  .contact-follow-like-btn ul li {
-    padding: 12px 30px;
-  }
-
-  .contact-latest-updates {
-    padding: 0px 25px 20px 20px;
-  }
-
-  .americon-prod-cart img {
-    width: 100px;
-  }
-
-  .americon-prod-cart h3 {
-    color: #000;
+  .Orders-2-card h3 {
+    color: var(--000000, #000);
     font-family: "Public Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
-    margin: 0px;
+    line-height: 33px; /* 206.25% */
   }
 
-  .cart-counter {
-    padding: 8px 12px;
-    margin: 0px 6px;
+  .Orders-2-card p {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 162.5% */
   }
 
-  .americon-prod-cart h4 {
-    padding: 0px 10px;
+  .Orders-2-card.Orders-card-2 {
+    width: 100% !important;
+    padding-top: 15px;
   }
 
-  .americon-prod-cart h6 {
-    margin: 0px;
+  .Orders-3 {
+    width: 100%;
   }
 
-  .review-news-director-second {
-    margin: 120px 0px 0px 0px !important;
-  }
-
-  .job-details {
-    width: 480px;
-  }
-
-  .job-detail p {
-    font-size: 14px;
-  }
-
-  .job-detail span {
-    font-size: 10px;
-  }
-
-  .job-detail {
-    flex: auto;
-  }
-
-  .search-stations-input span {
-    top: 8px;
-    font-size: 32px;
-  }
-
-  .helo-drop .drop-out {
-    padding: 2px;
-  }
-
-  nav.helo-drop label {
-    gap: 5px;
-  }
-
-  .header-end-rmssearch {
-    gap: 10px;
-  }
-  .header--end--logo {
+  .Orders-3-head {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 4px;
+    justify-content: space-between;
+    padding: 25px 0px;
+    border-bottom: 1px solid #e0e0e0;
   }
 
-  .header-end-rmssearch a svg {
-    height: 30px;
-    padding: 5px 3px 5px 0px;
-    width: 30px;
+  span.Orders-2-li-1 {
+    width: 44%;
   }
 
-  .user--pic--header {
-    width: 30%;
-  }
-
-  .shop-new-arrival {
-    height: auto;
-    padding: 40px 40px;
-  }
-}
-
-@media (max-width: 991px) {
-  .header--2--main--cont {
-    max-width: 850px !important;
-  }
-  .header--2--main--row {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  .Sweatshirt--box--alt {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .Sweatshirt--part--alt {
-    width: 100%;
-  }
-
-  .rate--product--button--container--ah {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .search-stations-input--rms--alt input {
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .About-main-ah {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .America-Sweatshirt {
-    flex-direction: column;
+  span.Orders-2-li-2 {
+    width: 12%;
     text-align: center;
   }
-  .header-logo {
-    width: 35%;
-    padding: 0px;
-  }
-  .Sweatshirt-ah {
-    width: 100%;
-  }
-  .Cooper-ah-imger {
-    width: 9%;
+
+  .Orders-3-head span h2 {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 
-  .news-director-detail-btn {
+  .Orders-3-body-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  span.Orders-2-li-1 h4 {
+    color: var(--000000, #000);
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    padding-top: 10px;
+  }
+
+  span.Orders-2-li-1 h4 span {
+    font-weight: 700;
+  }
+
+  .Orders-4 {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
     justify-content: flex-end;
   }
 
-  .About-main-box-1-ah {
-    width: 100%;
-  }
-
-  .rms_header_logo a {
-    display: block;
-  }
-
-  .rms_header .header_end {
-    display: none;
-  }
-
-  .rms-kabc-btn .themedark {
-    padding: 8px 30px;
-  }
-
-  .rms_header .header_nav {
-    display: none;
-  }
-
-  .rms--header--slide {
-    display: none;
-  }
-
-  .rms-mobile-header-logo .header-logo img {
-    display: none;
-  }
-
-  .rms-mobile-header-logo {
-    padding: 0px !important;
-  }
-
-  .About-main-box-2-ah {
-    width: 60%;
-  }
-
-  section.About-ah {
-    padding: 40px 0px;
-  }
-
-  .KABC-btn-box-ah {
-    width: 34%;
-  }
-
-  .ratemystation-prod-txt h3 {
-    height: 50px;
-  }
-
-  span.See button {
-    padding: 5px;
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  button.Contact-ah {
-    line-height: 28px;
-  }
-
-  .KABC-part-1-ah {
-    width: 60%;
-    gap: 30px;
-  }
-
-  .Angeles-logo-side-box {
-    width: 75%;
-  }
-
-  .Angeles-logo-ah {
-    width: 15%;
-  }
-
-  .KABC-tital-ah {
-    gap: 5px;
-  }
-
-  .KABC-tital-ah span h2 {
-    font-size: 24px;
-  }
-
-  .KABC-tital-ah p {
-    font-size: 18px;
-  }
-
-  .KABC-tital-ah span p {
-    font-size: 16px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 20px;
-  }
-
-  .main-footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .ul-li-list-footer {
-    width: 100%;
-  }
-
-  .ul-li-list-footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .ratings-ah-1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 40px;
-  }
-
-  .ratings-ah-1-TITAL {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .ratings-ah-1-box {
-    width: 34%;
-  }
-
-  .gol-bar-ah {
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-  }
-
-  .gol-bar-head {
-    width: 100%;
-  }
-
-  .gol-bar-tital {
-    width: 42%;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 55px;
-    text-align: center;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 60px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .job-ah-post h2 {
-    font-size: 20px;
-  }
-
-  .job-ah-Filter {
-    width: 64%;
-    gap: 25px;
-  }
-
-  .job-ah-Filter-card p {
-    font-size: 16px;
-  }
-
-  .job-ah-Filter-card select {
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .director-urer img {
-    width: 10%;
-  }
-
-  .director-urer {
-    padding-bottom: 10px;
-  }
-
-  .Angeles-logo-side-box span h2 {
-    font-size: 20px;
-  }
-
-  .Jacob-card-ah {
-    width: 75%;
-  }
-
-  .Jacob-card-ah-box {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .four-select-tab {
-    margin: 25px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 28px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 18px;
-    padding: 20px 10px;
-  }
-
-  .Hire-ah-box button {
-    padding: 10px;
-    font-size: 15px;
-    line-height: 25px;
+  .Orders-4 button {
     border-radius: 10px;
-  }
-
-  .Hire-ah-box {
-    padding: 40px 20px;
-  }
-
-  .About-main-ah {
-    gap: 25px;
-  }
-
-  .job-ah-post h2 span {
+    background: var(--194-d-79, #194d79);
+    color: var(--ffffff, #fff);
+    font-family: "Public Sans";
     font-size: 16px;
-  }
-
-  .search-station-box {
-    width: 100%;
-  }
-
-  .first-banner-txt h3 {
-    font-size: 40px;
-    width: 80%;
-    margin: 0px 0px 30px 0px !important;
-  }
-
-  .select-station-drop select {
-    padding: 18px 20px 17px 10px;
-    width: 120px;
-    margin: 0.5px 0px 0px 0px;
-    font-size: 16px !important;
-  }
-
-  .select-tv-icon {
-    top: 10px;
-    left: 25px;
-  }
-
-  .select-tv-icon svg {
-    width: 30px;
-  }
-
-  .select-tv-icon svg {
-    width: 30px;
-  }
-
-  .search-stations-input span {
-    top: 4px;
-  }
-
-  .search-stations-input.full-width input {
-    width: 570px;
-    padding: 20px 15px;
-  }
-
-  .search-stations-input input {
-    width: 400px;
-    padding: 17px 15px;
-  }
-
-  .search-stations-input svg {
-    width: 30px;
-  }
-
-  .newroom-coworker-txt svg {
-    width: 150px;
-  }
-
-  .newroom-coworker-txt h6 {
-    font-size: 11px;
-  }
-
-  .newroom-coworker-txt h5 {
-    font-size: 14px;
-  }
-
-  .newsletter-side-sec {
-    padding: 50px 0px 0px 0px;
-  }
-
-  .newsletter-follow-box h4 {
-    font-size: 22px;
-    margin: 0px 0px 20px 15px !important;
-  }
-
-  .follow-us-rate {
-    padding: 20px 20px 10px 20px;
-  }
-
-  .looking-for-worktxt p {
-    font-size: 16px;
-    margin: 10px 0px 10px 0px !important;
-    width: 80%;
-  }
-
-  .looking-for-worktxt {
-    border-radius: 10px;
-  }
-
-  .looking-for-worktxt h4 {
-    font-size: 24px;
-  }
-
-  .looking-for-worktxt a {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  .search-stations-input input {
-    width: 400px;
-    padding: 17px 15px;
-  }
-
-  .your-journalism-img {
-    width: 50%;
-  }
-
-  .your-journalism-txt h3 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .your-journalism-txt {
-    width: 50%;
-    padding: 20px 25px 45px 25px;
-  }
-
-  .journal-date-written p {
-    font-size: 12px;
-  }
-
-  .journal-date-written {
-    padding: 5px 0px;
-  }
-
-  .your-journalism-img img {
-    height: 360px;
-    object-fit: cover;
-  }
-
-  .newsletter-article-search input {
-    padding: 10px 20px;
-    width: 100%;
-  }
-
-  .newsletter-article-search span {
-    right: 10px;
-    top: 4px;
-  }
-
-  .filter-box p {
-    font-size: 14px;
-  }
-
-  .filter-short-box {
-    gap: 20px;
-    justify-content: end;
-  }
-
-  .filter-box select {
-    padding: 6px 10px;
-    font-size: 16px;
-  }
-
-  .ratemystation-prod-txt {
-    padding: 20px 15px;
-  }
-
-  .newsletter-detail-comment-para {
-    border-radius: 0px 10px 10px 10px;
-  }
-
-  .find-job-select-box {
-    margin: 0px 0px 10px 0px;
-  }
-
-  .job-select-opts {
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .job-detailpg-nameflex img {
-    width: 120px;
-  }
-
-  .job-detailpg-txt h3 {
-    font-size: 24px;
-    line-height: 30px;
-    padding: 0px 0px 5px 0px;
-  }
-
-  .job-detailpg-txt h5 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .job-detail-name-description {
-    padding: 30px 20px;
-  }
-
-  .job-openingpg-txt h3 {
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .job-openingpg-txt h5 {
-    font-size: 18px;
-  }
-
-  .job-openingpg-txt h6 {
-    font-size: 16px;
-  }
-
-  .newsletter-article-search h4 {
-    font-size: 24px;
-  }
-
-  .shop-new-arrival {
-    margin: 0px 0px 20px 0px;
-    height: auto;
-  }
-
-  .shop-friend-themed h4 {
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0px 0px 50px 0px !important;
-  }
-
-  .themed-cap img {
-    width: 120px;
-  }
-
-  .theme-mug img {
-    width: 120px;
-  }
-
-  .shop-new-arrival {
-    padding: 30px 30px;
-    margin: 0px 10px 20px 10px;
-  }
-
-  .shop-new-arrival h3 {
-    font-size: 37px;
-  }
-
-  .shop-new-arrival p {
-    width: 300px;
-    margin: 10px 0px 30px 0px !important;
-  }
-
-  .shop-category ul li button {
-    font-size: 12px;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 20px;
-  }
-
-  .main-footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .ul-li-list-footer {
-    width: 100%;
-  }
-
-  .ul-li-list-footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .ratings-ah-1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 40px;
-  }
-
-  .ratings-ah-1-TITAL {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .ratings-ah-1-box {
-    width: 34%;
-  }
-
-  .gol-bar-ah {
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-  }
-
-  .gol-bar-head {
-    width: 100%;
-  }
-
-  .gol-bar-tital {
-    width: 42%;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 55px;
-    text-align: center;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 60px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .job-ah-post h2 {
-    font-size: 20px;
-  }
-
-  .job-ah-Filter {
-    width: 64%;
-    gap: 25px;
-  }
-
-  .job-ah-Filter-card p {
-    font-size: 16px;
-  }
-
-  .job-ah-Filter-card select {
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .director-urer img {
-    width: 10%;
-  }
-
-  .director-urer {
-    padding-bottom: 24px;
-  }
-
-  .Angeles-logo-side-box span h2 {
-    font-size: 20px;
-  }
-
-  .Jacob-card-ah {
-    width: 75%;
-  }
-
-  .Jacob-card-ah-box {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .four-select-tab {
-    margin: 25px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 28px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 18px;
-    padding: 20px 10px;
-  }
-
-  .Hire-ah-box button {
-    padding: 10px;
-    font-size: 15px;
-    line-height: 25px;
-    border-radius: 10px;
-  }
-
-  .Hire-ah-box {
-    padding: 40px 20px;
-  }
-
-  .About-main-ah {
-    gap: 25px;
-  }
-
-  .job-ah-post h2 span {
-    font-size: 16px;
-  }
-
-  header.header_main {
-    display: none;
-  }
-
-  header.header_main_Mobile {
-    display: block;
-    padding: 20px 0px 12px 0px;
-    background: #fff;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
-  }
-
-  .sidepanel {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #194d79;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-    box-shadow: 4px 0px 5px #0000002e;
-  }
-
-  .header_nav {
-    position: absolute;
-    right: 30px;
-    top: 12px;
-  }
-
-  .header_nav button {
-    width: 40px;
-    border: none;
-    background-color: transparent;
-  }
-
-  .header_nav button:hover {
-    color: #f1f1f1;
-    background: transparent;
-    color: #194d79;
-    border: none;
-    font-size: 25px;
-  }
-
-  /* The navigation links inside the sidepanel */
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 206.25% */
+    border: 1px solid #194d79;
+    padding: 5px 28px;
     transition: 0.3s;
   }
 
-  /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-
-  /* Position and style the close button (top right corner) */
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  /* SECTION */
-  section.employer-login-pg-sec {
-    padding: 40px 0px;
-  }
-
-  .rating-real-journalist {
-    padding: 140px 50px;
-  }
-
-  /* .subscribtion--PAGE */
-
-  .subcription-page-sec {
-    padding: 40px 0px;
-  }
-
-  .subscribe-now-txt h3 {
-    font-size: 37px;
-    line-height: 52px;
-  }
-
-  .subscribe-now-txt p {
-    font-size: 15px;
-    line-height: 25px;
-  }
-
-  .subscribe-now-txt ul li {
-    font-size: 15px;
-    line-height: 21px;
-    padding: 5px 0px;
-  }
-
-  .station-secure-box p {
-    font-size: 14px;
-    line-height: 25px;
-  }
-
-  /* CONTACT US */
-  .ratemystaion-contact-form {
-    padding: 20px;
-  }
-
-  .ratemystaion-contact-form h3 {
-    font-size: 37px;
-  }
-
-  .ratemystaion-contact-form p {
-    font-size: 13px;
-    line-height: 23px;
-    margin: 0px 0px 40px 0px !important;
-  }
-
-  .employer-login-form {
-    padding: 0px 0px 20px 0px;
-  }
-
-  .employer-dont-have-acc {
-    margin: 0px 0px 20px 50px;
-  }
-
-  .employer-choose-subscription {
-    padding: 30px 0px 0px 0px;
-  }
-
-  .employer-inputfield input {
-    padding: 10px 10px;
-  }
-
-  .employer-register-btn {
-    margin: 15px 0px 30px 50px;
-  }
-
-  .Sweatshirt-ah-select-box {
-    justify-content: start;
-  }
-
-  .Sweatshirt-ah-select-card {
-    gap: 10px;
-    width: 48%;
-  }
-
-  .Sweatshirt-ah-select-card {
-    width: 48%;
-    margin: 0px 10px 0px 0px;
-  }
-
-  .ratemystation-about-txt h3 {
-    font-size: 32px;
-    line-height: 48px;
-  }
-
-  .about-us-txt h4 {
-    font-size: 17px;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .about-creator-txt h5 {
-    font-size: 17px;
-    margin: 0px 0px 20px 0px !important;
-  }
-
-  .creator-messages h4 {
-    font-size: 17px;
-    margin: 0px 0px 5px 0px !important;
-  }
-
-  .About-main-box-2-ah {
-    width: 100%;
-  }
-
-  .Recommend-box-ah {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .Recommend-card-ah {
-    width: 48%;
-  }
-
-  .rms_header_logo a label {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .Employees-box-btn-icon button {
-    padding: 10px;
-    gap: 5px;
-    font-size: 14px;
-  }
-  .Employees-Search {
-    flex-grow: 1;
-  }
-  .ul-li-list-footer ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .Sweatshirt-ah-select-card button {
-    width: 40%;
-  }
-  .About-main-box-2-ah {
-    width: 100%;
-  }
-
-  .About-main-box-2-tital-ah h2 {
-    font-size: 18px;
-  }
-
-  .About-main-box-2-tital-ah a {
-    font-size: 15px;
-  }
-
-  .Recommend-box-ah {
-    gap: 20px;
-    padding-top: 25px;
-  }
-
-  .Recommend-card-tital-ah {
-    padding: 10px 14px;
-  }
-
-  .Recommend-card-tital-ah h2 {
-    font-size: 14px;
-  }
-
-  section.director-search-result hr {
-    margin: 0px;
-  }
-
-  .Recommend-card-tital-ah h2 {
-    font-size: 14px;
-  }
-
-  .Applied-ah-list-1 span h2 {
-    font-size: 22px;
-  }
-
-  .news-director-card-txt h5 {
-    font-size: 18px;
-  }
-
-  .Applied-ah-list-1 {
-    padding-bottom: 18px;
-  }
-
-  .Applied-ah-card {
-    padding: 24px 34px;
-    border-radius: 20px;
-    align-items: flex-start;
-  }
-
-  .rms-profile-logo-box {
-    flex-direction: column;
-  }
-
-  .station-search-result-txt h4 {
-    font-size: 18px;
-  }
-
-  .station-search-result-txt p {
-    font-size: 14px;
-  }
-  .toggle {
-    width: 30px;
-    height: 33px;
-    gap: 6px;
-  }
-  .station-search-result-txt p span {
-    font-size: 14px;
-  }
-
-  .search-station-sec {
-    padding: 20px 0px 0px 0px;
-  }
-
-  .Applied-ah-logo {
-    width: 18%;
-  }
-  .Recommend-card-ah {
-    width: 100%;
-  }
-  .Applied-ah-tital {
-    width: 76%;
-  }
-
-  .Applied-ah-list-2 span p {
-    font-size: 14px;
-  }
-
-  .Applied-ah-list-2 {
-    padding: 8px 15px;
-  }
-
-  .Applied-ah-list-3 {
-    padding-top: 20px;
-  }
-
-  .Applied-ah-card {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .Applied-ah-tital {
-    width: 100%;
-  }
-
-  .Applied-ah-list-1 span h2 {
-    font-size: 20px;
-  }
-
-  .Applied-ah-list-1 {
-    padding-bottom: 15px;
-  }
-
-  .Applied-ah-card {
-    padding: 15px 20px;
-  }
-
-  .Applied-ah-list-1 span p {
-    font-size: 18px;
-  }
-
-  .Applied-ah-list-2 span p {
-    font-size: 12px;
-  }
-
-  .Applied-ah-list-2 span {
-    gap: 5px;
-  }
-
-  .Applied-ah-list-2 span svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .KABC-box-ah {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .KABC-part-1-ah {
-    width: 100%;
-  }
-
-  .Schedule-ah-card {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .Schedule-ah-card-box {
-    width: 100%;
-    padding: 0px;
-  }
-
-  .Schedule-ah-imger {
-    width: 32%;
-  }
-
-  .KABC-btn-box-ah {
-    width: 100%;
-  }
-
-  section.KABC-ah {
-    padding-top: 40px;
-  }
-
-  .Jacob-card-ah {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .Director-ah-boxing-3 button {
-    padding: 10px;
-    line-height: 22px;
-    font-size: 12px;
-  }
-
-  .Director-ah-boxing-list-logo {
-    gap: 20px;
-  }
-
-  section.About-ah {
-    padding: 170px 0px 50px 0px;
-  }
-
-  .Director-ah-boxing-3 button {
-    padding: 10px;
-    font-size: 11px;
-    line-height: 5px;
-  }
-
-  .About-main-card-1-ah h2 span {
-    font-size: 15px;
-  }
-
-  .Sweatshirt-ah-select-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 65px;
-    padding-top: 3px;
-    justify-content: center;
-  }
-
-  .Sweatshirt-ah-select-card button {
-    font-size: 11px;
-    line-height: 24px;
-    width: 100%;
-  }
-
-  .Sweatshirt-ah-select-card h2 {
-    font-size: 11px !important;
-  }
-
-  .Sweatshirt-ah-select-card select {
-    padding: 11px;
-    font-size: 11px;
-    line-height: 26px;
-  }
-
-  .Sweatshirt-ah-select-card p {
-    font-size: 13px;
-  }
-
-  .Description-box-tital {
-    gap: 1px;
-    padding-top: 15px;
-  }
-
-  .Description-box-tital p {
-    font-size: 12px;
-    line-height: 23px;
-  }
-
-  .Description-box-tital a {
-    font-size: 14px;
-  }
-
-  .Cooper-ah-imger {
-    width: 8%;
-  }
-
-  .Cooper-ah-tital h3 {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  .Cooper-ah-box-main {
-    padding-top: 10px;
-  }
-
-  .About-main-card-1-ah {
-    padding: 20px;
-  }
-
-  .Award-a a {
-    font-size: 16px;
-  }
-
-  .satisfied button {
-    font-size: 15px;
-    line-height: 29px;
-    padding: 7px;
-  }
-
-  .satisfied h3 {
-    font-size: 17px;
-    padding: 10px 0px 10px 0px;
-  }
-
-  .ratings-ah-1-bar {
-    gap: 15px;
-  }
-
-  .Award-a {
-    padding-top: 10px;
-  }
-
-  .ul-li-list-footer ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .About-main-box-2-ah {
-    width: 100%;
-  }
-
-  .About-main-box-2-tital-ah h2 {
-    font-size: 18px;
-  }
-
-  .About-main-box-2-tital-ah a {
-    font-size: 15px;
-  }
-
-  .Recommend-box-ah {
-    gap: 20px;
-    padding-top: 25px;
-  }
-
-  .Recommend-card-tital-ah {
-    padding: 10px 14px;
-  }
-
-  .Recommend-card-tital-ah h2 {
-    font-size: 14px;
-  }
-
-  .KABC-box-ah {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .KABC-part-1-ah {
-    width: 100%;
-  }
-
-  .KABC-btn-box-ah {
-    width: 100%;
-  }
-
-  section.KABC-ah {
-    padding-top: 40px;
-  }
-
-  .Jacob-card-ah {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .Director-ah-boxing-3 button {
-    padding: 10px;
-    line-height: 22px;
-    font-size: 12px;
-  }
-
-  .Director-ah-boxing-list-logo {
-    gap: 20px;
-  }
-
-  section.About-ah {
-    padding: 170px 0px 50px 0px;
-  }
-
-  .Angeles-ah-icon-side {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-
-  .Angeles-logo-side-box {
-    width: 100%;
-  }
-
-  .Angeles-ah-box {
-    flex-direction: column-reverse;
-    gap: 10px;
-  }
-
-  .Angeles-logo-ah {
-    width: 30%;
-  }
-
-  .About-main-card-1-ah p {
-    padding: 15px 0px 10px 0px;
-    font-size: 14px;
-  }
-
-  .bar-pogres-box-cards-ah {
-    flex-direction: column;
-  }
-
-  .pogras-card-ah {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .bar-pogres-box-cards-ah {
-    flex-direction: column;
-  }
-
-  .pogras-card-ah {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .Overall-Statistic-ah {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .Overall-Statistic-ah ul {
-    width: 100%;
-  }
-
-  .ratings-ah-1-box {
-    width: 100%;
-  }
-
-  .gol-bar-tital {
-    width: 100%;
-    gap: 15px;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 45px;
-  }
-
-  .ratings-ah-1-bar {
-    width: 100%;
-  }
-
-  section.Statistic-ah {
-    padding: 160px 0px 50px 0px;
-  }
-
-  .navtabs {
-    gap: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .main-KABC-ah {
-    padding: 30px 30px 20px 30px;
-  }
-
-  .Industry-ah {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-  }
-
-  .gol-bar-box {
-    width: 70%;
-  }
-
-  .Brooklyn-Simmons-card {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .Brooklyn-Simmons-logo-div {
-    width: 100%;
-    gap: 20px;
-  }
-
-  .Brooklyn-Simmons-card button {
-    line-height: 28px;
-  }
-
-  span.edite svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .Award-card-ah {
-    align-items: flex-start;
-  }
-
-  .About-main-card-1-ah h2 span {
-    font-size: 16px;
-  }
-
-  .Job-box-ah {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .Job-card-ah {
-    width: 100%;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 18px;
-  }
-
-  .Job-list-2-ah {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .KABC-tital-ah span h2 {
-    font-size: 20px;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 60px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .job-ah-post h2 {
-    font-size: 20px;
-  }
-
-  .job-ah-Filter {
-    width: 64%;
-    gap: 25px;
-  }
-
-  .job-ah-Filter-card p {
-    font-size: 16px;
-  }
-
-  .job-ah-Filter-card select {
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .director-urer img {
-    width: 10%;
-  }
-
-  .director-urer {
-    padding-bottom: 24px;
-  }
-
-  .Draft-ah {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 24px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 16px;
-    padding: 18px 8px;
-  }
-
-  .Hire-ah-box button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .four-select-tab {
-    margin: 25px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .scrllo-bar p {
-    padding: 0px;
-    line-height: 24px;
-  }
-
-  .w3-light-grey.w3-tiny {
-    height: 12px;
-  }
-
-  .Popular-ti-ah-btn-box button {
-    font-size: 14px;
-    padding: 4px 12px;
-    border-radius: 8px;
-  }
-
-  .Popular-ti-ah-btn-box {
-    gap: 12px;
-  }
-
-  .latest-rating-user-verified {
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .rating-user-box {
-    width: 100%;
-  }
-
-  .verified-rating-box {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .job-ah-post {
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .job-ah-Filter {
-    width: 100%;
-  }
-
-  .job-ah-post h2 {
-    font-size: 18px;
-  }
-
-  .job-ah-post h2 span {
-    font-size: 15px;
-  }
-
-  .review-news-director {
-    margin: 35px 0px 25px 0px;
-  }
-
-  .review-news-director {
-    margin: 25px 0px 20px 0px;
-  }
-
-  .review-director-para p {
-    font-size: 14px;
-  }
-
-  .racial-discrimination p {
-    font-size: 14px;
-  }
-
-  .racial-discrimination h5 {
-    font-size: 14px;
-  }
-
-  .like-report-submitted {
-    margin: 12px 0px;
-  }
-
-  .latest-rating-comment-box {
-    margin: 25px 0px 5px 0px;
-  }
-
-  .latest-comment-txt-input-box input {
-    padding: 12px 40px 12px 18px;
-    font-size: 16px;
-  }
-
-  .latest-rating-box {
-    margin: 0px 0px 30px 0px;
-  }
-
-  .free-subscribe-four {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .employer-register-subscription {
-    padding: 28px 24px;
-  }
-
-  .employer-subscription {
-    width: 47%;
-    padding: 15px 11px;
-  }
-
-  .new-subscription-discount {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .new-subscription-discount p {
-    font-size: 13px;
-  }
-
-  .new-subscription-discount a {
-    font-size: 14px;
-  }
-
-  /* .subscribe- */
-  .subcription-page-sec {
-    padding: 35px 0px;
-  }
-
-  .subscribe-now-txt h3 {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
-  .subscribe-now-txt p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .subscribe-now-txt ul li {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 4px 0px;
-  }
-
-  .subscribe-now-txt ul li svg {
-    position: absolute;
-    left: -26px;
-    top: 8px;
-  }
-
-  .subcription-box {
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-
-  .station-secure-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 11px;
-  }
-
-  .station-secure-box svg {
-    width: 50px;
-    height: 25px;
-  }
-
-  .station-secure-box p {
-    font-size: 13px;
-    line-height: 23px;
-    padding: 0px 5px 0px 0px;
-  }
-
-  .subscription-credit p {
-    font-size: 14px;
-    line-height: 30px;
-    padding-bottom: 10px;
-  }
-
-  .subcription-box h4 {
-    font-size: 20px;
-    padding: 40px 0px 5px 0px;
-  }
-
-  .subcription-box h6 {
-    font-size: 19px;
-    margin: 0px 0px 25px 0px;
-  }
-
-  /* PRODUCT-QUALITY */
-  .Cooper-ah-box {
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 15px;
-  }
-
-  .America-Sweatshirt {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  .America-ah-part-2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0px;
-  }
-
-  .About-main-card-1-ah p {
-    padding: 14px 0px 10px 0px;
-    font-size: 16px;
-  }
-
-  .Sweatshirt-ah-select-card input {
-    padding: 5px;
-    font-size: 14px;
-    line-height: 25px;
-  }
-
-  .Sweatshirt-ah-select-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 3px;
-    justify-content: center;
-    margin: 0px 0px 10px 0px;
-  }
-
-  .Sweatshirt-ah-select-card {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    max-width: 35%;
-    justify-content: center;
-    margin: 0;
-  }
-
-  .Sweatshirt-ah-select-card select {
-    padding: 11px;
-    width: 100px;
-    font-size: 11px;
-    line-height: 26px;
-  }
-
-  .Sweatshirt-ah-select-card input {
-    padding: 6px;
-    width: 100px;
-  }
-
-  .Sweatshirt-ah-select-card h2 {
-    font-size: 13px !important;
-  }
-
-  .Sweatshirt-ah-select-card {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 50%;
-  }
-
-  .About-main-card-1-ah p {
-    padding: 10px 0px 5px 0px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .Sweatshirt-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 30px 0px 60px 0px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .Cooper-ah-imger {
-    width: 17%;
-  }
-
-  .Cooper-ah-tital-head {
-    width: 100%;
-    display: flex;
-    align-items: left;
-  }
-
-  .Brooklyn-Simmons-card {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .Overall-Statistic-ah ul {
-    width: 100%;
-  }
-
-  .ratings-ah-1-box {
-    width: 100%;
-  }
-
-  .gol-bar-tital {
-    width: 100%;
-    gap: 15px;
-  }
-
-  .gol-bar-head h2 {
-    font-size: 45px;
-  }
-
-  .ratings-ah-1-bar {
-    width: 100%;
-  }
-
-  section.Statistic-ah {
-    padding: 160px 0px 50px 0px;
-  }
-
-  .navtabs {
-    justify-content: flex-start;
-    gap: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .main-KABC-ah {
-    padding: 30px 30px 20px 30px;
-  }
-
-  .Industry-ah {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-  }
-
-  .gol-bar-box {
-    width: 70%;
-  }
-
-  .Brooklyn-Simmons-card {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .Brooklyn-Simmons-logo-div {
-    width: 100%;
-    gap: 20px;
-  }
-
-  .Brooklyn-Simmons-card button {
-    line-height: 28px;
-  }
-
-  span.edite svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .Website-ah-card span h2 {
-    font-size: 18px;
-  }
-
-  .Website-ah-card span h3 {
-    font-size: 18px;
-  }
-
-  .Website-ah-card button svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .Website-ah-card button {
-    padding: 10px;
-  }
-
-  .Website-ah-box {
-    gap: 20px;
-    padding-top: 35px;
-  }
-
-  .Award-card-ah {
-    align-items: flex-start;
-  }
-
-  .About-main-card-1-ah h2 span {
-    font-size: 16px;
-  }
-
-  .Job-box-ah {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .Job-card-ah {
-    width: 100%;
-  }
-
-  .Job-list-1-ah span h2 {
-    font-size: 18px;
-  }
-
-  .Job-list-2-ah {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .KABC-tital-ah span h2 {
-    font-size: 20px;
-  }
-
-  .ratings-ah-1-TITAL span h2 {
-    font-size: 60px;
-  }
-
-  .ratings-ah-1-TITAL span p {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .job-ah-post h2 {
-    font-size: 20px;
-  }
-
-  .job-ah-Filter {
-    width: 64%;
-    gap: 25px;
-  }
-
-  .job-ah-Filter-card p {
-    font-size: 16px;
-  }
-
-  .job-ah-Filter-card select {
-    padding: 8px 10px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .director-urer img {
-    width: 10%;
-  }
-
-  .director-urer {
-    padding-bottom: 14px;
-  }
-
-  .Draft-ah {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 24px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 16px;
-    padding: 18px 8px;
-  }
-
-  .Draft-ah {
-    flex-direction: column;
-  }
-
-  .Cooper-ah-tital-head {
-    width: 100%;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-  }
-
-  .Hire-ah-box h2 {
-    font-size: 24px;
-  }
-
-  .Hire-ah-box p {
-    font-size: 16px;
-    padding: 18px 8px;
-  }
-
-  .Office-ah-logo {
-    width: 20%;
-  }
-
-  .Office-ah-span p {
-    padding: 0px;
-  }
-
-  .Current-ah-job-card span h3 {
-    font-size: 12px;
-  }
-
-  .Skills-ah-box-main {
-    padding-top: 14px;
-    gap: 10px;
-  }
-
-  .Skills-ah-box p {
-    padding: 10px 0px 4px 0px;
-    line-height: 20px;
-  }
-
-  .Current-ah-job p {
-    line-height: 20px;
-  }
-
-  .Education-side-ah h4 {
-    line-height: 20px;
-  }
-
-  .Education-side-ah p {
-    padding: 0px;
-  }
-
-  .Education-ah-boxing {
-    gap: 25px;
-  }
-
-  .Hire-ah-box button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .Hire-ah-box button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .four-select-tab {
-    margin: 25px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .verified-rating-box h6 {
-    font-size: 14px;
-  }
-
-  .scrllo-bar p {
-    padding: 0px;
-    line-height: 24px;
-  }
-
-  .w3-light-grey.w3-tiny {
-    height: 12px;
-  }
-
-  .About-main-card-1-ah h2 {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 0px 0px 0px 0px;
-  }
-
-  .Cooper-ah-tital-head span {
-    color: #000;
-    font-family: "Public Sans", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  img {
-    width: 76%;
-  }
-
-  .America-ah {
-    width: 100%;
-  }
-
-  .Sweatshirt-ah {
-    width: 100%;
-  }
-
-  .Sweatshirt-part-1 {
-    width: 100%;
-  }
-
-  .Award-a {
-    padding-top: 10px;
-  }
-
-  .Sweatshirt-part-2 {
-    width: 100%;
-  }
-
-  .satisfied h2 {
-    font-size: 30px;
-    padding-top: 15px;
-    text-align: left;
-  }
-
-  .satisfied h3 {
-    text-align: left;
-  }
-
-  .satisfied p {
-    text-align: left;
-  }
-
-  .ratings-ah-1-bar {
-    gap: 0px;
-  }
-
-  .my-ah-class {
-    padding: 25px 0px;
-  }
-
-  .satisfied button {
-    font-size: 16px;
-    line-height: 30px;
-    padding: 9px;
-  }
-
-  .Popular-ti-ah-btn-box button {
-    font-size: 14px;
-    padding: 4px 12px;
-    border-radius: 8px;
-  }
-
-  .Popular-ti-ah-btn-box {
-    gap: 12px;
-  }
-
-  .latest-rating-user-verified {
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .rating-user-box {
-    width: 100%;
-  }
-
-  .verified-rating-box {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .job-ah-post {
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .job-ah-Filter {
-    width: 100%;
-  }
-
-  .job-ah-post h2 {
-    font-size: 18px;
-  }
-
-  .job-ah-post h2 span {
-    font-size: 15px;
-  }
-
-  .review-news-director {
-    margin: 35px 0px 25px 0px;
-  }
-
-  .review-news-director {
-    margin: 25px 0px 20px 0px;
-  }
-
-  .review-news-director {
-    margin: 35px 0px 25px 0px;
-  }
-
-  section.About-ah.extara {
-    padding: 50px 0px 50px 0px;
-  }
-
-  .review-news-director {
-    margin: 25px 0px 20px 0px;
-  }
-
-  .review-director-para p {
-    font-size: 14px;
-  }
-
-  .racial-discrimination p {
-    font-size: 14px;
-  }
-
-  .racial-discrimination h5 {
-    font-size: 14px;
-  }
-
-  .like-report-txt ul li {
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-  .like-report-submitted {
-    margin: 12px 0px;
-  }
-
-  .latest-rating-comment-box {
-    margin: 25px 0px 5px 0px;
-  }
-
-  .latest-comment-txt-input-box input {
-    padding: 12px 40px 12px 18px;
-    font-size: 16px;
-  }
-
-  .latest-rating-box {
-    margin: 0px 0px 30px 0px;
-  }
-
-  .select-station-drop select {
-    width: 75px;
-    padding: 14.5px 0px 14.5px 12px;
-    margin: 1.2px 0px 0px 0px;
-    font-size: 12px !important;
-  }
-
-  .select-tv-icon {
-    top: 4px;
-    left: 25px;
-  }
-
-  .select-tv-icon svg {
-    width: 20px;
-  }
-
-  .search-stations-input input::placeholder {
-    font-size: 14px;
-  }
-
-  .search-stations-input input {
-    width: 100%;
-    padding: 12px 15px;
-    margin: 1px 0px 0px 0px;
-  }
-
-  .search-stations-input svg {
-    width: 24px;
-    position: relative;
-    top: 0px;
-    right: -01px;
-  }
-
-  .first-banner-txt h3 {
-    font-size: 35px;
-    width: 100%;
-    margin: 0px 0px 30px 0px !important;
-  }
-
-  .first-banner-txt a {
-    font-size: 18px;
-    margin: 40px 0px 0px 0px !important;
-  }
-
-  .first-banner-sec {
-    padding: 50px 0px;
-  }
-
-  .latest-rating-txt h3 {
-    font-size: 30px;
-  }
-
-  .news-director-current {
-    gap: 10px;
-    justify-content: start;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-
-  .latest-rating-txt h3 {
-    font-size: 18px;
-  }
-
-  .director-urer img {
-    width: 20%;
-  }
-
-  .prod-abslt-ratems {
-    width: 50px !important;
-    height: 75px;
-  }
-
-  .ratemystation-prod-txt h3 {
-    font-size: 20px;
-  }
-
-  .ratemystation-prod-txt h6 {
-    font-size: 16px;
-  }
-
-  .ratemystation-prod-btn {
-    justify-content: start;
-    gap: 10px;
-  }
-
-  .prod-light-btn {
-    font-size: 14px;
-    padding: 12px 30px;
-  }
-
-  .prod-dark-btn {
-    font-size: 14px;
-    line-height: 19px;
-    padding: 12px 30px;
-  }
-
-  .newsletter-pagination-slide .pagination a {
-    padding: 5px 15px;
-    font-size: 14px;
-  }
-
-  .journalism-img-txt {
-    flex-direction: column;
-  }
-
-  .your-journalism-img {
-    width: 100%;
-    display: none;
-  }
-
-  .your-journalism-txt {
-    width: 100%;
-    padding: 20px 25px 45px 25px;
-  }
-
-  .newsletter-article-search {
-    padding: 30px 0px 30px 0px;
-  }
-
-  .newsletter-article-search span {
-    right: 10px;
-    top: 35px;
-  }
-
-  .filter-short-box {
-    justify-content: space-between;
-  }
-
-  .filter-box select {
-    padding: 10px 15px;
-    font-size: 14px;
-    margin: 0px 0px 10px 0px;
-  }
-
-  .newsletter-likecomment-share {
-    gap: 15px;
-  }
-
-  .newsletter-slide-article {
-    flex-direction: column;
-  }
-
-  .newsletter-slide-article img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .newsletter-slide-article .newsletter-article-text {
-    border-radius: 0px 0px 20px 20px;
-    filter: none;
-  }
-
-  section.ratemystation-shop-sec h4 {
-    font-size: 30px;
-  }
-
-  .newsletter-comment-reaction ul {
-    gap: 10px;
-  }
-
-  .newsletter-detail-comment {
-    gap: 10px;
-    margin: 0px 0px 20px 0px;
-  }
-
-  .newsletter-detail-comment-para p {
-    font-size: 12px !important;
-    line-height: 20px !important;
-    margin: 0px 0px 10px 0px !important;
-  }
-
-  .newsletter-comment-reaction ul li a {
-    font-size: 12px;
-  }
-
-  .soul-witness-acc-subs a {
-    font-size: 14px;
-    line-height: 26px;
-    padding: 4px 20px;
-  }
-
-  .soul-witness-txt h4 {
-    font-size: 18px;
-  }
-
-  .article-reactions ul li a {
-    font-size: 16px;
-  }
-
-  .soul-witness-txt h6 {
-    font-size: 14px;
-    margin: 0px;
-  }
-
-  .soul-witness-user-imgtxt img {
-    width: 50px;
-  }
-
-  .more-soul-article {
-    align-items: flex-start;
-    gap: 10px;
-    flex-direction: column;
-  }
-
-  .more-soul-articletxt h4 {
-    font-size: 16px;
-    line-height: 26px;
-    padding: 0px 0px 10px 0px;
-  }
-
-  .more-from-soul-witness-box {
-    padding: 30px 20px;
-  }
-
-  .job-start-matter-sec {
-    padding: 50px 0px;
-  }
-
-  .assistant-director-txt h4 {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  .assistant-city-dollar-time p {
-    font-size: 11px;
-  }
-
-  .assistant-city-dollar-time {
-    padding: 8px 10px;
-    margin: 10px 0px 0px 0px;
-  }
-
-  .assistant-news-director-box ul li {
-    font-size: 12px;
-    line-height: 20px;
-    margin: 0px 0px 10px 0px;
-  }
-
-  .actively-hiring-updated a {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-
-  .job-detailpg-nameflex {
-    align-items: start;
-    gap: 10px;
-    flex-direction: column;
-  }
-
-  .job-detailpg-nameflex img {
-    width: 100px;
-  }
-
-  .job-detail-name-description {
-    padding: 30px 20px;
-  }
-
-  .job-select-opts {
-    flex-direction: column;
-    gap: 0px;
-    align-items: start;
-    margin: 10px 0px 0px 0px;
-  }
-
-  .job-save-share {
-    margin: 10px 0px 0px 0px;
-    gap: 10px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .job-select-opts a {
-    width: 100%;
-  }
-
-  .job-save-share a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .job-qualification-point {
-    flex-direction: column;
-  }
-
-  .shop-new-arrival {
-    padding: 30px 40px;
-    margin: 0px 0px 10px 0px;
-    height: auto;
-  }
-
-  .shop-new-arrival-img img {
-    width: 150px;
-  }
-
-  .shop-new-arrival h6 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .shop-new-arrival h3 {
-    font-size: 28px;
-    line-height: 30px;
-    width: 100%;
-  }
-
-  .shop-new-arrival p {
-    margin: 10px 0px 20px 0px !important;
-    padding: 0px 100px 0px 0px;
-    width: 100%;
-  }
-
-  .themed-cap {
-    right: 0px;
-    top: 40%;
-  }
-
-  .shop-friend-themed h4 {
-    color: #000;
-    font-family: "Public Sans", sans-serif;
-    font-size: 18px;
-    margin: 0px 0px 40px 0px !important;
-  }
-
-  .themed-cap img {
-    width: 150px;
-  }
-
-  .themed-abslt-img {
-    top: 40px;
-  }
-
-  .themed-abslt-img img {
-    width: 150px;
-  }
-
-  .latest-rating-box {
-    margin: 0px 0px 30px 0px;
-  }
-
-  .Education-logo {
-    width: 50%;
-  }
-
-  /* 
+  .Orders-4 button:hover {
+    background: transparent;
+    color: #194d79;
+  }
+  /* ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
+ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
+ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
+ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
+
+  @media screen and (max-width: 1366px) {
+    header.header_main {
+      padding: 20px 0px 12px 0px;
+    }
+
+    .header_nav ul li {
+      font-size: 15px;
+    }
+
+    .header_end a:nth-child(1) span {
+      font-size: 11px;
+    }
+
+    .login-btn {
+      font-size: 16px;
+      padding: 3px 42px;
+    }
+
+    .rating-real-journalist h3 {
+      color: var(--ffffff, #fff);
+      text-align: center;
+      font-family: "Public Sans";
+      font-size: 40px;
+    }
+
+    .employer-newroom-box button.text-white {
+      font-size: 23px;
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .first-banner-txt h3 {
+      width: 70%;
+    }
+
+    .search-stations-input input::placeholder {
+      font-size: 18px;
+    }
+
+    .news-director-current {
+      align-items: start;
+      gap: 5px;
+      flex-direction: column;
+      margin: 0px 0px 6px 0px;
+    }
+
+    .employer-inputfield label {
+      font-size: 16px;
+    }
+
+    .director-urer img {
+      width: 60px;
+    }
+
+    .director-urer {
+      display: flex;
+      align-items: start;
+      gap: 5px;
+    }
+
+    .director-name-txt h3 {
+      font-size: 16px;
+    }
+
+    .director-name-txt {
+      margin: 0px 0px 0px 0px;
+    }
+
+    .prod-dark-btn {
+      font-size: 16px;
+      line-height: 23px;
+      padding: 8px 8px;
+    }
+    section.About-ah {
+      padding: 150px 0px 10px 0px;
+    }
+
+    .KABC-tital-ah span h2 {
+      font-size: 24px;
+    }
+
+    .Schedule-ah-card-box h2 {
+      font-size: 22px;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 22px;
+    }
+
+    .About-main-box-2-tital-ah h2 {
+      font-size: 22px;
+    }
+    .prod-light-btn {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 5px;
+    }
+
+    .ratemystation-prod-txt h3 {
+      font-size: 17px;
+      line-height: 25.5px;
+      margin: 0px 0px 10px 0px !important;
+      height: 60px;
+    }
+
+    .looking-for-worktxt {
+      padding: 56px 0px;
+      border-radius: 10px;
+    }
+
+    .looking-for-worktxt p {
+      font-size: 20px;
+      width: 50%;
+      line-height: 31.5px;
+      margin: 20px 0px 20px 0px !important;
+    }
+
+    .employer-inputfield input {
+      padding: 13px 16px;
+    }
+
+    .employer-choose-subscription h6 {
+      font-size: 15px;
+    }
+
+    .free-subscribe-four {
+      gap: 11px;
+    }
+
+    .employer-register-subscription {
+      padding: 32px 15px;
+    }
+
+    .employer-register-subscription h3 {
+      font-size: 31px;
+    }
+
+    .employer-choose-subscription h6 {
+      font-size: 15px;
+    }
+
+    .employer-subscription {
+      padding: 20px 15px;
+    }
+
+    .employer-subscription h5 {
+      font-size: 19px;
+    }
+
+    .employer-subscription h6 {
+      font-size: 15px;
+    }
+
+    .employer-subscription span {
+      font-size: 15px;
+    }
+
+    .employer-save {
+      font-size: 10px;
+      width: 65px;
+      padding: 2px 4px;
+    }
+
+    .employer-dont-have-acc {
+      margin: 10px 0px 0px 40px;
+    }
+
+    .employer-dont-have-acc a {
+      font-size: 12px;
+    }
+
+    .employer-dont-have-acc a span {
+      font-size: 15px;
+    }
+
+    .employer-register-btn a {
+      font-size: 15px;
+      padding: 4px 35px;
+    }
+
+    .employer-input-checkbox input {
+      width: 17px;
+      height: 17px;
+    }
+
+    .employer-input-checkbox label {
+      color: #000;
+      font-family: "Public Sans";
+      font-size: 15px;
+    }
+
+    .ul-li-list-footer ul li a {
+      font-size: 16px;
+    }
+
+    .ul-li-list-footer ul {
+      gap: 30px;
+    }
+
+    .about-creator-img img {
+      width: 400px;
+    }
+
+    .your-journalism-txt {
+      padding: 65px 50px;
+    }
+
+    .your-journalism-txt h3 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    .journal-date-written {
+      padding: 15px 0px;
+    }
+
+    .icon-list-footer {
+      gap: 28px;
+    }
+
+    /* .subscribe-PAGE- */
+    .subscribe-now-txt h3 {
+      font-size: 40px;
+    }
+
+    .subcription-box h4 {
+      font-size: 28px;
+      padding: 50px 0px 10px 0px;
+    }
+
+    .subcription-box h6 {
+      font-size: 21px;
+      margin: 0px 0px 30px 0px;
+    }
+
+    .subcription-box a {
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+
+    /* PRODUCT-DETAIL-PAGE */
+    .Sweatshirt-ah h2 {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    .Sweatshirt-ah-select-box {
+      padding-top: 23px;
+    }
+
+    .Sweatshirt-ah-select-card h2 {
+      font-size: 20px;
+    }
+
+    .Sweatshirt-ah-select-card button {
+      font-size: 12px;
+    }
+
+    .Description-box-tital {
+      gap: 2px;
+      padding-top: 22px;
+    }
+
+    .Description-box-tital h2 {
+      font-size: 28px;
+    }
+
+    .Description-box-tital p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    .satisfied h2 {
+      font-size: 75px;
+    }
+    span.See button {
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    span.Info button {
+      font-size: 14px;
+      padding: 5px 15px !important;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .KABC-part-1-ah {
+      width: 48%;
+    }
+    .Brooklyn-Simmons-tital span p {
+      font-size: 12px;
+    }
+
+    .About-main-card-1-ah h2 {
+      font-size: 18px;
+    }
+
+    .rms-abc-logo img {
+      width: 100%;
+    }
+
+    .rms-kabc-txt h6 {
+      margin: 0px 0px 18px 0px;
+    }
+
+    .KABC-tital-ah {
+      gap: 8px;
+    }
+
+    .main-KABC-ah {
+      padding: 40px 30px 30px 40px;
+    }
+
+    .KABC-btn-box-ah {
+      width: 25%;
+      gap: 10px;
+    }
+
+    span.See button {
+      padding: 8px;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    .Industry-ah span p {
+      font-size: 14px;
+    }
+
+    .search-stations-input--rms--alt input {
+      width: 100% !important;
+    }
+
+    ul.save--share--pop li {
+      padding: 6px;
+    }
+
+    .station-search-result-txt h4 {
+      font-size: 30px;
+    }
+
+    ul.save--share--pop {
+      padding: 5px;
+      border-radius: 8px;
+      width: 160px;
+      right: 20px;
+    }
+
+    .station-search-result-txt p {
+      font-size: 16px;
+    }
+
+    .article-reactions ul li a {
+      font-size: 18px;
+    }
+
+    .station-search-result-txt p span {
+      font-size: 16px;
+    }
+
+    .search-stations-input--rms .select-container {
+      padding: 0px 20px;
+      box-shadow: none;
+    }
+
+    .search-stations-input--rms .select-box,
+    .search-stations-input--rms option {
+      font-size: 16px !important;
+      padding: 15px 10px 15px 10px;
+      width: 120px;
+    }
+
+    .select-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .search-stations-input--rms span {
+      top: 2px !important;
+    }
+
+    .search-stations-input--rms input {
+      padding: 10px 20px;
+      width: 400px;
+    }
+
+    .rms_header_logo {
+      gap: 20px;
+    }
+
+    .search-stations-input--rms {
+      margin: 0px 20px;
+    }
+    .station-search-result-txt {
+      padding: 40px 0px 20px 0px;
+    }
+
+    .search-station-sec {
+      padding: 45px 0px 0px 0px;
+    }
+
+    .rms-kabc-txt h3 {
+      font-size: 22px;
+    }
+
+    .rms-kabc-btn .themedark {
+      font-size: 14px;
+      line-height: 22px;
+      border-radius: 8px;
+      padding: 8px 20px;
+    }
+
+    .news-director-card {
+      padding: 20px 20px;
+      border-radius: 10px;
+      margin: 0px 0px 25px 0px;
+    }
+
+    .news-director-card-txt h5 {
+      font-size: 20px;
+    }
+
+    .news-director-detail-btn a {
+      padding: 10px 30px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .rms-kabc-btn .themelight {
+      font-size: 14px;
+      line-height: 24px;
+      border-radius: 8px;
+      padding: 8px 20px;
+    }
+
+    .rms-profile-box {
+      padding: 25px 20px;
+      margin: 0px 0px 24px 0px;
+    }
+
+    .seeprofile-box-btn a {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+
+    .ratemystation-prod-txt h3 {
+      font-size: 16px;
+      line-height: 20px;
+      height: 100%;
+    }
+
+    .ratemystation-prod-txt {
+      padding: 15px;
+    }
+
+    .ratemystation-prod-txt h6 {
+      font-size: 14px;
+      margin: 0px 0px 15px 0px;
+    }
+
+    .ratemystation-prod-btn {
+      justify-content: space-between;
+      gap: 0px;
+    }
+
+    .ratemystation-shop-prod {
+      border-radius: 14px;
+    }
+
+    .ratemystation-shop-prod img {
+      object-fit: cover;
+    }
+
+    .prod-abslt-ratems {
+      height: 100%;
+    }
+
+    section.ratemystation-shop-sec h4 {
+      font-size: 24px;
+      margin: 0px 0px 34px 0px !important;
+    }
+
+    section.ratemystation-shop-sec {
+      padding: 30px 0px;
+    }
+
+    .find-station-looking {
+      padding: 40px 20px 40px 20px;
+    }
+
+    .find-station-looking h4 {
+      font-size: 24px;
+    }
+
+    .find-station-looking p {
+      font-size: 18px;
+      line-height: 28.5px;
+    }
+
+    .find-station-looking a {
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    .seeprofile-box-btn {
+      margin: 0px 0px 30px 0px;
+    }
+
+    .rms-abc-logo {
+      width: 18%;
+    }
+
+    .rms-profile-logo-box {
+      align-items: flex-start;
+    }
+
+    .rms-rating-review svg {
+      width: 150px;
+    }
+
+    .looking-for-work-sec {
+      padding: 35px 0px;
+    }
+
+    .looking-for-worktxt h4 {
+      font-size: 32px;
+    }
+
+    .looking-for-worktxt p {
+      font-size: 18px;
+      margin: 15px 0px 20px 0px !important;
+    }
+
+    .looking-for-worktxt a {
+      font-size: 18px;
+      line-height: 31.5px;
+      padding: 8px 42px;
+    }
+
+    .looking-for-worktxt {
+      padding: 50px 0px;
+    }
+
+    .Industry-ah span {
+      gap: 5px;
+    }
+
+    .About-main-card-1-ah {
+      padding: 20px;
+    }
+
+    .About-main-card-1-ah h2 {
+      font-size: 20px;
+    }
+
+    .Recommend-card-tital-ah h2 {
+      font-size: 16px;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 24px;
+    }
+
+    .Job-list-2-ah span p {
+      font-size: 12px;
+    }
+
+    .more-class {
+      padding: 10px 0px 10px 15px;
+    }
+
+    .Schedule-ah-card-box h2 {
+      padding: 20px 0px 20px 0px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .Schedule-ah-list-1 span p {
+      font-size: 14px;
+    }
+
+    .Schedule-ah-list-1 span {
+      gap: 8px;
+    }
+
+    .Soul-icon-box {
+      gap: 10px;
+    }
+
+    .Schedule-ah-list-3 a span {
+      font-size: 14px;
+    }
+
+    .Schedule-ah-list-3 a {
+      font-size: 14px;
+    }
+
+    .Soul-icon-box span p {
+      padding: 0px;
+    }
+
+    .Soul-icon-box span svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    .KABC-tital-ah span h2 {
+      font-size: 24px;
+    }
+
+    .Award-a {
+      padding-top: 20px;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 20px;
+    }
+
+    .Job-list-2-ah {
+      padding: 8px 20px;
+    }
+
+    .Job-list-3-ah {
+      padding-top: 20px;
+    }
+
+    .Job-list-1-ah {
+      padding-bottom: 14px;
+    }
+
+    .About-main-box-2-tital-ah h2 {
+      font-size: 24px;
+    }
+
+    section.About-ah {
+      padding: 60px 0px;
+    }
+
+    .Recommend-card-tital-ah {
+      padding: 15px 20px;
+    }
+
+    .Industry-ah {
+      padding-top: 15px;
+    }
+
+    .Recommend-box-ah {
+      gap: 20px;
+    }
+
+    .padding-ah {
+      padding: 30px 0px 15px 0px;
+    }
+
+    .About-main-box-1-ah {
+      gap: 20px;
+    }
+
+    .ul-li-list-footer ul {
+      gap: 20px;
+    }
+
+    .ul-li-list-footer ul li a {
+      font-size: 14px;
+    }
+
+    .icon-list-footer {
+      gap: 15px;
+    }
+
+    .navtabs {
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .navtab {
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
+
+    section.Statistic-ah {
+      padding: 80px 0px;
+    }
+
+    .Overall-Statistic-ah h2 {
+      font-size: 20px;
+    }
+
+    .ratings-ah-1-TITAL span h2 {
+      font-size: 80px;
+    }
+
+    .ratings-ah-1-TITAL span p {
+      font-size: 20px;
+    }
+
+    .ratings-ah-1-TITAL h3 {
+      font-size: 18px;
+    }
+
+    .ratings-ah-1-bar {
+      gap: 8px;
+    }
+
+    span.\34 5 h2 {
+      font-size: 20px;
+    }
+
+    .pogras-card-ah span h2 {
+      font-size: 20px;
+    }
+
+    .bar-pogres-box-cards-ah {
+      gap: 15px;
+      padding-bottom: 20px;
+    }
+
+    .gol-bar-tital {
+      width: 32%;
+    }
+
+    .gol-bar-tital span p {
+      font-size: 18px;
+    }
+
+    .gol-bar-head h2 {
+      font-size: 65px;
+    }
+
+    .gol-bar-head p {
+      font-size: 18px;
+    }
+
+    .Angeles-logo-side-box {
+      width: 60%;
+    }
+
+    .job-ah-post h2 {
+      font-size: 24px;
+    }
+
+    .job-ah-post h2 span {
+      font-size: 20px;
+    }
+
+    .Director-ah-boxing-logo span h2 {
+      font-size: 18px;
+    }
+
+    .Director-ah-boxing-logo span p {
+      font-size: 14px;
+    }
+
+    .Director-ah-boxing p {
+      font-size: 14px;
+    }
+
+    .Director-ah-boxing-3 button {
+      padding: 10px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    .Director-ah-boxing-list-logo {
+      width: 50%;
+    }
+
+    .Director-ah-boxing-list-span h2 {
+      font-size: 14px;
+    }
+
+    .Director-ah-boxing-list-logo span h2 {
+      font-size: 16px;
+    }
+
+    .Director-ah-boxing-2 {
+      padding: 14px 0px 18px 0px;
+    }
+
+    .Angeles-logo-side-box span h2 {
+      font-size: 20px;
+    }
+
+    .first-banner-txt h3 {
+      font-size: 48px;
+      width: 70%;
+      margin: 0px 0px 50px 0px !important;
+    }
+
+    .search-stations-input input {
+      width: 450px;
+      padding: 15px 20px;
+    }
+
+    .select-station-drop select {
+      padding: 18.5px 30px 18.5px 20px;
+      width: 150px;
+      margin: 0.4px 0px 0px 0px;
+      font-size: 18px !important;
+    }
+
+    .select-container {
+      padding: 2px 10px 2px 30px;
+    }
+
+    .search-stations-input.full-width input {
+      width: 720px;
+    }
+
+    .select-tv-icon {
+      top: 14px;
+    }
+
+    .first-banner-txt a {
+      font-size: 20px;
+    }
+
+    .news-director-current {
+      gap: 0px;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .review-director-para h6 {
+      font-size: 12px;
+      margin: 0px 0px 5px 0px;
+    }
+
+    .review-director-para h5 {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .review-director-para p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .director-urer {
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .news-director-current h5 {
+      font-size: 12px;
+      margin: 0px 0px 2px 0px !important;
+    }
+
+    .news-director-current a {
+      font-size: 8px;
+      margin: 3px 0px 0px 0px !important;
+    }
+
+    .review-news-director {
+      padding: 20px 20px;
+      margin: 30px 0px 20px 0px !important;
+    }
+
+    .director-urer img {
+      width: 50px;
+    }
+
+    .director-name-txt {
+      margin: 0px 0px 0px 0px;
+    }
+
+    .director-name-txt h3 {
+      font-size: 14px;
+    }
+
+    .latest-rating-user-txt h5 {
+      font-size: 16px;
+    }
+
+    .verified-rating-box h6 {
+      font-size: 14px;
+    }
+
+    .racial-discrimination h6 {
+      font-size: 12px;
+    }
+
+    .racial-discrimination p {
+      font-size: 14px;
+    }
+
+    .racial-discrimination h5 {
+      font-size: 14px;
+    }
+
+    .newroom-coworker-txt svg {
+      width: 100%;
+    }
+
+    .newroom-coworker-txt h6 {
+      font-size: 12px;
+    }
+
+    .four-select-tab ul li a {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 6px 8px;
+    }
+
+    .like-report-txt ul li {
+      font-size: 14px;
+      line-height: 28px;
+      padding: 4px 15px;
+    }
+
+    .latest-rating-comment-box {
+      margin: 30px 0px 20px 0px;
+      gap: 10px;
+    }
+
+    .latest-comment-txt-box span {
+      font-size: 12px;
+    }
+
+    .latest-comment-txt-box {
+      padding: 10px 10px;
+    }
+
+    .latest-comment-txt-box p {
+      font-size: 14px;
+      line-height: 26px;
+      margin: 0px 0px 5px 0px;
+    }
+
+    .newsletter-follow-box h4 {
+      font-size: 22px;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .follow-us-rate ul li a {
+      font-size: 16px;
+    }
+
+    .side-subscribe-box h5 {
+      font-size: 16px;
+      line-height: 30px;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .side-subscribe-box input {
+      padding: 12px 20px;
+      margin: 0px 0px 20px 0px;
+      border: none;
+    }
+
+    .side-subscribe-box button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .side-newsletter-txt h5 {
+      font-size: 16px;
+    }
+
+    .latest-rating-loadmore-btn a {
+      font-size: 16px;
+      padding: 10px 40px;
+    }
+
+    section.ratemystation-shop-sec h4 {
+      margin: 0px 0px 30px 0px !important;
+    }
+
+    section.latest-rating-sec {
+      padding: 50px 0px;
+    }
+
+    .ratemystation-prod-txt h3 {
+      font-size: 16px;
+      line-height: 24.5px;
+      margin: 0px 0px 10px 0px !important;
+      height: auto;
+    }
+
+    .prod-abslt-ratems {
+      width: 30px !important;
+      height: 45px;
+    }
+
+    .prod-light-btn {
+      font-size: 12px;
+      line-height: 20px;
+      padding: 5px 4px;
+    }
+
+    .prod-dark-btn {
+      font-size: 12px;
+      line-height: 20px;
+      padding: 5px 8px;
+    }
+
+    .ratemystation-prod-txt h6 {
+      font-size: 12px;
+    }
+
+    .ratemystation-allprod-btn a {
+      font-size: 16px;
+      line-height: 23px;
+      padding: 12px 20px;
+    }
+
+    .looking-for-worktxt h4 {
+      font-size: 26px;
+    }
+
+    .looking-for-worktxt p {
+      font-size: 18px;
+      line-height: 28.5px;
+      margin: 15px 0px 20px 0px !important;
+    }
+
+    .looking-for-worktxt a {
+      font-size: 16px;
+      line-height: 17.5px;
+      padding: 14px 30px;
+    }
+
+    .looking-for-worktxt {
+      padding: 40px 0px;
+    }
+
+    .looking-for-work-sec {
+      padding: 30px 0px;
+    }
+
+    .ratemystation-about-txt h3 {
+      font-size: 38px;
+      line-height: 53px;
+    }
+
+    .about-us-txt h4 {
+      font-size: 20px;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .about-creator-txt h5 {
+      font-size: 20px;
+      margin: 0px 0px 20px 0px !important;
+    }
+
+    .about-creator-para p {
+      font-size: 14px;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .about-creator-img-name {
+      border-radius: 0px 15px 15px 15px;
+      padding: 8px 20px 5px 30px;
+      bottom: 20px;
+      right: 30px;
+    }
+
+    .about-creator-img-name::before {
+      height: 72px;
+      left: 0px;
+    }
+
+    .about-creator-img-name h4 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    .about-creator-img-name h6 {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    .about-creator-img img {
+      width: 330px;
+    }
+
+    .creator-messages {
+      margin: 40px 0px 0px 0px;
+      padding: 30px 30px 20px 30px;
+    }
+
+    .creator-messages h4 {
+      font-size: 18px;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .your-journalism-txt {
+      padding: 20px 35px 50px 35px;
+    }
+
+    .your-journalism-txt h3 {
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    .your-journalism-txt h5 {
+      font-size: 14px;
+    }
+
+    .journal-date-written {
+      padding: 10px 0px;
+    }
+
+    .journalism-slider .slick-dots {
+      text-align: left;
+      bottom: -30px;
+    }
+
+    .newsletter-likecomment-share {
+      gap: 10px;
+    }
+
+    .newsletter-writtinsoul-txt p {
+      font-size: 12px;
+    }
+
+    .newsletter-article-text h4 {
+      font-size: 22px;
+      line-height: 34px;
+    }
+
+    .newsletter-pagination-slide .pagination {
+      padding: 5px 0px;
+      border-radius: 20px;
+    }
+
+    .newsletter-slide-article img {
+      width: 200px;
+    }
+
+    .more-soul-article img {
+      width: 100px;
+    }
+
+    .more-soul-articletxt h4 {
+      font-size: 20px;
+    }
+
+    .find-job-select-box span svg {
+      width: 15px;
+    }
+
+    .find-job-select-box input {
+      padding: 12px 40px 12px 40px;
+    }
+
+    .find-job-select-box input::placeholder {
+      font-size: 14px;
+    }
+
+    .find-job-btn button {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 9px 10px;
+    }
+
+    .filter-box select {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+
+    .filter-box p {
+      font-size: 16px;
+    }
+
+    .assistant-city-dollar-time {
+      padding: 8px 20px;
+    }
+
+    .assistant-city-dollar-time p {
+      font-size: 12px;
+    }
+
+    .assistant-director-txt h4 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .assistant-director-txt h6 {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .assistant-news-director-box ul li {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0px 0px 15px 0px;
+    }
+
+    .newsletter-pagination-slide .pagination a {
+      padding: 8px 20px;
+      font-size: 18px;
+      line-height: 33px;
+    }
+
+    .find-job-matter-txt h4 {
+      font-size: 40px;
+      margin: 0px 0px 30px 0px !important;
+    }
+
+    .job-select-opts a {
+      padding: 8px 65px;
+      font-size: 16px;
+    }
+
+    .job-save-share a {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+
+    .job-detail-name-description {
+      padding: 40px 30px;
+    }
+
+    .job-detailpg-nameflex img {
+      width: 120px;
+    }
+
+    .job-opening-btn a {
+      padding: 8px 35px;
+      font-size: 16px;
+    }
+
+    .shop-new-arrival h3 {
+      font-size: 38px;
+      line-height: 53px;
+      width: 380px;
+    }
+
+    .shop-new-arrival p {
+      font-size: 14px;
+      line-height: 26px;
+      width: 260px;
+      margin: 10px 0px 50px 0px !important;
+    }
+
+    .shop-new-arrival-img img {
+      width: 220px;
+    }
+
+    .themed-cap img {
+      width: 150px;
+    }
+
+    .themed-cap {
+      right: 0px;
+      top: 90px;
+    }
+
+    .theme-mug {
+      top: 70px;
+    }
+
+    .theme-mug img {
+      width: 150px;
+    }
+
+    .filter-box p {
+      font-size: 14px;
+    }
+
+    .filter-box select {
+      padding: 10px 5px;
+      font-size: 12px;
+    }
+
+    .filter-box {
+      gap: 5px;
+    }
+
+    .login-btn {
+      font-size: 14px;
+      border-radius: 10px;
+      padding: 0px 20px;
+    }
+
+    .header_end a:nth-child(1) svg {
+      width: 38px;
+    }
+
+    .header_end a span {
+      top: -3px;
+      right: -2px;
+      padding: 0px 6px;
+      font-size: 10px;
+    }
+
+    .header_end {
+      gap: 20px;
+    }
+
+    .shop-friend-themed {
+      padding: 26px 30px;
+      height: auto;
+    }
+
+    .header_nav ul li {
+      font-size: 14px;
+    }
+
+    .header_end a:nth-child(1) span {
+      font-size: 10px;
+    }
+
+    .header_end a svg {
+      height: 30px;
+    }
+
+    .login-btn {
+      font-size: 15px;
+      line-height: 28px;
+      padding: 4px 25px;
+    }
+
+    section.employer-login-pg-sec {
+      padding: 45px 0px;
+    }
+
+    .rating-real-journalist h3 {
+      font-size: 37px;
+    }
+
+    .employer-newroom-box button.text-white {
+      font-size: 21px;
+    }
+
+    .employer-newroom-box button {
+      color: #828282;
+      font-family: "Public Sans";
+      font-size: 22px;
+    }
+
+    .employer-inputfield label {
+      font-size: 14px;
+    }
+
+    .employerregister-field {
+      margin: 8px 0px;
+    }
+
+    .employer-newroom-box {
+      padding: 20px 40px 0px 10px;
+    }
+
+    .employer-dont-have-acc {
+      margin: 10px 0px 0px 20px;
+    }
+
+    .employer-register-btn {
+      margin: 15px 0px 30px 20px;
+    }
+
+    .employer-inputfield input {
+      padding: 9px 8px;
+    }
+
+    .employer-inputfield input::placeholder {
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    .free-subscribe-four {
+      gap: 5px;
+    }
+
+    .employer-subscription {
+      padding: 15px 11px;
+    }
+
+    .employer-register-subscription {
+      padding: 28px 12px;
+    }
+
+    .employer-register-subscription h3 {
+      font-size: 27px;
+    }
+
+    .employer-choose-subscription h6 {
+      font-size: 13px;
+    }
+
+    .employer-subscription h5 {
+      font-size: 17px;
+    }
+
+    .employer-subscription h6 {
+      font-size: 13px;
+    }
+
+    .employer-subscription span {
+      font-size: 14px;
+    }
+
+    .employer-save {
+      font-size: 11px;
+    }
+
+    .employer-dont-have-acc a {
+      font-size: 11px;
+    }
+
+    .employer-dont-have-acc a span {
+      font-size: 13px;
+    }
+
+    .employer-register-btn a {
+      font-size: 14px;
+      padding: 4px 32px;
+    }
+
+    .employer-input-checkbox label {
+      font-size: 14px;
+    }
+
+    /* .subscribe-now-txt */
+    .station-secure-box p {
+      font-size: 14px;
+      line-height: 23px;
+      padding: 0px 25px 0px 0px;
+    }
+
+    .subcription-box::before {
+      width: 132px;
+      line-height: 24px;
+      font-size: 15px;
+      padding: 6px 0px 0px 0px;
+    }
+
+    .subcription-box a {
+      font-size: 15px;
+      padding: 10px 12px;
+    }
+
+    .subcription-box h4 {
+      font-size: 20px;
+      padding: 45px 0px 5px 0px;
+    }
+
+    .subcription-box h6 {
+      font-size: 19px;
+    }
+
+    .subcription-box h5 {
+      font-size: 22px;
+      line-height: 20px;
+      padding: 0px 0px 75px 0px;
+    }
+
+    .subcription-box span {
+      font-size: 11px;
+      width: 122px;
+      padding: 6px 5px;
+    }
+
+    .subscribe-now-txt h3 {
+      font-size: 30px;
+      line-height: 55px;
+    }
+
+    .subscribe-now-txt ul li {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 6px 0px;
+    }
+
+    .subscribtion-credit-box {
+      margin: 20px 0px 0px 0px;
+      padding: 20px 0px 0px 0px;
+    }
+
+    /* PRODUCT-DETAIL */
+    .About-main-card-1-ah h2 {
+      font-size: 26px;
+      line-height: 37px;
+    }
+
+    .Sweatshirt-ah-select-box {
+      padding-top: 12px;
+    }
+
+    .Sweatshirt-ah-select-card {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      width: 46%;
+      max-width: 50%;
+    }
+
+    .Sweatshirt-ah-select-card {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      width: 46%;
+      max-width: 50%;
+    }
+
+    .Sweatshirt-ah-select-box {
+      padding-top: 12px;
+    }
+
+    .Sweatshirt-ah-select-card h2 {
+      font-size: 20px !important;
+    }
+
+    .Sweatshirt-ah-select-card button {
+      font-size: 11px;
+    }
+
+    .Description-box-tital p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .Cooper-ah-box-main {
+      width: 100%;
+      padding-top: 15px;
+    }
+
+    .Cooper-ah-tital {
+      padding: 12px 20px;
+    }
+
+    .Cooper-ah-tital h3 {
+      font-size: 15px;
+      line-height: 21px;
+      padding: 8px 0px 2px 0px;
+    }
+
+    .satisfied h2 {
+      font-size: 30px;
+    }
+
+    .Applied-ah-list-1 span h2 {
+      font-size: 22px;
+    }
+
+    .Applied-ah-list-1 {
+      padding-bottom: 18px;
+    }
+
+    .Applied-ah-card {
+      padding: 24px 34px;
+      border-radius: 20px;
+      align-items: flex-start;
+    }
+
+    .Applied-ah-logo {
+      width: 18%;
+    }
+
+    .Applied-ah-tital {
+      width: 76%;
+    }
+
+    .Applied-ah-list-2 span p {
+      font-size: 14px;
+    }
+
+    .Applied-ah-list-2 {
+      padding: 8px 15px;
+    }
+
+    .Applied-ah-list-3 {
+      padding-top: 20px;
+    }
+
+    /* CONTACT US */
+    .ratemystaion-contact-form {
+      padding: 40px;
+    }
+
+    .ratemystaion-contact-form p {
+      font-size: 13px;
+      line-height: 23px;
+      margin: 0px 0px 85px 0px !important;
+    }
+
+    .contact-form-fields {
+      padding: 40px;
+    }
+
+    .ratemystaion-contact-form h3 {
+      font-size: 40px;
+    }
+
+    .ratemystaion-contact-form p {
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0px 0px 110px 0px !important;
+    }
+
+    .ratemystaion-contact-form ul li {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    .input-field {
+      margin: 0px 0px 15px 0px;
+    }
+
+    .input-field textarea {
+      height: 175px;
+    }
+
+    .contact-form-btn button {
+      padding: 8px 55px;
+    }
+
+    .contact-follow-like-btn ul li {
+      padding: 12px 30px;
+    }
+
+    .contact-latest-updates {
+      padding: 0px 25px 20px 20px;
+    }
+
+    .americon-prod-cart img {
+      width: 100px;
+    }
+
+    .americon-prod-cart h3 {
+      color: #000;
+      font-family: "Public Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      margin: 0px;
+    }
+
+    .cart-counter {
+      padding: 8px 12px;
+      margin: 0px 6px;
+    }
+
+    .americon-prod-cart h4 {
+      padding: 0px 10px;
+    }
+
+    .americon-prod-cart h6 {
+      margin: 0px;
+    }
+
+    .review-news-director-second {
+      margin: 120px 0px 0px 0px !important;
+    }
+
+    .job-details {
+      width: 480px;
+    }
+
+    .job-detail p {
+      font-size: 14px;
+    }
+
+    .job-detail span {
+      font-size: 10px;
+    }
+
+    .job-detail {
+      flex: auto;
+    }
+
+    .search-stations-input span {
+      top: 8px;
+      font-size: 32px;
+    }
+
+    .helo-drop .drop-out {
+      padding: 2px;
+    }
+
+    nav.helo-drop label {
+      gap: 5px;
+    }
+
+    .header-end-rmssearch {
+      gap: 10px;
+    }
+    .header--end--logo {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .header-end-rmssearch a svg {
+      height: 30px;
+      padding: 5px 3px 5px 0px;
+      width: 30px;
+    }
+
+    .user--pic--header {
+      width: 30%;
+    }
+
+    .shop-new-arrival {
+      height: auto;
+      padding: 40px 40px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .header--2--main--cont {
+      max-width: 850px !important;
+    }
+    .header--2--main--row {
+      display: grid !important;
+      grid-template-columns: auto auto auto;
+    }
+    .Sweatshirt--box--alt {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .Sweatshirt--part--alt {
+      width: 100%;
+    }
+
+    .rate--product--button--container--ah {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .search-stations-input--rms--alt input {
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .About-main-ah {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .America-Sweatshirt {
+      flex-direction: column;
+      text-align: center;
+    }
+    .header-logo {
+      width: 35%;
+      padding: 0px;
+    }
+    .Sweatshirt-ah {
+      width: 100%;
+    }
+    .Cooper-ah-imger {
+      width: 9%;
+    }
+
+    .news-director-detail-btn {
+      justify-content: flex-end;
+    }
+
+    .About-main-box-1-ah {
+      width: 100%;
+    }
+
+    .rms_header_logo a {
+      display: block;
+    }
+
+    .rms_header .header_end {
+      display: none;
+    }
+
+    .rms-kabc-btn .themedark {
+      padding: 8px 30px;
+    }
+
+    .rms_header .header_nav {
+      display: none;
+    }
+
+    .rms--header--slide {
+      display: none;
+    }
+
+    .rms-mobile-header-logo .header-logo img {
+      display: none;
+    }
+
+    .rms-mobile-header-logo {
+      padding: 0px !important;
+    }
+
+    .About-main-box-2-ah {
+      width: 60%;
+    }
+
+    section.About-ah {
+      padding: 40px 0px;
+    }
+
+    .KABC-btn-box-ah {
+      width: 34%;
+    }
+
+    .ratemystation-prod-txt h3 {
+      height: 50px;
+    }
+
+    span.See button {
+      padding: 5px;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    button.Contact-ah {
+      line-height: 28px;
+    }
+
+    .KABC-part-1-ah {
+      width: 60%;
+      gap: 30px;
+    }
+
+    .Angeles-logo-side-box {
+      width: 75%;
+    }
+
+    .Angeles-logo-ah {
+      width: 15%;
+    }
+
+    .KABC-tital-ah {
+      gap: 5px;
+    }
+
+    .KABC-tital-ah span h2 {
+      font-size: 24px;
+    }
+
+    .KABC-tital-ah p {
+      font-size: 18px;
+    }
+
+    .KABC-tital-ah span p {
+      font-size: 16px;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 20px;
+    }
+
+    .main-footer {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ul-li-list-footer {
+      width: 100%;
+    }
+
+    .ul-li-list-footer ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ratings-ah-1 {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 40px;
+    }
+
+    .ratings-ah-1-TITAL {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .ratings-ah-1-box {
+      width: 34%;
+    }
+
+    .gol-bar-ah {
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 30px;
+    }
+
+    .gol-bar-head {
+      width: 100%;
+    }
+
+    .gol-bar-tital {
+      width: 42%;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .gol-bar-head h2 {
+      font-size: 55px;
+      text-align: center;
+    }
+
+    .ratings-ah-1-TITAL span h2 {
+      font-size: 60px;
+    }
+
+    .ratings-ah-1-TITAL span p {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+
+    .job-ah-post h2 {
+      font-size: 20px;
+    }
+
+    .job-ah-Filter {
+      width: 64%;
+      gap: 25px;
+    }
+
+    .job-ah-Filter-card p {
+      font-size: 16px;
+    }
+
+    .job-ah-Filter-card select {
+      padding: 8px 10px;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .director-urer img {
+      width: 10%;
+    }
+
+    .director-urer {
+      padding-bottom: 10px;
+    }
+
+    .Angeles-logo-side-box span h2 {
+      font-size: 20px;
+    }
+
+    .Jacob-card-ah {
+      width: 75%;
+    }
+
+    .Jacob-card-ah-box {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .four-select-tab {
+      margin: 25px 0px 0px 0px;
+      padding: 0px 0px 20px 0px;
+    }
+
+    .verified-rating-box h6 {
+      font-size: 14px;
+    }
+
+    .Hire-ah-box h2 {
+      font-size: 28px;
+    }
+
+    .Hire-ah-box p {
+      font-size: 18px;
+      padding: 20px 10px;
+    }
+
+    .Hire-ah-box button {
+      padding: 10px;
+      font-size: 15px;
+      line-height: 25px;
+      border-radius: 10px;
+    }
+
+    .Hire-ah-box {
+      padding: 40px 20px;
+    }
+
+    .About-main-ah {
+      gap: 25px;
+    }
+
+    .job-ah-post h2 span {
+      font-size: 16px;
+    }
+
+    .search-station-box {
+      width: 100%;
+    }
+
+    .first-banner-txt h3 {
+      font-size: 40px;
+      width: 80%;
+      margin: 0px 0px 30px 0px !important;
+    }
+
+    .select-station-drop select {
+      padding: 18px 20px 17px 10px;
+      width: 120px;
+      margin: 0.5px 0px 0px 0px;
+      font-size: 16px !important;
+    }
+
+    .select-tv-icon {
+      top: 10px;
+      left: 25px;
+    }
+
+    .select-tv-icon svg {
+      width: 30px;
+    }
+
+    .select-tv-icon svg {
+      width: 30px;
+    }
+
+    .search-stations-input span {
+      top: 4px;
+    }
+
+    .search-stations-input.full-width input {
+      width: 570px;
+      padding: 20px 15px;
+    }
+
+    .search-stations-input input {
+      width: 400px;
+      padding: 17px 15px;
+    }
+
+    .search-stations-input svg {
+      width: 30px;
+    }
+
+    .newroom-coworker-txt svg {
+      width: 150px;
+    }
+
+    .newroom-coworker-txt h6 {
+      font-size: 11px;
+    }
+
+    .newroom-coworker-txt h5 {
+      font-size: 14px;
+    }
+
+    .newsletter-side-sec {
+      padding: 50px 0px 0px 0px;
+    }
+
+    .newsletter-follow-box h4 {
+      font-size: 22px;
+      margin: 0px 0px 20px 15px !important;
+    }
+
+    .follow-us-rate {
+      padding: 20px 20px 10px 20px;
+    }
+
+    .looking-for-worktxt p {
+      font-size: 16px;
+      margin: 10px 0px 10px 0px !important;
+      width: 80%;
+    }
+
+    .looking-for-worktxt {
+      border-radius: 10px;
+    }
+
+    .looking-for-worktxt h4 {
+      font-size: 24px;
+    }
+
+    .looking-for-worktxt a {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+
+    .search-stations-input input {
+      width: 400px;
+      padding: 17px 15px;
+    }
+
+    .your-journalism-img {
+      width: 50%;
+    }
+
+    .your-journalism-txt h3 {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .your-journalism-txt {
+      width: 50%;
+      padding: 20px 25px 45px 25px;
+    }
+
+    .journal-date-written p {
+      font-size: 12px;
+    }
+
+    .journal-date-written {
+      padding: 5px 0px;
+    }
+
+    .your-journalism-img img {
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .newsletter-article-search input {
+      padding: 10px 20px;
+      width: 100%;
+    }
+
+    .newsletter-article-search span {
+      right: 10px;
+      top: 4px;
+    }
+
+    .filter-box p {
+      font-size: 14px;
+    }
+
+    .filter-short-box {
+      gap: 20px;
+      justify-content: end;
+    }
+
+    .filter-box select {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+
+    .ratemystation-prod-txt {
+      padding: 20px 15px;
+    }
+
+    .newsletter-detail-comment-para {
+      border-radius: 0px 10px 10px 10px;
+    }
+
+    .find-job-select-box {
+      margin: 0px 0px 10px 0px;
+    }
+
+    .job-select-opts {
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .job-detailpg-nameflex img {
+      width: 120px;
+    }
+
+    .job-detailpg-txt h3 {
+      font-size: 24px;
+      line-height: 30px;
+      padding: 0px 0px 5px 0px;
+    }
+
+    .job-detailpg-txt h5 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .job-detail-name-description {
+      padding: 30px 20px;
+    }
+
+    .job-openingpg-txt h3 {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .job-openingpg-txt h5 {
+      font-size: 18px;
+    }
+
+    .job-openingpg-txt h6 {
+      font-size: 16px;
+    }
+
+    .newsletter-article-search h4 {
+      font-size: 24px;
+    }
+
+    .shop-new-arrival {
+      margin: 0px 0px 20px 0px;
+      height: auto;
+    }
+
+    .shop-friend-themed h4 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0px 0px 50px 0px !important;
+    }
+
+    .themed-cap img {
+      width: 120px;
+    }
+
+    .theme-mug img {
+      width: 120px;
+    }
+
+    .shop-new-arrival {
+      padding: 30px 30px;
+      margin: 0px 10px 20px 10px;
+    }
+
+    .shop-new-arrival h3 {
+      font-size: 37px;
+    }
+
+    .shop-new-arrival p {
+      width: 300px;
+      margin: 10px 0px 30px 0px !important;
+    }
+
+    .shop-category ul li button {
+      font-size: 12px;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 20px;
+    }
+
+    .main-footer {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ul-li-list-footer {
+      width: 100%;
+    }
+
+    .ul-li-list-footer ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ratings-ah-1 {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 40px;
+    }
+
+    .ratings-ah-1-TITAL {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .ratings-ah-1-box {
+      width: 34%;
+    }
+
+    .gol-bar-ah {
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 30px;
+    }
+
+    .gol-bar-head {
+      width: 100%;
+    }
+
+    .gol-bar-tital {
+      width: 42%;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .gol-bar-head h2 {
+      font-size: 55px;
+      text-align: center;
+    }
+
+    .ratings-ah-1-TITAL span h2 {
+      font-size: 60px;
+    }
+
+    .ratings-ah-1-TITAL span p {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+
+    .job-ah-post h2 {
+      font-size: 20px;
+    }
+
+    .job-ah-Filter {
+      width: 64%;
+      gap: 25px;
+    }
+
+    .job-ah-Filter-card p {
+      font-size: 16px;
+    }
+
+    .job-ah-Filter-card select {
+      padding: 8px 10px;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .director-urer img {
+      width: 10%;
+    }
+
+    .director-urer {
+      padding-bottom: 24px;
+    }
+
+    .Angeles-logo-side-box span h2 {
+      font-size: 20px;
+    }
+
+    .Jacob-card-ah {
+      width: 75%;
+    }
+
+    .Jacob-card-ah-box {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .four-select-tab {
+      margin: 25px 0px 0px 0px;
+      padding: 0px 0px 20px 0px;
+    }
+
+    .verified-rating-box h6 {
+      font-size: 14px;
+    }
+
+    .Hire-ah-box h2 {
+      font-size: 28px;
+    }
+
+    .Hire-ah-box p {
+      font-size: 18px;
+      padding: 20px 10px;
+    }
+
+    .Hire-ah-box button {
+      padding: 10px;
+      font-size: 15px;
+      line-height: 25px;
+      border-radius: 10px;
+    }
+
+    .Hire-ah-box {
+      padding: 40px 20px;
+    }
+
+    .About-main-ah {
+      gap: 25px;
+    }
+
+    .job-ah-post h2 span {
+      font-size: 16px;
+    }
+
+    header.header_main {
+      display: none;
+    }
+
+    header.header_main_Mobile {
+      display: block;
+      padding: 20px 0px 12px 0px;
+      background: #fff;
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .sidepanel {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #194d79;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+      box-shadow: 4px 0px 5px #0000002e;
+    }
+
+    .header_nav {
+      position: absolute;
+      right: 30px;
+      top: 12px;
+    }
+
+    .header_nav button {
+      width: 40px;
+      border: none;
+      background-color: transparent;
+    }
+
+    .header_nav button:hover {
+      color: #f1f1f1;
+      background: transparent;
+      color: #194d79;
+      border: none;
+      font-size: 25px;
+    }
+
+    /* The navigation links inside the sidepanel */
+    .sidepanel a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* SECTION */
+    section.employer-login-pg-sec {
+      padding: 40px 0px;
+    }
+
+    .rating-real-journalist {
+      padding: 140px 50px;
+    }
+
+    /* .subscribtion--PAGE */
+
+    .subcription-page-sec {
+      padding: 40px 0px;
+    }
+
+    .subscribe-now-txt h3 {
+      font-size: 37px;
+      line-height: 52px;
+    }
+
+    .subscribe-now-txt p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    .subscribe-now-txt ul li {
+      font-size: 15px;
+      line-height: 21px;
+      padding: 5px 0px;
+    }
+
+    .station-secure-box p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    /* CONTACT US */
+    .ratemystaion-contact-form {
+      padding: 20px;
+    }
+
+    .ratemystaion-contact-form h3 {
+      font-size: 37px;
+    }
+
+    .ratemystaion-contact-form p {
+      font-size: 13px;
+      line-height: 23px;
+      margin: 0px 0px 40px 0px !important;
+    }
+
+    .employer-login-form {
+      padding: 0px 0px 20px 0px;
+    }
+
+    .employer-dont-have-acc {
+      margin: 0px 0px 20px 50px;
+    }
+
+    .employer-choose-subscription {
+      padding: 30px 0px 0px 0px;
+    }
+
+    .employer-inputfield input {
+      padding: 10px 10px;
+    }
+
+    .employer-register-btn {
+      margin: 15px 0px 30px 50px;
+    }
+
+    .Sweatshirt-ah-select-box {
+      justify-content: start;
+    }
+
+    .Sweatshirt-ah-select-card {
+      gap: 10px;
+      width: 48%;
+    }
+
+    .Sweatshirt-ah-select-card {
+      width: 48%;
+      margin: 0px 10px 0px 0px;
+    }
+
+    .ratemystation-about-txt h3 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .about-us-txt h4 {
+      font-size: 17px;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .about-creator-txt h5 {
+      font-size: 17px;
+      margin: 0px 0px 20px 0px !important;
+    }
+
+    .creator-messages h4 {
+      font-size: 17px;
+      margin: 0px 0px 5px 0px !important;
+    }
+
+    .About-main-box-2-ah {
+      width: 100%;
+    }
+
+    .Recommend-box-ah {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .Recommend-card-ah {
+      width: 48%;
+    }
+
+    .rms_header_logo a label {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Employees-box-btn-icon button {
+      padding: 10px;
+      gap: 5px;
+      font-size: 14px;
+    }
+    .Employees-Search {
+      flex-grow: 1;
+    }
+    .ul-li-list-footer ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .Sweatshirt-ah-select-card button {
+      width: 40%;
+    }
+    .About-main-box-2-ah {
+      width: 100%;
+    }
+
+    .About-main-box-2-tital-ah h2 {
+      font-size: 18px;
+    }
+
+    .About-main-box-2-tital-ah a {
+      font-size: 15px;
+    }
+
+    .Recommend-box-ah {
+      gap: 20px;
+      padding-top: 25px;
+    }
+
+    .Recommend-card-tital-ah {
+      padding: 10px 14px;
+    }
+
+    .Recommend-card-tital-ah h2 {
+      font-size: 14px;
+    }
+
+    section.director-search-result hr {
+      margin: 0px;
+    }
+
+    .Recommend-card-tital-ah h2 {
+      font-size: 14px;
+    }
+
+    .Applied-ah-list-1 span h2 {
+      font-size: 22px;
+    }
+
+    .news-director-card-txt h5 {
+      font-size: 18px;
+    }
+
+    .Applied-ah-list-1 {
+      padding-bottom: 18px;
+    }
+
+    .Applied-ah-card {
+      padding: 24px 34px;
+      border-radius: 20px;
+      align-items: flex-start;
+    }
+
+    .rms-profile-logo-box {
+      flex-direction: column;
+    }
+
+    .station-search-result-txt h4 {
+      font-size: 18px;
+    }
+
+    .station-search-result-txt p {
+      font-size: 14px;
+    }
+    .toggle {
+      width: 30px;
+      height: 33px;
+      gap: 6px;
+    }
+    .station-search-result-txt p span {
+      font-size: 14px;
+    }
+
+    .search-station-sec {
+      padding: 20px 0px 0px 0px;
+    }
+
+    .Applied-ah-logo {
+      width: 18%;
+    }
+    .Recommend-card-ah {
+      width: 100%;
+    }
+    .Applied-ah-tital {
+      width: 76%;
+    }
+
+    .Applied-ah-list-2 span p {
+      font-size: 14px;
+    }
+
+    .Applied-ah-list-2 {
+      padding: 8px 15px;
+    }
+
+    .Applied-ah-list-3 {
+      padding-top: 20px;
+    }
+
+    .Applied-ah-card {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Applied-ah-tital {
+      width: 100%;
+    }
+
+    .Applied-ah-list-1 span h2 {
+      font-size: 20px;
+    }
+
+    .Applied-ah-list-1 {
+      padding-bottom: 15px;
+    }
+
+    .Applied-ah-card {
+      padding: 15px 20px;
+    }
+
+    .Applied-ah-list-1 span p {
+      font-size: 18px;
+    }
+
+    .Applied-ah-list-2 span p {
+      font-size: 12px;
+    }
+
+    .Applied-ah-list-2 span {
+      gap: 5px;
+    }
+
+    .Applied-ah-list-2 span svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .KABC-box-ah {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .KABC-part-1-ah {
+      width: 100%;
+    }
+
+    .Schedule-ah-card {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .Schedule-ah-card-box {
+      width: 100%;
+      padding: 0px;
+    }
+
+    .Schedule-ah-imger {
+      width: 32%;
+    }
+
+    .KABC-btn-box-ah {
+      width: 100%;
+    }
+
+    section.KABC-ah {
+      padding-top: 40px;
+    }
+
+    .Jacob-card-ah {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .Director-ah-boxing-3 button {
+      padding: 10px;
+      line-height: 22px;
+      font-size: 12px;
+    }
+
+    .Director-ah-boxing-list-logo {
+      gap: 20px;
+    }
+
+    section.About-ah {
+      padding: 170px 0px 50px 0px;
+    }
+
+    .Director-ah-boxing-3 button {
+      padding: 10px;
+      font-size: 11px;
+      line-height: 5px;
+    }
+
+    .About-main-card-1-ah h2 span {
+      font-size: 15px;
+    }
+
+    .Sweatshirt-ah-select-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 65px;
+      padding-top: 3px;
+      justify-content: center;
+    }
+
+    .Sweatshirt-ah-select-card button {
+      font-size: 11px;
+      line-height: 24px;
+      width: 100%;
+    }
+
+    .Sweatshirt-ah-select-card h2 {
+      font-size: 11px !important;
+    }
+
+    .Sweatshirt-ah-select-card select {
+      padding: 11px;
+      font-size: 11px;
+      line-height: 26px;
+    }
+
+    .Sweatshirt-ah-select-card p {
+      font-size: 13px;
+    }
+
+    .Description-box-tital {
+      gap: 1px;
+      padding-top: 15px;
+    }
+
+    .Description-box-tital p {
+      font-size: 12px;
+      line-height: 23px;
+    }
+
+    .Description-box-tital a {
+      font-size: 14px;
+    }
+
+    .Cooper-ah-imger {
+      width: 8%;
+    }
+
+    .Cooper-ah-tital h3 {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .Cooper-ah-box-main {
+      padding-top: 10px;
+    }
+
+    .About-main-card-1-ah {
+      padding: 20px;
+    }
+
+    .Award-a a {
+      font-size: 16px;
+    }
+
+    .satisfied button {
+      font-size: 15px;
+      line-height: 29px;
+      padding: 7px;
+    }
+
+    .satisfied h3 {
+      font-size: 17px;
+      padding: 10px 0px 10px 0px;
+    }
+
+    .ratings-ah-1-bar {
+      gap: 15px;
+    }
+
+    .Award-a {
+      padding-top: 10px;
+    }
+
+    .ul-li-list-footer ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .About-main-box-2-ah {
+      width: 100%;
+    }
+
+    .About-main-box-2-tital-ah h2 {
+      font-size: 18px;
+    }
+
+    .About-main-box-2-tital-ah a {
+      font-size: 15px;
+    }
+
+    .Recommend-box-ah {
+      gap: 20px;
+      padding-top: 25px;
+    }
+
+    .Recommend-card-tital-ah {
+      padding: 10px 14px;
+    }
+
+    .Recommend-card-tital-ah h2 {
+      font-size: 14px;
+    }
+
+    .KABC-box-ah {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .KABC-part-1-ah {
+      width: 100%;
+    }
+
+    .KABC-btn-box-ah {
+      width: 100%;
+    }
+
+    section.KABC-ah {
+      padding-top: 40px;
+    }
+
+    .Jacob-card-ah {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .Director-ah-boxing-3 button {
+      padding: 10px;
+      line-height: 22px;
+      font-size: 12px;
+    }
+
+    .Director-ah-boxing-list-logo {
+      gap: 20px;
+    }
+
+    section.About-ah {
+      padding: 170px 0px 50px 0px;
+    }
+
+    .Angeles-ah-icon-side {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .Angeles-logo-side-box {
+      width: 100%;
+    }
+
+    .Angeles-ah-box {
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+
+    .Angeles-logo-ah {
+      width: 30%;
+    }
+
+    .About-main-card-1-ah p {
+      padding: 15px 0px 10px 0px;
+      font-size: 14px;
+    }
+
+    .bar-pogres-box-cards-ah {
+      flex-direction: column;
+    }
+
+    .pogras-card-ah {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .bar-pogres-box-cards-ah {
+      flex-direction: column;
+    }
+
+    .pogras-card-ah {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .Overall-Statistic-ah {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Overall-Statistic-ah ul {
+      width: 100%;
+    }
+
+    .ratings-ah-1-box {
+      width: 100%;
+    }
+
+    .gol-bar-tital {
+      width: 100%;
+      gap: 15px;
+    }
+
+    .gol-bar-head h2 {
+      font-size: 45px;
+    }
+
+    .ratings-ah-1-bar {
+      width: 100%;
+    }
+
+    section.Statistic-ah {
+      padding: 160px 0px 50px 0px;
+    }
+
+    .navtabs {
+      gap: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-KABC-ah {
+      padding: 30px 30px 20px 30px;
+    }
+
+    .Industry-ah {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .gol-bar-box {
+      width: 70%;
+    }
+
+    .Brooklyn-Simmons-card {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Brooklyn-Simmons-logo-div {
+      width: 100%;
+      gap: 20px;
+    }
+
+    .Brooklyn-Simmons-card button {
+      line-height: 28px;
+    }
+
+    span.edite svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .Award-card-ah {
+      align-items: flex-start;
+    }
+
+    .About-main-card-1-ah h2 span {
+      font-size: 16px;
+    }
+
+    .Job-box-ah {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .Job-card-ah {
+      width: 100%;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 18px;
+    }
+
+    .Job-list-2-ah {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .KABC-tital-ah span h2 {
+      font-size: 20px;
+    }
+
+    .ratings-ah-1-TITAL span h2 {
+      font-size: 60px;
+    }
+
+    .ratings-ah-1-TITAL span p {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+
+    .job-ah-post h2 {
+      font-size: 20px;
+    }
+
+    .job-ah-Filter {
+      width: 64%;
+      gap: 25px;
+    }
+
+    .job-ah-Filter-card p {
+      font-size: 16px;
+    }
+
+    .job-ah-Filter-card select {
+      padding: 8px 10px;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .director-urer img {
+      width: 10%;
+    }
+
+    .director-urer {
+      padding-bottom: 24px;
+    }
+
+    .Draft-ah {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .Hire-ah-box h2 {
+      font-size: 24px;
+    }
+
+    .Hire-ah-box p {
+      font-size: 16px;
+      padding: 18px 8px;
+    }
+
+    .Hire-ah-box button {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .four-select-tab {
+      margin: 25px 0px 0px 0px;
+      padding: 0px 0px 20px 0px;
+    }
+
+    .verified-rating-box h6 {
+      font-size: 14px;
+    }
+
+    .scrllo-bar p {
+      padding: 0px;
+      line-height: 24px;
+    }
+
+    .w3-light-grey.w3-tiny {
+      height: 12px;
+    }
+
+    .Popular-ti-ah-btn-box button {
+      font-size: 14px;
+      padding: 4px 12px;
+      border-radius: 8px;
+    }
+
+    .Popular-ti-ah-btn-box {
+      gap: 12px;
+    }
+
+    .latest-rating-user-verified {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .rating-user-box {
+      width: 100%;
+    }
+
+    .verified-rating-box {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .job-ah-post {
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .job-ah-Filter {
+      width: 100%;
+    }
+
+    .job-ah-post h2 {
+      font-size: 18px;
+    }
+
+    .job-ah-post h2 span {
+      font-size: 15px;
+    }
+
+    .review-news-director {
+      margin: 35px 0px 25px 0px;
+    }
+
+    .review-news-director {
+      margin: 25px 0px 20px 0px;
+    }
+
+    .review-director-para p {
+      font-size: 14px;
+    }
+
+    .racial-discrimination p {
+      font-size: 14px;
+    }
+
+    .racial-discrimination h5 {
+      font-size: 14px;
+    }
+
+    .like-report-submitted {
+      margin: 12px 0px;
+    }
+
+    .latest-rating-comment-box {
+      margin: 25px 0px 5px 0px;
+    }
+
+    .latest-comment-txt-input-box input {
+      padding: 12px 40px 12px 18px;
+      font-size: 16px;
+    }
+
+    .latest-rating-box {
+      margin: 0px 0px 30px 0px;
+    }
+
+    .free-subscribe-four {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .employer-register-subscription {
+      padding: 28px 24px;
+    }
+
+    .employer-subscription {
+      width: 47%;
+      padding: 15px 11px;
+    }
+
+    .new-subscription-discount {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .new-subscription-discount p {
+      font-size: 13px;
+    }
+
+    .new-subscription-discount a {
+      font-size: 14px;
+    }
+
+    /* .subscribe- */
+    .subcription-page-sec {
+      padding: 35px 0px;
+    }
+
+    .subscribe-now-txt h3 {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    .subscribe-now-txt p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .subscribe-now-txt ul li {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 4px 0px;
+    }
+
+    .subscribe-now-txt ul li svg {
+      position: absolute;
+      left: -26px;
+      top: 8px;
+    }
+
+    .subcription-box {
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .station-secure-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+    }
+
+    .station-secure-box svg {
+      width: 50px;
+      height: 25px;
+    }
+
+    .station-secure-box p {
+      font-size: 13px;
+      line-height: 23px;
+      padding: 0px 5px 0px 0px;
+    }
+
+    .subscription-credit p {
+      font-size: 14px;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
+
+    .subcription-box h4 {
+      font-size: 20px;
+      padding: 40px 0px 5px 0px;
+    }
+
+    .subcription-box h6 {
+      font-size: 19px;
+      margin: 0px 0px 25px 0px;
+    }
+
+    /* PRODUCT-QUALITY */
+    .Cooper-ah-box {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .America-Sweatshirt {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .America-ah-part-2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0px;
+    }
+
+    .About-main-card-1-ah p {
+      padding: 14px 0px 10px 0px;
+      font-size: 16px;
+    }
+
+    .Sweatshirt-ah-select-card input {
+      padding: 5px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .Sweatshirt-ah-select-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-top: 3px;
+      justify-content: center;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .Sweatshirt-ah-select-card {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 35%;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .Sweatshirt-ah-select-card select {
+      padding: 11px;
+      width: 100px;
+      font-size: 11px;
+      line-height: 26px;
+    }
+
+    .Sweatshirt-ah-select-card input {
+      padding: 6px;
+      width: 100px;
+    }
+
+    .Sweatshirt-ah-select-card h2 {
+      font-size: 13px !important;
+    }
+
+    .Sweatshirt-ah-select-card {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 50%;
+    }
+
+    .About-main-card-1-ah p {
+      padding: 10px 0px 5px 0px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .Sweatshirt-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px 0px 60px 0px;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Cooper-ah-imger {
+      width: 17%;
+    }
+
+    .Cooper-ah-tital-head {
+      width: 100%;
+      display: flex;
+      align-items: left;
+    }
+
+    .Brooklyn-Simmons-card {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Overall-Statistic-ah ul {
+      width: 100%;
+    }
+
+    .ratings-ah-1-box {
+      width: 100%;
+    }
+
+    .gol-bar-tital {
+      width: 100%;
+      gap: 15px;
+    }
+
+    .gol-bar-head h2 {
+      font-size: 45px;
+    }
+
+    .ratings-ah-1-bar {
+      width: 100%;
+    }
+
+    section.Statistic-ah {
+      padding: 160px 0px 50px 0px;
+    }
+
+    .navtabs {
+      justify-content: flex-start;
+      gap: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-KABC-ah {
+      padding: 30px 30px 20px 30px;
+    }
+
+    .Industry-ah {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .gol-bar-box {
+      width: 70%;
+    }
+
+    .Brooklyn-Simmons-card {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Brooklyn-Simmons-logo-div {
+      width: 100%;
+      gap: 20px;
+    }
+
+    .Brooklyn-Simmons-card button {
+      line-height: 28px;
+    }
+
+    span.edite svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .Website-ah-card span h2 {
+      font-size: 18px;
+    }
+
+    .Website-ah-card span h3 {
+      font-size: 18px;
+    }
+
+    .Website-ah-card button svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .Website-ah-card button {
+      padding: 10px;
+    }
+
+    .Website-ah-box {
+      gap: 20px;
+      padding-top: 35px;
+    }
+
+    .Award-card-ah {
+      align-items: flex-start;
+    }
+
+    .About-main-card-1-ah h2 span {
+      font-size: 16px;
+    }
+
+    .Job-box-ah {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .Job-card-ah {
+      width: 100%;
+    }
+
+    .Job-list-1-ah span h2 {
+      font-size: 18px;
+    }
+
+    .Job-list-2-ah {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .KABC-tital-ah span h2 {
+      font-size: 20px;
+    }
+
+    .ratings-ah-1-TITAL span h2 {
+      font-size: 60px;
+    }
+
+    .ratings-ah-1-TITAL span p {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+
+    .job-ah-post h2 {
+      font-size: 20px;
+    }
+
+    .job-ah-Filter {
+      width: 64%;
+      gap: 25px;
+    }
+
+    .job-ah-Filter-card p {
+      font-size: 16px;
+    }
+
+    .job-ah-Filter-card select {
+      padding: 8px 10px;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .director-urer img {
+      width: 10%;
+    }
+
+    .director-urer {
+      padding-bottom: 14px;
+    }
+
+    .Draft-ah {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .Hire-ah-box h2 {
+      font-size: 24px;
+    }
+
+    .Hire-ah-box p {
+      font-size: 16px;
+      padding: 18px 8px;
+    }
+
+    .Draft-ah {
+      flex-direction: column;
+    }
+
+    .Cooper-ah-tital-head {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .Hire-ah-box h2 {
+      font-size: 24px;
+    }
+
+    .Hire-ah-box p {
+      font-size: 16px;
+      padding: 18px 8px;
+    }
+
+    .Office-ah-logo {
+      width: 20%;
+    }
+
+    .Office-ah-span p {
+      padding: 0px;
+    }
+
+    .Current-ah-job-card span h3 {
+      font-size: 12px;
+    }
+
+    .Skills-ah-box-main {
+      padding-top: 14px;
+      gap: 10px;
+    }
+
+    .Skills-ah-box p {
+      padding: 10px 0px 4px 0px;
+      line-height: 20px;
+    }
+
+    .Current-ah-job p {
+      line-height: 20px;
+    }
+
+    .Education-side-ah h4 {
+      line-height: 20px;
+    }
+
+    .Education-side-ah p {
+      padding: 0px;
+    }
+
+    .Education-ah-boxing {
+      gap: 25px;
+    }
+
+    .Hire-ah-box button {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .Hire-ah-box button {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .four-select-tab {
+      margin: 25px 0px 0px 0px;
+      padding: 0px 0px 20px 0px;
+    }
+
+    .verified-rating-box h6 {
+      font-size: 14px;
+    }
+
+    .scrllo-bar p {
+      padding: 0px;
+      line-height: 24px;
+    }
+
+    .w3-light-grey.w3-tiny {
+      height: 12px;
+    }
+
+    .About-main-card-1-ah h2 {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 0px 0px 0px 0px;
+    }
+
+    .Cooper-ah-tital-head span {
+      color: #000;
+      font-family: "Public Sans", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    img {
+      width: 76%;
+    }
+
+    .America-ah {
+      width: 100%;
+    }
+
+    .Sweatshirt-ah {
+      width: 100%;
+    }
+
+    .Sweatshirt-part-1 {
+      width: 100%;
+    }
+
+    .Award-a {
+      padding-top: 10px;
+    }
+
+    .Sweatshirt-part-2 {
+      width: 100%;
+    }
+
+    .satisfied h2 {
+      font-size: 30px;
+      padding-top: 15px;
+      text-align: left;
+    }
+
+    .satisfied h3 {
+      text-align: left;
+    }
+
+    .satisfied p {
+      text-align: left;
+    }
+
+    .ratings-ah-1-bar {
+      gap: 0px;
+    }
+
+    .my-ah-class {
+      padding: 25px 0px;
+    }
+
+    .satisfied button {
+      font-size: 16px;
+      line-height: 30px;
+      padding: 9px;
+    }
+
+    .Popular-ti-ah-btn-box button {
+      font-size: 14px;
+      padding: 4px 12px;
+      border-radius: 8px;
+    }
+
+    .Popular-ti-ah-btn-box {
+      gap: 12px;
+    }
+
+    .latest-rating-user-verified {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .rating-user-box {
+      width: 100%;
+    }
+
+    .verified-rating-box {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .job-ah-post {
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .job-ah-Filter {
+      width: 100%;
+    }
+
+    .job-ah-post h2 {
+      font-size: 18px;
+    }
+
+    .job-ah-post h2 span {
+      font-size: 15px;
+    }
+
+    .review-news-director {
+      margin: 35px 0px 25px 0px;
+    }
+
+    .review-news-director {
+      margin: 25px 0px 20px 0px;
+    }
+
+    .review-news-director {
+      margin: 35px 0px 25px 0px;
+    }
+
+    section.About-ah.extara {
+      padding: 50px 0px 50px 0px;
+    }
+
+    .review-news-director {
+      margin: 25px 0px 20px 0px;
+    }
+
+    .review-director-para p {
+      font-size: 14px;
+    }
+
+    .racial-discrimination p {
+      font-size: 14px;
+    }
+
+    .racial-discrimination h5 {
+      font-size: 14px;
+    }
+
+    .like-report-txt ul li {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    .like-report-submitted {
+      margin: 12px 0px;
+    }
+
+    .latest-rating-comment-box {
+      margin: 25px 0px 5px 0px;
+    }
+
+    .latest-comment-txt-input-box input {
+      padding: 12px 40px 12px 18px;
+      font-size: 16px;
+    }
+
+    .latest-rating-box {
+      margin: 0px 0px 30px 0px;
+    }
+
+    .select-station-drop select {
+      width: 75px;
+      padding: 14.5px 0px 14.5px 12px;
+      margin: 1.2px 0px 0px 0px;
+      font-size: 12px !important;
+    }
+
+    .select-tv-icon {
+      top: 4px;
+      left: 25px;
+    }
+
+    .select-tv-icon svg {
+      width: 20px;
+    }
+
+    .search-stations-input input::placeholder {
+      font-size: 14px;
+    }
+
+    .search-stations-input input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 1px 0px 0px 0px;
+    }
+
+    .search-stations-input svg {
+      width: 24px;
+      position: relative;
+      top: 0px;
+      right: -01px;
+    }
+
+    .first-banner-txt h3 {
+      font-size: 35px;
+      width: 100%;
+      margin: 0px 0px 30px 0px !important;
+    }
+
+    .first-banner-txt a {
+      font-size: 18px;
+      margin: 40px 0px 0px 0px !important;
+    }
+
+    .first-banner-sec {
+      padding: 50px 0px;
+    }
+
+    .latest-rating-txt h3 {
+      font-size: 30px;
+    }
+
+    .news-director-current {
+      gap: 10px;
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+
+    .latest-rating-txt h3 {
+      font-size: 18px;
+    }
+
+    .director-urer img {
+      width: 20%;
+    }
+
+    .prod-abslt-ratems {
+      width: 50px !important;
+      height: 75px;
+    }
+
+    .ratemystation-prod-txt h3 {
+      font-size: 20px;
+    }
+
+    .ratemystation-prod-txt h6 {
+      font-size: 16px;
+    }
+
+    .ratemystation-prod-btn {
+      justify-content: start;
+      gap: 10px;
+    }
+
+    .prod-light-btn {
+      font-size: 14px;
+      padding: 12px 30px;
+    }
+
+    .prod-dark-btn {
+      font-size: 14px;
+      line-height: 19px;
+      padding: 12px 30px;
+    }
+
+    .newsletter-pagination-slide .pagination a {
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+
+    .journalism-img-txt {
+      flex-direction: column;
+    }
+
+    .your-journalism-img {
+      width: 100%;
+      display: none;
+    }
+
+    .your-journalism-txt {
+      width: 100%;
+      padding: 20px 25px 45px 25px;
+    }
+
+    .newsletter-article-search {
+      padding: 30px 0px 30px 0px;
+    }
+
+    .newsletter-article-search span {
+      right: 10px;
+      top: 35px;
+    }
+
+    .filter-short-box {
+      justify-content: space-between;
+    }
+
+    .filter-box select {
+      padding: 10px 15px;
+      font-size: 14px;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .newsletter-likecomment-share {
+      gap: 15px;
+    }
+
+    .newsletter-slide-article {
+      flex-direction: column;
+    }
+
+    .newsletter-slide-article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .newsletter-slide-article .newsletter-article-text {
+      border-radius: 0px 0px 20px 20px;
+      filter: none;
+    }
+
+    section.ratemystation-shop-sec h4 {
+      font-size: 30px;
+    }
+
+    .newsletter-comment-reaction ul {
+      gap: 10px;
+    }
+
+    .newsletter-detail-comment {
+      gap: 10px;
+      margin: 0px 0px 20px 0px;
+    }
+
+    .newsletter-detail-comment-para p {
+      font-size: 12px !important;
+      line-height: 20px !important;
+      margin: 0px 0px 10px 0px !important;
+    }
+
+    .newsletter-comment-reaction ul li a {
+      font-size: 12px;
+    }
+
+    .soul-witness-acc-subs a {
+      font-size: 14px;
+      line-height: 26px;
+      padding: 4px 20px;
+    }
+
+    .soul-witness-txt h4 {
+      font-size: 18px;
+    }
+
+    .article-reactions ul li a {
+      font-size: 16px;
+    }
+
+    .soul-witness-txt h6 {
+      font-size: 14px;
+      margin: 0px;
+    }
+
+    .soul-witness-user-imgtxt img {
+      width: 50px;
+    }
+
+    .more-soul-article {
+      align-items: flex-start;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .more-soul-articletxt h4 {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 0px 0px 10px 0px;
+    }
+
+    .more-from-soul-witness-box {
+      padding: 30px 20px;
+    }
+
+    .job-start-matter-sec {
+      padding: 50px 0px;
+    }
+
+    .assistant-director-txt h4 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .assistant-city-dollar-time p {
+      font-size: 11px;
+    }
+
+    .assistant-city-dollar-time {
+      padding: 8px 10px;
+      margin: 10px 0px 0px 0px;
+    }
+
+    .assistant-news-director-box ul li {
+      font-size: 12px;
+      line-height: 20px;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .actively-hiring-updated a {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+
+    .job-detailpg-nameflex {
+      align-items: start;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .job-detailpg-nameflex img {
+      width: 100px;
+    }
+
+    .job-detail-name-description {
+      padding: 30px 20px;
+    }
+
+    .job-select-opts {
+      flex-direction: column;
+      gap: 0px;
+      align-items: start;
+      margin: 10px 0px 0px 0px;
+    }
+
+    .job-save-share {
+      margin: 10px 0px 0px 0px;
+      gap: 10px;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .job-select-opts a {
+      width: 100%;
+    }
+
+    .job-save-share a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .job-qualification-point {
+      flex-direction: column;
+    }
+
+    .shop-new-arrival {
+      padding: 30px 40px;
+      margin: 0px 0px 10px 0px;
+      height: auto;
+    }
+
+    .shop-new-arrival-img img {
+      width: 150px;
+    }
+
+    .shop-new-arrival h6 {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .shop-new-arrival h3 {
+      font-size: 28px;
+      line-height: 30px;
+      width: 100%;
+    }
+
+    .shop-new-arrival p {
+      margin: 10px 0px 20px 0px !important;
+      padding: 0px 100px 0px 0px;
+      width: 100%;
+    }
+
+    .themed-cap {
+      right: 0px;
+      top: 40%;
+    }
+
+    .shop-friend-themed h4 {
+      color: #000;
+      font-family: "Public Sans", sans-serif;
+      font-size: 18px;
+      margin: 0px 0px 40px 0px !important;
+    }
+
+    .themed-cap img {
+      width: 150px;
+    }
+
+    .themed-abslt-img {
+      top: 40px;
+    }
+
+    .themed-abslt-img img {
+      width: 150px;
+    }
+
+    .latest-rating-box {
+      margin: 0px 0px 30px 0px;
+    }
+
+    .Education-logo {
+      width: 50%;
+    }
+
+    /* 
 CONTACTUS */
-  .contact-form-fields {
-    padding: 0px;
-  }
+    .contact-form-fields {
+      padding: 0px;
+    }
 
-  .contact-form-fields {
-    padding: 0px;
-  }
+    .contact-form-fields {
+      padding: 0px;
+    }
 
-  .contact-follow-like-btn ul li {
-    font-size: 12px;
-    padding: 4px 12px;
-  }
+    .contact-follow-like-btn ul li {
+      font-size: 12px;
+      padding: 4px 12px;
+    }
 
-  .contact-follow-topline {
-    padding: 20px 0px 0px 0px;
-    border-top: 1px solid #e0e0e0;
-    margin: 20px 0px 0px 0px;
-  }
+    .contact-follow-topline {
+      padding: 20px 0px 0px 0px;
+      border-top: 1px solid #e0e0e0;
+      margin: 20px 0px 0px 0px;
+    }
 
-  .shop-category {
-    gap: 20px;
-    flex-direction: column;
-  }
+    .shop-category {
+      gap: 20px;
+      flex-direction: column;
+    }
 
-  .ratemystation-shop-prod {
-    border-radius: 20px;
-  }
+    .ratemystation-shop-prod {
+      border-radius: 20px;
+    }
 
-  .filter-box {
-    gap: 15px;
-  }
+    .filter-box {
+      gap: 15px;
+    }
 
-  .rating-real-journalist {
-    border-radius: 20px 20px 0px 0px;
-  }
+    .rating-real-journalist {
+      border-radius: 20px 20px 0px 0px;
+    }
 
-  .employer-newroom-box {
-    padding: 20px 20px 0px 20px;
-  }
+    .employer-newroom-box {
+      padding: 20px 20px 0px 20px;
+    }
 
-  .employer-inputfield input {
-    padding: 10px 12px;
-  }
+    .employer-inputfield input {
+      padding: 10px 12px;
+    }
 
-  .employer-dont-have-acc {
-    margin: 10px 0px 20px 40px;
-  }
+    .employer-dont-have-acc {
+      margin: 10px 0px 20px 40px;
+    }
 
-  .employer-register-btn {
-    margin: 15px 0px 30px 30px;
-  }
+    .employer-register-btn {
+      margin: 15px 0px 30px 30px;
+    }
 
-  .employer-login-form {
-    padding: 0px 0px 20px 0px;
-  }
+    .employer-login-form {
+      padding: 0px 0px 20px 0px;
+    }
 
-  .rms-rating-review p {
-    margin: 10px 0px 5px 0px !important;
-  }
+    .rms-rating-review p {
+      margin: 10px 0px 5px 0px !important;
+    }
 
-  .americon-prod-cart {
-    align-items: start;
-    flex-direction: column;
-  }
+    .americon-prod-cart {
+      align-items: start;
+      flex-direction: column;
+    }
 
-  .americon-prod-cart img {
-    margin: 0px 0px 10px 0px;
-  }
+    .americon-prod-cart img {
+      margin: 0px 0px 10px 0px;
+    }
 
-  .americon-prod-cart h3 {
-    padding: 0px 0px 10px 0px;
-  }
+    .americon-prod-cart h3 {
+      padding: 0px 0px 10px 0px;
+    }
 
-  .cart-counter {
-    padding: 8px 12px;
-    margin: 0px 0px 10px 0px;
-  }
+    .cart-counter {
+      padding: 8px 12px;
+      margin: 0px 0px 10px 0px;
+    }
 
-  .americon-prod-cart h6 {
-    display: none;
-  }
+    .americon-prod-cart h6 {
+      display: none;
+    }
 
-  .product-quality-total {
-    margin: 10px 30px 20px 0px;
-  }
+    .product-quality-total {
+      margin: 10px 30px 20px 0px;
+    }
 
-  .mycart-qualitytotal {
-    gap: 30px;
-  }
+    .mycart-qualitytotal {
+      gap: 30px;
+    }
 
-  .job-details {
-    width: 350px;
-    left: 10px;
-    top: 80px;
-  }
+    .job-details {
+      width: 350px;
+      left: 10px;
+      top: 80px;
+    }
 
-  .job-detail p {
-    font-size: 10px;
-  }
+    .job-detail p {
+      font-size: 10px;
+    }
 
-  .review-news-director-second {
-    margin: 55px 0px 0px 0px !important;
-  }
+    .review-news-director-second {
+      margin: 55px 0px 0px 0px !important;
+    }
 
-  .select-box option {
-    font-size: 14px !important;
-  }
-  .search-stations-input svg {
-    top: 0px;
-    right: 0px;
-  }
+    .select-box option {
+      font-size: 14px !important;
+    }
+    .search-stations-input svg {
+      top: 0px;
+      right: 0px;
+    }
 
-  .search-stations-input.full-width input {
-    width: 350px;
-    padding: 15px 15px;
-  }
-  .like-report-submitted p {
-    font-size: 12px;
-  }
+    .search-stations-input.full-width input {
+      width: 350px;
+      padding: 15px 15px;
+    }
+    .like-report-submitted p {
+      font-size: 12px;
+    }
 
-  .follow-us-rate ul li a svg {
-    width: 20px;
-  }
+    .follow-us-rate ul li a svg {
+      width: 20px;
+    }
 
-  .select-station-drop select {
-    padding: 18px 0px 18px 0px;
-  }
+    .select-station-drop select {
+      padding: 18px 0px 18px 0px;
+    }
 
-  .select-icon {
-    width: 30px;
-    height: 30px;
-  }
+    .select-icon {
+      width: 30px;
+      height: 30px;
+    }
 
-  .contact-latest-updates {
-    padding: 0px 25px 20px 0px;
-  }
+    .contact-latest-updates {
+      padding: 0px 25px 20px 0px;
+    }
 
-  .contact-follow-like-btn ul {
-    justify-content: space-between;
-  }
+    .contact-follow-like-btn ul {
+      justify-content: space-between;
+    }
 
-  section.About-ah {
-    padding: 150px 0px 10px 0px;
-  }
+    section.About-ah {
+      padding: 150px 0px 10px 0px;
+    }
 
-  .newsletter-long-txt {
-    padding: 0px 25px 0px 25px;
-  }
+    .newsletter-long-txt {
+      padding: 0px 25px 0px 25px;
+    }
 
-  .newsletter-article-detail .newsletter-article-text {
-    padding: 30px 20px 30px 20px;
+    .newsletter-article-detail .newsletter-article-text {
+      padding: 30px 20px 30px 20px;
+    }
   }
 }

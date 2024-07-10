@@ -100,7 +100,9 @@ import Dash6ah from "./admin/dash6ah";
 import Dash7ah from "./admin/dash7ah";
 import Dash8ah from "./admin/dash8ah";
 import Dash9ah from "./admin/dash9ah";
+import Orders from "./admin/Orders_popup";
 import WooStatistich from "./admin/WooStatistich";
+
 
 function App() {
   return (
@@ -331,7 +333,8 @@ admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
 admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
 admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
 
-        <Route path="/btn" exact element={<Btn />} />
+        <Route path="/btn" exact element={<Btn  />} /> 
+        <Route path="/Orders_popup" exact element={<Orders />} />
         <Route path="/dah1" exact element={<Dash1ah />} />
         <Route path="/dah2" exact element={<Dash2ah />} />
         <Route path="/dah3" exact element={<Dash3ah />} />
