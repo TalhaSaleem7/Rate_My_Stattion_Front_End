@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux"; // Import Provider from react-redux
 
 import "../src/css/App.css";
-
 import About from "./About/About";
 import Dirctors from "./Dirctors/Dirctors";
 import Award from "./Award/Award";
@@ -100,7 +99,6 @@ import DashStationRating from "./admin/DashboardStationRatingh";
 import DashInsightSech from "./admin/DashboardInsighth";
 import AdminHeader from "./admin/AdminHeader/AdminHeader";
 import AdminSidebarh from "./admin/AdminSidebar/AdminSidebarh";
-
 import Btn from "./admin/btn";
 import Dash1ah from "./admin/dash1ah";
 import Dash2ah from "./admin/dash2ah";
@@ -207,17 +205,11 @@ function App() {
         <Route path="/jobopennewsroomh" exact element={<JobOpenNewsroom />} />
         <Route path="/jobopenrateh" exact element={<JobOpenRateh />} />
         <Route path="/Dashboardhomeh" exact element={<DashHomeh />} />
-        <Route
-          path="/Dashboardstationratingh"
-          exact
-          element={<DashStationRating />}
-        />
+        <Route path="/Dashboardstationratingh" exact element={<DashStationRating />}/>
         <Route path="/Dashboardinsighth" exact element={<DashInsightSech />} />
         <Route path="/WooStatistics" exact element={<WooStatistich />} />
-
         <Route path="/adminheaderh" exact element={<AdminHeader />} />
         <Route path="/adminsidebarh" exact element={<AdminSidebarh />} />
-
         <Route path="/directorinfoh" exact element={<DirectorInfoForm />} />
         <Route path="/Chartah1" exact element={<Chartah1 />} />
         <Route path="/Chartah2" exact element={<Chartah2 />} />
@@ -271,9 +263,9 @@ function App() {
 
 
         {/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
-admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
-admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
-admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
+          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
 
         {/* <Route path="/btn" exact element={<Btn  />} /> 
         <Route path="/Orders_popup" exact element={<Orders />} />
@@ -286,12 +278,9 @@ admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
         <Route path="/dah7" exact element={<Dash7ah />} />
         <Route path="/dah8" exact element={<Dash8ah />} />
         <Route path="/dah9" exact element={<Dash9ah />} /> */}
-
-
-
-
         {/* <Routes> */}
-      <Route path="/Dashbord" element={<MainLayouts />}>
+
+        <Route path="/Dashbord" element={<MainLayouts />}>
         <Route index element={<DashHomeh />} />
         <Route path="DashHomeh" element={<DashHomeh />} />
         <Route path="Dash1ah" element={<Dash1ah />} />
@@ -320,12 +309,14 @@ admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
         <Route path="AdminManagement" element={<AdminManagement />} />
         <Route path="BillingDashboard" element={<BillingDashboard />} />
       </Route>
-    {/* </Routes> */}
-
+      
+        {/* </Routes> */}
         {/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
-admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
-admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
-admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
+        admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+        admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+        admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
+
+
       </Routes>
     </Router>
   );

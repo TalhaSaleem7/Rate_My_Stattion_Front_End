@@ -74,12 +74,10 @@ const AdminSidebarh = () => {
   };
   return (
     <section
-      className={`sidebar--cont--admin--h ${
-        isCollapse ? "sidebar--cont--admin--h--collapse" : ""
-      }`}
+      className={`sidebar--cont--admin--h ${isCollapse ? "sidebar--cont--admin--h--collapse" : ""
+        }`}
     >
       <div className="admin--sidebar--items--cont--h">
-
         <Link to="/Dashbord">
           <div className="admin--sidebar--item--h">
             <div className="admin--sidebr--logo--h">
@@ -91,7 +89,7 @@ const AdminSidebarh = () => {
                 fill="none"
               >
                 <path
-                    className={`${isUser ? "svg-fill-color" : ""}`}
+                  className={`${isUser ? "svg-fill-color" : ""}`}
                   d="M12.0601 0H12.9386C12.9583 0.0146106 12.9804 0.0256473 13.0039 0.0326047C13.9574 0.153894 14.7505 0.586884 15.4575 1.23115C18.1907 3.72171 20.9285 6.20749 23.6708 8.68849C24.172 9.13286 24.5472 9.70145 24.7587 10.337C24.8598 10.6428 24.9211 10.9623 25 11.2753V21.0867C24.9817 21.1728 24.9609 21.2576 24.9465 21.3443C24.5956 23.5138 22.9012 25.0104 20.7215 24.9999C15.239 24.9739 9.7565 24.9928 4.274 24.9882C3.97335 24.9933 3.67293 24.9683 3.37721 24.9139C2.42209 24.7265 1.56225 24.2119 0.945796 23.4588C0.329347 22.7057 -0.00510485 21.7612 5.89106e-05 20.7881C5.89106e-05 17.795 0.00331997 14.8025 5.89106e-05 11.8088C5.89106e-05 10.5424 0.456607 9.48209 1.39579 8.63045C4.16117 6.12207 6.92612 3.61477 9.69063 1.10856C10.2086 0.634878 10.8361 0.297207 11.5168 0.125854C11.6968 0.0762949 11.8788 0.0404298 12.0601 0Z"
                   fill="black"
                 />
@@ -146,7 +144,7 @@ const AdminSidebarh = () => {
               className="admin--sidebr--list--h"
             >
               <Link to="/Dashbord/Dash1ah">
-                <li >New Ratings</li>
+                <li>New Ratings</li>
               </Link>
 
               <Link to="/Dashbord/Dash2ah">
@@ -208,47 +206,49 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-              <Link to="/Dashbord/Dash6ah"><li>Employee Ac
-              count</li></Link>
-<Link to="/Dashbord/Dash7ah">              
-              <li>Newsroom Account</li></Link>
+              <Link to="/Dashbord/Dash6ah">
+                <li>Employee Ac count</li>
+              </Link>
+              <Link to="/Dashbord/Dash7ah">
+                <li>Newsroom Account</li>
+              </Link>
 
-<Link to="/Dashbord/Dash8ah">
-              <li>Unauthorized Account</li></Link>
+              <Link to="/Dashbord/Dash8ah">
+                <li>Unauthorized Account</li>
+              </Link>
 
-<Link to="/Dashbord/DashStationRating">
-              <li>Station’s Ratings</li></Link>
+              <Link to="/Dashbord/DashStationRating">
+                <li>Station’s Ratings</li>
+              </Link>
 
-<Link to="/Dashbord/Dash9ah">
-              <li>Subscription</li></Link>
-              
+              <Link to="/Dashbord/Dash9ah">
+                <li>Subscription</li>
+              </Link>
             </motion.ul>
           )}
         </div>
 
         <Link to="/Dashbord/DashInsightSech">
-        <div className="admin--sidebar--item--h">
-          <div className="admin--sidebr--logo--h">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-            >
-              <path
-                d="M11.2257 0.5H14.7803C15.3026 0.533917 15.8249 0.567835 16.3466 0.601074C17.6137 0.685868 18.8687 0.845958 20.1033 1.15868C22.719 1.82143 24.4685 3.38977 25.2316 6.00888C25.6244 7.35608 25.8014 8.73652 25.8991 10.1305C25.9364 10.6603 25.9669 11.1915 26.0015 11.7219V15.2758C25.9676 15.807 25.9337 16.3374 25.8991 16.8679C25.8007 18.2443 25.6278 19.6084 25.2438 20.938C24.5431 23.3611 23.0141 24.9586 20.5869 25.6939C18.9209 26.1986 17.2081 26.3628 15.4824 26.4401C13.5212 26.5345 11.5562 26.5173 9.59699 26.3885C8.22876 26.2949 6.87342 26.1172 5.55063 25.7333C3.1391 25.0325 1.54362 23.5089 0.809648 21.092C0.513132 20.0865 0.31146 19.0554 0.207273 18.0123C0.00376779 16.1502 -0.0213312 14.2814 0.0125863 12.4105C0.0478605 10.4595 0.157753 8.51131 0.610891 6.59701C1.24718 3.9121 2.78839 2.06902 5.48755 1.27739C6.84425 0.880554 8.23079 0.700113 9.63362 0.599039C10.1641 0.567835 10.6952 0.533917 11.2257 0.5ZM14.0816 13.4999C14.0816 12.7808 14.0816 12.062 14.0816 11.3434C14.0816 10.2581 14.0877 9.17813 14.0816 8.09616C14.0761 7.43206 13.5538 6.95246 12.9182 7.00266C12.4237 7.04133 11.9176 7.46123 11.9203 8.19452C11.9346 11.7294 11.9264 15.265 11.9271 18.7998C11.9271 18.8677 11.9271 18.9355 11.9319 19.0033C11.9436 19.1596 11.9894 19.3115 12.066 19.4481C12.1427 19.5848 12.2483 19.7031 12.3756 19.7946C12.5028 19.8861 12.6485 19.9486 12.8025 19.9777C12.9565 20.0068 13.115 20.0019 13.2669 19.9632C13.7878 19.8275 14.0809 19.4205 14.0809 18.8283C14.0831 17.052 14.0834 15.2758 14.0816 13.4999ZM19.5023 15.6849C19.5023 14.6199 19.5023 13.5548 19.5023 12.4898C19.5023 11.8203 19.041 11.3299 18.4169 11.3299C17.8064 11.3299 17.3315 11.8135 17.3315 12.4634C17.3261 14.5934 17.3277 16.7234 17.3363 18.8534C17.3417 19.0719 17.3987 19.2859 17.5025 19.4782C17.727 19.894 18.2263 20.0806 18.6781 19.9619C18.9109 19.9074 19.1185 19.7758 19.2671 19.5885C19.4157 19.4012 19.4967 19.1692 19.4968 18.9301C19.507 17.8488 19.5016 16.7668 19.5023 15.6849ZM6.50372 16.7221C6.50372 17.4323 6.50372 18.1418 6.50372 18.8521C6.50372 19.5087 6.95821 19.9903 7.57144 19.9978C8.18467 20.0053 8.66562 19.5338 8.66969 18.8799C8.67918 17.4594 8.67918 16.0392 8.66969 14.6192C8.66562 13.9646 8.18942 13.4945 7.57415 13.4999C6.95889 13.5053 6.50643 13.987 6.50372 14.6422C6.501 15.3355 6.50372 16.0288 6.50372 16.7221Z"
-                fill="black"
-              />
-            </svg>
+          <div className="admin--sidebar--item--h">
+            <div className="admin--sidebr--logo--h">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+              >
+                <path
+                  d="M11.2257 0.5H14.7803C15.3026 0.533917 15.8249 0.567835 16.3466 0.601074C17.6137 0.685868 18.8687 0.845958 20.1033 1.15868C22.719 1.82143 24.4685 3.38977 25.2316 6.00888C25.6244 7.35608 25.8014 8.73652 25.8991 10.1305C25.9364 10.6603 25.9669 11.1915 26.0015 11.7219V15.2758C25.9676 15.807 25.9337 16.3374 25.8991 16.8679C25.8007 18.2443 25.6278 19.6084 25.2438 20.938C24.5431 23.3611 23.0141 24.9586 20.5869 25.6939C18.9209 26.1986 17.2081 26.3628 15.4824 26.4401C13.5212 26.5345 11.5562 26.5173 9.59699 26.3885C8.22876 26.2949 6.87342 26.1172 5.55063 25.7333C3.1391 25.0325 1.54362 23.5089 0.809648 21.092C0.513132 20.0865 0.31146 19.0554 0.207273 18.0123C0.00376779 16.1502 -0.0213312 14.2814 0.0125863 12.4105C0.0478605 10.4595 0.157753 8.51131 0.610891 6.59701C1.24718 3.9121 2.78839 2.06902 5.48755 1.27739C6.84425 0.880554 8.23079 0.700113 9.63362 0.599039C10.1641 0.567835 10.6952 0.533917 11.2257 0.5ZM14.0816 13.4999C14.0816 12.7808 14.0816 12.062 14.0816 11.3434C14.0816 10.2581 14.0877 9.17813 14.0816 8.09616C14.0761 7.43206 13.5538 6.95246 12.9182 7.00266C12.4237 7.04133 11.9176 7.46123 11.9203 8.19452C11.9346 11.7294 11.9264 15.265 11.9271 18.7998C11.9271 18.8677 11.9271 18.9355 11.9319 19.0033C11.9436 19.1596 11.9894 19.3115 12.066 19.4481C12.1427 19.5848 12.2483 19.7031 12.3756 19.7946C12.5028 19.8861 12.6485 19.9486 12.8025 19.9777C12.9565 20.0068 13.115 20.0019 13.2669 19.9632C13.7878 19.8275 14.0809 19.4205 14.0809 18.8283C14.0831 17.052 14.0834 15.2758 14.0816 13.4999ZM19.5023 15.6849C19.5023 14.6199 19.5023 13.5548 19.5023 12.4898C19.5023 11.8203 19.041 11.3299 18.4169 11.3299C17.8064 11.3299 17.3315 11.8135 17.3315 12.4634C17.3261 14.5934 17.3277 16.7234 17.3363 18.8534C17.3417 19.0719 17.3987 19.2859 17.5025 19.4782C17.727 19.894 18.2263 20.0806 18.6781 19.9619C18.9109 19.9074 19.1185 19.7758 19.2671 19.5885C19.4157 19.4012 19.4967 19.1692 19.4968 18.9301C19.507 17.8488 19.5016 16.7668 19.5023 15.6849ZM6.50372 16.7221C6.50372 17.4323 6.50372 18.1418 6.50372 18.8521C6.50372 19.5087 6.95821 19.9903 7.57144 19.9978C8.18467 20.0053 8.66562 19.5338 8.66969 18.8799C8.67918 17.4594 8.67918 16.0392 8.66969 14.6192C8.66562 13.9646 8.18942 13.4945 7.57415 13.4999C6.95889 13.5053 6.50643 13.987 6.50372 14.6422C6.501 15.3355 6.50372 16.0288 6.50372 16.7221Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div className="admin--sidebar--text--h">
+              <h1>Insight</h1>
+            </div>
           </div>
-          <div className="admin--sidebar--text--h">
-            <h1>Insight</h1>
-          </div>
-        </div>
         </Link>
-
-
 
         <div className="admin--sidebar--item--h-cont">
           <div onClick={toggleJob} className="admin--sidebar--item--h">
@@ -292,11 +292,11 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-                  <Link to="/Dashbord/JobOpenNewsroom">
-              <li>Newsroom</li>
+              <Link to="/Dashbord/JobOpenNewsroom">
+                <li>Newsroom</li>
               </Link>
               <Link to="/Dashbord/JobOpenRateh">
-              <li>Rate My Station</li>
+                <li>Rate My Station</li>
               </Link>
             </motion.ul>
           )}
@@ -344,21 +344,25 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-                     <Link to="/Dashbord/WooStatistich">
-              <li>Statistic</li></Link>
+              <Link to="/Dashbord/WooStatistich">
+                <li>Statistic</li>
+              </Link>
 
               <Link to="/Dashbord/ProductDashboard">
-              <li>Product</li></Link>
+                <li>Product</li>
+              </Link>
 
               <Link to="/Dashbord/OrderDashboard">
-              <li>Order</li></Link>
+                <li>Order</li>
+              </Link>
 
               <Link to="/Dashbord/CuponsDashoard">
-              <li>Coupons</li></Link>
+                <li>Coupons</li>
+              </Link>
 
               <Link to="/Dashbord/SettingDashboard">
-              <li>Settings</li></Link>
-
+                <li>Settings</li>
+              </Link>
             </motion.ul>
           )}
         </div>
@@ -406,13 +410,16 @@ const AdminSidebarh = () => {
               className="admin--sidebr--list--h"
             >
               <Link to="/Dashbord/ReportRatingDashboard">
-              <li>Reported Ratings</li></Link>
+                <li>Reported Ratings</li>
+              </Link>
 
               <Link to="/Dashbord/ReportedDms">
-              <li>Reported DMs</li></Link>
+                <li>Reported DMs</li>
+              </Link>
 
               <Link to="/Dashbord/ReportedArticleDashboard">
-              <li>Reported Articles</li></Link>
+                <li>Reported Articles</li>
+              </Link>
             </motion.ul>
           )}
         </div>
@@ -459,14 +466,18 @@ const AdminSidebarh = () => {
               variants={boxVariants}
               className="admin--sidebr--list--h"
             >
-                 <Link to="/Dashbord/PagesDashboard">
-              <li>Pages</li></Link>
+              <Link to="/Dashbord/PagesDashboard">
+                <li>Pages</li>
+              </Link>
               <Link to="/Dashbord/NewsletterDashboard">
-              <li>Newsletter</li></Link>
+                <li>Newsletter</li>
+              </Link>
               <Link to="/Dashbord/AdminManagement">
-              <li>Admin</li></Link>
+                <li>Admin</li>
+              </Link>
               <Link to="/Dashbord/BillingDashboard">
-              <li>Billing</li></Link>
+                <li>Billing</li>
+              </Link>
             </motion.ul>
           )}
         </div>

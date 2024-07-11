@@ -89,32 +89,32 @@ export const Homepage = () => {
                   </div>
                 </div>
                 <a href="#">Find a News Director by name</a> */}
-                  <div className={`search-stations-input ${isSearchByName ? 'full-width' : ''}`}>
-                    {isSearchByName ? (
+                <div className={`search-stations-input ${isSearchByName ? 'full-width' : ''}`}>
+                  {isSearchByName ? (
+                    <input
+                      type="search"
+                      name=""
+                      id=""
+                      placeholder="Search News Director..."
+                    />
+                  ) : (
+                    <>
+                      <HomeSelectOption />
                       <input
                         type="search"
                         name=""
                         id=""
-                        placeholder="Search News Director..."
+                        placeholder="Search Stations..."
                       />
-                    ) : (
-                      <>
-                        <HomeSelectOption />
-                        <input
-                          type="search"
-                          name=""
-                          id=""
-                          placeholder="Search Stations..."
-                        />
-                      </>
-                    )}
-                    <span>
-                      <RiSearchLine onClick={searchstaion} />
-                    </span>
-                  </div>
-                  <a href="#" onClick={toggleSearchMode}>
-                    {isSearchByName ? 'Find a Station by name' : 'Find a News Director by name'}
-                  </a>
+                    </>
+                  )}
+                  <span>
+                    <RiSearchLine onClick={searchstaion} />
+                  </span>
+                </div>
+                <a href="#" onClick={toggleSearchMode}>
+                  {isSearchByName ? 'Find a Station by name' : 'Find a News Director by name'}
+                </a>
               </div>
             </Col>
           </Row>
@@ -478,9 +478,9 @@ export const Homepage = () => {
           </Row>
           <Row>
             <Col lg={12}>
-               <div className="latesthomepg-line">
-                  <hr/>
-               </div>
+              <div className="latesthomepg-line">
+                <hr />
+              </div>
             </Col>
           </Row>
         </Container>
