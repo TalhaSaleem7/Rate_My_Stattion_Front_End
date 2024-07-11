@@ -24,7 +24,6 @@ const SettingDashboard = () => {
                                         <Tab>Settings 3</Tab>
                                         <Tab>Settings 4</Tab>
                                     </TabList>
-
                                     <TabPanel>
                                         <div className="setting_dashboard_setting">
                                             <Row>

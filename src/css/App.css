@@ -759,7 +759,7 @@ section.About-ah {
   cursor: pointer;
   transition: color 0.3s;
   padding-bottom: 24px;
-  color: var(--000000, #000);
+  /* color: var(--000000, #000); */
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 20px;
@@ -769,14 +769,10 @@ section.About-ah {
   /* 130% */
 }
 
-.navtab:hover {
+/* .navtab:hover {
   color: #89c400;
-}
+} */
 
-.navtab.active {
-  color: #89c400;
-  font-weight: 600;
-}
 
 .underline {
   position: absolute;
@@ -7955,6 +7951,12 @@ ul.rms--header--slide li a {
   line-height: 33px;
 }
 
+.navtabs .react-tabs__tab-list .react-tabs__tab--selected {
+
+  color: var(--ffffff, #89c400) !important;
+
+
+}
 .setting_dashboard_setting {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   padding: 31px 31px 37px 31px;
@@ -8605,10 +8607,6 @@ ul.rms--header--slide li a {
   justify-content: space-between;
 }
 
-.side-box-my {}
-
-
-
 .side-box-my {
   width: 87%;
   height: 90vh;
@@ -8620,6 +8618,7 @@ header {
   position: relative;
   background: white;
 }
+
 .dashboard_newletter_box::before {
   position: absolute;
   content: "";
@@ -8677,6 +8676,15 @@ header {
   padding: 0px 0px 25px 0px;
 }
 
+.navtabs ul {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  border: none;
+  justify-content: space-between !important;
+}
+
+.navtabs ul li {border: none;}
 .pagesdash_add_search {
   display: flex;
   align-items: center;
@@ -9683,6 +9691,7 @@ span.sl-icon svg {
   bottom: -5px;
   right: 5px;
 }
+
 .Reporter-dah-box {
   width: 100%;
   display: flex;
@@ -9979,8 +9988,6 @@ button.Deny {
   color: #194d79 !important;
 }
 
-b {
-}
 
 button.Deny:hover {
   background-color: #194d79 !important;
@@ -10005,9 +10012,11 @@ button.Deny:hover {
   font-weight: 400;
   line-height: 26px; /* 162.5% */
 }
+
 .ahd-card-body-end.more-pading-lost {
   padding-top: 0px;
 }
+
 .Uploaded-documents-box {
   width: 100%;
   display: flex;
@@ -10068,6 +10077,7 @@ button.Deny:hover {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 /* 
 .Employees-tabs {
   width: 48%;
@@ -10102,6 +10112,7 @@ button.Deny:hover {
   border: none;
   right: 20px;
 }
+
 #customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -10200,14 +10211,17 @@ button.Deny:hover {
   padding: 10px;
   right: 0px;
 }
+
 .admin-dp {
   width: 60px;
 }
+
 button.dropbtn svg {
   width: 80px;
   height: 40px;
   border-radius: 24px;
 }
+
 td.gg-td {
   display: flex;
   align-items: center;
@@ -10235,6 +10249,7 @@ td.gg-td {
   align-items: center;
   justify-content: center;
 }
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;

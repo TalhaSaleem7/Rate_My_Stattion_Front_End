@@ -25,6 +25,7 @@ import Footerah from "../footerah/Footerah";
 import { Container } from "react-bootstrap";
 import Header1 from "../Header/Header2";
 import { useNavigate } from "react-router-dom";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const Kabcah1 = () => {
   const navigate = useNavigate();
@@ -32,6 +33,7 @@ const Kabcah1 = () => {
   return (
     <>
       <Header1 />
+      <Tabs>
       <section class="KABC-ah">
         <Container>
           <div class="main-KABC-ah ah-spas">
@@ -105,25 +107,26 @@ const Kabcah1 = () => {
             </div>
 
             <div class="navtabs">
-              <div class="navtab active" data-target="Profile">
+            <TabList >
+                <Tab><div class="navtab active" data-target="Profile">
                 Profile
-              </div>
-              <div class="navtab" data-target="ratings">
+              </div></Tab>
+                <Tab><div class="navtab" data-target="ratings">
                 My ratings
-              </div>
-              <div class="navtab" data-target="Statistic">
+              </div></Tab>
+               <Tab> <div class="navtab" data-target="Statistic">
                 Applied job
-              </div>
-              <div class="navtab" data-target="Contact">
+              </div></Tab>
+                <Tab><div class="navtab" data-target="Contact">
                 Contact Info
-              </div>
-              <div class="navtab" data-target="Posteds">
+              </div></Tab>
+               <Tab> <div class="navtab" data-target="Posteds">
                 Subscribed News
-              </div>
-              <div class="navtab" data-target="Posted">
+              </div></Tab>
+                <Tab><div class="navtab" data-target="Posted">
                 Saved
-              </div>
-
+              </div></Tab>
+              </TabList>
               <div class="underline"></div>
             </div>
           </div>
@@ -131,7 +134,8 @@ const Kabcah1 = () => {
       </section>
 
       <div class="main-tabs-ah">
-        <div id="Profile" class="content ">
+      <TabPanel>     
+        <div id="Profile" class="content active">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">
@@ -170,8 +174,10 @@ const Kabcah1 = () => {
             </Container>
           </section>
         </div>
+      </TabPanel>
 
-        <div id="ratings" class="content  ">
+      <TabPanel>     
+        <div id="ratings" class="content active ">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">
@@ -210,8 +216,10 @@ const Kabcah1 = () => {
             </Container>
           </section>
         </div>
+      </TabPanel>
 
-        <div id="Statistic" class="content ">
+      <TabPanel>     
+        <div id="Statistic" class="content active">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">
@@ -254,8 +262,10 @@ const Kabcah1 = () => {
             </Container>
           </section>
         </div>
+      </TabPanel>
 
-        <div id="Contact" class="content  ">
+      <TabPanel>     
+        <div id="Contact" class="content active ">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">
@@ -449,8 +459,10 @@ const Kabcah1 = () => {
             </Container>
           </section>
         </div>
+      </TabPanel>
 
-        <div id="Posteds" class="content  ">
+      <TabPanel>     
+        <div id="Posteds" class="content active ">
           <section class="About-ah">
             <Container>
               <div class="About-main-ah">
@@ -491,7 +503,9 @@ const Kabcah1 = () => {
             </Container>
           </section>
         </div>
+      </TabPanel>
 
+      <TabPanel>     
         <div id="Posted" class="content active">
           <section class="About-ah">
             <Container>
@@ -529,8 +543,10 @@ const Kabcah1 = () => {
             </Container>
           </section>
         </div>
-      </div>
+      </TabPanel>
 
+      </div>
+      </Tabs>
       <Footerah />
     </>
   );
