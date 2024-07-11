@@ -10857,7 +10857,9 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .inlineprod_name p {
     font-size: 12px;
   }
-  
+  .ahd-box-btn-card button {
+    line-height: 20px;
+}
 
   .inlineprod_instock h6 {
     font-size: 14px;
