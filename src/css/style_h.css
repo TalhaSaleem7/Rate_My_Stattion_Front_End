@@ -2273,6 +2273,18 @@ Media Query
     justify-content: center;
   }
 }
+@media (max-width: 1024px) {
+  section.sidebar--cont--admin--h {
+    width: 60px;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+        height: 92vh;
+}
+
+.sidebar--cont--admin--h--collapse {
+    width: 250px !important;
+}
+}
 @media (max-width: 991px) {
   :root {
     --font-size-14: 0.8rem;

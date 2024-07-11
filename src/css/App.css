@@ -10476,7 +10476,9 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .ahd-card-body-start {
     padding: 30px 20px;
 }
-
+.Employees-Search {
+  width: 30%;
+}
 .ahd-card-body-start-1 span h2 {
     font-size: 20px;
 }
@@ -14721,5 +14723,8 @@ CONTACTUS */
 
   .dashboard_newletter_box {
     padding: 20px 20px 20px 20px;
+  }
+  .job--open--dash--news--h--filter--main{
+    align-items: flex-start !important;
   }
 }
