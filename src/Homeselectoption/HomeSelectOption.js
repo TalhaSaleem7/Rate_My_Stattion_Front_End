@@ -41,7 +41,7 @@ const HomeSelectOption = () => {
           <option value="youtube">YouTube</option>
         </select>
         <div className="select-tv-icon">
-          <IoIosArrowDown  size={20} />
+          <IoIosArrowDown size={20} />
         </div>
       </div>
     </div>

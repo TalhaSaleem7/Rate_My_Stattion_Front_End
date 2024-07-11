@@ -15,7 +15,7 @@ header.header_main_Mobile {
 }
 
 header.header_main .container,
-header.header_main .row > * {
+header.header_main .row>* {
   padding: 0;
 }
 
@@ -2818,7 +2818,7 @@ header.header_main {
   gap: 27px;
 }
 
-.rms--header--row > * {
+.rms--header--row>* {
   padding: 0 !important;
 }
 
@@ -4351,11 +4351,13 @@ section.your-journalism-sec {
   width: 100%;
   flex-wrap: wrap;
 }
+
 .filter-box-cont-drop {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .filter-box p {
   margin: 0px;
   font-family: "Public Sans", sans-serif;
@@ -7206,24 +7208,24 @@ section.employer-login-pg-sec {
   transition-duration: .5s;
 } */
 
-#checkbox:checked + .toggle #bar2 {
+#checkbox:checked+.toggle #bar2 {
   transform: scaleX(0);
   transition-duration: 0.5s;
 }
 
-#checkbox:checked + .toggle #bar1 {
+#checkbox:checked+.toggle #bar1 {
   width: 100%;
   transform: rotate(45deg);
   transition-duration: 0.5s;
 }
 
-#checkbox:checked + .toggle #bar3 {
+#checkbox:checked+.toggle #bar3 {
   width: 100%;
   transform: rotate(-45deg);
   transition-duration: 0.5s;
 }
 
-#checkbox:checked + .toggle {
+#checkbox:checked+.toggle {
   transition-duration: 0.5s;
   transform: rotate(180deg);
 }
@@ -7292,7 +7294,7 @@ section.employer-login-pg-sec {
   border-radius: 3px;
 }
 
-.submit-checkbox input[type="checkbox"]:checked + label::before {
+.submit-checkbox input[type="checkbox"]:checked+label::before {
   border-color: #89c400;
   background: #89c400;
 }
@@ -7310,7 +7312,7 @@ section.employer-login-pg-sec {
   transform: rotate(45deg);
 }
 
-.submit-checkbox input[type="checkbox"]:checked + label::after {
+.submit-checkbox input[type="checkbox"]:checked+label::after {
   opacity: 1;
 }
 
@@ -7457,7 +7459,7 @@ ul.slide svg {
   height: 0px;
 }
 
-#touch:checked + .slide {
+#touch:checked+.slide {
   height: max-content;
   padding: 10px;
 }
@@ -7468,7 +7470,7 @@ ul.slide svg {
   height: 0px;
 }
 
-#touch:checked + .slide {
+#touch:checked+.slide {
   height: fit-content;
 }
 
@@ -7539,7 +7541,7 @@ ul.rms--header--slide li a {
 /*********** Product Dashboard Page CSS Start ***********/
 
 .dashboard_product_head {
-  padding: 33px 0px 33px 0px;
+  padding: 0px 0px 33px 0px;
 }
 
 .dashboard_product_head h2 {
@@ -7610,7 +7612,7 @@ ul.rms--header--slide li a {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  padding: 9px 56px 11px 16px;
+  padding: 9px 50px 11px 16px;
   border-radius: 10px;
   border: 1px solid var(--Gray-3, #828282);
   background: #f2f2f2;
@@ -7623,7 +7625,7 @@ ul.rms--header--slide li a {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  padding: 9px 97px 11px 16px;
+  padding: 9px 50px 11px 16px;
   border-radius: 10px;
   border: 1px solid var(--Gray-3, #828282);
   background: #f2f2f2;
@@ -7957,6 +7959,7 @@ ul.rms--header--slide li a {
 
 
 }
+
 .setting_dashboard_setting {
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   padding: 31px 31px 37px 31px;
@@ -8601,6 +8604,7 @@ ul.rms--header--slide li a {
   margin: 0px 0px 28px 0px;
   border-radius: 20px;
 }
+
 .main-box-con {
   width: 100%;
   display: flex;
@@ -8684,7 +8688,10 @@ header {
   justify-content: space-between !important;
 }
 
-.navtabs ul li {border: none;}
+.navtabs ul li {
+  border: none;
+}
+
 .pagesdash_add_search {
   display: flex;
   align-items: center;
@@ -9066,15 +9073,15 @@ header {
   cursor: pointer;
 }
 
-.checkbox-wrapper input[type="checkbox"]:checked + svg .background {
+.checkbox-wrapper input[type="checkbox"]:checked+svg .background {
   fill: #194d79;
 }
 
-.checkbox-wrapper input[type="checkbox"]:checked + svg .stroke {
+.checkbox-wrapper input[type="checkbox"]:checked+svg .stroke {
   stroke-dashoffset: 0;
 }
 
-.checkbox-wrapper input[type="checkbox"]:checked + svg .check {
+.checkbox-wrapper input[type="checkbox"]:checked+svg .check {
   stroke-dashoffset: 0;
 }
 
@@ -9381,7 +9388,8 @@ header {
 .progress-container {
   width: 163px;
   height: 35px;
-  background-color: rgba(137, 196, 0, 0.1); /* Adjust the background color */
+  background-color: rgba(137, 196, 0, 0.1);
+  /* Adjust the background color */
   border-radius: 10px;
   position: relative;
   display: flex;
@@ -9394,7 +9402,8 @@ header {
 
 .progress-bars {
   height: 100%;
-  background-color: #89c400; /* Adjust the progress color */
+  background-color: #89c400;
+  /* Adjust the progress color */
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -9499,7 +9508,8 @@ section.ah1 {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   border: 2px solid #194d79;
   width: 24%;
   transition: 0.3s;
@@ -9601,7 +9611,8 @@ span.approved-s p {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.5px; /* 127.083% */
+  line-height: 30.5px;
+  /* 127.083% */
 }
 
 .ahd-card-body-start-1 span p {
@@ -9610,7 +9621,8 @@ span.approved-s p {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .ahd-card-body-start-btn {
@@ -9720,7 +9732,8 @@ span.sl-icon svg {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Reporter-dah-box-dp span p {
@@ -9761,7 +9774,8 @@ span.sl-icon svg {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
 }
 
 .Reporter-dah-body-new {
@@ -9837,7 +9851,8 @@ span.sl-icon svg {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
   padding-top: 5px;
 }
 
@@ -9856,7 +9871,8 @@ span.sl-icon svg {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 162.5% */
+  line-height: 24px;
+  /* 162.5% */
   padding-top: 5px;
 }
 
@@ -9879,7 +9895,8 @@ span.sl-icon svg {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Simmons-dah-h2 h3 {
@@ -9921,7 +9938,8 @@ span.sl-icon svg {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Simmons-dah-more-card svg {
@@ -9955,7 +9973,8 @@ span.sl-icon svg {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .Reporter-dah-body-new-last {
@@ -10010,7 +10029,8 @@ button.Deny:hover {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
 }
 
 .ahd-card-body-end.more-pading-lost {
@@ -10101,7 +10121,8 @@ button.Deny:hover {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   outline: none;
   padding: 10px 20px;
 }
@@ -10121,15 +10142,18 @@ button.Deny:hover {
   border-radius: 20px;
   min-width: 1110px;
 }
+
 .table-container {
   width: 100%;
   overflow-x: auto;
 }
+
 #customers td,
 #customers th {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 /* .Employees-box-btn-icon {
   width: 35%;
 } */
@@ -10146,7 +10170,8 @@ button.Deny:hover {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   padding: 12px 22px;
 }
 
@@ -10156,7 +10181,8 @@ button.Deny:hover {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   padding-top: 25px;
 }
 
@@ -10171,9 +10197,11 @@ button.Deny:hover {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   padding: 8px;
 }
+
 /* #customers tr:hover {background-color: #ddd;} */
 
 #customers th {
@@ -10231,7 +10259,8 @@ td.gg-td {
   font-size: 16px !important;
   font-style: normal;
   font-weight: 700 !important;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
 }
 
 .new-online {
@@ -10244,7 +10273,8 @@ td.gg-td {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 206.25% */
+  line-height: 30px;
+  /* 206.25% */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10260,6 +10290,7 @@ td.gg-td {
 .dropdown a:hover {
   border-radius: 10px;
   background: var(--Gray-6, #f2f2f2);
+
   .dropdown a:hover {
     border-radius: 10px;
     background: var(--Gray-6, #f2f2f2);
@@ -10305,7 +10336,8 @@ td.gg-td {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   border-radius: 10px;
   background: rgba(137, 196, 0, 0.1);
   border: none;
@@ -10350,7 +10382,8 @@ td.gg-td {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
 }
 
 .Orders-2-card p {
@@ -10359,7 +10392,8 @@ td.gg-td {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 162.5% */
+  line-height: 22px;
+  /* 162.5% */
 }
 
 .Orders-2-card.Orders-card-2 {
@@ -10436,7 +10470,8 @@ span.Orders-2-li-1 h4 span {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33px; /* 206.25% */
+  line-height: 33px;
+  /* 206.25% */
   border: 1px solid #194d79;
   padding: 5px 28px;
   transition: 0.3s;
@@ -10446,6 +10481,7 @@ span.Orders-2-li-1 h4 span {
   background: transparent;
   color: #194d79;
 }
+
 /* ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 }
 
@@ -10479,26 +10515,28 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 .Employees-Search {
   width: 30%;
 }
-.ahd-card-body-start-1 span h2 {
+
+
+  .ahd-card-body-start-1 span h2 {
     font-size: 20px;
-}
+  }
 
-.ahd-card-body-start-1 span p {
+  .ahd-card-body-start-1 span p {
     font-size: 14px;
-}
+  }
 
-.ahd-card-body-start-1 {
+  .ahd-card-body-start-1 {
     gap: 20px;
-}
+  }
 
-.ahd-card-body-end {
+  .ahd-card-body-end {
     padding: 15px 25px;
     gap: 20px;
-}
+  }
 
-.ahd-card-body-end span p {
+  .ahd-card-body-end span p {
     font-size: 14px;
-}
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -10790,6 +10828,71 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 }
 
+
+@media screen and (max-width: 1280px) {
+  .addnewprod_head a {
+    padding: 12px 14px 12px 11px;
+  }
+
+  .dashprod_filter_box {
+    gap: 10px;
+  }
+
+  .dashfilter-select-box select {
+    font-size: 16px !important;
+    padding: 10px 20px 10px 10px;
+  }
+
+  .dashstock_box select {
+    font-size: 16px !important;
+    padding: 9px 30px 11px 16px;
+  }
+
+  .inlineprod_name h3 {
+    font-size: 14px;
+    padding: 0px 0px 4px 0px;
+    width: auto;
+  }
+
+  .inlineprod_name p {
+    font-size: 12px;
+  }
+  
+
+  .inlineprod_instock h6 {
+    font-size: 14px;
+    padding: 4px 10px;
+    margin: 0px 10px 0px 0px;
+  }
+  
+  .inlineprod_action {
+    margin: 0px 0px 0px 0px;
+    padding: 6px 8px;
+  
+  }
+
+  .inlineprod_category p {
+    font-size: 14px;
+    width: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .inlineprod_price p {
+    font-size: 14px;
+    padding: 0px 0px 0px 0px; 
+  }
+
+  .inlineprod_dtpub p {
+    font-size: 14px;
+  }
+
+
+
+
+}
+  
+
+
 @media screen and (max-width: 1024px) {
   .KABC-part-1-ah {
     width: 48%;
@@ -10806,9 +10909,10 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .rms-abc-logo img {
     width: 100%;
   }
+
   .side-box-my {
     width: 100%;
-}
+  }
 
 
 
@@ -10874,18 +10978,19 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     padding: 0px 20px;
     box-shadow: none;
   }
+
   .side-bar-my {
     position: absolute;
     z-index: 99;
-}
+  }
 
-header {
+  header {
     z-index: 999;
-}
+  }
 
-section.ah1 {
+  section.ah1 {
     padding-left: 80px;
-}
+  }
 
 
   .search-stations-input--rms .select-box,
@@ -12357,8 +12462,7 @@ section.ah1 {
     height: 24px;
   }
 
-  .container.dashboard-container-h {
-  }
+  
 }
 
 @media (max-width: 991px) {
@@ -12418,15 +12522,19 @@ section.ah1 {
   .news-director-detail-btn {
     justify-content: flex-end;
   }
+
   .ahd-card-body-start-btn {
     width: 35%;
   }
+
   .ahd-card {
     width: 100%;
-}
+  }
+
   .ahd-card-body-start-btn button {
     line-height: 25px;
   }
+
   .Uploaded-documents-box {
     display: flex;
     align-items: flex-start;
@@ -12437,6 +12545,7 @@ section.ah1 {
   .Uploaded-documents-card {
     width: 100%;
   }
+
   .About-main-box-1-ah {
     width: 100%;
   }
@@ -12490,12 +12599,14 @@ section.ah1 {
   .Recommend-card-tital-ah h2 {
     font-size: 14px;
   }
+
   .ahd-card-body-start-btn {
     width: 100%;
   }
+
   section.ah1 {
     padding-left: 70px !important;
-}
+  }
 
   .ahd-card-body-start-btn button {
     line-height: 25px;
@@ -12513,6 +12624,7 @@ section.ah1 {
     flex-direction: column;
     gap: 10px;
   }
+
   section.director-search-result hr {
     margin: 0px;
   }
@@ -12528,6 +12640,7 @@ section.ah1 {
   .news-director-card-txt h5 {
     font-size: 18px;
   }
+
   section.ah1 {
     padding: 20px 35px;
   }
@@ -12581,8 +12694,7 @@ section.ah1 {
     font-size: 14px;
   }
 
-  .dp-imger {
-  }
+  .dp-imger {}
 
   .dp-imger {
     width: 40px;
@@ -12669,6 +12781,7 @@ section.ah1 {
   .Simmons-dah-tital-site {
     width: 100%;
   }
+
   .Applied-ah-list-1 {
     padding-bottom: 18px;
   }
@@ -12708,10 +12821,13 @@ section.ah1 {
   .Applied-ah-logo {
     width: 18%;
   }
-  .job--open--dash--news--h--filter--main, .job--open--dash--news--h--filter--sort {
+
+  .job--open--dash--news--h--filter--main,
+  .job--open--dash--news--h--filter--sort {
     align-items: flex-start;
     flex-direction: column;
-}
+  }
+
   .Recommend-card-ah {
     width: 100%;
   }
@@ -14362,6 +14478,7 @@ CONTACTUS */
   .select-box option {
     font-size: 14px !important;
   }
+
   .search-stations-input svg {
     top: 0px;
     right: 0px;
@@ -14371,6 +14488,7 @@ CONTACTUS */
     width: 350px;
     padding: 15px 15px;
   }
+
   .like-report-submitted p {
     font-size: 12px;
   }
@@ -14728,3 +14846,4 @@ CONTACTUS */
     align-items: flex-start !important;
   }
 }
+

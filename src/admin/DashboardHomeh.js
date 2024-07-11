@@ -26,9 +26,7 @@ const DashHomeh = () => {
           </div>
         </div>
       </div>
-      </section>
-    
+    </section>
   );
-
 };
 export default DashHomeh;
