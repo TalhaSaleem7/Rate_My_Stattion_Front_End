@@ -7642,6 +7642,8 @@ ul.rms--header--slide li a {
   background: #fff;
   padding: 22px 32px 29px 31px;
   border-radius: 10px;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .product_dashboard_header_left {
@@ -8980,6 +8982,7 @@ header {
   background: #fff;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
   padding: 24px 27px 12px 27px;
+  margin: 0px 0px 32px 0px;
 }
 
 .withdrawal_options_box h5 {
@@ -9121,6 +9124,7 @@ header {
   background: #fff;
   border-radius: 20px;
   margin: 0px 0px 36px 0px;
+  overflow-x: scroll;
 }
 
 .transaction_histroy_table table thead tr th select {
@@ -9198,7 +9202,7 @@ header {
   line-height: 33px;
   border-radius: 10px;
   background: rgba(242, 201, 76, 0.1);
-  padding: 8px 45px;
+  padding: 8px 25px;
 }
 
 .transaction_paid_btn {
@@ -9211,6 +9215,12 @@ header {
   border-radius: 10px;
   background: rgba(137, 196, 0, 0.1);
   padding: 8px 15px;
+  display: block;
+  width: 180px;
+}
+
+.dropdown button {
+  border-radius: 10px;
 }
 
 .newsletter_filter_flex {
@@ -9327,6 +9337,7 @@ header {
   border-radius: 20px;
   padding: 22px 32px 18px 31px;
   margin: 32px 0px 32px 0px;
+  overflow-x: scroll;
 }
 
 .dashnewsletter_data_box table thead tr th select {
@@ -9342,6 +9353,14 @@ header {
 .dashnewsletter_data_box table thead tr th {
   border-bottom: 1px solid #e0e0e0;
   padding: 0px 0px 17px 0px;
+}
+
+.flex-box-order {
+  display: flex;
+}
+
+.flex-box-order .order_dashboard_header_right {
+  gap: 90px;
 }
 
 .dashnewsletter_data_box table thead tr th input {
@@ -9382,7 +9401,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  padding: 0px 39px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .progress-container {
@@ -9446,6 +9465,14 @@ header {
 }
 
 /*********** Newsletter Dashboard Page CSS ENd ***********/
+
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 /******************* Shahdin Pages CSS End *******************/
 
@@ -10829,7 +10856,31 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1232px) {
+
+  .your-journalism-txt {
+    padding: 65px 40px;
+  }
+
+  .shop-new-arrival h3 {
+    font-size: 45px;
+    width: 420px;
+  }
+
+  .shop-new-arrival-img img {
+    width: 260px;
+  }
+
+  .newsletter-article-search span {
+    top: 36px;
+}
+
+
+.contact-follow-like-btn ul li {
+  padding: 19px 41px 19px 39px;
+}
+
+
   .addnewprod_head a {
     padding: 12px 14px 12px 11px;
   }
@@ -10885,6 +10936,157 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .inlineprod_dtpub p {
     font-size: 14px;
   }
+
+  .transaction_progress_btn {
+    padding: 8px 25px;
+  }
+
+
+  .transaction_histroy_table table thead tr th select {
+    margin: 0px 25px 0px 0px;
+  }
+
+  .transaction_paid_btn {
+    padding: 6px 15px;
+    display: inline-block;
+    width: 180px;
+  }
+
+
+  .dashnewsletter_data_box table tbody tr td h2 {
+    font-size: 16px;
+    width: 400px;
+}
+
+.dashnewsletter_data_box table tbody tr td h5 {
+  width: 130px;
+}
+
+.email_subscriber_table table tbody tr td h4 {
+  width: 250px;
+}
+
+
+.dashnewsletter_data_box table tbody tr td h5 {
+  padding: 0px 10px 0px 0px;
+}
+
+.email_subceriber_box {
+  overflow-x: scroll;
+}
+
+.email_subscriber_table table tbody tr td h5 {
+  width: 250px;
+}
+
+.ignore_delete_btns .delete_all {
+  padding: 6px 40px;
+}
+
+.ignore_delete_btns .ignore_all {
+  padding: 6px 40px;
+}
+
+
+.chatting_mxg p {
+  font-size: 14px;
+  padding: 6px 15px;
+}
+
+.chatmain_head_flex {
+  padding: 10px 20px 10px 20px;
+}
+
+.username_chat_flex {
+  gap: 10px;
+}
+
+.reported_chat_userOne h6 {
+  font-size: 14px;
+}
+
+.reported_chat_userOne {
+  gap: 6px;
+}
+
+
+.chatting_mxgme p {
+  font-size: 14px;
+  padding: 6px 15px;
+}
+
+.reported_dms_chatsuggestbox h1 {
+  font-size: 14px;
+  padding: 15px 0px 15px 20px;
+}
+
+.reported_dms_chatman {
+  padding: 20px 20px 20px 21px;
+}
+
+.dashboard_newsletter_txt h4 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.dashnewsletter_box {
+  gap: 25px;
+}
+
+.dashnewsletter_box .newsletter-writtinsoul-txt p {
+  font-size: 14px;
+}
+
+.dashnewsletter_box .newsletter-likecomment-share {
+  display: flex;
+  gap: 5px;
+}
+
+.dashnewsletter_box img {
+  width: 161px;
+  height: 161px;
+}
+
+.inlineprod_dtpub p {
+  width: 180px;
+}
+
+.inlineprod_action h5 {
+  width: 50px;
+}
+
+.inlineprod_instock h5 {
+  width: 140px;
+}
+
+.product_dashboard_header_right {
+  gap: 20px;
+}
+
+.order_dashboard_header_right {
+  gap: 110px;
+  margin: 0px 0px 0px 20px;
+}
+
+.order-header-select {
+  gap: 22px;
+}
+
+.inlineprod_dtpub p {
+  width: 100px;
+}
+
+.order_dashboard_header_right {
+  gap: 50px;
+}
+
+.order-number-name {
+  gap: 22px;
+}
+
+.inlinprod_detail {
+  padding: 2px 0px 0px 20px;
+}
 
 
 
@@ -12276,7 +12478,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .review-news-director-second {
-    margin: 120px 0px 0px 0px !important;
+    margin: 40px 0px 0px 0px !important;
   }
 
   .job-details {
@@ -12561,6 +12763,88 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .rms-kabc-btn .themedark {
     padding: 8px 30px;
   }
+
+  .setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab {
+    padding: 9px 15px;
+    border-radius: 10px;
+  }
+
+.setting_dashboard_tabs .react-tabs__tab-list {
+  display: flex;
+  gap: 20px;
+}
+
+.addnewprod_head {
+  margin: 0px 0px 20px 0px;
+}
+
+.inlineprod_instock h6 {
+  width: 100px;
+  text-align: center;
+}
+
+.inlineprod_name h3 {
+  width: 200px;
+}
+
+.product_dashboard_header .flex-box {
+  gap: 160px;
+}
+
+.inlineprod_price p {
+  width: 30px;
+}
+
+.inlineprod_amout {
+  margin: 0px 20px 0px 40px;
+}
+
+.inlineprod_category p {
+  padding: 0px 0px 0px 0px;
+  width: 170px;
+}
+
+
+.inlineprod_dtpub p {
+  width: 130px;
+}
+
+.inlineprod_action h5 {
+  width: 50px;
+}
+
+.inlineprod_action {
+  margin: 0px 30px 0px 0px;
+}
+
+.product_dashboard_header {
+  width: 940px;
+}
+
+.product_dashboard_header_right {
+  gap: 50px;
+}
+
+.flex-box-order {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.order-number-name h4 {
+  width: 140px;
+}
+
+.flex-box-order .order_dashboard_header_right {
+  gap: 70px;
+}
+
+.flex-box-order .inlineprod_price p {
+  width: 150px;
+  padding: 0px 0px 0px 30px;
+}
+
+
 }
 
 
@@ -14678,17 +14962,19 @@ CONTACTUS */
   }
 
   .setting_dashboard_tabs .react-tabs__tab-list .react-tabs__tab {
-    padding: 10px 25px;
-    margin: 0px 0px 10px 0px;
+    padding: 6px 22px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
   }
 
   .setting_dashboard_tabs .react-tabs__tab-list {
     border: none;
     text-align: center;
+    display: contents;
   }
 
   .setting_dashboard_setting {
-    padding: 31px 21px 27px 21px;
+    padding: 21px 21px 27px 11px;
   }
 
   .setting_dashboard_setting p {
@@ -14752,10 +15038,17 @@ CONTACTUS */
     gap: 10px;
   }
 
-  .reported_chat_userOne h6 {
-    font-size: 14px;
-    line-height: 20.5px;
-  }
+  .reported_chat_userOne {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.reported_chat_userOne h6 {
+  font-size: 12px;
+}
+
 
   .username_chat_flex {
     gap: 10px;
@@ -14777,6 +15070,7 @@ CONTACTUS */
   .chatting_mxgme p {
     font-size: 12px;
     line-height: 23px;
+    text-align: left;
   }
 
   .report_chat_btn {
@@ -14803,7 +15097,7 @@ CONTACTUS */
   }
 
   .ignore_delete_btns .ignore_all {
-    padding: 6px 47px;
+    padding: 6px 20px;
   }
 
   .dashfilter-stock {
@@ -14845,5 +15139,126 @@ CONTACTUS */
   .job--open--dash--news--h--filter--main{
     align-items: flex-start !important;
   }
+
+
+  .billing_payment_number h2 {
+    font-size: 22px;
+    padding: 0px 0px 8px 0px;
+}
+
+.billing_payment_number h6 {
+  font-size: 12px;
+}
+
+.billing_payment_svf svg {
+  width: 40px;
+}
+
+.billing_earning_box h5 {
+  font-size: 20px;
+  padding: 0px 0px 12px 0px;
+}
+
+.billing_earning_box {
+  padding: 20px 20px 20px 20px;
+}
+
+.billing_earning_box a {
+  font-size: 14px;
+  margin: 28px 0px 0px 0px !important;
+  padding: 3px 0px;
+}
+
+
+.blldash_billing_transfer_box {
+  padding: 20px 20px 20px 20px;
+  margin: 0px 0px 16px 0px;
+  gap: 12px;
+  align-items: center;
+}
+
+
+.checkbox-wrapper {
+  width: 20px;
+  height: 20px;
+}
+
+.billdash_billingtransfer_name span svg {
+  width: 30px;
+}
+
+.billdash_billingtransfer_name h4 {
+  font-size: 14px;
+}
+
+.billdash_payment_namewedit a {
+  font-size: 12px;
+}
+
+.billdash_billingtransfer_name img {
+  width: 100px;
+}
+
+.addnewprod_head {
+  width: 60%;
+}
+
+
+.newsletter_filter_flex {
+  justify-content: start;
+  gap: 8px;
+  margin: 20px 0px 0px 0px;
+}
+
+.ignore_delete_btns .delete_all {
+  padding: 6px 20px;
+}
+
+.dashnewsletter_box {
+  gap: 15px;
+}
+
+.dashnewsletter_box .newsletter-writtinsoul-txt p {
+  font-size: 14px;
+}
+
+.dashnewsletter_box .newsletter-likecomment-share {
+  display: flex;
+  gap: 5px;
+}
+
+.dashnewsletter_box img {
+  width: 161px;
+  height: 161px;
+}
+
+.addnewprod_head a {
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 10px 2px 10px;
+}
+
+.dashprod_filter_box {
+  flex-direction: column;
+}
+
+
+.dashfilter-stock {
+  width: 100%;
+  flex-direction: column;
+}
+
+.dashstock_box {
+  width: 100%;
+} 
+
+
+.dashstock_box select {
+  width: 100%;
+}
+
+
+
 }
 

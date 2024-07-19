@@ -59,7 +59,7 @@ const ProductDashboard = () => {
                 <Row>
                   <Col lg={12} className='p-0'>
                     <div className="product_dashboard_header">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="product_dashboard_header_left">
                             <input type="checkbox" name="" id="" />
@@ -109,12 +109,12 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                   </Col>
                   <Col lg={12} className='p-0'>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -146,10 +146,10 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                       <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -181,10 +181,10 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -216,10 +216,10 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -251,10 +251,10 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -286,10 +286,10 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -321,10 +321,10 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box">
                         <Col lg={4} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -356,7 +356,7 @@ const ProductDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                   </Col>
                 </Row>

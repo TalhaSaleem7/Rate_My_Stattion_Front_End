@@ -57,10 +57,10 @@ const OrderDashboard = () => {
             </Col>
             <Col lg={12}>
               <div className="product_dashboard_box">
-                <Row>
+                <Row> 
                   <Col lg={12} className="p-0">
                     <div className="product_dashboard_header">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                           <div className="product_dashboard_header_left">
                             <input type="checkbox" name="" id="" />
@@ -103,12 +103,12 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                   </Col>
                   <Col lg={12} className="p-0">
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -134,10 +134,10 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                         <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -163,10 +163,10 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                         <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -192,10 +192,10 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                         <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -221,10 +221,10 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                         <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -250,10 +250,10 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order">
                         <Col lg={4} className="p-0">
                         <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -279,10 +279,10 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
-                    </div>
+                        </div>
+                    </div> 
                     <div className="inline_product">
-                      <Row>
+                      <div className="flex-box-order"> 
                         <Col lg={4} className="p-0">
                            <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
@@ -308,14 +308,13 @@ const OrderDashboard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                   </Col>
                 </Row>
               </div>
             </Col>
-          </Row>
-
+          </Row>  
       </section>
     </>
   );
