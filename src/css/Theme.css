@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Satoshi';
     src: url('../Newfont/Satoshi-Light.woff2') format('woff2'),
         url('../Newfont/Satoshi-Light.woff') format('woff');
@@ -282,7 +282,6 @@ label.custum-file-upload button {
     width: 28%;
 }
 
-/* hero-sectionhero-sectionhero-sectionhero-sectionhero-sectionhero-sectionhero-section */
 section.hero {
     width: 100%;
     padding: 105px 0px;
@@ -415,10 +414,7 @@ h4 {
     height: 35px;
 }
 
-/* hero-sectionhero-sectionhero-sectionhero-sectionhero-sectionhero-sectionhero-section/ */
 
-
-/* section-csssection-csssection-csssection-csssection-csssection-csssection-csssection-css */
 
 section.card-salider {
     width: 100%;
@@ -439,13 +435,13 @@ section.card-salider {
 h3 {
     color: var(--milled-com-oxford-blue, #374151);
 
-    /* milled.com/Satoshi/Medium 20 */
+
     font-family: 'Satoshi';
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    /* 140% */
+   
 }
 
 .California-box {
@@ -481,13 +477,12 @@ h3 {
 p {
     color: var(--milled-com-pale-sky, #6B7280);
 
-    /* milled.com/Satoshi/Regular 12 */
     font-family: 'Satoshi';
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    /* 133.333% */
+
 }
 
 .California-tital h4 {
@@ -533,20 +528,20 @@ p {
     height: 20px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
     background: #D9D9D9;
     border-radius: 10px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #3B82F6;
     border-radius: 10px;
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #3B82F6;
 }
@@ -602,10 +597,7 @@ p {
 }
 
 
-/* section-csssection-csssection-csssection-csssection-csssection-csssection-csssection-css */
 
-
-/* footer-stylingfooter-stylingfooter-stylingfooter-stylingfooter-stylingfooter-stylingfooter-styling */
 
 
 
@@ -653,13 +645,13 @@ footer {
 .footre-list-2 button {
     color: var(--milled-com-nero, #FFF);
 
-    /* milled.com/Satoshi/Medium 18 */
+   
     font-family: 'Satoshi';
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    /* 155.556% */
+
     border-radius: 6px;
     background: var(--milled-com-royal-blue, #2563EB);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
@@ -674,13 +666,6 @@ footer {
 
 
 
-/* footer-stylingfooter-stylingfooter-stylingfooter-stylingfooter-stylingfooter-stylingfooter-styling */
-
-
-
-
-
-/* header-section-stylingheader-section-stylingheader-section-stylingheader-section-stylingheader-section-styling */
 
 .switch {
     font-size: 17px;
@@ -689,7 +674,7 @@ footer {
     width: 64px;
     height: 34px;
     z-index: 999;
-    /* border: 1px solid #3b81f5; */
+
 }
 
 .switch input {
@@ -743,7 +728,7 @@ footer {
     height: 24px;
 }
 
-/* .switch:hover */
+
 .sun svg {
     animation: rotate 15s linear infinite;
 }
@@ -759,7 +744,6 @@ footer {
     }
 }
 
-/* .switch:hover */
 .moon svg {
     animation: tilt 5s linear infinite;
 }
@@ -939,7 +923,6 @@ button {
     cursor: pointer;
 }
 
-/* header-section-stylingheader-section-stylingheader-section-stylingheader-section-stylingheader-section-styling */
 
 
 
@@ -1208,7 +1191,7 @@ section.section-dashbord {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* 155.556% */
+
 }
 
 .tabcontent {
@@ -1307,7 +1290,7 @@ section.section-dashbord-old {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 120% */
+   
 }
 
 .list-2-side a img {
@@ -1367,7 +1350,7 @@ section.section-dashbord-old {
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    /* 109.091% */
+
     width: 100%;
 }
 
@@ -1472,7 +1455,7 @@ dialog {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    /* 142.857% */
+
 }
 
 .forgots label.container input {
@@ -1499,15 +1482,13 @@ button.icon img {
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    /* 142.857% */
+    
     text-decoration: none;
     padding: 10px 0px 15px 0px;
     color: var(--milled-com-ebony, #111827);
 }
 
-/* .forgot a:hover, .signup a:hover {
-    text-decoration: underline rgba(167, 139, 250, 1);
-  } */
+
 
 .sign {
     display: block;
@@ -1540,13 +1521,12 @@ button.icon img {
 .social-message .message {
     color: var(--milled-com-ebony, #111827);
 
-    /* milled.com/Satoshi/Medium 16 */
     font-family: system-ui;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    /* 125% */
+
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -1573,13 +1553,13 @@ button.icon img {
 .signup {
     color: var(--milled-com-ebony, #111827);
 
-    /* milled.com/Satoshi/Medium 16 */
+
     font-family: system-ui;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    /* 125% */
+
     text-align: center;
 }
 
@@ -1807,10 +1787,7 @@ ul.blaock-ul-box li {
     border-radius: 5px;
 }
 
-.radio-input label:has(input:checked)~.selection {
-    /* background-color: rgb(11 117 223);
-    display: inline-block; */
-}
+
 
 .radio-input label:nth-child(1):has(input:checked)~.selection {
     transform: translateX(calc(var(--container_width) * 0/3));
@@ -2051,10 +2028,7 @@ ul.blaock-ul-box li {
         padding: 80px 0px;
     }
 
-    /* .California-img {
-  
-    height: 24vh !important;
-  } */
+
     h3 {
         font-size: 18px;
     }
@@ -2561,9 +2535,7 @@ ul.blaock-ul-box li {
         gap: 14px;
     }
 
-    /* .California-img {
-      height: 22vh !important;
-  } */
+
 
     .California-card {
         padding: 8px;
@@ -2609,7 +2581,7 @@ ul.blaock-ul-box li {
         font-size: 10px;
         padding: 2px 8px;
     }
-
+        
     .footre-list-2 p {
         padding-top: 10px;
         font-size: 12px;
@@ -2800,4 +2772,4 @@ ul.blaock-ul-box li {
     .logo-bord img {
         width: 18%;
     }
-}
+} */

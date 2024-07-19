@@ -1697,7 +1697,7 @@ Job Open Rate
   margin-top: 24px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  /* justify-content: space-between; */   
   border-top: 1px solid #e0e0e0;
   padding: 24px 32px 27px 32px;
   gap: 10px;
@@ -1730,10 +1730,12 @@ Job Open Rate
   padding: 6px 72px;
   flex-grow: 1;
 }
+
 .job--open--dash--news--h--filter--main--alt,
 .job--open--dash--rate--h--filter--sort--alt {
   flex-basis: auto;
 }
+
 .job--rate--dash--h--filter--sort--cont {
   display: flex;
   flex-basis: 100%;
@@ -1743,6 +1745,7 @@ Job Open Rate
 .job--open--dash--rate--h--filter--sort--alt {
   width: 50%;
 }
+
 .job--open--dash--rate--h--btn--cont a {
   border-radius: 10px;
   background: var(--194-d-79, #194d79);
@@ -1757,6 +1760,7 @@ Job Open Rate
   font-weight: 700;
   line-height: 33px; /* 206.25% */
 }
+  
 /* ======================================
 Chart
 ====================================== */
@@ -1797,6 +1801,7 @@ Chart
   padding-bottom: 44px;
   flex-wrap: wrap;
 }
+
 
 .stat-card {
   display: flex;
@@ -1882,6 +1887,7 @@ Chart
   width: 263px;
 }
 
+
 .dash--sec--one--card--h {
   background-color: #ffffff;
   border-radius: 15px;
@@ -1906,6 +1912,7 @@ Chart
   padding-bottom: 10px;
 }
 
+
 .dash--home--title--h p,
 .home-sec-three-title-h p {
   font-size: var(--font-size-16);
@@ -1918,6 +1925,7 @@ Chart
 .row .home-sec-three-title-h {
   padding-top: 27px;
 }
+
 
 .station--rate--card--h {
   padding: 41px 27px 27px 27px;
@@ -1942,12 +1950,14 @@ Chart
   align-items: center;
 }
 
+
 .station--rating--card--btn--h {
   display: flex;
   gap: 28px;
   align-items: center;
   padding-top: 27px;
 }
+
 
 .station--rating--card--btn--h a {
   font-size: var(--font-size-16);
@@ -1961,32 +1971,41 @@ Chart
   text-align: center;
 }
 
+
 .station--rating--card--btn--h svg {
   flex-shrink: 0;
 }
+
 
 .station--rating--score--cont h1 {
   font-size: var(--font-size-24);
   padding-bottom: 3px;
 }
 
+
 .station--rating--score--cont span,
 .station--rating--score--cont p {
   color: #828282;
   font-size: var(--font-size-16);
 }
+
+
+
+
 .dash--insight--sec--head--h {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 25px;
+  padding-bottom: 25px; 
   flex-wrap: wrap;
 }
+
 
 .dash--insight--sec--title--h h1 {
   font-size: var(--font-size-24);
   font-weight: 700;
 }
+
 
 .dash--insight--sec--time--h {
   display: flex;
@@ -1994,31 +2013,45 @@ Chart
   gap: 5px;
 }
 
+
 .dash--insight--sec--time--h label {
   white-space: nowrap;
   font-size: var(--font-size-18);
   font-weight: 600;
   color: #828282;
 }
+
+
+
+
 .dash--insight--dropdown--h {
   gap: 17px;
   max-width: 157px;
 }
+
+
+
+
 .dash--insight--dropdown--cont--h {
   max-width: 157px;
   position: relative;
 }
+
+
 .insight--sec--two--stat--bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 9px;
 }
+
+
 .insight--sec--two--stat--bottom--right--h {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 
 .insight--sec--two--stat--bottom--right--svg svg {
   display: block;
@@ -2034,17 +2067,20 @@ Admin Header
   padding: 15.9px 20px;
 }
 
+
 .admin--headedr--title--h {
   display: flex;
   align-items: center;
   gap: 13px;
 }
 
+
 .admin--header--right--sec--h {
   display: flex;
   align-items: center;
   gap: 22px;
 }
+
 
 .admin--header--user--info--h {
   display: flex;
@@ -2053,23 +2089,28 @@ Admin Header
   justify-content: space-between;
 }
 
+
 .admin--header--main--h {
   box-shadow: 0px 4px 12px 0px #00000026;
 }
+
 
 .admin--header--text--h h1 {
   font-size: var(--font-size-28);
   font-weight: 400;
 }
 
+
 .admin--header--logo--h {
   width: 37%;
 }
+
 
 .admin--header--user--text--h h1 {
   font-size: var(--font-size-16);
   font-weight: 700;
 }
+
 
 .admin--header--user--text--h p {
   font-size: var(--font-size-14);
@@ -2102,9 +2143,11 @@ Admin Header
   right: -6px;
 }
 
+
 /* ======================================
 Admin Sidebar
 ====================================== */
+
 
 section.sidebar--cont--admin--h {
   width: 250px;
@@ -2137,7 +2180,6 @@ section.sidebar--cont--admin--h {
   padding-inline: 20px;
   cursor: pointer;
 }
-
 .admin--sidebar--text--h h1 {
   font-size: var(--font-size-16);
   line-height: 33px;
@@ -2146,15 +2188,12 @@ section.sidebar--cont--admin--h {
   color: #000;
   cursor: pointer;
 }
-
 .admin--sidebar--text--h {
   margin-right: auto;
 }
-
 .admin--sidebar--item--h svg {
   flex-shrink: 0;
 }
-
 .admin--sidebar--collapse--h {
   display: flex;
   gap: 28px;
@@ -2162,18 +2201,15 @@ section.sidebar--cont--admin--h {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-
 .admin--sidebar--collapse--h h1 {
   color: #194d79;
   font-size: var(--font-size-16);
   font-weight: 700;
   white-space: nowrap;
 }
-
 .admin--sidebar--item--h-cont ul {
   padding-left: 60px;
 }
-
 .admin--sidebar--item--h-cont li {
   font-size: var(--font-size-14);
   font-weight: 400;
@@ -2524,7 +2560,6 @@ Media Query
     padding: 24px 15px 27px 15px;
   }
 }
-
 @media (max-width: 404px) {
   :root {
     --font-size-14: 0.7rem;
