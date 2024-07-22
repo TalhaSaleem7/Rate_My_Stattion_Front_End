@@ -2021,22 +2021,15 @@ Chart
   color: #828282;
 }
 
-
-
-
 .dash--insight--dropdown--h {
   gap: 17px;
   max-width: 157px;
 }
 
-
-
-
 .dash--insight--dropdown--cont--h {
   max-width: 157px;
   position: relative;
 }
-
 
 .insight--sec--two--stat--bottom {
   display: flex;
@@ -2045,13 +2038,11 @@ Chart
   padding-top: 9px;
 }
 
-
 .insight--sec--two--stat--bottom--right--h {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
 
 .insight--sec--two--stat--bottom--right--svg svg {
   display: block;
@@ -2074,13 +2065,11 @@ Admin Header
   gap: 13px;
 }
 
-
 .admin--header--right--sec--h {
   display: flex;
   align-items: center;
   gap: 22px;
 }
-
 
 .admin--header--user--info--h {
   display: flex;
@@ -2089,17 +2078,14 @@ Admin Header
   justify-content: space-between;
 }
 
-
 .admin--header--main--h {
   box-shadow: 0px 4px 12px 0px #00000026;
 }
-
 
 .admin--header--text--h h1 {
   font-size: var(--font-size-28);
   font-weight: 400;
 }
-
 
 .admin--header--logo--h {
   width: 37%;

@@ -174,6 +174,7 @@ const DirectorSearchResult = () => {
             <Footerah/>
     </>
   )
+  
 }
 
 export default DirectorSearchResult
