@@ -56,11 +56,11 @@ const CuponsDashoard = () => {
             </Col>
             <Col lg={12}>
               <div className="product_dashboard_box">
-                <Row>
+                <Row><div></div>
                   <Col lg={12} className='p-0'>
                     <div className="product_dashboard_header">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="product_dashboard_header_left">
                             <input type="checkbox" name="" id="" />
                             <select name="" id="">
@@ -70,7 +70,7 @@ const CuponsDashoard = () => {
                             </select>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="product_dashboard_header_right">
                             <div className="prodash_headright_select">
                               <select name="" id="">
@@ -109,13 +109,13 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                      </div>
                     </div>
                   </Col>
                   <Col lg={12} className='p-0'>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -127,7 +127,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -147,11 +147,11 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -163,7 +163,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -183,11 +183,11 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -199,7 +199,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -219,11 +219,11 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -235,7 +235,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -255,11 +255,11 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -271,7 +271,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -291,11 +291,11 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -307,7 +307,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -327,11 +327,11 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                     <div className="inline_product">
-                      <Row>
-                        <Col lg={4} className='p-0'>
+                      <div className="flex-box">
+                        <Col lg={3} className='p-0'>
                           <div className="inlineprod_save">
                             <input type="checkbox" name="" id="" />
                             <div className="inlineprod_namebox">
@@ -343,7 +343,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                        <Col lg={8} className='p-0'>
+                        <Col lg={9} className='p-0'>
                           <div className="inlinprod_detail">
                             <div className="inlineprod_instock">
                               <h5>Fixed Cart Disount</h5>
@@ -363,7 +363,7 @@ const CuponsDashoard = () => {
                             </div>
                           </div>
                         </Col>
-                      </Row>
+                        </div>
                     </div>
                   </Col>
                 </Row>
