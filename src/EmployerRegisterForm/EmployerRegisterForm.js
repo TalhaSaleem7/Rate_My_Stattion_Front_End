@@ -89,7 +89,6 @@ const EmployerRegisterForm = ({ handleFormSubmit, handleFormDataChange, formData
                 onChange={handleFormDataChange}
               />
             </div>
-            
           </Col>
           <Col lg={12}>
             <div className="employer-choose-subscription">
