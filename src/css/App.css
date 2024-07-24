@@ -10245,17 +10245,14 @@ button.Deny:hover {
   padding: 10px;
   right: 0px;
 }
-
 .admin-dp {
   width: 60px;
 }
-
 button.dropbtn svg {
   width: 80px;
   height: 40px;
   border-radius: 24px;
 }
-
 td.gg-td {
   display: flex;
   align-items: center;
@@ -10268,7 +10265,6 @@ td.gg-td {
   line-height: 33px;
  
 }
-
 .new-online {
   padding: 4px 8px;
   width: 80px;
@@ -10285,22 +10281,18 @@ td.gg-td {
   align-items: center;
   justify-content: center;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown a:hover {
   border-radius: 10px;
   background: var(--Gray-6, #f2f2f2);
 
  
 }
-
-
 .Orders_popup {
   width: 100%;
   display: flex;
@@ -10308,14 +10300,12 @@ td.gg-td {
   justify-content: center;
   padding: 40px 0px;
 }
-
 .main-Orders {
   width: 666px;
   border-radius: 15px;
   background: #fff;
   padding: 30px;
 }
-
 .Orders-1 {
   width: 100%;
   display: flex;
@@ -10324,7 +10314,6 @@ td.gg-td {
   padding-bottom: 25px;
   border-bottom: 1px solid #e0e0e0;
 }
-
 .Orders-1 h2 {
   color: var(--000000, #000);
   font-family: "Public Sans";
@@ -10484,7 +10473,9 @@ span.Orders-2-li-1 h4 span {
   background: transparent;
   color: #194d79;
 }
-
+.moress span {
+  top: 35px !important;
+}
 /* ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 }
 
@@ -10510,6 +10501,9 @@ header {width: 100%;background: white;position: relative;}
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
+
+
+
 
 @media screen and (max-width: 1600px) {
   .ahd-card-body-start {
@@ -10872,7 +10866,19 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     padding: 4px 10px;
     margin: 0px 10px 0px 0px;
   }
-  
+  .prod-dark-btn {
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 6px 14px;
+}
+
+.prod-light-btn {
+    font-size: 12px;
+    line-height: 23px;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
   .inlineprod_action {
     margin: 0px 0px 0px 0px;
     padding: 6px 8px;
@@ -10956,7 +10962,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 .shop-new-arrival-img {}
 .newsletter-article-search span {
-  top: 35px;
+  top: 58px;
 }
 .shop-new-arrival-img {}
 .contact-follow-like-btn ul li {
@@ -10965,7 +10971,9 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 .Job-Openings-list-2 span p {
   font-size: 12px;
 }
-
+.moress span {
+  top: 35px !important;
+}
 .Job-Openings-list-2 span {
   gap: 5px;
 }
@@ -15140,4 +15148,6 @@ CONTACTUS */
 
 
 }
+
+
 

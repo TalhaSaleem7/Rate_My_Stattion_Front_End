@@ -85,7 +85,7 @@ const Shop = () => {
         <Container>
           <Row>
             <Col lg={8} md={6}>
-              <div className="newsletter-article-search">
+              <div className="newsletter-article-search moress">
                 <input type="search" placeholder="Search product..." />
                 <span><RiSearchLine /></span>
               </div>
