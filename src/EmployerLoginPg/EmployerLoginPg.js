@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tabs } from "flowbite-react";
 import { Col, Container, Row } from "react-bootstrap";
 import employerratemystation from "../img/employer-ratemy-station.png";
@@ -15,7 +15,6 @@ const EmployerLoginPg = () => {
   return (
     <>
       <Header />
-
       <section className="employer-login-pg-sec">
         <Container>
           <Row>
@@ -52,8 +51,9 @@ const EmployerLoginPg = () => {
           </Row>
         </Container>
       </section>
-
       <Footerah />
+
+    
     </>
   );
 };
