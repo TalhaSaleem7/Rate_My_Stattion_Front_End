@@ -2842,7 +2842,7 @@ section.rms_header {
   gap: 98px;
   background: #e0e0e0;
 }
-
+/* 
 .toggle.clicked .bars:nth-child(1) {
   transform: rotate(45deg);
   position: relative;
@@ -2855,7 +2855,7 @@ section.rms_header {
 
 .toggle.clicked .bars:nth-child(3) {
   transform: scaleX(0);
-}
+} */
 
 /*********** First Banner Section CSS Start ***********/
 
@@ -7196,11 +7196,11 @@ section.employer-login-pg-sec {
   width: 70%;
 }
 
-/* 
-#checkbox:checked + .toggle .bars {
+
+/* #checkbox:checked + .toggle .bars {
   position: absolute;
   transition-duration: .5s;
-} */
+}
 
 #checkbox:checked+.toggle #bar2 {
   transform: scaleX(0);
@@ -7222,7 +7222,7 @@ section.employer-login-pg-sec {
 #checkbox:checked+.toggle {
   transition-duration: 0.5s;
   transform: rotate(180deg);
-}
+} */
 
 .submit-staion-field select {
   border-radius: 10px;
@@ -7329,21 +7329,6 @@ section.employer-login-pg-sec {
   color: #194d79;
 }
 
-.toggle #barz1 {
-  width: 100%;
-  transform: rotate(45deg);
-  transition-duration: 0.5s;
-  top: 18px;
-  position: absolute;
-  background-color: #fff;
-}
-
-.toggle #barz3 {
-  width: 100%;
-  transform: rotate(-45deg);
-  transition-duration: 0.5s;
-  background-color: #fff;
-}
 
 nav.helo-drop label {
   font-weight: bold;
@@ -10505,6 +10490,11 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
 
 
+
+
+
+
+
 @media screen and (max-width: 1600px) {
   .ahd-card-body-start {
     padding: 30px 20px;
@@ -10564,9 +10554,19 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .employer-newroom-box button.text-white {
     font-size: 23px;
   }
-}
 
-@media screen and (max-width: 1366px) {
+  .employer-newroom-box button {
+    padding: 24px 50px !important;  
+  }
+
+  .employer-login-form {
+    padding: 10px 0px 117px 0px;
+  }
+
+  .employer-newroom-box {
+    padding: 5px 10px 0px 10px;
+  }
+
   .first-banner-txt h3 {
     width: 70%;
   }
@@ -10668,7 +10668,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .employer-register-subscription {
-    padding: 32px 15px;
+    padding: 32px 10px;
   }
 
   .employer-register-subscription h3 {
@@ -10680,7 +10680,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .employer-subscription {
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
 
   .employer-subscription h5 {
@@ -10702,11 +10702,15 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .employer-dont-have-acc {
-    margin: 10px 0px 0px 40px;
+    margin: 10px 0px 0px 25px;
   }
 
   .employer-dont-have-acc a {
     font-size: 12px;
+  }
+
+  .employer-register-btn {
+    margin: 25px 0px 35px 25px;
   }
 
   .employer-dont-have-acc a span {
@@ -10825,9 +10829,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 }
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 1280px) {
-=======
 
 @media screen and (max-width: 1280px) {
 
@@ -10854,7 +10855,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 
 
->>>>>>> Stashed changes
   .addnewprod_head a {
     padding: 12px 14px 12px 11px;
   }
@@ -10980,8 +10980,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   font-size: 46px;
 }
 
-
-
 .shop-new-arrival-img img {
   width: 230px;
 }
@@ -10989,11 +10987,13 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 .themed-cap img {
   width: 194px;
 }
-.shop-new-arrival-img {}
+
+
 .newsletter-article-search span {
   top: 58px;
 }
-.shop-new-arrival-img {}
+
+
 .contact-follow-like-btn ul li {
   padding: 19px 34px 19px 34px;
 }
@@ -11010,10 +11010,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 .Job-Openings-list-2 {
   padding: 8px 12px;
 }
-}
 
-<<<<<<< Updated upstream
-=======
 .inlineprod_action h5 {
   width: 50px;
 }
@@ -11073,10 +11070,8 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
 
 }
-  
 
 
->>>>>>> Stashed changes
 @media screen and (max-width: 1024px) {
   .KABC-part-1-ah {
     width: 48%;
@@ -11085,6 +11080,22 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .Brooklyn-Simmons-tital span p {
     font-size: 12px;
   }
+
+  .mycart-order-summary a {
+    padding: 6px 55px;
+  }
+
+  .mycart-qualitytotal {
+    gap: 75px;
+}
+
+  .product-quality-total {
+    margin: 0px 100px 26px 0px;
+}
+
+  .mycart-order-summary h4 {
+    margin: 0px 0px 20px 0px !important;
+}
 
   .About-main-card-1-ah h2 {
     font-size: 18px;
@@ -12654,6 +12665,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   
 }
 
+
 @media (max-width: 991px) {
   .header--2--main--cont {
     max-width: 850px !important;
@@ -12682,6 +12694,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     width: 100% !important;
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .About-main-ah {
@@ -12831,10 +12844,134 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   padding: 0px 0px 0px 30px;
 }
 
+.header_main_Mobile {
+  background-color: #fff;
+  padding: 20px 0px 15px 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+  display: block !important;
+}
+
+.header_mob_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header_main_Mobile .header-logo img {
+  cursor: pointer;
+  width: 140px;
+}
+
+
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav button {
+  background: none;
+  border: none;
+  cursor: pointer; 
+}
+
+.header_nav .toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  margin: 0px 10px 0px 0px;
+}
+
+.header_nav .toggle .bars {
+  height: 4px;
+  transition: all 0.3s ease;
+}
+
+.sidepanel {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1001; 
+  top: 0; 
+  left: 0; 
+  background-color: #194d79; 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+  padding-top: 60px; 
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Public Sans';
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1; 
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  font-size: 36px;
+}
+
+#mySidepanel.open {
+  width: 250px; 
+}
+
+/* #checkbox:checked + label .bars {
+  background-color: #f1f1f1; 
+}
+
+#checkbox:checked + label .bars:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); 
+}
+
+#checkbox:checked + label .bars:nth-child(2) {
+  opacity: 0; 
+}
+
+#checkbox:checked + label .bars:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+} */
+
+header.header_main {
+  display: none;
+}
+
+.toggle #barz1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+  top: 0px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.toggle #barz3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+  background-color: #fff;
+}
+
+
 
 }
 
+
 @media screen and (max-width: 600px) {
+
   .ul-li-list-footer ul {
     flex-direction: column;
     align-items: flex-start;
@@ -14406,23 +14543,25 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .newsletter-article-search {
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 0px 0px;
   }
 
   .newsletter-article-search span {
     right: 10px;
     top: 35px;
   }
+  .newsletter-article-search input {
+    width: 100%;
+}
 
   .filter-short-box {
     justify-content: space-between;
   }
 
   .filter-box select {
-    padding: 8px 30px;
-    font-size: 14px;
-    margin: 0px 0px 10px 0px;
-  }
+    padding: 8px 10px;
+    margin: 0px 0px 0px 0px;
+}
 
   .newsletter-likecomment-share {
     gap: 15px;
@@ -14651,7 +14790,7 @@ CONTACTUS */
 
   .contact-follow-like-btn ul li {
     font-size: 12px;
-    padding: 4px 12px;
+    padding: 7px 13px;
   }
 
   .contact-follow-topline {
@@ -14669,12 +14808,9 @@ CONTACTUS */
     border-radius: 20px;
   }
 
-  .filter-box {
-    gap: 15px;
-  }
-
   .rating-real-journalist {
     border-radius: 20px 20px 0px 0px;
+    padding: 100px 50px;
   }
 
   .employer-newroom-box {
@@ -14822,10 +14958,6 @@ CONTACTUS */
 
   .filter-box {
     gap: 15px;
-  }
-
-  .rating-real-journalist {
-    border-radius: 20px 20px 0px 0px;
   }
 
   .employer-newroom-box {
@@ -15242,6 +15374,62 @@ CONTACTUS */
 
 .dashstock_box select {
   width: 100%;
+}
+
+.about-creator-img-name {
+  right: 50px;
+}
+
+.about-creator-img-name h6 {
+  font-size: 12px;
+  margin: 0px 0px 5px 0px;
+}
+
+.ratemystaion-contact-form p {
+  margin: 0px 0px 30px 0px !important;
+}
+
+.ratemystaion-contact-form {
+  padding: 10px;
+}
+.contact-follow-like-btn ul {
+gap: 8px;
+}
+
+.contact-form-btn button {
+  padding: 4px 45px;
+}
+
+.contact-latest-updates p {
+font-size: 14px;
+}
+
+.main-footer {
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.filter-box {
+  flex-wrap: nowrap;
+}
+
+.find-job-select-box input {
+  margin: 0px 0px 10px 0px;
+}
+
+.find-job-select-box span {
+  top: 9px;
+}
+
+.employer-newroom-box button {
+  padding: 20px 30px !important;
+  border-bottom: 5px solid #f2f2f2;
+}
+
+.employer-newroom-box button.text-white {
+  padding: 20px 30px !important;
+  border-bottom: 5px solid #89c400;
 }
 
 
