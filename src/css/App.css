@@ -10825,7 +10825,36 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 1280px) {
+=======
+
+@media screen and (max-width: 1280px) {
+
+  .your-journalism-txt {
+    padding: 65px 40px;
+  }
+
+  .shop-new-arrival h3 {
+    font-size: 45px;
+    width: 420px;
+  }
+
+  .shop-new-arrival-img img {
+    width: 260px;
+  }
+
+  .newsletter-article-search span {
+    top: 36px;
+}
+
+
+.contact-follow-like-btn ul li {
+  padding: 19px 41px 19px 39px;
+}
+
+
+>>>>>>> Stashed changes
   .addnewprod_head a {
     padding: 12px 14px 12px 11px;
   }
@@ -10983,6 +11012,71 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 }
 
+<<<<<<< Updated upstream
+=======
+.inlineprod_action h5 {
+  width: 50px;
+}
+
+.inlineprod_instock h5 {
+  width: 140px;
+}
+
+.product_dashboard_header_right {
+  gap: 20px;
+}
+
+.order_dashboard_header_right {
+  gap: 110px;
+  margin: 0px 0px 0px 20px;
+}
+
+.order-header-select {
+  gap: 22px;
+}
+
+.inlineprod_dtpub p {
+  width: 100px;
+}
+
+.order_dashboard_header_right {
+  gap: 50px;
+}
+
+.order-number-name {
+  gap: 22px;
+}
+
+.inlinprod_detail {
+  padding: 2px 0px 0px 20px;
+}
+
+.employer-newroom-box button {
+  padding: 24px 50px !important;
+}
+
+.employer-login-form {
+  padding: 10px 0px 100px 0px;
+}
+
+.rms-kabc-btn .themelight { 
+  padding: 8px 19px;
+}
+
+.rms-kabc-btn .themedark {
+  padding: 8px 19px;
+}
+
+.mycart-order-summary a {
+  padding: 6px 95px;
+}
+
+
+}
+  
+
+
+>>>>>>> Stashed changes
 @media screen and (max-width: 1024px) {
   .KABC-part-1-ah {
     width: 48%;
@@ -12046,7 +12140,12 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
   .employer-newroom-box button.text-white {
     font-size: 21px;
+    padding: 24px 30px !important;
   }
+
+  .employer-login-form {
+    padding: 10px 0px 100px 0px;
+}
 
   .employer-newroom-box button {
     color: #828282;
@@ -12063,7 +12162,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .employer-newroom-box {
-    padding: 20px 40px 0px 10px;
+    padding: 20px 40px 0px 40px;
   }
 
   .employer-dont-have-acc {
