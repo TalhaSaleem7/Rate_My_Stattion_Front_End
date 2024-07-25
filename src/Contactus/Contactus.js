@@ -52,7 +52,7 @@ const Contactus = () => {
                                 </Col>
                             </Row>
                             <Row className="contact-latest-line">
-                                <Col lg={12}>
+                                <Col lg={12} className="p-0">
                                     <div className="contact-follow-topline">
                                         <Row>
                                             <Col lg={4}>

@@ -114,7 +114,6 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-  /* 144.444% */
 }
 
 .KABC-tital-ah {
@@ -186,6 +185,7 @@ span.Info button svg {
 section.About-ah {
   width: 100%;
   padding: 99px 0px;
+  margin: 30px 0px 0px 0px;
 }
 
 .About-main-ah {
@@ -239,7 +239,7 @@ section.About-ah {
   width: 100%;
   background-color: #fff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 50px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
@@ -4375,7 +4375,7 @@ section.your-journalism-sec {
   font-weight: 400;
   line-height: 26px;
   color: #828282;
-  width: 150px;
+  width: 130px;
 }
 
 .filter-box select:focus {
@@ -4534,7 +4534,7 @@ section.latest-article-recommend-sec {
 
 .newsletter-pagination-slide .pagination a:hover {
   background: #f2f2f2;
-  padding: 15px 20px;
+  padding: 8px 20px;
   border-radius: 10px;
   color: #194d79;
 }
@@ -4628,7 +4628,7 @@ section.latest-article-recommend-sec {
   border-radius: 15px;
   background: #89c400 !important;
   box-shadow: 0px 4px 13px 0px rgba(8, 42, 83, 0.5);
-  padding: 13px 30px;
+  padding: 15px 30px;
   border: 2px solid #89c400 !important;
   transition: all 0.6s ease;
   width: 100%;
@@ -4789,7 +4789,9 @@ section.search-job-sec {
 
 .find-job-select-box {
   position: relative;
+  margin: 0px 0px 10px 0px;
 }
+
 
 .find-job-select-box span {
   position: absolute;
@@ -4977,6 +4979,8 @@ section.shop-product-search-sec {
   justify-content: space-between;
   width: 100%;
   margin: 0px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .shop-category h3 {
@@ -10746,8 +10750,8 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .your-journalism-txt {
-    padding: 65px 50px;
-  }
+    padding: 45px 50px;
+}
 
   .your-journalism-txt h3 {
     font-size: 28px;
@@ -10827,6 +10831,13 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     font-size: 14px;
     padding: 5px 15px !important;
   }
+
+  .filter-box select {
+    width: 100px;
+}
+
+
+
 }
 
 
@@ -10896,7 +10907,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     margin: 0px 10px 0px 0px;
   }
   .prod-dark-btn {
-    border-radius: 5px;
     font-size: 12px;
     line-height: 24px;
     padding: 6px 14px;
@@ -10906,7 +10916,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     font-size: 12px;
     line-height: 23px;
     padding: 6px 14px;
-    border-radius: 5px;
 }
   .inlineprod_action {
     margin: 0px 0px 0px 0px;
@@ -10965,7 +10974,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 
 .your-journalism-txt h5 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .newsletter-article-text h4 {
@@ -10995,8 +11004,10 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
 
 .contact-follow-like-btn ul li {
-  padding: 19px 34px 19px 34px;
+  padding: 16px 45px 17px 45px;
 }
+
+
 .Job-Openings-list-2 span p {
   font-size: 12px;
 }
@@ -11053,7 +11064,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 
 .employer-login-form {
-  padding: 10px 0px 100px 0px;
+  padding: 10px 0px 100px 20px;
 }
 
 .rms-kabc-btn .themelight { 
@@ -11067,6 +11078,51 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 .mycart-order-summary a {
   padding: 6px 95px;
 }
+
+.filter-box {
+  flex-wrap: nowrap;
+}
+
+section.ratemystation-shop-sec {
+  padding: 0px 0px 15px 0px;
+}
+
+
+.cart-counter {
+  gap: 5px;
+  padding: 12px 20px;
+}
+
+.ratemystaion-contact-form p {
+  margin: 0px 0px 80px 0px !important;
+}
+
+
+.input-field textarea {
+  height: 160px;
+}
+
+.contact-follow-like-btn ul {
+  gap: 28px;
+}
+
+.Job-list-2-ah {
+  padding: 10px 20px;
+}
+
+.Job-card-ah {
+  width: 75%;
+}
+
+.About-main-card-1-ah h2 {
+  padding: 0px 0px 20px 0px;
+}
+
+.Job-list-1-ah span h2 {
+  padding: 0px;
+}
+
+
 
 
 }
@@ -11353,11 +11409,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     font-size: 32px;
   }
 
-  .looking-for-worktxt p {
-    font-size: 18px;
-    margin: 15px 0px 20px 0px !important;
-  }
-
   .looking-for-worktxt a {
     font-size: 18px;
     line-height: 31.5px;
@@ -11373,7 +11424,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .About-main-card-1-ah {
-    padding: 20px;
+    padding: 40px;
   }
 
   .About-main-card-1-ah h2 {
@@ -11923,7 +11974,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .your-journalism-txt h5 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .journal-date-written {
@@ -11944,7 +11995,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .newsletter-article-text h4 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 34px;
   }
 
@@ -11981,11 +12032,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     font-size: 16px;
     line-height: 26px;
     padding: 9px 10px;
-  }
-
-  .filter-box select {
-    padding: 12px 16px;
-    font-size: 14px;
   }
 
   .filter-box p {
@@ -12091,6 +12137,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .filter-box select {
     padding: 10px 5px;
     font-size: 12px;
+    width: 80px;
   }
 
   .filter-box {
@@ -12420,7 +12467,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   .ratemystaion-contact-form p {
     font-size: 14px;
     line-height: 24px;
-    margin: 0px 0px 110px 0px !important;
+    margin: 0px 0px 90px 0px !important;
   }
 
   .ratemystaion-contact-form ul li {
@@ -12433,8 +12480,8 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .input-field textarea {
-    height: 175px;
-  }
+    height: 145px;
+}
 
   .contact-form-btn button {
     padding: 8px 55px;
@@ -12661,6 +12708,46 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
     width: 10px;
     height: 24px;
   }
+
+  .your-journalism-sec ul.slick-dots {
+    bottom: 28px;
+    right: 28%;
+}
+
+.your-journalism-sec::before {
+  height: 350px;
+}
+
+.contact-follow-like-btn ul {
+  gap: 28px;
+}
+
+.Job-Openings-list-1 span h2 {
+  font-size: 16px;
+}
+
+.Job-Openings-list-2 span p {
+  font-size: 9px;
+}
+
+
+.Job-Openings-card {
+  padding: 20px 14px;
+}
+
+
+
+.Job-Openings-list-3 button {
+  padding: 8px 6px;
+}
+
+.navtabs ul {
+  margin: 0px;
+}
+
+.job-ah-Filter-card select {
+  padding: 10px 5px;
+}
 
   
 }
@@ -12966,6 +13053,218 @@ header.header_main {
 }
 
 
+.journalism-img-txt {
+  flex-direction: column;
+  width: 100%;
+}
+
+.your-journalism-img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.your-journalism-txt {
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  padding: 20px 35px 70px 35px;
+}
+
+.your-journalism-sec ul.slick-dots {
+  bottom: 20px;
+  right: 40%;
+}
+
+.filter-box select {
+    width: 100px;
+}
+
+.filter-short-box {
+  gap: 10px;
+}
+
+.filter-box {
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.newsletter-article-search input {
+  width: 100%;
+}
+
+.newsletter-article-search span {
+  top: 55px;
+  right: 5%;
+}
+
+.newsletter-follow-box h4 {
+  margin: 0px 0px 20px 0px !important;
+}
+
+
+.contact-follow-like-btn ul {
+  gap: 28px;
+}
+
+.ratemystaion-contact-form {
+  padding: 40px 40px 0px 25px;
+}
+
+
+.newsletter-input-search {
+  margin: 50px 0px 20px 0px;
+}
+
+.newsletter-side-head {
+  margin: 36px 0px 36px 12px;
+}
+
+.employer-login-form {
+  padding: 10px 0px 30px 0px;
+}
+
+.employer-dont-have-acc {
+  margin: 10px 0px 30px 40px;
+}
+
+.employer-dont-have-acc a {
+  font-size: 14px;
+}
+
+.employer-inputfield input {
+  padding: 15px 10px;
+}
+
+.rating-real-journalist {
+  padding: 165px 50px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.contact-latest-updates {
+  padding: 0px 25px 20px 25px;
+}
+
+.ratemystaion-contact-form p {
+  margin: 0px 0px 30px 0px !important;
+}
+
+.contact-form-fields {
+  padding: 40px 40px 40px 25px;
+}
+
+.shop-new-arrival {
+  margin: 0px 10px 20px 10px;
+}
+
+section.ratemystation-shop-sec {
+  padding: 0px 0px 30px 0px;
+}
+
+.shop-category ul li button {
+  font-size: 16px;
+}
+
+.about-creator-img img {
+  width: auto;
+}
+
+.about-creator-img-name::before {
+  height: 80px;
+}
+
+.americon-prod-cart h3 {
+  width: 190px;
+}
+
+.mycart-qualitytotal {
+  gap: 85px;
+}
+
+.product-quality-total {
+  margin: 0px 120px 26px 0px;
+}
+
+section.rms_header {
+
+  display: none;
+}
+
+
+.about-creator-para {
+  padding: 30px 0px 0px 0px;
+}
+
+.job-save-share {
+  width: 100%;
+}
+
+.job-select-opts a {
+  width: 100%;
+}
+
+.job-select-opts {
+  margin: 20px 0px 0px 0px;
+}
+
+
+.contact-form-station {
+  padding: 20px 20px 40px 20px;
+}
+
+
+span.See button {
+  display: inline-block;
+}
+
+
+span.Info button {
+  font-size: 14px;
+  padding: 5px 12px !important;
+  display: inline-block;
+}
+
+
+.react-tabs__tab {
+  padding: 6px 6px;
+}
+
+.main-KABC-ah {
+  padding: 40px 30px 30px 30px;
+}
+
+.KABC-part-1-ah {
+  width: 65%;
+}
+
+.KABC-logo-ah button {
+  padding: 6px 18px;
+}
+
+.KABC-tital-ah p {
+  font-size: 18px;
+  gap: 10px;
+}
+
+.KABC-tital-ah p span {
+  font-size: 20px;
+}
+
+span.See button svg {
+  padding: 0px 6px 0px 0px;
+}
+
+.About-main-box-2-ah {
+  width: 100%;
+}
+
+
+.Job-Openings-list-3 button {
+  padding: 10px 15px;
+}
+
+.Job-Openings-card {
+  padding: 30px 25px;
+}
+
 
 }
 
@@ -13101,7 +13400,6 @@ header.header_main {
     font-size: 14px;
   }
 
-  .dp-imger {}
 
   .dp-imger {
     width: 40px;
@@ -13342,7 +13640,7 @@ header.header_main {
   }
 
   section.About-ah {
-    padding: 170px 0px 50px 0px;
+    padding: 140px 0px 10px 0px;  
   }
 
   .Director-ah-boxing-3 button {
@@ -13501,10 +13799,6 @@ header.header_main {
     gap: 20px;
   }
 
-  section.About-ah {
-    padding: 170px 0px 50px 0px;
-  }
-
   .Angeles-ah-icon-side {
     width: 100%;
     display: flex;
@@ -13647,7 +13941,7 @@ header.header_main {
   }
 
   .KABC-tital-ah span h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .ratings-ah-1-TITAL span h2 {
@@ -13684,11 +13978,6 @@ header.header_main {
 
   .director-urer {
     padding-bottom: 24px;
-  }
-
-  .Draft-ah {
-    flex-direction: column;
-    gap: 10px;
   }
 
   .Hire-ah-box h2 {
@@ -14015,6 +14304,7 @@ header.header_main {
   .gol-bar-tital {
     width: 100%;
     gap: 15px;
+    padding: 30px 0px 0px 0px;
   }
 
   .gol-bar-head h2 {
@@ -14026,7 +14316,7 @@ header.header_main {
   }
 
   section.Statistic-ah {
-    padding: 160px 0px 50px 0px;
+    padding: 180px 0px 50px 0px;
   }
 
   .navtabs {
@@ -14120,10 +14410,6 @@ header.header_main {
     align-items: flex-start;
   }
 
-  .KABC-tital-ah span h2 {
-    font-size: 20px;
-  }
-
   .ratings-ah-1-TITAL span h2 {
     font-size: 60px;
   }
@@ -14160,11 +14446,6 @@ header.header_main {
     padding-bottom: 14px;
   }
 
-  .Draft-ah {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .Hire-ah-box h2 {
     font-size: 24px;
   }
@@ -14175,7 +14456,9 @@ header.header_main {
   }
 
   .Draft-ah {
-    flex-direction: column;
+    flex-direction: row;
+    gap: inherit;
+    justify-content: space-between; 
   }
 
   .Cooper-ah-tital-head {
@@ -14367,7 +14650,9 @@ header.header_main {
 
   .job-ah-post h2 {
     font-size: 18px;
+    padding: 20px 0px 20px 0px; 
   }
+
 
   .job-ah-post h2 span {
     font-size: 15px;
@@ -14534,12 +14819,14 @@ header.header_main {
 
   .your-journalism-img {
     width: 100%;
-    display: none;
+    display: block;
+    border-radius: 20px 20px 0px 0px;
   }
 
   .your-journalism-txt {
     width: 100%;
     padding: 20px 25px 45px 25px;
+    border-radius: 0px 0px 20px 20px;
   }
 
   .newsletter-article-search {
@@ -14548,8 +14835,10 @@ header.header_main {
 
   .newsletter-article-search span {
     right: 10px;
-    top: 35px;
+    top: 55px;
   }
+
+
   .newsletter-article-search input {
     width: 100%;
 }
@@ -14559,9 +14848,10 @@ header.header_main {
   }
 
   .filter-box select {
-    padding: 8px 10px;
+    padding: 8px 6px;
     margin: 0px 0px 0px 0px;
-}
+    width: 120px;
+  }
 
   .newsletter-likecomment-share {
     gap: 15px;
@@ -14721,7 +15011,7 @@ header.header_main {
 
   .shop-new-arrival {
     padding: 30px 40px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 10px 10px 10px;
     height: auto;
   }
 
@@ -14778,21 +15068,6 @@ header.header_main {
     width: 50%;
   }
 
-  /* 
-CONTACTUS */
-  .contact-form-fields {
-    padding: 0px;
-  }
-
-  .contact-form-fields {
-    padding: 0px;
-  }
-
-  .contact-follow-like-btn ul li {
-    font-size: 12px;
-    padding: 7px 13px;
-  }
-
   .contact-follow-topline {
     padding: 20px 0px 0px 0px;
     border-top: 1px solid #e0e0e0;
@@ -14837,10 +15112,6 @@ CONTACTUS */
     margin: 10px 0px 5px 0px !important;
   }
 
-  .americon-prod-cart {
-    align-items: start;
-    flex-direction: column;
-  }
 
   .americon-prod-cart img {
     margin: 0px 0px 10px 0px;
@@ -14888,11 +15159,6 @@ CONTACTUS */
   .search-stations-input svg {
     top: 0px;
     right: 0px;
-  }
-
-  .search-stations-input.full-width input {
-    width: 350px;
-    padding: 15px 15px;
   }
 
   .like-report-submitted p {
@@ -14937,9 +15203,9 @@ CONTACTUS */
   }
 
   .contact-follow-like-btn ul li {
-    font-size: 12px;
-    padding: 4px 12px;
-  }
+    font-size: 14px;
+    padding: 6px 12px;
+}
 
   .contact-follow-topline {
     padding: 20px 0px 0px 0px;
@@ -14984,11 +15250,6 @@ CONTACTUS */
     margin: 10px 0px 5px 0px !important;
   }
 
-  .americon-prod-cart {
-    align-items: start;
-    flex-direction: column;
-  }
-
   .americon-prod-cart img {
     margin: 0px 0px 10px 0px;
   }
@@ -14998,7 +15259,7 @@ CONTACTUS */
   }
 
   .cart-counter {
-    padding: 8px 12px;
+    padding: 8px 12px;  
     margin: 0px 0px 10px 0px;
   }
 
@@ -15025,7 +15286,7 @@ CONTACTUS */
   }
 
   .review-news-director-second {
-    margin: 55px 0px 0px 0px !important;
+    margin: 25px 0px 0px 0px !important;
   }
 
   .select-box option {
@@ -15039,7 +15300,8 @@ CONTACTUS */
 
   .search-stations-input.full-width input {
     width: 350px;
-    padding: 15px 15px;
+    padding: 15px 15px; 
+    height: 52px;
   }
 
   .like-report-submitted p {
@@ -15068,7 +15330,7 @@ CONTACTUS */
   }
 
   section.About-ah {
-    padding: 150px 0px 10px 0px;
+    padding: 180px 0px 10px 0px;
   }
 
   .newsletter-long-txt {
@@ -15432,6 +15694,153 @@ font-size: 14px;
   border-bottom: 5px solid #89c400;
 }
 
+.assistant-director-txt h6 {
+  margin: 0px;
+}
+
+.assistant-logo-txt {
+gap: 10px;
+}
+
+.assistant-director-logo img {
+width: 60px;
+}
+
+.experience--desc--h {
+  max-height: 125px;
+}
+
+.info--close--h, .experience--close--h, .about--close--h {
+  top: 5%;
+  right: 7%;
+}
+
+.latest-rating-txt h3 {
+  margin: 0px 0px 20px 0px !important;
+}
+
+.newroom-coworker-txt svg {
+  width: 170px;
+}
+
+.search-stations-input span {
+  top: 2px;
+  right: 20px;
+}
+
+.latest-commentor-img img {
+  width: 50px;
+}
+
+.select-container {
+  padding: 2px 10px 2px 20px;
+}
+
+.looking-for-worktxt p {
+  width: 80%;
+}
+
+.contact-form-station {
+  padding: 20px 20px 42px 20px;
+}
+
+.faq--main--h .faq--main--search--h {
+  padding: 14px 18px;
+}
+
+.faq--main--search--icon--alt--h {
+  right: 8%;
+}
+
+
+.faq--main--h .faq--main--search--h {
+  padding: 14px 28px !important;
+}
+
+.faq--main--search--icon--alt--h {
+  right: 9% !important;
+  top: 20% !important;
+}
+
+
+.articles-writer-sec .newsletter-article-search {
+    padding: 51px 0px 0px 0px;
+}
+
+.articles-writer-sec .filter-short-box {
+  padding: 40px 0px 42px 0px;
+}
+
+.newsletter-article-text {
+    padding: 35px 27px 31px 30px;
+}
+
+.newsletter-side-head {
+  margin: 36px 0px 36px 12px;
+}
+
+.about-creator-img img {
+  width: 100%;
+}
+
+.about-creator-img-name::before {
+  height: 72px;
+}
+
+.ratings-ah-1 {
+  width: 100%;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.ratings-ah-1-TITAL {
+  width: 100%;
+}
+
+.Popular-ti-ah {
+  padding: 10px 0px 20px 0px;
+}
+
+.ratings-ah-1-TITAL span {
+  margin: 0px 0px 10px 0px;
+}
+
+.ratings-ah-1-TITAL h3 {
+  padding: 0px 0px 20px 0px;
+}
+
+.job-ah-Filter {
+  padding: 0px 0px 10px 0px;
+}
+
+.navtabs ul {
+  flex-wrap: wrap;
+}
+
+.gol-bar-head {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.gol-bar-ah {
+  width: 100%;
+  flex-direction: column;
+}
+
+.KABC-logo-ah button {
+  padding: 6px 10px;
+}
+
+
+.job-detailpg-txt h3 {
+  font-size: 27px;
+}
+
+
+.americon-prod-cart {
+  flex-wrap: wrap;
+}
 
 
 }

@@ -2603,7 +2603,40 @@ Media Query
   .job--open--dash--news--h--card--lower {
     padding: 24px 15px 27px 15px;
   }
+    
+  .faq--detail--card--one--bottom--h {
+    gap: 26px;
+    padding: 35px 0px 16px 0px;
+  }
+
+  .faq--detail--card--two .faq--detail--card--two--btn {
+    padding: 6px 30px;
+  }
+
+  .faq--detail--related--title {
+    padding-bottom: 12px;
+  }
+
+  .faq--detail--related--container--h {
+    row-gap: 16px;
+  }
+
+  .faq--search--detail--container-alt-2 {
+    padding: 55px 0px 10px 0px;
+  }
+
+  section.employer-login-pg-sec {
+    padding: 45px 0px 20px 0px;
+  }
+
+  .newsletter-side-head {
+    margin: 40px 0px 36px 12px;
 }
+  
+
+}
+
+
 @media (max-width: 404px) {
   :root {
     --font-size-14: 0.7rem;
@@ -2690,4 +2723,5 @@ Media Query
   .job--open--dash--news--h--card--title p {
     text-align: center;
   }
+
 }
