@@ -246,22 +246,28 @@ ul.save--share--pop {
 .faq--right--card .faq--right--card--body {
   padding: 0;
 }
+
+
 /* ======================================
   About Popup
   ====================================== */
+
 .my--container--h {
   max-width: 865.5px;
   padding: 30px;
   background: #ffffff;
   position: relative;
 }
+
 label {
   font-size: var(--font-size-16);
 }
+
 .about--close--h,
 .experience--close--h {
   width: 18.8px;
 }
+
 .about--input--h,
 .experience--input--h {
   background-color: #f2f2f2;
@@ -269,6 +275,7 @@ label {
   resize: none;
   padding: 10px 16px;
 }
+
 .experience--button--h,
 .about--button--h {
   display: flex;
@@ -276,15 +283,16 @@ label {
   gap: 20px;
   font-size: var(--font-size-16);
 }
+
 .faq--detail--card--one--bottom--h .about--btn--h--alt,
 .faq--detail--card--one--bottom--h .about--btn--h--alt--2,
 .experience--btn--h,
 .about--btn--h {
   max-width: 133px;
   width: 100%;
-
   border: 2px solid #194d79;
 }
+
 .experience--btn--h:focus,
 .experience--btn--h:hover,
 .about--btn--h:focus,
@@ -297,18 +305,21 @@ label {
   background-color: #194d79;
   color: white;
 }
+
 .verify--btn--h {
   color: #194d79;
   max-width: 178px;
   padding: 0.563rem 0;
   border: 2px solid #194d79;
 }
+
 .faq--detail--card--one--bottom--h .btn:hover,
 .experience--btn--h:hover,
 .verify--btn--h:hover,
 .about--btn--h:hover {
   border: none;
 }
+
 .experience--btn--h--alt,
 .about--btn--h--alt {
   background-color: #194d79;
@@ -320,12 +331,15 @@ label {
 .experience--email--h {
   max-width: 392px;
 }
+
 .experience--title--cont--h {
   gap: 20px;
 }
+
 .experience--title--cont--h--2 {
   gap: 0px;
 }
+
 .experience--address--inp--h,
 .experience--email--inp--h,
 .experience--job--inp--h,
@@ -335,9 +349,11 @@ label {
   border-radius: 10px;
   color: #828282;
 }
+
 .drop--position {
   position: relative;
 }
+
 .experience--job--inp--h--dropdown {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -347,35 +363,44 @@ label {
   position: absolute;
   z-index: 2;
 }
+
 .experience--job--inp--h--dropdown--click {
   cursor: pointer;
 }
+
 .experience--job--inp--h--dropdown--click--rad {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .experience--job--inp--h--dropdown li {
   padding: 11.8px 16.8px;
 }
+
 .experience--job--inp--h--dropdown li {
   font-size: 16px;
   color: black;
 }
+
 .experience--job--inp--h--dropdown li:hover {
   background-color: #bdbdbd;
   cursor: pointer;
 }
+
 .experience--form--check--input {
   width: 27.66px;
   height: 27.66px;
 }
+
 .experience--chkbox--h {
   padding: 10px 0;
   gap: 15px;
 }
+
 .experience--chkbox--h--2 {
   padding: 0;
 }
+
 .experience--desc--h {
   max-height: 175px;
 }
@@ -388,12 +413,15 @@ News Director + Award Popup
 .award--img--h {
   gap: 30px;
 }
+
 .news--director--img--h {
   padding: 6px 0px 20px 0px;
 }
+
 .award--img--h {
   padding: 4px 0px 20px 0px;
 }
+
 .news--director--img--h span,
 .award--img--h span {
   font-weight: bold;
@@ -402,20 +430,25 @@ News Director + Award Popup
   width: 89px;
   overflow: hidden;
 }
+
 /* ======================================
 Jop Opening Popup
 ====================================== */
+
 .job--opening--qualify--h {
   max-width: 392px;
   padding-left: 0;
   padding-right: 0;
 }
+
 .job--opening--qualify--h--alt {
   gap: 15px;
 }
+
 .job--opening--qualify--h a {
   color: black;
 }
+
 .job--opening--qualify--cont--h {
   justify-content: space-between;
 }
@@ -423,9 +456,11 @@ Jop Opening Popup
 /* ======================================
 Account Setting 
 ====================================== */
+
 .account--setting--right--h .subscribe {
   font-size: var(--font-size-16);
 }
+
 .tabcontent {
   display: none;
   animation: fadeEffect 1s;
@@ -439,41 +474,52 @@ Account Setting
     opacity: 1;
   }
 }
+
 .account--setting--left--h .list-group-item:last-child,
 .account--setting--left--h .list-group-item:first-child {
   border-radius: 0;
 }
+
 .account--setting--left--h .list-group-item.active {
   background-color: #f2f2f2;
   color: black;
 }
+
 .account--setting--container--pad--h {
   padding-top: 65px;
 }
+
 .account--setting--container {
   background-color: #ffffff;
 }
+
 .account-setting-right-title {
   padding-bottom: 30px;
 }
+
 .account--setting--left--h .list-group-item {
   border: none;
   gap: 15px;
   padding: 23px 30px;
 }
+
 .account--setting--left--h {
   border-right: 1px solid #bdbdbd;
 }
+
 .account--setting--link--h:focus {
   font-weight: 600;
   color: black;
 }
+
 .account--setting--logo {
   width: 27px;
 }
+
 .account--setting--left--h h1 {
   padding: 30px;
 }
+
 .row .account--setting--right--h {
   padding: 35px 45px 50px 45px;
 }
@@ -482,9 +528,11 @@ Account Setting
   gap: 52px;
   padding-bottom: 33px;
 }
+
 .profile--image--a--h {
   font-weight: 400;
 }
+
 .account--profile--img--h--cont {
   width: 157.8px;
   overflow: hidden;
@@ -494,6 +542,7 @@ Account Setting
 .account--setting--right--contact h1 {
   padding-bottom: 30px;
 }
+
 .form-label-alt {
   margin-bottom: 0.6rem;
 }
@@ -509,12 +558,14 @@ Account Setting
   margin-bottom: 0;
   line-height: 26px;
 }
+
 .setting--subscribe--card--one {
   padding: 30px 0px 27px;
   background-color: #9bdb08;
   position: relative;
   margin-right: auto;
 }
+
 .setting--subscribe--card--one h1 {
   padding-bottom: 9px;
 }
@@ -524,14 +575,17 @@ Account Setting
   padding-left: 0;
   text-align: right;
 }
+
 .setting--subscribe--card--two h1 {
   font-size: var(--font-size-28);
   padding-bottom: 9px;
 }
+
 .setting--subscribe--card--two p {
   font-size: var(--font-size-16);
   color: #828282;
 }
+
 .setting--subscribe--card--one::after {
   content: "";
   width: 10%;
@@ -546,16 +600,19 @@ Account Setting
 .account--setting--left--h--alt {
   padding-bottom: 188px;
 }
+
 .verify--image--container {
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 30px;
   align-items: center;
 }
+
 .setting--verify--img--container {
   display: flex;
   gap: 20px;
 }
+
 .setting--verify--img {
   width: 75.8px;
   cursor: pointer;
@@ -564,6 +621,7 @@ Account Setting
 /* ======================================
 FAQ Main Styles
 ====================================== */
+
 .faq--main--section--h {
   background-image: url(../img/faq_main_bg_h.png);
   background-repeat: no-repeat;
@@ -2545,7 +2603,40 @@ Media Query
   .job--open--dash--news--h--card--lower {
     padding: 24px 15px 27px 15px;
   }
+    
+  .faq--detail--card--one--bottom--h {
+    gap: 26px;
+    padding: 35px 0px 16px 0px;
+  }
+
+  .faq--detail--card--two .faq--detail--card--two--btn {
+    padding: 6px 30px;
+  }
+
+  .faq--detail--related--title {
+    padding-bottom: 12px;
+  }
+
+  .faq--detail--related--container--h {
+    row-gap: 16px;
+  }
+
+  .faq--search--detail--container-alt-2 {
+    padding: 55px 0px 10px 0px;
+  }
+
+  section.employer-login-pg-sec {
+    padding: 45px 0px 20px 0px;
+  }
+
+  .newsletter-side-head {
+    margin: 40px 0px 36px 12px;
 }
+  
+
+}
+
+
 @media (max-width: 404px) {
   :root {
     --font-size-14: 0.7rem;
@@ -2632,4 +2723,5 @@ Media Query
   .job--open--dash--news--h--card--title p {
     text-align: center;
   }
+
 }
