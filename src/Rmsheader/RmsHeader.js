@@ -148,37 +148,33 @@ const RmsHeader = () => {
                 </ul>
             )}
 
-
-                <header className="header_main_Mobile rms-mobile-header-logo">
-                    <Container>
-                    <Row>
-                        <Col lg={2}>
-                        <div className="header-logo">
-                            <img onClick={home} src={HeaderMainLogo} alt="img" />
-                        </div>
-                        </Col>
-                    </Row>
+            <header className="header_main_Mobile">
+                <Container>
+                <div className="header_mob_flex">
+                    <div className="header-logo">
+                    <img onClick={home} src={HeaderMainLogo} alt="img" />
+                    </div>
                     <div className="header_nav">
-                        <button onClick={openNav}>
+                    <button onClick={openNav}>
                         <input type="checkbox" id="checkbox" />
                         <label for="checkbox" class="toggle">
-                            <div class="bars"></div>
-                            <div class="bars"></div>
-                            <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
                         </label>
-                        </button>
-                        <div
+                    </button>
+                    <div
                         id="mySidepanel"
                         className="sidepanel"
                         style={{ width: panelWidth }}
-                        >
+                    >
                         <a href="javascript:void(0)" className="closebtn">
-                            <div class="toggle" onClick={closeNav}>
+                        <div class="toggle" onClick={closeNav}>
                             <div class="bars" id="barz1"></div>
-
                             <div class="bars" id="barz3"></div>
-                            </div>
+                        </div>
                         </a>
+                        <a href="#" onClick={home}>Home</a>
                         <a href="#" onClick={about}>About</a>
                         <a href="#" onClick={newsletter}>Newsletter</a>
                         <a href="#" onClick={job}>Jobs</a>
@@ -186,9 +182,10 @@ const RmsHeader = () => {
                         <a href="#" onClick={contact}>Contact</a>
                         <a href="#" onClick={faq}>FAQ</a>
                         <a href="#" onClick={login}>Login</a>
-                        </div>
                     </div>
-                    </Container>
+                    </div>
+                </div>
+                </Container>
             </header>
 
         </>

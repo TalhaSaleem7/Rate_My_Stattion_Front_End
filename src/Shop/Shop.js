@@ -93,7 +93,7 @@ const Shop = () => {
             <Col lg={4} md={6}>
               <div className="filter-short-box">
                 <Row>
-                  <Col lg={6} md={6}>
+                  <Col lg={6} md={6} xs={6}>
                     <div className="filter-box">
                       <p>filter:</p>
                       <select name="" id="">
@@ -103,7 +103,7 @@ const Shop = () => {
                       </select>
                     </div>
                   </Col>
-                  <Col lg={6} md={6}>
+                  <Col lg={6} md={6} xs={6}>
                     <div className="filter-box">
                       <p>Short:</p>
                       <select name="" id="">
