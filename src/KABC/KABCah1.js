@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import admin from "../img/admin.png";
 import kabc from "../img/kabc.png";
@@ -26,10 +26,36 @@ import { Container } from "react-bootstrap";
 import Header1 from "../Header/Header2";
 import { useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import axios from "axios";
 
 const Kabcah1 = () => {
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
+  const [userdata, setUser] = useState({});
+  useEffect(() => {
+    // Retrieve user data from local storage
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      console.log(user, userdata)
+      // setUser(user)
+
+      fetchUserData(user.id);
+     
+    }
+  }, []);
+
+  const fetchUserData = async (userId) => {
+    try {
+      const response = await axios.get(`http://localhost:5000/api/getuserdata/${userId}`);
+      setUser(response.data)
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
+
+
+
   return (
     <>
       <Header1 />
@@ -40,13 +66,16 @@ const Kabcah1 = () => {
             <div class="KABC-box-ah">
               <div class="KABC-part-1-ah">
                 <div class="KABC-logo-ah">
-                  <img src={admin} alt="" />
+                  
+
+                  <img src={userdata.Profile ? userdata.Profile.image: admin} alt="" />
+                
                   <button>Subscribed</button>
                 </div>
 
                 <div class="KABC-tital-ah">
                   <span>
-                    <h2>Brooklyn Simmons</h2>
+                    <h2>{userdata.username}</h2>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="22"
@@ -61,7 +90,8 @@ const Kabcah1 = () => {
                     </svg>
                   </span>
                   <p>
-                    News Director at <span>KABC</span>
+                    {userdata.Profile ? userdata.Profile.jobTitle :'Add Your Position'}
+                    {/* News Director at <span>KABC</span> */}
                   </p>
                   <span>
                     <svg
@@ -76,7 +106,7 @@ const Kabcah1 = () => {
                         fill="#194D79"
                       />
                     </svg>
-                    <p>Los Angeles, CA</p>
+                    <p>{userdata.Profile ? userdata.Profile.address :'Add Your Address'}</p>
                   </span>
                 </div>
               </div>

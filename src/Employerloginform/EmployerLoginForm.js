@@ -21,8 +21,19 @@ const EmployerLoginForm = () => {
       const response = await axios.post('http://localhost:5000/api/login', { username, password });
       if (response.data.message === 'Login successful') {
         setUser(response.data.user); // Store user details
+        localStorage.setItem('userData', JSON.stringify(response.data.user));
+
+        if(response.data.user.type === 'Employee'){
+          navigate("/kabcah1");
+
+        }
+        else{
+          navigate("/kabc2");
+
+        }
+        
         // navigate("/kabcah1"); // Navigate to the user profile page on success
-        navigate("/kabcah1", { state: { user: response.data.user } });
+        // navigate("/kabcah1", { state: { user: response.data.user } });
       }
     } catch (error) {
       setError("Invalid username or password");
