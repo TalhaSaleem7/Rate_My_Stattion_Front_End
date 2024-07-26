@@ -40,13 +40,14 @@ const Kabcah1 = () => {
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
+  const [aboutContent, setAboutContent] = useState("");
   useEffect(() => {
     // Retrieve user data from local storage
     const storedUser = localStorage.getItem('userData');
     if (storedUser) {
       const user = JSON.parse(storedUser);
       console.log(user, userdata)
-      // setUser(user)
+      // setUser(user)  
 
       fetchUserData(user.id);
 
@@ -70,6 +71,17 @@ const Kabcah1 = () => {
     const value = event.target.value;
     setSelectedOption(value);
     setShowModal(true); // Show the modal to render the selected component
+  };
+
+  const getLocal =() => {
+    console.log('achiveo')
+    const storedUser = localStorage.getItem('userData');
+    const user = JSON.parse(storedUser);
+
+    setAboutContent(user.about)
+    console.log('here' , aboutContent);
+
+
   };
 
   const handleClose = () => {
@@ -161,10 +173,13 @@ const Kabcah1 = () => {
         <option value="education">Add Education</option>
       </select>
 
-      <Modal show={showModal} onHide={handleClose}>
+      <Modal show={showModal} onHide={handleClose}
+      size="xl"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered>
         <Modal.Body>
           {/* Render different components based on selected option */}
-          {selectedOption === 'about' && <About />}
+          {selectedOption === 'about' && <About onSuccess = {getLocal} />}
           {selectedOption === 'experience' && <Experience />}
           {selectedOption === 'skill' && <Skill />}
           {selectedOption === 'education' && <Education />}
@@ -209,7 +224,7 @@ const Kabcah1 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Aboutah2 />
+                      <Aboutah2 aboutContent={aboutContent}  />
                       <Experianceah1 />
                       <Skillsah1 />
                       <Educationah1 />
