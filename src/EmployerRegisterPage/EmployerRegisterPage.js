@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { baseurl } from "../baseurl";
 
 const EmployerRegisterPage = () => {
   const navigate = useNavigate();
@@ -16,7 +17,9 @@ const EmployerRegisterPage = () => {
     email: '',
     password: '',
     confirmPassword: '',
-    subscription: 'free'
+    subscription: '',
+     authtype: 'Employee',
+     type:''
   });
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
@@ -31,9 +34,20 @@ const EmployerRegisterPage = () => {
     }));
   };
 
+  const handleTabChange = (tabName) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      authtype: tabName
+    }));
+  };
+
+
+  
+ 
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    const { username, email, password, confirmPassword } = formData;
+    const { username, email, password, confirmPassword, stationtype , type} = formData;
 
     if (password !== confirmPassword) {
       setError("Passwords do not match!");
@@ -41,11 +55,13 @@ const EmployerRegisterPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.get(`${baseurl}/signup`, {
+         
         username,
         email,
         password,
-        type: formData.subscription
+        type,
+        stationtype
       });
 
       setMessage('User created successfully');
@@ -55,8 +71,10 @@ const EmployerRegisterPage = () => {
         email: '',  
         password: '',
         confirmPassword: '',
-        subscription: 'free'
+        subscription: 'free',
+        type:''
       });
+     navigate('/employerlogin')
       setError('');
     } catch (err) {
       console.error('Error:', err);
@@ -64,6 +82,7 @@ const EmployerRegisterPage = () => {
     }
   };
 
+ 
   return (
     <>
       <Header />
@@ -81,17 +100,27 @@ const EmployerRegisterPage = () => {
                   </Col>
                   <Col lg={6}>
                     <div className="employer-newroom-box">
-                      <Tabs aria-label="Pills" style="pills">
-                        <Tabs.Item active title="Employee">
+                    <Tabs
+                        aria-label="Pills"
+                        style="pills"
+                      
+                        
+                      >
+                    
+
+                 
+
+                      
+                        <Tabs.Item active title="Employee"  onChange={() => handleTabChange('Employee')}>
                           <EmployerRegisterForm
-                            formData={formData}
-                            handleFormDataChange={handleFormDataChange}
+                           
                           />
                         </Tabs.Item>
-                        <Tabs.Item title="Newsroom">
+                      
+                        
+                        <Tabs.Item title="Newsroom" onClick={() => handleTabChange('Newsroom')} >
                           <EmployerNewsroomForm
-                            formData={formData}
-                            handleFormDataChange={handleFormDataChange}
+                            
                           />
                         </Tabs.Item>
                       </Tabs>
@@ -102,7 +131,7 @@ const EmployerRegisterPage = () => {
                         anytime. <span onClick={subsribe}>Learn more</span>
                       </a>
                     </div>
-                    <div className="employer-register-btn">
+                    {/* <div className="employer-register-btn">
                       <a
                         href="#"
                         onClick={handleFormSubmit}
@@ -113,7 +142,7 @@ const EmployerRegisterPage = () => {
                         <input type="checkbox" name="" id="check" />
                         <label htmlFor="check">Terms & conditions</label>
                       </div>
-                    </div>
+                    </div> */}
                     {message && <Alert variant="success">{message}</Alert>}
                     {error && <Alert variant="danger">{error}</Alert>}
                   </Col>

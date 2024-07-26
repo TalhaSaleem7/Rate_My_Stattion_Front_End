@@ -1,14 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Col, Row, Alert } from 'react-bootstrap';
+import { baseurl } from '../baseurl';
 
-const EmployerRegisterForm = ({ handleFormSubmit, handleFormDataChange, formData }) => {
+const EmployerRegisterForm = ({ }) => {
+ 
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    subscription: '',
+     authtype: 'Employee',
+     type:'Employee'
+  });
+
+  
+
+
+  const handleFormDataChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { username, email, password, confirmPassword } = formData;
+    const { username, email, password, confirmPassword, type } = formData;
 
     if (password !== confirmPassword) {
       setError("Passwords do not match!");
@@ -16,11 +41,13 @@ const EmployerRegisterForm = ({ handleFormSubmit, handleFormDataChange, formData
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.get(`${baseurl}/signup`, {
+        
+       
         username,
         email,
         password,
-        type: formData.subscription
+        type
       });
 
       setMessage('User created successfully');
@@ -130,6 +157,31 @@ const EmployerRegisterForm = ({ handleFormSubmit, handleFormDataChange, formData
               </div>
             </div>
           </Col>
+
+    <Col lg={12} className='text-left'>
+          <div className="employer-register-btn">
+                      <a
+                        href="#"
+                        onClick={handleSubmit}
+                      >
+                        Register
+                      </a>
+                      <div className="employer-input-checkbox">
+                        <input type="checkbox" name="" id="check" />
+                        <label htmlFor="check">Terms & conditions</label>
+                      </div>
+                    </div>
+                    </Col>
+
+
+          <input
+                type="hidden"
+                name="type"
+                id="type"
+                placeholder="Type"
+                value={formData.type || 'Employee'}
+                onChange={handleFormDataChange}
+              />
         </Row>
       </form>
     </div>

@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
 import Header1 from "../Header/Header2";
+import CloudinaryUpload from "../cloundanary/CloudinaryUpload";
 
 const AccountSettings = () => {
   const [activeTab, setActiveTab] = useState("Profile");
@@ -17,6 +18,22 @@ const AccountSettings = () => {
   };
 
   const navigate = useNavigate();
+  const handleCallbackResume=(e)=>{
+
+
+  
+    console.log(e,"Clod")
+
+    
+
+   
+
+
+
+    
+
+
+  }
 
   return (
     <>
@@ -36,6 +53,7 @@ const AccountSettings = () => {
                 >
                   <div className="account--setting--logo">
                     <img src={require("../img/profile_h.png")} alt="" />
+                 
                   </div>
                   Profile
                 </a>

@@ -1,14 +1,74 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Col, Row, Alert } from "react-bootstrap";
+import { baseurl } from "../baseurl";
 
-const EmployerNewsroomForm = ({ formData, handleFormDataChange }) => {
+const EmployerNewsroomForm = ({ }) => {
+
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    subscription: '',
+     authtype: 'Employee',
+     type:'Newsroom',
+     stationtype:''
+  });
+
+  
+
+
+  const handleFormDataChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { username, email, password, confirmPassword, type, stationtype } = formData;
+
+    if (password !== confirmPassword) {
+      setError("Passwords do not match!");
+      return;
+    }
+
+    try {
+      const response = await axios.get(`${baseurl}/signup`, {
+         
+        username,
+        email,
+        password,
+        type,
+        stationtype
+      });
+
+      setMessage('User created successfully');
+      // Optionally, clear the form or redirect the user
+      setError('');
+    } catch (err) {
+      console.error('Error:', err);
+      setError('Server Error');
+    }
+  };
+ 
+
   return (
     <div className="employer-register-form">
+       {message && <Alert variant="success">{message}</Alert>}
+       {error && <Alert variant="danger">{error}</Alert>}
       <form>
         <Row>
           <Col lg={6}>
             <div className="employer-inputfield employerregister-field">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">Station's name</label>
               <input
                 type="text"
                 name="username"
@@ -20,6 +80,28 @@ const EmployerNewsroomForm = ({ formData, handleFormDataChange }) => {
             </div>
           </Col>
           <Col lg={6}>
+          <div className="employer-inputfield employerregister-field">
+            <label htmlFor="stationtype">Station type</label>
+            <select
+              name="stationtype"
+              id="stationtype"
+              value={formData.stationtype}
+              onChange={handleFormDataChange}
+            >
+              <option value="">Select station type</option>
+              <option value="Tv News">Tv News</option>
+              <option value="Radio">Radio</option>
+              <option value="Publications">Publications</option>
+              <option value="Podcasts">Podcasts</option>
+              <option value="Youtube">Youtube</option>
+
+
+             
+            </select>
+          </div>
+
+          </Col>
+          <Col lg={12}>
             <div className="employer-inputfield employerregister-field">
               <label htmlFor="email">Email</label>
               <input
@@ -92,6 +174,28 @@ const EmployerNewsroomForm = ({ formData, handleFormDataChange }) => {
               </div>
             </div>
           </Col>
+          <Col lg={12} className='text-left'>
+          <div className="employer-register-btn">
+                      <a
+                        href="#"
+                        onClick={handleSubmit}
+                      >
+                        Register
+                      </a>
+                      <div className="employer-input-checkbox">
+                        <input type="checkbox" name="" id="check" />
+                        <label htmlFor="check">Terms & conditions</label>
+                      </div>
+                    </div>
+                    </Col>
+          <input
+                type="hidden"
+                name="type"
+                id="type"
+                placeholder="Type"
+                value={formData.type || 'Newsroom'}
+                onChange={handleFormDataChange}
+              />
         </Row>
       </form>
     </div>
