@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import { baseurl } from "../baseurl";
 
 const EmployerNewsroomForm = ({ }) => {
 
@@ -40,7 +41,8 @@ const EmployerNewsroomForm = ({ }) => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.get(`${baseurl}/signup`, {
+         
         username,
         email,
         password,

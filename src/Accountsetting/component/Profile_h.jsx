@@ -3,6 +3,7 @@ import CloudinaryUpload from "../../cloundanary/CloudinaryUpload";
 import Buttonh from "./savecnclbtn_h";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
+import {baseurl} from '../../baseurl';
 const ProfileComponent = () => {
 
 
@@ -57,7 +58,7 @@ const ProfileComponent = () => {
 
   
 
-    // const response = axios.post('http://localhost:5000/api/signup', {
+    // const response = axios.post('signup', {
     //   id:userId,
     //   profile:e
       
@@ -89,7 +90,8 @@ const ProfileComponent = () => {
     const userId = storedUser.id;
 
     try {
-      const response = await axios.post('http://localhost:5000/api/createprofile', {
+      const response = await axios.get(`${baseurl}/createprofile`, {
+        
         firstName,
         lastName,
         workPlace,
