@@ -19,6 +19,7 @@ import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
 import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
 import MyCartSD from '../MyCartSD/MyCartSD'; // Import MyCartSD
+import { baseurl } from '../baseurl';
 
 const Shop = () => {
     const [cart, setCart] = useState([]);
@@ -30,7 +31,7 @@ const Shop = () => {
     useEffect(() => {
       const fetchProducts = async () => {
         try {
-          const response = await axios.get('http://localhost:5000/api/products'); // Update this with your API endpoint
+          const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
           const formattedProducts = response.data.map(product => ({
             ...product,
             price: parseFloat(product.price) // Convert to number if necessary
@@ -43,10 +44,37 @@ const Shop = () => {
   
       fetchProducts();
     }, []);
-    const addToCart = (product) => {
-        setCart((prevCart) => [...prevCart, product]);
-        console.log("Product added to cart:", product);
-        alert(`Added ${product.name} to cart!`);
+
+    const getUserFromLocalStorage = () => {
+        const user = localStorage.getItem('userData');
+        return user ? JSON.parse(user) : null;
+      };
+    // const addToCart = (product) => {
+        const addToCart = async (product) => {
+        console.log('product' , product)
+        const storedUser = getUserFromLocalStorage();
+        const { id, image, name, price } = product;
+        try {
+            const response = await axios.post(`${baseurl}/addtocart`,  {
+              product_id:id,
+              image,
+              name,
+              price,
+              userId:storedUser.id
+            });
+      
+            // setMessage('User created successfully');
+            // Optionally, clear the form or redirect the user
+           
+     
+           
+          } catch (err) {
+            console.error('Error:', err);
+    
+          }
+        // setCart((prevCart) => [...prevCart, product]);
+        // console.log("Product added to cart:", product);
+        // alert(`Added ${product.name} to cart!`);
     };
 
     const proddetail = () => {

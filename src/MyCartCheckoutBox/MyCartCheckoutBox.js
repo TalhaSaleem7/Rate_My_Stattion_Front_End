@@ -1,6 +1,7 @@
 import React from 'react';
 
-const MyCartCheckoutBox = ({ subtotal, shippingFee, total }) => {
+const MyCartCheckoutBox = ({ subtotal, shippingFee }) => {
+  const total = subtotal + shippingFee;
   return (
     <>
       <div className="mycart-order-summary">
@@ -17,7 +18,7 @@ const MyCartCheckoutBox = ({ subtotal, shippingFee, total }) => {
         <input type="text" name="" id="" placeholder="Add coupon code here..." />
         <div className="prod-order-total-txt">
           <h5>Total</h5>
-          <h5>${total.toFixed(2)}</h5>
+          <h5>${total}</h5>
         </div>
         <a href="#">Checkout</a>
       </div>
