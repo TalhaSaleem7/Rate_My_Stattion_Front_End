@@ -4332,7 +4332,7 @@ section.your-journalism-sec {
 }
 
 .filter-short-box {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: end;
   gap: 20px;
@@ -10865,11 +10865,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   padding: 19px 41px 19px 39px;
 }
 
-
-  .addnewprod_head a {
-    padding: 12px 14px 12px 11px;
-  }
-
   .dashprod_filter_box {
     gap: 10px;
   }
@@ -11122,13 +11117,109 @@ section.ratemystation-shop-sec {
   padding: 0px;
 }
 
+section.ratemystation-shop-sec h4 {
+  margin: 50px 0px 50px 0px !important;
+}
+
+.filter-box select {
+  width: 150px;
+}
+
+.product-quality-total {
+  margin: 0px 110px 26px 0px;
+}
+
+.mycart-qualitytotal {
+  display: flex;
+  gap: 80px;
+}
+
+.ignore_delete_btns .delete_all {
+  padding: 6px 45px;
+}
+
+.dashboard_newsletter_txt h4 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.dashnewsletter_box img {
+  width: 170px;
+  height: 170px;
+}
+
+.newsletter-likecomment-share {
+  gap: 10px;
+}
+
+.dashnewsletter_box {
+  gap: 18px;
+  padding: 0px 0px 25px 0px;
+}
+
+section.ah1 {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.addnewprod_head {
+  width: 80%;
+}
+
+.addnewprod_head a {
+ padding: 4px 10px 4px 10px;
+ display: inline-block;
+}
+
+.pagesdash_add_search {
+  gap: 10px;
+}
+
+.pagesdash_pagessearch input:focus {
+  outline: none;
+}
+
+.pagesdash_filter_flex select {
+  padding: 11px 15px;
+}
+
+.pagesdash_filter_flex select:focus {
+  outline: none;
+}
+
+.email_subscriber_table table tbody tr td h5 {
+  padding: 0px 30px 0px 0px;
+}
+
+.email_subscriber_table table tbody tr td h6 {
+  padding: 0px 30px 0px 0px;
+}
+
+.dashnewsletter_data_box table tbody tr td h2 {
+  padding: 0px 20px 0px 21px;
+}
 
 
+.Employees-table-inbox {
+    flex-wrap: nowrap;
+}
+
+.Employees-table-inbox {
+  gap: 10px;
+}
+
+.Employees-box-btn-icon button {
+  padding: 10px 15px;
+}
 
 }
 
 
 @media screen and (max-width: 1024px) {
+  .Employees-table-inbox {
+    flex-wrap: wrap;
+  }
+
   .KABC-part-1-ah {
     width: 48%;
   }
@@ -12202,7 +12293,7 @@ section.ratemystation-shop-sec {
   }
 
   .employer-login-form {
-    padding: 10px 0px 100px 0px;
+    padding: 10px 20px 100px 20px;
 }
 
   .employer-newroom-box button {
@@ -12220,7 +12311,7 @@ section.ratemystation-shop-sec {
   }
 
   .employer-newroom-box {
-    padding: 20px 40px 0px 40px;
+    padding: 20px 10px 0px 10px;
   }
 
   .employer-dont-have-acc {
@@ -12749,6 +12840,10 @@ section.ratemystation-shop-sec {
   padding: 10px 5px;
 }
 
+.find-job-select-box span {
+  top: 8px;
+}
+
   
 }
 
@@ -13264,6 +13359,12 @@ span.See button svg {
 .Job-Openings-card {
   padding: 30px 25px;
 }
+
+section.ratemystation-shop-sec h4 {
+  margin: 30px 0px 30px 0px !important;
+}
+
+
 
 
 }
@@ -15088,10 +15189,6 @@ span.See button svg {
     padding: 100px 50px;
   }
 
-  .employer-newroom-box {
-    padding: 20px 20px 0px 20px;
-  }
-
   .employer-inputfield input {
     padding: 10px 12px;
   }
@@ -15227,7 +15324,7 @@ span.See button svg {
   }
 
   .employer-newroom-box {
-    padding: 20px 20px 0px 20px;
+    padding: 20px 10px 0px 10px;
   }
 
   .employer-inputfield input {
@@ -15840,6 +15937,14 @@ width: 60px;
 
 .americon-prod-cart {
   flex-wrap: wrap;
+}
+
+.newsletter-article-decided h4 {
+  font-size: 20px;
+}
+
+.Employees-Search {
+  width: 100%;
 }
 
 

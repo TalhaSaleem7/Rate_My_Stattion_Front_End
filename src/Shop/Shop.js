@@ -84,13 +84,13 @@ const Shop = () => {
       <section className="shop-product-search-sec">
         <Container>
           <Row>
-            <Col lg={8} md={6}>
+            <Col lg={7} md={6}>
               <div className="newsletter-article-search moress">
                 <input type="search" placeholder="Search product..." />
                 <span><RiSearchLine /></span>
               </div>
             </Col>
-            <Col lg={4} md={6}>
+            <Col lg={5} md={6}>
               <div className="filter-short-box">
                 <Row>
                   <Col lg={6} md={6} xs={6}>
