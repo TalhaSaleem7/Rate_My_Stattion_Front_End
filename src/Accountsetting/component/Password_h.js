@@ -3,6 +3,7 @@ import Buttonh from "./savecnclbtn_h";
 import axios from "axios";
 import { Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { baseurl } from "../../baseurl";
 
 const PasswordComponent = () => {
 
@@ -52,8 +53,7 @@ const PasswordComponent = () => {
     const userId = storedUser.id;
 
     try {
-      const response = await axios.post('http://localhost:5000/api/updatepass', {
-       
+      const response =  await axios.get(`${baseurl}/updatepass`, {
         recoveryEmail,
         current,
         newpass,

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { baseurl } from "../baseurl";
 
 const EmployerLoginForm = () => {
   const [username, setUsername] = useState("");
@@ -18,7 +19,9 @@ const EmployerLoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { username, password });
+      const response = await axios.get(`${baseurl}/login`, { username, password });
+      
+
       if (response.data.message === 'Login successful') {
         setUser(response.data.user); // Store user details
         localStorage.setItem('userData', JSON.stringify(response.data.user));

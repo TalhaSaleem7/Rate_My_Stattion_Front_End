@@ -27,6 +27,7 @@ import Header1 from "../Header/Header2";
 import { useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import axios from "axios";
+import { baseurl } from "../baseurl";
 
 const Kabcah1 = () => {
   const navigate = useNavigate();
@@ -47,7 +48,8 @@ const Kabcah1 = () => {
 
   const fetchUserData = async (userId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/getuserdata/${userId}`);
+      const response = await axios.get(`${baseurl}/getuserdata/${userId}`);
+      
       setUser(response.data)
     } catch (error) {
       console.error('Error fetching user data:', error);
@@ -132,6 +134,7 @@ const Kabcah1 = () => {
 
                 <span class="Info">
                   <button class="Contact-ah more">Add profile section</button>
+                
                 </span>
               </div>
             </div>

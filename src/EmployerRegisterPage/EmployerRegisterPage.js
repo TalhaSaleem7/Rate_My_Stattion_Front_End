@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { baseurl } from "../baseurl";
 
 const EmployerRegisterPage = () => {
   const navigate = useNavigate();
@@ -54,7 +55,8 @@ const EmployerRegisterPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.get(`${baseurl}/signup`, {
+         
         username,
         email,
         password,

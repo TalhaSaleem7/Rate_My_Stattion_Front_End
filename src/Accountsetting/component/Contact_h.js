@@ -2,6 +2,9 @@ import { useState } from "react";
 import Buttonh from "./savecnclbtn_h";
 import axios from "axios";
 import { Alert } from "react-bootstrap";
+import { baseurl } from "../../baseurl";
+
+
 const ContactComponent = () => {
   
   const [formData, setFormData] = useState({
@@ -43,8 +46,7 @@ const ContactComponent = () => {
     const userId = storedUser.id;
 
     try {
-      const response = await axios.post('http://localhost:5000/api/createcontacts', {
-       
+      const response = await axios.get(`${baseurl}/createcontacts`, {
         phone,
         website,
         linkedin,
