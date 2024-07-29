@@ -19,7 +19,7 @@ const EmployerLoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`${baseurl}/login`, { username, password });
+      const response = await axios.post(`${baseurl}/login`, { username, password });
       
 
       if (response.data.message === 'Login successful') {

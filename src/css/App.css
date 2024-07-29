@@ -122,6 +122,16 @@ a {
   gap: 14px;
 }
 
+
+.employer-inputfield.employerregister-field select {
+  background: var(--Gray-6, #f2f2f2);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 16px 20px;
+}
+
+
 .KABC-btn-box-ah {
   width: 18%;
   display: flex;
