@@ -55,7 +55,7 @@ const EmployerRegisterPage = () => {
     }
 
     try {
-      const response = await axios.get(`${baseurl}/signup`, {
+      const response = await axios.post(`${baseurl}/signup`, {
          
         username,
         email,
