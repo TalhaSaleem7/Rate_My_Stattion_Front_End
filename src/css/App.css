@@ -165,6 +165,20 @@ span.See select {
   /* 206.25% */
 }
 
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: none !important; 
+  pointer-events: auto;
+  background-color: none !important;
+  background-clip: none !important;
+  border: none !important;
+  border-radius: none !important;
+  outline: 0;
+}
+
 span.Info {
   width: 100%;
   display: flex;

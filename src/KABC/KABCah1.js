@@ -161,7 +161,12 @@ const Kabcah1 = () => {
         <option value="education">Add Education</option>
       </select>
 
-      <Modal show={showModal} onHide={handleClose}>
+
+      <Modal show={showModal} onHide={handleClose} 
+      size="xl"
+      centered
+      background="transparent"
+      >
         <Modal.Body>
           {/* Render different components based on selected option */}
           {selectedOption === 'about' && <About />}
@@ -171,6 +176,7 @@ const Kabcah1 = () => {
         </Modal.Body>
 
       </Modal>
+
                   </span>
                 </div>
               </div>
