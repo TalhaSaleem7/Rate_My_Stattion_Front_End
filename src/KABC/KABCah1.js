@@ -40,13 +40,16 @@ const Kabcah1 = () => {
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
+  const [aboutContent, setAboutContent] = useState("");
+  const [experienceContent, setExperinceContent] = useState("");
+
   useEffect(() => {
     // Retrieve user data from local storage
     const storedUser = localStorage.getItem('userData');
     if (storedUser) {
       const user = JSON.parse(storedUser);
       console.log(user, userdata)
-      // setUser(user)
+      // setUser(user)  
 
       fetchUserData(user.id);
 
@@ -70,6 +73,29 @@ const Kabcah1 = () => {
     const value = event.target.value;
     setSelectedOption(value);
     setShowModal(true); // Show the modal to render the selected component
+  };
+
+  const getLocal =() => {
+    console.log('achiveo')
+    const storedUser = localStorage.getItem('userData');
+    const user = JSON.parse(storedUser);
+
+    setAboutContent(user.about)
+    console.log('here' , aboutContent);
+
+
+  };
+
+
+  const getExperinces =() => {
+    console.log('achiveo')
+    const storedUsers = localStorage.getItem('experienceData');
+    const experience = JSON.parse(storedUsers);
+
+    setExperinceContent(experience)
+    console.log('here' , aboutContent);
+
+
   };
 
   const handleClose = () => {
@@ -169,8 +195,8 @@ const Kabcah1 = () => {
       >
         <Modal.Body>
           {/* Render different components based on selected option */}
-          {selectedOption === 'about' && <About />}
-          {selectedOption === 'experience' && <Experience />}
+          {selectedOption === 'about' && <About onSuccess = {getLocal} />}
+          {selectedOption === 'experience' && <Experience onSuccess = {getExperinces} />}
           {selectedOption === 'skill' && <Skill />}
           {selectedOption === 'education' && <Education />}
         </Modal.Body>
@@ -215,8 +241,8 @@ const Kabcah1 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Aboutah2 />
-                      <Experianceah1 />
+                      <Aboutah2 aboutContent={aboutContent}  />
+                      <Experianceah1  experienceContent={experienceContent}/>
                       <Skillsah1 />
                       <Educationah1 />
                     </div>

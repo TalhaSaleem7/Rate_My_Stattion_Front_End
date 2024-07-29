@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import kabc from "../img/kabc.png";
 import Assistant from "../img/Assistant.png";
@@ -27,10 +27,38 @@ import { useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import 'react-tabs/style/react-tabs.css';
+import axios from "axios";
+import { baseurl } from "../baseurl";
 
 const KABC2 = () => {
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
+  const [userdata, setUser] = useState({});
+
+
+  useEffect(() => {
+    // Retrieve user data from local storage
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      console.log(user, userdata)
+      // setUser(user)  
+
+      fetchUserData(user.id);
+
+    }
+  }, []);
+
+  const fetchUserData = async (userId) => {
+    try {
+      const response = await axios.get(`${baseurl}/getuserdata/${userId}`);
+
+      setUser(response.data)
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
+
   return ( 
     <>
 
@@ -48,7 +76,7 @@ const KABC2 = () => {
 
                 <div class="KABC-tital-ah">
                   <span>
-                    <h2>KABC</h2>
+                    <h2>{userdata.username}</h2>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="22"
@@ -62,7 +90,7 @@ const KABC2 = () => {
                       />
                     </svg>
                   </span>
-                  <p>TV News Station</p>
+                  <p>{userdata.stationtype}</p>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

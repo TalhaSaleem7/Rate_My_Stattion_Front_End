@@ -166,7 +166,7 @@ const Dash7ah = () => {
         </div>
       </section>
       
-      <div className="Employees-tabs">
+      {/* <div className="Employees-tabs">
         <div className="filter-box ">
           <p>Filter:</p>
           <select name="" id="">
@@ -206,7 +206,7 @@ const Dash7ah = () => {
             <option value="">Option 3</option>
           </select>
         </div>
-      </div>
+      </div> */}
 
       {/* </div>
 

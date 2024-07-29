@@ -120,7 +120,7 @@ function App() {
   return (
 
 
-    <Router>
+  <Router>
       <Routes>
         <Route path="/saveshareh" exact element={<Saveshare />} />
         <Route path="/Editdelh" exact element={<Editdel />} />
@@ -246,9 +246,6 @@ function App() {
         <Route path="/DirectorSearchResult" exact element={<DirectorSearchResult />}/>
         <Route path="/rateh" exact element={<RateThisProd />} />
         <Route path="/Sweatshirtah" exact element={<Sweatshirtah />} />
-
-
-        {/************* Admin Routes ***************/}
         <Route path="/productdashboard" exact element={<ProductDashboard/>} />
         <Route path="/cuponsdashoard" exact element={<CuponsDashoard/>} />
         <Route path="/orderdashboard" exact element={<OrderDashboard/>} />
@@ -259,27 +256,6 @@ function App() {
         <Route path="/pagesdashboard" exact element={<PagesDashboard/>} />
         <Route path="/billingdashboard" exact element={<BillingDashboard/>} />
         <Route path="/newsletterdashboard" exact element={<NewsletterDashboard/>} />
-
-
-
-        {/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
-          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
-          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
-          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
-
-        {/* <Route path="/btn" exact element={<Btn  />} /> 
-        <Route path="/Orders_popup" exact element={<Orders />} />
-        <Route path="/dah1" exact element={<Dash1ah />} />
-        <Route path="/dah2" exact element={<Dash2ah />} />
-        <Route path="/dah3" exact element={<Dash3ah />} />
-        <Route path="/dah4" exact element={<Dash4ah />} />
-        <Route path="/dah5" exact element={<Dash5ah />} />
-        <Route path="/dah6" exact element={<Dash6ah />} />
-        <Route path="/dah7" exact element={<Dash7ah />} />
-        <Route path="/dah8" exact element={<Dash8ah />} />
-        <Route path="/dah9" exact element={<Dash9ah />} /> */}
-        {/* <Routes> */}
-
         <Route path="/Dashbord" element={<MainLayouts />}>
         <Route index element={<DashHomeh />} />
         <Route path="DashHomeh" element={<DashHomeh />} />
@@ -309,6 +285,8 @@ function App() {
         <Route path="AdminManagement" element={<AdminManagement />} />
         <Route path="BillingDashboard" element={<BillingDashboard />} />
       </Route>
+
+
       
         {/* </Routes> */}
         {/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
@@ -317,8 +295,29 @@ function App() {
         admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
 
 
+        {/* admin-routesadmin-routesadmin-routesadmin-routesadmin-route
+          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes
+          admin-routesadmin-routesadmin-routesadmin-routesadmin-routes */}
+
+
+        {/* <Route path="/btn" exact element={<Btn  />} /> 
+        <Route path="/Orders_popup" exact element={<Orders />} />
+        <Route path="/dah1" exact element={<Dash1ah />} />
+        <Route path="/dah2" exact element={<Dash2ah />} />
+        <Route path="/dah3" exact element={<Dash3ah />} />
+        <Route path="/dah4" exact element={<Dash4ah />} />
+        <Route path="/dah5" exact element={<Dash5ah />} />
+        <Route path="/dah6" exact element={<Dash6ah />} />
+        <Route path="/dah7" exact element={<Dash7ah />} />
+        <Route path="/dah8" exact element={<Dash8ah />} />
+        <Route path="/dah9" exact element={<Dash9ah />} /> */}
+        {/* <Routes> */}
+
       </Routes>
-    </Router>
+  </Router>
+
+
   );
 }
 
