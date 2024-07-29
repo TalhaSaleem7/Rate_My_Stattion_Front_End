@@ -149,21 +149,6 @@ span.See button {
   line-height: 33px;
   /* 206.25% */
 }
-span.See select {
-  padding: 10px;
-  border: 1px solid hsl(207.5deg 65.75% 28.63%);
-  border-radius: 10px;
-  background: #194d79;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  font-family: "Public Sans", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 33px;
-  /* 206.25% */
-}
 
 span.Info {
   width: 100%;
@@ -4347,7 +4332,7 @@ section.your-journalism-sec {
 }
 
 .filter-short-box {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: end;
   gap: 20px;
@@ -10857,6 +10842,10 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
 
 @media screen and (max-width: 1280px) {
+
+  .employer-dont-have-acc {
+    margin: 0px 0px 20px 25px;
+}
 
   .your-journalism-txt {
     padding: 65px 40px;
