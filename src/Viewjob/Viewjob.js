@@ -260,6 +260,7 @@ const Viewjob = () => {
           </Row>
         </Container>
       </section>
+      
 
       <Footerah/>
     </>

@@ -15,7 +15,6 @@ const EmployerLoginPg = () => {
   return (
     <>
       <Header />
-
       <section className="employer-login-pg-sec">
         <Container>
           <Row>
@@ -52,8 +51,9 @@ const EmployerLoginPg = () => {
           </Row>
         </Container>
       </section>
-
       <Footerah />
+
+    
     </>
   );
 };
