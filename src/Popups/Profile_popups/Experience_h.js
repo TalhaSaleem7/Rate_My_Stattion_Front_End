@@ -308,7 +308,7 @@ import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from 'axios';
 import { baseurl } from '../../baseurl';
 
-function ExperienceForm() {
+function ExperienceForm({onSuccess}) {
   // State variables for form fields
   const [title, setTitle] = useState('');
   const [companyName, setCompanyName] = useState('');
@@ -382,12 +382,14 @@ function ExperienceForm() {
         
       });
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+      
 
-      const data = await response.json();
-      console.log('Success:', data);
+      localStorage.setItem('experienceData', JSON.stringify(response.data.data));
+
+      onSuccess()
+
+      // const data = await response.json();
+      // console.log('Success:', data);
     } catch (error) {
       console.error('Error:', error);
     }

@@ -1,11 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import kabc from '../img/kabc.png'
 import office from '../img/office-logo.png'
+import axios from "axios";
+import { baseurl } from "../baseurl";
 
 
-const Experianceah1 = ()=>{
+const Experianceah1 = ({experienceContent})=>{
+const [userdata, setUser] = useState({});
+const [experiencedataContent, setExperiencedataContent] = useState([]);
 
+
+console.log('exper' , experienceContent)
+
+useEffect(() => {
+    // Retrieve user data from local storage
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      console.log(user, userdata)
+      // setUser(user)  
+
+      fetchExperienceData(user.id);
+
+    }
+}, []);
+
+
+
+const fetchExperienceData = async (userId) => {
+    try {
+      const response = await axios.get(`${baseurl}/getexperince/${userId}`);
+      console.log('xxxxx' , response.data)
+
+      setExperiencedataContent(response.data)
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
+
+
+ 
+    const dataToRender = experienceContent && experienceContent.length > 0 ? experienceContent : experiencedataContent;
+
+  
 
 return(
 
@@ -14,7 +52,7 @@ return(
     <>
                         <div class="About-main-card-1-ah">
                             <span class="edite">
-                        <h2>Experiance</h2>
+                        <h2>Experience</h2>
                         <span class="edite-icon">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
@@ -26,7 +64,11 @@ return(
                               </svg>
                         </span>
                             </span>
-    
+
+                            {dataToRender.map((experience, index) => (
+                            <div>
+
+                            
                         <div class="Office-ah-box">
                             <div class="Office-ah-logo">
                                 <img src={office} alt=""/>
@@ -53,19 +95,11 @@ return(
                             <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
                         </div>
     
-                        <div class="Current-ah-job-box">
-                            <div class="Current-ah-job-card">
-                                <span><h2>Job Title (Current)</h2>
-                                <p>Fulltime</p></span>
-    
-                                <span>
-                                    <h3>Oct 2021  -  Apr 2022</h3>
-                                    <p>7 months</p>
-                                </span>
-                            </div>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
-                        </div>
+                        
                     </div>
+                    </div>
+                       ))}
+                           
                         
                         </div>
     
