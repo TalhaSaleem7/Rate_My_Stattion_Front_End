@@ -1,21 +1,68 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { baseurl } from '../baseurl';
+
 
 
 
 const NewsroomLoginForm = () => {
-    const [passwordShown, setPasswordShown] = useState(false);
+    const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordShown, setPasswordShown] = useState(false);
+  const [error, setError] = useState("");
+  const [user, setUser] = useState(''); // State to store user details
+  const navigate = useNavigate();
+
 
   const togglePasswordVisibility = () => {
     setPasswordShown(!passwordShown);                                                                                                                                                                                                                                                                                                                                                    
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(`${baseurl}/newsroomlogin`, { username, password });
+      
+
+      if (response.data.message === 'Login successful') {
+        setUser(response.data.user); // Store user details
+        localStorage.setItem('userData', JSON.stringify(response.data.user));
+
+        if(response.data.user.type === 'Newsroom'){
+          navigate("/kabc2");
+
+        }
+        else{
+          navigate("/kabcah1");
+
+        }
+        
+        // navigate("/kabcah1"); // Navigate to the user profile page on success
+        // navigate("/kabcah1", { state: { user: response.data.user } });
+      }
+    } catch (error) {
+      setError("Invalid username or password");
+      console.error("Login error:", error);
+    }
+  };
+
+  const handleForgotPassword = () => {
+    navigate("/ForgetPassword"); // Navigate to the ForgetPassword page
+  };
+
     return (
         <>
             <div className="employer-login-form">
+        {error && <div className="error-message">{error}</div>}
                 <form action="">
                     <div className="employer-inputfield">
                         <label htmlFor="">Station’s name</label>
-                        <input type="text" name="" id="" placeholder='Type your usename here...' />
+                        <input type="text" name="" id="" placeholder='Type your usename here...' 
+                         value={username}
+                         onChange={(e) => setUsername(e.target.value)}
+                        />
                     </div>
                     <div className="employer-inputfield">
                         <label htmlFor="password">Password</label>
@@ -24,6 +71,8 @@ const NewsroomLoginForm = () => {
                                 type={passwordShown ? "text" : "password"}
                                 id="password"
                                 placeholder="Type your password here..."
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}     
                                 style={{ paddingRight: '30px' }}
                             />
                             <span
@@ -41,8 +90,8 @@ const NewsroomLoginForm = () => {
                         </div>
                     </div>
                     <div className="employer-login-btns">
-                        <a href="#" className='employerloginbtn'>Login</a>
-                        <a href="#" className='employerforgotbtn'>Forgot password?</a>
+                        <a href="#" className='employerloginbtn' onClick={handleSubmit}> Login</a>
+                        <a href="#" className='employerforgotbtn' onClick={handleForgotPassword} >Forgot password?</a>
                     </div>
                 </form>
             </div>

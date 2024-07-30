@@ -377,12 +377,8 @@ function ExperienceForm({onSuccess}) {
       // });
 
       const response =  await axios.post(`${baseurl}/createexperience`, {
-     
-        formData
-        
+        formData        
       });
-
-      
 
       localStorage.setItem('experienceData', JSON.stringify(response.data.data));
 
