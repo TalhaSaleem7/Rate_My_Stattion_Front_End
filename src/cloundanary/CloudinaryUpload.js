@@ -150,9 +150,9 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number, isIm
       {/* <button onClick={triggerFileInput}>TS</button> */}
      <div className="Upload-show" >
      {isImagedisplay ? 
-  <img src={isImagedisplay} alt="displayed" /> : 
-  <span>+</span>
-}
+        <img src={isImagedisplay} alt="displayed" /> : 
+        <span>+</span>
+      }
         {/* <CloudinaryUpload cloudName={handleCallback}/> */}
       </div>
       <input

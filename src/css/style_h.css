@@ -548,6 +548,9 @@ Account Setting
 }
 
 
+.account--profile--img--h.d-flex.align-items-center a:focus {
+  outline: none;
+}
 
 .account--setting--right--contact h1 {
   padding-bottom: 30px;

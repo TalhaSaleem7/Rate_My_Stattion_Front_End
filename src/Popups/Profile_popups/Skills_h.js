@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Alert } from 'react-bootstrap';
 
 
-const SkillsForm = ({ onSuccess }) => {
+const SkillsForm = ({ onSuccess,onCancel }) => {
 
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
