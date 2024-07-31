@@ -42,6 +42,8 @@ const KABC2 = () => {
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
+  const [aboutsdata, setAboutsUser] = useState({});
+
 
 
   useEffect(() => {
@@ -67,6 +69,25 @@ const KABC2 = () => {
     } catch (error) {
       console.error('Error fetching user data:', error);
     }
+  };
+
+
+
+  const ongetabout = () => {
+
+    console.log('here')
+
+    const aboutUser = localStorage.getItem('aboutData');
+
+    const alpha = JSON.parse(aboutUser)
+
+
+
+    setAboutsUser(alpha)
+
+
+    console.log('done' , aboutsdata , 'alpha' , alpha)
+
   };
 
   const [selectedOption, setSelectedOption] = useState('');
@@ -175,7 +196,7 @@ const KABC2 = () => {
                         {selectedOption === 'Jobopening' && <JobopeningPopup />} */}
 
                         {/* Render different components based on selected option */}
-                        {selectedOption === 'StationAboutPopup' && <StationAboutPopup  />}
+                        {selectedOption === 'StationAboutPopup' && <StationAboutPopup onSuccess = {ongetabout} />}
                         {selectedOption === 'Director' && <DirectorPopup  />}
                         {selectedOption === 'Award' && <AwardPopup />}
                         {selectedOption === 'Jobopening' && <JobopeningPopup />}
@@ -222,7 +243,7 @@ const KABC2 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <About2 />
+                      <About2 aboutsdata = {aboutsdata}  />
                       <Dirctors2 />
                       <Award2 />
                       <Openings2 />

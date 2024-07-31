@@ -5,18 +5,46 @@ import { baseurl } from '../baseurl';
 
 
 
-const About2 = ({userId})=>{
-    const [aboutData, setAboutData] = useState([]);
+const About2 = ({aboutsdata})=>{
+    const [aboutData, setAboutData] = useState({});
+    const [aboutsDatas, setAboutDatas] = useState({});
+
     const [error, setError] = useState(null);
+
+
+    console.log('aboutsdatassss', aboutsdata)
+
+   
+
+
+    const getUserFromLocalStorage = () => {
+      const user = localStorage.getItem('userData');
+      return user ? JSON.parse(user) : null;
+    };
 
     const fetchAboutData = async () => {
         try {
-          const response =axios.get(`${baseurl}/getabout/${userId}`);
-          if (!response.ok) {
-            throw new Error(`Error: ${response.statusText}`);
-          }
-          const data = await response.json();
-          setAboutData(data);
+
+          console.log('Fetching')
+          const storedUser = getUserFromLocalStorage();
+        console.log('Retrieved user from local storage:', storedUser);
+        const userId = storedUser.id;
+
+
+
+
+
+
+          const response = await axios.get(`${baseurl}/getabout/${userId}`);
+
+          
+          console.log('aboutss' , response.data)
+          
+          // const data = await response.json();
+          setAboutData(response.data);
+
+
+          console.log('heh' , aboutData)
         } catch (err) {
           setError(err.message);
         }
@@ -24,10 +52,15 @@ const About2 = ({userId})=>{
     
       useEffect(() => {
         fetchAboutData();
-      }, [userId]);
-    
-      if (error) return <div>{error}</div>;
-    
+
+        setAboutDatas(aboutsdata)
+
+        console.log('ssss' , aboutsDatas)
+      }, []);
+
+
+     
+  
       return (
         <div className="About-main-card-1-ah">
           <span className="edite">
@@ -37,26 +70,25 @@ const About2 = ({userId})=>{
               <path d="M23.8662 9.05631C21.9942 7.18438 20.1457 5.33584 18.3127 3.5029C18.9991 2.80092 19.6621 2.04435 20.4031 1.38137C21.3858 0.492197 23.0394 0.515597 24.03 1.40477C24.7007 2.01315 25.3481 2.65273 25.9487 3.3313C26.8613 4.35307 26.8301 5.94422 25.9331 6.96598C25.8473 7.06738 25.7459 7.16098 25.6523 7.26237C25.0517 7.86295 24.4589 8.46353 23.8662 9.05631Z" fill="#828282"/>
             </svg>
           </span>
-          {aboutData.length ? (
-            aboutData.map((item, index) => (
-              <div key={index}>
-                <p>{item.About}</p>
+          
+          
+              <div >
+                <p>{aboutsdata.About ? aboutsdata.About : aboutData.About}</p>
+                
                 <hr/>
                 <div className="Industry-ah">
                   <span>
                     <h2>Industry</h2>
-                    <p>{item.Industry}</p> 
+                    <p>{aboutsdata.Industry ? aboutsdata.Industry : aboutData.Industry}</p> 
                   </span>
                   <span>
                     <h2>Station Address</h2>
-                    <p>{item.Address}</p> 
+                    <p>{aboutsdata.Address ? aboutsdata.Address : aboutData.Address}</p> 
                   </span>
                 </div>
               </div>
-            ))
-          ) : (
-            <div>No about data found</div>
-          )}
+          
+         
         </div>
       );
     };    

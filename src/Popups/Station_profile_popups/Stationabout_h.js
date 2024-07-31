@@ -4,7 +4,7 @@ import axios from "axios";
 import { baseurl } from "../../baseurl";
 
 
-const StationAboutForm = () => {
+const StationAboutForm = ({onSuccess}) => {
   const [formData, setFormData] = useState({
     About: '',
     Industry: '',
@@ -66,7 +66,15 @@ const StationAboutForm = () => {
         userId
       });
 
-      console.log('Form submitted successfully:', response.data);
+
+
+      console.log('Form submitted successfully:', response.data.about);
+
+      localStorage.setItem('aboutData', JSON.stringify(response.data.about));
+
+
+      onSuccess();
+
       setMessage(response.data.message)
     } catch (error) {
       setError(error.response?.data?.message || 'Error submitting form');
