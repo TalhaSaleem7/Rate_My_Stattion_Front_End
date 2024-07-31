@@ -398,6 +398,7 @@ const ProfileComponent = () => {
     const [imageurl, setImage] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+    const [isImagedisplay, setImagedisplay ] = useState('');
 
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -430,6 +431,7 @@ const ProfileComponent = () => {
 
     const handleCallbackResume = (e) => {
         setImage(e);
+        setImagedisplay(e)
         console.log(e, "Clod");
     }
 
@@ -476,7 +478,7 @@ const ProfileComponent = () => {
             {error && <Alert variant="danger">{error}</Alert>}
             <div className="account--profile--img--h d-flex align-items-center">
                 <div className="account--profile--img--h--cont">
-                    <CloudinaryUpload cloudName={handleCallbackResume} number={"1"} />
+                    <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"} />
                 </div>
                 <a href="#" className="profile--image--a--h">
                     Upload Image in <span>jpg or png format</span>

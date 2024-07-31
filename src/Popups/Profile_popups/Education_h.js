@@ -221,7 +221,6 @@ const EducationForm = (handleClose) => {
                 onChange={(e) => handleFormDataChange('description', e.target.value)}
               ></textarea>
             </div>
-
             <div className="experience--button--h pt-1">
               <button
                 type="button"

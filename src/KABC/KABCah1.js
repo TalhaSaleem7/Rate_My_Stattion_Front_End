@@ -5,7 +5,7 @@ import About from '../Popups/Profile_popups/About_h';
 import Experience from '../Popups/Profile_popups/Experience_h';
 import Skill from '../Popups/Profile_popups/Skills_h';
 import Education from '../Popups/Profile_popups/Education_h';
-
+import { FaPlusCircle } from "react-icons/fa";
 import admin from "../img/admin.png";
 import kabc from "../img/kabc.png";
 import Award from "../Award/Award";
@@ -37,6 +37,15 @@ import { baseurl } from "../baseurl";
 
 
 const Kabcah1 = () => {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const closePopup = (e) => {
+    console.log(e, "TS")
+    setShowModal(false);
+
+  }
+
+
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
@@ -63,7 +72,6 @@ const Kabcah1 = () => {
   const fetchUserData = async (userId) => {
     try {
       const response = await axios.get(`${baseurl}/getuserdata/${userId}`);
-
       setUser(response.data)
     } catch (error) {
       console.error('Error fetching user data:', error);
@@ -72,28 +80,21 @@ const Kabcah1 = () => {
 
   const [selectedOption, setSelectedOption] = useState('');
   const [showModal, setShowModal] = useState(false);
-
   const handleSelectChange = (event) => {
     const value = event.target.value;
     setSelectedOption(value);
-    setShowModal(true); // Show the modal to render the selected component
+    setShowModal(true);
   };
 
-  const getLocal =() => {
+  const getLocal = () => {
     console.log('achiveo')
     const storedUser = localStorage.getItem('userData');
     const user = JSON.parse(storedUser);
 
     setAboutContent(user.about)
+    console.log('here', aboutContent);
     console.log('here' , aboutContent);
   };
-
-  const closePopup = (e) =>
-    {
-      console.log(e,"TS")
-      setShowModal(false);
-    }
-
 
   const getExperinces =() => {
     console.log('achiveo')
@@ -127,6 +128,12 @@ const Kabcah1 = () => {
     setSelectedOption('');
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <Header1 />
@@ -137,13 +144,9 @@ const Kabcah1 = () => {
               <div class="KABC-box-ah">
                 <div class="KABC-part-1-ah">
                   <div class="KABC-logo-ah">
-
-
                     <img src={userdata.Profile ? userdata.Profile.image : admin} alt="" />
-
                     <button>Subscribed</button>
                   </div>
-
                   <div class="KABC-tital-ah">
                     <span>
                       <h2>{userdata.username}</h2>
@@ -202,30 +205,30 @@ const Kabcah1 = () => {
                   </span>
 
                   <span class="See">
-                    {/* <button class="Contact-ah more">Add profile section</button>  */}
-                    <select value={selectedOption} onChange={handleSelectChange}>
-        <option value="">Select an option</option>
-        <option value="about">Add About</option>
-        <option value="experience">Add Experience</option>
-        <option value="skill">Add Skill</option>
-        <option value="education">Add Education</option>
-      </select>
+                    <button class="Contact-ah more" onClick={toggleDropdown}><FaPlusCircle /> Add profile section</button>
+                    {isOpen && (
+                      <ul className="add_profile_ul" value={selectedOption} onChange={handleSelectChange}>
+                        <li><FaPlusCircle />Add About</li>
+                        <li><FaPlusCircle />Add Experience</li>
+                        <li><FaPlusCircle />Add Skill</li>
+                        <li><FaPlusCircle />Add Education</li>
+                      </ul>
+                    )}
 
 
-      <Modal show={showModal} onHide={handleClose} 
-      size="xl"
-      centered
-      background="transparent"
-      >
-        <Modal.Body>
-          {/* Render different components based on selected option */}
-          {selectedOption === 'about' && <About onSuccess = {getLocal} onCancel={closePopup}/>}
-          {selectedOption === 'experience' && <Experience onSuccess = {getExperinces} />}
-          {selectedOption === 'skill' && <Skill onSuccess = {getSkills}/>}
-          {selectedOption === 'education' && <Education onSuccess = {getEducation} />}
-        </Modal.Body>
+                    <Modal show={showModal} onHide={handleClose}
+                      size="xl"
+                      aria-labelledby="contained-modal-title-vcenter"
+                      centered>
+                      <Modal.Body>
+                        {/* Render different components based on selected option */}
+                        {selectedOption === 'about' && <About onSuccess={getLocal} onCancel={closePopup} />}
+                        {selectedOption === 'experience' && <Experience onCancel={closePopup} />}
+                        {selectedOption === 'skill' && <Skill onCancel={closePopup} />}
+                        {selectedOption === 'education' && <Education onCancel={closePopup} />}
+                      </Modal.Body>
 
-      </Modal>
+                    </Modal>
 
                   </span>
                 </div>
@@ -289,9 +292,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah">
                         <Cardah />
-
                         <Cardah />
-
                         <Cardah />
                       </div>
                     </div>

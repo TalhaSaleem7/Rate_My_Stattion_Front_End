@@ -121,12 +121,12 @@ const Viewjob = () => {
       <section className="search-job-sec">
         <Container>
           <Row>
-            <Col lg={7} md={6}>
+            <Col lg={8} md={6}>
               <div className="newsletter-article-search">
                 <h3>Recommend for you</h3>
               </div>
             </Col>
-            <Col lg={5} md={6}>
+            <Col lg={4} md={6}>
               <div className="filter-short-box">
                 <div className="filter-box">
                   <p>Filter:</p>

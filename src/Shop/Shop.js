@@ -182,8 +182,6 @@ const Shop = () => {
                                 <Col lg={12}>
                                     <div className="heading-see-all">
                                         <h3>Best Sellers</h3>
-                                        <a href="#" onClick={({mycart}) => setViewCart(true)}>View Cart</a> Toggle view to MyCartSD
-                                        {/* <a href="#" onClick={() => navigate("/mycart")}>View Cart</a> */}
                                     </div>
                                 </Col>
                             </Row>

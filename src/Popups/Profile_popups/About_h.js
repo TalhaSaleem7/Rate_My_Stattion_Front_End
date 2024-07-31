@@ -8,41 +8,31 @@ const Abouth = ({onSuccess, closePopup}) => {
   const handleInputChange = (e) => {
     setAboutContent(e.target.value);
   };
-
   const getUserFromLocalStorage = () => {
     const user = localStorage.getItem('userData');
     return user ? JSON.parse(user) : null;
   };
-
-
   const handleSubmit = async (e) => {
     console.log('hello');
     e.preventDefault();
-   
-
     const storedUser = getUserFromLocalStorage();
     console.log('Retrieved user from local storage:', storedUser);
     const userId = storedUser.id;
-
     try {
       const response =  await axios.post(`${baseurl}/addabout`, {
-     
         about:aboutContent,
         userId
-
       });
-
-      localStorage.setItem('userData', JSON.stringify(response.data.user));
-      
+      localStorage.setItem('userData', JSON.stringify(response.data.user)); 
       console.log('Form submitted successfully:', response.data);
-
       onSuccess();
-   
     } catch (error) {
-    
       console.error('Error submitting form:', error);
     }
   };
+
+
+
   return (
     <div className="container">
       <div className="my--container--h mx-auto">
@@ -82,6 +72,7 @@ const Abouth = ({onSuccess, closePopup}) => {
         <button
           type="button"
           className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
+          onClick={()=>onCancel(true)}
         >
           Cancel
         </button>
