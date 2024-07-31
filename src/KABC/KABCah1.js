@@ -43,6 +43,10 @@ const Kabcah1 = () => {
   const [aboutContent, setAboutContent] = useState("");
   const [experienceContent, setExperinceContent] = useState("");
 
+  const [skillContent, setSkillContent] = useState("");
+  const [educationContent, setEducationContent] = useState("");
+
+
   useEffect(() => {
     // Retrieve user data from local storage
     const storedUser = localStorage.getItem('userData');
@@ -82,9 +86,13 @@ const Kabcah1 = () => {
 
     setAboutContent(user.about)
     console.log('here' , aboutContent);
-
-
   };
+
+  const closePopup = (e) =>
+    {
+      console.log(e,"TS")
+      setShowModal(false);
+    }
 
 
   const getExperinces =() => {
@@ -95,7 +103,23 @@ const Kabcah1 = () => {
     setExperinceContent(experience)
     console.log('here' , aboutContent);
 
+  };
+  const getSkills =() => {
+    console.log('achiveo')
+    const storedUserskills = localStorage.getItem('skillData');
+    const Skill = JSON.parse(storedUserskills);
 
+    setSkillContent(Skill)
+    console.log('here' , experienceContent);
+  };
+
+  const getEducation =() => {
+    console.log('achiveo')
+    const storedUsersEducation = localStorage.getItem('eeducationData');
+    const Education = JSON.parse(storedUsersEducation);
+
+    setEducationContent(Education)
+    console.log('here' , skillContent);
   };
 
   const handleClose = () => {
@@ -187,19 +211,22 @@ const Kabcah1 = () => {
         <option value="education">Add Education</option>
       </select>
 
-      <Modal show={showModal} onHide={handleClose}
+
+      <Modal show={showModal} onHide={handleClose} 
       size="xl"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered>
+      centered
+      background="transparent"
+      >
         <Modal.Body>
           {/* Render different components based on selected option */}
-          {selectedOption === 'about' && <About onSuccess = {getLocal} />}
+          {selectedOption === 'about' && <About onSuccess = {getLocal} onCancel={closePopup}/>}
           {selectedOption === 'experience' && <Experience onSuccess = {getExperinces} />}
-          {selectedOption === 'skill' && <Skill />}
-          {selectedOption === 'education' && <Education />}
+          {selectedOption === 'skill' && <Skill onSuccess = {getSkills}/>}
+          {selectedOption === 'education' && <Education onSuccess = {getEducation} />}
         </Modal.Body>
 
       </Modal>
+
                   </span>
                 </div>
               </div>
@@ -240,7 +267,7 @@ const Kabcah1 = () => {
                     <div class="About-main-box-1-ah">
                       <Aboutah2 aboutContent={aboutContent}  />
                       <Experianceah1  experienceContent={experienceContent}/>
-                      <Skillsah1 />
+                      <Skillsah1 skillContent= {skillContent}/>
                       <Educationah1 />
                     </div>
 

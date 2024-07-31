@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 // import { Image, Video, Transformation, CloudinaryContext } from 'cloudinary-react';
-// import { baseurl } from './baseurl';
+import { baseurl } from '.././baseurl';
 import axios from 'axios';
  
 
@@ -83,7 +83,8 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) =>
 
     })
 
-      axios.post('http://localhost:5000/api/upload-brand',formData)
+      axios.get(`${baseurl}/upload-brand`,formData)
+      
       .then((response)=>{
 
         console.log(response)
@@ -120,7 +121,7 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) =>
 
     })
 
-      axios.post('http://localhost:5000/api/upload-brand1',formData)
+    axios.get(`${baseurl}/upload-brand1`,formData)
       .then((response)=>{
 
         console.log(response.data,"DATA!!")
