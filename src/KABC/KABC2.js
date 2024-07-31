@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import kabc from "../img/kabc.png";
 import Assistant from "../img/Assistant.png";
 import Award from "../Award/Award";
-import About from "../About/About";
+import Jobopening from '../Popups/Station_profile_popups/Jobopening_h';
 import Dirctors from "../Dirctors/Dirctors";
 import Openings from "../Openings/Openings";
 import Cardah from "../Cardah/Cardah";
@@ -25,6 +25,7 @@ import { Container} from "react-bootstrap";
 import Header1 from "../Header/Header2";
 import { useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Modal, Button } from 'react-bootstrap';
 
 import 'react-tabs/style/react-tabs.css';
 import axios from "axios";
@@ -58,6 +59,22 @@ const KABC2 = () => {
       console.error('Error fetching user data:', error);
     }
   };
+
+
+  const [selectedOption, setSelectedOption] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  
+  const handleSelectChange = (event) => {
+    const value = event.target.value;
+    setSelectedOption(value);
+    setShowModal(true); // Show the modal to render the selected component
+  };
+
+const handleClose = () => {
+    setShowModal(false);
+    setSelectedOption('');
+  };
+
 
   return ( 
     <>
@@ -416,7 +433,28 @@ const KABC2 = () => {
                       Pellentesque vel tristique ultrices habitasse feugiat
                       nulla tempor quam.{" "}
                     </p>
-                    <button>Post job opening</button>
+                    {/* <button>Post job opening</button> */}
+
+                    <select value={selectedOption} onChange={handleSelectChange}>
+        <option value="">Select an option</option>
+        <option value="about">Add About</option>
+        <option value="experience">Add Experience</option>
+        <option value="skill">Add Skill</option>
+        <option value="education">Add Education</option>
+      </select>
+      <Modal show={showModal} onHide={handleClose}
+      size="xl"
+      centered
+      background="transparent"
+      >
+        <Modal.Body>
+          {/* Render different components based on selected option */}
+          {selectedOption === 'about' && <Jobopening />}
+         
+        </Modal.Body>
+      </Modal>
+
+
                   </div>
                 </div>
               </div>
