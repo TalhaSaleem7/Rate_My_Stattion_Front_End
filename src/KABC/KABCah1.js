@@ -50,6 +50,12 @@ const Kabcah1 = () => {
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
   const [aboutContent, setAboutContent] = useState("");
+  const [experienceContent, setExperinceContent] = useState("");
+
+  const [skillContent, setSkillContent] = useState("");
+  const [educationContent, setEducationContent] = useState("");
+
+
   useEffect(() => {
     // Retrieve user data from local storage
     const storedUser = localStorage.getItem('userData');
@@ -87,6 +93,34 @@ const Kabcah1 = () => {
 
     setAboutContent(user.about)
     console.log('here', aboutContent);
+    console.log('here' , aboutContent);
+  };
+
+  const getExperinces =() => {
+    console.log('achiveo')
+    const storedUsers = localStorage.getItem('experienceData');
+    const experience = JSON.parse(storedUsers);
+
+    setExperinceContent(experience)
+    console.log('here' , aboutContent);
+
+  };
+  const getSkills =() => {
+    console.log('achiveo')
+    const storedUserskills = localStorage.getItem('skillData');
+    const Skill = JSON.parse(storedUserskills);
+
+    setSkillContent(Skill)
+    console.log('here' , experienceContent);
+  };
+
+  const getEducation =() => {
+    console.log('achiveo')
+    const storedUsersEducation = localStorage.getItem('eeducationData');
+    const Education = JSON.parse(storedUsersEducation);
+
+    setEducationContent(Education)
+    console.log('here' , skillContent);
   };
 
   const handleClose = () => {
@@ -195,6 +229,7 @@ const Kabcah1 = () => {
                       </Modal.Body>
 
                     </Modal>
+
                   </span>
                 </div>
               </div>
@@ -233,9 +268,9 @@ const Kabcah1 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Aboutah2 aboutContent={aboutContent} />
-                      <Experianceah1 />
-                      <Skillsah1 />
+                      <Aboutah2 aboutContent={aboutContent}  />
+                      <Experianceah1  experienceContent={experienceContent}/>
+                      <Skillsah1 skillContent= {skillContent}/>
                       <Educationah1 />
                     </div>
 

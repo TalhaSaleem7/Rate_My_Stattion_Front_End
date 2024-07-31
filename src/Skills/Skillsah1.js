@@ -1,10 +1,27 @@
 import React from "react";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 import kabc from '../img/kabc.png'
+import Education from '../img/Education-logo.png'
+import { baseurl } from "../baseurl";
 
 
 const Skillsah1 = ()=>{
 
+    const [SkillData, setSkillData] = useState([]);
+    useEffect(() => {
+        // Fetch data from the backend when the component mounts
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${baseurl}/skilldata`);
+                setSkillData(response.data); // Set the fetched data to state
+            } catch (error) {
+                console.error("Error fetching education data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
 return(
 
@@ -28,35 +45,15 @@ return(
                             </span>
                         </span>
                             <div class="Skills-ah-box-main">
-    
-                            <div class="Skills-ah-box">
-                                <h2>Skill 1</h2>
-                                <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
+                            {SkillData.map((skill, index) => (
+                            <div key={index} class="Skills-ah-box">
+                                <h2>{skill.userSkill}</h2>
+                                <p>{skill.description}</p>
                             </div>
-    
-                            <div class="Skills-ah-box">
-                                <h2>Skill 2</h2>
-                                <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
-                            </div>
-    
-                            <div class="Skills-ah-box">
-                                <h2>Skill 3</h2>
-                                <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
-                            </div>
-    
+                            ))}
                         </div>
                         </div>
-
-
-    </>
-    
-)
-
-
-
-
-}
-
-
+    </>   
+)}
 
 export default Skillsah1

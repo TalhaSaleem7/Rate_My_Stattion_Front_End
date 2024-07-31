@@ -1,50 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-import kabc from '../img/kabc.png'
+import axios from "axios";
+import { baseurl } from "../baseurl";
 
-
-const Skillsah = ()=>{
-
-
-return(
-
+const Skillsah = (skillContent) => {
+    const [userdata, setUser] = useState({});
+    const [skilldataContent, setskillContent] = useState([]);
 
 
-    <>
+    useEffect(() => {
+        // Retrieve user data from local storage
+        const storedUser = localStorage.getItem('userData');
+        if (storedUser) {
+            const user = JSON.parse(storedUser);
+            console.log(user, userdata)
+            // setUser(user)  
+
+            fetchSkillData(user.id);
+
+        }
+    }, []);
+
+    const fetchSkillData = async (userId) => {
+        try {
+            const response = await axios.get(`${baseurl}/skilldata/${userId}`);
+            console.log('xxxxx', response.data)
+
+            setskillContent(response.data)
+        } catch (error) {
+            console.error('Error fetching user data:', error);
+        }
+    };
+
+    const dataToRender = skillContent && skillContent.length > 0 ? skillContent : skilldataContent;
 
 
-<div class="About-main-card-1-ah">
-                        <h2>Skills</h2>
-
-                        <div class="Skills-ah-box-main">
-
-                        <div class="Skills-ah-box">
-                            <h2>Skill 1</h2>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
+    return (
+        <>
+            <div className="About-main-card-1-ah">
+                <h2>Skills</h2>
+                <div className="Skills-ah-box-main">
+                    {dataToRender.map((skill, index) => (
+                        <div className="Skills-ah-box" key={index}>
+                            <h2>{skill.title}</h2>
+                            <p>{skill.description}</p>
                         </div>
-
-                        <div class="Skills-ah-box">
-                            <h2>Skill 2</h2>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
-                        </div>
-
-                        <div class="Skills-ah-box">
-                            <h2>Skill 3</h2>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
-                        </div>
-
-                    </div>
-</div>
-
-    </>
-    
-)
-
-
-
-
+                    ))}
+                </div>
+            </div>
+        </>
+    )
 }
-
-
 
 export default Skillsah

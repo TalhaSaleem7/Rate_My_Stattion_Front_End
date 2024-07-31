@@ -1,8 +1,70 @@
-import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
+import { useState } from "react";
+import { baseurl } from "../../baseurl";
+import axios from 'axios';
+import { Alert } from 'react-bootstrap';
 
-const SkillsForm = ({ onCancel }) => {
+
+const SkillsForm = ({ onSuccess }) => {
+
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+
+  const [formData, setFormData] = useState({
+    userSkill: "",
+    description: "",
+  });
+
+  const handleFormDataChange = (name, value) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+  const handleSubmit = async (e) => {
+    const storedUser = getUserFromLocalStorage();
+    console.log('Retrieved user from local storage:', storedUser);
+    const userId = storedUser.id;
+
+    e.preventDefault();
+    const { userSkill, description } = formData;
+
+    if (!userSkill || !description) {
+      setError("All fields are required!");
+      return;
+    }
+
+    try {
+      const response = await axios.post(`${baseurl}/SkillPopup`, {
+        userSkill,
+        description,
+        userId
+      });
+
+      localStorage.setItem('skillData', JSON.stringify(response.data.data));
+      onSuccess()
+
+      setMessage('Form submitted successfully');
+      setError('');
+
+      // Optionally, clear the form or redirect the user
+    } catch (err) {
+      console.error('Error:', err);
+      setError('Server Error');
+    }
+  };
+
+
   return (
     <div className="container">
+      {message && <Alert variant="success">{message}</Alert>}
+      {error && <Alert variant="danger">{error}</Alert>}
+
       <div className="my--container--h mx-auto">
         <div className="row">
           <div className="col">
@@ -20,6 +82,8 @@ const SkillsForm = ({ onCancel }) => {
                 className="form-control skills--inp--h mb-3"
                 id="skillsInput"
                 placeholder="Type here..."
+                value={formData.userSkill}
+                onChange={(e) => handleFormDataChange('userSkill', e.target.value)}
               />
               <label htmlFor="descriptionTextarea" className="form-label form-label-alt mt-1">Description</label>
               <textarea
@@ -27,21 +91,22 @@ const SkillsForm = ({ onCancel }) => {
                 id="descriptionTextarea"
                 rows="3"
                 placeholder="Type here..."
+                value={formData.description}
+                onChange={(e) => handleFormDataChange('description', e.target.value)}
               ></textarea>
             </div>
-            {/* <Buttonh/> */}
             <div className="experience--button--h pt-1">
               <button
                 type="button"
                 className="btn btn-primary experience--btn--h experience--btn--h--alt"
-                
+                onClick={handleSubmit}
               >
                 Save
               </button>
               <button
                 type="button"
                 className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-                onClick={() => onCancel(true)}
+                onClick={() => window.history.back()}
               >
                 Cancel
               </button>

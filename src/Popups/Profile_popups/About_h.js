@@ -2,11 +2,9 @@ import { useState } from "react";
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from "axios";
 import { baseurl } from "../../baseurl";
-
-
-const Abouth = ({onSuccess, onCancel}) => {
-
+const Abouth = ({onSuccess, closePopup}) => {
   const [aboutContent, setAboutContent] = useState("");
+
   const handleInputChange = (e) => {
     setAboutContent(e.target.value);
   };
@@ -42,8 +40,8 @@ const Abouth = ({onSuccess, onCancel}) => {
           <div className="col">
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">About</h1>
-              <div className="about--close--h"  onClick={()=>onCancel(true)}>
-                <img src={require("../../img/Union_h.png")} alt="" />
+              <div className="about--close--h">
+                <img src={require("../../img/Union_h.png" )} onCancel= {closePopup} alt="" />
               </div>
             </div>
             <div className="mb-3">
@@ -68,9 +66,7 @@ const Abouth = ({onSuccess, onCancel}) => {
         <button 
           type="button"
           className="btn btn-primary experience--btn--h experience--btn--h--alt"
-          onClick={handleSubmit}
-        
-        >
+          onClick={handleSubmit}>
           Save
         </button>
         <button
