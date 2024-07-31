@@ -2,7 +2,7 @@ import { useState } from "react";
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from "axios";
 import { baseurl } from "../../baseurl";
-const Abouth = ({onSuccess, closePopup}) => {
+const Abouth = ({onSuccess, onCancel}) => {
   const [aboutContent, setAboutContent] = useState("");
 
   const handleInputChange = (e) => {
@@ -41,7 +41,7 @@ const Abouth = ({onSuccess, closePopup}) => {
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">About</h1>
               <div className="about--close--h">
-                <img src={require("../../img/Union_h.png" )} onCancel= {closePopup} alt="" />
+                <img src={require("../../img/Union_h.png" )} onCancel= {onCancel(true)} alt="" />
               </div>
             </div>
             <div className="mb-3">
