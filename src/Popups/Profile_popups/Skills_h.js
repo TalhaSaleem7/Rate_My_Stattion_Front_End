@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Alert } from 'react-bootstrap';
 
 
-const SkillsForm = () => {
+const SkillsForm = ({onSuccess}) => {
 
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
@@ -21,7 +21,16 @@ const SkillsForm = () => {
     }));
   };
 
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
   const handleSubmit = async (e) => {
+    const storedUser = getUserFromLocalStorage();
+    console.log('Retrieved user from local storage:', storedUser);
+    const userId = storedUser.id;
+
     e.preventDefault();
     const { userSkill, description } = formData;
 
@@ -33,11 +42,16 @@ const SkillsForm = () => {
     try {
       const response = await axios.post(`${baseurl}/SkillPopup`, {
         userSkill,
-        description
+        description,
+        userId
       });
+      
+      localStorage.setItem('skillData', JSON.stringify(response.data.data));
+      onSuccess()
 
       setMessage('Form submitted successfully');
       setError('');
+   
       // Optionally, clear the form or redirect the user
     } catch (err) {
       console.error('Error:', err);

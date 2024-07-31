@@ -47,7 +47,7 @@ const ProfileComponent = () => {
 
   const handleCancel = () => {
     // Add your cancel logic here
-    console.log('Form submission cancelled');
+    console.log('Form submission cancelled'); 
   }
 
   const handleCallbackResume=(e)=>{

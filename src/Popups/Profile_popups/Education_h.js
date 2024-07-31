@@ -27,7 +27,7 @@ const EducationForm = (handleClose) => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+   const handleSubmit = async (e) => {
     e.preventDefault();
     const { school, degree, fieldOfStudy, startMonth, startYear, endMonth, endYear, description } = formData;
 
@@ -45,7 +45,7 @@ const EducationForm = (handleClose) => {
         startYear,
         endMonth,
         endYear,
-        description
+        description,
       });
 
       setMessage('Form submitted successfully');
