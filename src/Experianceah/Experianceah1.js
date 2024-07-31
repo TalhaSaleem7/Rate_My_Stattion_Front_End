@@ -38,17 +38,8 @@ const fetchExperienceData = async (userId) => {
       console.error('Error fetching user data:', error);
     }
   };
-
-
- 
     const dataToRender = experienceContent && experienceContent.length > 0 ? experienceContent : experiencedataContent;
-
-  
-
 return(
-
-
-
     <>
                         <div class="About-main-card-1-ah">
                             <span class="edite">
@@ -93,26 +84,13 @@ return(
                                 </span>
                             </div>
                             <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.</p>
-                        </div>
-    
-                        
+                        </div> 
                     </div>
                     </div>
                        ))}
-                           
                         
                         </div>
-    
 
-    </>
-    
-)
-
-
-
-
-}
-
-
-
+    </>    
+)}
 export default Experianceah1

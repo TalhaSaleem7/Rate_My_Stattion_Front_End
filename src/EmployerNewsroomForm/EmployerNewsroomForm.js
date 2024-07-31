@@ -1,3 +1,5 @@
+//NEWS ROOM REGISTER
+
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";

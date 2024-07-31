@@ -36,24 +36,31 @@ const ContactComponent = () => {
     return user ? JSON.parse(user) : null;
   };
 
+  const handleSaveClick = () => {
+    handleSubmit({ preventDefault: () => {} });
+    console.log('hello world');
+};
+const handleCancel = () => {
+  console.log('Form submission cancelled');
+}
+
   const handleSubmit = async (e) => {
     console.log('hello');
     e.preventDefault();
-    const { phone, website, linkedin, twitter } = formData;
+    const { phone, website, linkedin, twitter,facebook } = formData;
 
     const storedUser = getUserFromLocalStorage();
     console.log('Retrieved user from local storage:', storedUser);
     const userId = storedUser.id;
 
     try {
-      const response = await axios.get(`${baseurl}/createcontacts`, {
+      const response = await axios.post(`${baseurl}/createcontacts`, {
         phone,
         website,
         linkedin,
         twitter,
+        facebook,
         userId
-
-
       });
       
       console.log('Form submitted successfully:', response.data);
@@ -153,14 +160,14 @@ const ContactComponent = () => {
         <button 
           type="button"
           className="btn btn-primary experience--btn--h experience--btn--h--alt"
-          onClick={handleSubmit}
+          onClick={handleSaveClick}
         >
           Save
         </button>
         <button
           type="button"
           className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-          // onClick={onCancel}
+          onClick={handleCancel}
         >
           Cancel
         </button>
