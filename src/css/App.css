@@ -184,7 +184,7 @@ button.Contact-ah {
   line-height: 33px;
   /* 206.25% */
   border-radius: 8px;
-  padding: 5px 28px !important;
+  padding: 5px 10px !important;
 }
 
 span.Info button svg {
@@ -834,7 +834,8 @@ span.edite {
 
 span.edite svg {
   width: 28px;
-  height: 28px;
+  height: 28px; 
+  cursor: pointer;
 }
 
 span.edite-icon {
@@ -4336,7 +4337,7 @@ section.your-journalism-sec {
 .newsletter-article-search span {
   position: absolute;
   right: 32%;
-  top: 58px;
+  top: 36px;
   font-size: 22px;
   color: #828282;
 }
@@ -6112,6 +6113,7 @@ footer {
   position: absolute;
   right: 30px;
   bottom: 30px;
+  cursor: pointer;
 }
 
 .rms-dots-icon span {
@@ -10501,9 +10503,52 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code
 ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 
+.newsletter-article-search span.newsletter_search {
+  top: 58px;
+}
+.modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
 
 
+.add_profile_ul {
+  position: absolute;
+  background: #fff;
+  height: auto;
+  z-index: 999;
+  padding: 0px 0px;
+  box-shadow: 0 0 6px #00000030;
+  bottom: -55px;
+  margin: 0px;
+}
 
+.add_profile_ul li {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all .6s ease;
+}
+
+
+.add_profile_ul li:hover {
+  background: #194d79;
+  color: #fff;
+}
+
+
+button.Contact-ah.more {
+  background: transparent;
+  color: #194d79;
+  transition: all .6s ease;
+}
+
+button.Contact-ah.more:hover {
+  background: #194d79;
+  color: #ffff;
+}
 
 
 
@@ -10574,7 +10619,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .employer-login-form {
-    padding: 10px 0px 117px 0px;
+    padding: 10px 30px 117px 30px;
   }
 
   .employer-newroom-box {
@@ -10716,8 +10761,17 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   }
 
   .employer-dont-have-acc {
-    margin: 10px 0px 0px 25px;
+    margin: 0px 0px 20px 25px;
   }
+
+  .rms-kabc-btn .themedark {
+    padding: 8px 15px;
+}
+
+.rms-kabc-btn .themelight {
+  padding: 8px 15px;
+}
+
 
   .employer-dont-have-acc a {
     font-size: 12px;
@@ -10835,6 +10889,7 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
   span.See button {
     font-size: 14px;
     gap: 10px;
+    padding: 5px 10px !important;
   }
 
   span.Info button {
@@ -11007,11 +11062,6 @@ ahtisham-admin-screen-new-start-codeahtisham-admin-screen-new-start-code */
 }
 
 
-.newsletter-article-search span {
-  top: 58px;
-}
-
-
 .contact-follow-like-btn ul li {
   padding: 16px 45px 17px 45px;
 }
@@ -11136,7 +11186,8 @@ section.ratemystation-shop-sec h4 {
 }
 
 .filter-box select {
-  width: 150px;
+  width: 90px;
+  padding: 12px 10px;
 }
 
 .product-quality-total {

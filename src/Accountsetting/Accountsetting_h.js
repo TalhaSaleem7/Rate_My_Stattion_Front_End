@@ -18,20 +18,8 @@ const AccountSettings = () => {
   };
 
   const navigate = useNavigate();
-  const handleCallbackResume=(e)=>{
-
-
-  
+  const handleCallbackResume=(e)=>{  
     console.log(e,"Clod")
-
-    
-
-   
-
-
-
-    
-
 
   }
 
@@ -53,7 +41,6 @@ const AccountSettings = () => {
                 >
                   <div className="account--setting--logo">
                     <img src={require("../img/profile_h.png")} alt="" />
-                 
                   </div>
                   Profile
                 </a>

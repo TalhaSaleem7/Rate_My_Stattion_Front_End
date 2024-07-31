@@ -2,49 +2,39 @@ import { useState } from "react";
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from "axios";
 import { baseurl } from "../../baseurl";
-const Abouth = ({onSuccess}) => {
+
+
+const Abouth = ({onSuccess, onCancel}) => {
+
   const [aboutContent, setAboutContent] = useState("");
-  
-
-
   const handleInputChange = (e) => {
     setAboutContent(e.target.value);
   };
-
   const getUserFromLocalStorage = () => {
     const user = localStorage.getItem('userData');
     return user ? JSON.parse(user) : null;
   };
-
-
   const handleSubmit = async (e) => {
     console.log('hello');
     e.preventDefault();
-   
-
     const storedUser = getUserFromLocalStorage();
     console.log('Retrieved user from local storage:', storedUser);
     const userId = storedUser.id;
-
     try {
       const response =  await axios.post(`${baseurl}/addabout`, {
-     
         about:aboutContent,
         userId
-
       });
-
-      localStorage.setItem('userData', JSON.stringify(response.data.user));
-      
+      localStorage.setItem('userData', JSON.stringify(response.data.user)); 
       console.log('Form submitted successfully:', response.data);
-
       onSuccess();
-   
     } catch (error) {
-    
       console.error('Error submitting form:', error);
     }
   };
+
+
+
   return (
     <div className="container">
       <div className="my--container--h mx-auto">
@@ -52,7 +42,7 @@ const Abouth = ({onSuccess}) => {
           <div className="col">
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">About</h1>
-              <div className="about--close--h">
+              <div className="about--close--h"  onClick={()=>onCancel(true)}>
                 <img src={require("../../img/Union_h.png")} alt="" />
               </div>
             </div>
@@ -86,7 +76,7 @@ const Abouth = ({onSuccess}) => {
         <button
           type="button"
           className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-       
+          onClick={()=>onCancel(true)}
         >
           Cancel
         </button>

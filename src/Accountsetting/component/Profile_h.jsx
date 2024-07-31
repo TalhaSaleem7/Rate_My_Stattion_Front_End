@@ -21,6 +21,8 @@ const ProfileComponent = () => {
   const [imageurl, setImage] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [isImagedisplay, setImagedisplay] = useState('');
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -51,29 +53,18 @@ const ProfileComponent = () => {
   }
 
   const handleCallbackResume=(e)=>{
-
-
     setImage(e);
     console.log(e,"Clod")
-
-  
-
+    setImagedisplay(e);
     // const response = axios.post('signup', {
     //   id:userId,
     //   profile:e
       
     // });
     // console.log(response)
-
-
-    
-
-
-
-    
-
-
   }
+
+
 
   const handleSaveClick = () => {
     handleSubmit({ preventDefault: () => {} });
@@ -91,7 +82,6 @@ const ProfileComponent = () => {
 
     try {
       const response = await axios.get(`${baseurl}/createprofile`, {
-        
         firstName,
         lastName,
         workPlace,
@@ -99,8 +89,6 @@ const ProfileComponent = () => {
         address,
         image:imageurl,
         userId
-
-
       });
       
       console.log('Form submitted successfully:', response.data);
@@ -110,6 +98,7 @@ const ProfileComponent = () => {
       console.error('Error submitting form:', error);
     }
   };
+
   return (
     <>
       <h1 className="account-setting-right-title">Profile</h1>
@@ -117,10 +106,8 @@ const ProfileComponent = () => {
       {message && <Alert variant="success">{message}</Alert>}
       {error && <Alert variant="danger">{error}</Alert>}
         <div className="account--profile--img--h--cont">
-          {/* <img src={require("../../img/account_h.png")} alt="" /> */}
-
-          <CloudinaryUpload cloudName={handleCallbackResume}
-                                                number={"1"}/>
+          {/* <img src={isImagedisplay} alt="" /> */}
+          <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"}/>
         </div>
         <a href="#" className="profile--image--a--h">
           Upload Image in <span>jpg or png format</span>

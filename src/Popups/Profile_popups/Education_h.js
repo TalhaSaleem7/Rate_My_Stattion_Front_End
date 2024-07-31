@@ -1,6 +1,6 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import { useState } from "react";
-const EducationForm = () => {
+const EducationForm = ({ onCancel }) => {
   const [isStartDateMonth, setIsStartDateMonth] = useState(false);
   const [isStartDateYear, setIsStartDateYear] = useState(false);
 
@@ -35,7 +35,7 @@ const EducationForm = () => {
               >
                 Education
               </h1>
-              <div className="about--close--h">
+              <div className="about--close--h" onClick={() => onCancel(true)}>
                 <img src={require("../../img/Union_h.png")} alt="" />
               </div>
             </div>
@@ -86,11 +86,10 @@ const EducationForm = () => {
                 </label>
                 <div
                   onClick={toggleStartMonth}
-                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                    isStartDateMonth
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isStartDateMonth
                       ? `experience--job--inp--h--dropdown--click--rad`
                       : ``
-                  }`}
+                    }`}
                   id="inputWorkPlace"
                 >
                   Month
@@ -107,11 +106,10 @@ const EducationForm = () => {
               <div className="experience--email--h experience--col--child--h drop--position">
                 <div
                   onClick={toggleStartYear}
-                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                    isStartDateYear
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isStartDateYear
                       ? `experience--job--inp--h--dropdown--click--rad`
                       : ``
-                  }`}
+                    }`}
                   id="inputWorkPlace"
                 >
                   Year
@@ -137,11 +135,10 @@ const EducationForm = () => {
                 </label>
                 <div
                   onClick={toggleEndMonth}
-                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                    isEndDateMonth
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isEndDateMonth
                       ? `experience--job--inp--h--dropdown--click--rad`
                       : ``
-                  }`}
+                    }`}
                   id="inputWorkPlace"
                 >
                   Month
@@ -158,11 +155,10 @@ const EducationForm = () => {
               <div className="experience--email--h experience--col--child--h drop--position">
                 <div
                   onClick={toggleEndYear}
-                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                    isEndDateYear
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isEndDateYear
                       ? `experience--job--inp--h--dropdown--click--rad`
                       : ``
-                  }`}
+                    }`}
                   id="inputWorkPlace"
                 >
                   Year
@@ -191,7 +187,23 @@ const EducationForm = () => {
                 placeholder="Type here..."
               ></textarea>
             </div>
-            <Buttonh />
+            {/* <Buttonh /> */}
+            <div className="experience--button--h pt-1">
+              <button
+                type="button"
+                className="btn btn-primary experience--btn--h experience--btn--h--alt"
+
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
+                onClick={() => onCancel(true)}
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       </div>

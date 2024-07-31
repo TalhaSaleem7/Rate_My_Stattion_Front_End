@@ -1,6 +1,6 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 
-const SkillsForm = () => {
+const SkillsForm = ({ onCancel }) => {
   return (
     <div className="container">
       <div className="my--container--h mx-auto">
@@ -8,7 +8,7 @@ const SkillsForm = () => {
           <div className="col">
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">Skills</h1>
-              <div className="about--close--h">
+              <div className="about--close--h" onClick={() => onCancel(true)}>
                 <img src={require("../../img/Union_h.png")} alt="close" />
               </div>
             </div>
@@ -29,7 +29,23 @@ const SkillsForm = () => {
                 placeholder="Type here..."
               ></textarea>
             </div>
-            <Buttonh/>
+            {/* <Buttonh/> */}
+            <div className="experience--button--h pt-1">
+              <button
+                type="button"
+                className="btn btn-primary experience--btn--h experience--btn--h--alt"
+                
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
+                onClick={() => onCancel(true)}
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       </div>

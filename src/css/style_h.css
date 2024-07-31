@@ -534,10 +534,20 @@ Account Setting
 }
 
 .account--profile--img--h--cont {
-  width: 157.8px;
+  width: 100px;
   overflow: hidden;
   background-color: #f2f2f2;
+  text-align: center;
+  cursor: pointer;
+  border: 1px dashed #828282;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .account--setting--right--contact h1 {
   padding-bottom: 30px;

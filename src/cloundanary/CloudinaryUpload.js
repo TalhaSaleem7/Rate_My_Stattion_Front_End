@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 import axios from 'axios';
  
 
-const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) => {
+const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number, isImagedisplay }) => {
   const [site_url, setWebsiteUrl] = useState('');
   const [title, setTitle] = useState('');
   const [brand_email, setbrand_email] = useState('');
@@ -67,8 +67,6 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) =>
 
 
   const Upload_data=(e)=>{
-
-
     e.preventDefault()
     Upload_data1(e)
     console.log(site_url,title,image_url,selectedOption,"UPLOAD DATA")
@@ -85,28 +83,14 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) =>
 
       axios.post('http://localhost:5000/api/upload-brand',formData)
       .then((response)=>{
-
         console.log(response)
-
-        
-
-
       })
       .catch((error)=>{
         console.log(error)
-
-
       })
-
-
-
-
-
-
   }
 
   const Upload_data1=(e)=>{
-
     e.preventDefault()
     console.log(site_url,title,image_url,selectedOption,"UPLOAD DATA")
 
@@ -124,7 +108,6 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) =>
       .then((response)=>{
 
         console.log(response.data,"DATA!!")
-
         if(response.data.data.length >0)
           {
             
@@ -164,11 +147,13 @@ const CloudinaryUpload = ({ cloudName, uploadPreset,backgroundColor,number }) =>
 
 <div style={{backgroundColor:backgroundColor}} onClick={triggerFileInput}>
       {/* <button onClick={triggerFileInput}>TS</button> */}
-
-      <div className="Upload-show" >
-                                                <span>+</span>
-                                                {/* <CloudinaryUpload cloudName={handleCallback}/> */}
-                                            </div>
+     <div className="Upload-show" >
+     {isImagedisplay ? 
+  <img src={isImagedisplay} alt="displayed" /> : 
+  <span>+</span>
+}
+        {/* <CloudinaryUpload cloudName={handleCallback}/> */}
+      </div>
       <input
         type="file"
         id= {number}

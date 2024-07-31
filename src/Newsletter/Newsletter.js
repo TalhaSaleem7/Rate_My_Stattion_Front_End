@@ -178,7 +178,7 @@ const Newsletter = () => {
             <Col lg={8} md={6}>
               <div className="newsletter-article-search">
                 <input type="search" placeholder="Search articles or writer" />
-                <span>
+                <span className="newsletter_search">
                   <RiSearchLine />
                 </span>
               </div>
