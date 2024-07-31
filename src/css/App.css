@@ -84,6 +84,22 @@ a {
   gap: 10px;
 }
 
+span.See select {
+  padding: 10px;
+  border: 1px solid hsl(207.5deg 65.75% 28.63%);
+  border-radius: 10px;
+  background: #194d79;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  /* 206.25% */
+}
+
 .KABC-tital-ah span h2 {
   color: var(--194-d-79, #194d79);
   font-family: "Public Sans", sans-serif;
