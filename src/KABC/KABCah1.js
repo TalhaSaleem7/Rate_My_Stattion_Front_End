@@ -282,8 +282,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-                        <Cardah2 />
-                        <Cardah2 />
+                       
                       </div>
                       <div class="About-main-box-2-tital-ah">
                         <h2>Newsletter</h2>
@@ -352,11 +351,7 @@ const Kabcah1 = () => {
                     <div class="About-main-box-1-ah">
                       <Filter />
                       <Cardah3 />
-                      <Cardah3 />
-                      <Cardah3 />
-                      <Cardah3 />
-                      <Cardah3 />
-                      <Cardah3 />
+                     
                     </div>
 
                     <div class="About-main-box-2-ah">

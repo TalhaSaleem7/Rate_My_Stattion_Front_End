@@ -43,6 +43,11 @@ const KABC2 = () => {
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
   const [aboutsdata, setAboutsUser] = useState({});
+  const [showrequest, setShowrequest] = useState(false);
+  const [jobContent, setjobContent] = useState([]);
+  const [jobData, setjobData] = useState({});
+
+
 
 
 
@@ -89,6 +94,40 @@ const KABC2 = () => {
     console.log('done' , aboutsdata , 'alpha' , alpha)
 
   };
+
+
+  const onFecth = () => {
+    
+
+    setShowrequest(true)
+
+    fetchJobsData();
+
+   
+  };
+
+
+    
+const fetchJobsData = async () => {
+  const id = localStorage.getItem('jobgetId');
+
+  try {
+    const response = await axios.get(`${baseurl}/jobbyjobid/${id}`);
+    console.log('xxxxx' , response.data[0].Job)
+    setjobContent(response.data)
+    setjobData(response.data[0].Job)
+    
+
+    
+
+    
+
+
+ 
+  } catch (error) {
+    console.error('Error fetching user data:', error);
+  }
+};
 
   const [selectedOption, setSelectedOption] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -219,11 +258,11 @@ const KABC2 = () => {
                   <Tab><div class="navtab" data-target="Statistic">
                     Statistic
                   </div></Tab>
-                  <Tab> <div class="navtab" data-target="Posted">
+                  <Tab> <div class="navtab" data-target="Posted" onClick={() => setShowrequest(false)}>
                     Posted job
                   </div></Tab>
-                  <Tab> <div class="navtab" data-target="Posteds">
-                    Posted job
+                  <Tab > <div class="navtab"  data-target="Posteds" >
+                    Incoming Jobs
                   </div></Tab>
                   <Tab> <div class="navtab" data-target="Contact">
                     Contact Info
@@ -471,6 +510,45 @@ const KABC2 = () => {
 
           <TabPanel>
             <div id="Posted" class="content active ">
+
+              {
+                showrequest ?
+
+
+
+                
+              <section class="About-ah">
+              <Container>
+                
+                <div class="About-main-ah">
+                  <div class="Angeles-my-box-ah">
+                    <div class="Angeles-ah-box">
+                      <div class="Angeles-logo-side-box">
+                        <div class="Angeles-logo-ah">
+                          <img src={Assistant} alt="" />
+                        </div>
+
+                        <span>
+                    
+                          <h2>{jobData.jobTitle}</h2>
+                          <p>{jobData.yearofexperience} of Experiance• ${jobData.yearlySalary} • {jobData.jobType}</p>
+                        </span>
+                      </div>
+
+                      
+                    </div>
+
+                    <Filter />
+
+                    <Jobah  jobContent = {jobContent}/>
+                  </div>
+                </div>
+              </Container>
+            </section>
+            :
+
+             
+
               <section class="About-ah">
                 <Container>
                   <div class="About-main-ah">
@@ -478,7 +556,7 @@ const KABC2 = () => {
                       <div class="About-main-card-1-hello-ah">
                         <Filter />
 
-                        <Assistantah />
+                        <Assistantah  onSuccess= {onFecth}/>
                       </div>
                     </div>
 
@@ -495,6 +573,10 @@ const KABC2 = () => {
                   </div>
                 </Container>
               </section>
+              
+
+
+               }
             </div>
           </TabPanel>
 

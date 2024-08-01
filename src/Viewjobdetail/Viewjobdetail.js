@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import {
@@ -16,9 +16,13 @@ import ProdImage4 from "../img/ratemystation-prod-img-4.png";
 import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
+import axios from "axios";
+import { baseurl } from "../baseurl";
 
 const Viewjobdetail = () => {
   const navigate = useNavigate();
+  const [jobContent, setjobContent] = useState({});
+  const [jobid, setjobId] = useState(0);
 
   const proddetail = () => {
     navigate("/productdetail");
@@ -31,6 +35,68 @@ const Viewjobdetail = () => {
   const shop = () => {
     navigate("/shop");
   };
+
+      
+  useEffect(() => {
+    // Retrieve user data from local storage
+    const jobId = localStorage.getItem('jobId');
+    console.log('job id ' , jobId)
+
+    setjobId(jobId)
+
+
+
+    if (jobId) {
+      
+      // setUser(user)  
+
+      fetchJobData(jobId);
+
+    }
+}, []);
+
+
+
+const fetchJobData = async (id) => {
+    try {
+      const response = await axios.get(`${baseurl}/jobbyid/${id}`);
+      console.log('xxxxxssss' , response.data)
+      setjobContent(response.data)
+
+    
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
+
+
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+
+  const appliedJob = async () => {
+    try {
+
+
+
+      const storedUser = getUserFromLocalStorage();
+    console.log('Retrieved user from local storage:', storedUser);
+    const userId = storedUser.id;
+
+
+      
+      const response = await axios.post(`${baseurl}/appliedjob ` , { jobid  , userId});
+    
+
+    
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+
+  }
+
 
   return (
     <>
@@ -45,14 +111,15 @@ const Viewjobdetail = () => {
                     <div className="job-detailpg-nameflex">
                       <img src={jobCompLogo} alt="Job Company Logo" />
                       <div className="job-detailpg-txt">
-                        <h3>Assistant News Director</h3>
-                        <h5>KABC</h5>
+                        <h3>{jobContent.jobTitle}</h3>
+                        <h5>{jobContent.jobType}</h5>
                         <div className="assistant-city-dollar-time">
                           <p>
-                            <RiMapPin2Fill /> Los Angeles, CA
+                            {/* <RiMapPin2Fill /> Los Angeles, CA */}
+                            {jobContent.yearofexperience} of Experience
                           </p>
                           <p>
-                            <RiMoneyDollarCircleFill /> $100,000 - $130,000
+                            <RiMoneyDollarCircleFill /> ${jobContent.yearlySalary}
                           </p>
                           <p>
                             <RiMoneyDollarCircleFill /> Full time
@@ -63,7 +130,7 @@ const Viewjobdetail = () => {
                   </Col>
                   <Col lg={4}>
                     <div className="job-select-opts">
-                      <a href="#">Apply Now</a>
+                      <a href="#" onClick={appliedJob} >Apply Now</a>
                       <div className="job-save-share">
                         <a href="#">
                           <RiBookmarkFill /> Save
@@ -82,34 +149,9 @@ const Viewjobdetail = () => {
                 <div className="job-desceiption-detail">
                   <h3>Job Description</h3>
                   <p>
-                    Pellentesque vel tristique ultrices habitasse feugiat nulla
-                    tempor quam. Et risus commodo natoque pulvinar eu, interdum.
-                    Viverra tortor hac sollicitudin dictum sit. Condimentum eget
-                    et commodo sapien porta felis amet pellentesque. Erat augue
-                    enim turpis risus urna, ut egestas vivamus proin. Velit leo
-                    scelerisque pulvinar vestibulum in nunc a tortor mollis.
-                    Fusce pretium est ipsum elementum parturient. Venenatis, ac
-                    nulla non varius dolor. Ornare consectetur mauris,
-                    adipiscing tristique a leo. Habitant pharetra tellus
-                    habitasse vestibulum nibh quisque. Sed vel condimentum enim
-                    leo tortor mi magna tincidunt. Egestas bibendum id eget
-                    quisque semper ultricies. Gravida viverra massa faucibus
-                    vestibulum condimentum.
+                   {jobContent.jobDescription}.
                   </p>
-                  <p>
-                    Pretium tortor venenatis, mattis lobortis. Sollicitudin non
-                    sed eu, augue. Morbi purus ipsum ipsum ante felis. Nisi,
-                    vulputate risus nisl, nulla amet morbi habitant vel.
-                    Condimentum egestas vestibulum habitant vitae. Faucibus
-                    bibendum lacinia volutpat nulla placerat semper elementum
-                    gravida. Mi vulputate arcu, at tincidunt enim sit eu platea
-                    leo. Risus vitae in turpis elementum, viverra ultricies.
-                    Commodo sed eget at massa, integer. Porta id id nisl
-                    faucibus neque, purus. Fermentum enim, sed ut ultrices amet
-                    turpis pharetra faucibus blandit. Aenean proin at tortor
-                    tincidunt. Aenean sed ornare sit arcu mattis amet, eget. Id
-                    sed amet cras urna et malesuada.
-                  </p>
+                
                   <hr />
                 </div>
                 <div className="job-qualification-detail">
@@ -117,43 +159,17 @@ const Viewjobdetail = () => {
                   <div className="job-qualification-point">
                     <ul>
                       <li>
-                        Pellentesque vel tristique ultrices habitasse feugiat
-                        nulla
+                        {jobContent.qualification}
                       </li>
-                      <li>
-                        {" "}
-                        tempor quam. Et risus commodo natoque pulvinar eu,
-                        interdum.
-                      </li>
-                      <li>
-                        {" "}
-                        Viverra tortor hac sollicitudin dictum sit. Condimentum
-                        eget et{" "}
-                      </li>
-                      <li>commodo sapien porta felis amet pellentesque</li>
-                      <li>
-                        .Erat augue enim turpis risus urna, ut egestas vivamus
-                        proin.
-                      </li>
+                      
+                     
                     </ul>
                     <ul>
                       <li>
-                        Pellentesque vel tristique ultrices habitasse feugiat
-                        nulla
+                      {jobContent.qualification}
                       </li>
-                      <li>
-                        tempor quam. Et risus commodo natoque pulvinar eu,
-                        interdum.
-                      </li>
-                      <li>
-                        Viverra tortor hac sollicitudin dictum sit. Condimentum
-                        eget et{" "}
-                      </li>
-                      <li>commodo sapien porta felis amet pellentesque</li>
-                      <li>
-                        Erat augue enim turpis risus urna, ut egestas vivamus
-                        proin.
-                      </li>
+                     
+                     
                     </ul>
                   </div>
                   <hr />
@@ -164,13 +180,13 @@ const Viewjobdetail = () => {
                     <Col lg={6} md={6}>
                       <div className="job-add-career">
                         <h6>Career Level</h6>
-                        <h5>Staff (non-management & non-supervisor) </h5>
+                        <h5>{jobContent.careerlevel}</h5>
                       </div>
                     </Col>
                     <Col lg={6} md={6}>
                       <div className="job-add-career">
                         <h6>Education level</h6>
-                        <h5>Bachelor Degree </h5>
+                        <h5>{jobContent.educationlevel} </h5>
                       </div>
                     </Col>
                   </Row>
@@ -178,13 +194,13 @@ const Viewjobdetail = () => {
                     <Col lg={6} md={6}>
                       <div className="job-add-career">
                         <h6>Years of Experience</h6>
-                        <h5>1 year</h5>
+                        <h5>{jobContent.yearofexperience} year</h5>
                       </div>
                     </Col>
                     <Col lg={6} md={6}>
                       <div className="job-add-career">
                         <h6>Job Type</h6>
-                        <h5>Full-Time</h5>
+                        <h5>{jobContent.jobType}</h5>
                       </div>
                     </Col>
                   </Row>
