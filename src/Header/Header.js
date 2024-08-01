@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderMainLogo from "../img/header_logo_img.png";
 import { useNavigate } from "react-router-dom";
+import { baseurl } from "../baseurl";
+import axios from 'axios';
+
 
 const Header = () => {
   const navigate = useNavigate();
@@ -26,6 +29,27 @@ const Header = () => {
   const faq = () => navigate("/FAQ");
   const cart = () => navigate("/mycart");
   const login = () => navigate("/employerlogin");
+  const [cartCount, setCartCount] = useState(0);
+  
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+
+  useEffect(() => {
+    const fetchCartCount = async () => {
+      try {
+        const userId = getUserFromLocalStorage();
+        const response = await axios.get(`${baseurl}/getcart/${userId.id}`);
+        setCartCount(response.data.length);
+      } catch (error) {
+        console.error('Error fetching cart count:', error);
+      }
+    };
+
+    fetchCartCount();
+  }, []);
 
   return (
     <>
@@ -66,7 +90,7 @@ const Header = () => {
                         fill="#828282"
                       />
                     </svg>
-                    <span className="header_cart_number">2</span>
+                    <span className="header_cart_number">{cartCount}</span>
                   </a>{" "}
                 </div>
                 <a onClick={login} className="login-btn">
