@@ -10,7 +10,7 @@ const Skillsah1 = ()=>{
 
     const [SkillData, setSkillData] = useState([]);
     useEffect(() => {
-        // Fetch data from the backend when the component mounts
+        // Fetch data from the backend when the component mounts    
         const fetchData = async () => {
             try {
                 const response = await axios.get(`${baseurl}/skilldata`);

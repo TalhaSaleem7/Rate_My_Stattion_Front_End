@@ -304,11 +304,17 @@
 
 
 import React, { useState } from 'react';
+import { Alert } from 'react-bootstrap';
+
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from 'axios';
 import { baseurl } from '../../baseurl';
 
-function ExperienceForm({onSuccess}) {
+function ExperienceForm({onSuccess , onCancel}) {
+
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+
   // State variables for form fields
   const [title, setTitle] = useState('');
   const [companyName, setCompanyName] = useState('');
@@ -327,11 +333,8 @@ function ExperienceForm({onSuccess}) {
   const [isEndDateYear, setIsEndDateYear] = useState(false);
 
   const currentYear = new Date().getFullYear();
-  const years = [];
-  for (let year = 1950; year <= currentYear; year++) {
-    years.push(year);
-  }
-
+  
+  const years = Array.from({ length: currentYear - 1950 + 1 }, (_, i) => currentYear - i);
   const toggleJobType = () => setIsJobType(!isJobType);
   const toggleStartMonth = () => setIsStartDateMonth(!isStartDateMonth);
   const toggleStartYear = () => setIsStartDateYear(!isStartDateYear);
@@ -383,7 +386,8 @@ function ExperienceForm({onSuccess}) {
       localStorage.setItem('experienceData', JSON.stringify(response.data.data));
 
       onSuccess()
-
+      setMessage('Form submitted successfully');
+      setError(''); 
       // const data = await response.json();
       // console.log('Success:', data);
     } catch (error) {
@@ -393,6 +397,9 @@ function ExperienceForm({onSuccess}) {
 
   return (
     <div className="container">
+       {message && <Alert variant="success">{message}</Alert>}
+      {error && <Alert variant="danger">{error}</Alert>}
+
       <div className="my--container--h mx-auto">
         <div className="row">
           <div className="col">

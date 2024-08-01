@@ -10,6 +10,7 @@ import { Modal, Button } from 'react-bootstrap';
 import kabc from "../img/kabc.png";
 import Assistant from "../img/Assistant.png";
 import Award from "../Award/Award";
+import { FaPlusCircle } from "react-icons/fa";
 import Jobopening from '../Popups/Station_profile_popups/Jobopening_h';
 import Dirctors from "../Dirctors/Dirctors";
 import Openings from "../Openings/Openings";
@@ -43,6 +44,9 @@ const KABC2 = () => {
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
   const [aboutsdata, setAboutsUser] = useState({});
+  const [directordata, setdirectorsUser] = useState({});
+  const [awardsdata, setawardsUser] = useState({});
+
 
 
 
@@ -58,7 +62,6 @@ const KABC2 = () => {
 
     }
   }, []);
-
  
 
   const fetchUserData = async (userId) => {
@@ -90,17 +93,58 @@ const KABC2 = () => {
 
   };
 
+
+  const ongetdirector = () => {
+
+    console.log('director here')
+
+    const directorUser = localStorage.getItem('directorUser');
+
+    const alphadirector = JSON.parse(directorUser)
+
+
+
+    setdirectorsUser(alphadirector)
+
+
+    console.log('done' , directordata , 'alphadirector' , alphadirector)
+
+  };
+
+  const ongetaward = () => {
+
+    console.log('director here')
+
+    const AwardUser = localStorage.getItem('AwardUser');
+
+    const alphaaward = JSON.parse(AwardUser)
+
+
+
+    setdirectorsUser(alphaaward)
+
+
+    console.log('done' , awardsdata , 'alphaaward' , alphaaward)
+
+  };
+
   const [selectedOption, setSelectedOption] = useState('');
   const [showModal, setShowModal] = useState(false);
 
-  const handleSelectChange = (event) => {
-    const value = event.target.value;
-    setSelectedOption(value);
-    setShowModal(true); // Show the modal to render the selected component
+  const handleSelectChange = (option) => {
+    setSelectedOption(option);
+    setShowModal(true);
+    setIsOpen(false);
   };
   const handleClose = () => {
     setShowModal(false);
-    setSelectedOption('');
+    setSelectedOption(null);
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
   };
 
 
@@ -173,37 +217,46 @@ const KABC2 = () => {
                     </button>
                   </span>
 
-                  <span class="See">
-                    {/* <button class="Contact-ah more">Add profile section</button>  */}
-                    <select value={selectedOption} onChange={handleSelectChange}>
-                      <option value="">Select an option</option>
-                      <option value="StationAboutPopup">Add About</option>
-                      <option value="Director">Add Director</option>
-                      <option value="Award">Add Award</option>
-                      <option value="Jobopening">Add Job Opening</option>
-                    </select>
+                  <span className="See">
+      <button className="Contact-ah more" onClick={toggleDropdown}>
+        <FaPlusCircle /> Add profile section
+      </button>
+      {isOpen && (
+        <ul className="add_profile_ul">
+          <li onClick={() => handleSelectChange('StationAboutPopup')}>
+            <FaPlusCircle /> Add About
+          </li>
+          <li onClick={() => handleSelectChange('Director')}>
+            <FaPlusCircle /> Add Director
+          </li>
+          <li onClick={() => handleSelectChange('Award')}>
+            <FaPlusCircle /> Add Award
+          </li>
+          <li onClick={() => handleSelectChange('Jobopening')}>
+            <FaPlusCircle /> Add Job Opening
+          </li>
+        </ul>
+      )}
+
+      <Modal
+        show={showModal}
+        onHide={handleClose}
+        size="xl"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Body>
+          {/* Render different components based on selected option */}
+          {selectedOption === 'StationAboutPopup'  && <StationAboutPopup   onCancel={handleClose} />}
+          {selectedOption === 'Director'  && <DirectorPopup   onCancel={handleClose} />}
+          {selectedOption === 'Award'  && <AwardPopup  onCancel={handleClose} />}
+          {selectedOption === 'Jobopening'  && <JobopeningPopup  onCancel={handleClose} />}
+        </Modal.Body>
+      </Modal>
+                </span>
 
 
-
-                    <Modal show={showModal} onHide={handleClose}
-                      size="xl"
-                      aria-labelledby="contained-modal-title-vcenter"
-                      centered>
-                      <Modal.Body>
-                      {/* {selectedOption === 'StationAboutPopup' && <StationAboutPopup onSuccess={getLocal} />}
-                        {selectedOption === 'Director' && <DirectorPopup onSuccess={getExperinces} />}
-                        {selectedOption === 'Award' && <AwardPopup />}
-                        {selectedOption === 'Jobopening' && <JobopeningPopup />} */}
-
-                        {/* Render different components based on selected option */}
-                        {selectedOption === 'StationAboutPopup' && <StationAboutPopup onSuccess = {ongetabout} />}
-                        {selectedOption === 'Director' && <DirectorPopup  />}
-                        {selectedOption === 'Award' && <AwardPopup />}
-                        {selectedOption === 'Jobopening' && <JobopeningPopup />}
-                      </Modal.Body>
-
-                    </Modal>
-                  </span>
+                  
                 </div>
               </div>
 
@@ -244,8 +297,8 @@ const KABC2 = () => {
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
                       <About2 aboutsdata = {aboutsdata}  />
-                      <Dirctors2 />
-                      <Award2 />
+                      <Dirctors2 directordata = {directordata}/>
+                      <Award2 awardsdata = {awardsdata} />
                       <Openings2 />
                     </div>
 

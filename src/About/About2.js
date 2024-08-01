@@ -30,11 +30,6 @@ const About2 = ({aboutsdata})=>{
         console.log('Retrieved user from local storage:', storedUser);
         const userId = storedUser.id;
 
-
-
-
-
-
           const response = await axios.get(`${baseurl}/getabout/${userId}`);
 
           
