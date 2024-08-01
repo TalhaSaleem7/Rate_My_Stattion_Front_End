@@ -308,7 +308,7 @@ import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from 'axios';
 import { baseurl } from '../../baseurl';
 
-function ExperienceForm({onSuccess}) {
+function ExperienceForm({onSuccess , onCancel}) {
   // State variables for form fields
   const [title, setTitle] = useState('');
   const [companyName, setCompanyName] = useState('');
