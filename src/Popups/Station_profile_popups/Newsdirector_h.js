@@ -216,12 +216,12 @@ const NewsDirectorForm = ({onCancel}) => {
                   />
                 </div>
 
-                {/* <Buttonh /> */}
-
                 <div className="experience--button--h pt-1">
               <button
                 type="button"
-                className="btn btn-primary experience--btn--h experience--btn--h--alt">
+                className="btn btn-primary experience--btn--h experience--btn--h--alt"
+                onClick={handleSubmit}
+                >
                 Save
               </button>
               <button
