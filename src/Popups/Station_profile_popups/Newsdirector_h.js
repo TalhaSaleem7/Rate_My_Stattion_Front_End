@@ -1,6 +1,7 @@
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 
-const NewsDirectorForm = () => {
+const NewsDirectorForm = ({ onCancel }) => {
+
   return (
     <div class="container">
       <div class="my--container--h mx-auto">
@@ -14,7 +15,7 @@ const NewsDirectorForm = () => {
                 News Director
               </h1>
               <div class="experience--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+                <img src={require("../../img/Union_h.png")}   onClick={onCancel} alt="close" />
               </div>
             </div>
 
@@ -63,8 +64,16 @@ const NewsDirectorForm = () => {
                 placeholder="Type here..."
               />
             </div>
-
-            <Buttonh />
+            <div className="experience--button--h pt-1">
+                <button 
+                  type="button"
+                  className="btn btn-primary experience--btn--h experience--btn--h--alt">
+                  Save
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2" onClick={onCancel}>Cancel</button>
+              </div>
           </div>
         </div>
       </div>

@@ -221,7 +221,7 @@ const Kabcah1 = () => {
                       aria-labelledby="contained-modal-title-vcenter"
                       centered>
                       <Modal.Body>
-                        {/* Render different components based on selected option */}
+                        {/* Render differ ent components based on selected option */}
                         {selectedOption === 'about' && <About onSuccess={getLocal} onCancel={closePopup} />}
                         {selectedOption === 'experience' && <Experience onCancel={closePopup} />}
                         {selectedOption === 'skill' && <Skill onCancel={closePopup} />}
@@ -378,9 +378,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah">
                         <Cardah />
-
                         <Cardah />
-
                         <Cardah />
                       </div>
                     </div>

@@ -437,6 +437,12 @@ section.About-ah {
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
+  transition: all .6s ease;
+}
+
+.Brooklyn-Simmons-card button:hover {
+  background: #194d79;
+  color: #fff;
 }
 
 .latest-comment-txt-input-box {
@@ -10581,6 +10587,15 @@ button.Contact-ah.more:hover {
 }
 
 
+span.See select:focus {
+    outline: none;
+}
+
+.Upload-show img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
 
 
 

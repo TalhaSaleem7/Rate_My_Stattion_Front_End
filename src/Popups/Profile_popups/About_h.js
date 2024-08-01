@@ -41,7 +41,7 @@ const Abouth = ({onSuccess, closePopup}) => {
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">About</h1>
               <div className="about--close--h">
-                <img src={require("../../img/Union_h.png" )} onCancel= {closePopup} alt="" />
+                <img src={require("../../img/Union_h.png" )} onCancel={closePopup} alt="" />
               </div>
             </div>
             <div className="mb-3">
@@ -72,7 +72,6 @@ const Abouth = ({onSuccess, closePopup}) => {
         <button
           type="button"
           className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-          onClick={()=>onCancel(true)}
         >
           Cancel
         </button>
