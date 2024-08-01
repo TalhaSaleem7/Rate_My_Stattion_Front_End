@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseurl } from "../../baseurl";
-const JobOpeningForm = () => {
+const JobOpeningForm = ({ onCancel }) => {
   const [isExp, setIsExp] = useState(false);
 
   const [isEdu, setIsEdu] = useState(false);
@@ -90,7 +90,7 @@ const JobOpeningForm = () => {
                 Job Opening
               </h1>
               <div class="about--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+                <img src={require("../../img/Union_h.png")} onClick={onCancel} alt="" />
               </div>
             </div>
 
@@ -310,7 +310,7 @@ const JobOpeningForm = () => {
               </button>
               <button
                 type="button"
-                class="btn btn-outline-primary about--btn--h about--btn--h--alt--2"
+                class="btn btn-outline-primary about--btn--h about--btn--h--alt--2" onClick={onCancel}
               >
                 Cancel
               </button>

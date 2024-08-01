@@ -72,7 +72,6 @@ const Abouth = ({onSuccess, onCancel}) => {
         <button
           type="button"
           className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-          onClick={()=>onCancel(true)}
         >
           Cancel
         </button>
