@@ -6,7 +6,7 @@ import axios from 'axios';
 import React, { useState } from "react";
 import { baseurl } from "../../baseurl";
 
-const AwardForm = (onCancel) => {
+const AwardForm = ({onCancel}) => {
   const [message, setMessage] = useState('');
   const [imageurl, setImage] = useState('');
   const [isImagedisplay, setImagedisplay] = useState('');
@@ -134,7 +134,7 @@ const AwardForm = (onCancel) => {
                   <button
                     type="button"
                     className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-                    onClick={() => onCancel(true)}
+                    onClick={onCancel}
                   >
                     Cancel
                   </button>
