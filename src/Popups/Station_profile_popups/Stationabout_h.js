@@ -4,7 +4,7 @@ import axios from "axios";
 import { baseurl } from "../../baseurl";
 
 
-const StationAboutForm = ({onSuccess}) => {
+const StationAboutForm = ({onSuccess,onCancel}) => {
   const [formData, setFormData] = useState({
     About: '',
     Industry: '',
@@ -95,7 +95,7 @@ const StationAboutForm = ({onSuccess}) => {
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">About</h1>
               <div className="about--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+                <img src={require("../../img/Union_h.png")} onClick={onCancel} alt="" />
               </div>
             </div>
             <div className="mb-3">
@@ -170,7 +170,7 @@ const StationAboutForm = ({onSuccess}) => {
               <button
                 type="button"
                 className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-                onClick={handleCancel}
+                onClick={onCancel}
               >
                 Cancel
               </button>

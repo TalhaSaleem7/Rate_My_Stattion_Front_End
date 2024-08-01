@@ -9,7 +9,7 @@ import { baseurl } from "../../baseurl";
 const AwardForm = (onCancel) => {
   const [message, setMessage] = useState('');
   const [imageurl, setImage] = useState('');
-  const [isImagedisplay, setImagedisplay ] = useState('');
+  const [isImagedisplay, setImagedisplay] = useState('');
 
   const [error, setError] = useState('');
   const [title, setTitle] = useState('');
@@ -26,7 +26,7 @@ const AwardForm = (onCancel) => {
     setImage(e);
     setImagedisplay(e)
     console.log(e, "Clod");
-}
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -61,7 +61,7 @@ const AwardForm = (onCancel) => {
 
   return (
     <div class="container">
-        {message && <Alert variant="success">{message}</Alert>}
+      {message && <Alert variant="success">{message}</Alert>}
       {error && <Alert variant="danger">{error}</Alert>}
 
       <div class="my--container--h mx-auto">
@@ -80,71 +80,72 @@ const AwardForm = (onCancel) => {
             </div>
             <form onSubmit={handleSubmit}>
 
-            <div class="mb-3">
-              <label
-                for="exampleFormControlInput1"
-                class="form-label form-label-alt"
-              >
-                Award title
-              </label>
-              <input
-                type="text"
-                class="form-control skills--inp--h mb-3"
-                id="exampleFormControlInput1"
-                placeholder="Type here..."
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label form-label-alt"
+                >
+                  Award title
+                </label>
+                <input
+                  type="text"
+                  class="form-control skills--inp--h mb-3"
+                  id="exampleFormControlInput1"
+                  placeholder="Type here..."
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
 
-              />
-              <label
-                for="exampleFormControlTextarea1"
-                class="form-label form-label-alt mt-1"
-              >
-                Description
-              </label>
-              <textarea
-                class="form-control about--input--h"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Type here..."
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              ></textarea>
-            </div>
-
-            <div class="col-lg-8">
-              <div class="award--img--h d-flex align-items-center">
-                <div class="news--director--img--h--cont">
-                <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"} />
-                </div>
-                <a href="#" class="profile--image--a--h">
-                  Upload Image in <span>jpg or png format</span>
-                </a>
+                />
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label form-label-alt mt-1"
+                >
+                  Description
+                </label>
+                <textarea
+                  class="form-control about--input--h"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Type here..."
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                ></textarea>
               </div>
-            </div>
-            {/* <Buttonh /> */}
-            <div className="experience--button--h pt-1">
-        <button 
-          type="button"
-          className="btn btn-primary experience--btn--h experience--btn--h--alt"
-          onClick={handleSubmit}>
-          Save
-        </button>
-        <button
-          type="button"
-          className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-          onClick={()=>onCancel(true)}
-        >
-          Cancel
-        </button>
-      </div>
-      </form>
-          </div>
 
-        </div>
-      </div>
+              <div class="col-lg-8">
+                <div class="award--img--h d-flex align-items-center">
+                  <div class="news--director--img--h--cont">
+                    <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"} />
+                  </div>
+                  <a href="#" class="profile--image--a--h">
+                    Upload Image in <span>jpg or png format</span>
+                  </a>
+                </div>
+                </div>
 
-    </div>
+
+                <div className="experience--button--h pt-1">
+                  <button
+                    type="button"
+                    className="btn btn-primary experience--btn--h experience--btn--h--alt"
+                    onClick={handleSubmit}>
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
+                    onClick={() => onCancel(true)}
+                  >
+                    Cancel
+                  </button>
+                </div>
+            </form >
+          </div >
+
+        </div >
+      </div >
+
+    </div >
   );
 };
 export default AwardForm;

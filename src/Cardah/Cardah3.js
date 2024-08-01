@@ -1,13 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Recommends from "../img/Recommend-1.png";
 
 import office from "../img/office-logo.png";
 import Assistant from "../img/Assistant.png";
+import axios from "axios";
+import { baseurl } from "../baseurl";
 
 const Cardah3 = () => {
+
+    const [appliedJob, setappliedJob] = useState([]);
+
+    useEffect(() => {
+        // Retrieve user data from local storage
+        const storedUser = localStorage.getItem('userData');
+        if (storedUser) {
+          const user = JSON.parse(storedUser);
+          console.log(user)
+          // setUser(user)  
+    
+          fetchUserData(user.id);
+    
+        }
+      }, []);
+    
+      const fetchUserData = async (userId) => {
+        try {
+          const response = await axios.get(`${baseurl}/jobbyuserid/${userId}`);
+          console.log('ahtisahm' , response.data)
+          setappliedJob(response.data)
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+        }
+      };
+
+
+      const calculateHoursAgo = (createdAt) => {
+        const createdDate = new Date(createdAt);
+        const currentDate = new Date();
+        const diffInMilliseconds = currentDate - createdDate;
+        const diffInHours = Math.floor(diffInMilliseconds / (1000 * 60 * 60));
+        return diffInHours;
+      };
+
+
     return (
         <>
+        {appliedJob.map((job, index) => (
+
+       
             <div class="Applied-ah-card">
                 <div class="Applied-ah-logo">
                     <img src={Assistant} alt="" />
@@ -16,8 +57,8 @@ const Cardah3 = () => {
                 <div class="Applied-ah-tital">
                     <div class="Applied-ah-list-1">
                         <span>
-                            <h2>Assistant News Director</h2>
-                            <p>KABC</p>
+                            <h2>{job.Job.jobTitle}</h2>
+                            <p>{job.Job.jobType}</p>
                         </span>
 
                         <svg
@@ -56,7 +97,7 @@ const Cardah3 = () => {
                                     fill="#194D79"
                                 />
                             </svg>
-                            <p>Los Angeles, CA</p>
+                            <p>{job.Job.yearofexperience}</p>
                         </span>
 
                         <span>
@@ -72,7 +113,7 @@ const Cardah3 = () => {
                                     fill="#194D79"
                                 />
                             </svg>
-                            <p>$100,000 - $130,000</p>
+                            <p>${job.Job.yearlySalary}</p>
                         </span>
 
                         <span>
@@ -88,12 +129,19 @@ const Cardah3 = () => {
                                     fill="#194D79"
                                 />
                             </svg>
-                            <p>Full time</p>
+                            <p>{job.Job.jobType}</p>
                         </span>
                     </div>
 
                     <div class="Applied-ah-list-3">
+                        {job.rejected = 1 ?
+
+                        <button>Reject</button>
+                        :
+
                         <button>Applied</button>
+
+                        }
 
                         <a href="#">
                             <svg
@@ -108,11 +156,12 @@ const Cardah3 = () => {
                                     fill="#828282"
                                 />
                             </svg>{" "}
-                            Updated 8 hours ago
+                            Updated {calculateHoursAgo(job.createdAt)} hours ago
                         </a>
                     </div>
                 </div>
             </div>
+             ))}
         </>
     );
 };

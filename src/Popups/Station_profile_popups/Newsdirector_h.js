@@ -147,13 +147,20 @@ const NewsDirectorForm = (onCancel) => {
       {message && <Alert variant="success">{message}</Alert>}
       {error && <Alert variant="danger">{error}</Alert>}
 
-      <div className="my--container--h mx-auto">
-        <div className="row">
-          <div className="col">
-            <div className="mb-3 d-flex justify-content-between align-items-center">
-              <h1 className="form-label form-label-alt mb-1">News Director</h1>
-              <div className="experience--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+    <div class="container">
+      <div class="my--container--h mx-auto">
+        <div class="row">
+          <div class="col">
+            <div class="mb-3 d-flex justify-content-between align-items-center">
+              <h1
+                for="exampleFormControlInput1"
+                class="form-label form-label-alt mb-1"
+              >
+                News Director
+              </h1>
+              <div class="experience--close--h">
+                <img src={require("../../img/Union_h.png")}   
+                onClick={onCancel} alt="close" />
               </div>
             </div>
             <div className="col-lg-8">
@@ -227,6 +234,29 @@ const NewsDirectorForm = (onCancel) => {
                 </button>
               </div>
             </form>
+            </div>
+
+            <div class="col-12 mb-3 mt-1">
+              <label for="inputAddress" class="form-label form-label-alt">
+                Director’s email
+              </label>
+              <input
+                type="text"
+                class="form-control experience--address--inp--h"
+                id="inputAddress"
+                placeholder="Type here..."
+              />
+            </div>
+            <div className="experience--button--h pt-1">
+                <button 
+                  type="button"
+                  className="btn btn-primary experience--btn--h experience--btn--h--alt">
+                  Save
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2" onClick={onCancel}>Cancel</button>
+              </div>
           </div>
         </div>
       </div>   
