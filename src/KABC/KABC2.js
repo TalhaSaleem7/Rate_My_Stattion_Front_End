@@ -626,7 +626,7 @@ const fetchJobsData = async () => {
             </div>
           </TabPanel>
 
-          <TabPanel>
+          {/* <TabPanel>
             <div id="Posteds" class="content  active">
               <section class="About-ah">
                 <Container>
@@ -684,7 +684,7 @@ const fetchJobsData = async () => {
                 </Container>
               </section>
             </div>
-          </TabPanel>
+          </TabPanel> */}
 
           <TabPanel>
             <div id="Contact" class="content active">

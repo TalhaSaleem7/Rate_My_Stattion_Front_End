@@ -25,9 +25,17 @@ const Header1 = () => {
   const contact = () => navigate("/Contactus");
   const faq = () => navigate("/FAQ");
   const cart = () => navigate("/mycart");
-  const login = () => navigate("/employerlogin");
+  // const login = () => navigate("/employerlogin");
   const userprofile = () => navigate("/kabcah1");
   const usersetting = () => navigate("/accountsettingh");
+
+  const login = () => {
+
+    localStorage.removeItem('userData');
+
+    navigate("/employerlogin");
+
+  };
 
   return (
     <>
