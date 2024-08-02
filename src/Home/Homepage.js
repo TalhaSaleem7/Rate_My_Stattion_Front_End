@@ -34,6 +34,7 @@ import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
 import HomeSelectOption from "../Homeselectoption/HomeSelectOption";
 import { baseurl } from '../baseurl';
+import Chat from '../Sockets/Chats_Components/Chat';
 
 export const Homepage = () => {
 
@@ -134,6 +135,10 @@ export const Homepage = () => {
 
   return (
     <>
+
+     
+
+
       <Header />
       <section className="first-banner-sec">
         <Container>
