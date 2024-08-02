@@ -16,7 +16,6 @@ const ContactComponent = () => {
     linkedin: '',
     twitter: '',
     facebook:'',
-    
   });
   
   const [isOpen, setIsOpen] = useState(false);
@@ -48,11 +47,11 @@ const handleCancel = () => {
   const handleSubmit = async (e) => {
     console.log('hello');
     e.preventDefault();
-    const { phone, website, linkedin, twitter,facebook } = formData;
+    const {phone, website, linkedin, twitter, facebook } = formData;
 
     const storedUser = getUserFromLocalStorage();
     console.log('Retrieved user from local storage:', storedUser);
-    const userId = storedUser ? storedUser.id : null;
+    const userId = storedUser.id;
     
     if (!userId) {
       setError('User ID is missing');
@@ -71,7 +70,7 @@ const handleCancel = () => {
       });
       
       console.log('Form submitted successfully:', response.data);
-      toast.success(response.data.message);
+      toast.success(response.data);
     } catch (error) {
       setError(error)
       console.error('Error submitting form:', error);
@@ -83,22 +82,19 @@ const handleCancel = () => {
   return (
     <>
       <h1 className="account-setting-right-title">Contact Info</h1>
-     
-      {/* <div className="col-12 mb-3">
-        <label htmlFor="inputEmail" className="form-label form-label-alt">
-          Email
-        </label>
-        <input
-          type="text"
-          className="form-control experience--address--inp--h"
-          id="email"
-          placeholder="Type here..."
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div> */}
       <div className="col-12 mb-3 mt-1">
-      <ToastContainer />
+      <ToastContainer
+position="top-right"
+autoClose={1000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
 
         <label htmlFor="inputProfile" className="form-label form-label-alt">
           Phone

@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderMainLogo from "../img/header_logo_img.png";
 import { useNavigate } from "react-router-dom";
+import { baseurl } from "../baseurl";
+import axios from 'axios';
+
 
 const Header1 = () => {
   const navigate = useNavigate();
@@ -28,6 +31,30 @@ const Header1 = () => {
   const login = () => navigate("/employerlogin");
   const userprofile = () => navigate("/kabcah1");
   const usersetting = () => navigate("/accountsettingh");
+  const [cartCount, setCartCount] = useState(0);
+
+
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+
+
+  useEffect(() => {
+    const fetchCartCount = async () => {
+      try {
+        const userId = getUserFromLocalStorage();
+        const response = await axios.get(`${baseurl}/getcart/${userId.id}`);
+        setCartCount(response.data.length);
+      } catch (error) {
+        console.error('Error fetching cart count:', error);
+      }
+    };
+
+    fetchCartCount();
+  }, []);
+
 
   return (
     <>
@@ -68,7 +95,7 @@ const Header1 = () => {
                         fill="#828282"
                       />
                     </svg>
-                    <span className="header_cart_number">2</span>
+                    <span className="header_cart_number"></span>
                   </a>
 
                   <a>
@@ -87,7 +114,7 @@ const Header1 = () => {
                     <span className="header_cart_number">2</span>
                   </a>
 
-                  <a>
+                  <a onClick={cart}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="33"
@@ -100,8 +127,8 @@ const Header1 = () => {
                         fill="#828282"
                       />
                     </svg>
-                    <span className="header_cart_number">2</span>
-                  </a>
+                    <span className="header_cart_number">{cartCount}</span>
+                  </a>{''}
                 </div>
 
                 <nav className="helo-drop">

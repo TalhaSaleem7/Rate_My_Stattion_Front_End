@@ -38,6 +38,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import axios from "axios";
 import { baseurl } from "../baseurl";
+// import { profile } from "console";
 
 const KABC2 = () => {
 
@@ -131,14 +132,12 @@ const KABC2 = () => {
     console.log('done' , awardsdata , 'alphaaward' , alphaaward)
 
   };
+  
+ 
   const onFecth = () => {
     
-
     setShowrequest(true)
-
     fetchJobsData();
-
-   
   };
 
 
@@ -178,7 +177,21 @@ const fetchJobsData = async () => {
     setIsOpen(!isOpen);
   };
 
- 
+  const [ContactData, setContactData] = useState([]);
+  
+  useEffect(() => {
+    const fetchContactData = async () => {
+        try {
+            const response = await axios.get(`${baseurl}/getcontacts`);
+            setContactData(response.data);
+        } catch (err) {
+            console.error("Error fetching Contact data:", err);
+        }
+    };
+
+    fetchContactData();
+}, []);
+
   return ( 
     <>
 
@@ -211,6 +224,7 @@ const fetchJobsData = async () => {
                       </svg>
                     </span>
                     <p>{userdata.stationtype}</p>
+
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +261,6 @@ const fetchJobsData = async () => {
                       Account settings
                     </button>
                   </span>
-
                   <span className="See">
                       <button className="Contact-ah more" onClick={toggleDropdown}>
                         <FaPlusCircle /> Add profile section
@@ -307,9 +320,9 @@ const fetchJobsData = async () => {
                   <Tab> <div class="navtab" data-target="Posted" onClick={() => setShowrequest(false)}>
                     Posted job
                   </div></Tab>
-                  {/* <Tab > <div class="navtab"  data-target="Posteds" >
+                  <Tab > <div class="navtab"  data-target="Posteds" >
                     Incoming Jobs
-                  </div></Tab> */}
+                  </div></Tab>
                   <Tab> <div class="navtab" data-target="Contact">
                     Contact Info
                   </div></Tab>
@@ -686,6 +699,7 @@ const fetchJobsData = async () => {
             </div>
           </TabPanel>
 
+{/* Contact  information */}
           <TabPanel>
             <div id="Contact" class="content active">
               <section class="About-ah">
@@ -694,7 +708,7 @@ const fetchJobsData = async () => {
                     <div class="About-main-box-1-ah">
                       <div class="About-main-card-1-ah">
                         <span class="edite">
-                          <h2>Brooklyn Simmons</h2>
+                          <h2>{userdata.username}</h2>
                           <span class="edite-icon">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -728,8 +742,8 @@ const fetchJobsData = async () => {
                             </svg>
                           </span>
                         </span>
-
-                        <div class="Website-ah-box">
+                    {ContactData.map((Contact, index) => (
+                        <div key={index} class="Website-ah-box">
                           <div class="Website-ah-card">
                             <button>
                               <svg
@@ -746,9 +760,10 @@ const fetchJobsData = async () => {
                               </svg>
                             </button>
 
+                            
                             <span>
                               <h2>Email</h2>
-                              <h3>email@address.com</h3>
+                              <h3>{userdata.email}</h3>
                             </span>
                           </div>
 
@@ -766,11 +781,12 @@ const fetchJobsData = async () => {
                                   fill="#194D79"
                                 />
                               </svg>
-                            </button>
+                            </button>  
+
 
                             <span>
                               <h2>Phone</h2>
-                              <h3>1234 - 33341413</h3>
+                              <h3>{Contact.phone}</h3>
                             </span>
                           </div>
 
@@ -792,7 +808,7 @@ const fetchJobsData = async () => {
 
                             <span>
                               <h2>Website</h2>
-                              <h3>socialmedialink.com</h3>
+                              <h3>{Contact.website}</h3>
                             </span>
                           </div>
 
@@ -814,7 +830,7 @@ const fetchJobsData = async () => {
 
                             <span>
                               <h2>Linkedin</h2>
-                              <h3>socialmedialink.com</h3>
+                              <h3>{Contact.linkedin}</h3>
                             </span>
                           </div>
 
@@ -836,7 +852,7 @@ const fetchJobsData = async () => {
 
                             <span>
                               <h2>Twitter</h2>
-                              <h3>socialmedialink.com</h3>
+                              <h3>{Contact.twitter}</h3>
                             </span>
                           </div>
 
@@ -858,10 +874,13 @@ const fetchJobsData = async () => {
 
                             <span>
                               <h2>Facebook</h2>
-                              <h3>socialmedialink.com</h3>
+                              <h3>{Contact.facebook}</h3>
                             </span>
                           </div>
-                        </div>
+
+                      </div>
+                      ))}
+                    
                       </div>
                     </div>
 
