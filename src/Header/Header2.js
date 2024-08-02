@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderMainLogo from "../img/header_logo_img.png";
 import { useNavigate } from "react-router-dom";
@@ -26,15 +26,22 @@ const Header1 = () => {
   const faq = () => navigate("/FAQ");
   const cart = () => navigate("/mycart");
   // const login = () => navigate("/employerlogin");
-  const userprofile = () => navigate("/kabcah1");
+  // const userprofile = () => navigate("/kabcah1");
   const usersetting = () => navigate("/accountsettingh");
+  const userData = localStorage.getItem("userData");
 
+  const userprofile = () => {
+    const userObject = JSON.parse(userData);
+    const userType = userObject.type;
+
+    {
+      userType === "Employee" ? navigate("/kabcah1") : navigate("/kabc2");
+    }
+  };
   const login = () => {
-
-    localStorage.removeItem('userData');
+    localStorage.removeItem("userData");
 
     navigate("/employerlogin");
-
   };
 
   return (
@@ -126,7 +133,7 @@ const Header1 = () => {
 
                   <ul class="slide">
                     <li>
-                      <a onClick={userprofile} href="#">
+                      <a onClick={userprofile}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -139,7 +146,7 @@ const Header1 = () => {
                             clipRule="evenodd"
                           />
                         </svg>
-                        My Profie
+                        My Profile
                       </a>
                     </li>
                     <li>
@@ -214,14 +221,30 @@ const Header1 = () => {
                     <div class="bars" id="barz3"></div>
                   </div>
                 </a>
-                <a href="#" onClick={home}>Home</a>
-                <a href="#" onClick={about}>About</a>
-                <a href="#" onClick={newsletter}>Newsletter</a>
-                <a href="#" onClick={job}>Jobs</a>
-                <a href="#" onClick={shop}>Shop</a>
-                <a href="#" onClick={contact}>Contact</a>
-                <a href="#" onClick={faq}>FAQ</a>
-                <a href="#" onClick={login}>Login</a>
+                <a href="#" onClick={home}>
+                  Home
+                </a>
+                <a href="#" onClick={about}>
+                  About
+                </a>
+                <a href="#" onClick={newsletter}>
+                  Newsletter
+                </a>
+                <a href="#" onClick={job}>
+                  Jobs
+                </a>
+                <a href="#" onClick={shop}>
+                  Shop
+                </a>
+                <a href="#" onClick={contact}>
+                  Contact
+                </a>
+                <a href="#" onClick={faq}>
+                  FAQ
+                </a>
+                <a href="#" onClick={login}>
+                  Login
+                </a>
               </div>
             </div>
           </div>
