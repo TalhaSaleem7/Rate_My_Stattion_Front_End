@@ -3,6 +3,8 @@ import Buttonh from "./savecnclbtn_h";
 import axios from "axios";
 import { Alert } from "react-bootstrap";
 import { baseurl } from "../../baseurl";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactComponent = () => {
@@ -19,7 +21,6 @@ const ContactComponent = () => {
   
   const [isOpen, setIsOpen] = useState(false);
   const [imageurl, setImage] = useState('');
-  const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
 
@@ -51,7 +52,13 @@ const handleCancel = () => {
 
     const storedUser = getUserFromLocalStorage();
     console.log('Retrieved user from local storage:', storedUser);
-    const userId = storedUser.id;
+    const userId = storedUser ? storedUser.id : null;
+    
+    if (!userId) {
+      setError('User ID is missing');
+      return;
+  }
+
 
     try {
       const response = await axios.post(`${baseurl}/createcontacts`, {
@@ -64,10 +71,12 @@ const handleCancel = () => {
       });
       
       console.log('Form submitted successfully:', response.data);
-      setMessage(response.data.message)
+      toast.success(response.data.message);
     } catch (error) {
       setError(error)
       console.error('Error submitting form:', error);
+      toast.error('All Fields are required', error);
+
     }
   };
 
@@ -89,8 +98,8 @@ const handleCancel = () => {
         />
       </div> */}
       <div className="col-12 mb-3 mt-1">
-      {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
+      <ToastContainer />
+
         <label htmlFor="inputProfile" className="form-label form-label-alt">
           Phone
         </label>
