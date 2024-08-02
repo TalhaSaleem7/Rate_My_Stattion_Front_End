@@ -383,6 +383,9 @@ import Buttonh from "./savecnclbtn_h";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
 import { baseurl } from '../../baseurl';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ProfileComponent = () => {
     const [formData, setFormData] = useState({
@@ -396,9 +399,9 @@ const ProfileComponent = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [imageurl, setImage] = useState('');
-    const [message, setMessage] = useState('');
+    const [isImagedisplay, setImagedisplay ] = useState('');    
     const [error, setError] = useState('');
-    const [isImagedisplay, setImagedisplay ] = useState('');
+
 
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -440,6 +443,7 @@ const ProfileComponent = () => {
         console.log('hello world');
     };
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { firstName, lastName, workPlace, jobTitle, address } = formData;
@@ -464,18 +468,18 @@ const ProfileComponent = () => {
             });
 
             console.log('Form submitted successfully:', response.data);
-            setMessage(response.data.message);
+            toast.success(response.data.message);
         } catch (error) {
             setError(error.response ? error.response.data.message : error.message);
             console.error('Error submitting form:', error);
+            toast.error('All Fields are required', error);
         }
     };
 
     return (
         <>
             <h1 className="account-setting-right-title">Profile</h1>
-            {message && <Alert variant="success">{message}</Alert>}
-            {error && <Alert variant="danger">{error}</Alert>}
+            <ToastContainer />
             <div className="account--profile--img--h d-flex align-items-center">
                 <div className="account--profile--img--h--cont">
                     <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"} />

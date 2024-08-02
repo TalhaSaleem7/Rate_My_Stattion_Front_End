@@ -3,7 +3,8 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { baseurl } from '../baseurl';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -29,6 +30,8 @@ const NewsroomLoginForm = () => {
       if (response.data.message === 'Login successful') {
         setUser(response.data.user); // Store user details
         localStorage.setItem('userData', JSON.stringify(response.data.user));
+        toast.success(response.data.message );
+
 
         if(response.data.user.type === 'Newsroom'){
           navigate("/kabc2");
@@ -43,7 +46,8 @@ const NewsroomLoginForm = () => {
         // navigate("/kabcah1", { state: { user: response.data.user } });
       }
     } catch (error) {
-      setError("Invalid username or password");
+      toast.error('Invalid username or password', error);
+
       console.error("Login error:", error);
     }
   };
@@ -55,11 +59,12 @@ const NewsroomLoginForm = () => {
     return (
         <>
             <div className="employer-login-form">
-        {error && <div className="error-message">{error}</div>}
+            <ToastContainer />
+      
                 <form action="">
                     <div className="employer-inputfield">
-                        <label htmlFor="">Station’s name</label>
-                        <input type="text" name="" id="" placeholder='Type your usename here...' 
+                        <label htmlFor="">Email</label>
+                        <input type="text" name="" id="" placeholder='Type your Email here...' 
                          value={username}
                          onChange={(e) => setUsername(e.target.value)}
                         />

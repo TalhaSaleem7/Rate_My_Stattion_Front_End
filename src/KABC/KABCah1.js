@@ -43,7 +43,6 @@ const Kabcah1 = () => {
   const closePopup = (e) => {
     
     setShowModal(false);
-
   }
 
   const handleCallbackCLoseAboutPopup=(e)=>{
@@ -92,9 +91,7 @@ const Kabcah1 = () => {
 
   const [selectedOption, setSelectedOption] = useState('');
   const [showModal, setShowModal] = useState(false);
-
-   const handleSelectChange = (option) => {
-     
+  const handleSelectChange = (option) => {     
     console.log(option,"TSsssssss")
     setSelectedOption(option);
     setShowModal(true);

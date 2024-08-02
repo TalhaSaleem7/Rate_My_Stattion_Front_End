@@ -22,7 +22,6 @@ const MyCartSD = ({ products }) => {
 
       const userId = getUserFromLocalStorage();
       try {
-        // const response = await axios.get(`http://localhost:5000/api/getuserdata/${userId}`);
         const response = await axios.get(`${baseurl}/getcart/${userId.id}`);
         console.log('response',response.data)
         const formattedProducts = response.data.map(product => ({
@@ -92,12 +91,9 @@ const MyCartSD = ({ products }) => {
               </div>
               <AmericonProductCart
                 initialProducts ={cartproducts}
-              
+                handleRemoveProduct={handleRemoveProduct} // Pass the function here
               />
             </Col>
-            {/* <Col lg={4}>
-              <MyCartCheckoutBox subtotal={subtotal} shippingFee={shippingFee} total={total} />
-            </Col> */}
           </Row>
         </Container>
       </section>
