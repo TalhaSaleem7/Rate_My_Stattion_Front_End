@@ -5,13 +5,12 @@ import DirectorPopup from "../Popups/Station_profile_popups/Newsdirector_h";
 import AwardPopup from "../Popups/Station_profile_popups/Award_h";
 import JobopeningPopup from "../Popups/Station_profile_popups/Jobopening_h";
 
-
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, ModalBody } from "react-bootstrap";
 import kabc from "../img/kabc.png";
 import Assistant from "../img/Assistant.png";
 import Award from "../Award/Award";
 import { FaPlusCircle } from "react-icons/fa";
-import Jobopening from '../Popups/Station_profile_popups/Jobopening_h';
+import Jobopening from "../Popups/Station_profile_popups/Jobopening_h";
 import Dirctors from "../Dirctors/Dirctors";
 import Openings from "../Openings/Openings";
 import Cardah from "../Cardah/Cardah";
@@ -32,21 +31,17 @@ import Footerah from "../footerah/Footerah";
 import { Container } from "react-bootstrap";
 import Header1 from "../Header/Header2";
 import { useNavigate } from "react-router-dom";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-
-import 'react-tabs/style/react-tabs.css';
+import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import { baseurl } from "../baseurl";
 
 const KABC2 = () => {
-
   const closePopup = (e) => {
-    console.log(e, "TS")
-    setShowModal(false);  
-
-  }
-
+    console.log(e, "TS");
+    setShowModal(false);
+  };
 
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
@@ -58,107 +53,79 @@ const KABC2 = () => {
   const [jobContent, setjobContent] = useState([]);
   const [jobData, setjobData] = useState({});
 
-
-
-
-
   useEffect(() => {
     // Retrieve user data from local storage
-    const storedUser = localStorage.getItem('userData');
+    const storedUser = localStorage.getItem("userData");
     if (storedUser) {
       const user = JSON.parse(storedUser);
-      console.log(user, userdata)
-      // setUser(user)  
+      console.log(user, userdata);
+      // setUser(user)
 
       fetchUserData(user.id);
-
     }
   }, []);
- 
 
   const fetchUserData = async (userId) => {
     try {
       const response = await axios.get(`${baseurl}/getuserdata/${userId}`);
 
-      setUser(response.data)
+      setUser(response.data);
     } catch (error) {
-      console.error('Error fetching user data:', error);
+      console.error("Error fetching user data:", error);
     }
   };
 
-
-
   const ongetabout = () => {
-
-    console.log('here')
-    const aboutUser = localStorage.getItem('aboutData');
-    const alpha = JSON.parse(aboutUser)
-    setAboutsUser(alpha)
-    console.log('done' , aboutsdata , 'alpha' , alpha)
+    console.log("here");
+    const aboutUser = localStorage.getItem("aboutData");
+    const alpha = JSON.parse(aboutUser);
+    setAboutsUser(alpha);
+    console.log("done", aboutsdata, "alpha", alpha);
   };
 
-
   const ongetdirector = () => {
+    console.log("director here");
 
-    console.log('director here')
+    const directorUser = localStorage.getItem("directorUser");
 
-    const directorUser = localStorage.getItem('directorUser');
+    const alphadirector = JSON.parse(directorUser);
 
-    const alphadirector = JSON.parse(directorUser)
+    setdirectorsUser(alphadirector);
 
-
-
-    setdirectorsUser(alphadirector)
-
-
-    console.log('done' , directordata , 'alphadirector' , alphadirector)
-
+    console.log("done", directordata, "alphadirector", alphadirector);
   };
 
   const ongetaward = () => {
+    console.log("director here");
 
-    console.log('director here')
+    const AwardUser = localStorage.getItem("AwardUser");
 
-    const AwardUser = localStorage.getItem('AwardUser');
+    const alphaaward = JSON.parse(AwardUser);
 
-    const alphaaward = JSON.parse(AwardUser)
+    setdirectorsUser(alphaaward);
 
-
-
-    setdirectorsUser(alphaaward)
-
-
-    console.log('done' , awardsdata , 'alphaaward' , alphaaward)
-
+    console.log("done", awardsdata, "alphaaward", alphaaward);
   };
   const onFecth = () => {
-    
-
-    setShowrequest(true)
+    setShowrequest(true);
 
     fetchJobsData();
-
-   
   };
 
+  const fetchJobsData = async () => {
+    const id = localStorage.getItem("jobgetId");
 
-    
-const fetchJobsData = async () => {
-  const id = localStorage.getItem('jobgetId');
+    try {
+      const response = await axios.get(`${baseurl}/jobbyjobid/${id}`);
+      console.log("xxxxx", response.data[0].Job);
+      setjobContent(response.data);
+      setjobData(response.data[0].Job);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
 
-  try {
-    const response = await axios.get(`${baseurl}/jobbyjobid/${id}`);
-    console.log('xxxxx' , response.data[0].Job)
-    setjobContent(response.data)
-    setjobData(response.data[0].Job)
-    
- 
-  } catch (error) {
-    console.error('Error fetching user data:', error);
-  }
-};
-
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState("");
   const [showModal, setShowModal] = useState(false);
 
   const handleSelectChange = (option) => {
@@ -166,8 +133,8 @@ const fetchJobsData = async () => {
     setShowModal(true);
     setIsOpen(false);
   };
- 
-  const handleClose = ( ) => {
+
+  const handleClose = () => {
     setShowModal(false);
     setSelectedOption(null);
   };
@@ -178,10 +145,8 @@ const fetchJobsData = async () => {
     setIsOpen(!isOpen);
   };
 
- 
-  return ( 
+  return (
     <>
-
       <Header1 />
       <Tabs>
         <section class="KABC-ah">
@@ -249,25 +214,32 @@ const fetchJobsData = async () => {
                   </span>
 
                   <span className="See">
-                      <button className="Contact-ah more" onClick={toggleDropdown}>
-                        <FaPlusCircle /> Add profile section
-                      </button>
-                        {isOpen && (
-                          <ul className="add_profile_ul">
-                            <li onClick={() => handleSelectChange('StationAboutPopup')}>
-                              <FaPlusCircle /> Add About
-                            </li>
-                            <li onClick={() => handleSelectChange('Director')}>
-                              <FaPlusCircle /> Add Director
-                            </li>
-                            <li onClick={() => handleSelectChange('Award')}>
-                              <FaPlusCircle /> Add Award
-                            </li>
-                            <li onClick={() => handleSelectChange('Jobopening')}>
-                              <FaPlusCircle /> Add Jobopening
-                            </li>
-                          </ul>
-                        )}
+                    <button
+                      className="Contact-ah more"
+                      onClick={toggleDropdown}
+                    >
+                      <FaPlusCircle /> Add profile section
+                    </button>
+                    {isOpen && (
+                      <ul className="add_profile_ul">
+                        <li
+                          onClick={() =>
+                            handleSelectChange("StationAboutPopup")
+                          }
+                        >
+                          <FaPlusCircle /> Add About
+                        </li>
+                        <li onClick={() => handleSelectChange("Director")}>
+                          <FaPlusCircle /> Add Director
+                        </li>
+                        <li onClick={() => handleSelectChange("Award")}>
+                          <FaPlusCircle /> Add Award
+                        </li>
+                        <li onClick={() => handleSelectChange("Jobopening")}>
+                          <FaPlusCircle /> Add Jobopening
+                        </li>
+                      </ul>
+                    )}
 
                     <Modal
                       show={showModal}
@@ -276,44 +248,64 @@ const fetchJobsData = async () => {
                       aria-labelledby="contained-modal-title-vcenter"
                       centered
                     >
-                       {/* onClose={closePopup} */}
+                      {/* onClose={closePopup} */}
                       <Modal.Body>
                         {/* Render different components based on selected option */}
-                        {selectedOption === 'StationAboutPopup'  && <StationAboutPopup   onCancel={handleClose}/>}
-                        {selectedOption === 'Director'  && <DirectorPopup   onCancel={handleClose} />}
-                        {selectedOption === 'Award'  && <AwardPopup  onCancel={handleClose} />}
-                        {selectedOption === 'Jobopening'  && <JobopeningPopup  onCancel={handleClose} />}
+                        {selectedOption === "StationAboutPopup" && (
+                          <StationAboutPopup onCancel={handleClose} />
+                        )}
+                        {selectedOption === "Director" && (
+                          <DirectorPopup onCancel={handleClose} />
+                        )}
+                        {selectedOption === "Award" && (
+                          <AwardPopup onCancel={handleClose} />
+                        )}
+                        {selectedOption === "Jobopening" && (
+                          <JobopeningPopup onCancel={handleClose} />
+                        )}
                       </Modal.Body>
                     </Modal>
-                              </span>
-
-
-                  
+                  </span>
                 </div>
               </div>
 
               <div class="navtabs">
-                <TabList >
-
-                  <Tab><div class="navtab active" data-target="Profile">
-                    Profile
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="ratings">
-                    My ratings
-                  </div></Tab>
-                  <Tab><div class="navtab" data-target="Statistic">
-                    Statistic
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="Posted" onClick={() => setShowrequest(false)}>
-                    Posted job
-                  </div></Tab>
+                <TabList>
+                  <Tab>
+                    <div class="navtab active" data-target="Profile">
+                      Profile
+                    </div>
+                  </Tab>
+                  <Tab>
+                    {" "}
+                    <div class="navtab" data-target="ratings">
+                      My ratings
+                    </div>
+                  </Tab>
+                  <Tab>
+                    <div class="navtab" data-target="Statistic">
+                      Statistic
+                    </div>
+                  </Tab>
+                  <Tab>
+                    {" "}
+                    <div
+                      class="navtab"
+                      data-target="Posted"
+                      onClick={() => setShowrequest(false)}
+                    >
+                      Posted job
+                    </div>
+                  </Tab>
                   {/* <Tab > <div class="navtab"  data-target="Posteds" >
                     Incoming Jobs
                   </div></Tab> */}
-                  <Tab> <div class="navtab" data-target="Contact">
-                    Contact Info
-                  </div></Tab>
-
+                  <Tab>
+                    {" "}
+                    <div class="navtab" data-target="Contact">
+                      Contact Info
+                    </div>
+                  </Tab>
                 </TabList>
                 <div class="underline"></div>
               </div>
@@ -328,9 +320,9 @@ const fetchJobsData = async () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <About2 aboutsdata = {aboutsdata}  />
-                      <Dirctors2 directordata = {directordata}/>
-                      <Award2 awardsdata = {awardsdata} />
+                      <About2 aboutsdata={aboutsdata} />
+                      <Dirctors2 directordata={directordata} />
+                      <Award2 awardsdata={awardsdata} />
                       <Openings2 />
                     </div>
 
@@ -350,7 +342,8 @@ const fetchJobsData = async () => {
                         <div class="Recommend-card-ah">
                           <div class="Recommend-card-tital-ah">
                             <h2>
-                              Subscribe to our Newsletter, so you'll never miss one
+                              Subscribe to our Newsletter, so you'll never miss
+                              one
                             </h2>
                             <input type="email" placeholder="Your email" />
                             <button>Subscribe</button>
@@ -462,7 +455,8 @@ const fetchJobsData = async () => {
                         <div class="Recommend-card-ah">
                           <div class="Recommend-card-tital-ah">
                             <h2>
-                              Subscribe to our Newsletter, so you'll never miss one
+                              Subscribe to our Newsletter, so you'll never miss
+                              one
                             </h2>
                             <input type="email" placeholder="Your email" />
                             <button>Subscribe</button>
@@ -556,73 +550,64 @@ const fetchJobsData = async () => {
 
           <TabPanel>
             <div id="Posted" class="content active ">
+              {showrequest ? (
+                <section class="About-ah">
+                  <Container>
+                    <div class="About-main-ah">
+                      <div class="Angeles-my-box-ah">
+                        <div class="Angeles-ah-box">
+                          <div class="Angeles-logo-side-box">
+                            <div class="Angeles-logo-ah">
+                              <img src={Assistant} alt="" />
+                            </div>
 
-              {
-                showrequest ?
-
-
-
-                
-              <section class="About-ah">
-              <Container>
-                
-                <div class="About-main-ah">
-                  <div class="Angeles-my-box-ah">
-                    <div class="Angeles-ah-box">
-                      <div class="Angeles-logo-side-box">
-                        <div class="Angeles-logo-ah">
-                          <img src={Assistant} alt="" />
+                            <span>
+                              <h2>{jobData.jobTitle}</h2>
+                              <p>
+                                {jobData.yearofexperience} of Experiance• $
+                                {jobData.yearlySalary} • {jobData.jobType}
+                              </p>
+                            </span>
+                          </div>
                         </div>
 
-                        <span>
-                    
-                          <h2>{jobData.jobTitle}</h2>
-                          <p>{jobData.yearofexperience} of Experiance• ${jobData.yearlySalary} • {jobData.jobType}</p>
-                        </span>
-                      </div>
-
-                      
-                    </div>
-
-                    <Filter />
-
-                    <Jobah  jobContent = {jobContent}/>
-                  </div>
-                </div>
-              </Container>
-            </section>
-            :
-
-             
-
-              <section class="About-ah">
-                <Container>
-                  <div class="About-main-ah">
-                    <div class="About-main-box-1-ah">
-                      <div class="About-main-card-1-hello-ah">
                         <Filter />
 
-                        <Assistantah  onSuccess= {onFecth}/>
+                        <Jobah jobContent={jobContent} />
                       </div>
                     </div>
+                  </Container>
+                </section>
+              ) : (
+                <section class="About-ah">
+                  <Container>
+                    <div class="About-main-ah">
+                      <div class="About-main-box-1-ah">
+                        <div class="About-main-card-1-hello-ah">
+                          <Filter />
 
-                    <div class="About-main-box-2-ah">
-                      <div class="Hire-ah-box">
-                        <h2>Hire the right employee for your company now!</h2>
-                        <p>
-                          Pellentesque vel tristique ultrices habitasse feugiat
-                          nulla tempor quam.{" "}
-                        </p>
-                        <button>Post job opening</button>
+                          <Assistantah onSuccess={onFecth} />
+                        </div>
+                      </div>
+
+                      <div class="About-main-box-2-ah">
+                        <div class="Hire-ah-box">
+                          <h2>Hire the right employee for your company now!</h2>
+                          <p>
+                            Pellentesque vel tristique ultrices habitasse
+                            feugiat nulla tempor quam.{" "}
+                          </p>
+                          <button
+                            onClick={() => handleSelectChange("Jobopening")}
+                          >
+                            Post job opening
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Container>
-              </section>
-              
-
-
-               }
+                  </Container>
+                </section>
+              )}
             </div>
           </TabPanel>
 
@@ -881,7 +866,6 @@ const fetchJobsData = async () => {
               </section>
             </div>
           </TabPanel>
-
         </div>
       </Tabs>
       <Footerah />
