@@ -5,6 +5,8 @@ import { Alert } from 'react-bootstrap';
 import axios from 'axios';
 import React, { useState } from "react";
 import { baseurl } from "../../baseurl";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AwardForm = ({onCancel}) => {
   const [message, setMessage] = useState('');
@@ -51,19 +53,17 @@ const AwardForm = ({onCancel}) => {
 
       localStorage.setItem('newsAwardData', JSON.stringify(response.data.newsaward));
 
-      setMessage('Form submitted successfully');
-      setError('');
+      toast.success(response.data.message);
     } catch (err) {
-      setError('Error submitting form');
       console.error('Error:', err);
+      toast.error('All Fields are required', error);
+
     }
   };
 
   return (
     <div class="container">
-      {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
-
+      <ToastContainer />
       <div class="my--container--h mx-auto">
         <div class="row">
           <div class="col">

@@ -1,37 +1,34 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseurl } from "../../baseurl";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const JobOpeningForm = ({ onCancel }) => {
   const [isExp, setIsExp] = useState(false);
 
   const [isEdu, setIsEdu] = useState(false);
-  const [jobTitle, setjobTitle] = useState('');
-  const [jobDescription, setjobDescription] = useState('');
-  const [yearlySalary, setyearlySalary] = useState('');
-  const [jobType, setjobType] = useState('');
-  const [qualification, setQualification] = useState('');
-  const [careerlevel, setCareerlevel] = useState('');
-  const [yearofexperience, setYearofexperience] = useState('');
-  const [educationlevel, setEducationlevel] = useState('');
-  const [startDate, setstartDate] = useState('');
-  const [endDate, setendDate] = useState('');
-
-
+  const [jobTitle, setjobTitle] = useState("");
+  const [jobDescription, setjobDescription] = useState("");
+  const [yearlySalary, setyearlySalary] = useState("");
+  const [jobType, setjobType] = useState("");
+  const [qualification, setQualification] = useState("");
+  const [careerlevel, setCareerlevel] = useState("");
+  const [yearofexperience, setYearofexperience] = useState("");
+  const [educationlevel, setEducationlevel] = useState("");
+  const [startDate, setstartDate] = useState("");
+  const [endDate, setendDate] = useState("");
 
   const getUserFromLocalStorage = () => {
-    const user = localStorage.getItem('userData');
+    const user = localStorage.getItem("userData");
     return user ? JSON.parse(user) : null;
   };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
     const storedUser = getUserFromLocalStorage();
-    console.log('Retrieved user from local storage:', storedUser);
+    console.log("Retrieved user from local storage:", storedUser);
     const userId = storedUser.id;
-
 
     const formData = {
       jobTitle,
@@ -45,29 +42,20 @@ const JobOpeningForm = ({ onCancel }) => {
       educationlevel,
       startDate,
       endDate,
-      userId
+      userId,
     };
 
     try {
-     
-      const response =  await axios.post(`${baseurl}/createjob`, {
-     
-        formData
-        
+      const response = await axios.post(`${baseurl}/createjob`, {
+        formData,
       });
 
-      
-
-
-  
-     
+      toast.success(response.data.message);
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
+      toast.error("All Fields are required", error);
     }
   };
-
-
-
 
   const yearToggle = () => {
     setIsExp(!isExp);
@@ -80,6 +68,8 @@ const JobOpeningForm = ({ onCancel }) => {
   return (
     <div class="container">
       <div class="my--container--h mx-auto">
+        <ToastContainer />
+
         <div class="row">
           <div class="col">
             <div class="mb-3 d-flex justify-content-between align-items-center">
@@ -90,7 +80,11 @@ const JobOpeningForm = ({ onCancel }) => {
                 Job Opening
               </h1>
               <div class="about--close--h">
-                <img src={require("../../img/Union_h.png")} onClick={onCancel} alt="" />
+                <img
+                  src={require("../../img/Union_h.png")}
+                  onClick={onCancel}
+                  alt=""
+                />
               </div>
             </div>
 
@@ -158,23 +152,23 @@ const JobOpeningForm = ({ onCancel }) => {
                 >
                   Qualification
                 </label>
-                <div class="col-lg-6 job--opening--qualify--h">
+                <div class="col-lg-6 job--opening--qualify--h qualification--input--alt--h">
                   <input
                     type="text"
-                    class="form-control skills--inp--h mb-3"
+                    class="form-control skills--inp--h mb-3 "
                     id="exampleFormControlInput1"
                     placeholder="Type here..."
                     value={qualification}
                     onChange={(e) => setQualification(e.target.value)}
                   />
                 </div>
-                <div class="col-lg-6 job--opening--qualify--h">
+                {/* <div class="col-lg-6 job--opening--qualify--h">
                   <input
                     type="text"
                     class="form-control skills--inp--h mb-3"
                     id="exampleFormControlInput1"
                     placeholder="Type here..."
-                   
+
                   />
                 </div>
                 <div class="col-lg-6 job--opening--qualify--h">
@@ -203,7 +197,7 @@ const JobOpeningForm = ({ onCancel }) => {
                   <a href="" class="">
                     Add more qualification
                   </a>
-                </div>
+                </div> */}
               </div>
               <label
                 for="exampleFormControlInput1"
@@ -230,14 +224,53 @@ const JobOpeningForm = ({ onCancel }) => {
                   }`}
                   id="inputWorkPlace"
                 >
-                  Choose Option...
+                  {yearofexperience === ""
+                    ? "Choose Option..."
+                    : yearofexperience}
                 </div>
                 {isExp && (
                   <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
-                    <li onClick={() => { setYearofexperience('Option 1'); yearToggle(); }}>Option</li>
+                    <li
+                      onClick={() => {
+                        setYearofexperience("1 Year");
+                        yearToggle();
+                      }}
+                    >
+                      1 Year
+                    </li>
 
-                    <li onClick={() => { setYearofexperience('Option 2'); yearToggle(); }}>Option</li>
-                    <li onClick={() => { setYearofexperience('Option 3'); yearToggle(); }}>Option</li>
+                    <li
+                      onClick={() => {
+                        setYearofexperience("2 Years");
+                        yearToggle();
+                      }}
+                    >
+                      2 Years
+                    </li>
+                    <li
+                      onClick={() => {
+                        setYearofexperience("3 Years");
+                        yearToggle();
+                      }}
+                    >
+                      3 Years
+                    </li>
+                    <li
+                      onClick={() => {
+                        setYearofexperience("4 Years");
+                        yearToggle();
+                      }}
+                    >
+                      4 Years
+                    </li>
+                    <li
+                      onClick={() => {
+                        setYearofexperience("5 Years");
+                        yearToggle();
+                      }}
+                    >
+                      5 Years
+                    </li>
                   </ul>
                 )}
               </div>
@@ -252,14 +285,35 @@ const JobOpeningForm = ({ onCancel }) => {
                   }`}
                   id="inputWorkPlace"
                 >
-                  Choose Option...
+                  {educationlevel === "" ? "Choose Option..." : educationlevel}
                 </div>
                 {isEdu && (
                   <ul className=" experience--job--inp--h experience--job--inp--h--dropdown">
-                    <li onClick={() => { setEducationlevel('Option 1'); educationToggle(); }}>Option</li>
+                    <li
+                      onClick={() => {
+                        setEducationlevel("Option 1");
+                        educationToggle();
+                      }}
+                    >
+                      Option 1
+                    </li>
 
-                    <li onClick={() => { setEducationlevel('Option 2'); educationToggle(); }}>Option</li>
-                    <li onClick={() => { setEducationlevel('Option 3'); educationToggle(); }}>Option</li>
+                    <li
+                      onClick={() => {
+                        setEducationlevel("Option 2");
+                        educationToggle();
+                      }}
+                    >
+                      Option 2
+                    </li>
+                    <li
+                      onClick={() => {
+                        setEducationlevel("Option 3");
+                        educationToggle();
+                      }}
+                    >
+                      Option 3
+                    </li>
                   </ul>
                 )}
               </div>
@@ -278,7 +332,7 @@ const JobOpeningForm = ({ onCancel }) => {
                     id="exampleFormControlInput1"
                     placeholder="mm/dd/yy"
                     value={startDate}
-                   onChange={(e) => setstartDate(e.target.value)}
+                    onChange={(e) => setstartDate(e.target.value)}
                   />
                 </div>
                 <div class="col-lg-6 job--opening--qualify--h">
@@ -310,7 +364,8 @@ const JobOpeningForm = ({ onCancel }) => {
               </button>
               <button
                 type="button"
-                class="btn btn-outline-primary about--btn--h about--btn--h--alt--2" onClick={onCancel}
+                class="btn btn-outline-primary about--btn--h about--btn--h--alt--2"
+                onClick={onCancel}
               >
                 Cancel
               </button>

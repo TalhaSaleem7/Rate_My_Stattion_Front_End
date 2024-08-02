@@ -114,6 +114,7 @@ const Cardah3 = () => {
                                 />
                             </svg>
                             <p>${job.Job.yearlySalary}</p>
+                            
                         </span>
 
                         <span>
@@ -129,12 +130,14 @@ const Cardah3 = () => {
                                     fill="#194D79"
                                 />
                             </svg>
-                            <p>{job.Job.jobType}</p>
+                            <p>{job.Job.jobType} </p>
+
+                          
                         </span>
                     </div>
 
                     <div class="Applied-ah-list-3">
-                        {job.rejected = 1 ?
+                        {job.rejected == 1 ?
 
                         <button>Reject</button>
                         :

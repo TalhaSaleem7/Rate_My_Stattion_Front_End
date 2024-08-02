@@ -29,14 +29,7 @@ const EmployerLoginPg = () => {
                   </Col>
                   <Col lg={6} className="p-0">
                     <div className="employer-newroom-box">
-                      <Tabs aria-label="Pills" style="pills">
-                        <Tabs.Item active title="Employee">
-                          <EmployerLoginForm />
-                        </Tabs.Item>
-                        <Tabs.Item title="Newsroom">
-                          <NewsroomLoginForm />
-                        </Tabs.Item>
-                      </Tabs>
+                      <EmployerLoginForm />
                     </div>
                     <div className="employer-dont-have-acc">
                       <a href="#">
@@ -52,8 +45,6 @@ const EmployerLoginPg = () => {
         </Container>
       </section>
       <Footerah />
-
-    
     </>
   );
 };

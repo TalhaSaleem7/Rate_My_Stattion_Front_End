@@ -3,12 +3,13 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { baseurl } from "../baseurl";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EmployerLoginForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [passwordShown, setPasswordShown] = useState(false);
-  const [error, setError] = useState("");
   const [user, setUser] = useState(''); // State to store user details
   const navigate = useNavigate();
 
@@ -25,6 +26,8 @@ const EmployerLoginForm = () => {
       if (response.data.message === 'Login successful') {
         setUser(response.data.user); // Store user details
         localStorage.setItem('userData', JSON.stringify(response.data.user));
+        toast.success(response.data.message );
+
 
         if(response.data.user.type === 'Employee'){
           navigate("/kabcah1");
@@ -39,8 +42,9 @@ const EmployerLoginForm = () => {
         // navigate("/kabcah1", { state: { user: response.data.user } });
       }
     } catch (error) {
-      setError("Invalid username or password");
       console.error("Login error:", error);
+      toast.error('Invalid username or password', error);
+
     }
   };
 
@@ -49,15 +53,15 @@ const EmployerLoginForm = () => {
   };
   return (
     <>
+      <ToastContainer />
       <div className="employer-login-form">
-        {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="employer-inputfield">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Email</label>
             <input
               type="text"
               id="username"
-              placeholder="Type your username here..."
+              placeholder="Type your Email here..."
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />

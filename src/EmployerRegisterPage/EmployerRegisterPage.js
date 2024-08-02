@@ -103,14 +103,9 @@ const EmployerRegisterPage = () => {
                     <Tabs
                         aria-label="Pills"
                         style="pills"
-                      
-                        
+                                              
                       >
-                    
 
-                 
-
-                      
                         <Tabs.Item active title="Employee"  onChange={() => handleTabChange('Employee')}>
                           <EmployerRegisterForm
                            
