@@ -1,21 +1,47 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { RiVerifiedBadgeFill, RiMore2Fill } from 'react-icons/ri';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import rmsabc from "../img/job-comp-logo.jpg"
+import axios from 'axios';
+import { baseurl } from '../baseurl';
 
 
 const SeeProfileBox = () => {
 
     const navigate = useNavigate()
     const seeprofile = () => {
-        navigate("/kabc2");
+        navigate("/seeprofile");
       };
+
+
+      const [stationData, setstationData] = useState([]);
+
+      useEffect(() => {
+        fetchStationData();
+      }, []);
+    
+    
+    
+      const fetchStationData = async () => {
+        try {
+          const response = await axios.get(`${baseurl}/getstation`);
+          console.log("xxxxx", response.data);
+          setstationData(response.data);
+        } catch (error) {
+          console.error("Error fetching user data:", error);
+        }
+      };
+    
 
 
   return (
     <>
      <div className='rms-profile-box'>
+
+
+     {stationData.map((station, index) => (
+
         <Row>
             <Col lg={8}>
                 <div className="rms-profile-logo-box">
@@ -45,6 +71,7 @@ const SeeProfileBox = () => {
                 </div>
             </Col>
         </Row>
+     ))}
         <div className="rms-dots-icon">
             <span><RiMore2Fill /></span>
         </div>

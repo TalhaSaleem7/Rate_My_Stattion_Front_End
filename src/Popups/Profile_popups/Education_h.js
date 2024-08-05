@@ -65,8 +65,9 @@ const EducationForm = ({ onCancel }) => {
         description,
       });
 
-      setMessage("Form submitted successfully");
-      setError("");
+      
+      setMessage('Form submitted successfully');
+      setError('');
       // Optionally, clear the form or redirect the user
     } catch (err) {
       console.error("Error:", err);

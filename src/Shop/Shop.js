@@ -59,25 +59,41 @@ const Shop = () => {
         const storedUser = getUserFromLocalStorage();
         const { id, image, name, price } = product;
 
-        if (storedUser) {
-            try {
-                const response = await axios.post(`${baseurl}/addtocart`, {
-                    product_id: id,
-                    image,
-                    name,
-                    price,
-                    userId: storedUser.id
-                });
 
-                notify();
+        if(storedUser){
 
-            } catch (err) {
-                console.error('Error:', err);
-            }
+        
+        try {
+            const response = await axios.post(`${baseurl}/addtocart`,  {
+              product_id:id,
+              image,
+              name,
+              price,
+              userId:storedUser.id
+            });
+
+            notify();
+      
+            // setMessage('User created successfully');
+            // Optionally, clear the form or redirect the user
+           
+     
+           
+          } catch (err) {
+            console.error('Error:', err);
+    
+          }
+
         }
-        else {
-            toast.error("Please Login First");
+
+        else{
+
+            toast.error("Please Sign in first!")
+
         }
+        // setCart((prevCart) => [...prevCart, product]);
+        // console.log("Product added to cart:", product);
+        // alert(`Added ${product.name} to cart!`);
     };
 
     const notify = () => toast("Product Added to Cart!");
