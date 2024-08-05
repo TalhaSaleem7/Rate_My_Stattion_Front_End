@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
-=======
-import React, { useEffect, useState } from "react";
->>>>>>> d03a528bb9f675d8a50b9db253e6f5927acb010d
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderMainLogo from "../img/header_logo_img.png";
 import { useNavigate } from "react-router-dom";
@@ -35,7 +31,6 @@ const Header1 = () => {
   // const login = () => navigate("/employerlogin");
   // const userprofile = () => navigate("/kabcah1");
   const usersetting = () => navigate("/accountsettingh");
-<<<<<<< HEAD
   const [cartCount, setCartCount] = useState(0);
 
 
@@ -60,7 +55,6 @@ const Header1 = () => {
     fetchCartCount();
   }, []);
 
-=======
   const userData = localStorage.getItem("userData");
 
   const userprofile = () => {
@@ -76,7 +70,6 @@ const Header1 = () => {
 
     navigate("/employerlogin");
   };
->>>>>>> d03a528bb9f675d8a50b9db253e6f5927acb010d
 
   return (
     <>

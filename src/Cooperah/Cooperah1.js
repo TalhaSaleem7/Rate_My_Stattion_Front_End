@@ -34,8 +34,8 @@ const Cooperah1 = () => {
     }, []);
 
 
-    const fetchProduct = async () => {
-      const id = localStorage.getItem('productId');
+    const fetchProduct = async (productId) => {
+      const id = localStorage.getItem('productId', productId);
 
       try {
           const response = await axios.get(`${baseurl}/productdetails/${id}`);

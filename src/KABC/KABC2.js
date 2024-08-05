@@ -110,13 +110,9 @@ const KABC2 = () => {
   
  
   const onFecth = () => {
-<<<<<<< HEAD
     
-    setShowrequest(true)
-=======
     setShowrequest(true);
 
->>>>>>> d03a528bb9f675d8a50b9db253e6f5927acb010d
     fetchJobsData();
   };
 
@@ -153,7 +149,6 @@ const KABC2 = () => {
     setIsOpen(!isOpen);
   };
 
-<<<<<<< HEAD
   const [ContactData, setContactData] = useState([]);
   
   useEffect(() => {
@@ -169,10 +164,7 @@ const KABC2 = () => {
     fetchContactData();
 }, []);
 
-  return ( 
-=======
   return (
->>>>>>> d03a528bb9f675d8a50b9db253e6f5927acb010d
     <>
       <Header1 />
       <Tabs>
@@ -297,31 +289,9 @@ const KABC2 = () => {
               </div>
 
               <div class="navtabs">
-<<<<<<< HEAD
                 <TabList >
 
-                  <Tab><div class="navtab active" data-target="Profile">
-                    Profile
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="ratings">
-                    My ratings
-                  </div></Tab>
-                  <Tab><div class="navtab" data-target="Statistic">
-                    Statistic
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="Posted" onClick={() => setShowrequest(false)}>
-                    Posted job
-                  </div></Tab>
-                  <Tab > <div class="navtab"  data-target="Posteds" >
-                    Incoming Jobs
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="Contact">
-                    Contact Info
-                  </div></Tab>
-
-=======
-                <TabList>
-                  <Tab>
+          <Tab>
                     <div class="navtab active" data-target="Profile">
                       Profile
                     </div>
@@ -356,7 +326,6 @@ const KABC2 = () => {
                       Contact Info
                     </div>
                   </Tab>
->>>>>>> d03a528bb9f675d8a50b9db253e6f5927acb010d
                 </TabList>
                 <div class="underline"></div>
               </div>
