@@ -115,6 +115,7 @@ import MainLayouts from "./admin/layout/Mainlayouts";
 import Dashbord from "./admin/dashboard";
 import AdminManagement from "./admin/AdminManagement";
 import Chat from "./Sockets/Chats_Components/Chat";
+import Seeprofile from "./KABC/seeprofile";
 
 
 function App() {
@@ -132,6 +133,8 @@ function App() {
         <Route path="/" exact element={<Homepage />} />
         <Route path="/kabc" exact element={<KABC />} />
         <Route path="/kabc2" exact element={<KABC2 />} />
+        <Route path="/seeprofile" exact element={<Seeprofile />} />
+
         <Route path="/kabcah" exact element={<KABCah />} />
         <Route path="/kabcah1" exact element={<KABCah1 />} />
         <Route path="/Header" exact element={<Header />} />
