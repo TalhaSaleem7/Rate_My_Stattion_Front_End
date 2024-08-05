@@ -10598,6 +10598,239 @@ span.See select:focus {
 }
 
 
+/************* Rate My Station Message Page CSS Start *************/
+
+.ratemystation_chatbox {
+  padding: 60px 0px 0px 0px;
+}
+
+.messages_pg_box {
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.rate_chatbox_left {
+  padding: 30px 20px 30px 20px;
+  border-right: 1px solid #E0E0E0;
+}
+
+.rate_chatbox_left h4 {
+  padding: 0px 0px 30px 0px;
+  font-family: 'Public Sans';
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.chatbox_message_search input {
+  width: 100%;
+  padding: 6px 20px;
+  line-height: 33px;
+  font-size: 16px !important;
+  font-family: 'Public Sans';
+  color: #4F4F4F;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 10px;
+}
+
+.chatbox_message_search {
+  position: relative;
+}
+
+.chatbox_message_search span {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #828282;
+  font-size: 18px;
+}
+
+.chatbox_message_search input:focus {
+  outline: none;
+}
+
+.chat-box-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 34px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.chat-box-headleft {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.chat-box-head-dp img {
+  width: 58.63px;
+  height: 58.63px;
+}
+
+
+
+.chat-box-head .chat-name h2 {
+    font-family: 'Public Sans';
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    line-height: 30.5px;
+}
+
+.chat-box-right {
+  display: flex;
+  gap: 14px;
+}
+
+.chat-box-right span {
+  color: #828282;
+  font-size: 16px;
+  font-family: 'Public Sans';
+}
+
+.chat-box-body-input input {
+  width: 100%;
+  padding: 10px 17px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 10px;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+}   
+
+
+.chat-box-body-input {
+    position: relative;
+}
+
+.message_chat_sendbox {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.message_chat_sendbox button {
+    border: none;
+}
+
+
+
+.message_chat_sendbox button svg path {
+    fill: #194D79;
+}
+
+.chat_right_txt ul li {
+  border-radius: 10px 10px 10px 0px;
+  color: #fff;
+}
+
+.chat_right_txt {
+  padding: 20px;
+}
+
+.chat-box-body-input input:focus {
+    outline: none;
+}
+
+.message-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0px 0px 0px;
+}
+
+ 
+.message-item .message-info {
+  flex-grow: 1;
+}
+ 
+.message-item .message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.message-item .name {
+  color: #000;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+
+.message-item .time {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.message-item .message {
+  margin: 5px 0;
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+
+
+.message-item .message-count {
+  background-color: #89C400;
+  border-radius: 50%;
+  color: #FFF;
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 30px 0px 0px 0px;
+  padding: 3px 6px;
+}
+
+.message-item .avatar {
+  margin-right: 10px;
+  width: 53.351px;
+  height: 53.351px;
+}
+
+.chat-name p {
+  color: var(--Gray-3, #828282);
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.message_chat_sendbox button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.chattype_fixed {
+  position: fixed;
+  width: 42%;
+  bottom: 150px;
+}
+
+
+/************* Rate My Station Message Page CSS End *************/
+
+
 
 @media screen and (max-width: 1600px) {
   .ahd-card-body-start {
@@ -10627,6 +10860,14 @@ span.See select:focus {
 
   .ahd-card-body-end span p {
     font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .chattype_fixed {
+    width: 56%;
+    
   }
 }
 
@@ -10677,6 +10918,11 @@ span.See select:focus {
 
   .search-stations-input input::placeholder {
     font-size: 18px;
+  }
+
+  .chattype_fixed {
+    width: 50%;
+    bottom: 20px;
   }
 
   .news-director-current {
