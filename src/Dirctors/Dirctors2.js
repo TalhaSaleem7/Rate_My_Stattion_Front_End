@@ -26,7 +26,7 @@ const Dirctors2 = () => {
                 centered
             >
                 <Modal.Body>
-                    <DirectorPopup closePopup={handleClose} />
+                    <DirectorPopup onCancel={handleClose} />
                 </Modal.Body>
             </Modal>
 

@@ -5,7 +5,7 @@ import { Modal } from "react-bootstrap";
 
 
 
-const Award2 = () => {
+const Award2 = ({onCancel}) => {
     const [showModal, setShowModal] = useState(false);
 
     const handleSelectChange = () => {
@@ -37,7 +37,7 @@ const Award2 = () => {
                 <span class="edite">
                     <h2>Award</h2>
                     <span class="edite-icon">
-                        <div onClick={handleSelectChange}>
+                        <div onCancel={handleSelectChange}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5363 0.726074C12.2831 0.726074 11.2671 1.74206 11.2671 2.99535V11.4728H2.78881C1.53552 11.4728 0.519531 12.4887 0.519531 13.742C0.519531 14.9953 1.53552 16.0113 2.78881 16.0113H11.2671V24.4889C11.2671 25.7421 12.2831 26.7581 13.5363 26.7581C14.7896 26.7581 15.8056 25.7421 15.8056 24.4889V16.0113H24.2823C25.5356 16.0113 26.5516 14.9953 26.5516 13.742C26.5516 12.4887 25.5356 11.4728 24.2823 11.4728H15.8056V2.99535C15.8056 1.74206 14.7896 0.726074 13.5363 0.726074Z" fill="#828282" />
                         </svg>
