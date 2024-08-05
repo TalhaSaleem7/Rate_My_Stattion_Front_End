@@ -1,39 +1,42 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios'; // Add this import
+import React, { useEffect, useState } from "react";
+import axios from "axios"; // Add this import
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import Asistantnewsdirector from '../Asistantnewsdirector/Asistantnewsdirector';
-import { RiArrowLeftSLine, RiArrowRightSLine, RiSearchLine } from 'react-icons/ri';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
-import ProdImage1 from '../img/ratemystation-prod-img-1.png';
-import ProdImage2 from '../img/ratemystation-prod-img-2.png';
-import ProdImage3 from '../img/ratemystation-prod-img-3.png';
-import ProdImage4 from '../img/ratemystation-prod-img-4.png';
-import Header from '../Header/Header';
-import Footerah from '../footerah/Footerah';
+import Asistantnewsdirector from "../Asistantnewsdirector/Asistantnewsdirector";
+import {
+  RiArrowLeftSLine,
+  RiArrowRightSLine,
+  RiSearchLine,
+} from "react-icons/ri";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
+import ProdImage1 from "../img/ratemystation-prod-img-1.png";
+import ProdImage2 from "../img/ratemystation-prod-img-2.png";
+import ProdImage3 from "../img/ratemystation-prod-img-3.png";
+import ProdImage4 from "../img/ratemystation-prod-img-4.png";
+import Header from "../Header/Header";
+import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
-import { baseurl } from '../baseurl';
+import { baseurl } from "../baseurl";
 
 const Viewjob = () => {
-
   const [products, setProducts] = useState([]);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
-        const formattedProducts = response.data.map(product => ({
+        const formattedProducts = response.data.map((product) => ({
           ...product,
-          price: parseFloat(product.price) // Convert to number if necessary
+          price: parseFloat(product.price), // Convert to number if necessary
         }));
         setProducts(formattedProducts);
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error("Error fetching products:", error);
       }
     };
 
@@ -41,14 +44,13 @@ const Viewjob = () => {
   }, []);
 
   const getUserFromLocalStorage = () => {
-    const user = localStorage.getItem('userData');
+    const user = localStorage.getItem("userData");
     return user ? JSON.parse(user) : null;
   };
 
-
   // const addToCart = (product) => {
   const addToCart = async (product) => {
-    console.log('product', product)
+    console.log("product", product);
     const storedUser = getUserFromLocalStorage();
     const { id, image, name, price } = product;
     try {
@@ -57,17 +59,13 @@ const Viewjob = () => {
         image,
         name,
         price,
-        userId: storedUser.id
+        userId: storedUser.id,
       });
 
       // setMessage('User created successfully');
       // Optionally, clear the form or redirect the user
-
-
-
     } catch (err) {
-      console.error('Error:', err);
-
+      console.error("Error:", err);
     }
     // setCart((prevCart) => [...prevCart, product]);
     // console.log("Product added to cart:", product);
@@ -81,19 +79,17 @@ const Viewjob = () => {
     notify();
   };
 
-
   const proddetail = () => {
-    navigate('/productdetail')
-  }
+    navigate("/productdetail");
+  };
 
   const mycart = () => {
-    navigate('/mycart')
-  }
+    navigate("/mycart");
+  };
 
   const shop = () => {
-    navigate('/shop')
-  }
-
+    navigate("/shop");
+  };
 
   return (
     <>
@@ -150,7 +146,10 @@ const Viewjob = () => {
                   </Col>
                   <Col lg={4} md={6}>
                     <div className="find-job-select-box">
-                      <input type="text" placeholder="Station name or category" />
+                      <input
+                        type="text"
+                        placeholder="Station name or category"
+                      />
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -180,10 +179,6 @@ const Viewjob = () => {
           </Row>
         </Container>
       </section>
-
-
-
-
 
       <section className="search-job-sec">
         <Container>
@@ -217,54 +212,32 @@ const Viewjob = () => {
         </Container>
       </section>
 
-
       <section class="assistant-news-director-box-sec">
         <Container>
           <Row>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
+            <Asistantnewsdirector />
+
             <Col lg={12}>
               <div className="newsletter-pagination-slide asistant-pagination">
                 <div className="pagination">
-                  <a href="#"><RiArrowLeftSLine /></a>
+                  <a href="#">
+                    <RiArrowLeftSLine />
+                  </a>
                   <a href="#">1</a>
                   <a href="#">2</a>
                   <a href="#">3</a>
                   <a href="#">4</a>
                   <a href="#">5</a>
                   <a href="#">6</a>
-                  <a href="#"><RiArrowRightSLine /></a>
+                  <a href="#">
+                    <RiArrowRightSLine />
+                  </a>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-
-
-
 
       <section className="ratemystation-shop-sec">
         <h4>RateMyStation's Shop</h4>
@@ -275,13 +248,29 @@ const Viewjob = () => {
               <Col key={product.id} lg={3} md={4}>
                 <div className="ratemystation-shop-prod">
                   <img src={product.image} alt={product.name} />
-                  <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
+                  <img
+                    className="prod-abslt-ratems"
+                    src={BestsellerImage}
+                    alt="Bestseller"
+                  />
                   <div className="ratemystation-prod-txt">
                     <h3>{product.name}</h3>
                     <h6>${product.price.toFixed(2)}</h6>
                     <div className="ratemystation-prod-btn">
-                      <button onClick={proddetail} variant="light" className="prod-light-btn">View Details</button>
-                      <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
+                      <button
+                        onClick={proddetail}
+                        variant="light"
+                        className="prod-light-btn"
+                      >
+                        View Details
+                      </button>
+                      <button
+                        onClick={() => handleButtonClick(product)}
+                        variant="dark"
+                        className="prod-dark-btn"
+                      >
+                        Add to cart
+                      </button>
                       <ToastContainer />
                     </div>
                   </div>
@@ -294,7 +283,7 @@ const Viewjob = () => {
 
       <Footerah />
     </>
-  )
-}
+  );
+};
 
-export default Viewjob
+export default Viewjob;
