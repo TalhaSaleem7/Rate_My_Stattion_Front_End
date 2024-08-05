@@ -4,7 +4,7 @@ import { baseurl } from "../../baseurl";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const StationAboutForm = ({onSuccess,onCancel}) => {
+const StationAboutForm = ({onCancel}) => {
   const [formData, setFormData] = useState({
     About: '',
     Industry: '',
@@ -72,7 +72,6 @@ const StationAboutForm = ({onSuccess,onCancel}) => {
       localStorage.setItem('aboutData', JSON.stringify(response.data.about));
 
 
-      onSuccess();
 
       toast.success(response.data.message);
 

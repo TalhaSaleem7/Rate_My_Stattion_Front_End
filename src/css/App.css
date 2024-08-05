@@ -10598,6 +10598,16 @@ span.See select:focus {
 }
 
 
+.Upload-show {
+  background: #ebebeb;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 /************* Rate My Station Message Page CSS Start *************/
 
 .ratemystation_chatbox {
