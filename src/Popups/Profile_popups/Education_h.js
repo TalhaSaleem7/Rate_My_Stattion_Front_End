@@ -48,6 +48,7 @@ const EducationForm = (handleClose) => {
         description,
       });
 
+      
       setMessage('Form submitted successfully');
       setError('');
       // Optionally, clear the form or redirect the user

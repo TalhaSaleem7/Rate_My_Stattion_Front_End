@@ -58,6 +58,11 @@ const Shop = () => {
         console.log('product' , product)
         const storedUser = getUserFromLocalStorage();
         const { id, image, name, price } = product;
+
+
+        if(storedUser){
+
+        
         try {
             const response = await axios.post(`${baseurl}/addtocart`,  {
               product_id:id,
@@ -66,6 +71,8 @@ const Shop = () => {
               price,
               userId:storedUser.id
             });
+
+            notify();
       
             // setMessage('User created successfully');
             // Optionally, clear the form or redirect the user
@@ -76,6 +83,14 @@ const Shop = () => {
             console.error('Error:', err);
     
           }
+
+        }
+
+        else{
+
+            toast.error("Please Sign in first!")
+
+        }
         // setCart((prevCart) => [...prevCart, product]);
         // console.log("Product added to cart:", product);
         // alert(`Added ${product.name} to cart!`);
@@ -85,7 +100,7 @@ const Shop = () => {
     
     const handleButtonClick = (product) => {
         addToCart(product);
-        notify();
+       
       };
 
     const proddetail = () => {

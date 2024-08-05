@@ -58,10 +58,23 @@ const Viewjobdetail = () => {
 
 
 const fetchJobData = async (id) => {
-    try {
-      const response = await axios.get(`${baseurl}/jobbyid/${id}`);
+
+  const userdata = getUserFromLocalStorage()
+  const userId = userdata.id
+  try{
+
+      // const response = await axios.get(`${baseurl}/jobbyid/${id}?userId=${userId}`);
+      // const response = await axios.get(`${baseurl}/jobbyid`, {
+      //   params: {
+      //     id: id,
+      //     userId: userId
+      //   }
+      // });
+
+
+      const response = await axios.get(`${baseurl}/jobbyid/${id}/${userId}`);
       console.log('xxxxxssss' , response.data)
-      setjobContent(response.data)
+      setjobContent(response.data);
 
     
     } catch (error) {
@@ -88,6 +101,30 @@ const fetchJobData = async (id) => {
 
       
       const response = await axios.post(`${baseurl}/appliedjob ` , { jobid  , userId});
+    
+
+    
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+
+  }
+
+
+
+
+  const saveJob = async () => {
+    try {
+
+
+
+      const storedUser = getUserFromLocalStorage();
+    console.log('Retrieved user from local storage:', storedUser);
+    const userId = storedUser.id;
+
+
+      
+      const response = await axios.post(`${baseurl}/savejob ` , { jobid  , userId});
     
 
     
@@ -130,11 +167,39 @@ const fetchJobData = async (id) => {
                   </Col>
                   <Col lg={4}>
                     <div className="job-select-opts">
-                      <a href="#" onClick={appliedJob} >Apply Now</a>
+
+                      {
+                        jobContent.applied == 1 ?
+
+                        <a   style={{background:'#9bdb08'  , color:'white' , border:'none'}}>Applied</a>
+                        :
+                        <a href="#" onClick={appliedJob} >Apply Now</a>
+
+                        
+
+                      }
+                      
                       <div className="job-save-share">
-                        <a href="#">
-                          <RiBookmarkFill /> Save
+
+                        {
+                          jobContent.saved == 1  ? 
+                          <a  style={{color:'#194d79'}} >
+                          
+                          <RiBookmarkFill  /> Saved
                         </a>
+                        :
+
+                        <a  onClick={saveJob}>
+                          
+                        <RiBookmarkFill  /> Save
+                      </a>
+
+                        }
+
+                     
+
+
+                       
                         <a href="#">
                           <RiShareFill /> Share
                         </a>
