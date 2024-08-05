@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseurl } from "../../baseurl";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const JobOpeningForm = ({ onCancel }) => {
   const [isExp, setIsExp] = useState(false);
 
@@ -49,20 +51,16 @@ const JobOpeningForm = ({ onCancel }) => {
     };
 
     try {
-     
-      const response =  await axios.post(`${baseurl}/createjob`, {
-     
+
+      const response = await axios.post(`${baseurl}/createjob`, {
         formData
-        
       });
 
-      
-
-
-  
-     
+      toast.success(response.data.message);
     } catch (error) {
       console.error('Error:', error);
+      toast.error('All Fields are required', error);
+
     }
   };
 
@@ -80,6 +78,8 @@ const JobOpeningForm = ({ onCancel }) => {
   return (
     <div class="container">
       <div class="my--container--h mx-auto">
+      <ToastContainer />
+
         <div class="row">
           <div class="col">
             <div class="mb-3 d-flex justify-content-between align-items-center">
@@ -174,7 +174,7 @@ const JobOpeningForm = ({ onCancel }) => {
                     class="form-control skills--inp--h mb-3"
                     id="exampleFormControlInput1"
                     placeholder="Type here..."
-                   
+
                   />
                 </div>
                 <div class="col-lg-6 job--opening--qualify--h">
@@ -225,9 +225,8 @@ const JobOpeningForm = ({ onCancel }) => {
                 </label>
                 <div
                   onClick={yearToggle}
-                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                    isExp ? `experience--job--inp--h--dropdown--click--rad` : ``
-                  }`}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isExp ? `experience--job--inp--h--dropdown--click--rad` : ``
+                    }`}
                   id="inputWorkPlace"
                 >
                   Choose Option...
@@ -247,9 +246,8 @@ const JobOpeningForm = ({ onCancel }) => {
                 </label>
                 <div
                   onClick={educationToggle}
-                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                    isEdu ? `experience--job--inp--h--dropdown--click--rad` : ``
-                  }`}
+                  className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isEdu ? `experience--job--inp--h--dropdown--click--rad` : ``
+                    }`}
                   id="inputWorkPlace"
                 >
                   Choose Option...
@@ -278,7 +276,7 @@ const JobOpeningForm = ({ onCancel }) => {
                     id="exampleFormControlInput1"
                     placeholder="mm/dd/yy"
                     value={startDate}
-                   onChange={(e) => setstartDate(e.target.value)}
+                    onChange={(e) => setstartDate(e.target.value)}
                   />
                 </div>
                 <div class="col-lg-6 job--opening--qualify--h">

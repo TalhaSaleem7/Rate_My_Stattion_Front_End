@@ -1,36 +1,99 @@
-import React from 'react'
-import Asistantnewsdirector from '../Asistantnewsdirector/Asistantnewsdirector';
-import { RiArrowLeftSLine, RiArrowRightSLine, RiSearchLine } from 'react-icons/ri';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
-import ProdImage1 from '../img/ratemystation-prod-img-1.png';
-import ProdImage2 from '../img/ratemystation-prod-img-2.png';
-import ProdImage3 from '../img/ratemystation-prod-img-3.png';
-import ProdImage4 from '../img/ratemystation-prod-img-4.png';
-import Header from '../Header/Header';
-import Footerah from '../footerah/Footerah';
+import React, { useEffect, useState } from "react";
+import axios from "axios"; // Add this import
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import Asistantnewsdirector from "../Asistantnewsdirector/Asistantnewsdirector";
+import {
+  RiArrowLeftSLine,
+  RiArrowRightSLine,
+  RiSearchLine,
+} from "react-icons/ri";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
+import ProdImage1 from "../img/ratemystation-prod-img-1.png";
+import ProdImage2 from "../img/ratemystation-prod-img-2.png";
+import ProdImage3 from "../img/ratemystation-prod-img-3.png";
+import ProdImage4 from "../img/ratemystation-prod-img-4.png";
+import Header from "../Header/Header";
+import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
+import { baseurl } from "../baseurl";
 
 const Viewjob = () => {
-    
-  const navigate = useNavigate()
+  const [products, setProducts] = useState([]);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
+        const formattedProducts = response.data.map((product) => ({
+          ...product,
+          price: parseFloat(product.price), // Convert to number if necessary
+        }));
+        setProducts(formattedProducts);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem("userData");
+    return user ? JSON.parse(user) : null;
+  };
+
+  // const addToCart = (product) => {
+  const addToCart = async (product) => {
+    console.log("product", product);
+    const storedUser = getUserFromLocalStorage();
+    const { id, image, name, price } = product;
+    try {
+      const response = await axios.post(`${baseurl}/addtocart`, {
+        product_id: id,
+        image,
+        name,
+        price,
+        userId: storedUser.id,
+      });
+
+      // setMessage('User created successfully');
+      // Optionally, clear the form or redirect the user
+    } catch (err) {
+      console.error("Error:", err);
+    }
+    // setCart((prevCart) => [...prevCart, product]);
+    // console.log("Product added to cart:", product);
+    // alert(`Added ${product.name} to cart!`);
+  };
+
+  const notify = () => toast("Product Added to Cart!");
+
+  const handleButtonClick = (product) => {
+    addToCart(product);
+    notify();
+  };
 
   const proddetail = () => {
-    navigate('/productdetail')
-  }
+    navigate("/productdetail");
+  };
 
   const mycart = () => {
-    navigate('/mycart')
-  }
+    navigate("/mycart");
+  };
 
   const shop = () => {
-    navigate('/shop')
-  }
-
+    navigate("/shop");
+  };
 
   return (
     <>
-        <Header/>
+      <Header />
       <section className="job-start-matter-sec">
         <Container>
           <Row>
@@ -83,7 +146,10 @@ const Viewjob = () => {
                   </Col>
                   <Col lg={4} md={6}>
                     <div className="find-job-select-box">
-                      <input type="text" placeholder="Station name or category" />
+                      <input
+                        type="text"
+                        placeholder="Station name or category"
+                      />
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -113,10 +179,6 @@ const Viewjob = () => {
           </Row>
         </Container>
       </section>
-
-
-
-
 
       <section className="search-job-sec">
         <Container>
@@ -150,121 +212,78 @@ const Viewjob = () => {
         </Container>
       </section>
 
-
       <section class="assistant-news-director-box-sec">
         <Container>
           <Row>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
-            <Col lg={6}>
-              <Asistantnewsdirector />
-            </Col>
+            <Asistantnewsdirector />
+
             <Col lg={12}>
               <div className="newsletter-pagination-slide asistant-pagination">
                 <div className="pagination">
-                  <a href="#"><RiArrowLeftSLine /></a>
+                  <a href="#">
+                    <RiArrowLeftSLine />
+                  </a>
                   <a href="#">1</a>
                   <a href="#">2</a>
                   <a href="#">3</a>
                   <a href="#">4</a>
                   <a href="#">5</a>
                   <a href="#">6</a>
-                  <a href="#"><RiArrowRightSLine /></a>
+                  <a href="#">
+                    <RiArrowRightSLine />
+                  </a>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-
-
-
 
       <section className="ratemystation-shop-sec">
         <h4>RateMyStation's Shop</h4>
+
         <Container>
           <Row>
-            <Col lg={3} md={4}>
-              <div className="ratemystation-shop-prod">
-                <img src={ProdImage1} alt="Don’t Make Me Use My News Voice Face Mask" />
-                <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                <div className="ratemystation-prod-txt">
-                  <h3>Don’t Make Me Use My News Voice Face Mask</h3>
-                  <h6>$18.00</h6>
-                  <div className="ratemystation-prod-btn">
-                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
-                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
+            {products.map((product) => (
+              <Col key={product.id} lg={3} md={4}>
+                <div className="ratemystation-shop-prod">
+                  <img src={product.image} alt={product.name} />
+                  <img
+                    className="prod-abslt-ratems"
+                    src={BestsellerImage}
+                    alt="Bestseller"
+                  />
+                  <div className="ratemystation-prod-txt">
+                    <h3>{product.name}</h3>
+                    <h6>${product.price.toFixed(2)}</h6>
+                    <div className="ratemystation-prod-btn">
+                      <button
+                        onClick={proddetail}
+                        variant="light"
+                        className="prod-light-btn"
+                      >
+                        View Details
+                      </button>
+                      <button
+                        onClick={() => handleButtonClick(product)}
+                        variant="dark"
+                        className="prod-dark-btn"
+                      >
+                        Add to cart
+                      </button>
+                      <ToastContainer />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Col>
-            <Col lg={3} md={4}>
-              <div className="ratemystation-shop-prod">
-                <img src={ProdImage2} alt="America Needs Local News Sweatshirt" />
-                <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                <div className="ratemystation-prod-txt">
-                  <h3>America Needs Local News Sweatshirt</h3>
-                  <h6>$25.00 – $33.50</h6>
-                  <div className="ratemystation-prod-btn">
-                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
-                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col lg={3} md={4}>
-              <div className="ratemystation-shop-prod">
-                <img src={ProdImage3} alt="Anonymous Source Onesie" />
-                <div className="ratemystation-prod-txt">
-                  <h3>Anonymous Source Onesie</h3>
-                  <h6>$18.00</h6>
-                  <div className="ratemystation-prod-btn">
-                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
-                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col lg={3} md={4}>
-              <div className="ratemystation-shop-prod">
-                <img src={ProdImage4} alt="You Are A PKG Framed Poster" />
-                <div className="ratemystation-prod-txt">
-                  <h3>You Are A PKG Framed Poster</h3>
-                  <h6>$26.00 – $105.00</h6>
-                  <div className="ratemystation-prod-btn">
-                    <a onClick={proddetail} variant="light" className="prod-light-btn">View Details</a>
-                    <a onClick={mycart} variant="dark" className="prod-dark-btn">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </Col>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>
-      
 
-      <Footerah/>
+      <Footerah />
     </>
-  )
-}
+  );
+};
 
-export default Viewjob
+export default Viewjob;

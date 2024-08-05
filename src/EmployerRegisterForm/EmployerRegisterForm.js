@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Col, Row, Alert } from 'react-bootstrap';
+import { Col, Row, Alert, ToastContainer } from 'react-bootstrap';
 import { baseurl } from '../baseurl';
 
 const EmployerRegisterForm = ({ }) => {
@@ -61,6 +61,9 @@ const EmployerRegisterForm = ({ }) => {
 
   return (
     <div className="employer-register-form">
+
+      
+
       {message && <Alert variant="success">{message}</Alert>}
       {error && <Alert variant="danger">{error}</Alert>}
       <form>

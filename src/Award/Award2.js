@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+import { baseurl } from "../baseurl";
 import AwardPopup from "../Popups/Station_profile_popups/Award_h";
 import Awards from '../img/Award2022.png'
 import { Modal } from "react-bootstrap";
 
 
 
-const Award2 = ({onCancel}) => {
+const Award2 = () => {
+    const [AwardData, setAwardData] = useState([]);
     const [showModal, setShowModal] = useState(false);
 
     const handleSelectChange = () => {
@@ -15,6 +19,18 @@ const Award2 = ({onCancel}) => {
     const handleClose = () => {
         setShowModal(false);
     };
+    useEffect(() => {
+        const fetchAwardData = async () => {
+            try {
+                const response = await axios.get(`${baseurl}/newsawarddata`);
+                setAwardData(response.data);
+            } catch (err) {
+                console.error("Error fetching Director data:", err);
+            }
+        };
+
+        fetchAwardData();
+    }, []);
 
     return (
 
@@ -32,12 +48,13 @@ const Award2 = ({onCancel}) => {
                 </Modal.Body>
             </Modal>
 
+   
 
             <div class="About-main-card-1-ah">
                 <span class="edite">
                     <h2>Award</h2>
                     <span class="edite-icon">
-                        <div onCancel={handleSelectChange}>
+                    <div onClick={handleSelectChange}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5363 0.726074C12.2831 0.726074 11.2671 1.74206 11.2671 2.99535V11.4728H2.78881C1.53552 11.4728 0.519531 12.4887 0.519531 13.742C0.519531 14.9953 1.53552 16.0113 2.78881 16.0113H11.2671V24.4889C11.2671 25.7421 12.2831 26.7581 13.5363 26.7581C14.7896 26.7581 15.8056 25.7421 15.8056 24.4889V16.0113H24.2823C25.5356 16.0113 26.5516 14.9953 26.5516 13.742C26.5516 12.4887 25.5356 11.4728 24.2823 11.4728H15.8056V2.99535C15.8056 1.74206 14.7896 0.726074 13.5363 0.726074Z" fill="#828282" />
                         </svg>
@@ -52,47 +69,22 @@ const Award2 = ({onCancel}) => {
                 </span>
                 <div class="Award-box-ah">
 
+                    {AwardData.map((award, index) => (
 
+                        <div key={index} class="Award-card-ah">
+                            <div class="Award-box-logo-ah">
+                                <img src={award.image} alt="" />
+                            </div>
 
-                    <div class="Award-card-ah">
-                        <div class="Award-box-logo-ah">
-                            <img src={Awards} alt="" />
+                            <div class="Award-box-tital-ah">
+                                <h2>{award.title}</h2>
+                                <p>{award.description}</p>
+                            </div>
                         </div>
-
-                        <div class="Award-box-tital-ah">
-                            <h2>Award 2022</h2>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.    </p>
-                        </div>
-                    </div>
-
-
-                    <div class="Award-card-ah">
-                        <div class="Award-box-logo-ah">
-                            <img src={Awards} alt="" />
-                        </div>
-
-                        <div class="Award-box-tital-ah">
-                            <h2>Award 2021</h2>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.    </p>
-                        </div>
-                    </div>
-
-
-                    <div class="Award-card-ah">
-                        <div class="Award-box-logo-ah">
-                            <img src={Awards} alt="" />
-                        </div>
-
-                        <div class="Award-box-tital-ah">
-                            <h2>Award 2023</h2>
-                            <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.    </p>
-                        </div>
-                    </div>
-
-
-
+                    ))}
                 </div>
-
+                      
+            
                 <div class="Award-a">
                     <a href="#">3+ more</a>
                 </div>

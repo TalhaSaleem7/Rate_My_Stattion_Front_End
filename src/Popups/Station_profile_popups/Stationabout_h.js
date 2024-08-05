@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Alert } from "react-bootstrap";
 import axios from "axios";
 import { baseurl } from "../../baseurl";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const StationAboutForm = ({onSuccess,onCancel}) => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,6 @@ const StationAboutForm = ({onSuccess,onCancel}) => {
     Industry: '',
     Address: '',
   });
-  const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
   const handleChange = (e) => {
@@ -51,7 +50,7 @@ const StationAboutForm = ({onSuccess,onCancel}) => {
 
     const storedUser = getUserFromLocalStorage();
     console.log('Retrieved user from local storage:', storedUser);
-    const userId = storedUser.id;
+    const userId = storedUser ? storedUser.id : null;
 
     if (!userId) {
       setError('User ID is missing');
@@ -75,11 +74,15 @@ const StationAboutForm = ({onSuccess,onCancel}) => {
 
       onSuccess();
 
-      setMessage(response.data.message)
+      toast.success(response.data.message);
+
     } catch (error) {
       setError(error.response?.data?.message || 'Error submitting form');
       console.error('Error submitting form:', error);
+      toast.error('All Fields are required', error);
+
     }
+    
   };
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -87,8 +90,8 @@ const StationAboutForm = ({onSuccess,onCancel}) => {
   };
   return (
     <div className="container">
-      {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
+      <ToastContainer />
+
       <div className="my--container--h mx-auto">
         <div className="row">
           <div className="col">

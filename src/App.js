@@ -114,6 +114,7 @@ import WooStatistich from "./admin/WooStatistich";
 import MainLayouts from "./admin/layout/Mainlayouts";
 import Dashbord from "./admin/dashboard";
 import AdminManagement from "./admin/AdminManagement";
+import Chat from "./Sockets/Chats_Components/Chat";
 
 
 function App() {
@@ -122,6 +123,7 @@ function App() {
 
   <Router>
       <Routes>
+      <Route path="/ts" exact element={<Chat />} />
         <Route path="/saveshareh" exact element={<Saveshare />} />
         <Route path="/Editdelh" exact element={<Editdel />} />
         <Route path="/Previewh" exact element={<Previewh />} />
