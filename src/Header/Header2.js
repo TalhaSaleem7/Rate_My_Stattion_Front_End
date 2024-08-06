@@ -4,6 +4,8 @@ import HeaderMainLogo from "../img/header_logo_img.png";
 import { useNavigate } from "react-router-dom";
 import { baseurl } from "../baseurl";
 import axios from 'axios';
+import NotificationBell from "./Message_Component";
+import Notifications from "./Message_Notifications";
 
 
 const Header1 = () => {
@@ -11,6 +13,8 @@ const Header1 = () => {
 
   // State and functions for side panel
   const [panelWidth, setPanelWidth] = useState("0");
+
+  const [user_id,setuser_id]=useState('')
 
   const openNav = () => {
     setPanelWidth("100%");
@@ -45,6 +49,7 @@ const Header1 = () => {
     const fetchCartCount = async () => {
       try {
         const userId = getUserFromLocalStorage();
+        setuser_id(userId)
         const response = await axios.get(`${baseurl}/getcart/${userId.id}`);
         setCartCount(response.data.length);
       } catch (error) {
@@ -97,7 +102,7 @@ const Header1 = () => {
             <Col lg={4}>
               <div className="header_end">
                 <div className="header--end--logo">
-                  <a>
+                  {/* <a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -110,8 +115,11 @@ const Header1 = () => {
                         fill="#828282"
                       />
                     </svg>
-                    <span className="header_cart_number"></span>
-                  </a>
+                    <span className="header_cart_number">4</span>
+                  </a> */}
+            
+                  <Notifications/>
+            
 
                   <a>
                     <svg
