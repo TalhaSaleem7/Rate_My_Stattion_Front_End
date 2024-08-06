@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import '../css/App.css';
-import { Modal, Button } from 'react-bootstrap';
+import "../css/App.css";
+import { Modal, Button } from "react-bootstrap";
 
-import Experience from '../Popups/Profile_popups/Experience_h';
-import Skill from '../Popups/Profile_popups/Skills_h';
-import Education from '../Popups/Profile_popups/Education_h';
+import Experience from "../Popups/Profile_popups/Experience_h";
+import Skill from "../Popups/Profile_popups/Skills_h";
+import Education from "../Popups/Profile_popups/Education_h";
 import { FaPlusCircle } from "react-icons/fa";
 import admin from "../img/admin.png";
 import kabc from "../img/kabc.png";
@@ -31,31 +31,21 @@ import Footerah from "../footerah/Footerah";
 import { Container } from "react-bootstrap";
 import Header1 from "../Header/Header2";
 import { useNavigate } from "react-router-dom";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import axios from "axios";
 import { baseurl } from "../baseurl";
 import Abouth from "../Popups/Profile_popups/About_h";
 
-
 const Kabcah1 = () => {
-
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const closePopup = (e) => {
-
     setShowModal(false);
-  }
+  };
 
   const handleCallbackCLoseAboutPopup = (e) => {
-
-
-    console.log(e, "AHTI")
-    setSelectedOption("")
-
-  }
-
-
-
-
+    console.log(e, "AHTI");
+    setSelectedOption("");
+  };
 
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
@@ -66,26 +56,24 @@ const Kabcah1 = () => {
   const [skillContent, setSkillContent] = useState("");
   const [educationContent, setEducationContent] = useState("");
 
-
   useEffect(() => {
     // Retrieve user data from local storage
-    const storedUser = localStorage.getItem('userData');
+    const storedUser = localStorage.getItem("userData");
     if (storedUser) {
       const user = JSON.parse(storedUser);
-      console.log(user, userdata)
-      // setUser(user)  
+      console.log(user, userdata);
+      // setUser(user)
 
-    fetchUserData(user.id);
-
+      fetchUserData(user.id);
     }
   }, []);
 
   const fetchUserData = async (userId) => {
     try {
       const response = await axios.get(`${baseurl}/getuserdata/${userId}`);
-      setUser(response.data)
+      setUser(response.data);
     } catch (error) {
-      console.error('Error fetching user data:', error);
+      console.error("Error fetching user data:", error);
     }
   };
 
@@ -96,24 +84,20 @@ const Kabcah1 = () => {
   const [selectedOption, setSelectedOption] = useState('');
   const [showModal, setShowModal] = useState(false);
   const handleSelectChange = (option) => {
-    console.log(option, "TSsssssss")
+    console.log(option, "TSsssssss");
     setSelectedOption(option);
     setShowModal(true);
     setIsOpen(false);
   };
 
-
-
-
-
   const getLocal = () => {
-    console.log('achiveo')
-    const storedUser = localStorage.getItem('userData');
+    console.log("achiveo");
+    const storedUser = localStorage.getItem("userData");
     const user = JSON.parse(storedUser);
 
-    setAboutContent(user.about)
-    console.log('here', aboutContent);
-    console.log('here', aboutContent);
+    setAboutContent(user.about);
+    console.log("here", aboutContent);
+    console.log("here", aboutContent);
   };
 
 
@@ -121,30 +105,29 @@ const Kabcah1 = () => {
   
 
   const getExperinces = () => {
-    console.log('achiveo')
-    const storedUsers = localStorage.getItem('experienceData');
+    console.log("achiveo");
+    const storedUsers = localStorage.getItem("experienceData");
     const experience = JSON.parse(storedUsers);
 
-    setExperinceContent(experience)
-    console.log('here', aboutContent);
-
+    setExperinceContent(experience);
+    console.log("here", aboutContent);
   };
   const getSkills = () => {
-    console.log('achiveo')
-    const storedUserskills = localStorage.getItem('skillData');
+    console.log("achiveo");
+    const storedUserskills = localStorage.getItem("skillData");
     const Skill = JSON.parse(storedUserskills);
 
-    setSkillContent(Skill)
-    console.log('here', experienceContent);
+    setSkillContent(Skill);
+    console.log("here", experienceContent);
   };
 
   const getEducation = () => {
-    console.log('achiveo')
-    const storedUsersEducation = localStorage.getItem('eeducationData');
+    console.log("achiveo");
+    const storedUsersEducation = localStorage.getItem("eeducationData");
     const Education = JSON.parse(storedUsersEducation);
 
-    setEducationContent(Education)
-    console.log('here', skillContent);
+    setEducationContent(Education);
+    console.log("here", skillContent);
   };
 
   const handleClose = () => {
@@ -188,7 +171,9 @@ const Kabcah1 = () => {
                       </svg>
                     </span>
                     <p>
-                      {userdata.Profile ? userdata.Profile.jobTitle : 'Add Your Position'}
+                      {userdata.Profile
+                        ? userdata.Profile.jobTitle
+                        : "Add Your Position"}
                       {/* News Director at <span>KABC</span> */}
                     </p>
                     <span>
@@ -204,7 +189,11 @@ const Kabcah1 = () => {
                           fill="#194D79"
                         />
                       </svg>
-                      <p>{userdata.Profile ? userdata.Profile.address : 'Add Your Address'}</p>
+                      <p>
+                        {userdata.Profile
+                          ? userdata.Profile.address
+                          : "Add Your Address"}
+                      </p>
                     </span>
                   </div>
                 </div>
@@ -229,67 +218,97 @@ const Kabcah1 = () => {
                   </span>
 
                   <span class="See">
-                    <button className="Contact-ah more" onClick={toggleDropdown}>
+                    <button
+                      className="Contact-ah more"
+                      onClick={toggleDropdown}
+                    >
                       <FaPlusCircle /> Add profile section
                     </button>
                     {isOpen && (
                       <ul className="add_profile_ul">
-                        <li onClick={() => handleSelectChange('about')}>
+                        <li onClick={() => handleSelectChange("about")}>
                           <FaPlusCircle /> Add About
                         </li>
-                        <li onClick={() => handleSelectChange('experience')}>
+                        <li onClick={() => handleSelectChange("experience")}>
                           <FaPlusCircle /> Add Experience
                         </li>
-                        <li onClick={() => handleSelectChange('skill')}>
+                        <li onClick={() => handleSelectChange("skill")}>
                           <FaPlusCircle /> Add Skill
                         </li>
-                        <li onClick={() => handleSelectChange('education')}>
+                        <li onClick={() => handleSelectChange("education")}>
                           <FaPlusCircle /> Add Education
                         </li>
                       </ul>
                     )}
 
-
-
-                    <Modal show={showModal} onHide={handleClose}
+                    <Modal
+                      show={showModal}
+                      onHide={handleClose}
                       size="xl"
                       aria-labelledby="contained-modal-title-vcenter"
-                      centered>
+                      centered
+                    >
                       <Modal.Body>
                         {/* Render differ ent components based on selected option */}
-                        {selectedOption === 'experience' && <Experience onCancel={closePopup} onSuccess={getExperinces} />}
-                        {selectedOption === 'skill' && <Skill onCancel={closePopup} />}
-                        {selectedOption === 'education' && <Education onCancel={closePopup} onSuccess={getEducation} />}
-                        {selectedOption === "about" && <Abouth onCancel={closePopup} ts={handleCallbackCLoseAboutPopup} onSuccess={getLocal} />}
-
+                        {selectedOption === "experience" && (
+                          <Experience
+                            onCancel={closePopup}
+                            onSuccess={getExperinces}
+                          />
+                        )}
+                        {selectedOption === "skill" && (
+                          <Skill onCancel={closePopup} />
+                        )}
+                        {selectedOption === "education" && (
+                          <Education onCancel={closePopup} />
+                        )}
+                        {selectedOption === "about" && (
+                          <Abouth
+                            onCancel={closePopup}
+                            ts={handleCallbackCLoseAboutPopup}
+                            onSuccess={getLocal}
+                          />
+                        )}
                       </Modal.Body>
-
                     </Modal>
-
                   </span>
                 </div>
               </div>
 
               <div class="navtabs">
-                <TabList >
-                  <Tab><div class="navtab active" data-target="Profile">
-                    Profile
-                  </div></Tab>
-                  <Tab><div class="navtab" data-target="ratings">
-                    My ratings
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="Statistic">
-                    Applied job
-                  </div></Tab>
-                  <Tab><div class="navtab" data-target="Contact">
-                    Contact Info
-                  </div></Tab>
-                  <Tab> <div class="navtab" data-target="Posteds">
-                    Subscribed News
-                  </div></Tab>
-                  <Tab><div class="navtab" data-target="Posted">
-                    Saved
-                  </div></Tab>
+                <TabList>
+                  <Tab>
+                    <div class="navtab active" data-target="Profile">
+                      Profile
+                    </div>
+                  </Tab>
+                  <Tab>
+                    <div class="navtab" data-target="ratings">
+                      My ratings
+                    </div>
+                  </Tab>
+                  <Tab>
+                    {" "}
+                    <div class="navtab" data-target="Statistic">
+                      Applied job
+                    </div>
+                  </Tab>
+                  <Tab>
+                    <div class="navtab" data-target="Contact">
+                      Contact Info
+                    </div>
+                  </Tab>
+                  <Tab>
+                    {" "}
+                    <div class="navtab" data-target="Posteds">
+                      Subscribed News
+                    </div>
+                  </Tab>
+                  <Tab>
+                    <div class="navtab" data-target="Posted">
+                      Saved
+                    </div>
+                  </Tab>
                 </TabList>
                 <div class="underline"></div>
               </div>
@@ -304,7 +323,10 @@ const Kabcah1 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Aboutah2 aboutContent={aboutContent} />
+                      <Aboutah2
+                        onSuccess={getLocal}
+                        aboutContent={aboutContent}
+                      />
                       <Experianceah1 experienceContent={experienceContent} />
                       <Skillsah1 skillContent={skillContent} />
                       <Educationah1 />
@@ -318,7 +340,6 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-
                       </div>
                       <div class="About-main-box-2-tital-ah">
                         <h2>Newsletter</h2>
@@ -387,7 +408,6 @@ const Kabcah1 = () => {
                     <div class="About-main-box-1-ah">
                       <Filter />
                       <Cardah3 />
-
                     </div>
 
                     <div class="About-main-box-2-ah">
@@ -430,7 +450,7 @@ const Kabcah1 = () => {
                           <h2>{userdata.username}</h2>
 
                           <span class="edite-icon">
-                            <svg
+                            {/* <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="27"
                               height="27"
@@ -459,7 +479,7 @@ const Kabcah1 = () => {
                                 d="M23.8662 9.05631C21.9942 7.18438 20.1457 5.33584 18.3127 3.5029C18.9991 2.80092 19.6621 2.04435 20.4031 1.38137C21.3858 0.492197 23.0394 0.515597 24.03 1.40477C24.7007 2.01315 25.3481 2.65273 25.9487 3.3313C26.8613 4.35307 26.8301 5.94422 25.9331 6.96598C25.8473 7.06738 25.7459 7.16098 25.6523 7.26237C25.0517 7.86295 24.4589 8.46353 23.8662 9.05631Z"
                                 fill="#828282"
                               />
-                            </svg>
+                            </svg> */}
                           </span>
                         </span>
                           <div class="Website-ah-box">
@@ -700,7 +720,6 @@ const Kabcah1 = () => {
               </section>
             </div>
           </TabPanel>
-
         </div>
       </Tabs>
       <Footerah />

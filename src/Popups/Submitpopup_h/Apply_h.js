@@ -1,15 +1,208 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import CloudinaryUpload from "../../cloundanary/CloudinaryUpload";
+import axios from "axios";
+import { baseurl } from "../../baseurl";
 const ApplyForm = () => {
   const navigate = useNavigate();
 
   const goto = () => {
-    navigate("/skillsh");
+    // navigate("/skillsh");
   };
 
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    
+    return user ? JSON.parse(user) : null;
+  };
+
+
+
+
+  const getStationFromLocalStorage = () => {
+   
+    const station = localStorage.getItem('stationData');
+    return station ? JSON.parse(station) : null;
+  };
+
+
+
+  const [isImagedisplay, setImagedisplay] = useState('');
+  const [imageurl, setImage] = useState('');
   const [isVisible, setIsVisible] = useState(false);
+  const [email, setEmail] = useState('');
+  const [jobPosition, setJobPosition] = useState('');
+  const [market, setMarket] = useState('');
+  const [reporters, setReporters] = useState('');
+  const [howlong, setHowLong] = useState('');
+  const [yearlySalary, setYearlySalary] = useState('');
+  const [currentdirector, setCurrentDirector] = useState('');
+  const [overallexperience, setOverallexperience] = useState('');
+  const [explainmore, setExplainmore] = useState('');
+  const [aboutstation, setAboutstation] = useState('');
+
+
+
+
+
+
+
+
+  const [isCurrentlyWorking, setIsCurrentlyWorking] = useState(false);
+  const [issigncontract, setIsSignContract] = useState(false);
+
+  const [sexualharassment, setSexualHarassment] = useState(false);
+  const [racialdiscrimination, setRacialDiscrimination] = useState(false);
+  const [sexualiscrimination, setSexualDiscrimination] = useState(false);
+  const [toxic, setToxic] = useState(false);
+  const [organized, setOrganized] = useState(false);
+  const [unorganized, setUnorganized] = useState(false);
+  const [educational, setEducational] = useState(false);
+  const [creativecontrol, setCreativeControl] = useState(false);
+  const [positivefun, setPositivefun] = useState(false);
+  const [negativetoxic, setNegativeToxic] = useState(false);
+  const [linkprofile, setLinkprofile] = useState(false);
+
+
+
+ 
+
+
+
+  const [requiresContract, setRequiresContract] = useState({ yes: false, no: false });
+
+
+  const handleJobPositionChange = (event) => {
+    setJobPosition(event.target.value);
+  };
+
+  const handleReportersChange = (event) => {
+    setReporters(event.target.value);
+  };
+
+
+  const handleMarketChange = (event) => {
+    setMarket(event.target.value);
+  };
+
+  const handleCheckboxChange = (event) => {
+    setIsCurrentlyWorking(event.target.checked);
+  };
+
+
+  const handleHowLongChange = (event) => {
+    setHowLong(event.target.value);
+  };
+
+  const handleyearlySalaryChange = (event) => {
+    setYearlySalary(event.target.value);
+  };
+
+
+  const handleContractChange = (event) => {
+    const { name, checked } = event.target;
+    setRequiresContract((prev) => ({
+      ...prev,
+      yes: name === 'yes' ? checked : false,
+      no: name === 'no' ? checked : false,
+    }));
+  };
+
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
+  };
+
+  const handleCallbackResume = (e) => {
+    setImage(e);
+    setImagedisplay(e)
+    console.log(e, "Clod");
+  }
+
+  const [newsroomrating, setNewsroomRating] = useState(0);
+  const [coworkerrating, setCoworkerRating] = useState(0);
+  const [ recommendrating, setRecommendRating] = useState(0);
+
+  
+
+
+  const handleClick = (index) => {
+    setNewsroomRating(index);
+    console.log('index', index);
+  };
+
+
+  const handleClick2 = (index) => {
+    setCoworkerRating(index);
+    console.log('index', index);
+  };
+
+  const handleClick3 = (index) => {
+    setRecommendRating(index);
+    console.log('index', index);
+  };
+
+
+
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const storedUser = getUserFromLocalStorage();
+    const stationData = getStationFromLocalStorage();
+    if (!storedUser) {
+     
+      return;
+    }
+
+    const userId = storedUser.id;
+    const stationId = stationData.id;
+
+
+    const formData = {
+      
+      imageurl,
+      email,
+      jobPosition,
+      market,
+      reporters,
+      howlong,
+      yearlySalary,
+      requiresContract:requiresContract.yes,
+      isCurrentlyWorking,
+      currentdirector,
+      overallexperience,
+      explainmore,
+      aboutstation,
+      sexualharassment,
+      racialdiscrimination,
+      sexualiscrimination,
+      toxic,
+      organized,
+      unorganized,
+      educational,
+      creativecontrol,
+      positivefun,
+      negativetoxic,
+      linkprofile,
+      
+      userId,
+      stationId,
+      recommendrating,
+      newsroomrating,
+      coworkerrating,
+    };
+
+    console.log('formData' , formData)
+
+    try {
+      const response = await axios.post(`${baseurl}/savestationrating`, formData);
+
+     
+
+    } catch (err) {
+      console.error('Error:', err);
+     
+
+    }
   };
 
   return (
@@ -24,7 +217,7 @@ const ApplyForm = () => {
                 </div>
                 <div className="apply--popup--title--text">
                   <div className="apply--popup--title--heading d-flex align-items-center">
-                    <h1>KABC </h1>
+                    <h1>{getStationFromLocalStorage().username} </h1>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -39,7 +232,7 @@ const ApplyForm = () => {
                     </svg>
                   </div>
                   <p>
-                    TV News <span>|</span> Los Angeles, CA <span>|</span> DMA: 2
+                    {getStationFromLocalStorage().stationtype} <span>|</span> {getStationFromLocalStorage().AboutNew.Address} 
                   </p>
                 </div>
               </div>
@@ -69,6 +262,8 @@ const ApplyForm = () => {
                   class="form-control experience--email--inp--h"
                   id="inputEmail4"
                   placeholder="Type here..."
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
@@ -79,7 +274,7 @@ const ApplyForm = () => {
                   What is/was your job position?
                 </label>
 
-                <select
+                {/* <select
                   class="form-select experience--job--inp--h"
                   id="inputGroupSelect01"
                 >
@@ -89,13 +284,29 @@ const ApplyForm = () => {
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
-                </select>
+                </select> */}
+
+            <select
+          className="form-select experience--job--inp--h"
+          id="inputGroupSelect01"
+          value={jobPosition}
+          onChange={handleJobPositionChange}
+        >
+          <option value="" style={{ display: "none" }}>
+            Choose options
+          </option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
               </div>
               <div class="form-check experience--chkbox--h d-flex align-items-center experience--col--child--h">
                 <input
                   class="form-check-input experience--form--check--input"
                   type="checkbox"
                   id="gridCheck"
+                  checked={isCurrentlyWorking}
+                  onChange={handleCheckboxChange}
                 />
                 <label class="form-check-label">
                   I am currently working for this station{" "}
@@ -122,6 +333,9 @@ const ApplyForm = () => {
               <select
                 class="form-select experience--job--inp--h"
                 id="inputGroupSelect01"
+                value={market}
+                onChange={handleMarketChange}
+
               >
                 <option selected style={{ display: "none" }}>
                   Choose options
@@ -134,11 +348,13 @@ const ApplyForm = () => {
 
             <div class="mb-3 mt-1 col-12">
               <label for="inputAddress" class="form-label form-label-alt">
-                (For reportesr only) Paired with a photog?
+                (For reporters only) Paired with a photog?
               </label>
               <select
                 class="form-select experience--job--inp--h"
                 id="inputGroupSelect01"
+                value={reporters}
+                onChange={handleReportersChange}
               >
                 <option selected style={{ display: "none" }}>
                   Choose options
@@ -163,6 +379,9 @@ const ApplyForm = () => {
                       class="form-check-input experience--form--check--input"
                       type="checkbox"
                       id="gridCheck"
+                      name="yes"
+                      checked={requiresContract.yes}
+                      onChange={handleContractChange}
                     />
                     <label class="form-check-label">Yes</label>
                   </div>
@@ -171,6 +390,9 @@ const ApplyForm = () => {
                       class="form-check-input experience--form--check--input"
                       type="checkbox"
                       id="gridCheck"
+                      name="no"
+                      checked={requiresContract.no}
+                      onChange={handleContractChange}
                     />
                     <label class="form-check-label">No</label>
                   </div>
@@ -184,6 +406,9 @@ const ApplyForm = () => {
                 <select
                   class="form-select experience--job--inp--h"
                   id="inputGroupSelect01"
+                  value={howlong}
+                  onChange={handleHowLongChange}
+                  
                 >
                   <option selected style={{ display: "none" }}>
                     Choose options
@@ -205,6 +430,8 @@ const ApplyForm = () => {
               <select
                 className="form-select experience--job--inp--h"
                 id="inputGroupSelect01"
+                value={yearlySalary}
+                onChange={handleyearlySalaryChange}
               >
                 <option value="" style={{ display: "none" }}>
                   Choose options
@@ -297,6 +524,8 @@ const ApplyForm = () => {
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Type here..."
+                value={overallexperience}
+                onChange={(e) => setOverallexperience(e.target.value)}
               ></textarea>
             </div>
             <div className="mb-3 mt-1 col-12">
@@ -310,6 +539,9 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={sexualharassment}
+                    onChange={(e) => setSexualHarassment(e.target.checked)}
+                    
                   />
                   <label class="form-check-label">Sexual Harassment</label>
                 </div>
@@ -318,6 +550,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={racialdiscrimination}
+                    onChange={(e) => setRacialDiscrimination(e.target.checked)}
                   />
                   <label class="form-check-label">Racial Discrimination</label>
                 </div>
@@ -327,6 +561,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={sexualiscrimination}
+                    onChange={(e) => setSexualDiscrimination(e.target.checked)}
                   />
                   <label class="form-check-label">Sexual Discrimination</label>
                 </div>
@@ -335,6 +571,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={toxic}
+                    onChange={(e) => setToxic(e.target.checked)}
                   />
                   <label class="form-check-label">
                     An Overall Toxic Work Environment
@@ -342,7 +580,7 @@ const ApplyForm = () => {
                 </div>
               </div>
             </div>
-            {/* ========= */}
+           
             <div className="mb-3 mt-1 col-12">
               <label
                 for="exampleFormControlTextarea1"
@@ -355,6 +593,10 @@ const ApplyForm = () => {
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Type here..."
+                value={explainmore}
+                onChange={(e) => setExplainmore(e.target.value)}
+                
+                
               ></textarea>
             </div>
 
@@ -369,6 +611,9 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={organized}
+                    onChange={(e) => setOrganized(e.target.checked)}
+
                   />
                   <label class="form-check-label">Organized</label>
                 </div>
@@ -377,6 +622,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={unorganized}
+                    onChange={(e) => setUnorganized(e.target.checked)}
                   />
                   <label class="form-check-label">Unorganized</label>
                 </div>
@@ -386,6 +633,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={educational}
+                    onChange={(e) => setEducational(e.target.checked)}
                   />
                   <label class="form-check-label">Educational</label>
                 </div>
@@ -394,6 +643,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={creativecontrol}
+                    onChange={(e) => setCreativeControl(e.target.checked)}
                   />
                   <label class="form-check-label">
                     Open to Creative Control
@@ -405,6 +656,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={positivefun}
+                    onChange={(e) => setPositivefun(e.target.checked)}
                   />
                   <label class="form-check-label">Positive, Fun</label>
                 </div>
@@ -413,6 +666,8 @@ const ApplyForm = () => {
                     class="form-check-input experience--form--check--input"
                     type="checkbox"
                     id="gridCheck"
+                    checked={negativetoxic}
+                    onChange={(e) => setNegativeToxic(e.target.checked)}
                   />
                   <label class="form-check-label">Negative, Toxic</label>
                 </div>
@@ -432,12 +687,15 @@ const ApplyForm = () => {
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Type here..."
+                value={aboutstation}
+                onChange={(e) => setAboutstation(e.target.value)}
+
               ></textarea>
             </div>
 
             <div className="mb-3 mt-1 col-lg-12">
               <div className="row justify-content-between">
-                <div className=" rating--box--h">
+                {/* <div className=" rating--box--h">
                   <label htmlFor="">Newsroom rating</label>
                   <div className="d-flex rating--boxes--cont--h">
                     <span></span>
@@ -446,27 +704,45 @@ const ApplyForm = () => {
                     <span></span>
                     <span></span>
                   </div>
-                </div>
+                </div> */}
+
+
+<div className="rating--box--h">
+      <label htmlFor="">Newsroom rating</label>
+      <div className="d-flex rating--boxes--cont--h">
+        {[1, 2, 3, 4, 5].map((index) => (
+          <span
+            key={index}
+            className={index <= newsroomrating ? 'rating--span--active' : 'rating--span'}
+            onClick={() => handleClick(index)}
+          ></span>
+        ))}
+      </div>
+    </div>
 
                 <div className=" rating--box--h">
                   <label htmlFor="">Coworker rating</label>
                   <div className="d-flex rating--boxes--cont--h">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                  {[1, 2, 3, 4, 5].map((index) => (
+          <span
+            key={index}
+            className={index <= coworkerrating ? 'rating--span--active' : 'rating--span'}
+            onClick={() => handleClick2(index)}
+          ></span>
+        ))}
                   </div>
                 </div>
 
                 <div className=" rating--box--h">
                   <label htmlFor="">Would recommend working here?</label>
                   <div className="d-flex rating--boxes--cont--h">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                  {[1, 2, 3, 4, 5].map((index) => (
+                  <span
+                    key={index}
+                    className={index <= recommendrating ? 'rating--span--active' : 'rating--span'}
+                    onClick={() => handleClick3(index)}
+                  ></span>
+                ))}
                   </div>
                 </div>
               </div>
@@ -480,7 +756,8 @@ const ApplyForm = () => {
                 <div className=" upload--document--container d-flex align-items-center col-lg-12 justify-content-between experience--col--h">
                   <div className="upload--document--container d-flex align-items-center  experience--col--child--h">
                     <div className="upload--document--img">
-                      <img src={require("../../img/img-upload_h.png")} alt="" />
+                      {/* <img src={require("../../img/img-upload_h.png")} alt="" /> */}
+                      <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"} />
                     </div>
                     <div>
                       <a href="">Upload work document here</a>
@@ -491,6 +768,8 @@ const ApplyForm = () => {
                       class="form-check-input experience--form--check--input"
                       type="checkbox"
                       id="gridCheck"
+                      checked={linkprofile}
+                      onChange={(e) => setLinkprofile(e.target.checked)}
                     />
                     <label class="form-check-label">
                       Link my profile experience information{" "}
@@ -516,7 +795,7 @@ const ApplyForm = () => {
               <button
                 type="button"
                 className="btn btn-primary about--btn--h about--btn--h--alt"
-                onClick={goto}
+                onClick={handleSubmit}
               >
                 Submit
               </button>

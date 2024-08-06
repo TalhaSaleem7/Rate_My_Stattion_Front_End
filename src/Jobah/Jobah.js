@@ -10,9 +10,12 @@ import gol  from '../img/gol-icon-ah.png'
 import { differenceInMonths, parseISO } from 'date-fns';
 import { baseurl } from "../baseurl";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Jobah= ({jobContent})=>{
     console.log('jobContentsss' , jobContent)
+
+    const navigate= useNavigate()
 
 
     const calculateDurationInMonths = (start, end) => {
@@ -44,6 +47,16 @@ const Jobah= ({jobContent})=>{
           console.error("Login error:", error);
         }
       };
+
+
+
+      const Go_to_Chat=(e)=>{
+
+        localStorage.setItem('Reciever_Id',e)
+        navigate('/ts')
+        
+      }
+
 
 
 return(
@@ -103,7 +116,7 @@ return(
     <div class="Director-ah-boxing-3">
         <button onClick={() => Decline(job.job_id)} >Decline</button>
 
-        <button class="interview-ah">Chat</button>
+        <button class="interview-ah" onClick={()=>Go_to_Chat(job.User.id)}>Chat1</button>
     </div>
 
 

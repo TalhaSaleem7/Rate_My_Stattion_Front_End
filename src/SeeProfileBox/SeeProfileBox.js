@@ -10,7 +10,10 @@ import { baseurl } from '../baseurl';
 const SeeProfileBox = () => {
 
     const navigate = useNavigate()
-    const seeprofile = () => {
+    const seeprofile = (e) => {
+
+
+        localStorage.setItem('stationData', JSON.stringify(e));
         navigate("/seeprofile");
       };
 
@@ -49,11 +52,11 @@ const SeeProfileBox = () => {
                         <img src={rmsabc} alt="img" />
                     </div>
                     <div className='rms-kabc-txt'>
-                        <h3>Kabc  <RiVerifiedBadgeFill /></h3>
-                        <h6>TV News   |   Los Angeles, CA   |   DMA: 2</h6>
+                        <h3>{station.username} <RiVerifiedBadgeFill /></h3>
+                        <h6>{station.stationtype}   |  {station.AboutNew ? station.AboutNew.Address:''}</h6>
                         <div className='rms-kabc-btn'>
-                            <a onClick={seeprofile} className='themedark'>See Profile</a>
-                            <a onClick={seeprofile} className='themelight'>See Ratings</a>
+                            <a onClick={() =>seeprofile(station)} className='themedark'>See Profile</a>
+                            <a onClick={() =>seeprofile(station)} className='themelight'>See Ratings</a>
                         </div>
                     </div>
                 </div>
@@ -72,9 +75,9 @@ const SeeProfileBox = () => {
             </Col>
         </Row>
      ))}
-        <div className="rms-dots-icon">
+        {/* <div className="rms-dots-icon">
             <span><RiMore2Fill /></span>
-        </div>
+        </div> */}
         </div>
     </>
   )

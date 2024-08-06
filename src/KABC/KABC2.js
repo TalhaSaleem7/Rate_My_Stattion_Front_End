@@ -109,10 +109,8 @@ const KABC2 = () => {
 
     console.log("done", awardsdata, "alphaaward", alphaaward);
   };
-  
- 
+
   const onFecth = () => {
-    
     setShowrequest(true);
 
     fetchJobsData();
@@ -152,6 +150,21 @@ const KABC2 = () => {
   };
 
  
+  const [ContactData, setContactData] = useState([]);
+
+  useEffect(() => {
+    const fetchContactData = async () => {
+      try {
+        const response = await axios.get(`${baseurl}/getcontacts`);
+        setContactData(response.data);
+      } catch (err) {
+        console.error("Error fetching Contact data:", err);
+      }
+    };
+
+    fetchContactData();
+  }, []);
+
   return (
     <>
       <Header1 />
@@ -277,9 +290,8 @@ const KABC2 = () => {
               </div>
 
               <div class="navtabs">
-                <TabList >
-
-          <Tab>
+                <TabList>
+                  <Tab>
                     <div class="navtab active" data-target="Profile">
                       Profile
                     </div>
@@ -331,7 +343,7 @@ const KABC2 = () => {
                       <About2 aboutsdata={aboutsdata} />
                       <Dirctors2 directordata={directordata} />
                       <Award2 awardsdata={awardsdata} />
-                      <Openings2 onSuccess={onFecth}  />
+                      <Openings2 onSuccess={onFecth} />
                     </div>
 
                     <div class="About-main-box-2-ah">
@@ -434,13 +446,13 @@ const KABC2 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Station />
+                      <Station fetchUserData={fetchUserData} />
 
                       <Filter />
 
                       <Reportersd2 />
 
-                      <Reportersd2 />
+                      {/* <Reportersd2 /> */}
 
                       <div class="job-post-btn-box">
                         <button>Load more</button>
@@ -679,7 +691,7 @@ const KABC2 = () => {
             </div>
           </TabPanel> */}
 
-{/* Contact  information */}
+          {/* Contact  information */}
           <TabPanel>
             <div id="Contact" class="content active">
               <section class="About-ah">
