@@ -75,7 +75,7 @@ const AwardForm = ({onCancel}) => {
                 Award
               </h1>
               <div class="about--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+                <img src={require("../../img/Union_h.png")} alt="" onClick={onCancel}/>
               </div>
             </div>
             <form onSubmit={handleSubmit}>

@@ -252,8 +252,6 @@ const Kabcah1 = () => {
                         {selectedOption === 'experience' && <Experience onCancel={closePopup}  onSuccess={getExperinces}/> }
                         {selectedOption === 'skill' && <Skill onCancel={closePopup} />}
                         {selectedOption === 'education' && <Education onCancel={closePopup}  />}
-
-
                         {selectedOption === "about" && <Abouth onCancel={closePopup}  ts={handleCallbackCLoseAboutPopup}  onSuccess={getLocal}/>}
 
                       </Modal.Body>

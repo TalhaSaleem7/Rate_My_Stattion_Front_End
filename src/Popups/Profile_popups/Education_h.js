@@ -111,7 +111,7 @@ const EducationForm = ({ onCancel }) => {
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">Education</h1>
               <div className="about--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+                <img src={require("../../img/Union_h.png")} onClick={onCancel}  alt="" />
               </div>
             </div>
 
