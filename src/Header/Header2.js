@@ -32,6 +32,8 @@ const Header1 = () => {
   // const userprofile = () => navigate("/kabcah1");
   const usersetting = () => navigate("/accountsettingh");
   const [cartCount, setCartCount] = useState(0);
+  const [userDataId, setuserDataId] = useState(null);
+
 
 
   const getUserFromLocalStorage = () => {
@@ -42,19 +44,26 @@ const Header1 = () => {
 
 
   useEffect(() => {
+    const storeData = getUserFromLocalStorage();
+
+    if (storeData) {
+      setuserDataId(storeData);
+    }
+
+    console.log("cccccc", userDataId);
+
     const fetchCartCount = async () => {
       try {
         const userId = getUserFromLocalStorage();
         const response = await axios.get(`${baseurl}/getcart/${userId.id}`);
         setCartCount(response.data.length);
       } catch (error) {
-        console.error('Error fetching cart count:', error);
+        console.error("Error fetching cart count:", error);
       }
     };
 
     fetchCartCount();
   }, []);
-
   const userData = localStorage.getItem("userData");
 
   const userprofile = () => {
@@ -143,7 +152,7 @@ const Header1 = () => {
                       />
                     </svg>
                     <span className="header_cart_number">{cartCount}</span>
-                  </a>{''}
+                  </a>
                 </div>
 
                 <nav className="helo-drop">

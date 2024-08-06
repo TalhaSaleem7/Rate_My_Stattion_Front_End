@@ -24,6 +24,7 @@ import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
 import MyCartSD from '../MyCartSD/MyCartSD'; // Import MyCartSD
 import { baseurl } from '../baseurl';
+import ProductsComponent from './PorductsComponent';
 
 const Shop = () => {
     const [cart, setCart] = useState([]);
@@ -199,23 +200,12 @@ const Shop = () => {
                                 </Col>
                             </Row>
                             <Row>
-                                {products.map((product) => (
-                                    <Col key={product.id} lg={3} md={4}>
-                                        <div className="ratemystation-shop-prod">
-                                            <img src={product.image} alt={product.name} />
-                                            <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                                            <div className="ratemystation-prod-txt">
-                                                <h3>{product.name}</h3>
-                                                <h6>${product.price.toFixed(2)}</h6>
-                                                <div className="ratemystation-prod-btn">
-                                                    <button onClick={() => proddetail(product.id)} variant="light" className="prod-light-btn">View Details</button>
-                                                    <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
-                                                    <ToastContainer />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                ))}
+                                <ProductsComponent
+                                    products={products}
+                                    proddetail={proddetail}
+                                    handleButtonClick={handleButtonClick}
+                                    BestsellerImage={BestsellerImage}
+                                />
                             </Row>
                             <Row>
                                 <Col lg={12}>

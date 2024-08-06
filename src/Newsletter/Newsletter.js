@@ -39,10 +39,11 @@ import Newslettersidesd from "../Newslettersidesecsd/Newslettersidesd";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { baseurl } from '../baseurl';
+import ProductsComponent from '../Shop/PorductsComponent';
 
 const Newsletter = () => {
 
-  
+
   const [products, setProducts] = useState([]);
 
 
@@ -133,8 +134,8 @@ const Newsletter = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    autoplay: true,        
-    autoplaySpeed: 3000,   
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -143,27 +144,27 @@ const Newsletter = () => {
       <section className="your-journalism-sec">
         <Container>
           <Row>
-          <Slider {...settings}>
-            <Col lg={12}>
-              <div className="journalism-img-txt">
-                <div className="your-journalism-img">
-                  <img src={JournalImage} alt="Journal Report" />
-                </div>
-                <div className="your-journalism-txt">
-                  <h3>
-                    Can Starting In A Top 50 Market Really Ruin Your Journalism
-                    Career?
-                  </h3>
-                  <div className="journal-date-written">
-                    <p>
-                      <RiTimeLine /> May 24, 2022
-                    </p>
-                    <p>
-                      Written by <span>Soul Witness</span>
-                    </p>
+            <Slider {...settings}>
+              <Col lg={12}>
+                <div className="journalism-img-txt">
+                  <div className="your-journalism-img">
+                    <img src={JournalImage} alt="Journal Report" />
                   </div>
-                  <div className="journalism-slider">
-                  
+                  <div className="your-journalism-txt">
+                    <h3>
+                      Can Starting In A Top 50 Market Really Ruin Your Journalism
+                      Career?
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>Soul Witness</span>
+                      </p>
+                    </div>
+                    <div className="journalism-slider">
+
                       <div>
                         <h5>
                           Feugiat sagittis, turpis et a fermentum blandit amet
@@ -173,57 +174,57 @@ const Newsletter = () => {
                           auctor pulvinar dignissim mauris non ultrices. Sed.
                         </h5>
                       </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Col>
-            <Col lg={12}>
-              <div className="journalism-img-txt">
-                <div className="your-journalism-img">
-                  <img src={JournalImageOne} alt="Journal Report" />
-                </div>
-                <div className="your-journalism-txt">
-                  <h3>
-                  Elementum quis aliquam vitae convallis. Nam eu id integer nec. 
-                  </h3>
-                  <div className="journal-date-written">
-                    <p>
-                      <RiTimeLine /> May 24, 2022
-                    </p>
-                    <p>
-                      Written by <span>Soul Witness</span>
-                    </p>
+              </Col>
+              <Col lg={12}>
+                <div className="journalism-img-txt">
+                  <div className="your-journalism-img">
+                    <img src={JournalImageOne} alt="Journal Report" />
                   </div>
-                  <div className="journalism-slider">
-                  
+                  <div className="your-journalism-txt">
+                    <h3>
+                      Elementum quis aliquam vitae convallis. Nam eu id integer nec.
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>Soul Witness</span>
+                      </p>
+                    </div>
+                    <div className="journalism-slider">
+
                       <div>
                         <h5>
-                            Sed nisl, cras morbi in porttitor magna egestas quis id. Velit nisi interdum feugiat viverra at tortor. Neque, natoque semper feugiat massa habitasse sit et. Tortor vehicula sed magna enim justo porta pellentesque pellentesque. Varius auctor ipsum eget imperdiet ac. 
+                          Sed nisl, cras morbi in porttitor magna egestas quis id. Velit nisi interdum feugiat viverra at tortor. Neque, natoque semper feugiat massa habitasse sit et. Tortor vehicula sed magna enim justo porta pellentesque pellentesque. Varius auctor ipsum eget imperdiet ac.
                         </h5>
                       </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Col>
-            <Col lg={12}>
-              <div className="journalism-img-txt">
-                <div className="your-journalism-img">
-                  <img src={JournalImageTwo} alt="Journal Report" />
-                </div>
-                <div className="your-journalism-txt">
-                  <h3>
-                    Scelerisque aliquet viverra tincidunt eget mi commodo cursus hac ut. 
-                  </h3>
-                  <div className="journal-date-written">
-                    <p>
-                      <RiTimeLine /> May 24, 2022
-                    </p>
-                    <p>
-                      Written by <span>Soul Witness</span>
-                    </p>
+              </Col>
+              <Col lg={12}>
+                <div className="journalism-img-txt">
+                  <div className="your-journalism-img">
+                    <img src={JournalImageTwo} alt="Journal Report" />
                   </div>
-                  <div className="journalism-slider">
-                  
+                  <div className="your-journalism-txt">
+                    <h3>
+                      Scelerisque aliquet viverra tincidunt eget mi commodo cursus hac ut.
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>Soul Witness</span>
+                      </p>
+                    </div>
+                    <div className="journalism-slider">
+
                       <div>
                         <h5>
                           Feugiat sagittis, turpis et a fermentum blandit amet
@@ -233,10 +234,10 @@ const Newsletter = () => {
                           auctor pulvinar dignissim mauris non ultrices. Sed.
                         </h5>
                       </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
             </Slider>
           </Row>
         </Container>
@@ -470,9 +471,9 @@ const Newsletter = () => {
               </div>
             </Col>
             <Col lg={12}>
-               <div className="latesthomepg-line">
-                  <hr/>
-               </div>
+              <div className="latesthomepg-line">
+                <hr />
+              </div>
             </Col>
           </Row>
         </Container>
@@ -483,23 +484,12 @@ const Newsletter = () => {
 
         <Container>
           <Row>
-            {products.map((product) => (
-              <Col key={product.id} lg={3} md={4}>
-                <div className="ratemystation-shop-prod">
-                  <img src={product.image} alt={product.name} />
-                  <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                  <div className="ratemystation-prod-txt">
-                    <h3>{product.name}</h3>
-                    <h6>${product.price.toFixed(2)}</h6>
-                    <div className="ratemystation-prod-btn">
-                      <button onClick={proddetail} variant="light" className="prod-light-btn">View Details</button>
-                      <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
-                      <ToastContainer />
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
+            <ProductsComponent
+              products={products}
+              proddetail={proddetail}
+              handleButtonClick={handleButtonClick}
+              BestsellerImage={BestsellerImage}
+            />
           </Row>
         </Container>
       </section>

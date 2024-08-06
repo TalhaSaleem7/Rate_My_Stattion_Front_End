@@ -21,12 +21,12 @@ const ProfileComponent = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [imageurl, setImage] = useState('');
-    const [isImagedisplay, setImagedisplay ] = useState('');    
+    const [isImagedisplay, setImagedisplay] = useState('');
     const [error, setError] = useState('');
 
 
     const toggle = () => {
-        console.log("toggle is open"); 
+        console.log("toggle is open");
         setIsOpen(!isOpen);
     };
 
@@ -62,7 +62,7 @@ const ProfileComponent = () => {
     }
 
     const handleSaveClick = () => {
-        handleSubmit({ preventDefault: () => {} });
+        handleSubmit({ preventDefault: () => { } });
         console.log('hello world');
     };
 
@@ -90,8 +90,8 @@ const ProfileComponent = () => {
                 userId
             });
 
+            toast.success("Profile Saved successfully");
             console.log('Form submitted successfully:', response.data);
-            toast.success(response.data.message);
         } catch (error) {
             setError(error.response ? error.response.data.message : error.message);
             console.error('Error submitting form:', error);
@@ -103,18 +103,7 @@ const ProfileComponent = () => {
         <>
             <h1 className="account-setting-right-title">Profile</h1>
             {/* <ToastContainer /> */}
-            <ToastContainer
-position="top-right"
-autoClose={1000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
-/>
+            <ToastContainer/>
             <div className="account--profile--img--h d-flex align-items-center">
                 <div className="account--profile--img--h--cont">
                     <CloudinaryUpload isImagedisplay={isImagedisplay} cloudName={handleCallbackResume} number={"1"} />
@@ -155,9 +144,8 @@ theme="light"
                 </label>
                 <div
                     onClick={toggle}
-                    className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${
-                        isOpen ? `experience--job--inp--h--dropdown--click--rad` : ``
-                    }`}
+                    className={`form-select experience--job--inp--h experience--job--inp--h--dropdown--click ${isOpen ? `experience--job--inp--h--dropdown--click--rad` : ``
+                        }`}
                     id="workPlace"
                 >
                     {formData.workPlace || 'Choose Option...'}
@@ -197,7 +185,7 @@ theme="light"
                 />
             </div>
             <div className="experience--button--h pt-1">
-                <button 
+                <button
                     type="button"
                     className="btn btn-primary experience--btn--h experience--btn--h--alt"
                     onClick={handleSaveClick}

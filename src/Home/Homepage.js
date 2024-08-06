@@ -35,6 +35,7 @@ import { useNavigate } from "react-router-dom";
 import HomeSelectOption from "../Homeselectoption/HomeSelectOption";
 import { baseurl } from '../baseurl';
 import Chat from '../Sockets/Chats_Components/Chat';
+import ProductsComponent from '../Shop/PorductsComponent';
 
 export const Homepage = () => {
 
@@ -562,25 +563,13 @@ export const Homepage = () => {
       <section className="ratemystation-shop-sec">
       <h4>RateMyStation's Shop</h4>
         <Container>
-          <Row>
-            {products.map((product) => (
-              <Col key={product.id} lg={3} md={4}>
-                <div className="ratemystation-shop-prod">
-                  <img src={product.image} alt={product.name} />
-                  <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                  <div className="ratemystation-prod-txt">
-                    <h3>{product.name}</h3>
-                    <h6>${product.price.toFixed(2)}</h6>
-                    <div className="ratemystation-prod-btn">
-                      <button onClick={proddetail} variant="light" className="prod-light-btn">View Details</button>
-                      <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
-                      <ToastContainer />
-
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
+        <Row>
+            <ProductsComponent
+              products={products}
+              proddetail={proddetail}
+              handleButtonClick={handleButtonClick}
+              BestsellerImage={BestsellerImage}
+            />
           </Row>
           <Row>
             <Col lg={12}>

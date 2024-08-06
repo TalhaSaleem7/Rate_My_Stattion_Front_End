@@ -89,6 +89,7 @@ const Kabcah1 = () => {
     }
   };
 
+
   const [selectedOption, setSelectedOption] = useState('');
   const [showModal, setShowModal] = useState(false);
   const handleSelectChange = (option) => {
@@ -160,7 +161,7 @@ const Kabcah1 = () => {
               <div class="KABC-box-ah">
                 <div class="KABC-part-1-ah">
                   <div class="KABC-logo-ah">
-                    <img src={userdata.Profile ? userdata.Profile.image : admin} alt="" />
+                    <img src={userdata.Profile && userdata.Profile.image ? userdata.Profile.image : admin} alt="" />
                     <button>Subscribed</button>
                   </div>
                   <div class="KABC-tital-ah">

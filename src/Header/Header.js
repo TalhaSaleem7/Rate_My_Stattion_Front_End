@@ -11,6 +11,8 @@ const Header = () => {
   // State and functions for side panel
   const [panelWidth, setPanelWidth] = useState("0");
   const [userDataId, setuserDataId] = useState(null);
+  const [cartCount, setCartCount] = useState(0);
+
 
   const openNav = () => {
     setPanelWidth("100%");
@@ -36,7 +38,6 @@ const Header = () => {
     navigate("/employerlogin");
   };
 
-  const [cartCount, setCartCount] = useState(0);
 
   const getUserFromLocalStorage = () => {
     const user = localStorage.getItem("userData");
@@ -137,7 +138,7 @@ const Header = () => {
                       <span className="header_cart_number">2</span>
                     </a>
 
-                    <a>
+                    <a onClick={cart}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="33"
@@ -150,7 +151,7 @@ const Header = () => {
                           fill="#828282"
                         />
                       </svg>
-                      <span className="header_cart_number">2</span>
+                      <span className="header_cart_number">{cartCount}</span>
                     </a>
                   </div>
 

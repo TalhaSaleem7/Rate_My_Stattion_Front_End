@@ -17,8 +17,8 @@ import moudal4 from "../img/moudal4.jpg";
 
 const Cooperah1 = () => {
     const navigate = useNavigate();
-    const { id } = useParams(); // Get id from URL params
-    const [product, setProduct] = useState(null); // State to hold product details
+        const { id } = useParams(); // Get id from URL params
+        const [product, setProduct] = useState(null); // State to hold product details
 
     // Function to get user from localStorage
     const getUserFromLocalStorage = () => {
@@ -44,7 +44,6 @@ const Cooperah1 = () => {
           console.error('Error fetching product:', error);
       }
   };
-
     // Function to add product to cart
     const addToCart = async (product) => {
         const storedUser = getUserFromLocalStorage();
@@ -84,12 +83,12 @@ const Cooperah1 = () => {
                             <div className="America-ah-part-1">
                                 <img src={product.image} alt="Product" />
                             </div>
-                            <div className="America-ah-part-2">
+                            {/* <div className="America-ah-part-2">
                                 <img src={moudal1} alt="Additional view 1" />
                                 <img src={moudal2} alt="Additional view 2" />
                                 <img src={moudal3} alt="Additional view 3" />
                                 <img src={moudal4} alt="Additional view 4" />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="Sweatshirt-ah">

@@ -63,6 +63,8 @@ const KABC2 = () => {
       // setUser(user)
 
       fetchUserData(user.id);
+    fetchContactData();
+
     }
   }, []);
 
@@ -151,7 +153,7 @@ const KABC2 = () => {
 
   const [ContactData, setContactData] = useState([]);
   
-  useEffect(() => {
+
     const fetchContactData = async () => {
         try {
             const response = await axios.get(`${baseurl}/getcontacts`);
@@ -161,8 +163,6 @@ const KABC2 = () => {
         }
     };
 
-    fetchContactData();
-}, []);
 
   return (
     <>
@@ -209,7 +209,7 @@ const KABC2 = () => {
                           fill="#194D79"
                         />
                       </svg>
-                      <p>Los Angeles, CA | DMA: 2</p>
+                      <p>{userdata.Profile ? userdata.Profile.address : 'Add Your Address'}</p>
                     </span>
                   </div>
                 </div>
