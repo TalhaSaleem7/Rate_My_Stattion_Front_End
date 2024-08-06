@@ -1369,10 +1369,31 @@ Info / Apply popup
   padding: 2px 8px;
   border-radius: 6px;
 }
+
+.rating--boxes--cont--h {
+  display: flex;
+}
+
 .rating--box--h {
   padding: 0;
   max-width: 220px;
 }
+
+
+.rating--span {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  margin-right: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rating--span--active {
+  background-color: #aad14f !important;
+}
+
+
 .upload--document--img {
   width: 75px;
   cursor: pointer;
