@@ -44,7 +44,7 @@ const Award2 = () => {
                 centered
             >
                 <Modal.Body>
-                    <AwardPopup closePopup={handleClose} />
+                    <AwardPopup onCancel={handleClose} />
                 </Modal.Body>
             </Modal>
 
