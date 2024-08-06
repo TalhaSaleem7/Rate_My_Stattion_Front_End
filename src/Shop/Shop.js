@@ -35,8 +35,8 @@ const Shop = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
-                const formattedProducts = response.data.map(product => ({
+                const response = await axios.get(`${baseurl}/getproducts`); // Update this with your API endpoint
+                const formattedProducts = response.data.product.result.map(product => ({
                     ...product,
                     price: parseFloat(product.price) // Convert to number if necessary
                 }));
@@ -221,7 +221,7 @@ const Shop = () => {
                                             <img src={product.image} alt={product.name} />
                                             <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
                                             <div className="ratemystation-prod-txt">
-                                                <h3>{product.name}</h3>
+                                                <h3>{product.title}</h3>
                                                 <h6>${product.price.toFixed(2)}</h6>
                                                 <div className="ratemystation-prod-btn">
                                                     <button onClick={() => proddetail(product.id)} variant="light" className="prod-light-btn">View Details</button>
