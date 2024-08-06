@@ -106,7 +106,7 @@ const SkillsForm = ({ onSuccess,onCancel }) => {
               <button
                 type="button"
                 className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-                onClick={() => window.history.back()}
+                onClick={onCancel}
               >
                 Cancel
               </button>

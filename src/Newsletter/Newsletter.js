@@ -40,6 +40,7 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { baseurl } from '../baseurl';
 import ProductsComponent from '../Shop/PorductsComponent';
+import ProductsLimitedComponent from '../Shop/ProductsLimitedComponent';
 
 const Newsletter = () => {
 
@@ -115,9 +116,6 @@ const Newsletter = () => {
     navigate("/mycart");
   };
 
-  const shop = () => {
-    navigate("/shop");
-  };
 
   const newsletter = () => {
     navigate("/newsletter");
@@ -486,13 +484,12 @@ const Newsletter = () => {
 
         <Container>
           <Row>
-            <ProductsComponent
-              products={products}
+          <ProductsLimitedComponent
               proddetail={proddetail}
               handleButtonClick={handleButtonClick}
               BestsellerImage={BestsellerImage}
             />
-          </Row>
+          </Row>         
         </Container>
       </section>
 

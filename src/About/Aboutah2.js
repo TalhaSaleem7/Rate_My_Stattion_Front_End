@@ -62,7 +62,7 @@ import React, { useEffect, useState } from "react";
 import kabc from '../img/kabc.png'
 import { Modal } from "react-bootstrap";
 import About from "../Popups/Profile_popups/About_h";
-const Aboutah2 = ({ aboutContent }) => {
+const Aboutah2 = ({aboutContent }) => {
   console.log(aboutContent)
   const [aboutContents, setAboutContent] = useState("Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna, ut egestas vivamus proin. Velit leo scelerisque pulvinar vestibulum in nunc a tortor mollis. Fusce pretium est ipsum elementum parturient. Venenatis, ac nulla non varius dolor. Ornare consectetur mauris, adipiscing tristique a leo. Habitant pharetra tellus habitasse vestibulum nibh quisque. Sed vel condimentum enim leo tortor mi magna tincidunt. Egestas bibendum id eget quisque semper ultricies. Gravida viverra massa faucibus vestibulum condimentum.");
   useEffect(() => {
@@ -86,11 +86,21 @@ const Aboutah2 = ({ aboutContent }) => {
   const handleClose = () => {
     setShowModal(false);
   };
+
+  const handleSuccess = () => {
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      setAboutContent(user.about);
+    }
+    setShowModal(false);
+  };
+  
   return (
     <>
       <Modal show={showModal} onHide={handleClose} size="xl" aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Body>
-           <About onCancel={closePopup}/>
+           <About onSuccess={handleSuccess} onCancel={closePopup}/>
         </Modal.Body>
       </Modal>
       <div class="About-main-card-1-ah">
@@ -103,7 +113,8 @@ const Aboutah2 = ({ aboutContent }) => {
             </svg>
           </div>
         </span>
-        <p>{aboutContent ? aboutContent : aboutContents}</p>
+        {/* <p>{aboutContent ? aboutContent : aboutContents}</p> */}
+        <p>{aboutContents}</p>
       </div>
     </>
   )

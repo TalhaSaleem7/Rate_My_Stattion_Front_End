@@ -63,7 +63,7 @@ const KABC2 = () => {
       // setUser(user)
 
       fetchUserData(user.id);
-    fetchContactData();
+
 
     }
   }, []);
@@ -151,19 +151,7 @@ const KABC2 = () => {
     setIsOpen(!isOpen);
   };
 
-  const [ContactData, setContactData] = useState([]);
-  
-
-    const fetchContactData = async () => {
-        try {
-            const response = await axios.get(`${baseurl}/getcontacts`);
-            setContactData(response.data);
-        } catch (err) {
-            console.error("Error fetching Contact data:", err);
-        }
-    };
-
-
+ 
   return (
     <>
       <Header1 />
@@ -734,8 +722,8 @@ const KABC2 = () => {
                             </svg>
                           </span>
                         </span>
-                    {ContactData.map((Contact, index) => (
-                        <div key={index} class="Website-ah-box">
+
+                        <div class="Website-ah-box">
                           <div class="Website-ah-card">
                             <button>
                               <svg
@@ -778,7 +766,8 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Phone</h2>
-                              <h3>{Contact.phone}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.phone: ''}</h3>
+
                             </span>
                           </div>
 
@@ -800,7 +789,7 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Website</h2>
-                              <h3>{Contact.website}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.website: ''}</h3>
                             </span>
                           </div>
 
@@ -822,7 +811,7 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Linkedin</h2>
-                              <h3>{Contact.linkedin}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.linkedin: ''}</h3>
                             </span>
                           </div>
 
@@ -844,7 +833,7 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Twitter</h2>
-                              <h3>{Contact.twitter}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.twitter: ''}</h3>
                             </span>
                           </div>
 
@@ -866,13 +855,12 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Facebook</h2>
-                              <h3>{Contact.facebook}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.facebook: ''}</h3>
                             </span>
                           </div>
 
                       </div>
-                      ))}
-                    
+          
                       </div>
                     </div>
 

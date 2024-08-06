@@ -21,6 +21,7 @@ import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
 import { baseurl } from "../baseurl";
 import ProductsComponent from "../Shop/PorductsComponent";
+import ProductsLimitedComponent from "../Shop/ProductsLimitedComponent";
 
 const Viewjob = () => {
   const [products, setProducts] = useState([]);
@@ -245,8 +246,7 @@ const Viewjob = () => {
 
         <Container>
         <Row>
-            <ProductsComponent
-              products={products}
+        <ProductsLimitedComponent
               proddetail={proddetail}
               handleButtonClick={handleButtonClick}
               BestsellerImage={BestsellerImage}

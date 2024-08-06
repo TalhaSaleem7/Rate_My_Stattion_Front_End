@@ -4,10 +4,11 @@ import React, { useState } from "react";
 import { baseurl } from "../../baseurl";
 import "react-datepicker/dist/react-datepicker.css";
 
-const EducationForm = ({ onCancel }) => {
+import { Navigate, useNavigate } from 'react-router-dom';
+// import { abort } from "process";
+const EducationForm = ({onCancel }) => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-
   const [formData, setFormData] = useState({
     school: "",
     degree: "",
@@ -18,13 +19,15 @@ const EducationForm = ({ onCancel }) => {
     endYear: null,
     description: "",
   });
+ 
 
   const handleFormDataChange = (name, value) => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
-  };
+  };  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -63,9 +66,10 @@ const EducationForm = ({ onCancel }) => {
         endMonth,
         endYear,
         description,
-      });
-
       
+      });
+      
+
       setMessage('Form submitted successfully');
       setError('');
       // Optionally, clear the form or redirect the user
@@ -111,7 +115,7 @@ const EducationForm = ({ onCancel }) => {
             <div className="mb-3 d-flex justify-content-between align-items-center">
               <h1 className="form-label form-label-alt mb-1">Education</h1>
               <div className="about--close--h">
-                <img src={require("../../img/Union_h.png")} alt="" />
+                <img src={require("../../img/Union_h.png")} onClick={onCancel}  alt="" />
               </div>
             </div>
 
@@ -351,3 +355,11 @@ const EducationForm = ({ onCancel }) => {
 };
 
 export default EducationForm;
+
+
+
+
+
+
+
+

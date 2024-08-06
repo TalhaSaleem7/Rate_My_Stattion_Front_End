@@ -29,26 +29,8 @@ import ProductsComponent from './PorductsComponent';
 const Shop = () => {
     const [cart, setCart] = useState([]);
     const [viewCart, setViewCart] = useState(false); // State to toggle between shop and cart views
-    const [products, setProducts] = useState([]);
 
     const navigate = useNavigate();
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await axios.get(`${baseurl}/getproducts`); // Update this with your API endpoint
-                const formattedProducts = response.data.product.result.map(product => ({
-                    ...product,
-                    price: parseFloat(product.price) // Convert to number if necessary
-                }));
-                setProducts(formattedProducts);
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
-
-        fetchProducts();
-    }, []);
 
     const getUserFromLocalStorage = () => {
         const user = localStorage.getItem('userData');
@@ -121,7 +103,7 @@ const Shop = () => {
         <>
             <Header />
             {viewCart ? (
-                <MyCartSD products={products} /> // Render MyCartSD with cart data
+                <MyCartSD/> // Render MyCartSD with cart data
             ) : (
                 <>
                     <section className="shop-first-banner-sec">
@@ -217,19 +199,11 @@ const Shop = () => {
                             </Row>
                             <Row>
                                 <ProductsComponent
-                                    products={products}
                                     proddetail={proddetail}
                                     handleButtonClick={handleButtonClick}
                                     BestsellerImage={BestsellerImage}
                                 />
 
-                            </Row>
-                            <Row>
-                                <Col lg={12}>
-                                    <div className="ratemystation-allprod-btn">
-                                        <a onClick={shop}>See All Product</a>
-                                    </div>
-                                </Col>
                             </Row>
                         </Container>
                     </section>
