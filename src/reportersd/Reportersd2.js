@@ -1,12 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Latestuserratingicon from "../img/latest-rating-user-icon.png";
 import karbabclogo from "../img/karc-abc-logo.png";
 import reviewdirectorimg from "../img/review-director-img.png"; 
+import axios from 'axios';
+import { baseurl } from '../baseurl';
+
 
 
 
 const Reportersd2 = () => {
+
+    const [stationratings, setStationRatings] = useState([]);
+
+    
+useEffect(() => {
+    // Retrieve user data from local storage
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      console.log(user)
+      // setUser(user)  
+
+      fetchUserData(user.id);
+
+    }
+  }, []);
+
+  const fetchUserData = async (userId) => {
+    try {
+      const response = await axios.get(`${baseurl}/getratings/${userId}`);
+      console.log('ahtisahm' , response.data)
+     
+     
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
     return (
         <>
             <div class="latest-rating-box">
