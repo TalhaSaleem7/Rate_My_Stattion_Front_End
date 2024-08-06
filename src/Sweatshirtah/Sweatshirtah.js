@@ -11,7 +11,13 @@ import axios from "axios";
 
 const Sweatshirtah = () => {
   const [productdata, setProduct] = useState({});
+  const [userdata, setUser] = useState({});
 
+
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+};
 
   useEffect(() => {
     // Retrieve user data from local storage
@@ -22,9 +28,30 @@ const Sweatshirtah = () => {
       // setProduct(user)  
 
       fetchproductdata(product.id);
+
     }
+
+
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      console.log(user, userdata)
+      // setUser(user)  
+
+      fetchUserData(user.id);
+
+    }
+
   }, []);
- 
+  
+  const fetchUserData = async (userId) => {
+    try {
+      const response = await axios.get(`${baseurl}/getuserdata/${userId}`);
+      setUser(response.data)
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
 
   const fetchproductdata = async (productId) => {
     try {

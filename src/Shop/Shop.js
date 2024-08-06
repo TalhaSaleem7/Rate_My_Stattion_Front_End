@@ -24,30 +24,13 @@ import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
 import MyCartSD from '../MyCartSD/MyCartSD'; // Import MyCartSD
 import { baseurl } from '../baseurl';
+import ProductsComponent from './PorductsComponent';
 
 const Shop = () => {
     const [cart, setCart] = useState([]);
     const [viewCart, setViewCart] = useState(false); // State to toggle between shop and cart views
-    const [products, setProducts] = useState([]);
 
     const navigate = useNavigate();
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await axios.get(`${baseurl}/getproducts`); // Update this with your API endpoint
-                const formattedProducts = response.data.product.result.map(product => ({
-                    ...product,
-                    price: parseFloat(product.price) // Convert to number if necessary
-                }));
-                setProducts(formattedProducts);
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
-
-        fetchProducts();
-    }, []);
 
     const getUserFromLocalStorage = () => {
         const user = localStorage.getItem('userData');
@@ -60,33 +43,33 @@ const Shop = () => {
         const { id, image, name, price } = product;
 
 
-        if(storedUser){
+        if (storedUser) {
 
-        
-        try {
-            const response = await axios.post(`${baseurl}/addtocart`,  {
-              product_id:id,
-              image,
-              name,
-              price,
-              userId:storedUser.id
-            });
 
-            notify();
-      
-            // setMessage('User created successfully');
-            // Optionally, clear the form or redirect the user
-           
-     
-           
-          } catch (err) {
-            console.error('Error:', err);
-    
-          }
+            try {
+                const response = await axios.post(`${baseurl}/addtocart`, {
+                    product_id: id,
+                    image,
+                    name,
+                    price,
+                    userId: storedUser.id
+                });
+
+                notify();
+
+                // setMessage('User created successfully');
+                // Optionally, clear the form or redirect the user
+
+
+
+            } catch (err) {
+                console.error('Error:', err);
+
+            }
 
         }
 
-        else{
+        else {
 
             toast.error("Please Sign in first!")
 
@@ -120,7 +103,7 @@ const Shop = () => {
         <>
             <Header />
             {viewCart ? (
-                <MyCartSD products={products} /> // Render MyCartSD with cart data
+                <MyCartSD/> // Render MyCartSD with cart data
             ) : (
                 <>
                     <section className="shop-first-banner-sec">
@@ -215,30 +198,12 @@ const Shop = () => {
                                 </Col>
                             </Row>
                             <Row>
-                                {products.map((product) => (
-                                    <Col key={product.id} lg={3} md={4}>
-                                        <div className="ratemystation-shop-prod">
-                                            <img src={product.image} alt={product.name} />
-                                            <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                                            <div className="ratemystation-prod-txt">
-                                                <h3>{product.title}</h3>
-                                                <h6>${product.price.toFixed(2)}</h6>
-                                                <div className="ratemystation-prod-btn">
-                                                    <button onClick={() => proddetail(product.id)} variant="light" className="prod-light-btn">View Details</button>
-                                                    <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
-                                                    <ToastContainer />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                ))}
-                            </Row>
-                            <Row>
-                                <Col lg={12}>
-                                    <div className="ratemystation-allprod-btn">
-                                        <a onClick={shop}>See All Product</a>
-                                    </div>
-                                </Col>
+                                <ProductsComponent
+                                    proddetail={proddetail}
+                                    handleButtonClick={handleButtonClick}
+                                    BestsellerImage={BestsellerImage}
+                                />
+
                             </Row>
                         </Container>
                     </section>

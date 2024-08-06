@@ -7,8 +7,14 @@ import { FiEdit } from "react-icons/fi";
 import { IoFlag } from "react-icons/io5";
 import chatperson from "../../img/chat_message_person.png"
 import MessageItem from './MessageItem';
+import { parseJSON } from 'date-fns';
+import eventBus from './EventBus/EventBus';
 
 const Chat = ({ userData, rc_id, pp, handle_chat }) => {
+
+  
+
+
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const [senderId, setSenderId] = useState('rr123');
@@ -16,13 +22,38 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
 
   const socketRef = useRef(null);
   pp = true
+
+  
+
+  // console.log(sender_user_id.id,Reciever_Id,"TSSS")
+  
+  useEffect(()=>{
+    const Sender_Idd= localStorage.getItem('userData')
+    const sender_user_id= JSON.parse(Sender_Idd)
+    const Reciever_Id= localStorage.getItem('Reciever_Id')
+    console.log(sender_user_id,"HS",Reciever_Id)
+
+    setSenderId(sender_user_id.id)
+    setReceiverId(Reciever_Id)
+  })
+
+
   useEffect(() => {
 
     socketRef.current = io("http://localhost:5000"); // Replace with your server URL
 
     socketRef.current.on('previous_messages', (prevMessages) => {
       setMessages(prevMessages);
+
+      
     });
+
+
+    socketRef.current.on('chat_message', (incomingMessage) => {
+      setMessages((prevMessages) => [...prevMessages, incomingMessage]);
+    });
+  
+
 
     return () => {
       socketRef.current.off('previous_messages');
@@ -31,33 +62,54 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
   }, []);
 
   useEffect(() => {
-    if (senderId && receiverId) {
+    if ( receiverId && senderId) {
       socketRef.current.emit('get_previous_messages', {
-        sender: "ss123",
-        receiver: "rr123",
+        sender:  senderId,
+        receiver:  receiverId,
       });
     }
-  }, [senderId, receiverId]);
+  }, [receiverId, senderId]);
 
   const sendMessage = () => {
     if (message !== '') {
       const messageData = {
-        Sender_Id: "ss123",
-        Reciever_Id: "rr123", // Corrected typo
+        Sender_Id:   senderId,
+        Reciever_Id:  receiverId, // Corrected typo
         message: message,
       };
 
       // Send the message to the server
       socketRef.current.emit('chat_message', messageData);
 
+      socketRef.current.emit('new_notification', messageData);
+
+      // socketRef.current.emit('new_message', messageData);
+
       // Update local messages state to show the new message immediately
-      setMessages((prevMessages) => [...prevMessages, messageData]);
+      // setMessages((prevMessages) => [...prevMessages, messageData]);
 
       // Clear the message input
       setMessage('');
+
+       
+
+      
     }
   };
 
+
+
+  // const Send_Notification=(e)=>{
+  //   socketRef.current = io('http://localhost:5000', {
+  //     query: { e },
+  //     transports: ['websocket'],
+  //     withCredentials: true,
+  //   });
+
+  //   socketRef.current.on('initialNotifications', (initialNotifications)=>{
+  //     console.log(initialNotifications)
+  //   })
+  // }
 
   const messagess = [
     { 
@@ -178,7 +230,7 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
                               }}
                             >
                               {messages.map((msg, index) => {
-                                const isSender = msg.Sender_Id === senderId;
+                                const isSender = msg.Sender_Id != receiverId;
                                 return (
                                   <li
                                     key={index}

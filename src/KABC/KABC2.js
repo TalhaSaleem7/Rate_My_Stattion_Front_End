@@ -64,6 +64,8 @@ const KABC2 = () => {
       // setUser(user)
 
       fetchUserData(user.id);
+
+
     }
   }, []);
 
@@ -108,10 +110,8 @@ const KABC2 = () => {
 
     console.log("done", awardsdata, "alphaaward", alphaaward);
   };
-  
- 
+
   const onFecth = () => {
-    
     setShowrequest(true);
 
     fetchJobsData();
@@ -150,20 +150,21 @@ const KABC2 = () => {
     setIsOpen(!isOpen);
   };
 
+ 
   const [ContactData, setContactData] = useState([]);
-  
+
   useEffect(() => {
     const fetchContactData = async () => {
-        try {
-            const response = await axios.get(`${baseurl}/getcontacts`);
-            setContactData(response.data);
-        } catch (err) {
-            console.error("Error fetching Contact data:", err);
-        }
+      try {
+        const response = await axios.get(`${baseurl}/getcontacts`);
+        setContactData(response.data);
+      } catch (err) {
+        console.error("Error fetching Contact data:", err);
+      }
     };
 
     fetchContactData();
-}, []);
+  }, []);
 
   return (
     <>
@@ -210,7 +211,7 @@ const KABC2 = () => {
                           fill="#194D79"
                         />
                       </svg>
-                      <p>Los Angeles, CA | DMA: 2</p>
+                      <p>{userdata.Profile ? userdata.Profile.address : 'Add Your Address'}</p>
                     </span>
                   </div>
                 </div>
@@ -290,9 +291,8 @@ const KABC2 = () => {
               </div>
 
               <div class="navtabs">
-                <TabList >
-
-          <Tab>
+                <TabList>
+                  <Tab>
                     <div class="navtab active" data-target="Profile">
                       Profile
                     </div>
@@ -344,7 +344,7 @@ const KABC2 = () => {
                       <About2 aboutsdata={aboutsdata} />
                       <Dirctors2 directordata={directordata} />
                       <Award2 awardsdata={awardsdata} />
-                      <Openings2 onSuccess={onFecth}  />
+                      <Openings2 onSuccess={onFecth} />
                     </div>
 
                     <div class="About-main-box-2-ah">
@@ -446,13 +446,13 @@ const KABC2 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Station />
+                      <Station fetchUserData={fetchUserData} />
 
                       <Filter />
 
                       <Reportersd2 />
 
-                      <Reportersd2 />
+                      {/* <Reportersd2 /> */}
 
                       <div class="job-post-btn-box">
                         <button>Load more</button>
@@ -689,7 +689,7 @@ const KABC2 = () => {
             </div>
           </TabPanel> */}
 
-{/* Contact  information */}
+          {/* Contact  information */}
           <TabPanel>
             <div id="Contact" class="content active">
               <section class="About-ah">
@@ -732,8 +732,8 @@ const KABC2 = () => {
                             </svg>
                           </span>
                         </span>
-                    {ContactData.map((Contact, index) => (
-                        <div key={index} class="Website-ah-box">
+
+                        <div class="Website-ah-box">
                           <div class="Website-ah-card">
                             <button>
                               <svg
@@ -776,7 +776,8 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Phone</h2>
-                              <h3>{Contact.phone}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.phone: ''}</h3>
+
                             </span>
                           </div>
 
@@ -798,7 +799,7 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Website</h2>
-                              <h3>{Contact.website}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.website: ''}</h3>
                             </span>
                           </div>
 
@@ -820,7 +821,7 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Linkedin</h2>
-                              <h3>{Contact.linkedin}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.linkedin: ''}</h3>
                             </span>
                           </div>
 
@@ -842,7 +843,7 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Twitter</h2>
-                              <h3>{Contact.twitter}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.twitter: ''}</h3>
                             </span>
                           </div>
 
@@ -864,13 +865,12 @@ const KABC2 = () => {
 
                             <span>
                               <h2>Facebook</h2>
-                              <h3>{Contact.facebook}</h3>
+                              <h3>{userdata.Contact ? userdata.Contact.facebook: ''}</h3>
                             </span>
                           </div>
 
                       </div>
-                      ))}
-                    
+          
                       </div>
                     </div>
 

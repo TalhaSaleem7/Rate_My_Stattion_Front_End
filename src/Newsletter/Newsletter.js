@@ -39,10 +39,12 @@ import Newslettersidesd from "../Newslettersidesecsd/Newslettersidesd";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { baseurl } from '../baseurl';
+import ProductsComponent from '../Shop/PorductsComponent';
+import ProductsLimitedComponent from '../Shop/ProductsLimitedComponent';
 
 const Newsletter = () => {
 
-  
+
   const [products, setProducts] = useState([]);
 
 
@@ -114,9 +116,6 @@ const Newsletter = () => {
     navigate("/mycart");
   };
 
-  const shop = () => {
-    navigate("/shop");
-  };
 
   const newsletter = () => {
     navigate("/newsletter");
@@ -135,8 +134,8 @@ const Newsletter = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    autoplay: true,        
-    autoplaySpeed: 3000,   
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
  
@@ -236,8 +235,21 @@ const Newsletter = () => {
                       Written by <span>Soul Witness</span>
                     </p>
                   </div>
-                  <div className="journalism-slider">
-                  
+                  <div className="your-journalism-txt">
+                    <h3>
+                      Can Starting In A Top 50 Market Really Ruin Your Journalism
+                      Career?
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>Soul Witness</span>
+                      </p>
+                    </div>
+                    <div className="journalism-slider">
+
                       <div>
                         <h5>
                           Feugiat sagittis, turpis et a fermentum blandit amet
@@ -247,6 +259,7 @@ const Newsletter = () => {
                           auctor pulvinar dignissim mauris non ultrices. Sed.
                         </h5>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -458,9 +471,9 @@ const Newsletter = () => {
               </div>
             </Col>
             <Col lg={12}>
-               <div className="latesthomepg-line">
-                  <hr/>
-               </div>
+              <div className="latesthomepg-line">
+                <hr />
+              </div>
             </Col>
           </Row>
         </Container>
@@ -471,24 +484,12 @@ const Newsletter = () => {
 
         <Container>
           <Row>
-            {products.map((product) => (
-              <Col key={product.id} lg={3} md={4}>
-                <div className="ratemystation-shop-prod">
-                  <img src={product.image} alt={product.name} />
-                  <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                  <div className="ratemystation-prod-txt">
-                    <h3>{product.name}</h3>
-                    <h6>${product.price.toFixed(2)}</h6>
-                    <div className="ratemystation-prod-btn">
-                      <button onClick={proddetail} variant="light" className="prod-light-btn">View Details</button>
-                      <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
-                      <ToastContainer />
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
+          <ProductsLimitedComponent
+              proddetail={proddetail}
+              handleButtonClick={handleButtonClick}
+              BestsellerImage={BestsellerImage}
+            />
+          </Row>         
         </Container>
       </section>
 

@@ -99,5 +99,5 @@ const Educationah1 = () => {
 }
 
 
-
+    
 export default Educationah1

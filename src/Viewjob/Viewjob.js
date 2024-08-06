@@ -20,6 +20,8 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { useNavigate } from "react-router-dom";
 import { baseurl } from "../baseurl";
+import ProductsComponent from "../Shop/PorductsComponent";
+import ProductsLimitedComponent from "../Shop/ProductsLimitedComponent";
 
 const Viewjob = () => {
   const [products, setProducts] = useState([]);
@@ -243,40 +245,12 @@ const Viewjob = () => {
         <h4>RateMyStation's Shop</h4>
 
         <Container>
-          <Row>
-            {products.map((product) => (
-              <Col key={product.id} lg={3} md={4}>
-                <div className="ratemystation-shop-prod">
-                  <img src={product.image} alt={product.name} />
-                  <img
-                    className="prod-abslt-ratems"
-                    src={BestsellerImage}
-                    alt="Bestseller"
-                  />
-                  <div className="ratemystation-prod-txt">
-                    <h3>{product.name}</h3>
-                    <h6>${product.price.toFixed(2)}</h6>
-                    <div className="ratemystation-prod-btn">
-                      <button
-                        onClick={proddetail}
-                        variant="light"
-                        className="prod-light-btn"
-                      >
-                        View Details
-                      </button>
-                      <button
-                        onClick={() => handleButtonClick(product)}
-                        variant="dark"
-                        className="prod-dark-btn"
-                      >
-                        Add to cart
-                      </button>
-                      <ToastContainer />
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
+        <Row>
+        <ProductsLimitedComponent
+              proddetail={proddetail}
+              handleButtonClick={handleButtonClick}
+              BestsellerImage={BestsellerImage}
+            />
           </Row>
         </Container>
       </section>

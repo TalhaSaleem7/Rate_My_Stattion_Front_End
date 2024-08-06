@@ -20,38 +20,17 @@ import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
 import { useNavigate } from 'react-router-dom';
 import { baseurl } from '../baseurl';
-
+import ProductsLimitedComponent from '../Shop/ProductsLimitedComponent';
 
 const About = () => {
 
-  const [products, setProducts] = useState([]);
-
-
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
-        const formattedProducts = response.data.map(product => ({
-          ...product,
-          price: parseFloat(product.price) // Convert to number if necessary
-        }));
-        setProducts(formattedProducts);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
   const getUserFromLocalStorage = () => {
     const user = localStorage.getItem('userData');
     return user ? JSON.parse(user) : null;
   };
 
-
+  
   // const addToCart = (product) => {
   const addToCart = async (product) => {
     console.log('product', product)
@@ -96,9 +75,7 @@ const About = () => {
     navigate('/mycart')
   }
 
-  const shop = () => {
-    navigate('/shop')
-  }
+ 
 
   return (
     <>
@@ -206,34 +183,14 @@ const About = () => {
 
 
       <section className="ratemystation-shop-sec">
-      <h4>RateMyStation's Shop</h4>
+        <h4>RateMyStation's Shop</h4>
         <Container>
           <Row>
-            {products.map((product) => (
-              <Col key={product.id} lg={3} md={4}>
-                <div className="ratemystation-shop-prod">
-                  <img src={product.image} alt={product.name} />
-                  <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
-                  <div className="ratemystation-prod-txt">
-                    <h3>{product.name}</h3>
-                    <h6>${product.price.toFixed(2)}</h6>
-                    <div className="ratemystation-prod-btn">
-                      <button onClick={proddetail} variant="light" className="prod-light-btn">View Details</button>
-                      <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>
-                      <ToastContainer />
-
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
-          <Row>
-            <Col lg={12}>
-              <div className="ratemystation-allprod-btn">
-                <a onClick={shop}>See All Product</a>
-              </div>
-            </Col>
+            <ProductsLimitedComponent
+              proddetail={proddetail}
+              handleButtonClick={handleButtonClick}
+              BestsellerImage={BestsellerImage}
+            />
           </Row>
         </Container>
       </section>

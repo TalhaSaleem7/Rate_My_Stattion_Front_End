@@ -72,6 +72,16 @@ const Aboutah2 = ({ onSuccess, aboutContent }) => {
   const handleClose = () => {
     setShowModal(false);
   };
+
+  const handleSuccess = () => {
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      setAboutContent(user.about);
+    }
+    setShowModal(false);
+  };
+  
   return (
     <>
       <Modal
@@ -107,7 +117,8 @@ const Aboutah2 = ({ onSuccess, aboutContent }) => {
             </svg>
           </div>
         </span>
-        <p>{aboutContent ? aboutContent : aboutContents}</p>
+        {/* <p>{aboutContent ? aboutContent : aboutContents}</p> */}
+        <p>{aboutContents}</p>
       </div>
     </>
   );

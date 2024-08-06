@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -246,7 +246,6 @@ ul.save--share--pop {
 .faq--right--card .faq--right--card--body {
   padding: 0;
 }
-
 
 /* ======================================
   About Popup
@@ -546,7 +545,6 @@ Account Setting
   align-items: center;
   justify-content: center;
 }
-
 
 .account--profile--img--h.d-flex.align-items-center a:focus {
   outline: none;
@@ -1379,7 +1377,6 @@ Info / Apply popup
   max-width: 220px;
 }
 
-
 .rating--span {
   width: 20px;
   height: 20px;
@@ -1392,7 +1389,6 @@ Info / Apply popup
 .rating--span--active {
   background-color: #aad14f !important;
 }
-
 
 .upload--document--img {
   width: 75px;
@@ -1413,6 +1409,9 @@ Info / Apply popup
 .rating--boxes--cont--h {
   gap: 7px;
   padding-bottom: 38px;
+}
+.rating--boxes--cont--alt--h {
+  padding-bottom: 10px;
 }
 .rating--boxes--cont--h span {
   width: 33px;
@@ -1789,7 +1788,7 @@ Job Open Rate
   margin-top: 24px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */   
+  /* justify-content: space-between; */
   border-top: 1px solid #e0e0e0;
   padding: 24px 32px 27px 32px;
   gap: 10px;
@@ -1852,7 +1851,7 @@ Job Open Rate
   font-weight: 700;
   line-height: 33px; /* 206.25% */
 }
-  
+
 /* ======================================
 Chart
 ====================================== */
@@ -1893,7 +1892,6 @@ Chart
   padding-bottom: 44px;
   flex-wrap: wrap;
 }
-
 
 .stat-card {
   display: flex;
@@ -1979,7 +1977,6 @@ Chart
   width: 263px;
 }
 
-
 .dash--sec--one--card--h {
   background-color: #ffffff;
   border-radius: 15px;
@@ -2004,7 +2001,6 @@ Chart
   padding-bottom: 10px;
 }
 
-
 .dash--home--title--h p,
 .home-sec-three-title-h p {
   font-size: var(--font-size-16);
@@ -2017,7 +2013,6 @@ Chart
 .row .home-sec-three-title-h {
   padding-top: 27px;
 }
-
 
 .station--rate--card--h {
   padding: 41px 27px 27px 27px;
@@ -2042,14 +2037,12 @@ Chart
   align-items: center;
 }
 
-
 .station--rating--card--btn--h {
   display: flex;
   gap: 28px;
   align-items: center;
   padding-top: 27px;
 }
-
 
 .station--rating--card--btn--h a {
   font-size: var(--font-size-16);
@@ -2063,17 +2056,14 @@ Chart
   text-align: center;
 }
 
-
 .station--rating--card--btn--h svg {
   flex-shrink: 0;
 }
-
 
 .station--rating--score--cont h1 {
   font-size: var(--font-size-24);
   padding-bottom: 3px;
 }
-
 
 .station--rating--score--cont span,
 .station--rating--score--cont p {
@@ -2081,30 +2071,24 @@ Chart
   font-size: var(--font-size-16);
 }
 
-
-
-
 .dash--insight--sec--head--h {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
   flex-wrap: wrap;
 }
-
 
 .dash--insight--sec--title--h h1 {
   font-size: var(--font-size-24);
   font-weight: 700;
 }
 
-
 .dash--insight--sec--time--h {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
 
 .dash--insight--sec--time--h label {
   white-space: nowrap;
@@ -2150,7 +2134,6 @@ Admin Header
   padding: 15.9px 20px;
 }
 
-
 .admin--headedr--title--h {
   display: flex;
   align-items: center;
@@ -2183,12 +2166,10 @@ Admin Header
   width: 37%;
 }
 
-
 .admin--header--user--text--h h1 {
   font-size: var(--font-size-16);
   font-weight: 700;
 }
-
 
 .admin--header--user--text--h p {
   font-size: var(--font-size-14);
@@ -2221,11 +2202,9 @@ Admin Header
   right: -6px;
 }
 
-
 /* ======================================
 Admin Sidebar
 ====================================== */
-
 
 section.sidebar--cont--admin--h {
   width: 250px;
@@ -2339,9 +2318,9 @@ Media Query
 }
 @media (max-width: 1280px) {
   .job--open--dash--news--h--search--cont {
-  flex-basis: 18%;
-  min-width: 180px;
-}
+    flex-basis: 18%;
+    min-width: 180px;
+  }
   .margin-alt {
     margin-right: 20px;
   }
@@ -2396,12 +2375,12 @@ Media Query
     width: 60px;
     overflow-x: hidden !important;
     overflow-y: scroll;
-        height: 92vh;
-}
+    height: 92vh;
+  }
 
-.sidebar--cont--admin--h--collapse {
+  .sidebar--cont--admin--h--collapse {
     width: 250px !important;
-}
+  }
 }
 @media (max-width: 991px) {
   :root {
@@ -2641,7 +2620,7 @@ Media Query
   .job--open--dash--news--h--card--lower {
     padding: 24px 15px 27px 15px;
   }
-    
+
   .faq--detail--card--one--bottom--h {
     gap: 26px;
     padding: 35px 0px 16px 0px;
@@ -2669,11 +2648,8 @@ Media Query
 
   .newsletter-side-head {
     margin: 40px 0px 36px 12px;
+  }
 }
-  
-
-}
-
 
 @media (max-width: 404px) {
   :root {
@@ -2761,5 +2737,4 @@ Media Query
   .job--open--dash--news--h--card--title p {
     text-align: center;
   }
-
 }
