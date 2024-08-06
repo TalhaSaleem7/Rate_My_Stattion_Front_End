@@ -515,6 +515,7 @@ section.About-ah {
 
 .Award-box-tital-ah {
   width: 80%;
+  overflow: hidden;
 }
 
 .Award-box-tital-ah h2 {
@@ -10599,7 +10600,7 @@ span.See select:focus {
 
 
 .Upload-show {
-  background: #ebebeb;
+  background: #f2f2f2;
   height: 85px;
   display: flex;
   align-items: center;
