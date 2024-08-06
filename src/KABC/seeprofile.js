@@ -36,6 +36,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import { baseurl } from "../baseurl";
+import EducationForm from "../Popups/Profile_popups/Education_h";
+import ApplyForm from "../Popups/Submitpopup_h/Apply_h";
+import Dirctors3 from "../Dirctors/Dirctors3";
 // import { profile } from "console";
 
 const Seeprofile = () => {
@@ -54,12 +57,23 @@ const Seeprofile = () => {
   const [jobContent, setjobContent] = useState([]);
   const [jobData, setjobData] = useState({});
 
+
+  const [showModals, setShowModals] = useState(false);
+
+  const handleSelectChanges = () => {
+    setShowModals(true);
+  };
+
+  const handleCloses = () => {
+    setShowModals(false);
+  };
+
   useEffect(() => {
     // Retrieve user data from local storage
-    const storedUser = localStorage.getItem("userData");
+    const storedUser = localStorage.getItem("stationData");
     if (storedUser) {
       const user = JSON.parse(storedUser);
-      console.log(user, userdata);
+      console.log('hello',user, userdata);
       // setUser(user)
 
       fetchUserData(user.id);
@@ -167,6 +181,18 @@ const Seeprofile = () => {
   return (
     <>
       <Header1 />
+
+      <Modal
+    show={showModals}
+    onHide={setShowModals}
+    size="xl"
+    aria-labelledby="contained-modal-title-vcenter"
+    centered
+>
+    <Modal.Body>
+        <ApplyForm closePopup={handleCloses} />
+    </Modal.Body>
+</Modal>
       <Tabs>
         <section class="KABC-ah">
           <Container>
@@ -216,13 +242,13 @@ const Seeprofile = () => {
 
                 <div class="KABC-btn-box-ah">
                   <span class="See">
-                    <button  class="more">
+                    <button  onClick={handleSelectChanges} class="more">
                      
                       Rate This Station
                     </button>
                   </span>
                   <span className="See">
-                    <button
+                    <button 
                       className="Contact-ah more"
                       
                     >
@@ -250,10 +276,11 @@ const Seeprofile = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <About2 aboutsdata={aboutsdata} />
-                      <Dirctors2 directordata={directordata} />
-                      <Award2 awardsdata={awardsdata} />
-                      <Openings2 onSuccess={onFecth}  />
+                    <Station />
+                     
+                      <Dirctors3 directordata={directordata} />
+                      
+                      <Reportersd2 />
                     </div>
 
                     <div class="About-main-box-2-ah">
