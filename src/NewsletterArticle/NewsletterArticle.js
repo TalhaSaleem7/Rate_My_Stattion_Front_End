@@ -38,6 +38,9 @@ import Footerah from "../footerah/Footerah";
 
 const NewsletterArticle = () => {
   const navigate = useNavigate();
+  const news_data= localStorage.getItem('article')
+  const article = JSON.parse(news_data);
+  console.log(news_data,"NEWS DATA")
 
   const mycart = () => {
     navigate("/mycart");
@@ -70,19 +73,18 @@ const NewsletterArticle = () => {
             <Col lg={8}>
               <div className="newsletter-article-detail">
                 <div className="latest-article-box">
-                  <img src={latestarticleImg} alt="" />
+                  <img src={article.image} alt="" />
                   <div className="newsletter-article-text">
                     <div className="newsletter-article-date">
                       <p>May 24, 2022</p>
                     </div>
                     <h4>
-                      10 Ways To Stay Healthy While Working A Crazy News
-                      Schedule
+                      {article.mainheading}
                     </h4>
                     <div className="newsletter-written-likecomment">
                       <div className="newsletter-writtinsoul-txt">
                         <p>
-                          Written by <span>Soul Witness</span>
+                          Written by <span>{article.writer}</span>
                         </p>
                         <div className="newsletter-likecomment-share">
                           <span>
@@ -103,45 +105,32 @@ const NewsletterArticle = () => {
                   <Slider {...settings} className="newsletter-article-slider">
                     <div className="newsletter-article-decided">
                       <h4>
-                        So you decided you want…no, you NEED…to be healthier.
+                       {article.subheading}
                       </h4>
                       <p>
-                        Pellentesque vel tristique ultrices habitasse feugiat
-                        nulla tempor quam. Et risus commodo natoque pulvinar eu,
-                        interdum. Viverra tortor hac sollicitudin dictum sit.
-                        Condimentum eget et commodo sapien porta felis amet
-                        pellentesque.
+                     {
+                      article.description
+                     }
                       </p>
                       <p>
-                        Erat augue enim turpis risus urna, ut egestas vivamus
-                        proin. Velit leo scelerisque pulvinar vestibulum in nunc
-                        a tortor mollis. Fusce pretium est ipsum elementum
-                        parturient. Venenatis, ac nulla non varius dolor. Ornare
-                        consectetur mauris, adipiscing tristique a leo.
+                      {
+                      article.description
+                     }
                       </p>
                       <p>
-                        Habitant pharetra tellus habitasse vestibulum nibh
-                        quisque. Sed vel condimentum enim leo tortor mi magna
-                        tincidunt. Egestas bibendum id eget quisque semper
-                        ultricies. Gravida viverra massa faucibus vestibulum
-                        condimentum.
+                      {
+                      article.description
+                     }
                       </p>
                       <p>
-                        Pretium tortor venenatis, mattis lobortis. Sollicitudin
-                        non sed eu, augue. Morbi purus ipsum ipsum ante felis.
-                        Nisi, vulputate risus nisl, nulla amet morbi habitant
-                        vel. Condimentum egestas vestibulum habitant vitae.
-                        Faucibus bibendum lacinia volutpat nulla placerat semper
-                        elementum gravida.
+                      {
+                      article.description
+                     }
                       </p>
                       <p>
-                        Mi vulputate arcu, at tincidunt enim sit eu platea leo.
-                        Risus vitae in turpis elementum, viverra ultricies.
-                        Commodo sed eget at massa, integer. Porta id id nisl
-                        faucibus neque, purus. Fermentum enim, sed ut ultrices
-                        amet turpis pharetra faucibus blandit. Aenean proin at
-                        tortor tincidunt. Aenean sed ornare sit arcu mattis
-                        amet, eget. Id sed amet cras urna et malesuada.
+                      {
+                      article.description
+                     }
                       </p>
                     </div>
                     <div className="newsletter-article-decided">

@@ -343,7 +343,7 @@ const KABC2 = () => {
                       <About2 aboutsdata={aboutsdata} />
                       <Dirctors2 directordata={directordata} />
                       <Award2 awardsdata={awardsdata} />
-                      <Openings2 />
+                      <Openings2 onSuccess={onFecth}  />
                     </div>
 
                     <div class="About-main-box-2-ah">

@@ -52,8 +52,8 @@ const Newsletter = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
-        const formattedProducts = response.data.map(product => ({
+        const response = await axios.get(`${baseurl}/get-articles`); // Update this with your API endpoint
+        const formattedProducts = response.data.data.map(product => ({
           ...product,
           price: parseFloat(product.price) // Convert to number if necessary
         }));
@@ -123,7 +123,9 @@ const Newsletter = () => {
     navigate("/newsletter");
   };
 
-  const goto = () => {
+  const goto = (e) => {
+    const news_data= localStorage.setItem("article", JSON.stringify(e));
+    console.log(news_data,"TSSSS")
     navigate("/newsletterarticle");
   };
 
@@ -138,17 +140,102 @@ const Newsletter = () => {
     autoplaySpeed: 3000,
   };
 
+ 
+
   return (
     <>
       <Header />
       <section className="your-journalism-sec">
         <Container>
           <Row>
-            <Slider {...settings}>
+          <Slider {...settings}>
+            {
+              products.length>0?(
+                products.map((e,i)=>(
               <Col lg={12}>
+                <div className="journalism-img-txt" key={i}>
+                  <div className="your-journalism-img">
+                    <img src={e.image} alt="Journal Report" />
+                  </div>
+                  <div className="your-journalism-txt">
+                    <h3>
+                     {e.mainheading}
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>{e.writer}</span>
+                      </p>
+                    </div>
+                    <div className="journalism-slider">
+                    
+                        <div>
+                          <h5>
+                        {
+                          e.description.length>300?e.description.slice(0,300)+ "...read more":e.description
+                        }
+                          </h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>) )):(
+                  
+               
+                <Col lg={12}>
                 <div className="journalism-img-txt">
                   <div className="your-journalism-img">
                     <img src={JournalImage} alt="Journal Report" />
+                  </div>
+                  <div className="your-journalism-txt">
+                    <h3>
+                      Can Starting In A Top 50 Market Really Ruin Your Journalism
+                      Career?
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>Soul Witness</span>
+                      </p>
+                    </div>
+                    <div className="journalism-slider">
+                    
+                        <div>
+                          <h5>
+                            Feugiat sagittis, turpis et a fermentum blandit amet
+                            in phasellus. Nibh nunc ultrices ac at at sit purus
+                            pellentesque a. Urna, eget elit at risus tempus, fames
+                            amet. Nulla cursus diam vel amet lacus, sem id. Cursus
+                            auctor pulvinar dignissim mauris non ultrices. Sed.
+                          </h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              )
+            }
+            <Col lg={12}>
+              <div className="journalism-img-txt">
+                <div className="your-journalism-img">
+                  <img src={JournalImage} alt="Journal Report" />
+                </div>
+                <div className="your-journalism-txt">
+                  <h3>
+                    Can Starting In A Top 50 Market Really Ruin Your Journalism
+                    Career?
+                  </h3>
+                  <div className="journal-date-written">
+                    <p>
+                      <RiTimeLine /> May 24, 2022
+                    </p>
+                    <p>
+                      Written by <span>Soul Witness</span>
+                    </p>
                   </div>
                   <div className="your-journalism-txt">
                     <h3>
@@ -177,67 +264,9 @@ const Newsletter = () => {
                     </div>
                   </div>
                 </div>
-              </Col>
-              <Col lg={12}>
-                <div className="journalism-img-txt">
-                  <div className="your-journalism-img">
-                    <img src={JournalImageOne} alt="Journal Report" />
-                  </div>
-                  <div className="your-journalism-txt">
-                    <h3>
-                      Elementum quis aliquam vitae convallis. Nam eu id integer nec.
-                    </h3>
-                    <div className="journal-date-written">
-                      <p>
-                        <RiTimeLine /> May 24, 2022
-                      </p>
-                      <p>
-                        Written by <span>Soul Witness</span>
-                      </p>
-                    </div>
-                    <div className="journalism-slider">
-
-                      <div>
-                        <h5>
-                          Sed nisl, cras morbi in porttitor magna egestas quis id. Velit nisi interdum feugiat viverra at tortor. Neque, natoque semper feugiat massa habitasse sit et. Tortor vehicula sed magna enim justo porta pellentesque pellentesque. Varius auctor ipsum eget imperdiet ac.
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={12}>
-                <div className="journalism-img-txt">
-                  <div className="your-journalism-img">
-                    <img src={JournalImageTwo} alt="Journal Report" />
-                  </div>
-                  <div className="your-journalism-txt">
-                    <h3>
-                      Scelerisque aliquet viverra tincidunt eget mi commodo cursus hac ut.
-                    </h3>
-                    <div className="journal-date-written">
-                      <p>
-                        <RiTimeLine /> May 24, 2022
-                      </p>
-                      <p>
-                        Written by <span>Soul Witness</span>
-                      </p>
-                    </div>
-                    <div className="journalism-slider">
-
-                      <div>
-                        <h5>
-                          Feugiat sagittis, turpis et a fermentum blandit amet
-                          in phasellus. Nibh nunc ultrices ac at at sit purus
-                          pellentesque a. Urna, eget elit at risus tempus, fames
-                          amet. Nulla cursus diam vel amet lacus, sem id. Cursus
-                          auctor pulvinar dignissim mauris non ultrices. Sed.
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Col>
+              </div>
+            </Col>
+           
             </Slider>
           </Row>
         </Container>
@@ -285,7 +314,41 @@ const Newsletter = () => {
               <div className="newsletter-latest-article-box">
                 <h3>Latest Articles</h3>
                 {/* Article 1 */}
-                <div className="latest-article-box" onClick={goto}>
+                {
+                  products.length>0 ?( 
+                    
+                    <div className="latest-article-box" >
+                    <img src={products[3].image} alt="Latest Article" />
+                    <div className="newsletter-article-text">
+                      <div className="newsletter-article-date">
+                        <p>22 May 2024</p>
+                        <span>
+                          <RiMore2Fill />
+                        </span>
+                      </div>
+                      <h4>
+                        {products[3].mainheading}
+                      </h4>
+                      <div className="newsletter-written-likecomment">
+                        <div className="newsletter-writtinsoul-txt">
+                          <p>
+                            Written by <span>{products[3].writer}</span>
+                          </p>
+                          <div className="newsletter-likecomment-share">
+                            <span>
+                              <RiThumbUpFill /> 35
+                            </span>
+                            <span>
+                              <RiChat3Fill /> 25
+                            </span>
+                            <span>
+                              <RiShareFill /> 15
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>):( <div className="latest-article-box" onClick={goto}>
                   <img src={NewsletterLatestArticleImg} alt="Latest Article" />
                   <div className="newsletter-article-text">
                     <div className="newsletter-article-date">
@@ -317,10 +380,15 @@ const Newsletter = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>)  
+                }
                 {/* Article 2 */}
-                <div className="newsletter-slide-article" onClick={goto}>
-                  <img src={NewsletterArticleImg2} alt="Latest Article" />
+
+                {
+                  products.length>0 && products.map((e,i)=>(
+
+                <div className="newsletter-slide-article" onClick={()=>goto(e)} key={i}>
+                  <img src={e.image} alt="Latest Article" />
                   <div className="newsletter-article-text">
                     <div className="newsletter-article-date">
                       <p>May 24, 2022</p>
@@ -329,13 +397,12 @@ const Newsletter = () => {
                       </span>
                     </div>
                     <h4>
-                      10 Ways To Stay Healthy While Working A Crazy News
-                      Schedule
+                     {e.mainheading}
                     </h4>
                     <div className="newsletter-written-likecomment">
                       <div className="newsletter-writtinsoul-txt">
                         <p>
-                          Written by <span>Soul Witness</span>
+                          Written by <span>{e.writer}</span>
                         </p>
                         <div className="newsletter-likecomment-share">
                           <span>
@@ -352,74 +419,9 @@ const Newsletter = () => {
                     </div>
                   </div>
                 </div>
-                {/* Article 3 */}
-                <div className="newsletter-slide-article" onClick={goto}>
-                  <img src={NewsletterArticleImg3} alt="Latest Article" />
-                  <div className="newsletter-article-text">
-                    <div className="newsletter-article-date">
-                      <p>May 24, 2022</p>
-                      <span>
-                        <RiMore2Fill />
-                      </span>
-                    </div>
-                    <h4>
-                      10 Ways To Stay Healthy While Working A Crazy News
-                      Schedule
-                    </h4>
-                    <div className="newsletter-written-likecomment">
-                      <div className="newsletter-writtinsoul-txt">
-                        <p>
-                          Written by <span>Soul Witness</span>
-                        </p>
-                        <div className="newsletter-likecomment-share">
-                          <span>
-                            <RiThumbUpFill /> 35
-                          </span>
-                          <span>
-                            <RiChat3Fill /> 25
-                          </span>
-                          <span>
-                            <RiShareFill /> 15
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Article 4 */}
-                <div className="newsletter-slide-article" onClick={goto}>
-                  <img src={NewsletterArticleImg4} alt="Latest Article" />
-                  <div className="newsletter-article-text">
-                    <div className="newsletter-article-date">
-                      <p>May 24, 2022</p>
-                      <span>
-                        <RiMore2Fill />
-                      </span>
-                    </div>
-                    <h4>
-                      10 Ways To Stay Healthy While Working A Crazy News
-                      Schedule
-                    </h4>
-                    <div className="newsletter-written-likecomment">
-                      <div className="newsletter-writtinsoul-txt">
-                        <p>
-                          Written by <span>Soul Witness</span>
-                        </p>
-                        <div className="newsletter-likecomment-share">
-                          <span>
-                            <RiThumbUpFill /> 35
-                          </span>
-                          <span>
-                            <RiChat3Fill /> 25
-                          </span>
-                          <span>
-                            <RiShareFill /> 15
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  ))
+                }
+                
                 <div className="newsletter-pagination-slide">
                   <div className="pagination">
                     <a href="#">

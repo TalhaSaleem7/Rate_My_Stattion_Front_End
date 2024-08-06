@@ -250,13 +250,12 @@ const Kabcah1 = () => {
                       centered>
                       <Modal.Body>
                         {/* Render differ ent components based on selected option */}
-                        {selectedOption === 'experience' && <Experience onCancel={closePopup} />}
+                        {selectedOption === 'experience' && <Experience onCancel={closePopup}  onSuccess={getExperinces}/> }
                         {selectedOption === 'skill' && <Skill onCancel={closePopup} />}
-                        {selectedOption === 'education' && <Education onCancel={closePopup} />}
+                        {selectedOption === 'education' && <Education onCancel={closePopup}  />}
 
 
-                        {selectedOption === "about" && <Abouth onCancel={closePopup} ts={handleCallbackCLoseAboutPopup} />}
-
+                        {selectedOption === "about" && <Abouth onCancel={closePopup}  ts={handleCallbackCLoseAboutPopup}  onSuccess={getLocal}/>}
 
                       </Modal.Body>
 
@@ -673,8 +672,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-                        <Cardah2 />
-                        <Cardah2 />
+                        
                       </div>
 
                       <div class="About-main-box-2-tital-ah">

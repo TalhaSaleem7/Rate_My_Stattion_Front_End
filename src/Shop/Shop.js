@@ -36,8 +36,8 @@ const Shop = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
-                const formattedProducts = response.data.map(product => ({
+                const response = await axios.get(`${baseurl}/getproducts`); // Update this with your API endpoint
+                const formattedProducts = response.data.product.result.map(product => ({
                     ...product,
                     price: parseFloat(product.price) // Convert to number if necessary
                 }));
@@ -60,7 +60,10 @@ const Shop = () => {
         const storedUser = getUserFromLocalStorage();
         const { id, image, name, price } = product;
 
+
         if (storedUser) {
+
+
             try {
                 const response = await axios.post(`${baseurl}/addtocart`, {
                     product_id: id,
@@ -72,13 +75,26 @@ const Shop = () => {
 
                 notify();
 
+                // setMessage('User created successfully');
+                // Optionally, clear the form or redirect the user
+
+
+
             } catch (err) {
                 console.error('Error:', err);
+
             }
+
         }
+
         else {
-            toast.error("Please Login First");
+
+            toast.error("Please Sign in first!")
+
         }
+        // setCart((prevCart) => [...prevCart, product]);
+        // console.log("Product added to cart:", product);
+        // alert(`Added ${product.name} to cart!`);
     };
 
     const notify = () => toast("Product Added to Cart!");
@@ -206,6 +222,7 @@ const Shop = () => {
                                     handleButtonClick={handleButtonClick}
                                     BestsellerImage={BestsellerImage}
                                 />
+
                             </Row>
                             <Row>
                                 <Col lg={12}>
