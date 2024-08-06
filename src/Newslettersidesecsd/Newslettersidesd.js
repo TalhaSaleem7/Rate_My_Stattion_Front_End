@@ -1,54 +1,66 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 import sidenewsletterimg1 from "../img/side-newsletter-img-1.png"
 import sidenewsletterimg2 from "../img/side-newsletter-img-2.png"
 import sidenewsletterimg3 from "../img/side-newsletter-img-3.png"
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { baseurl } from '../baseurl'
 
 
 const Newslettersidesd = () => {
     const navigate = useNavigate()
 
-    const newsletterdetail = () => {
-        navigate('/newsletterarticle')
-    }
+    // const newsletterdetail = () => {
+    //     navigate('/newsletterarticle')
+    // }
+
+
+    const goto = (e) => {
+        const news_data= localStorage.setItem("article", JSON.stringify(e));
+        console.log(news_data,"TSSSS")
+        navigate("/newsletterarticle");
+      };
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+          try {
+            const response = await axios.get(`${baseurl}/get-articles`); // Update this with your API endpoint
+            const formattedProducts = response.data.data.map(product => ({
+              ...product,
+              price: parseFloat(product.price) // Convert to number if necessary
+            }));
+            setProducts(formattedProducts);
+          } catch (error) {
+            console.error('Error fetching products:', error);
+          }
+        };
+    
+        fetchProducts();
+      }, []);
     return (
         <>
           
+          
+              
+               {
+               products && products.map((e,i)=>(
                 <div class="row">
                     <div class="col-lg-12 col-md-6">
-                        <div class="side-newsletter-box" onClick={newsletterdetail}>
-                            <img src={sidenewsletterimg1} alt="" />
+                        <div class="side-newsletter-box" onClick={()=>goto(e)}>
+                            <img src={e.image} alt=""  style={{maxHeight:'200px' , minHeight:'200px'}}/>
                             <div class="side-newsletter-txt">
-                                <h5>20 Things Jurnalism Students Should Know Before Working in Local News Station</h5>
+                                <h5>{e.mainheading}</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-6">
-                        <div class="side-newsletter-box" onClick={newsletterdetail}>
-                            <img src={sidenewsletterimg2} alt="" />
-                            <div class="side-newsletter-txt">
-                                <h5>20 Things Jurnalism Students Should Know Before Working in Local News Station</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6">
-                        <div class="side-newsletter-box" onClick={newsletterdetail}>
-                            <img src={sidenewsletterimg3} alt="" />
-                            <div class="side-newsletter-txt">
-                                <h5>20 Things Jurnalism Students Should Know Before Working in Local News Station</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6">
-                        <div class="side-subscribe-box" onClick={newsletterdetail}>
-                            <h5>Subscribe to our Newsletter, so you'll never miss one</h5>
-                            <input type="email" name="" id="" placeholder="Your email" />
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </div>
+                   
+                  
                 </div>
+                ))}
                 
         </>
     )
