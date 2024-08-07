@@ -140,6 +140,8 @@ const Station = () => {
   const [userdata, setUser] = useState({});
   const [ratingdata, setrating] = useState({});
 
+  const [rating, setRating] = useState([]);
+  const total = rating[1] + rating[2] + rating[3] + rating[4] + rating[5];
 
   useEffect(() => {
     // Retrieve user data from local storage
@@ -147,8 +149,8 @@ const Station = () => {
     if (storedUser) {
       const user = JSON.parse(storedUser);
       console.log(user, userdata);
-      fetchUserData(user.id);
       fetchRatingData(user.id)
+      fetchUserData(user.id);
     }
   }, []);
 
@@ -164,7 +166,9 @@ const Station = () => {
   const fetchRatingData = async (userId) => {
     try {
       const response = await axios.get(`${baseurl}/getratings/${userId}`);
+      const count = response.data.counts;
       setrating(response.data);
+      setRating(count);
     } catch (error) {
       console.error("Error fetching user data:", error);
     }
