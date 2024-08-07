@@ -30,7 +30,7 @@ const MyCartSD = ({ products }) => {
           price: parseFloat(product.price) 
         }));
         setProducts(formattedProducts);
-        console.log('products' , cartproducts)
+        console.log('sssssssss' , response.data)
       } catch (error) {
         console.error('Error fetching products:', error);
       }

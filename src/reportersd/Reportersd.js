@@ -11,19 +11,16 @@ const Reportersd = () => {
 
   useEffect(() => {
     // Retrieve user data from local storage
-    const storedUser = localStorage.getItem("userData");
-    if (storedUser) {
-      const user = JSON.parse(storedUser);
-      console.log(user);
+  
       // setUser(user)
 
-      fetchUserData(user.id);
-    }
+      fetchUserData();
+    
   }, []);
 
-  const fetchUserData = async (userId) => {
+  const fetchUserData = async () => {
     try {
-      const response = await axios.get(`${baseurl}/getratings/${userId}`);
+      const response = await axios.get(`${baseurl}/getrallatings`);
       const ratings = response.data.ratings;
 
       console.log("ahtisahm", response.data.ratings);
