@@ -138,7 +138,6 @@ span.See select {
   gap: 14px;
 }
 
-
 .employer-inputfield.employerregister-field select {
   background: var(--Gray-6, #f2f2f2);
   border-radius: 10px;
@@ -146,7 +145,6 @@ span.See select {
   width: 100%;
   padding: 16px 20px;
 }
-
 
 .KABC-btn-box-ah {
   width: 18%;
@@ -4304,10 +4302,10 @@ section.your-journalism-sec {
 
 .your-journalism-txt h3 {
   font-family: "Public Sans", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 38px;
   color: #000;
   padding: 0px 20px 0px 0px;
 }
@@ -4349,8 +4347,6 @@ section.your-journalism-sec {
   line-height: 26px;
   height: 170px;
 }
-
-
 
 .journalism-slider .slick-dots {
   text-align: left;
@@ -11316,6 +11312,9 @@ hr.padding-hr {margin-top: 14px;}
     width: 260px;
   }
 
+  .d-flex.faq--work--card--info.align-items-center p {
+    font-size: 11px;
+}
   .newsletter-article-search span {
     top: 36px;
 }
