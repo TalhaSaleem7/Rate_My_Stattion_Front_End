@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   RiMapPin2Fill,
   RiMoneyDollarCircleFill,
@@ -104,9 +106,12 @@ const fetchJobData = async (id) => {
       const response = await axios.post(`${baseurl}/appliedjob ` , { jobid  , userId});
     
 
-    
+      toast.success('Applied to Job!');
+
     } catch (error) {
       console.error('Error fetching user data:', error);
+      toast.error('Error!', error);
+
     }
 
   }
@@ -126,9 +131,9 @@ const fetchJobData = async (id) => {
 
       
       const response = await axios.post(`${baseurl}/savejob ` , { jobid  , userId});
-    
+      
 
-    
+      
     } catch (error) {
       console.error('Error fetching user data:', error);
     }

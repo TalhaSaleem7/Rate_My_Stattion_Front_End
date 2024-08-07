@@ -4,7 +4,7 @@ import { baseurl } from "../../baseurl";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const StationAboutForm = ({onCancel}) => {
+const StationAboutForm = ({onCancel , onSucess}) => {
   const [formData, setFormData] = useState({
     About: '',
     Industry: '',
@@ -66,10 +66,23 @@ const StationAboutForm = ({onCancel}) => {
       });
 
 
+      const formData = {
+        About,
+        Industry,
+        Address,
+        userId
+      }
+
+
+      console.log('formData' , formData)
+
+
 
       console.log('Form submitted successfully:', response.data.about);
 
-      localStorage.setItem('aboutData', JSON.stringify(response.data.about));
+      localStorage.setItem('aboutData', JSON.stringify(formData));
+
+      onSucess()
 
 
 
