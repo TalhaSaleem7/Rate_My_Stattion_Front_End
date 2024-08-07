@@ -11289,7 +11289,7 @@ hr.padding-hr {margin-top: 14px;}
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
   .chat_right_txt ul {
     overflow-y: scroll;
   }
