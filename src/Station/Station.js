@@ -1,6 +1,36 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { baseurl } from "../baseurl";
 
 const Station = () => {
+
+
+  const [countratings, setCountRatings] = useState({});
+
+  useEffect(() => {
+    // Retrieve user data from local storage
+    const storedUser = localStorage.getItem("userData");
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      console.log(user);
+      // setUser(user)
+
+      fetchUserData(user.id);
+    }
+  }, []);
+
+  const fetchUserData = async (userId) => {
+    try {
+      const response = await axios.get(`${baseurl}/getratings/${userId}`);
+      const ratings = response.data.counts;
+      console.log("ahtisahm", response.data);
+      setCountRatings(ratings);
+
+      console.log("hamza", countratings);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
   return (
     <>
       <div class="About-main-card-1-ah">
@@ -26,7 +56,7 @@ const Station = () => {
                   style={{ width: "80%" }}
                 ></div>
               </div>
-              <p>35</p>
+              <p>{`countratings.5`}</p>
             </div>
 
             <div class="scrllo-bar">
