@@ -114,9 +114,6 @@ export const Homepage = () => {
     navigate("/mycart");
   };
 
-  const shop = () => {
-    navigate("/shop");
-  };
 
   const newsletter = () => {
     navigate("/newsletter");
@@ -570,13 +567,6 @@ export const Homepage = () => {
               handleButtonClick={handleButtonClick}
               BestsellerImage={BestsellerImage}
             />
-          </Row>
-          <Row>
-            <Col lg={12}>
-              <div className="ratemystation-allprod-btn">
-                <a onClick={shop}>See All Product</a>
-              </div>
-            </Col>
           </Row>
         </Container>
       </section>
