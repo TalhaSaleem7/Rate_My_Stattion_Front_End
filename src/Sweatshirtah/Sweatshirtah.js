@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import { baseurl } from "../baseurl";
 import axios from "axios";
+import Header1 from "../Header/Header2";
 
 const Sweatshirtah = () => {
   const [productdata, setProduct] = useState({});
@@ -68,7 +69,7 @@ const Sweatshirtah = () => {
 
   return (
     <>
-      <Header />
+      <Header1 />
       <section className="Sweatshirt-sec">
         <Container>
           <div className="Sweatshirt">

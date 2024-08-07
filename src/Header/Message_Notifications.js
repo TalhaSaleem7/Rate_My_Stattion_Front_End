@@ -19,7 +19,7 @@ const Notifications = () => {
         const Sender_Idd= localStorage.getItem('userData')
           const sender_user_id= JSON.parse(Sender_Idd)
 
-          setuserId(sender_user_id.id)
+          setuserId(sender_user_id)
 
     })
 

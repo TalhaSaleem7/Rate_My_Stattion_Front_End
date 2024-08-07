@@ -235,18 +235,32 @@ const Newsletter = () => {
                       Written by <span>Soul Witness</span>
                     </p>
                   </div>
-                   <div className="journalism-slider">
-                    
-                        <div>
-                          <h5>
-                            Feugiat sagittis, turpis et a fermentum blandit amet
-                            in phasellus. Nibh nunc ultrices ac at at sit purus
-                            pellentesque a. Urna, eget elit at risus tempus, fames
-                            amet. Nulla cursus diam vel amet lacus, sem id. Cursus
-                            auctor pulvinar dignissim mauris non ultrices. Sed.
-                          </h5>
-                        </div>
+                  <div className="your-journalism-txt">
+                    <h3>
+                      Can Starting In A Top 50 Market Really Ruin Your Journalism
+                      Career?
+                    </h3>
+                    <div className="journal-date-written">
+                      <p>
+                        <RiTimeLine /> May 24, 2022
+                      </p>
+                      <p>
+                        Written by <span>Soul Witness</span>
+                      </p>
                     </div>
+                    <div className="journalism-slider">
+
+                      <div>
+                        <h5>
+                          Feugiat sagittis, turpis et a fermentum blandit amet
+                          in phasellus. Nibh nunc ultrices ac at at sit purus
+                          pellentesque a. Urna, eget elit at risus tempus, fames
+                          amet. Nulla cursus diam vel amet lacus, sem id. Cursus
+                          auctor pulvinar dignissim mauris non ultrices. Sed.
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Col>

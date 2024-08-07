@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
 import axios from 'axios';
 import { baseurl } from '../baseurl';
+import Header1 from '../Header/Header2';
 
 const MyCartSD = ({ products }) => {
   // Convert products to the format needed by AmericonProductCart
@@ -72,7 +73,7 @@ const MyCartSD = ({ products }) => {
 
   return (
     <>
-      <Header />
+      <Header1 />
       <section className="americon-product-card-sec">
         <Container>
           <Row>
