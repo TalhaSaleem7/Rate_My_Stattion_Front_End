@@ -10896,6 +10896,50 @@ hr.padding-hr {margin-top: 14px;}
   content: '...';
   display: inline;
 }
+
+
+.dropdown {
+  position: absolute !important;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: all 0.4s ease;
+  position: absolute;
+  background: white;
+  top: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 13px 0px #00000026;
+  z-index: 2;
+  padding: 12px;
+  display: flex;
+  width: 230px !important; 
+  height: 40vh;
+  align-items: flex-start;
+}
+
+.dropdown ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.dropdown ul li {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 5px;
+}
+.dropdown ul li::after {
+  content: '...';
+  display: inline;
+}
+
 /************* Rate My Station Message Page CSS End *************/
 
 
