@@ -8,7 +8,9 @@ import { Modal } from "react-bootstrap";
 import Skill from '../Popups/Profile_popups/Skills_h';
 
 
-const Skillsah1 = () => {
+const Skillsah1 = ({skillContent}) => {
+
+    console.log('skill' , skillContent)
 
     const [SkillData, setSkillData] = useState([]);
     useEffect(() => {
@@ -17,6 +19,8 @@ const Skillsah1 = () => {
             try {
                 const response = await axios.get(`${baseurl}/skilldata`);
                 setSkillData(response.data); // Set the fetched data to state
+
+               
             } catch (error) {
                 console.error("Error fetching education data:", error);
             }
@@ -35,6 +39,8 @@ const Skillsah1 = () => {
     const handleClose = () => {
         setShowModal(false);
     };
+
+    const skillsToMap = skillContent && skillContent.length > 0 ? skillContent : SkillData;
 
 
     return (
@@ -72,7 +78,7 @@ const Skillsah1 = () => {
                     </span>
                 </span>
                 <div class="Skills-ah-box-main">
-                    {SkillData.map((skill, index) => (
+                    {skillsToMap.map((skill, index) => (
                         <div key={index} class="Skills-ah-box">
                             <h2>{skill.userSkill}</h2>
                             <p>{skill.description}</p>

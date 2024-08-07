@@ -117,8 +117,8 @@ const Aboutah2 = ({ onSuccess, aboutContent }) => {
             </svg>
           </div>
         </span>
-        {/* <p>{aboutContent ? aboutContent : aboutContents}</p> */}
-        <p>{aboutContents}</p>
+        <p>{aboutContent ? aboutContent : aboutContents}</p>
+        {/* <p>{aboutContents}</p> */}
       </div>
     </>
   );

@@ -38,6 +38,7 @@ import Footerah from "../footerah/Footerah";
 import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
 import { baseurl } from "../baseurl";
+import Header1 from "../Header/Header2";
 
 const NewsletterArticle = () => {
   const navigate = useNavigate();
@@ -126,7 +127,7 @@ const NewsletterArticle = () => {
 
   return (
     <>
-      <Header />
+      <Header1 />
       <section className="newsletter-article-sec">
       <ToastContainer />
         <Container>
