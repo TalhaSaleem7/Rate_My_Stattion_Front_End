@@ -36,30 +36,13 @@ import HomeSelectOption from "../Homeselectoption/HomeSelectOption";
 import { baseurl } from '../baseurl';
 import Chat from '../Sockets/Chats_Components/Chat';
 import ProductsComponent from '../Shop/PorductsComponent';
+import ProductsLimitedComponent from '../Shop/ProductsLimitedComponent';
 
 export const Homepage = () => {
 
-  const [products, setProducts] = useState([]);
 
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`${baseurl}/products`); // Update this with your API endpoint
-        const formattedProducts = response.data.map(product => ({
-          ...product,
-          price: parseFloat(product.price) // Convert to number if necessary
-        }));
-        setProducts(formattedProducts);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
 
   const getUserFromLocalStorage = () => {
     const user = localStorage.getItem('userData');
@@ -251,8 +234,7 @@ export const Homepage = () => {
       <h4>RateMyStation's Shop</h4>
         <Container>
         <Row>
-            <ProductsComponent
-              products={products}
+            <ProductsLimitedComponent
               proddetail={proddetail}
               handleButtonClick={handleButtonClick}
               BestsellerImage={BestsellerImage}
