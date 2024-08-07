@@ -4267,6 +4267,8 @@ section.your-journalism-sec {
 .your-journalism-img img {
   width: 100%;
   height: 500px;
+  object-fit: cover;
+  border-radius: 50px 0px 0px 0px ;
 }
 
 .journalism-img-txt {
@@ -4287,6 +4289,7 @@ section.your-journalism-sec {
   background: #fff;
   padding: 50px 50px;
   border-radius: 0px 10px 10px 0px;
+  height: 100%;
 }
 .your-journalism-img img {
   height: 100% !important;
@@ -4351,6 +4354,8 @@ section.your-journalism-sec {
 
 .newsletter-slide-article img {
   width: 264.901px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .newsletter-article-search input {
@@ -10808,8 +10813,6 @@ span.See select:focus {
   line-height: 26px;
 }
 
-
-
 .message-item .message-count {
   background-color: #89C400;
   border-radius: 50%;
@@ -10848,8 +10851,19 @@ span.See select:focus {
   width: 42%;
   bottom: 150px;
 }
+hr.padding-hr {margin-top: 14px;}
+.journalism-slider h5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 12vh;
+}
 
-
+.journalism-slider h5::after {
+  content: '...';
+  display: inline;
+}
 /************* Rate My Station Message Page CSS End *************/
 
 

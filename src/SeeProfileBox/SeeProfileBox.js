@@ -73,8 +73,11 @@ const SeeProfileBox = () => {
                     </svg>
                 </div>
             </Col>
+            <hr className='padding-hr'/>
         </Row>
+
      ))}
+      
         {/* <div className="rms-dots-icon">
             <span><RiMore2Fill /></span>
         </div> */}
