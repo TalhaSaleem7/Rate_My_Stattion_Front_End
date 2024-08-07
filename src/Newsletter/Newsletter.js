@@ -444,7 +444,7 @@ const Newsletter = () => {
                   <h3>Recommend</h3>
                   <a onClick={newsletter}>See all</a>
                 </div>
-                <Newslettersidesd />
+                <Newslettersidesd  />
                 {/* Follow Us */}
                 <div className="newsletter-follow-box">
                   <h4>Follow RMS</h4>

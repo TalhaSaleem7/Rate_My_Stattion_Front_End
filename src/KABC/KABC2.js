@@ -36,6 +36,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import { baseurl } from "../baseurl";
+import Newslettersidesd from "../Newslettersidesecsd/Newslettersidesd";
 // import { profile } from "console";
 
 const KABC2 = () => {
@@ -353,11 +354,10 @@ const KABC2 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
+                        {/* <Cardah /> */}
+                        <Newslettersidesd/>
 
-                        <Cardah />
-
-                        <Cardah />
+                  
 
                         <div class="Recommend-card-ah">
                           <div class="Recommend-card-tital-ah">
@@ -466,11 +466,9 @@ const KABC2 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
+                        <Newslettersidesd />
 
-                        <Cardah />
-
-                        <Cardah />
+                       
 
                         <div class="Recommend-card-ah">
                           <div class="Recommend-card-tital-ah">
@@ -883,8 +881,8 @@ const KABC2 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
-                        <Cardah />
+                        <Newslettersidesd />
+                       
                       </div>
                     </div>
                   </div>

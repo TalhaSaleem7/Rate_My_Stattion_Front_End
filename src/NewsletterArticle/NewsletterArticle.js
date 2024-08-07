@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import {
@@ -35,12 +35,72 @@ import Newslettersidesd from "../Newslettersidesecsd/Newslettersidesd";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
+import { toast, ToastContainer } from "react-toastify";
+import axios from "axios";
+import { baseurl } from "../baseurl";
 
 const NewsletterArticle = () => {
   const navigate = useNavigate();
   const news_data= localStorage.getItem('article')
   const article = JSON.parse(news_data);
   console.log(news_data,"NEWS DATA")
+
+  const [comments, setCommnets] = useState("");
+  const [articles, setArticle] = useState({});
+  const [similar, setSimilar] = useState([]);
+
+  
+
+
+  
+  useEffect(() => {
+    fetchArticleData();
+  }, []);
+
+
+
+  const fetchArticleData = async () => {
+   const  articleId = article.id;
+    try {
+      // const response = await axios.get(`${baseurl}/getstation`);
+      const response = await axios.get(`${baseurl}/getarticlebyid/${articleId}`);
+      console.log("xxxxx", response.data);
+      setArticle(response.data.article)
+      setSimilar(response.data.similar)
+
+      console.log('counts' , response.data.similar.lenght)
+
+     
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
+
+
+
+  const handleSubmit = async (e) => {
+    const currentuser = localStorage.getItem('userData')
+    const current = JSON.parse(currentuser);
+    const userId = current.id;
+    const newsdata= localStorage.getItem('article')
+    const articles = JSON.parse(news_data);
+    const articleId = articles.id
+
+    console.log(articleId);
+
+    e.preventDefault();
+    try {
+      const response = await axios.post(`${baseurl}/savecommnets`, { comments, userId, articleId });
+      toast.success('Commnet post Sucessfully',);
+     
+     
+
+    } catch (error) {
+      console.error("Login error:", error);
+      toast.error('Invalid username or password', error);
+
+    }
+  };
 
   const mycart = () => {
     navigate("/mycart");
@@ -68,23 +128,24 @@ const NewsletterArticle = () => {
     <>
       <Header />
       <section className="newsletter-article-sec">
+      <ToastContainer />
         <Container>
           <Row>
             <Col lg={8}>
               <div className="newsletter-article-detail">
                 <div className="latest-article-box">
-                  <img src={article.image} alt="" />
+                  <img src={articles.image} alt="" />
                   <div className="newsletter-article-text">
                     <div className="newsletter-article-date">
                       <p>May 24, 2022</p>
                     </div>
                     <h4>
-                      {article.mainheading}
+                      {articles.mainheading}
                     </h4>
                     <div className="newsletter-written-likecomment">
                       <div className="newsletter-writtinsoul-txt">
                         <p>
-                          Written by <span>{article.writer}</span>
+                          Written by <span>{articles.writer}</span>
                         </p>
                         <div className="newsletter-likecomment-share">
                           <span>
@@ -105,31 +166,31 @@ const NewsletterArticle = () => {
                   <Slider {...settings} className="newsletter-article-slider">
                     <div className="newsletter-article-decided">
                       <h4>
-                       {article.subheading}
+                       {articles.subheading}
                       </h4>
                       <p>
                      {
-                      article.description
+                      articles.description
                      }
                       </p>
                       <p>
                       {
-                      article.description
+                      articles.description
                      }
                       </p>
                       <p>
                       {
-                      article.description
+                      articles.description
                      }
                       </p>
                       <p>
                       {
-                      article.description
+                      articles.description
                      }
                       </p>
                       <p>
                       {
-                      article.description
+                      articles.description
                      }
                       </p>
                     </div>
@@ -252,19 +313,20 @@ const NewsletterArticle = () => {
                     </ul>
                   </div>
 
+              
+
                   <div class="newsletter-comment-box">
                     <p>2 Comment</p>
+
+                    {
+               articles.Comments && articles.Comments.map((es,i)=>(
                     <div class="newsletter-detail-comment">
                       <img src={userImg} alt="" />
                       <div class="newsletter-comment-txt">
                         <div class="newsletter-detail-comment-para">
                           <h6>Cameron Williamson</h6>
                           <p>
-                            Pretium tortor venenatis, mattis lobortis.
-                            Sollicitudin non sed eu, augue. Morbi purus ipsum
-                            ipsum ante felis. Nisi, vulputate risus nisl, nulla
-                            amet morbi habitant vel. Condimentum egestas
-                            vestibulum habitant.
+                          {es.comments}
                           </p>
                         </div>
                         <div class="newsletter-comment-reaction">
@@ -282,42 +344,19 @@ const NewsletterArticle = () => {
                           <p>2 hours ago</p>
                         </div>
                       </div>
+                   
                     </div>
-                    <div class="newsletter-detail-comment">
-                      <img src={userImg2} alt="" />
-                      <div class="newsletter-comment-txt">
-                        <div class="newsletter-detail-comment-para">
-                          <h6>Jenny Wilson</h6>
-                          <p>
-                            Pretium tortor venenatis, mattis lobortis.
-                            Sollicitudin non sed eu, augue. Morbi purus ipsum
-                            ipsum ante felis. Nisi, vulputate risus nisl, nulla
-                            amet morbi habitant vel. Condimentum egestas
-                            vestibulum habitant.
-                          </p>
-                        </div>
-                        <div class="newsletter-comment-reaction">
-                          <ul>
-                            <li>
-                              <a href="#">Like</a>
-                            </li>
-                            <li>
-                              <a href="#">Reply</a>
-                            </li>
-                            <li>
-                              <a href="#">Permalink</a>
-                            </li>
-                          </ul>
-                          <p>2 hours ago</p>
-                        </div>
-                      </div>
-                    </div>
+                       ))}
+                   
                     <div class="newsletter-comment-input">
                       <img src={userCommentImg} alt="" />
                       <div class="newsletter-comment-typebox">
-                        <input type="text" placeholder="Write comment..." />
+                        <input type="text" placeholder="Write comment..." 
+                         value={comments}
+                         onChange={(e) => setCommnets(e.target.value)}
+                        />
                         <button type="submit">
-                           <RiSendPlaneFill />
+                           <RiSendPlaneFill  onClick={handleSubmit} />
                         </button>
                       </div>
                     </div>
@@ -327,50 +366,33 @@ const NewsletterArticle = () => {
                       <div class="soul-witness-user-imgtxt">
                         <img src={soulWitnessImg} alt="" />
                         <div class="soul-witness-txt">
-                          <h4>Soul Witness</h4>
-                          <h6>150 articles</h6>
+                          <h4>{articles.writer}</h4>
+                          <h6> articles</h6>
                         </div>
                       </div>
                       <a href="#">Subcribe</a>
                     </div>
                     <div class="more-from-soul-witness-box">
-                      <h5>More from Soul Witness</h5>
+                      <h5>More from {articles.writer}</h5>
+
+                      
+                    {
+               similar.map((ess,i)=>(
                       <div class="more-soul-article">
-                        <img src={moreArticleImg1} alt="" />
+                        <img src={ess.image} alt="" />
+
+
                         <div class="more-soul-articletxt">
                           <h4>
-                            So you decided you want…no, you NEED…to be
-                            healthier.
+                           {ess.mainheading}
                           </h4>
                           <span>
                             <i class="ri-time-line"></i> May 24, 2022
                           </span>
                         </div>
                       </div>
-                      <div class="more-soul-article">
-                        <img src={moreArticleImg2} alt="" />
-                        <div class="more-soul-articletxt">
-                          <h4>
-                            So you decided you want…no, you NEED…to be
-                            healthier.
-                          </h4>
-                          <span>
-                            <i class="ri-time-line"></i> May 24, 2022
-                          </span>
-                        </div>
-                      </div>
-                      <div class="more-soul-article">
-                        <img src={moreArticleImg3} alt="" />
-                        <div class="more-soul-articletxt">
-                          <h4>
-                            So you decided you want…no, you NEED…to be
-                            healthier.
-                          </h4>
-                          <span>
-                            <i class="ri-time-line"></i> May 24, 2022
-                          </span>
-                        </div>
-                      </div>
+               ))}
+                  
                     </div>
                   </div>
                 </div>
