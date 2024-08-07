@@ -138,7 +138,6 @@ span.See select {
   gap: 14px;
 }
 
-
 .employer-inputfield.employerregister-field select {
   background: var(--Gray-6, #f2f2f2);
   border-radius: 10px;
@@ -146,7 +145,6 @@ span.See select {
   width: 100%;
   padding: 16px 20px;
 }
-
 
 .KABC-btn-box-ah {
   width: 18%;
@@ -2795,6 +2793,11 @@ header.header_main {
   cursor: pointer;
 }
 
+.header--end--logo {
+  display: flex;
+  align-items: start;
+}
+
 .login-btn {
   color: #194d79;
   text-align: center;
@@ -4299,10 +4302,10 @@ section.your-journalism-sec {
 
 .your-journalism-txt h3 {
   font-family: "Public Sans", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 38px;
   color: #000;
   padding: 0px 20px 0px 0px;
 }
@@ -4344,8 +4347,6 @@ section.your-journalism-sec {
   line-height: 26px;
   height: 170px;
 }
-
-
 
 .journalism-slider .slick-dots {
   text-align: left;
@@ -10628,12 +10629,13 @@ span.See select:focus {
 /************* Rate My Station Message Page CSS Start *************/
 
 .ratemystation_chatbox {
-  padding: 60px 0px 0px 0px;
+  padding: 60px 0px 60px 0px;
 }
 
 .messages_pg_box {
     background: #ffffff;
     border-radius: 20px;
+    height: 100vh;
 }
 
 .rate_chatbox_left {
@@ -10658,6 +10660,7 @@ span.See select:focus {
   background: #F2F2F2;
   border: none;
   border-radius: 10px;
+  margin: 0px 0px 10px 0px;
 }
 
 .chatbox_message_search {
@@ -10739,7 +10742,7 @@ span.See select:focus {
 .message_chat_sendbox {
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 15px;
 }
 
 .message_chat_sendbox button {
@@ -10846,10 +10849,8 @@ span.See select:focus {
   height: 20px;
 }
 
-.chattype_fixed {
-  position: fixed;
-  width: 42%;
-  bottom: 150px;
+.chat_right_txt ul {
+  height: 72vh;
 }
 hr.padding-hr {margin-top: 14px;}
 .journalism-slider h5 {
@@ -10860,6 +10861,37 @@ hr.padding-hr {margin-top: 14px;}
   height: 12vh;
 }
 
+.message-list {
+  height: 810px;
+}
+
+.chat_right_txt ul::-webkit-scrollbar {
+    width: 4px;
+  }
+
+
+  .chat_right_txt ul::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .chat_right_txt ul::-webkit-scrollbar-thumb {
+    background: #89c400; 
+  }
+
+  .message-list::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+
+  .message-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  .message-list::-webkit-scrollbar-thumb {
+    background: #89c400; 
+  }
+
+
 .journalism-slider h5::after {
   content: '...';
   display: inline;
@@ -10869,6 +10901,7 @@ hr.padding-hr {margin-top: 14px;}
 
 
 @media screen and (max-width: 1600px) {
+  
   .ahd-card-body-start {
     padding: 30px 20px;
 }
@@ -10899,15 +10932,34 @@ hr.padding-hr {margin-top: 14px;}
   }
 }
 
-
-@media screen and (max-width: 1440px) {
-  .chattype_fixed {
-    width: 56%;
-    
-  }
-}
-
 @media screen and (max-width: 1366px) {
+
+  .chat_right_txt ul {
+
+    overflow-y: scroll;
+  }
+
+  .message-item .name {
+    font-size: 14px;
+  }
+
+  .rate_chatbox_left {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .message-item .message {
+    font-size: 11px;
+  }
+
+  .message-item {
+    margin: 20px 10px 0px 0px;
+  }
+
+
+  .message-list {
+    height: 75vh;
+    overflow-y: scroll;
+  }
 
   .contact-follow-like-btn ul li {
     padding: 19px 41px 19px 39px;
@@ -10963,11 +11015,6 @@ hr.padding-hr {margin-top: 14px;}
 
   .search-stations-input input::placeholder {
     font-size: 18px;
-  }
-
-  .chattype_fixed {
-    width: 50%;
-    bottom: 20px;
   }
 
   .news-director-current {
@@ -11242,7 +11289,10 @@ hr.padding-hr {margin-top: 14px;}
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
+  .chat_right_txt ul {
+    overflow-y: scroll;
+  }
 
   .employer-dont-have-acc {
     margin: 0px 0px 20px 25px;
@@ -11261,6 +11311,9 @@ hr.padding-hr {margin-top: 14px;}
     width: 260px;
   }
 
+  .d-flex.faq--work--card--info.align-items-center p {
+    font-size: 11px;
+}
   .newsletter-article-search span {
     top: 36px;
 }

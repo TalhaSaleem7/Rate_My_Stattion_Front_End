@@ -19,7 +19,7 @@ const Notifications = () => {
         const Sender_Idd= localStorage.getItem('userData')
           const sender_user_id= JSON.parse(Sender_Idd)
 
-          setuserId(sender_user_id.id)
+          setuserId(sender_user_id)
 
     })
 
@@ -44,6 +44,8 @@ socketRef.current.on('new_notification', (message) => {
       text: message.text,
       isRead: false,
     };
+
+    
     setNotifications((prevNotifications) => [notification, ...prevNotifications]);
     setUnreadCount((prevCount) => prevCount + 1);
   });

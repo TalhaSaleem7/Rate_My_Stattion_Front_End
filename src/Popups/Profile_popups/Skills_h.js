@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const SkillsForm = ({ onSuccess,onCancel }) => {
+const SkillsForm = ({ onSuccess , onCancel }) => {
 
   const [error, setError] = useState('');
 
@@ -49,6 +49,8 @@ const SkillsForm = ({ onSuccess,onCancel }) => {
       
       localStorage.setItem('skillData', JSON.stringify(response.data.data));
       toast.success("Skill Saved successfully");
+      onSuccess()
+      console.log('result' , response);
       // Optionally, clear the form or redirect the user
     } catch (err) {
       console.error('Error:', err);
