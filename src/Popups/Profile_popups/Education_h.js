@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { Navigate, useNavigate } from 'react-router-dom';
 // import { abort } from "process";
-const EducationForm = ({onCancel }) => {
+const EducationForm = ({onCancel , onSuccess }) => {
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     school: "",
@@ -70,6 +70,11 @@ const EducationForm = ({onCancel }) => {
         description,
       
       });
+
+
+      localStorage.setItem('educationData', JSON.stringify(response.data.data));
+      
+      onSuccess()
       
       toast.success("Education Saved successfully");
       setError('');

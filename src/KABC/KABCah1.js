@@ -53,8 +53,10 @@ const Kabcah1 = () => {
   const [aboutContent, setAboutContent] = useState("");
   const [experienceContent, setExperinceContent] = useState("");
 
-  const [skillContent, setSkillContent] = useState("");
-  const [educationContent, setEducationContent] = useState("");
+  const [skillContent, setSkillContent] = useState([]);
+  // const [educationContent, setEducationContent] = useState([]);
+
+  const [educationContent, setEducationContent] = useState([]);
 
   useEffect(() => {
     // Retrieve user data from local storage
@@ -113,11 +115,21 @@ const Kabcah1 = () => {
     console.log("here", aboutContent);
   };
   const getSkills = () => {
-    console.log("achiveo");
+    console.log("achiveoaa");
     const storedUserskills = localStorage.getItem("skillData");
     const Skill = JSON.parse(storedUserskills);
 
     setSkillContent(Skill);
+    console.log("here", experienceContent);
+  };
+
+
+  const getEdu = () => {
+    console.log("achiveoaa");
+    const storedUsereducation = localStorage.getItem("educationData");
+    const Educate = JSON.parse(storedUsereducation);
+
+    setEducationContent(Educate);
     console.log("here", experienceContent);
   };
 
@@ -257,10 +269,12 @@ const Kabcah1 = () => {
                           />
                         )}
                         {selectedOption === "skill" && (
-                          <Skill onCancel={closePopup} />
+                          <Skill onCancel={closePopup} 
+                          onSuccess={getSkills}
+                          />
                         )}
                         {selectedOption === "education" && (
-                          <Education onCancel={closePopup} />
+                          <Education onCancel={closePopup} onSuccess={getEdu} />
                         )}
                         {selectedOption === "about" && (
                           <Abouth
@@ -329,7 +343,7 @@ const Kabcah1 = () => {
                       />
                       <Experianceah1 experienceContent={experienceContent} />
                       <Skillsah1 skillContent={skillContent} />
-                      <Educationah1 />
+                      <Educationah1  educationContent={educationContent} />
                     </div>
 
                     <div class="About-main-box-2-ah">
