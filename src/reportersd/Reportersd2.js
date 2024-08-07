@@ -36,8 +36,8 @@ const Reportersd2 = () => {
   };
   return (
     <>
-      {stationratings.map((data) => {
-        return (
+      {stationratings.length > 0 ? (
+        stationratings.map((data) => (
           <div class="latest-rating-box">
             <div class="latest-rating-user-verified">
               <div class="rating-user-box">
@@ -351,8 +351,10 @@ const Reportersd2 = () => {
               </div>
             </div>
           </div>
-        );
-      })}
+        ))
+      ) : (
+        <h1>No Ratings Available</h1>
+      )}
     </>
   );
 };
