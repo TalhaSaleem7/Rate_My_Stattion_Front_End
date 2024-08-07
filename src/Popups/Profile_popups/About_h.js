@@ -2,6 +2,9 @@ import { useState } from "react";
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from "axios";
 import { baseurl } from "../../baseurl";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Abouth = ({onSuccess, onCancel,ts}) => {
   const [aboutContent, setAboutContent] = useState("");
 
@@ -25,11 +28,14 @@ const Abouth = ({onSuccess, onCancel,ts}) => {
         about:aboutContent,
         userId
       });
+
       localStorage.setItem('userData', JSON.stringify(response.data.user)); 
       console.log('Form submitted successfully:', response.data);
       onSuccess();
+
     } catch (error) {
       console.error('Error submitting form:', error);
+
     }
   };
 

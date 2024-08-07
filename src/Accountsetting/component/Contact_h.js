@@ -70,7 +70,8 @@ const handleCancel = () => {
       });
       
       console.log('Form submitted successfully:', response.data);
-      toast.success(response.data);
+      toast.success("Contact Saved successfully");
+
     } catch (error) {
       setError(error)
       console.error('Error submitting form:', error);
@@ -83,18 +84,7 @@ const handleCancel = () => {
     <>
       <h1 className="account-setting-right-title">Contact Info</h1>
       <div className="col-12 mb-3 mt-1">
-      <ToastContainer
-position="top-right"
-autoClose={1000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
-/>
+      <ToastContainer/>
 
         <label htmlFor="inputProfile" className="form-label form-label-alt">
           Phone

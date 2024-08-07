@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { baseurl } from "../../baseurl";
 import axios from 'axios';
-import { Alert } from 'react-bootstrap';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const SkillsForm = ({ onSuccess,onCancel }) => {
 
-  const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
   const [formData, setFormData] = useState({
@@ -45,16 +46,13 @@ const SkillsForm = ({ onSuccess,onCancel }) => {
         description,
         userId
       });
-
+      
       localStorage.setItem('skillData', JSON.stringify(response.data.data));
-      onSuccess()
-
-      setMessage('Form submitted successfully');
-      setError('');
-
+      toast.success("Skill Saved successfully");
       // Optionally, clear the form or redirect the user
     } catch (err) {
       console.error('Error:', err);
+      toast.error ("All fields are required", err);
       setError('Server Error');
     }
   };
@@ -62,9 +60,7 @@ const SkillsForm = ({ onSuccess,onCancel }) => {
 
   return (
     <div className="container">
-      {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
-
+              <ToastContainer/>
       <div className="my--container--h mx-auto">
         <div className="row">
           <div className="col">

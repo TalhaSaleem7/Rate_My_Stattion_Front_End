@@ -4,10 +4,12 @@ import React, { useState } from "react";
 import { baseurl } from "../../baseurl";
 import "react-datepicker/dist/react-datepicker.css";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Navigate, useNavigate } from 'react-router-dom';
 // import { abort } from "process";
 const EducationForm = ({onCancel }) => {
-  const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     school: "",
@@ -69,12 +71,12 @@ const EducationForm = ({onCancel }) => {
       
       });
       
-
-      setMessage('Form submitted successfully');
+      toast.success("Education Saved successfully");
       setError('');
       // Optionally, clear the form or redirect the user
     } catch (err) {
       console.error("Error:", err);
+      toast.error("All fields are required", err);
       setError("Server Error");
     }
   };
@@ -106,8 +108,7 @@ const EducationForm = ({onCancel }) => {
 
   return (
     <div className="container">
-      {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
+      <ToastContainer/>
 
       <div className="my--container--h mx-auto">
         <div className="row">

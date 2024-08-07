@@ -309,10 +309,12 @@ import { Alert } from 'react-bootstrap';
 import Buttonh from "../../Accountsetting/component/savecnclbtn_h";
 import axios from 'axios';
 import { baseurl } from '../../baseurl';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function ExperienceForm({onSuccess , onCancel}) {
 
-  const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
   // State variables for form fields
@@ -386,19 +388,18 @@ function ExperienceForm({onSuccess , onCancel}) {
       localStorage.setItem('experienceData', JSON.stringify(response.data.data));
 
       onSuccess()
-      setMessage('Form submitted successfully');
+      toast.success("Profile Saved successfully");
+
       setError(''); 
-      // const data = await response.json();
-      // console.log('Success:', data);
     } catch (error) {
       console.error('Error:', error);
+      toast.error('All Fields are required', error);
     }
   };
 
   return (
     <div className="container">
-       {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
+               <ToastContainer/>
 
       <div className="my--container--h mx-auto">
         <div className="row">

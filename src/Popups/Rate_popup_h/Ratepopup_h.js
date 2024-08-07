@@ -453,13 +453,7 @@ const RateThisProd = ({ close }) => {
     }
   };
 
-  const onStarClick = (nextValue) => {
-    setRating(nextValue);
-    setFormData((prevData) => ({
-      ...prevData,
-      rating: nextValue
-    }));
-  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
