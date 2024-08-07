@@ -25,7 +25,8 @@ const Reportersd2 = () => {
     try {
       const response = await axios.get(`${baseurl}/getratings/${userId}`);
       const ratings = response.data.ratings;
-      console.log("ahtisahm", response.data);
+
+      console.log("ahtisahm", response.data.ratings);
       setStationRatings(ratings);
 
       console.log("hamza", stationratings);

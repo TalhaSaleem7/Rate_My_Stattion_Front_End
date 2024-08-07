@@ -33,17 +33,22 @@ const Cooperah1 = () => {
        
     }, []);
 
-
+// SAHI
     const fetchProduct = async (productId) => {
       const id = localStorage.getItem('productId', productId);
 
       try {
           const response = await axios.get(`${baseurl}/productdetails/${id}`);
+        //   const response = await axios.get(`${baseurl}/getproducts/${id}`);
+        
           setProduct(response.data);
       } catch (error) {
           console.error('Error fetching product:', error);
       }
   };
+
+
+
     // Function to add product to cart
     const addToCart = async (product) => {
         const storedUser = getUserFromLocalStorage();

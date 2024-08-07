@@ -55,7 +55,10 @@ const Sweatshirtah = () => {
 
   const fetchproductdata = async (productId) => {
     try {
+      // SAHI
       const response = await axios.get(`${baseurl}/productdetails/${productId}`);
+      // const response = await axios.get(`${baseurl}/getproducts/${productId}`);
+
 
       setProduct(response.data)
     } catch (error) {
