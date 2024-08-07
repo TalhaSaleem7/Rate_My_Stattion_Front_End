@@ -3,18 +3,14 @@ import React, { useEffect, useState } from "react";
 import { baseurl } from "../baseurl";
 
 const Station = () => {
-
-
-  const [countratings, setCountRatings] = useState({});
+  const [rating, setRating] = useState([]);
+  const total = rating[1] + rating[2] + rating[3] + rating[4] + rating[5];
 
   useEffect(() => {
     // Retrieve user data from local storage
     const storedUser = localStorage.getItem("userData");
     if (storedUser) {
       const user = JSON.parse(storedUser);
-      console.log(user);
-      // setUser(user)
-
       fetchUserData(user.id);
     }
   }, []);
@@ -22,11 +18,8 @@ const Station = () => {
   const fetchUserData = async (userId) => {
     try {
       const response = await axios.get(`${baseurl}/getratings/${userId}`);
-      const ratings = response.data.counts;
-      console.log("ahtisahm", response.data);
-      setCountRatings(ratings);
-
-      console.log("hamza", countratings);
+      const count = response.data.counts;
+      setRating(count);
     } catch (error) {
       console.error("Error fetching user data:", error);
     }
@@ -44,7 +37,7 @@ const Station = () => {
               <h2>4.8</h2>
               <p>/5.0</p>
             </span>
-            <h3>From 45 ratings</h3>
+            <h3>From {total} ratings</h3>
           </div>
 
           <div class="ratings-ah-1-bar width-hell">
@@ -53,10 +46,10 @@ const Station = () => {
               <div class="w3-light-grey w3-tiny">
                 <div
                   class="w3-container w3-green"
-                  style={{ width: "80%" }}
+                  style={{ width: `${(rating[5] / total) * 100}%` }}
                 ></div>
               </div>
-              <p>{`countratings.5`}</p>
+              <p>{rating[5]}</p>
             </div>
 
             <div class="scrllo-bar">
@@ -64,10 +57,10 @@ const Station = () => {
               <div class="w3-light-grey w3-tiny">
                 <div
                   class="w3-container w3-green"
-                  style={{ width: "60%" }}
+                  style={{ width: `${(rating[4] / total) * 100}%` }}
                 ></div>
               </div>
-              <p>5</p>
+              <p>{rating[4]}</p>
             </div>
 
             <div class="scrllo-bar">
@@ -75,10 +68,10 @@ const Station = () => {
               <div class="w3-light-grey w3-tiny">
                 <div
                   class="w3-container w3-green"
-                  style={{ width: "40%" }}
+                  style={{ width: `${(rating[3] / total) * 100}%` }}
                 ></div>
               </div>
-              <p>2</p>
+              <p>{rating[3]}</p>
             </div>
 
             <div class="scrllo-bar">
@@ -86,10 +79,10 @@ const Station = () => {
               <div class="w3-light-grey w3-tiny">
                 <div
                   class="w3-container w3-green"
-                  style={{ width: "25%" }}
+                  style={{ width: `${(rating[2] / total) * 100}%` }}
                 ></div>
               </div>
-              <p>2</p>
+              <p>{rating[2]}</p>
             </div>
 
             <div class="scrllo-bar">
@@ -97,10 +90,10 @@ const Station = () => {
               <div class="w3-light-grey w3-tiny">
                 <div
                   class="w3-container w3-green"
-                  style={{ width: "10%" }}
+                  style={{ width: `${(rating[1] / total) * 100}%` }}
                 ></div>
               </div>
-              <p>1</p>
+              <p>{rating[1]}</p>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { baseurl } from "../../baseurl";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const NewsDirectorForm = ({ closePopup }) => {
+const NewsDirectorForm = ({ onCancel }) => {
   const [imageurl, setImage] = useState('');
   const [isImagedisplay, setImagedisplay] = useState('');
 
@@ -75,7 +75,7 @@ const NewsDirectorForm = ({ closePopup }) => {
                 </h1>
                 <div class="experience--close--h">
                   <img src={require("../../img/Union_h.png")}
-                    onClick={closePopup} alt="close" />
+                    onClick={onCancel} alt="close" />
                 </div>
               </div>
               <div className="col-lg-8">
@@ -141,7 +141,7 @@ const NewsDirectorForm = ({ closePopup }) => {
                   </button>
                   <button
                     type="button"
-                    className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2" onClick={closePopup}>Cancel</button>
+                    className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2" onClick={onCancel}>Cancel</button>
                 </div>
               </form>
             </div>
