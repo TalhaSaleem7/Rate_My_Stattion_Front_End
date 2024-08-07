@@ -7,7 +7,9 @@ import { baseurl } from "../baseurl";
 import Educations from '../Popups/Profile_popups/Education_h';
 import { Modal } from "react-bootstrap";
 
-const Educationah1 = () => {
+const Educationah1 = ({educationContent}) => {
+
+    console.log('edu', educationContent)
 
 
     const [educationData, setEducationData] = useState([]);
@@ -37,6 +39,8 @@ const Educationah1 = () => {
         setShowModal(false);
     };
 
+
+        const newdata = educationContent && educationContent.length > 0 ? educationContent : educationData
 
     return (
 
@@ -73,7 +77,7 @@ const Educationah1 = () => {
                 </span>
 
                 <div className="Education-ah-boxing">
-                    {educationData.map((education, index) => (
+                    {newdata.map((education, index) => (
                         <div key={index} className="Education-card-ah">
                             <div className="Education-logo-side">
                                 <div className="Education-logo">

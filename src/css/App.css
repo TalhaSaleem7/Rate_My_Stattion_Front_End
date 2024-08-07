@@ -10850,7 +10850,7 @@ span.See select:focus {
 }
 
 .chat_right_txt ul {
-  height: 800px;
+  height: 72vh;
 }
 hr.padding-hr {margin-top: 14px;}
 .journalism-slider h5 {
@@ -10935,7 +10935,7 @@ hr.padding-hr {margin-top: 14px;}
 @media screen and (max-width: 1366px) {
 
   .chat_right_txt ul {
-    height: 430px;
+
     overflow-y: scroll;
   }
 
@@ -11291,7 +11291,6 @@ hr.padding-hr {margin-top: 14px;}
 
 @media screen and (max-width: 1280px) {
   .chat_right_txt ul {
-    height: 520px;
     overflow-y: scroll;
   }
 

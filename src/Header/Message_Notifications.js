@@ -44,6 +44,8 @@ socketRef.current.on('new_notification', (message) => {
       text: message.text,
       isRead: false,
     };
+
+    
     setNotifications((prevNotifications) => [notification, ...prevNotifications]);
     setUnreadCount((prevCount) => prevCount + 1);
   });
