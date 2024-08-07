@@ -34,7 +34,7 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
     const Reciever_Id = localStorage.getItem('Reciever_Id')
     console.log(sender_user_id, "HS", Reciever_Id)
 
-    setSenderId(sender_user_id.id)
+    setSenderId(sender_user_id)
     setReceiverId(Reciever_Id)
   })
 

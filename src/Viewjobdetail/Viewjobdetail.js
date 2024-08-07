@@ -18,6 +18,7 @@ import Header from "../Header/Header";
 import Footerah from "../footerah/Footerah";
 import axios from "axios";
 import { baseurl } from "../baseurl";
+import Header1 from "../Header/Header2";
 
 const Viewjobdetail = () => {
   const navigate = useNavigate();
@@ -137,7 +138,7 @@ const fetchJobData = async (id) => {
 
   return (
     <>
-      <Header />
+      <Header1 />
       <section className="view-job-detail-sec">
         <Container>
           <Row>

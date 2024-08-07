@@ -3,11 +3,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 import CreditCardImage from "../img/credit-subscription.jpg";
 import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
+import Header1 from '../Header/Header2';
 
 const SubcriptionPage = () => {
   return (
     <>
-    <Header/>
+    <Header1/>
       <div className="subcription-page-sec">
         <Container>
           <Row>
