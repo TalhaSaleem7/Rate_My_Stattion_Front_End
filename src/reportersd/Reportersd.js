@@ -18,9 +18,20 @@ const Reportersd = () => {
     
   }, []);
 
+
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+
   const fetchUserData = async () => {
+
+    const storedUser = getUserFromLocalStorage();
+    const  userId = storedUser.id
+    
     try {
-      const response = await axios.get(`${baseurl}/getrallatings`);
+      const response = await axios.get(`${baseurl}/getratingsbyuser/${userId}`);
       const ratings = response.data.ratings;
 
       console.log("ahtisahm", response.data.ratings);

@@ -31,6 +31,13 @@ const EducationForm = ({onCancel , onSuccess }) => {
   };  
 
 
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const {
@@ -58,6 +65,8 @@ const EducationForm = ({onCancel , onSuccess }) => {
       return;
     }
 
+    
+    const storedData = getUserFromLocalStorage();
     try {
       const response = await axios.post(`${baseurl}/EducationPopup`, {
         school,
@@ -68,6 +77,7 @@ const EducationForm = ({onCancel , onSuccess }) => {
         endMonth,
         endYear,
         description,
+        userId:storedData.id
       
       });
 

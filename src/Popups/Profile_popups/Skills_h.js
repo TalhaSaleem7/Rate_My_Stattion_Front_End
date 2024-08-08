@@ -54,7 +54,7 @@ const SkillsForm = ({ onSuccess , onCancel }) => {
       // Optionally, clear the form or redirect the user
     } catch (err) {
       console.error('Error:', err);
-      toast.error ("All fields are required", err);
+   
       setError('Server Error');
     }
   };

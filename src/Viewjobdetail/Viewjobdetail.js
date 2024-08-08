@@ -105,7 +105,7 @@ const fetchJobData = async (id) => {
       
       const response = await axios.post(`${baseurl}/appliedjob ` , { jobid  , userId});
     
-
+      fetchJobData(jobid)
       toast.success('Applied to Job!');
 
     } catch (error) {
@@ -131,7 +131,8 @@ const fetchJobData = async (id) => {
 
       
       const response = await axios.post(`${baseurl}/savejob ` , { jobid  , userId});
-      
+      fetchJobData(jobid)
+      toast.success('Applied to Job!');
 
       
     } catch (error) {
@@ -145,6 +146,7 @@ const fetchJobData = async (id) => {
     <>
       <Header1 />
       <section className="view-job-detail-sec">
+      <ToastContainer />
         <Container>
           <Row>
             <Col lg={12}>
@@ -195,7 +197,7 @@ const fetchJobData = async (id) => {
                         </a>
                         :
 
-                        <a  onClick={saveJob}>
+                        <a  onClick={saveJob} style={{cursor:"pointer"}} >
                           
                         <RiBookmarkFill  /> Save
                       </a>

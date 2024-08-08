@@ -15,13 +15,13 @@ const Notifications = () => {
 
   
   
-  // useEffect(()=>{
-  //       const Sender_Idd= localStorage.getItem('userData')
-  //         const sender_user_id= JSON.parse(Sender_Idd)
+//   useEffect(()=>{
+//         const Sender_Idd= localStorage.getItem('userData')
+//           const sender_user_id= JSON.parse(Sender_Idd)
 
-  //         setuserId(sender_user_id)
+//           setuserId(sender_user_id)
 
-  //   })
+//     })
 
 //   useEffect(() => {
 //     // Set up Socket.IO connection

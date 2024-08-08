@@ -13,11 +13,20 @@ const Skillsah1 = ({skillContent}) => {
     console.log('skill' , skillContent)
 
     const [SkillData, setSkillData] = useState([]);
+
+
+    const getUserFromLocalStorage = () => {
+        const user = localStorage.getItem('userData');
+        return user ? JSON.parse(user) : null;
+      };
+
     useEffect(() => {
         // Fetch data from the backend when the component mounts    
         const fetchData = async () => {
+            const storedData = getUserFromLocalStorage();
+            const userId = storedData.id;
             try {
-                const response = await axios.get(`${baseurl}/skilldata`);
+                const response = await axios.get(`${baseurl}/skilldata/${userId}`);
                 setSkillData(response.data); // Set the fetched data to state
 
                
