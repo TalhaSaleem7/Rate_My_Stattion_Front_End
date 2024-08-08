@@ -668,9 +668,7 @@ const Kabcah1 = () => {
                     <div class="About-main-box-1-ah">
                       <Filter />
                       <Scheduleah />
-                      <Scheduleah />
-                      <Scheduleah />
-                      <Scheduleah />
+                      
                     </div>
 
                     <div class="About-main-box-2-ah">

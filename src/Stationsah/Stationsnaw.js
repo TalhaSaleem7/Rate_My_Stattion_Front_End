@@ -20,6 +20,8 @@ const Stationsnaw = () => {
 
 
     const [savedJob, setsavedJob] = useState([]);
+    const [savedArticle, setarticleJob] = useState([]);
+
 
 
     const calculateHoursAgo = (createdAt) => {
@@ -41,6 +43,10 @@ const Stationsnaw = () => {
           // setUser(user)  
     
           fetchUserData(user.id);
+          fetchArticleData(user.id);
+
+
+
     
         }
       }, []);
@@ -50,6 +56,19 @@ const Stationsnaw = () => {
           const response = await axios.get(`${baseurl}/getsavejobs/${userId}`);
           console.log('ahtisahm' , response.data)
           setsavedJob(response.data)
+         
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+        }
+      };
+
+
+
+      const fetchArticleData = async (userId) => {
+        try {
+          const response = await axios.get(`${baseurl}/getsavearticles/${userId}`);
+          console.log('ahtisahmxxx' , response.data)
+          setarticleJob(response.data)
          
         } catch (error) {
           console.error('Error fetching user data:', error);
