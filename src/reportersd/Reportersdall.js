@@ -6,7 +6,7 @@ import reviewdirectorimg from "../img/review-director-img.png";
 import { baseurl } from "../baseurl";
 import axios from "axios";
 
-const Reportersd = () => {
+const Reportersdall = () => {
   const [stationratings, setStationRatings] = useState([]);
 
   useEffect(() => {
@@ -19,19 +19,16 @@ const Reportersd = () => {
   }, []);
 
 
-  const getUserFromLocalStorage = () => {
-    const user = localStorage.getItem('userData');
-    return user ? JSON.parse(user) : null;
-  };
+  
 
 
   const fetchUserData = async () => {
 
-    const storedUser = getUserFromLocalStorage();
-    const  userId = storedUser.id
+    
+   
     
     try {
-      const response = await axios.get(`${baseurl}/getratingsbyuser/${userId}`);
+      const response = await axios.get(`${baseurl}/getrallatings`);
       const ratings = response.data.ratings;
 
       console.log("ahtisahm", response.data.ratings);
@@ -304,4 +301,4 @@ const Reportersd = () => {
   );
 };
 
-export default Reportersd;
+export default Reportersdall;

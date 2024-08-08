@@ -167,7 +167,7 @@ const KABC2 = () => {
 
   const fetchJobsData = async () => {
     const id = localStorage.getItem("jobgetId");
-
+    setjobContent([]);
     try {
       const response = await axios.get(`${baseurl}/jobbyjobid/${id}`);
       console.log("xxxxx", response.data[0].Job);
@@ -625,7 +625,7 @@ const KABC2 = () => {
 
                         <Filter />
 
-                        <Jobah jobContent={jobContent} />
+                        <Jobah jobContent={jobContent}  onSuccess={fetchJobsData} />
                       </div>
                     </div>
                   </Container>

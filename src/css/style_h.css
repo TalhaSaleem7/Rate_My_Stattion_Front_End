@@ -458,6 +458,8 @@ Account Setting
 
 .account--setting--right--h .subscribe {
   font-size: var(--font-size-16);
+  cursor: pointer;
+  text-decoration-line: underline;
 }
 
 .tabcontent {
@@ -2352,7 +2354,7 @@ Media Query
     max-width: 460px;
   }
   .account--profile--img--h--cont {
-    width: 140px;
+    width: 100px;
   }
   .job-card--cont--alt--h--2 {
     flex-direction: column;

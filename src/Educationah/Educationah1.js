@@ -17,8 +17,13 @@ const Educationah1 = ({educationContent}) => {
     useEffect(() => {
         // Fetch data from the backend when the component mounts
         const fetchData = async () => {
+
+            const storedData = getUserFromLocalStorage();
+           
+            const userId = storedData.id
+            
             try {
-                const response = await axios.get(`${baseurl}/educationdata`);
+                const response = await axios.get(`${baseurl}/educationdata/${userId}`);
                 setEducationData(response.data); // Set the fetched data to state
             } catch (error) {
                 console.error("Error fetching education data:", error);
@@ -27,6 +32,12 @@ const Educationah1 = ({educationContent}) => {
 
         fetchData();
     }, []);
+
+    const getUserFromLocalStorage = () => {
+        const user = localStorage.getItem('userData');
+        return user ? JSON.parse(user) : null;
+      };
+    
 
 
     const [showModal, setShowModal] = useState(false);

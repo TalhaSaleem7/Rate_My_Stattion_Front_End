@@ -2248,6 +2248,7 @@ button.change-red {
 
 .Schedule-ah-imger img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .Schedule-ah-list-1 {
@@ -6395,6 +6396,7 @@ section.director-search-result hr {
 
 .americon-prod-cart img {
   width: 142.488px;
+  padding: 0px 20px 0px 0px;
 }
 
 .cart-counter {
@@ -6427,6 +6429,7 @@ section.director-search-result hr {
   line-height: 30.5px;
   margin: 0px;
   width: 210px;
+  text-transform: capitalize;
 }
 
 .cart-counter span {
@@ -6445,6 +6448,7 @@ section.director-search-result hr {
   font-style: normal;
   font-weight: 600;
   line-height: 31px;
+  padding: 0px 0px 0px 10px;
 }
 
 .mycart-order-summary {
@@ -6711,6 +6715,7 @@ section.employer-login-pg-sec {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
+  display: inline-block;
 }
 
 .employer-dont-have-acc a span {
@@ -11606,6 +11611,10 @@ section.ratemystation-shop-sec {
 
 .About-main-card-1-ah h2 {
   padding: 0px 0px 20px 0px;
+}
+
+.more-class {
+  padding: 0px 0px 0px 40px;
 }
 
 .Job-list-1-ah span h2 {

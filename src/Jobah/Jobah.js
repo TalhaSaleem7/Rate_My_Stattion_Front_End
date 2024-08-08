@@ -11,8 +11,9 @@ import { differenceInMonths, parseISO } from 'date-fns';
 import { baseurl } from "../baseurl";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 
-const Jobah= ({jobContent})=>{
+const Jobah= ({jobContent , onSuccess})=>{
     console.log('jobContentsss' , jobContent)
 
     const navigate= useNavigate()
@@ -39,8 +40,9 @@ const Jobah= ({jobContent})=>{
         console.log('hhhh' , job_id)
         try {
           const response = await axios.post(`${baseurl}/declinejob`, {job_id });
+          toast.success('Incoming Request Rejected');
           
-    
+          onSuccess()
          
         } catch (error) {
           
@@ -65,10 +67,13 @@ return(
 
     <>
         
+        <ToastContainer />
        
         <div class="Jacob-card-ah-box">
 
-        {jobContent.map((job, index) => (                 
+        {jobContent
+        .filter(job => job.rejected !== 1)
+        .map((job, index) => (                 
 <div class="Jacob-card-ah">
     <div class="Director-ah-boxing">
         <div class="Director-ah-boxing-logo">
