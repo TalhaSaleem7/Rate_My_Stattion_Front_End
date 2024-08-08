@@ -132,10 +132,12 @@ const fetchJobData = async (id) => {
       
       const response = await axios.post(`${baseurl}/savejob ` , { jobid  , userId});
       
-
       
+      toast.success ('Job Saved!');
     } catch (error) {
       console.error('Error fetching user data:', error);
+      toast.error ('Erorr in Saving!' , error);
+      
     }
 
   }
@@ -145,6 +147,7 @@ const fetchJobData = async (id) => {
     <>
       <Header1 />
       <section className="view-job-detail-sec">
+        <ToastContainer/>
         <Container>
           <Row>
             <Col lg={12}>
