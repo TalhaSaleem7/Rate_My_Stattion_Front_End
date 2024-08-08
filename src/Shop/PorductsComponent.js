@@ -21,7 +21,7 @@ const ProductsComponent = ({ proddetail, handleButtonClick, BestsellerImage }) =
         const fetchProducts = async () => {
             try {
                 const response = await axios.get(`${baseurl}/getproducts`); // Update this with your API endpoint
-                const formattedProducts = response.data.product.result.map(product => ({
+                const formattedProducts = response.data.product.map(product => ({
                     ...product,
                     price: parseFloat(product.price) // Convert to number if necessary
                 }));
@@ -48,7 +48,7 @@ const ProductsComponent = ({ proddetail, handleButtonClick, BestsellerImage }) =
                                 <img className="prod-abslt-ratems" src={BestsellerImage} alt="Bestseller" />
                                 <div className="ratemystation-prod-txt">
                                     <h3>{product.name}</h3>
-                                    <h6>${product.price.toFixed(2)}</h6>
+                                    <h6>${product.price}</h6>
                                     <div className="ratemystation-prod-btn">
                                         <button onClick={() => proddetail(product.id)} variant="light" className="prod-light-btn">View Details</button>
                                         <button onClick={() => handleButtonClick(product)} variant="dark" className="prod-dark-btn">Add to cart</button>

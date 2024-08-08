@@ -48,12 +48,39 @@ const KABC2 = () => {
   const navigate = useNavigate();
   const usersetting = () => navigate("/accountsettingh");
   const [userdata, setUser] = useState({});
-  const [aboutsdata, setAboutsUser] = useState({});
+  const [aboutsdatas, setAboutsUser] = useState({});
   const [directordata, setdirectorsUser] = useState({});
   const [awardsdata, setawardsUser] = useState({});
   const [showrequest, setShowrequest] = useState(false);
   const [jobContent, setjobContent] = useState([]);
   const [jobData, setjobData] = useState({});
+  const [error, setError] = useState(null);
+
+  const [ContactData, setContactData] = useState([]);
+
+  const [aboutData, setAboutData] = useState();
+  const getUserFromLocalStorage = () => {
+    const user = localStorage.getItem('userData');
+    return user ? JSON.parse(user) : null;
+  };
+
+  // useEffect(() => {
+  //   const fetchAboutData = async () => {
+  //     try {
+  //       const storedUser = getUserFromLocalStorage();
+  //       if (storedUser) {
+  //         const userId = storedUser.id;
+  //         const response = await axios.get(`${baseurl}/getabout/${userId}`);
+  //         setAboutData(response.data);
+  //       }
+  //     } catch (err) {
+  //       setError(err.message);
+  //     }
+  //   };
+
+  //   fetchAboutData();
+  // }, []);
+
 
   useEffect(() => {
     // Retrieve user data from local storage
@@ -62,12 +89,15 @@ const KABC2 = () => {
       const user = JSON.parse(storedUser);
       console.log(user, userdata);
       // setUser(user)
-
+      
       fetchUserData(user.id);
-
-
+    fetchContactData();
     }
   }, []);
+
+
+
+
 
   const fetchUserData = async (userId) => {
     try {
@@ -78,14 +108,30 @@ const KABC2 = () => {
       console.error("Error fetching user data:", error);
     }
   };
+  
+
+  
+  const fetchContactData = async () => {
+    try {
+      const response = await axios.get(`${baseurl}/getcontacts`);
+      setContactData(response.data);
+    } catch (err) {
+      console.error("Error fetching Contact data:", err);
+    }
+  };
+
 
   const ongetabout = () => {
     console.log("here");
     const aboutUser = localStorage.getItem("aboutData");
     const alpha = JSON.parse(aboutUser);
     setAboutsUser(alpha);
-    console.log("done", aboutsdata, "alpha", alpha);
+    console.log("done", aboutsdatas, "alpha", alpha);
   };
+
+
+
+
 
   const ongetdirector = () => {
     console.log("director here");
@@ -115,6 +161,8 @@ const KABC2 = () => {
     setShowrequest(true);
 
     fetchJobsData();
+
+
   };
 
   const fetchJobsData = async () => {
@@ -151,21 +199,7 @@ const KABC2 = () => {
   };
 
  
-  const [ContactData, setContactData] = useState([]);
-
-  useEffect(() => {
-    const fetchContactData = async () => {
-      try {
-        const response = await axios.get(`${baseurl}/getcontacts`);
-        setContactData(response.data);
-      } catch (err) {
-        console.error("Error fetching Contact data:", err);
-      }
-    };
-
-    fetchContactData();
-  }, []);
-
+ 
   return (
     <>
       <Header1 />
@@ -273,7 +307,7 @@ const KABC2 = () => {
                       <Modal.Body>
                         {/* Render different components based on selected option */}
                         {selectedOption === "StationAboutPopup" && (
-                          <StationAboutPopup onCancel={handleClose} />
+                          <StationAboutPopup onCancel={handleClose} onSuccess={ongetabout} />
                         )}
                         {selectedOption === "Director" && (
                           <DirectorPopup onCancel={handleClose} />
@@ -341,7 +375,7 @@ const KABC2 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <About2 aboutsdata={aboutsdata} />
+                      <About2  aboutsdatas={aboutsdatas} />
                       <Dirctors2 directordata={directordata} />
                       <Award2 awardsdata={awardsdata} />
                       <Openings2 onSuccess={onFecth} />
