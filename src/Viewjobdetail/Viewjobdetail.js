@@ -135,8 +135,11 @@ const fetchJobData = async (id) => {
       toast.success('Applied to Job!');
 
       
+      toast.success ('Job Saved!');
     } catch (error) {
       console.error('Error fetching user data:', error);
+      toast.error ('Erorr in Saving!' , error);
+      
     }
 
   }
