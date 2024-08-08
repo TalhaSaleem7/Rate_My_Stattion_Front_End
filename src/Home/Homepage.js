@@ -37,6 +37,7 @@ import { baseurl } from '../baseurl';
 import Chat from '../Sockets/Chats_Components/Chat';
 import ProductsComponent from '../Shop/PorductsComponent';
 import ProductsLimitedComponent from '../Shop/ProductsLimitedComponent';
+import Reportersdall from '../reportersd/Reportersdall';
 
 export const Homepage = () => {
 
@@ -181,7 +182,7 @@ export const Homepage = () => {
             <Col lg={8}>
               <div className="latest-rating-txt">
                 <h3>Latest Ratings</h3>
-                <Reportersd />
+                <Reportersdall />
              
                 {/* <div className="latest-rating-loadmore-btn">
                   <a href="#">Load more</a>
