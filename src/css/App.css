@@ -277,7 +277,7 @@ section.About-ah {
   width: 100%;
   background-color: #fff;
   border-radius: 20px;
-  padding: 30px 50px;
+  padding: 30px 50px 50px 30px;
   filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.15));
 }
 
@@ -2509,6 +2509,7 @@ button.change-red {
 
 .America-ah-part-1 img {
   width: 100%;
+  padding: 0px 30px 0px 0px;
 }
 
 .America-ah-part-1 {
@@ -2535,6 +2536,7 @@ button.change-red {
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+  text-transform: capitalize;
 
 }
 
@@ -2658,8 +2660,7 @@ section.Sweatshirt-sec {
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
-
-  padding: 0px;
+  padding: 0px 0px 29px 0px;
 }
 
 .Description-box-tital a {
@@ -10734,7 +10735,6 @@ span.See select:focus {
   line-height: 33px;
 }   
 
-
 .chat-box-body-input {
     position: relative;
 }
@@ -10853,6 +10853,7 @@ span.See select:focus {
   height: 72vh;
 }
 hr.padding-hr {margin-top: 14px;}
+
 .journalism-slider h5 {
   overflow: hidden;
   display: -webkit-box;
@@ -11009,9 +11010,6 @@ hr.padding-hr {margin-top: 14px;}
     padding: 19px 41px 19px 39px;
   }
 
-  .journalism-img-txt {
-    height: 70vh;
-  }
 
   header.header_main {
     padding: 20px 0px 12px 0px;
@@ -11136,7 +11134,7 @@ hr.padding-hr {margin-top: 14px;}
 
   .looking-for-worktxt p {
     font-size: 20px;
-    width: 50%;
+
     line-height: 31.5px;
     margin: 20px 0px 20px 0px !important;
   }
@@ -11330,10 +11328,10 @@ hr.padding-hr {margin-top: 14px;}
 
 
 
-}
 
 
-@media screen and (max-width: 1366px) {
+
+
   .chat_right_txt ul {
     overflow-y: scroll;
   }
@@ -11709,6 +11707,31 @@ section.ah1 {
 .Employees-box-btn-icon button {
   padding: 10px 15px;
 }
+.header-logo {width: 100%;padding: 0px 44px 0px 0px;}
+
+.ratemystation-allprod-btn a {
+    padding: 10px 30px;
+    line-height: 18px;
+}
+
+.looking-for-worktxt p {
+    width: 54%;
+}
+
+.journalism-img-txt {
+    height: 60vh;
+}
+
+.your-journalism-img img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.latest-article-box img {
+    height: 65vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
 
 }
 
@@ -14315,13 +14338,6 @@ section.ratemystation-shop-sec h4 {
   .Award-a a {
     font-size: 16px;
   }
-
-  .satisfied button {
-    font-size: 15px;
-    line-height: 29px;
-    padding: 7px;
-  }
-
   .satisfied h3 {
     font-size: 17px;
     padding: 10px 0px 10px 0px;

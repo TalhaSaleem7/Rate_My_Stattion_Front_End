@@ -35,6 +35,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import axios from "axios";
 import { baseurl } from "../baseurl";
 import Abouth from "../Popups/Profile_popups/About_h";
+import Newslettersidesd from "../Newslettersidesecsd/Newslettersidesd";
 
 const Kabcah1 = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -360,9 +361,7 @@ const Kabcah1 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
-                        <Cardah />
-                        <Cardah />
+                      <Newslettersidesd />
                       </div>
                     </div>
                   </div>
@@ -389,8 +388,8 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-                        <Cardah2 />
-                        <Cardah2 />
+                        
+                 
                       </div>
 
                       <div class="About-main-box-2-tital-ah">
@@ -399,11 +398,9 @@ const Kabcah1 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
+                      <Newslettersidesd />
 
-                        <Cardah />
-
-                        <Cardah />
+                        
                       </div>
                     </div>
                   </div>
@@ -430,8 +427,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-                        <Cardah2 />
-                        <Cardah2 />
+                        
                       </div>
 
                       <div class="About-main-box-2-tital-ah">
@@ -440,9 +436,8 @@ const Kabcah1 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
-                        <Cardah />
-                        <Cardah />
+                      <Newslettersidesd />
+                      
                       </div>
                     </div>
                   </div>
@@ -656,8 +651,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-                        <Cardah2 />
-                        <Cardah2 />
+                        
                       </div>
                     </div>
                   </div>
@@ -674,9 +668,7 @@ const Kabcah1 = () => {
                     <div class="About-main-box-1-ah">
                       <Filter />
                       <Scheduleah />
-                      <Scheduleah />
-                      <Scheduleah />
-                      <Scheduleah />
+                      
                     </div>
 
                     <div class="About-main-box-2-ah">
@@ -687,8 +679,7 @@ const Kabcah1 = () => {
 
                       <div class="Recommend-box-ah   button-box">
                         <Cardah2 />
-                        <Cardah2 />
-                        <Cardah2 />
+                       
                       </div>
 
                       <div class="About-main-box-2-tital-ah">
@@ -697,11 +688,9 @@ const Kabcah1 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
+                      <Newslettersidesd />
 
-                        <Cardah />
-
-                        <Cardah />
+                       
                       </div>
                     </div>
                   </div>
@@ -735,11 +724,9 @@ const Kabcah1 = () => {
                       </div>
 
                       <div class="Recommend-box-ah">
-                        <Cardah />
+                      <Newslettersidesd />
 
-                        <Cardah />
-
-                        <Cardah />
+                       
                       </div>
                     </div>
                   </div>

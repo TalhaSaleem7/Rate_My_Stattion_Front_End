@@ -93,6 +93,34 @@ const NewsletterArticle = () => {
     try {
       const response = await axios.post(`${baseurl}/savecommnets`, { comments, userId, articleId });
       toast.success('Commnet post Sucessfully',);
+      fetchArticleData();
+     
+     
+
+    } catch (error) {
+      console.error("Login error:", error);
+      toast.error('Invalid username or password', error);
+
+    }
+  };
+
+
+
+  const handleSubscribed = async (e) => {
+    const currentuser = localStorage.getItem('userData')
+    const current = JSON.parse(currentuser);
+    const userId = current.id;
+    const newsdata= localStorage.getItem('article')
+    const articles = JSON.parse(news_data);
+    const articleId = articles.id
+
+    console.log(articleId);
+
+    e.preventDefault();
+    try {
+      const response = await axios.post(`${baseurl}/savearticle`, { userId, articleId });
+      toast.success('Subscribed Sucessfully',);
+      fetchArticleData();
      
      
 
@@ -371,7 +399,15 @@ const NewsletterArticle = () => {
                           <h6> articles</h6>
                         </div>
                       </div>
-                      <a href="#">Subcribe</a>
+                      {
+                        articles.SaveArticle ?
+
+                        <a style={{background:'#89c400' , border:'none' , color:'white'}} >Subcribed</a>
+                        :
+                        
+                        <a  onClick={handleSubscribed} >Subcribe</a>
+
+                      }
                     </div>
                     <div class="more-from-soul-witness-box">
                       <h5>More from {articles.writer}</h5>

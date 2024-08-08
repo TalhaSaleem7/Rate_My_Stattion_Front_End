@@ -11,7 +11,10 @@ const AmericonProductCart = ({ initialProducts }) => {
   const [shippingFee, setshippingFee] = useState(10);
 
 
+
+
   useEffect(() => {
+    // console.log('ini', initialProducts)
     if (initialProducts) {
       setAmericanprod(initialProducts);
     }

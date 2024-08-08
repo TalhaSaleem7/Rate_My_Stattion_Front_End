@@ -15,78 +15,78 @@ const Notifications = () => {
 
   
   
-  useEffect(()=>{
-        const Sender_Idd= localStorage.getItem('userData')
-          const sender_user_id= JSON.parse(Sender_Idd)
+  // useEffect(()=>{
+  //       const Sender_Idd= localStorage.getItem('userData')
+  //         const sender_user_id= JSON.parse(Sender_Idd)
 
-          setuserId(sender_user_id)
+  //         setuserId(sender_user_id)
 
-    })
+  //   })
 
-  useEffect(() => {
-    // Set up Socket.IO connection
-    socketRef.current = io('http://localhost:5000', {
-      query: { userId },
-      transports: ['websocket'],
-      withCredentials: true,
-    });
+//   useEffect(() => {
+//     // Set up Socket.IO connection
+//     socketRef.current = io('http://localhost:5000', {
+//       query: { userId },
+//       transports: ['websocket'],
+//       withCredentials: true,
+//     });
 
 
-// ts
+// // ts
 
-// Listen for new messages
-socketRef.current.on('new_notification', (message) => {
-    // Update notifications with the new message data
+// // Listen for new messages
+// socketRef.current.on('new_notification', (message) => {
+//     // Update notifications with the new message data
 
-    console.log(message,"Best is yet to come")
-    const notification = {
-      userId: message.userId, // Use a unique ID for each notification
-      text: message.text,
-      isRead: false,
-    };
+//     console.log(message,"Best is yet to come")
+//     const notification = {
+//       userId: message.userId, // Use a unique ID for each notification
+//       text: message.text,
+//       isRead: false,
+//     };
 
     
-    setNotifications((prevNotifications) => [notification, ...prevNotifications]);
-    setUnreadCount((prevCount) => prevCount + 1);
-  });
+//     setNotifications((prevNotifications) => [notification, ...prevNotifications]);
+//     setUnreadCount((prevCount) => prevCount + 1);
+//   });
 
-// ts
+// // ts
 
 
 
-    // Listen for initial notifications
-    socketRef.current.on('initialNotifications', (initialNotifications) => {
-      setNotifications(initialNotifications);
-      const unreadCount = initialNotifications.filter((n) => !n.isRead).length;
-      setUnreadCount(unreadCount);
-    });
+//     // Listen for initial notifications
+//     socketRef.current.on('initialNotifications', (initialNotifications) => {
+//       setNotifications(initialNotifications);
+//       const unreadCount = initialNotifications.filter((n) => !n.isRead).length;
+//       setUnreadCount(unreadCount);
+//     });
 
-    // Listen for new notifications
-    socketRef.current.on('notification', (data) => {
-      setNotifications((prevNotifications) => [data, ...prevNotifications]);
-      setUnreadCount((prevCount) => prevCount + 1);
-    });
+//     // Listen for new notifications
+//     socketRef.current.on('notification', (data) => {
+//       setNotifications((prevNotifications) => [data, ...prevNotifications]);
+//       setUnreadCount((prevCount) => prevCount + 1);
+//     });
 
-    // Listen for notification read status update
-    socketRef.current.on('notificationsRead', (notificationIds) => {
-      setNotifications((prevNotifications) =>
-        prevNotifications.map((notification) =>
-          notificationIds.includes(notification.id)
-            ? { ...notification, isRead: true }
-            : notification
-        )
-      );
-      setUnreadCount((prevCount) => prevCount - notificationIds.length);
-    });
+//     // Listen for notification read status update
+//     socketRef.current.on('notificationsRead', (notificationIds) => {
+//       setNotifications((prevNotifications) =>
+//         prevNotifications.map((notification) =>
+//           notificationIds.includes(notification.id)
+//             ? { ...notification, isRead: true }
+//             : notification
+//         )
+//       );
+//       setUnreadCount((prevCount) => prevCount - notificationIds.length);
+//     });
 
-    socketRef.current.on('error', (error) => {
-      console.error('Socket error:', error);
-    });
+//     socketRef.current.on('error', (error) => {
+//       console.error('Socket error:', error);
+//     });
 
-    return () => {
-      socketRef.current.disconnect();
-    };
-  }, [userId,unreadCount]);
+//     return () => {
+//       socketRef.current.disconnect();
+//     };
+//   }, [userId,unreadCount]);
 
   const toggleDropdown = () => {
     setIsOpen((prevIsOpen) => {
