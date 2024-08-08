@@ -10734,7 +10734,6 @@ span.See select:focus {
   line-height: 33px;
 }   
 
-
 .chat-box-body-input {
     position: relative;
 }
@@ -10853,6 +10852,7 @@ span.See select:focus {
   height: 72vh;
 }
 hr.padding-hr {margin-top: 14px;}
+
 .journalism-slider h5 {
   overflow: hidden;
   display: -webkit-box;
@@ -10965,9 +10965,6 @@ hr.padding-hr {margin-top: 14px;}
     padding: 19px 41px 19px 39px;
   }
 
-  .journalism-img-txt {
-    height: 70vh;
-  }
 
   header.header_main {
     padding: 20px 0px 12px 0px;
@@ -11092,7 +11089,7 @@ hr.padding-hr {margin-top: 14px;}
 
   .looking-for-worktxt p {
     font-size: 20px;
-    width: 50%;
+
     line-height: 31.5px;
     margin: 20px 0px 20px 0px !important;
   }
@@ -11286,10 +11283,10 @@ hr.padding-hr {margin-top: 14px;}
 
 
 
-}
 
 
-@media screen and (max-width: 1366px) {
+
+
   .chat_right_txt ul {
     overflow-y: scroll;
   }
@@ -11665,6 +11662,31 @@ section.ah1 {
 .Employees-box-btn-icon button {
   padding: 10px 15px;
 }
+.header-logo {width: 100%;padding: 0px 44px 0px 0px;}
+
+.ratemystation-allprod-btn a {
+    padding: 10px 30px;
+    line-height: 18px;
+}
+
+.looking-for-worktxt p {
+    width: 54%;
+}
+
+.journalism-img-txt {
+    height: 60vh;
+}
+
+.your-journalism-img img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.latest-article-box img {
+    height: 65vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
 
 }
 
