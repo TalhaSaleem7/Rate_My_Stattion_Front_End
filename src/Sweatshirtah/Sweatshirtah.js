@@ -69,7 +69,8 @@ const Sweatshirtah = () => {
 
   return (
     <>
-      <Header1 />
+    {/* <Header1 /> */}
+      <Header />
       <section className="Sweatshirt-sec">
         <Container>
           <div className="Sweatshirt">

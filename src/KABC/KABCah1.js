@@ -705,7 +705,9 @@ const Kabcah1 = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                      <Stationsnaw />
+                      {/* <Stationsnaw /> */}
+                      <Scheduleah />
+
                     </div>
 
                     <div class="About-main-box-2-ah">
