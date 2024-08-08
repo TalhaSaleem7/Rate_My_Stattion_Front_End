@@ -82,6 +82,12 @@ const EmployerRegisterPage = () => {
     }
   };
 
+
+  const employerlogin = () => {
+    navigate("/employerlogin");
+  };
+
+
  
   return (
     <>
@@ -121,6 +127,7 @@ const EmployerRegisterPage = () => {
                       </Tabs>
                     </div>
                     <div className="employer-dont-have-acc">
+                      <a href="#">Already registered <span onClick={employerlogin}>Sign in</span></a>
                       <a href="#">
                         This is recurring subscription that you can cancel
                         anytime. <span onClick={subsribe}>Learn more</span>
