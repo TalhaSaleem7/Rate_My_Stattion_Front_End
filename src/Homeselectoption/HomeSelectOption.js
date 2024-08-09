@@ -3,13 +3,13 @@ import { FaTv, FaNewspaper, FaPodcast, FaYoutube } from 'react-icons/fa';
 import { FaRadio } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 
-
-
 const HomeSelectOption = () => {
   const [selectedOption, setSelectedOption] = useState('tv-news');
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
   };
 
   const renderIcon = (option) => {
@@ -31,21 +31,36 @@ const HomeSelectOption = () => {
 
   return (
     <div className="select-station-drop">
-      <div className="select-container">
+      <div className="select-container" onClick={() => setIsOpen(!isOpen)}>
         {renderIcon(selectedOption)}
-        <select value={selectedOption} onChange={handleChange} className="select-box">
-          <option value="tv-news">TV News</option>
-          <option value="radio">Radio</option>
-          <option value="publications">Publications</option>
-          <option value="podcasts">Podcasts</option>
-          <option value="youtube">YouTube</option>
-        </select>
+        <span className="selected-option">{selectedOption}</span>
         <div className="select-tv-icon">
           <IoIosArrowDown size={20} />
         </div>
       </div>
+      {isOpen && (
+        <ul className="options-list">
+          <li onClick={() => handleOptionClick('tv-news')} className="select-option">
+            {renderIcon('tv-news')}TV News
+          </li>
+          <li onClick={() => handleOptionClick('radio')} className="select-option">
+            {renderIcon('radio')}Radio
+          </li>
+          <li onClick={() => handleOptionClick('publications')} className="select-option">
+            {renderIcon('publications')}Publications
+          </li>
+          <li onClick={() => handleOptionClick('podcasts')} className="select-option">
+            {renderIcon('podcasts')}Podcasts
+          </li>
+          <li onClick={() => handleOptionClick('youtube')} className="select-option">
+            {renderIcon('youtube')}YouTube
+          </li>
+        </ul>
+      )}
     </div>
   );
 };
 
 export default HomeSelectOption;
+
+
