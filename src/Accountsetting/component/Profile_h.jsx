@@ -7,6 +7,7 @@ import { baseurl } from '../../baseurl';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 
 
 const ProfileComponent = () => {
@@ -98,6 +99,13 @@ const ProfileComponent = () => {
             toast.error('All Fields are required', error);
         }
     };
+
+    const navigate = useNavigate();
+
+    const handleBack = () => {
+        navigate(-1); //
+    };
+
 
     return (
         <>
@@ -195,7 +203,7 @@ const ProfileComponent = () => {
                 <button
                     type="button"
                     className="btn btn-outline-primary experience--btn--h experience--btn--h--alt--2"
-                    onClick={handleCancel}
+                    onClick={handleBack}
                 >
                     Cancel
                 </button>
