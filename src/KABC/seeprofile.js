@@ -39,6 +39,8 @@ import { baseurl } from "../baseurl";
 import EducationForm from "../Popups/Profile_popups/Education_h";
 import ApplyForm from "../Popups/Submitpopup_h/Apply_h";
 import Dirctors3 from "../Dirctors/Dirctors3";
+import Reportersd2New from "../reportersd/Reportersd2new";
+import Station2 from "../Station/Station2";
 // import { profile } from "console";
 
 const Seeprofile = () => {
@@ -276,11 +278,13 @@ const Seeprofile = () => {
                 <Container>
                   <div class="About-main-ah">
                     <div class="About-main-box-1-ah">
-                    <Station />
+                    <Station2 />
                      
                       <Dirctors3 directordata={directordata} />
                       
-                      <Reportersd2 />
+                      {/* <Reportersd2 /> */}
+                      <Reportersd2New />
+
                     </div>
 
                     <div class="About-main-box-2-ah">

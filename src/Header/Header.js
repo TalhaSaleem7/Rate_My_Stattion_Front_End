@@ -51,7 +51,7 @@ const Header = () => {
       setuserDataId(storeData);
     }
 
-    console.log("cccccc", userDataId);
+    console.log("cccccc", storeData);
 
     const fetchCartCount = async () => {
       try {
@@ -106,7 +106,7 @@ const Header = () => {
               <Col lg={4}>
                 <div className="header_end">
                   <div className="header--end--logo">
-                    <a>
+                    {/* <a>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
@@ -136,7 +136,7 @@ const Header = () => {
                         />
                       </svg>
                       <span className="header_cart_number">2</span>
-                    </a>
+                    </a> */}
 
                     <a onClick={cart}>
                       <svg
@@ -163,7 +163,7 @@ const Header = () => {
                           src={require("../img/director-drop_h.png")}
                         />
                       </div>
-                      <span className="drop-out">Brooklyn</span>
+                      <span className="drop-out">{userDataId ? userDataId.username :''}</span>
                     </label>
                     <input type="checkbox" id="touch" />
 

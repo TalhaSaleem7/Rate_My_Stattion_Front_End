@@ -232,7 +232,7 @@ const ApplyForm = () => {
                     </svg>
                   </div>
                   <p>
-                    {getStationFromLocalStorage().stationtype} <span>|</span> {getStationFromLocalStorage().AboutNew.Address} 
+                    {getStationFromLocalStorage().stationtype} <span>|</span> {getStationFromLocalStorage().AboutNew ? getStationFromLocalStorage().AboutNew.Address :''} 
                   </p>
                 </div>
               </div>

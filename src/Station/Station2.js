@@ -136,7 +136,7 @@ import React, { useEffect, useState } from "react";
 import { baseurl } from "../baseurl";
 import axios from "axios";
 
-const Station = () => {
+const Station2 = () => {
   const [userdata, setUser] = useState({});
   const [ratingdata, setrating] = useState({});
 
@@ -145,8 +145,9 @@ const Station = () => {
 
   useEffect(() => {
     // Retrieve user data from local storage
-    const storedUser = localStorage.getItem("userData");
-    
+    // const storedUser = localStorage.getItem("userData");
+    const storedUser = localStorage.getItem("stationData");
+
     if (storedUser) {
       const user = JSON.parse(storedUser);
       console.log(user, userdata);
@@ -248,4 +249,4 @@ const averageRating = (totalRatingValue / totalRatingsStyle).toFixed(1);
   );
 };
 
-export default Station;
+export default Station2;

@@ -6,13 +6,13 @@ import reviewdirectorimg from "../img/review-director-img.png";
 import axios from "axios";
 import { baseurl } from "../baseurl";
 
-const Reportersd2 = () => {
+const Reportersd2New = () => {
   const [stationratings, setStationRatings] = useState([]);
 
   useEffect(() => {
     // Retrieve user data from local storage
-    const storedUser = localStorage.getItem("userData");
-    
+    const storedUser = localStorage.getItem("stationData");
+
     if (storedUser) {
       const user = JSON.parse(storedUser);
       console.log('ggggg',user);
@@ -360,4 +360,4 @@ const Reportersd2 = () => {
   );
 };
 
-export default Reportersd2;
+export default Reportersd2New;

@@ -8,7 +8,9 @@ import Header1 from '../Header/Header2';
 const SubcriptionPage = () => {
   return (
     <>
-    <Header1/>
+    {/* <Header1/> */}
+    <Header/>
+
       <div className="subcription-page-sec">
         <Container>
           <Row>

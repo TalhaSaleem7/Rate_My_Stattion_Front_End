@@ -73,7 +73,9 @@ const MyCartSD = ({ products }) => {
 
   return (
     <>
-      <Header1 />
+      {/* <Header1 /> */}
+      <Header />
+
       <section className="americon-product-card-sec">
         <Container>
           <Row>
