@@ -32,7 +32,7 @@ const Shop = () => {
 
     const navigate = useNavigate();
 
-    const getUserFromLocalStorage = () => {
+    const getUserFromLocalStorage = () => { 
         const user = localStorage.getItem('userData');
         return user ? JSON.parse(user) : null;
     };
@@ -86,10 +86,7 @@ const Shop = () => {
     };
 
     const proddetail = (e) => {
-
         localStorage.setItem('productId', JSON.stringify(e));
-
-
         navigate('/productdetail');
     };
 

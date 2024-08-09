@@ -39,6 +39,7 @@ import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
 import { baseurl } from "../baseurl";
 import Header1 from "../Header/Header2";
+import ProductsLimitedComponent from "../Shop/ProductsLimitedComponent";
 
 const NewsletterArticle = () => {
   const navigate = useNavigate();
@@ -483,7 +484,7 @@ const NewsletterArticle = () => {
         </Container>
       </section>
 
-      <section className="ratemystation-shop-sec">
+      {/* <section className="ratemystation-shop-sec">
         <h4>RateMyStation's Shop</h4>
         <Container>
           <Row>
@@ -610,6 +611,15 @@ const NewsletterArticle = () => {
                 <a onClick={shop}>See All Products</a>
               </div>
             </Col>
+          </Row>
+        </Container>
+      </section> */}
+
+<section className="ratemystation-shop-sec">
+      <h4>RateMyStation's Shop</h4>
+        <Container>
+        <Row>
+            <ProductsLimitedComponent/>
           </Row>
         </Container>
       </section>

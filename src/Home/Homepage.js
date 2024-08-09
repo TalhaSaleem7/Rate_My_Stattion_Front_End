@@ -41,63 +41,10 @@ import Reportersdall from '../reportersd/Reportersdall';
 
 export const Homepage = () => {
 
-
-
   const navigate = useNavigate();
-
-  const getUserFromLocalStorage = () => {
-    const user = localStorage.getItem('userData');
-    return user ? JSON.parse(user) : null;
-  };
-
-
-  // const addToCart = (product) => {
-  const addToCart = async (product) => {
-    console.log('product', product)
-    const storedUser = getUserFromLocalStorage();
-    const { id, image, name, price } = product;
-    try {
-      const response = await axios.post(`${baseurl}/addtocart`, {
-        product_id: id,
-        image,
-        name,
-        price,
-        userId: storedUser.id
-      });
-
-      // setMessage('User created successfully');
-      // Optionally, clear the form or redirect the user
-
-
-
-    } catch (err) {
-      console.error('Error:', err);
-
-    }
-    // setCart((prevCart) => [...prevCart, product]);
-    // console.log("Product added to cart:", product);
-    // alert(`Added ${product.name} to cart!`);
-  };
-
-  const notify = () => toast("Product Added to Cart!");
-
-  const handleButtonClick = (product) => {
-    addToCart(product);
-    notify();
-  };
-
 
   const searchstaion = () => navigate("/stationsearchresult");
   console.log("Screen Width", window.innerWidth)
-
-  const proddetail = () => {
-    navigate("/productdetail");
-  };
-
-  const mycart = () => {
-    navigate("/mycart");
-  };
-
 
   const newsletter = () => {
     navigate("/newsletter");
@@ -235,11 +182,7 @@ export const Homepage = () => {
       <h4>RateMyStation's Shop</h4>
         <Container>
         <Row>
-            <ProductsLimitedComponent
-              proddetail={proddetail}
-              handleButtonClick={handleButtonClick}
-              BestsellerImage={BestsellerImage}
-            />
+            <ProductsLimitedComponent />
           </Row>
         </Container>
       </section>

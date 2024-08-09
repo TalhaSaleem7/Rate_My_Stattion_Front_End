@@ -14,69 +14,16 @@ import ProdImage5 from '../img/ratemystation-prod-img-5.png';
 import ProdImage6 from '../img/ratemystation-prod-img-6.png';
 import ProdImage7 from '../img/ratemystation-prod-img-7.png';
 import ProdImage8 from '../img/ratemystation-prod-img-8.png';
-import BestsellerImage from '../img/ratemystation-prod-bestseller-img.png';
+
 import Lookingforwork from '../Lookingforwork/Lookingforwork';
 import Header from '../Header/Header';
 import Footerah from '../footerah/Footerah';
-import { useNavigate } from 'react-router-dom';
-import { baseurl } from '../baseurl';
+
 import ProductsLimitedComponent from '../Shop/ProductsLimitedComponent';
 
 const About = () => {
 
-  const navigate = useNavigate();
-  const getUserFromLocalStorage = () => {
-    const user = localStorage.getItem('userData');
-    return user ? JSON.parse(user) : null;
-  };
-
   
-  // const addToCart = (product) => {
-  const addToCart = async (product) => {
-    console.log('product', product)
-    const storedUser = getUserFromLocalStorage();
-    const { id, image, name, price } = product;
-    try {
-      const response = await axios.post(`${baseurl}/addtocart`, {
-        product_id: id,
-        image,
-        name,
-        price,
-        userId: storedUser.id
-      });
-
-      // setMessage('User created successfully');
-      // Optionally, clear the form or redirect the user
-
-
-
-    } catch (err) {
-      console.error('Error:', err);
-
-    }
-    // setCart((prevCart) => [...prevCart, product]);
-    // console.log("Product added to cart:", product);
-    // alert(`Added ${product.name} to cart!`);
-  };
-
-  const notify = () => toast("Product Added to Cart!");
-
-  const handleButtonClick = (product) => {
-    addToCart(product);
-    notify();
-  };
-
-
-  const proddetail = () => {
-    navigate('/productdetail')
-  }
-
-  const mycart = () => {
-    navigate('/mycart')
-  }
-
- 
-
   return (
     <>
       <Header />
@@ -186,11 +133,7 @@ const About = () => {
         <h4>RateMyStation's Shop</h4>
         <Container>
           <Row>
-            <ProductsLimitedComponent
-              proddetail={proddetail}
-              handleButtonClick={handleButtonClick}
-              BestsellerImage={BestsellerImage}
-            />
+            <ProductsLimitedComponent />
           </Row>
         </Container>
       </section>
