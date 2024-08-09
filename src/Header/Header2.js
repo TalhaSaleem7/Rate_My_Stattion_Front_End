@@ -130,7 +130,7 @@ const Header1 = () => {
                   <Notifications/>
             
 
-                  <a>
+                  {/* <a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="22"
@@ -144,7 +144,7 @@ const Header1 = () => {
                       />
                     </svg>
                     <span className="header_cart_number">2</span>
-                  </a>
+                  </a> */}
 
                   <a onClick={cart}>
                     <svg
@@ -171,7 +171,7 @@ const Header1 = () => {
                         src={require("../img/director-drop_h.png")}
                       />
                     </div>
-                    <span className="drop-out">Brooklyn</span>
+                    <span className="drop-out">{userDataId ? userDataId.username :''}</span>
                   </label>
                   <input type="checkbox" id="touch" />
 

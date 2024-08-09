@@ -43,7 +43,11 @@ export const Homepage = () => {
 
   const navigate = useNavigate();
 
-  const searchstaion = () => navigate("/stationsearchresult");
+  // const searchstaion = () => navigate("/stationsearchresult");
+
+
+
+
   console.log("Screen Width", window.innerWidth)
 
   const newsletter = () => {
@@ -51,6 +55,16 @@ export const Homepage = () => {
   };
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isquery, setIsQuey] = useState('');
+
+  
+  const searchstaion = () =>{
+    localStorage.setItem('isQuery', JSON.stringify(isquery));
+    navigate("/stationsearchresult");
+
+  }
+
 
   const toggleDetails = () => {
     setIsOpen(!isOpen);
@@ -95,18 +109,25 @@ export const Homepage = () => {
                   {isSearchByName ? (
                     <input
                       type="search"
-                      name=""
-                      id=""
+                     
+                      id="isquery"
                       placeholder="Search News Director..."
+                      value={isquery}
+                    
+                      onChange={(e) => setIsQuey(e.target.value)}
                     />
                   ) : (
                     <>
                       <HomeSelectOption />
                       <input
                         type="search"
-                        name=""
+                        name="isquery"
                         id=""
                         placeholder="Search Stations..."
+                        value={isquery}
+                    
+                        onChange={(e) => setIsQuey(e.target.value)}
+
                       />
                     </>
                   )}
