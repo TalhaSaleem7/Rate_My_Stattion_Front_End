@@ -10,6 +10,7 @@ import MessageItem from './MessageItem';
 import { parseJSON } from 'date-fns';
 import eventBus from './EventBus/EventBus';
 import Header1 from '../../Header/Header2';
+import axios from 'axios';
 
 const Chat = ({ userData, rc_id, pp, handle_chat }) => {
 
@@ -19,7 +20,11 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const [senderId, setSenderId] = useState('rr123');
-  const [receiverId, setReceiverId] = useState("ss123");
+  const [receiverId, setReceiverId] = useState(0);
+
+
+  const [profile, setProfile] = useState({});
+
 
   const socketRef = useRef(null);
   pp = true
@@ -34,14 +39,20 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
     const Reciever_Id = localStorage.getItem('Reciever_Id')
     console.log(sender_user_id, "HS", Reciever_Id)
 
-    setSenderId(sender_user_id)
+    setSenderId(sender_user_id.id)
     setReceiverId(Reciever_Id)
+
+    // fetchprofile(Reciever_Id);
   })
 
 
   useEffect(() => {
+    fetchprofile();
 
-    socketRef.current = io("http://localhost:5000"); // Replace with your server URL
+
+    // socketRef.current = io("http://localhost:5000");
+    socketRef.current = io("https://ratemystationbackend-production.up.railway.app"); // Replace with your server URL
+     // Replace with your server URL
 
     socketRef.current.on('previous_messages', (prevMessages) => {
       setMessages(prevMessages);
@@ -60,6 +71,8 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
       socketRef.current.off('previous_messages');
       socketRef.current.disconnect();
     };
+    
+
   }, []);
 
   useEffect(() => {
@@ -70,6 +83,30 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
       });
     }
   }, [receiverId, senderId]);
+
+
+  const fetchprofile = async () => {
+
+    const Reciever_Id = localStorage.getItem('Reciever_Id')
+
+    console.log('Fetching profile' , Reciever_Id)
+
+    try {
+      const response = await axios.get(`${baseurl}/getuserdata/${Reciever_Id}`);
+     
+
+      setProfile(response.data)
+
+    
+     
+
+    
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+
+
+  }
 
   const sendMessage = () => {
     if (message !== '') {
@@ -201,10 +238,22 @@ const Chat = ({ userData, rc_id, pp, handle_chat }) => {
                           <div className="chat-box-head">
                             <div className="chat-box-headleft">
                               <div className="chat-box-head-dp">
+
+
+                              {
+                                profile && profile.Profile ?
+
+                                <img src={profile.Profile.image} alt="" />
+                                :
+
                                 <img src={chatperson} alt="" />
+                              }
+
+                                {/* <img src={chatperson} alt="" /> */}
+                                
                               </div>
                               <span className="chat-name">
-                                <h2>Christiana Adams</h2>
+                                <h2>{profile.username}</h2>
                                 <p>online</p>
                               </span>
                             </div>

@@ -462,8 +462,16 @@ const RateThisProd = ({ close }) => {
     const storedUser = getUserFromLocalStorage();
     const userId = storedUser ? storedUser.id : null;
 
-    if (!userId) {
-      setError('User ID is missing');
+    if (!userId ) {
+  
+      toast.error('Please Login First to Rate Product');
+      return;
+    }
+
+
+    if (!rating ) {
+  
+      toast.error('Must Select Rating Products ');
       return;
     }
 
@@ -475,7 +483,13 @@ const RateThisProd = ({ close }) => {
         description,
       });
       toast.success("Rating submitted successfully");
+  
       console.log('Rating submitted:', response.data);
+      // close()
+      setTimeout(() => {
+        close();
+    }, 1000); 
+    
     } catch (error) {
       console.error('Error submitting rating:', error);
       toast.error('Error submitting rating');

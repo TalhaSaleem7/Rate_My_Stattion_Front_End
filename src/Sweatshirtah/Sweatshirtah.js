@@ -13,6 +13,7 @@ import Header1 from "../Header/Header2";
 const Sweatshirtah = () => {
   const [productdata, setProduct] = useState({});
   const [userdata, setUser] = useState({});
+  const [CommentDatas, setCommentDatas] = useState([]);
 
 
   const getUserFromLocalStorage = () => {
@@ -21,14 +22,17 @@ const Sweatshirtah = () => {
 };
 
   useEffect(() => {
+    fetchData()
     // Retrieve user data from local storage
     const storedProduct = localStorage.getItem('productdata');
     if (storedProduct) {
       const product = JSON.parse(storedProduct);
-      console.log(product, productdata)
+      console.log(product, productdata , 'kkkkkkkkkkkkkk')
       // setProduct(user)  
 
       fetchproductdata(product.id);
+
+    
 
     }
 
@@ -54,6 +58,20 @@ const Sweatshirtah = () => {
     }
   };
 
+
+  const fetchData = async () => {
+    const id = localStorage.getItem('productId');
+    console.log('Fetching data' , id)
+    
+    try {
+      const response = await axios.get(`${baseurl}/GetRatingProductbyid/${id}`);
+      setCommentDatas(response.data); // Set the fetched data to state
+    } catch (error) {
+      console.error("Error fetching education data:", error);
+    }
+  };
+
+
   const fetchproductdata = async (productId) => {
     try {
       // SAHI
@@ -67,9 +85,15 @@ const Sweatshirtah = () => {
     }
   };
 
+  const onGeting = () =>{
+
+    fetchData() 
+  }
+
   return (
     <>
-      <Header1 />
+    {/* <Header1 /> */}
+      <Header />
       <section className="Sweatshirt-sec">
         <Container>
           <div className="Sweatshirt">
@@ -77,11 +101,11 @@ const Sweatshirtah = () => {
 
             <div className="Sweatshirt-box Sweatshirt--box--alt">
               <div className="Sweatshirt-part-1 Sweatshirt--part--alt">
-                <Cooperah />
+                <Cooperah CommentDatas = {CommentDatas} />
               </div>
 
               <div className="Sweatshirt-part-2 Sweatshirt--part--alt">
-                <Buyerah />
+                <Buyerah onGet={onGeting} />
               </div>
             </div>
           </div>

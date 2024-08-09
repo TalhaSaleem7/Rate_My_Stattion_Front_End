@@ -15,7 +15,9 @@ const FAQPage = () => {
   };
   return (
     <>
-      <Header1 />
+      {/* <Header1 /> */}
+      <Header />
+
       <div>
         <FAQSearch />
         <div className="container">
