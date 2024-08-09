@@ -155,7 +155,9 @@ const NewsletterArticle = () => {
 
   return (
     <>
-      <Header1 />
+      {/* <Header1 /> */}
+      <Header />
+
       <section className="newsletter-article-sec">
       <ToastContainer />
         <Container>

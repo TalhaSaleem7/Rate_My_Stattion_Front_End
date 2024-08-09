@@ -462,8 +462,9 @@ const RateThisProd = ({ close }) => {
     const storedUser = getUserFromLocalStorage();
     const userId = storedUser ? storedUser.id : null;
 
-    if (!userId) {
+    if (!userId,  !rating ) {
       setError('User ID is missing');
+      toast.error('Must Select Rating Products ');
       return;
     }
 
