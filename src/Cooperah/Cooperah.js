@@ -7,7 +7,9 @@ import { baseurl } from "../baseurl";
 import axios from "axios";
 
 
-const Cooperah = () => {
+const Cooperah = ({CommentDatas}) => {
+
+  console.log('CommentDatas' , CommentDatas)
 
   const [userdata, setUser] = useState({});
   const [productdata, setProduct] = useState({});
@@ -105,7 +107,7 @@ const Cooperah = () => {
 
       <div class="About-main-card-1-ah">
         <h2>Review<span>(5)</span></h2>
-        {CommentData.map((Comment, index) => (
+        {CommentDatas.map((Comment, index) => (
 
           <div key={index} class="Job-ah">
             <div class="Cooper-ah-box-main">

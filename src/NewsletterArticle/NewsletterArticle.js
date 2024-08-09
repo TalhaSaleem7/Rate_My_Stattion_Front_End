@@ -79,10 +79,29 @@ const NewsletterArticle = () => {
   };
 
 
+  const calculateHoursAgo = (createdAt) => {
+    const createdDate = new Date(createdAt);
+    const currentDate = new Date();
+    const diffInMilliseconds = currentDate - createdDate;
+    const diffInHours = Math.floor(diffInMilliseconds / (1000 * 60 * 60));
+    return diffInHours;
+  };
+
+
+
+  
+
+
 
   const handleSubmit = async (e) => {
     const currentuser = localStorage.getItem('userData')
     const current = JSON.parse(currentuser);
+
+    if(current == null){
+      toast.error('Please login to comment');
+      return;
+
+    }
     const userId = current.id;
     const newsdata= localStorage.getItem('article')
     const articles = JSON.parse(news_data);
@@ -348,15 +367,15 @@ const NewsletterArticle = () => {
               
 
                   <div class="newsletter-comment-box">
-                    <p>2 Comment</p>
+                  <p>{articles.Comments ? `${articles.Comments.length} Comment${articles.Comments.length > 1 ? 's' : ''}` : '0 Comment'}</p>
 
                     {
                articles.Comments && articles.Comments.map((es,i)=>(
                     <div class="newsletter-detail-comment">
-                      <img src={userImg} alt="" />
+                      <img src={es.User  && es.User.Profile ? es.User.Profile.image : userImg} alt="" />
                       <div class="newsletter-comment-txt">
                         <div class="newsletter-detail-comment-para">
-                          <h6>Cameron Williamson</h6>
+                          <h6>{es.User.username}</h6>
                           <p>
                           {es.comments}
                           </p>
@@ -366,14 +385,14 @@ const NewsletterArticle = () => {
                             <li>
                               <a href="#">Like</a>
                             </li>
-                            <li>
+                            <li style={{opacity:0}}>
                               <a href="#">Reply</a>
                             </li>
-                            <li>
+                            <li style={{opacity:0}}>
                               <a href="#">Permalink</a>
                             </li>
                           </ul>
-                          <p>2 hours ago</p>
+                          <p>{calculateHoursAgo(es.createdAt)} hours ago</p>
                         </div>
                       </div>
                    

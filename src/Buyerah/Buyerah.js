@@ -5,10 +5,12 @@ import axios from "axios";
 import { baseurl } from "../baseurl";
 
 
-const Buyerah = () => {
+const Buyerah = ({onGet}) => {
 
   const [userdata, setUser] = useState({});
   const [ratingdata, setrating] = useState({});
+  const [currentuser, setcurrentId] = useState({});
+
 
   const [rating, setRating] = useState([]);
   const total = rating[1] + rating[2] + rating[3] + rating[4] + rating[5];
@@ -18,6 +20,9 @@ const Buyerah = () => {
     const storedUser = localStorage.getItem("userData");
     if (storedUser) {
       const user = JSON.parse(storedUser);
+
+      setcurrentId(user)
+      
       console.log(user, userdata);
       fetchRatingData(user.id)
       fetchUserData(user.id);
@@ -70,7 +75,12 @@ const Buyerah = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
+
+   
     setIsOpen(!isOpen);
+    onGet()
+
+
   };
 
   return (
