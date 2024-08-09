@@ -4,18 +4,79 @@ import axios from 'axios'; // Add this import
 
 import { baseurl } from '../baseurl';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import CSS for Toast notifications
 import { useNavigate } from 'react-router-dom';
+import BestsellerImage from "../img/ratemystation-prod-bestseller-img.png";
 
 
-const ProductsLimitedComponent = ({ proddetail, handleButtonClick, BestsellerImage }) => {
+const ProductsLimitedComponent = () => {
     
     const navigate = useNavigate();
+
+    const getUserFromLocalStorage = () => {
+        const user = localStorage.getItem('userData');
+        return user ? JSON.parse(user) : null;
+      };
+      
+      
+      // const addToCart = (product) => {
+      const addToCart = async (product) => {
+        console.log('product', product)
+        const storedUser = getUserFromLocalStorage();
+        const { id, image, name, price } = product;
+      
+      
+        if (storedUser)
+        try {
+          const response = await axios.post(`${baseurl}/addtocart`, {
+            product_id: id,
+            image,
+            name,
+            price,
+            userId: storedUser.id
+          });
+      
+          // setMessage('User created successfully');
+          // Optionally, clear the form or redirect the user
+      
+      
+      
+        } catch (err) {
+          console.error('Error:', err);
+      
+        }
+        else {
+      
+          toast.error("Please Sign in first!")
+      
+      }
+      // setCart((
+        // setCart((prevCart) => [...prevCart, product]);
+        // console.log("Product added to cart:", product);
+        // alert(`Added ${product.name} to cart!`);
+      };
+      
+      const notify = () => toast("Product Added to Cart!");
+      
+      const handleButtonClick = (product) => {
+        addToCart(product);
+        notify();
+      };
+      const proddetail = (e) => {
+      
+        localStorage.setItem('productId', JSON.stringify(e));
+      
+      
+        navigate('/productdetail');
+      };
+      
+      
 
     const shop = () => {
         navigate('/shop')
       }
+      
       
     const [products, setProducts] = useState([]);
 

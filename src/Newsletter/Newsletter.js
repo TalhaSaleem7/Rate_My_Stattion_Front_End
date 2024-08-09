@@ -73,40 +73,7 @@ const Newsletter = () => {
   };
 
 
-  // const addToCart = (product) => {
-  const addToCart = async (product) => {
-    console.log('product', product)
-    const storedUser = getUserFromLocalStorage();
-    const { id, image, name, price } = product;
-    try {
-      const response = await axios.post(`${baseurl}/addtocart`, {
-        product_id: id,
-        image,
-        name,
-        price,
-        userId: storedUser.id
-      });
-
-      // setMessage('User created successfully');
-      // Optionally, clear the form or redirect the user
-
-
-
-    } catch (err) {
-      console.error('Error:', err);
-
-    }
-    // setCart((prevCart) => [...prevCart, product]);
-    // console.log("Product added to cart:", product);
-    // alert(`Added ${product.name} to cart!`);
-  };
-
-  const notify = () => toast("Product Added to Cart!");
-
-  const handleButtonClick = (product) => {
-    addToCart(product);
-    notify();
-  };
+ 
 
   const proddetail = () => {
     navigate("/productdetail");
@@ -484,11 +451,7 @@ const Newsletter = () => {
 
         <Container>
           <Row>
-          <ProductsLimitedComponent
-              proddetail={proddetail}
-              handleButtonClick={handleButtonClick}
-              BestsellerImage={BestsellerImage}
-            />
+          <ProductsLimitedComponent />
           </Row>         
         </Container>
       </section>
